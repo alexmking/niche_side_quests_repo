@@ -1,0 +1,1328 @@
+##############################
+# THE SECTIONS OF THIS DOC:
+##############################
+# 1. GLOBAL GENERAL SETTINGS
+# 2. APP-SPECIFIC SETTINGS
+# 3. (Alt-only) commands
+# 4. (Alt + Shift) commands
+# 5. the 1-9 workspace commands that never change (graveyard section) + (any misc stuff like WindowSPY info)
+
+# ---------------------------------------
+# ---- USEFUL CHARACTER definitions -----
+# ---------------------------------------
+# oem_plus      ===   +
+# oem_minus     ===   -
+# oem_period    ===   .
+# add           ===   the NUMPADS +
+# subtract      ===   the NUMPADS -
+# multiply      ===   the NUMPADS *
+
+
+#**********************************************************
+#* BINDING COMBINATIONS THAT WORK or FAIL with NUMPAD char involved (took forever to fig this out)
+# bindings: ['alt+numpad1'] # VALID [already used for the 3x3 window-move group of commands]
+# bindings: ['ctrl+numpad1'] # VALID
+# bindings: ['ctrl+alt+numpad1'] # VALID
+# bindings: ['alt+shift+numpad1'] # ***FAILS***
+# bindings: ['ctrl+shift+numpad1'] # ***FAILS***
+# bindings: ['ctrl+shift+alt+numpad1'] # ***FAILS***
+
+
+
+
+
+
+
+
+
+
+
+# ##################################################################################################################
+# ##################################################################################################################
+# GENERAL SECTION: (Section 1 of 5)
+# ##################################################################################################################
+# ##################################################################################################################
+general:
+  # Commands to run when the WM has started. This is useful for running a
+  # script or launching another application.
+  # Example: The below command launches Zebar.
+  # startup_commands: ['shell-exec zebar']
+  startup_commands: ['shell-exec zebar', 'shell-exec main_glaze_autotiling.py']
+
+  # Commands to run just before the WM is shutdown. Example: The below command kills Zebar.
+  # kill C:\Windows\py.exe
+  # shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F']
+  shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F', 'shell-exec taskkill C:\Windows\py.exe']
+  # shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F', 'shell-exec taskkill main_glaze_autotiling.py']
+  # shutdown_commands: ['shell-exec zebar --shutdown'] # MAYBE SAFER OPTION than FORCE-KILL variation '/IM zebar.exe /F' that the default is using
+
+  # Commands to run after the WM config is reloaded.
+  config_reload_commands: []
+
+  # Whether to automatically focus windows underneath the cursor.
+  focus_follows_cursor: false
+
+  # Whether to switch back and forth between the previously focused
+  # workspace when focusing the current workspace.
+  toggle_workspace_on_refocus: false
+
+  cursor_jump:
+    # Whether to automatically move the cursor on the specified trigger.
+    enabled: true
+
+    # Trigger for cursor jump:
+    # - 'monitor_focus': Jump when focus changes between monitors.
+    # - 'window_focus': Jump when focus changes between windows.
+    trigger: 'monitor_focus'
+
+  # How windows should be hidden when switching workspaces.
+  # - 'cloak': Recommended. Hides windows with no animation.
+  # - 'hide': Legacy method (v3.5 and earlier) that has a brief animation,
+  # but has stability issues with some apps.
+  hide_method: 'cloak'
+
+  # Affects which windows get shown in the native Windows taskbar. Has no
+  # effect if `hide_method: 'hide'`.
+  # - 'true': Show all windows (regardless of workspace).
+  # - 'false': Only show windows from the currently shown workspaces.
+  show_all_in_taskbar: true
+
+gaps:
+  # Whether to scale the gaps with the DPI of the monitor.
+  scale_with_dpi: true
+
+  # Gap between adjacent windows.
+  inner_gap: '20px'
+
+  # Gap between windows and the screen edge.
+  outer_gap:
+    top: '60px'
+    right: '20px'
+    bottom: '20px'
+    left: '20px'
+
+window_effects:
+  # Visual effects to apply to the focused window.
+  focused_window:
+    # Highlight the window with a colored border.
+    # ** Exclusive to Windows 11 due to API limitations.
+    ###################################################
+    ################ WINDOWS-11-ONLY ##################
+    ###################################################
+    border:
+      enabled: true
+      color: '#ff7100'
+      # color: '#9DDE8B'
+      # ffff00     8dbcff     40A578   9DDE8B     
+      # halloween: ff7100    fd9702    e102ff    ae03ff
+
+    # Remove the title bar from the window's frame. Note that this can
+    # cause rendering issues for some applications.
+    hide_title_bar:
+      enabled: false
+
+    ###################################################
+    ################ WINDOWS-11-ONLY ##################
+    ###################################################
+    # Change the corner style of the window's frame.
+    # ** Exclusive to Windows 11 due to API limitations.
+    corner_style:
+      enabled: false
+      # Allowed values: 'square', 'rounded', 'small_rounded'.
+      style: 'square'
+
+    # Change the transparency of the window.
+    transparency:
+      enabled: true
+      # Can be something like '95%' or '0.95' for slightly transparent windows.
+      # '0' or '0%' is fully transparent (and, by consequence, unfocusable).
+      opacity: '100%'
+
+  # Visual effects to apply to non-focused windows.
+  other_windows:
+    border:
+      enabled: true
+      color: '#a1a1a1'
+    hide_title_bar:
+      enabled: false
+    corner_style:
+      enabled: false
+      style: 'square'
+    transparency:
+      enabled: true
+      opacity: '85%'
+
+window_behavior:
+  # New windows are created in this state whenever possible.
+  # Allowed values: 'tiling', 'floating'.
+  initial_state: 'tiling'
+  # initial_state: 'floating'
+
+  # Sets the default options for when a new window is created. This also
+  # changes the defaults for when the state change commands, like
+  # `set-floating`, are used without any flags.
+  state_defaults:
+    floating:
+      # Whether to center floating windows by default.
+      centered: true
+
+      # Whether to show floating windows as always on top.
+      shown_on_top: false # ******* TODO: worth messing around with 'TRUE' here, and see if can fix the glaze bugs where old TILED apps still sit on top of more-recent FLOATING apps in a way that is hard to tell what logic it's being directed by
+      # ****** shown_on_top: true # *** TODO: worth experimenting with this one ***
+
+    fullscreen:
+      # Maximize the window if possible. If the window doesn't have a
+      # maximize button, then it'll be fullscreen'ed normally instead.
+      maximized: false
+
+      # Whether to show fullscreen windows as always on top.
+      shown_on_top: false
+
+workspaces:
+  - name: '1'
+  - name: '2'
+  - name: '3'
+  - name: '4'
+  - name: '5'
+  - name: 'AI(6)'
+  - name: 'teams/outlook(7)'
+  - name: 'excel(8)'
+  - name: 'github/trello(9)'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# TODO: Consider the below idea...
+# TODOIDEA>> Instead of having the DEFAULT_LAYOUT == TILED, with custom 'open-as-floating' for all the other windows (which there are ton)...
+# TODOIDEA>> ... We could have the DEFAULT_LAYOUT == FLOATING, with custom 'open-as-tiled' for the FEW windows we don't want floating (aka WAY-LESS custom open-as-layout since we only want a 5-8 apps to actually be TILED and EVERYTHING ELSE we want FLOATING )
+# TODO: sooo....bc we only want 5-8 apps to be TILED, but a TON of apps we want fLOATING...it makes more sense to set the DEAULT to be fLOATING and then well only have to write 5-8 exceptions/rules for the TILED apps (as opposed to the TON we currently have, and we're not even done adding yet since there's misc apps like WORD and POWERPOINT or PREVIEW which are still defaulting to opening as TILED)
+# ##################################################################################################################
+# ##################################################################################################################
+# APP-SPECIFIC SECTION: (Section 2 of 5)
+# ##################################################################################################################
+# ##################################################################################################################
+# ---------------------------------------------------------------------------------------------------------------------------------------
+# NEED TO ADD A BUNCH OF MISC WINDOWS/SETTINGS/APPS here (like to always ignore LogiOptions app )
+# ---------------------------------------------------------------------------------------------------------------------------------------
+window_rules:
+  ##### PERHAPS I NEED TO USE A MORE GRANULAR MATCH METHOD FOR THESE 3 Workspace/apps BELOW TO PREVENT THE switch to other workspace every time I realod-config
+  # TEAMS + OUTLOOK designated workspace
+  - commands: ['move --workspace teams/outlook(7)', 'focus --workspace teams/outlook(7)']
+    match:
+      - window_class: { equals: "rctrl_renwnd32" }
+      - window_class: { equals: 'TeamsWebView' }
+
+  # Excel Ref_doc + zzshortcuts designated workspace
+  - commands: ['move --workspace excel(8)', 'focus --workspace excel(8)']
+    match:
+      - window_title: { equals: "zzshortcuts.xlsx - Excel" }
+      - window_title: { equals: 'ref_sheet2025.xlsx - Excel' }
+
+  # GitHub_Desktop + Trello designated workspace
+  - commands: ['move --workspace github/trello(9)', 'focus --workspace github/trello(9)']
+    match:
+      - window_title: { equals: "AspenTech TODO | Trello" }
+      - window_title: { equals: 'GitHub Desktop' }
+      - window_title: { equals: 'C:\Windows\py.exe' } # THIS ONE IS INTERFERING WITH MY open-screenshots script in AHK (hyperkey-s)(by opening the window in desktop9 instead of curr desktop)
+
+  # RESERVED for chrome, cmder, vscode/visualStudio, 
+  - commands: ['move --workspace 1', 'focus --workspace 1']
+    match:
+      - window_process: { regex: "chrome|msedge|brave" } # Move browsers to workspace 1.
+      - window_title: { equals: 'Cmder' }
+      - window_process: { equals: 'Code' }
+      - window_process: { equals: 'devenv' }
+
+  # RESERVED for chrome, cmder, vscode/visualStudio, 
+  - commands: ['move --workspace AI(6)', 'focus --workspace AI(6)']
+    match:
+      - window_title: { equals: 'Microsoft 365 Copilot' }
+
+  # ; Microsoft 365 Copilot
+  # ; ahk_class OfficeApp-Frame
+  # ; ahk_exe WebViewHost.exe
+  # ; ahk_pid 14848
+  # ; ahk_id 393846
+  
+  # # MAIN_WORSPACE (1)
+  # - commands: ['move --workspace 9_github/Trello', 'focus --workspace 9_github/Trello']
+  #   match:
+  #     - window_title: { equals: "AspenTech TODO | Trello" }
+  #     - window_title: { equals: 'GitHub Desktop' }
+
+  # OPEN-AS-FLOATING...
+  - commands: ['set-floating']
+    match:
+      - window_title: { equals: 'Logi Options+' }
+      - window_title: { equals: 'Task Manager' }
+      - window_title: { equals: 'Window Spy for AHKv2' }
+      - window_title: { equals: 'Cisco Secure Client'}
+      - window_title: { equals: 'Snip & Sketch'}
+      - window_title: { equals: 'Settings [xml] ConEmu 230724 [64] {Stable}'}
+      - window_title: { equals: 'C:\Windows\system32\cmd.exe'}
+      - window_title: { equals: 'tagging_ws_adaptor.exe  -D 10'}
+      - window_title: { equals: 'tagging_web_component_server.exe  -d'}
+      - window_title: { equals: 'WinMerge'}
+      - window_title: { equals: 'File Explorer'}
+      - window_title: { equals: 'Administrator: PowerToys Settings'}
+      - window_process: { equals: 'explorer'}
+      - window_process: { equals: 'Photos'}
+      - window_title: { equals: 'src'} # for VisualStudio FIND/REPLACE window
+
+      - window_class: { equals: 'PPTFrameClass'}
+      - window_class: { equals: 'Notepad++'}
+      - window_title: { equals: 'Sticky Notes'}
+      - window_title: { equals: 'One Calendar'}
+      - window_process: { equals: 'OpenViewNET'}
+      - window_title: { regex: '/cyberSCADA/'} # attempting regex for 'contains' ?? UNSURE IF WORKS ??
+      - window_title: { regex: '/Authoring/'} # attempting regex for 'contains' ?? UNSURE IF WORKS ??
+      - window_title: { regex: '/Kickoff/'} # attempting regex for 'contains' ?? UNSURE IF WORKS ??
+      - window_title: { equals: 'SCADA Sprint Review and Demo'} # attempting regex for 'contains' ?? UNSURE IF WORKS ??
+      - window_process: { equals: 'TreeSize'}
+      - window_process: { equals: 'SnippingTool'}
+      # TODO clean up / reduce this FLOW-LAUNCHER-settings-window section below so only ONE command
+      - window_title: { equals: 'Settings'} #* this one is the ONLY ONE i could get working for FlowLaunchers 'settings' window
+      # - window_title: { regex: '/Flow.Launcher/'} # DOESNT WORK
+      # - window_title: { regex: '/Flow/'} # DOESNT WORK    
+      # - window_process: { equals: 'Flow.Launcher'} # DOESNT WORK    
+      # - window_process: { equals: 'FlowLauncher'} # DOESNT WORK    
+      # - window_process: { equals: 'FlowLauncher.exe'} # DOESNT WORK    
+      # - window_process: { equals: 'Flow.Launcher.exe'} # DOESNT WORK    
+
+      - window_title: { equals: 'Macro'} # TODO FIXME! this one is supposed to be targeting the MACRO popup window in EXCEL doc but it's not working atm
+        # [WINDOW-TITLE]
+        # ahk_class [CLASS_NAME]
+        # ahk_exe ConEmu64.exe [PROCESS_NAME]
+        # ahk_pid 44196
+        # ahk_id 11144428
+
+        # Snipping Tool
+        # ahk_class XamlWindow
+        # ahk_exe SnippingTool.exe
+        # ahk_pid 46432
+        # ahk_id 8129670
+
+        # D:\ - TreeSize - V8.1.2 (outdated)
+        # ahk_class TMainForm
+        # ahk_exe TreeSize.exe
+        # ahk_pid 33604
+        # ahk_id 332432
+
+
+        # D:\osi\12.1_prime0\monarch\data\ALARMS_SAMPLE.DAT - Notepad++
+        # ahk_class Notepad++
+        # ahk_exe notepad++.exe
+        # ahk_pid 31400
+        # ahk_id 1247596
+
+        # (0) OpenViewNET   SAMPLE: admin
+        # ahk_class WindowsForms10.Window.8.app.0.1e84ccb_r8_ad1
+        # ahk_exe OpenViewNET.exe
+        # ahk_pid 39340
+        # ahk_id 1249626
+
+  # TODO: confirm my 2 REGEX custom ones above actually work like I think they should
+
+  - commands: ['set-minimized']
+    match:
+      - window_title: { equals: 'C:\Windows\py.exe' }
+
+  - commands: ['move --workspace dock', 'focus --workspace dock']
+    match:
+      - window_class: { equals: 'PPTFrameClass'}
+      - window_title: { equals: 'Sticky Notes'}
+
+  - commands: ['ignore']
+    match:
+      # Ignores any Zebar windows.
+      - window_process: { equals: 'zebar' }
+
+      # Ignores picture-in-picture windows for browsers.
+      - window_title: { regex: '[Pp]icture.in.[Pp]icture' }
+        window_class: { regex: 'Chrome_WidgetWin_1|MozillaDialogClass' }
+
+      # ------------------------------------------------------------------------------
+      # CAREFUL 'ignoring' bc it means our Alt + Shift + Q 'kill window' command wont work :(
+      # ------------------------------------------------------------------------------
+      # Ignore rules for various 3rd-party apps.
+      - window_process: { equals: 'PowerToys' }
+        window_class: { regex: 'HwndWrapper\[PowerToys\.PowerAccent.*?\]' }
+      - window_process: { equals: 'PowerToys' }
+        window_title: { regex: '.*? - Peek' }
+      - window_process: { equals: 'Lively' }
+        window_class: { regex: 'HwndWrapper' }
+      - window_process: { equals: '' }
+        window_class: { regex: 'HwndWrapper' }
+      - window_title: { equals: 'Find and Replace'} # this is for EXCEL DOCs(may need2b more granular
+      # ------------------------------------------------------------------------------
+      # i think we CAN create a custom command here that will IN-EFFECT set ALL APPS TO FLOATING or ALL APPS TO TILES
+      # ---- but we do have to list every single app we want to the command to set though, it's not a simple (set-all) method
+      # ------------------------------------------------------------------------------
+
+# Macro
+# ahk_class bosa_sdm_XL9
+# ahk_exe EXCEL.EXE
+# ahk_pid 13296
+# ahk_id 265710
+
+# Settings
+# ahk_class HwndWrapper[Flow.Launcher;;3380438e-e732-4185-bf94-8d20d1874d08]
+# ahk_exe Flow.Launcher.exe
+# ahk_pid 25432
+# ahk_id 2690756
+
+
+# Settings
+# ahk_class HwndWrapper[Flow.Launcher;;76a51010-9e88-467d-9636-4967e5e0d7e9]
+# ahk_exe Flow.Launcher.exe
+# ahk_pid 25432
+# ahk_id 594886
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# the order of this section should go: BIG-3 ==> t,g,b,y ==> m,v,h ==> numpad keys ==> misc-leftover-commands
+# (this way we can compare side-by-side with Aerosp MUCH easier)
+# ##################################################################################################################
+# ##################################################################################################################
+# (ALT-ONLY) SECTION: (Section 3 of 5)
+# ##################################################################################################################
+# ##################################################################################################################
+keybindings:
+  # Shift focus in a given direction.
+  - commands: ['focus --direction left']
+    bindings: ['alt+u']
+  - commands: ['focus --direction down']
+    bindings: ['alt+i']
+  - commands: ['focus --direction up']
+    bindings: ['alt+o']
+  - commands: ['focus --direction right']
+    bindings: ['alt+p']
+
+  # Resize focused window by a percentage or pixel amount.
+  - commands: ['resize --width -2%']
+    bindings: ['alt+j']
+  - commands: ['resize --height -2%']
+    bindings: ['alt+k']
+  - commands: ['resize --height +2%']
+    bindings: ['alt+l']
+  - commands: ['resize --width +2%']
+    bindings: ['alt+;']
+    
+  # Move focused window in a given direction.
+  - commands: ['move --direction left']
+    bindings: ['alt+a']
+  - commands: ['move --direction down']
+    bindings: ['alt+s']
+  - commands: ['move --direction up']
+    bindings: ['alt+d']
+  - commands: ['move --direction right']
+    bindings: ['alt+f']
+
+  # --------------------------
+  # t,g,y,b
+  # --------------------------
+  # Change the focused window to be tiling.
+  - commands: ['set-tiling'] # MAYBE change back to 'toggle' instead of 'set'?
+    bindings: ['alt+t']
+
+  # Change the focused window to be floating. (orig Alt + sh + spacebar)
+  - commands: ['set-floating --centered']
+    bindings: ['alt+g']
+
+  # - commands: ['RESERVED For AHK -ON-TOP- command']
+  #   bindings: ['alt+b']
+
+  - commands: ['wm-reload-config'] #PLACEHOLDER command since no equiv 'accordion-layout' for glaze
+    bindings: ['alt+y']
+
+  # --------------------------
+  #  (Alt + Q,W,E,R) #TODO I tmp disabled these to try AHKs better functionality that's relative to window size (may be permanent choice, we'll see)
+  # --------------------------
+  # # set EXACT windows size: (1/4)-ish
+  # - commands: ['size --width 700 --height 500']
+  #   bindings: ['alt+q']
+
+  # # set EXACT windows size: (cmder-two-in-1-window) 
+  # - commands: ['size --width 1551 --height 700']
+  #   bindings: ['alt+w']
+
+  # # set EXACT windows size: (1/2)
+  # - commands: ['size --width 1263 --height 1328']
+  #   bindings: ['alt+e']
+
+  # # set EXACT windows size: (2/3) minus a little height 
+  # - commands: ['size --width 1551 --height 1024']
+  #   bindings: ['alt+r']
+
+  # --------------------------
+  # m,v,h 
+  # --------------------------
+  # Really only used for the glaze_autotiling_script.py window I want out of the way for good.
+  - commands: ['toggle-minimized']
+    bindings: ['alt+m']
+
+  # TODO?? currently can only 'toggle' dir, but eventually should change these two alt+H and alt+V commands to be SET horiz/vert like Aerosp
+  # Change tiling direction. This determines where new tiling windows will be inserted
+  - commands: ['toggle-tiling-direction']
+    bindings: ['alt+v']
+
+  # TMP COMMENTED OUT bc trying ALT-H as resize for TRELLO (tall-skinny)
+  # # TODO?? same as above alt+v
+  # # Change tiling direction. This determines where new tiling windows will be inserted
+  # - commands: ['toggle-tiling-direction'] 
+  #   bindings: ['alt+h']
+
+  # --------------------------
+  # numpad key [all AHK]
+  # --------------------------
+  # * CURRENTLY OUTSOURCING ALL OF numpad 3x3 move-window commands to AHK, since AHK **IS** able to mirror the MAC-side Numpad 3x3 behavior (at least at first glance)
+  #   bindings: ['alt+numpad1'] #* set in AHK already
+  #   bindings: ['alt+numpad2'] #* set in AHK already
+  #   bindings: ['alt+numpad3'] #* set in AHK already
+  #   bindings: ['alt+numpad4'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+numpad5'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+numpad6'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+numpad7'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+numpad8'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+numpad9'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+numpad0'] #* set in AHK already
+  #   bindings: ['alt+numpadAdd'] #* set in AHK already
+  #   bindings: ['alt+numpadMinus'] # optional
+  #   bindings: ['alt+numpadMultiply'] # optional
+  #   bindings: ['alt+z'] #* [ULTRA-OPTIMIZED-zzshortcuts vai AHK]
+
+  # --------------------------
+  # misc-leftover-commands...(like comma, -/+ etc)
+  # --------------------------
+  # TODO these 3 below are ACTIVE on AEROSP side so need2 add equiv commands here in glaze OR at vvey least assign them some placeholder command
+  - commands: ['toggle-tiling-direction'] # TODO??
+    bindings: ['alt+oem_comma']
+
+  # the BELOW TWO are supposed to be the glaze-equiv of "SMART-RESIZE" that Aerosp has, but no real equiv exists yet so this is sort of a PLACEHOLDER
+  - commands: ['size --width 700 --height 500'] # PLACEHOLDER for now until glaze adds 'SMART-RESIZE' feature
+    bindings: ['alt+-oem_minus']
+
+  - commands: ['size --width 1263 --height 1328'] # PLACEHOLDER for now until glaze adds 'SMART-RESIZE' feature
+    bindings: ['alt+oem_plus']
+
+
+  # oem_plus      ===   +
+  # oem_minus     ===   -
+  # oem_period    ===   .
+  # add           ===   the NUMPADS +
+  # subtract      ===   the NUMPADS -
+  # multiply      ===   the NUMPADS *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # (ALT + SHIFT) SECTION: (Section 4 of 5)
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # --------------------------
+  # qwer
+  # --------------------------
+  # Close focused window.
+  - commands: ['close']
+    bindings: ['alt+shift+q']
+
+  - commands: ['wm-redraw']
+    bindings: ['alt+shift+w']
+
+  # Kill GlazeWM process safely.
+  - commands: ['wm-exit']
+    bindings: ['alt+shift+e']
+
+  # Re-evaluate configuration file. 
+  - commands: ['wm-reload-config']
+    bindings: ['alt+shift+r']
+
+  # --------------------------
+  # x,L,t
+  # --------------------------
+  # Close all windows but current 
+  # TODO: low-pri but when have time see if you can't get AHK to do this command like Aerosp does right now.
+  - commands: ['wm-reload-config'] # PLACEHOLDER-COMMAND for now 
+    bindings: ['alt+shift+x']
+
+  # AHK-RESERVED BELOW: leave commented-out
+  # - commands: ['RESERVED FOR AHK command (launch-all-apps at startup)']
+  #   bindings: ['alt+shift+l']
+
+  # AHK-RESERVED BELOW: leave commented-out #TODO make decision on if we should scrap this duplicate binding of FLAOT WINDOW ON TOP and have only ALT-B be for it
+  # - commands: ['RESERVED FOR AHK command float ON TOP']
+  #   bindings: ['alt+shift+t']
+
+  # --------------------------
+  # numpad keys (Alt + Shift) group [all AHK]
+  # --------------------------
+
+  ###########################################################
+  # #* REMEMBER NONE of these commands can be defined here in Glaze bc of the dumb bug with numpad mod
+  # ALL OF THESE NUNMPAD COMMANDS BELOW MUST BE OUTSOURCED TO AHK OR SOMETHING
+  # WE MINE AS WELL ERASE THIS WHOLE SECTION TBH AND JUST LEAVE A IDENTIFIER representing this section so we dont froget that glaze commands wont work with these specific group
+  ###########################################################
+  # * AHK-RESERVED BELOW: 
+  #   bindings: ['alt+shift+numpad1'] #* set in AHK already
+  #   bindings: ['alt+shift+numpad2'] #* set in AHK already
+  #   bindings: ['alt+shift+numpad3'] #* set in AHK already
+  #   bindings: ['alt+shift+numpad4'] #* set in AHK already
+  #   bindings: ['alt+shift+numpad5'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+shift+numpad6'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+shift+numpad7'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+shift+numpad8'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+shift+numpad9'] # TODO but ONLY via AHK...
+  #   bindings: ['alt+shift+z'] #* ZZSHORTCUTS BACKUP COMMAND
+
+
+  # --------------------------
+  # misc-leftover-commands...
+  # --------------------------
+  # TODO: create/assign the "Super-Niche-but-actually-really-useful" command & try it out for a bit to see if worth keeping
+  # We CANNOT mirror this command on MAC side even with BTT so just using a PLACEHOLDER for this alt+shift+add binding for the MACs side, since it's still too useful on GlaZe side to REMOVE the command altogether just for universality across OS's sake
+  - commands: ['move --recent-workspace', 'focus --recent-workspace']
+    bindings: ['alt+shift+add'] # remember this is the 'NUMPADS 'add +' and NOT the common + sign 
+
+  # # ######################################
+  # ##### TEMPORARY BINDING I'M USING TO TRY AND DEBUG THE 'numpad' group commands not registering
+  # # ######################################
+  # - commands: ['size --width 700 --height 500']
+  #   bindings: ['alt+shift+numpad1'] # remember this is the 'NUMPADS 'add +' and NOT the common + sign 
+  #   # bindings: ['alt+shift+cmd+numpad8'] # remember this is the 'NUMPADS 'add +' and NOT the common + sign 
+  #   # bindings: ['alt+shift+cmd+numpad8'] # remember this is the 'NUMPADS 'add +' and NOT the common + sign 
+  #   # bindings: ['alt+shift+cmd+numpad8'] # remember this is the 'NUMPADS 'add +' and NOT the common + sign 
+
+  # - commands: ['size --width 700 --height 500']
+  #   bindings: ['alt+numpad1'] # remember thi
+
+  # - commands: ['size --width 700 --height 500']
+  #   bindings: ['ctrl+numpad1'] # remember thi
+
+  # - commands: ['size --width 700 --height 500']
+  #   bindings: ['ctrl+shift+numpad1'] # remember thi
+
+  # - commands: ['size --width 700 --height 500']
+  #   bindings: ['ctrl+alt+numpad1'] # remember thi
+
+  # - commands: ['focus --workspace 4']
+  #   bindings: ['ctrl+alt+numpad1']
+
+
+
+
+
+
+
+
+
+
+# C:\Users\aking\Downloads\cmder\vendor
+
+
+
+
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # WORKSPACES SECTION + MISC NOTES/WINDOW-SPY (aka graveyard): (Section 5 of 5)
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # Change focus to a workspace defined in `workspaces` config.
+  - commands: ['focus --workspace 1']
+    bindings: ['alt+1']
+  - commands: ['focus --workspace 2']
+    bindings: ['alt+2']
+  - commands: ['focus --workspace 3']
+    bindings: ['alt+3']
+  - commands: ['focus --workspace 4']
+    bindings: ['alt+4']
+  - commands: ['focus --workspace 5']
+    bindings: ['alt+5']
+  - commands: ['focus --workspace AI(6)']
+    bindings: ['alt+6']
+  - commands: ['focus --workspace teams/outlook(7)']
+    bindings: ['alt+7']
+  - commands: ['focus --workspace excel(8)']
+    bindings: ['alt+8']
+  - commands: ['focus --workspace github/trello(9)']
+    bindings: ['alt+9']
+  - commands: ['focus --workspace 0']
+    bindings: ['alt+0']
+
+  # Move focused window to a workspace defined in `workspaces` config. 
+  # (prev would ALSO jump to that workplace yourself but deactivated it)
+  - commands: ['move --workspace 1']
+    bindings: ['alt+shift+1']
+  - commands: ['move --workspace 2']
+    bindings: ['alt+shift+2']
+  - commands: ['move --workspace 3']
+    bindings: ['alt+shift+3']
+  - commands: ['move --workspace 4']
+    bindings: ['alt+shift+4']
+  - commands: ['move --workspace 5']
+    bindings: ['alt+shift+5']
+  - commands: ['move --workspace AI(6)']
+    bindings: ['alt+shift+6']
+  - commands: ['move --workspace teams/outlook(7)']
+    bindings: ['alt+shift+7']
+  - commands: ['move --workspace excel(8)']
+    bindings: ['alt+shift+8']
+  - commands: ['move --workspace github/trello(9)']
+    bindings: ['alt+shift+9']
+  - commands: ['move --workspace 0']
+    bindings: ['alt+shift+0']
+
+  ################################################################
+  ############### WINDOW/APP targeting info ######################
+  ################################################################
+
+  # [WINDOW-TITLE]
+  # ahk_class [CLASS_NAME]
+  # ahk_exe ConEmu64.exe [PROCESS_NAME]
+  # ahk_pid 44196
+  # ahk_id 11144428
+
+  # (below is info for TEAMS live-meeting-window (&need a way to differentiate it from the generic-Teams settings which are using the 'ms-teams' process identifier))
+  # cyberSCADA Retrospective 3.0 | Microsoft Teams
+  # ahk_class TeamsWebView
+  # ahk_exe ms-teams.exe
+  # ahk_pid 19300
+  # ahk_id 66784174
+
+  # (0) OpenViewNET   SAMPLE: admin
+  # ahk_class WindowsForms10.Window.8.app.0.1e84ccb_r8_ad1
+  # ahk_exe OpenViewNET.exe
+  # ahk_pid 39340
+  # ahk_id 1249626
+
+  # Summary - Alarms - ViewPoint
+  # ahk_class WindowsForms10.Window.8.app.0.1e84ccb_r8_ad1
+  # ahk_exe OpenViewNET.exe
+  # ahk_pid 39340
+  # ahk_id 1447048
+
+  # File Explorer
+  # ahk_class CabinetWClass
+  # ahk_exe explorer.exe
+  # ahk_pid 14988
+  # ahk_id 6160808
+
+  # WinMerge - [scadaapi.h - scadaapi.h]
+  # ahk_class WinMergeWindowClassW
+  # ahk_exe WinMergeU.exe
+  # ahk_pid 33604
+  # ahk_id 2101994
+
+  # Administrator: PowerToys Settings
+
+  # src - Microsoft Visual Studio 
+  # ahk_class HwndWrapper[DefaultDomain;;3c07f7aa-08bc-4b44-90db-ab2a04773ebf]
+  # ahk_exe devenv.exe
+  # ahk_pid 18480
+  # ahk_id 1968884
+
+  # Cmder
+  # ahk_class VirtualConsoleClass
+  # ahk_exe ConEmu64.exe
+  # ahk_pid 44196
+  # ahk_id 11144428
+
+  # config.yaml - Visual Studio Code
+  # ahk_class Chrome_WidgetWin_1
+  # ahk_exe Code.exe
+  # ahk_pid 16424
+  # ahk_id 660626
+
+  # merge/bug/SWR-211500 by SCADA-User · Pull Request #1042 · osi/ViewPoint - Google Chrome
+  # ahk_class Chrome_WidgetWin_1
+  # ahk_exe chrome.exe
+  # ahk_pid 40968
+  # ahk_id 1050962
+
+  # "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\devenv.exe"
+  #- window_title: { equals: 'scada_ws_adaptor????'}
+  #- window_title: { equals: 'DevTools'}
+  #- window_title: { equals: 'Inspect with Chrome Developer Tools - Google Chrome'}
+
+  # FOUND PERFECT TRAINING PPT WATCH THIS WHOLE THING ASSAP SCADA Training.ppt  -  Compatibility Mode - PowerPoint
+  # ahk_class PPTFrameClass
+  # ahk_exe POWERPNT.EXE
+  # ahk_pid 872
+  # ahk_id 1249058
+
+  # (below is the main_glaze_autotiling.py script window)
+  # C:\Windows\py.exe
+  # ahk_class ConsoleWindowClass
+  # ahk_exe py.exe
+  # ahk_pid 1640
+  # ahk_id 397062
+
+  # Sticky Notes
+  # ahk_class ApplicationFrameWindow
+  # ahk_exe ApplicationFrameHost.exe
+  # ahk_pid 18024
+  # ahk_id 526904
+
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # END OF THE DOC 
+  # ##################################################################################################################
+  # ################################################################################################################## 
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+  # ##################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# general:
+#   # Commands to run when the WM has started. This is useful for running a
+#   # script or launching another application.
+#   # Example: The below command launches Zebar.
+#   startup_commands: ['shell-exec zebar']
+
+#   # Commands to run just before the WM is shutdown.
+#   # Example: The below command kills Zebar.
+#   shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F']
+
+#   # Commands to run after the WM config is reloaded.
+#   config_reload_commands: []
+
+#   # Whether to automatically focus windows underneath the cursor.
+#   focus_follows_cursor: false
+
+#   # Whether to switch back and forth between the previously focused
+#   # workspace when focusing the current workspace.
+#   toggle_workspace_on_refocus: false
+
+#   cursor_jump:
+#     # Whether to automatically move the cursor on the specified trigger.
+#     enabled: true
+
+#     # Trigger for cursor jump:
+#     # - 'monitor_focus': Jump when focus changes between monitors.
+#     # - 'window_focus': Jump when focus changes between windows.
+#     trigger: 'monitor_focus'
+
+#   # How windows should be hidden when switching workspaces.
+#   # - 'cloak': Recommended. Hides windows with no animation.
+#   # - 'hide': Legacy method (v3.5 and earlier) that has a brief animation,
+#   # but has stability issues with some apps.
+#   hide_method: 'cloak'
+
+#   # Affects which windows get shown in the native Windows taskbar. Has no
+#   # effect if `hide_method: 'hide'`.
+#   # - 'true': Show all windows (regardless of workspace).
+#   # - 'false': Only show windows from the currently shown workspaces.
+#   show_all_in_taskbar: false
+
+# gaps:
+#   # Whether to scale the gaps with the DPI of the monitor.
+#   scale_with_dpi: true
+
+#   # Gap between adjacent windows.
+#   inner_gap: '20px'
+
+#   # Gap between windows and the screen edge.
+#   outer_gap:
+#     top: '60px'
+#     right: '20px'
+#     bottom: '20px'
+#     left: '20px'
+
+# window_effects:
+#   # Visual effects to apply to the focused window.
+#   focused_window:
+#     # Highlight the window with a colored border.
+#     # ** Exclusive to Windows 11 due to API limitations.
+#     border:
+#       enabled: true
+#       color: '#8dbcff'
+
+#     # Remove the title bar from the window's frame. Note that this can
+#     # cause rendering issues for some applications.
+#     hide_title_bar:
+#       enabled: false
+
+#     # Change the corner style of the window's frame.
+#     # ** Exclusive to Windows 11 due to API limitations.
+#     corner_style:
+#       enabled: false
+#       # Allowed values: 'square', 'rounded', 'small_rounded'.
+#       style: 'square'
+
+#     # Change the transparency of the window.
+#     transparency:
+#       enabled: false
+#       # Can be something like '95%' or '0.95' for slightly transparent windows.
+#       # '0' or '0%' is fully transparent (and, by consequence, unfocusable).
+#       opacity: '95%'
+
+#   # Visual effects to apply to non-focused windows.
+#   other_windows:
+#     border:
+#       enabled: true
+#       color: '#a1a1a1'
+#     hide_title_bar:
+#       enabled: false
+#     corner_style:
+#       enabled: false
+#       style: 'square'
+#     transparency:
+#       enabled: false
+#       opacity: '0%'
+
+# window_behavior:
+#   # New windows are created in this state whenever possible.
+#   # Allowed values: 'tiling', 'floating'.
+#   initial_state: 'tiling'
+
+#   # Sets the default options for when a new window is created. This also
+#   # changes the defaults for when the state change commands, like
+#   # `set-floating`, are used without any flags.
+#   state_defaults:
+#     floating:
+#       # Whether to center floating windows by default.
+#       centered: true
+
+#       # Whether to show floating windows as always on top.
+#       shown_on_top: false
+
+#     fullscreen:
+#       # Maximize the window if possible. If the window doesn't have a
+#       # maximize button, then it'll be fullscreen'ed normally instead.
+#       maximized: false
+
+#       # Whether to show fullscreen windows as always on top.
+#       shown_on_top: false
+
+# workspaces:
+#   - name: '1'
+#   - name: '2'
+#   - name: '3'
+#   - name: '4'
+#   - name: '5'
+#   - name: '6'
+#   - name: '7'
+#   - name: '8'
+#   - name: '9'
+
+# window_rules:
+#   - commands: ['ignore']
+#     match:
+#       # Ignores any Zebar windows.
+#       - window_process: { equals: 'zebar' }
+
+#       # Ignores picture-in-picture windows for browsers.
+#       - window_title: { regex: '[Pp]icture.in.[Pp]icture' }
+#         window_class: { regex: 'Chrome_WidgetWin_1|MozillaDialogClass' }
+
+#       # Ignore rules for various 3rd-party apps.
+#       - window_process: { equals: 'PowerToys' }
+#         window_class: { regex: 'HwndWrapper\[PowerToys\.PowerAccent.*?\]' }
+#       - window_process: { equals: 'PowerToys' }
+#         window_title: { regex: '.*? - Peek' }
+#       - window_process: { equals: 'Lively' }
+#         window_class: { regex: 'HwndWrapper' }
+#       - window_process: { equals: 'EXCEL' }
+#         window_class: { not_regex: 'XLMAIN' }
+#       - window_process: { equals: 'WINWORD' }
+#         window_class: { not_regex: 'OpusApp' }
+#       - window_process: { equals: 'POWERPNT' }
+#         window_class: { not_regex: 'PPTFrameClass' }
+
+# binding_modes:
+#   # When enabled, the focused window can be resized via arrow keys or HJKL.
+#   - name: 'resize'
+#     keybindings:
+#       - commands: ['resize --width -2%']
+#         bindings: ['h', 'left']
+#       - commands: ['resize --width +2%']
+#         bindings: ['l', 'right']
+#       - commands: ['resize --height +2%']
+#         bindings: ['k', 'up']
+#       - commands: ['resize --height -2%']
+#         bindings: ['j', 'down']
+#       # Press enter/escape to return to default keybindings.
+#       - commands: ['wm-disable-binding-mode --name resize']
+#         bindings: ['escape', 'enter']
+
+# keybindings:
+#   # Shift focus in a given direction.
+#   - commands: ['focus --direction left']
+#     bindings: ['alt+h', 'alt+left']
+#   - commands: ['focus --direction right']
+#     bindings: ['alt+l', 'alt+right']
+#   - commands: ['focus --direction up']
+#     bindings: ['alt+k', 'alt+up']
+#   - commands: ['focus --direction down']
+#     bindings: ['alt+j', 'alt+down']
+
+#   # Move focused window in a given direction.
+#   - commands: ['move --direction left']
+#     bindings: ['alt+shift+h', 'alt+shift+left']
+#   - commands: ['move --direction right']
+#     bindings: ['alt+shift+l', 'alt+shift+right']
+#   - commands: ['move --direction up']
+#     bindings: ['alt+shift+k', 'alt+shift+up']
+#   - commands: ['move --direction down']
+#     bindings: ['alt+shift+j', 'alt+shift+down']
+
+#   # Resize focused window by a percentage or pixel amount.
+#   - commands: ['resize --width -2%']
+#     bindings: ['alt+u']
+#   - commands: ['resize --width +2%']
+#     bindings: ['alt+p']
+#   - commands: ['resize --height +2%']
+#     bindings: ['alt+o']
+#   - commands: ['resize --height -2%']
+#     bindings: ['alt+i']
+
+#   # As an alternative to the resize keybindings above, resize mode enables
+#   # resizing via arrow keys or HJKL. The binding mode is defined above with
+#   # the name 'resize'.
+#   - commands: ['wm-enable-binding-mode --name resize']
+#     bindings: ['alt+r']
+
+#   # Disables window management and all other keybindings until alt+shift+p
+#   # is pressed again.
+#   - commands: ['wm-toggle-pause']
+#     bindings: ['alt+shift+p']
+
+#   # Change tiling direction. This determines where new tiling windows will
+#   # be inserted.
+#   - commands: ['toggle-tiling-direction']
+#     bindings: ['alt+v']
+
+#   # Change focus from tiling windows -> floating -> fullscreen.
+#   - commands: ['wm-cycle-focus']
+#     bindings: ['alt+space']
+
+#   # Change the focused window to be floating.
+#   - commands: ['toggle-floating --centered']
+#     bindings: ['alt+shift+space']
+
+#   # Change the focused window to be tiling.
+#   - commands: ['toggle-tiling']
+#     bindings: ['alt+t']
+
+#   # Change the focused window to be fullscreen.
+#   - commands: ['toggle-fullscreen']
+#     bindings: ['alt+f']
+
+#   # Minimize focused window.
+#   - commands: ['toggle-minimized']
+#     bindings: ['alt+m']
+
+#   # Close focused window.
+#   - commands: ['close']
+#     bindings: ['alt+shift+q']
+
+#   # Kill GlazeWM process safely.
+#   - commands: ['wm-exit']
+#     bindings: ['alt+shift+e']
+
+#   # Re-evaluate configuration file.
+#   - commands: ['wm-reload-config']
+#     bindings: ['alt+shift+r']
+
+#   # Redraw all windows.
+#   - commands: ['wm-redraw']
+#     bindings: ['alt+shift+w']
+
+#   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
+#   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
+#   # Terminal and Git Bash respectively.
+#   - commands: ['shell-exec cmd']
+#     bindings: ['alt+enter']
+
+#   # Focus the next/previous active workspace defined in `workspaces` config.
+#   - commands: ['focus --next-active-workspace']
+#     bindings: ['alt+s']
+#   - commands: ['focus --prev-active-workspace']
+#     bindings: ['alt+a']
+
+#   # Focus the workspace that last had focus.
+#   - commands: ['focus --recent-workspace']
+#     bindings: ['alt+d']
+
+#   # Change focus to a workspace defined in `workspaces` config.
+#   - commands: ['focus --workspace 1']
+#     bindings: ['alt+1']
+#   - commands: ['focus --workspace 2']
+#     bindings: ['alt+2']
+#   - commands: ['focus --workspace 3']
+#     bindings: ['alt+3']
+#   - commands: ['focus --workspace 4']
+#     bindings: ['alt+4']
+#   - commands: ['focus --workspace 5']
+#     bindings: ['alt+5']
+#   - commands: ['focus --workspace 6']
+#     bindings: ['alt+6']
+#   - commands: ['focus --workspace 7']
+#     bindings: ['alt+7']
+#   - commands: ['focus --workspace 8']
+#     bindings: ['alt+8']
+#   - commands: ['focus --workspace 9']
+#     bindings: ['alt+9']
+
+#   # Move the focused window's parent workspace to a monitor in a given
+#   # direction.
+#   - commands: ['move-workspace --direction left']
+#     bindings: ['alt+shift+a']
+#   - commands: ['move-workspace --direction right']
+#     bindings: ['alt+shift+f']
+#   - commands: ['move-workspace --direction up']
+#     bindings: ['alt+shift+d']
+#   - commands: ['move-workspace --direction down']
+#     bindings: ['alt+shift+s']
+
+#   # Move focused window to a workspace defined in `workspaces` config.
+#   - commands: ['move --workspace 1', 'focus --workspace 1']
+#     bindings: ['alt+shift+1']
+#   - commands: ['move --workspace 2', 'focus --workspace 2']
+#     bindings: ['alt+shift+2']
+#   - commands: ['move --workspace 3', 'focus --workspace 3']
+#     bindings: ['alt+shift+3']
+#   - commands: ['move --workspace 4', 'focus --workspace 4']
+#     bindings: ['alt+shift+4']
+#   - commands: ['move --workspace 5', 'focus --workspace 5']
+#     bindings: ['alt+shift+5']
+#   - commands: ['move --workspace 6', 'focus --workspace 6']
+#     bindings: ['alt+shift+6']
+#   - commands: ['move --workspace 7', 'focus --workspace 7']
+#     bindings: ['alt+shift+7']
+#   - commands: ['move --workspace 8', 'focus --workspace 8']
+#     bindings: ['alt+shift+8']
+#   - commands: ['move --workspace 9', 'focus --workspace 9']
+#     bindings: ['alt+shift+9']
