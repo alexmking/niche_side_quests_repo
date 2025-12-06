@@ -308,7 +308,7 @@ alias e.="open ."
 alias add_alias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 alias addalias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 # clean up/standardize these ls aliases later...
-alias ls="ls -a"
+alias lsall="ls -a"
 alias show_hidden="ls -a"
 alias lsonlyhidden="ls -ad .*"
 alias lswithhidden="ls -a"
