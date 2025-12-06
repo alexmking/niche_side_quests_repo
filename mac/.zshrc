@@ -305,8 +305,15 @@ alias go="cd /Users/alexking"
 alias golocal="cd /Users/alexking/local_docs"
 alias explorer="open ."
 alias e.="open ."
-alias add_alias="code ~/.zshrc"
-alias addalias="code ~/.zshrc"
+alias add_alias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
+alias addalias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
+# clean up/standardize these ls aliases later...
+alias ls="ls -a"
+alias lsnohidden="ls"
+alias show_hidden="ls -a"
+alias lsonlyhidden="ls -ad .*"
+alias lswithhidden="ls -a"
+
 
 # alias sz="source ~/.zshrc; echo '~/zshrc sourced :)'"
 # alias sourcezshrc="source ~/.zshrc; echo '~/zshrc sourced :)'"
