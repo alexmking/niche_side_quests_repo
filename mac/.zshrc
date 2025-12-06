@@ -309,10 +309,14 @@ alias add_alias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 alias addalias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 # clean up/standardize these ls aliases later...
 alias ls="ls -a"
-alias lsnohidden="ls"
 alias show_hidden="ls -a"
 alias lsonlyhidden="ls -ad .*"
 alias lswithhidden="ls -a"
+alias lsh="ls -a"
+alias lsnorm="ls"
+alias lsregular="ls"
+alias lsdefault="ls"
+alias lsnohidden="ls"
 
 
 # alias sz="source ~/.zshrc; echo '~/zshrc sourced :)'"
