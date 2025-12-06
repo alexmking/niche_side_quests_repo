@@ -1,0 +1,8 @@
+plan to move cmder config files here:
+
+Iniital attempt to move everything caused too many issues but when I have time we'll try the following:
+1. setup user env variable in windows sys variable CMDER_USER_CONFIG == D:\git\niche_side_quests_repo\win\cmder_config (verify via opening cmder and running 'cmder set'). Currently CMDER_USER_CONFIG has always been set to C:\Users\aking\Downloads\cmder\config)
+2. instead of missing with a bunch of symbolic links, just bring entire contents of "C:\Users\aking\Downloads\cmder\config" dir and move to our new CMDER_USER_CONFIG path.
+3. Then we should be able to leave everything else as is, including the CMDER_ROOT dir etc and everything should update seemlessly (no big delay etc)
+
+(until then I'm just going to continue manually updating the config files via winmerge when I can (at least for cmder config, other configs will be easier to move to the repo w no issues))
