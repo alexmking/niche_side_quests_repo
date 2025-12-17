@@ -288,7 +288,7 @@ HYPER-s		    open_screenshots in file expl...
 HYPER-d		    ________
 HYPER-f		    switch to firefox
 HYPER-g		    chrome-specific: switch to chatGPT 'SUMMARY INSERTS' chat
-HYPER-h		    ________
+HYPER-h		    color picker (H for 'HEX' since C for 'color' was unavail)
 HYPER-j		    ________
 HYPER-k		    ________
 HYPER-l		    ________

@@ -170,7 +170,7 @@
   typeset -g segment_1_background_color=015 # 15  
   typeset -g segment_2_background_color=107 #14, 106, 107, 149, 10
   typeset -g segment_3_background_color=64  # 64,  2, 22   (106 is good BUT i think too bright to fit w rest)
-  typeset -g segment_4_background_color=10  # 64, 22
+  typeset -g segment_4_background_color=148  # 142, 106, 002, 10, 64, 22
 
 
   # # EXTREME OPTION im playing w where it's more dark green than light overall
@@ -519,7 +519,7 @@
   # Transparent background.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_BACKGROUND=
   # Green prompt symbol if the last command succeeded.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=76  #76
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=107  #76
   # Red prompt symbol if the last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=196 #196
   # Default prompt symbol.
