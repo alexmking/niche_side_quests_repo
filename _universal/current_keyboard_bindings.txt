@@ -1,5 +1,10 @@
 [MOVE THIS DOC TO MY PERSONAL REPO 'side quests' and then CHANGE THE hotkey/alias paths accpordingly]
 
+[
+TMP TIP 'fzfkeyb' with 'avail':
+when adding a new shortcut, use 'fzfkeyb' with 'avail' to quickly see all the keyb shortcuts you can assign it to w/o worrying about conflicts
+]
+
 current_keyboard_bindings
 [THREE MAIN SECTIONS]
 1. ALT-ONLY group of keybShortcuts
@@ -20,9 +25,9 @@ alt-U	focus left/down/up/right group of commands
 alt-I	focus left/down/up/right group of commands
 alt-O	focus left/down/up/right group of commands
 alt-p	focus left/down/up/right group of commands
-alt-[	________
-alt-]	________
-alt-\	________
+alt-[	________avail
+alt-]	________avail
+alt-\	________avail
 	
 alt-a	    move window' group of commands
 alt-s	    move window' group of commands
@@ -34,26 +39,26 @@ alt-j	    shrink/grow window' group of commands
 alt-k	    shrink/grow window' group of commands		(TEMP DISABLED ON MAC-Aerosp bc of conflict with Raycasts dumb UNMODIFIABLE Cmd-K action)
 alt-L	    shrink/grow window' group of commands
 alt-;	    shrink/grow window' group of commands
-alt-'	    ________
-alt-enter   ________
+alt-'	    ________avail
+alt-enter   ________avail
 
 alt-Z	ULTRA-OPTIMIZED-zzshortcuts command (likely will be moved to Fn to replace the prev zzshortcuts key)
-alt-x   ________
-alt-c   ________
+alt-x   ________avail
+alt-c   ________avail
 alt-v	set VERTICAL tile-style
 alt-b	pin-window-to-top
-alt-n   ________
+alt-n   ________avail
 alt-m	minimize-window
-alt-,   ________
-alt-.   ________
-alt-/   ________
+alt-,   ________avail
+alt-.   ________avail
+alt-/   ________avail
 
-alt-LeftArr	    ________
-alt-RightArr	________
-alt-UpArr	    ________
-alt-DownArr	    ________
+alt-LeftArr	    ________avail
+alt-RightArr	________avail
+alt-UpArr	    ________avail
+alt-DownArr	    ________avail
 
-alt-`		________
+alt-`		________avail
 alt-1	    jump focus to desktop 1
 alt-2	    jump focus to desktop 2
 alt-3       jump focus to desktop 3
@@ -64,22 +69,22 @@ alt-7	    jump focus to desktop 7
 alt-8	    jump focus to desktop 8
 alt-9	    jump focus to desktop 9
 alt-0       jump focus to desktop 10
-alt--	    ________
-alt-=	    ________
+alt--	    ________avail
+alt-=	    ________avail
 
 (alt+fn+fKey)
-alt-Fn1	    ________
-alt-Fn2	    ________
-alt-Fn3	    ________
-alt-Fn4	    ________
-alt-Fn5	    ________
-alt-Fn6	    ________
-alt-Fn7	    ________
-alt-Fn8	    ________
-alt-Fn9	    ________
-alt-Fn10	________
-alt-Fn11	________
-alt-Fn12	________
+alt-Fn1	    ________avail
+alt-Fn2	    ________avail
+alt-Fn3	    ________avail
+alt-Fn4	    ________avail
+alt-Fn5	    ________avail
+alt-Fn6	    ________avail
+alt-Fn7	    ________avail
+alt-Fn8	    ________avail
+alt-Fn9	    ________avail
+alt-Fn10	________avail
+alt-Fn11	________avail
+alt-Fn12	________avail
 
 alt-numpad1	    3x3 numpadGrid for 'move-window' 
 alt-numpad2	    3x3 numpadGrid for 'move-window' 
@@ -134,46 +139,46 @@ alt-shift-q		quit/close window
 alt-shift-w		reset/redraw windows
 alt-shift-e		exit Aerosp/Glaze
 alt-shift-r		reload-config
-alt-shift-t		________
-alt-shift-y		________
-alt-shift-u		________
-alt-shift-i		________
-alt-shift-o		________
-alt-shift-p     ________
-alt-shift-[		________
-alt-shift-]		________
-alt-shift-\		________
+alt-shift-t		________avail
+alt-shift-y		________avail
+alt-shift-u		________avail
+alt-shift-i		________avail
+alt-shift-o		________avail
+alt-shift-p     ________avail
+alt-shift-[		________avail
+alt-shift-]		________avail
+alt-shift-\		________avail
 
-alt-shift-a		    ________
-alt-shift-s		    ________
-alt-shift-d		    ________
-alt-shift-f		    ________
-alt-shift-g		    ________
-alt-shift-h		    ________
-alt-shift-j		    ________
-alt-shift-k		    ________
+alt-shift-a		    ________avail
+alt-shift-s		    ________avail
+alt-shift-d		    ________avail
+alt-shift-f		    ________avail
+alt-shift-g		    ________avail
+alt-shift-h		    ________avail
+alt-shift-j		    ________avail
+alt-shift-k		    ________avail
 alt-shift-L		    launch-all-important-apps
-alt-shift-;		    ________
-alt-shift-'		    ________
-alt-shift-enter     ________
+alt-shift-;		    ________avail
+alt-shift-'		    ________avail
+alt-shift-enter     ________avail
 
 alt-shift-Z		Backup zzshortcuts for when (ALT-Z) fails (when we call it from uncommon apps) command 
 alt-shift-x		close-all-windows-but-curr
-alt-shift-c		________
-alt-shift-v		________
-alt-shift-b		________
-alt-shift-n		________
-alt-shift-m		________
-alt-shift-,		________
-alt-shift-.		________
-alt-shift-/		________
+alt-shift-c		________avail
+alt-shift-v		________avail
+alt-shift-b		________avail
+alt-shift-n		________avail
+alt-shift-m		________avail
+alt-shift-,		________avail
+alt-shift-.		________avail
+alt-shift-/		________avail
 
-alt-shift-LeftArr	    ________
-alt-shift-RightArr  	________
-alt-shift-UpArr	        ________
-alt-shift-DownArr	    ________
+alt-shift-LeftArr	    ________avail
+alt-shift-RightArr  	________avail
+alt-shift-UpArr	        ________avail
+alt-shift-DownArr	    ________avail
     
-alt-`		________
+alt-`		________avail
 alt-1	    move window to desktop 1
 alt-2	    move window to desktop 2
 alt-3       move window to desktop 3
@@ -184,22 +189,22 @@ alt-7	    move window to desktop 7
 alt-8	    move window to desktop 8
 alt-9	    move window to desktop 9
 alt-0       move window to desktop 10
-alt--	    ________
-alt-=	    ________
+alt--	    ________avail
+alt-=	    ________avail
 
 (alt+fn+fKey)
-alt-Fn1	    ________
-alt-Fn2	    ________
-alt-Fn3	    ________
-alt-Fn4	    ________
-alt-Fn5	    ________
-alt-Fn6	    ________
-alt-Fn7	    ________
-alt-Fn8	    ________
-alt-Fn9	    ________
-alt-Fn10	________
-alt-Fn11	________
-alt-Fn12	________
+alt-Fn1	    ________avail
+alt-Fn2	    ________avail
+alt-Fn3	    ________avail
+alt-Fn4	    ________avail
+alt-Fn5	    ________avail
+alt-Fn6	    ________avail
+alt-Fn7	    ________avail
+alt-Fn8	    ________avail
+alt-Fn9	    ________avail
+alt-Fn10	________avail
+alt-Fn11	________avail
+alt-Fn12	________avail
 
 alt-shift-numpad1	VolumeDown (Misc-numpad group of commands)
 alt-shift-numpad2	VolumeUp (Misc-numpad group of commands)
@@ -208,9 +213,9 @@ alt-shift-numpad4	env_optimizations excel doc (Misc-numpad group of commands)
 alt-shift-numpad5	________ TODO: This specific keybinding is ONLY avail on MAC side (bc WINDOWS sides rules around Numpad+Shift prevent it)
 alt-shift-numpad6	go_to_BTT (for mac side at least, TBD what Windows side will be, maybe AutoHotKey aHK? __?  (Misc-numpad group of commands)
 alt-shift-numpad7	go_to_Copilot / GPT 
-alt-shift-numpad8	________ TODO: 
+alt-shift-numpad8	________ avail? TODO: 
 alt-shift-numpad9	GithubDesktop (MAYBE? Bc it's almost just as fast as searching it via flow launcher/raycast)
-alt-shift-numpad0	________ TODO: 
+alt-shift-numpad0	________ avail? TODO: 
 
 
 
@@ -269,87 +274,87 @@ alt-shift-numpad0	________ TODO:
 =====================================
 (HYPERKEY) group of commands	
 =====================================
-HYPER-q		________
+HYPER-q		________avail
 HYPER-w		(opens Microsoft Word?)
 HYPER-e		open quick_ref dir in file expl
-HYPER-r		________
-HYPER-t		________
-HYPER-y		________
-HYPER-u		________
-HYPER-i		________
-HYPER-o		________
-HYPER-p		________
-HYPER-[		________
-HYPER-]		________
-HYPER-\		________
+HYPER-r		________avail
+HYPER-t		________avail
+HYPER-y		________avail
+HYPER-u		________avail
+HYPER-i		________avail
+HYPER-o		________avail
+HYPER-p		________avail
+HYPER-[		________avail
+HYPER-]		________avail
+HYPER-\		________avail 
 	
-HYPER-a		    ________
+HYPER-a		    ________avail
 HYPER-s		    open_screenshots in file expl...
-HYPER-d		    ________
+HYPER-d		    ________avail
 HYPER-f		    switch to firefox
 HYPER-g		    chrome-specific: switch to chatGPT 'SUMMARY INSERTS' chat
-HYPER-h		    color picker (H for 'HEX' since C for 'color' was unavail)
-HYPER-j		    ________
-HYPER-k		    ________
-HYPER-l		    ________
-HYPER-;		    ________
-HYPER-'		    ________
-HYPER-enter     ________
+HYPER-h		    color picker (H for 'HEX' since C for 'color' was already taken)
+HYPER-j		    ________avail
+HYPER-k		    ________avail
+HYPER-l		    ________avail
+HYPER-;		    ________avail
+HYPER-'		    ________avail
+HYPER-enter     ________avail
 	
-HYPER-z		________
-HYPER-x		________
+HYPER-z		________avail
+HYPER-x		________avail
 HYPER-c		raycast clipboard manager
 HYPER-v		Raycast Paste clipboard items one after another (paste-sequentially) (so each HYPER-v pastes another clipboard item)
-HYPER-b		________
-HYPER-n		________
+HYPER-b		________avail
+HYPER-n		________avail
 HYPER-m		switch windows (prob del this one as was just a 'trying out' of some diff raycast commands I thought soundded compelling 
-HYPER-,		________
-HYPER-.		________
-HYPER-/		________
+HYPER-,		________avail
+HYPER-.		________avail
+HYPER-/		________avail
 	
-HYPER-LeftArr	________
-HYPER-RightArr	________
-HYPER-UpArr	    ________
-HYPER-DownArr	________
+HYPER-LeftArr	________avail
+HYPER-RightArr	________avail
+HYPER-UpArr	    ________avail
+HYPER-DownArr	________avail
 
-HYPER-`		________
-HYPER-1	    ________
-HYPER-2	    ________
+HYPER-`		________avail
+HYPER-1	    ________avail
+HYPER-2	    ________avail
 HYPER-3     Emoji search (akin to numbpad3 keyb (may need to be set up on WINDOWS side bc used Raycast on MACside))
-HYPER-4	    ________
-HYPER-5	    ________
-HYPER-6	    ________
-HYPER-7	    ________
-HYPER-8	    ________
-HYPER-9	    ________
-HYPER-0     ________
-HYPER--	    ________
-HYPER-=	    ________
+HYPER-4	    ________avail
+HYPER-5	    ________avail
+HYPER-6	    ________avail
+HYPER-7	    ________avail
+HYPER-8	    ________avail
+HYPER-9	    ________avail
+HYPER-0     ________avail
+HYPER--	    ________avail
+HYPER-=	    ________avail
 
 (HYPER+fn+fKey)
-HYPER-Fn1	________
-HYPER-Fn2	________
-HYPER-Fn3	________
-HYPER-Fn4	________
-HYPER-Fn5	________
-HYPER-Fn6	________
-HYPER-Fn7	________
+HYPER-Fn1	________avail
+HYPER-Fn2	________avail
+HYPER-Fn3	________avail
+HYPER-Fn4	________avail
+HYPER-Fn5	________avail
+HYPER-Fn6	________avail
+HYPER-Fn7	________avail
 HYPER-Fn8	switch to excel doc zzshorts
-HYPER-Fn9	________
-HYPER-Fn10	________
-HYPER-Fn11	________
-HYPER-Fn12	________
+HYPER-Fn9	________avail
+HYPER-Fn10	________avail
+HYPER-Fn11	________avail
+HYPER-Fn12	________avail
 
-HYPER-numpad1       ________
-HYPER-numpad2	    ________
+HYPER-numpad1       ________avail
+HYPER-numpad2	    ________avail
 HYPER-numpad3       Emoji search (akin to numbpad3 keyb (may need to be set up on WINDOWS side bc used Raycast on MACside))
-HYPER-numpad4	    ________
-HYPER-numpad5	    ________
-HYPER-numpad6	    ________
-HYPER-numpad7	    ________
-HYPER-numpad8	    ________
-HYPER-numpad9	    ________
-HYPER-numpad0       ________
+HYPER-numpad4	    ________avail
+HYPER-numpad5	    ________avail
+HYPER-numpad6	    ________avail
+HYPER-numpad7	    ________avail
+HYPER-numpad8	    ________avail
+HYPER-numpad9	    ________avail
+HYPER-numpad0       ________avail
 
 
 
@@ -387,7 +392,7 @@ HYPER-numpad0       ________
 DELETE THESE NOTES BELOW AFTER A WHILE...
 =================================================================================
 > these are all the keys that can be paired with each of the 3 modifier groups this doc is for (ALT, ALT+SHIFT, and HYPER)
-> (it's imp to show all of these bc then you're able to quickly see which keys are AVAIL/OPEN)
+> (it's imp to show all of these bc then you're able to quickly see which keys/bindings are unused atm (aka are OPEN to be assigned))
 > (also note I'm prob not going to include the keys around the numpad bc of how often they are interpreted differently from OS to OS, but the numpad keys themselves are still fair game obvi)
 
 > each of the 3 groups should have 7 sections which are defined like so:
