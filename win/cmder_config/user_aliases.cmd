@@ -22,6 +22,12 @@ copydir=cd | clip
 c=cd | clip
 copieddir=cd | clip
 
+;= rem MY GIT ALIASES (more to come...)
+gs=git status
+gf=git fetch
+gpull=git pull
+gpush=git push
+
 
 
 ;= rem think of best replacement for 'make clean' and 'make' commands from below aliases
@@ -36,8 +42,8 @@ mk=make
 build=make
 
 ;= rem MY MISC ALIASES
-sz=call D:\git\niche_side_quests_repo\win\user_aliases.cmd && echo user_aliases.cmd sourced :)
-;= rem sz=call C:\Users\aking\Downloads\cmder\config\user_aliases.cmd && echo user_aliases.cmd sourced :)
+;= rem sz=call D:\git\niche_side_quests_repo\win\user_aliases.cmd && echo user_aliases.cmd sourced :)
+sz=call C:\Users\aking\Downloads\cmder\config\user_aliases.cmd && echo user_aliases.cmd sourced :)
 lh=dir /a
 lsh=dir /a:h
 show_hidden_files=dir /a 
@@ -190,6 +196,13 @@ getmydriveinfo=get_drive_info_amk.py
 showdrives=get_drive_info_amk.py
 showdriveinfo=get_drive_info_amk.py
 
+; = rem 13.1 TRUNKS
+list131trunks=list_13.1_trunks_amk.py
+listtrunks131=list_13.1_trunks_amk.py
+list131rel=list_13.1_trunks_amk.py
+listrel131=list_13.1_trunks_amk.py
+list13trunks=list_13.1_trunks_amk.py
+listtrunks13=list_13.1_trunks_amk.py
 ; = rem 12.1 TRUNKS
 list121trunks=list_12.1_trunks_amk.py
 listtrunks121=list_12.1_trunks_amk.py
@@ -203,7 +216,13 @@ list12.1trunks=list_12.1_trunks_amk.py
 listtrunks12.1=list_12.1_trunks_amk.py
 list12.1rel=list_12.1_trunks_amk.py
 listrel12.1=list_12.1_trunks_amk.py
-; = rem NOW DO THE SAME FOR 11.3 and 13.1 (mainly for 11.3 bc 13.1 trunks are all main now)
+; = rem 11.3 TRUNKS
+list113trunks=list_11.3_trunks_amk.py
+listtrunks113=list_11.3_trunks_amk.py
+list113rel=list_11.3_trunks_amk.py
+listrel113=list_11.3_trunks_amk.py
+list11trunks=list_11.3_trunks_amk.py
+listtrunks11=list_11.3_trunks_amk.py
 
 
 
@@ -221,11 +240,11 @@ getosi=echo %OSI%
 ;= rem QUICK WAYS TO EDIT SPECIFIC CONFIGS...(notice we have 2 variations for each)
 
 
-
-add_alias=code D:\git\niche_side_quests_repo\win\user_aliases.cmd
-addalias=code D:\git\niche_side_quests_repo\win\user_aliases.cmd
-;= rem add_alias=code C:\Users\aking\Downloads\cmder\config\user_aliases.cmd
-;= rem addalias=code C:\Users\aking\Downloads\cmder\config\user_aliases.cmd
+;= rem THESE WILL BE FOR WHEN WE OFFICIALLY MOVE CMDER CONFIGS TO MY DOTFILE REPO NICHESIDEQUESTS
+;= rem add_alias=code D:\git\niche_side_quests_repo\win\user_aliases.cmd
+;= rem addalias=code D:\git\niche_side_quests_repo\win\user_aliases.cmd
+add_alias=code C:\Users\aking\Downloads\cmder\config\user_aliases.cmd
+addalias=code C:\Users\aking\Downloads\cmder\config\user_aliases.cmd
 
 
 
@@ -323,10 +342,22 @@ cdsrcwww=cd /d "%OSI%"\srcWWW\
 cdasi=cd /d "%OSI%"\src\asi\
 cdopenscada=cd /d "%OSI%"\src\openscada\
 cdsdk=cd /d "%OSI%"\src\scada_sdk\
+cdscadasdk=cd /d "%OSI%"\src\scada_sdk\
 cdotsfw=cd /d "%OSI%"\src\otsfw\
 cdinterface=cd /d "%OSI%"\src\scada_interface\
+cdscadainterface=cd /d "%OSI%"\src\scada_interface\
 cdtagging=cd /d "%OSI%"\src\tagging_subsystem\
 cdviewpoint=cd /d "%OSI%"\src\viewpoint\
+cdrc=cd /d "%OSI%"\sys\rc\
+cdrcfiles=cd /d "%OSI%"\sys\rc\
+cddata=cd /d "%OSI%"\data
+cddatafiles=cd /d "%OSI%"\data
+cddb=cd /d "%OSI%"\db
+cddbfiles=cd /d "%OSI%"\db
+cdrel=cd /d "%OSI%"\rel
+cdrelfiles=cd /d "%OSI%"\rel
+cdci=cd /d "%OSI%"\ci
+
 ;= rem CD aliases for GIT REPOS (1 for each main prod, just like the above local-osi cd aliases)
 ;= rem for these git-side ones I'm using the D:\git\TagSubsystem\src\tagging_subsystem instead of the less-useful top-level path def like this: D:\git\TagSubsystem\src\tagging_subsystem 
 ;= rem ||TODO:|| decide if it's better to use the D:\git\ProductName\ instead of the deeper level path I set up originally, like D:\git\TagSubsystem\src\tagging_subsystem
@@ -347,15 +378,17 @@ cdosi=cd /d D:\osi\
 cdalexscripts=cd /d C:\alex_scripts\
 cdconfig=cd /d C:\Users\aking\.config\
 cdcdrive=cd /d C:\Users\aking\
+cdc=cd /d C:\Users\aking\
 cddrive=cd /d D:\osi\
+cdd=cd /d D:\osi\
 cdclink =cd /d C:\Users\aking\Downloads\cmder\vendor\clink
 cddownloads=cd /d C:\Users\aking\Downloads\
 cdaking=cd /d C:\Users\aking\
 cdquickref=cd /d C:\Users\aking\quick_ref\
 cdrepos=cd /d D:\git\
+cdgit=cd /d D:\git\
 cdcmder=cd /d C:\Users\aking\Downloads\cmder
 prettyprintpath=echo %PATH:;=&echo.% 
-
 
 cdniche=cd /d D:\git\niche_side_quests_repo\
 cddotfiles=cd /d D:\git\niche_side_quests_repo\
