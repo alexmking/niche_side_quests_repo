@@ -351,6 +351,18 @@ alias explorer="open ."
 alias e.="open ."
 alias add_alias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 alias addalias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
+alias fixsketchy="sketchybar --reload"
+alias sketchybarreload="sketchybar --reload"
+alias reloadsketchybar="sketchybar --reload"
+alias reloadmenubar="sketchybar --reload"
+alias menubarreload="sketchybar --reload"
+alias reloadtopbar="sketchybar --reload"
+alias topbarreload="sketchybar --reload"
+alias fixtopbar="sketchybar --reload"
+alias fixmenubar="sketchybar --reload"
+alias fixsketchybar="sketchybar --reload"
+
+
 # clean up/standardize these ls aliases later...
 alias lsall="ls -a"
 alias show_hidden="ls -a"
@@ -361,6 +373,7 @@ alias lsnorm="ls"
 alias lsregular="ls"
 alias lsdefault="ls"
 alias lsnohidden="ls"
+
 
 # some git aliases: (NOTE 'gf' is already working but not sure what the actual command is that it's tied to bc it's not defined here...)
 alias gst="git status"
