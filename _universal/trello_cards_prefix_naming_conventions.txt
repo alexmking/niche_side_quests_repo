@@ -1,0 +1,52 @@
+
+=================================================================================
+SSOT for TRELLO-CARD prefixes (to buff trellos internal searches/nav, which is powerful in 25'
+=================================================================================
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+
+
+=====================================
+CURRENT TRELLO-CARD TITLE PREFIXES AND THEIR DEFINITIONS:
+=====================================
+??      ??
+??      ??
+??      ??
+'''     header-cards that I want pinned to top of the special-lists like QUEUE/andor TASK BANK etc
+??      ??
+??      ??
+
+
+=====================================
+OTHER POTENTIAL ONES TO CONSIDER...
+=====================================
+??      ??
+??      ??
+??      ??
+??      ??
+??      ??
+
+
+
+
+
+
+=====================================
+MISC NOTES etc...
+=====================================
+> may want the prefixes to be more granular than filename ones, idk
