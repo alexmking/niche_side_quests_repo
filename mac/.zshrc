@@ -293,6 +293,50 @@ source $ZSH/oh-my-zsh.sh # AMK21
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ==================================================================
+# RULES OF THUMB for 'prefaces' of aliases...
+# ==================================================================
+# cd       ==      obvi
+# edit     ==      edit the file in VS Code
+# fz       ==      doing fzf over some output
+#
+# list     ==      printing a list sep by new lines (like PATH) or etc
+# get      ==      either returns only 1 simple thing (like a single env var) AND/OR copies it to clipboard at same time
+# cpy      ==      ?? this one is good alternative to 'get'
+#
+# ===================================
+# other ones to consider...
+# ===================================
+# my       ==      ??
+# sel      ==      short for 'select'. This one is another alt/variation of 'get' and/or 'cpy'??
+# show     ==      ?? maybe inbetween 'list' and 'get'? such as show-drive-info ??
+# see      ==      ?? interchangeable with 'show' i think ??
+#
+# print    ==      ?? prob not using this one bc 'see' and 'show' and 'list' are all better/shorter
+
+
+
+
 ##################################################
 # REMINDER: MACs root vs home dir 
 #     /     means start at ROOT dir 
@@ -317,6 +361,26 @@ alias lsnorm="ls"
 alias lsregular="ls"
 alias lsdefault="ls"
 alias lsnohidden="ls"
+
+# some git aliases: (NOTE 'gf' is already working but not sure what the actual command is that it's tied to bc it's not defined here...)
+alias gst="git status"
+alias gs="git status"
+alias gfetch="git fetch"
+# ADD MORE HERE... TODO
+# ADD MORE HERE... TODO
+
+#### TODO #####
+#### TODO #####
+#### TODO #####
+#### TODO #####
+# create an env variable for the NICHE REPO PATH so I can use that in these aliases below instead of hardcoding the full path every time
+# so /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt
+# becomes...
+# $NICHEREPO/_universal/prefix_naming_conventions.txt
+#### TODO #####
+#### TODO #####
+#### TODO #####
+#### TODO #####
 
 
 # alias sz="source ~/.zshrc; echo '~/zshrc sourced :)'"
@@ -382,6 +446,11 @@ alias fzfeditzsh="cat ~/.zshrc | fzf"
 alias fzfp10kconfig="cat ~/.p10k.zsh | fzf"
 alias fzfeditp10k="cat ~/.p10k.zsh | fzf"
 alias fzfeditprompt="cat ~/.p10k.zsh | fzf"
+
+
+alias fzfprefixnamingconventions="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
+alias fzfprefixes="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
+
 ##############################################################################################
 # DONT FORGET TO USE THE ABOVE search/fzf commands!! #########################################
 ##############################################################################################
@@ -465,7 +534,11 @@ alias seepath='echo; tr ":" "\n" <<< "$PATH"; echo;'
 alias cwd='pwd | pbcopy'
 # alias pwd='pwd | pbcopy'  # NOT SURE ABOUT THIS ONE ...
 
-
+alias editprefixnamingconventions="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias editprefixes="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias editnamingconventions="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias edittaxonomy="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias editfilenamingconventions="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
 
 
 
@@ -483,6 +556,41 @@ alias editvscodekeybindingsjson='code "/Users/alexking/Library/Application Suppo
 # alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
 
 # ~/Library/Application Support/Code/User/keybindings.json
+
+
+
+
+
+##################################################
+# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO MANY TO ADD HERE TO MIRROR WINDOWS SIDE 
+# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO
+# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO
+# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO
+# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO
+##################################################
+alias listprefixnamingconventions="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
+alias listprefixes="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
+alias listnamingconventions="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
+alias listfilenameconventions="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
+alias listnamingprefixes="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
+alias listprefixtaxonomy="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
+alias listtaxonomy="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
+
+### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
+### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
+### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
+### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
+
+
+
+
+### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases ne
+
+
+
+
+
+
 
 
 

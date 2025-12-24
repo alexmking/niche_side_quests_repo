@@ -1,0 +1,51 @@
+
+=================================================================================
+SSOT for File name prefixes (to buff searches/nav)
+=================================================================================
+- integrate w raycast, grep, fzf etc
+- currently using hyphen '-' as the delimiter instead of underscore '_', mainly bc it's faster to type p- than p_ but this could change. Underscore has been my default for file names (c/c++) and is more standard overall.
+
+
+=====================================
+CURRENT PREFIXES AND THEIR DEFINITIONS:
+=====================================
+p-      project dirs    
+img-    screenshot and or image files (may tweak this one)
+ref-    reference / cheatsheet docs
+old-    deprecated, but kept
+scr-    scripts (may tweak this one)
+dot-    dot files (when not hidden via .config)
+cfg-    config files (may conflict w dot-)
+tmp-    tmp files likely ok to delete soon 
+data-   data sets
+bak-    backups (or just 'back-'?)
+wip-    work in progress
+
+
+=====================================
+OTHER POTENTIAL ONES TO CONSIDER...
+=====================================
+junk- 
+dot- vs cfg- ??
+
+
+
+
+
+=====================================
+MISC NOTES etc...
+=====================================
+EXAMPLES:
+CURRENT HYPHEN style:
+p-nasa-simulation       (searching 'p-' globally instantly narrows the scope to the area we want)
+old-resume-template1    (searching 'old-' globally instantly narrows the scope to the area we want)
+ref-zzshorts            (etc etc)
+EQUIV UNDERSCORE style:
+p_nasa-simulation       (searching 'p-' globally instantly narrows the scope to the area we want)
+old_resume-template1    (searching 'old-' globally instantly narrows the scope to the area we want)
+ref_zzshorts_25         (etc etc)
+
+WRINKLES: should we combine both - and _ in file names for increased granularity or choose only 1 for simplicity? Currently we're favoring simplicity and only using hypens:
+p-nasa-simulation-app   OR...   p-nasa_simulation_app   OR...   p_nasa_simulation_app 
+old-resume-template1    OR...   old-resume_template1    OR...   old_resume_template1
+ref-zzshorts-25         OR...   ref-zzshorts_25         OR...   ref_zzshorts_25  
