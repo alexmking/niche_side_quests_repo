@@ -28,25 +28,6 @@ gf=git fetch
 gpull=git pull
 gpush=git push
 
-;= rem scripts to update dotfile repo (tested single file w user_aliases.cmd and it worked great)
-updateuseraliasesongit=C:\alex_scripts\update_user_aliases_on_git.py
-moveuseraliasestogit=C:\alex_scripts\update_user_aliases_on_git.py
-;= rem sTODO: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
-;= rem sTODO: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
-updateallconfigstogit=C:\alex_scripts\update_all_dot_files_to_git.py
-moveallconfigstogit=C:\alex_scripts\update_all_dot_files_to_git.py
-updateniche=C:\alex_scripts\update_all_dot_files_to_git.py
-moveallniche=C:\alex_scripts\update_all_dot_files_to_git.py
-updatalldotfiles=C:\alex_scripts\update_all_dot_files_to_git.py
-nicherepoupdate=C:\alex_scripts\update_all_dot_files_to_git.py
-preparetoupdateniche=C:\alex_scripts\update_all_dot_files_to_git.py
-preparetoupdatedotfiles=C:\alex_scripts\update_all_dot_files_to_git.py
-;= rem sTODO: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
-;= rem sTODO: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
-
-
-
-
 
 
 ;= rem think of best replacement for 'make clean' and 'make' commands from below aliases
