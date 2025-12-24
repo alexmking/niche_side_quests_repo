@@ -292,7 +292,16 @@ HYPER-a		    ________avail
 HYPER-s		    open_screenshots in file expl...
 HYPER-d		    ________avail
 HYPER-f		    switch to firefox
-HYPER-g		    chrome-specific: switch to chatGPT 'SUMMARY INSERTS' chat
+
+[DELETE THIS EXPL ONCE I NO LONGER NEED REMINDING OBVI]
+(tmp reminder/expl of how we got 2 actions assigned to the 1 keyb HYPER-g here:)
+(the ONLY REASON we CAN have two sep commands for the same HYPER-g here is bc if we're already 
+in chrome when we trigger it, we obviously would have no use for the GLOBAL version, and anytime
+ we're NOT in chrome, we know only the GLOBAL cmd will trigger since the other CHROME-spec one 
+ obvi only triggers when in-chrome when calling it )
+HYPER-g		    [1 of 2] GLOBAL-binding: quick-google-search via raycast 
+HYPER-g		    [2 of 2] CHOME-SPECIFIC binding: switch to chatGPT 'SUMMARY INSERTS' chat
+
 HYPER-h		    color picker (H for 'HEX' since C for 'color' was already taken)
 HYPER-j		    ________avail
 HYPER-k		    ________avail
