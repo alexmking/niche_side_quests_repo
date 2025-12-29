@@ -164,7 +164,7 @@ alt-shift-enter     ________avail
 
 alt-shift-Z		Backup zzshortcuts for when (ALT-Z) fails (when we call it from uncommon apps) command 
 alt-shift-x		close-all-windows-but-curr
-alt-shift-c		________avail
+alt-shift-c		copy-path (one of my favs)(fileExpl, terminal, vscode, chrome etc)
 alt-shift-v		________avail
 alt-shift-b		________avail
 alt-shift-n		________avail
