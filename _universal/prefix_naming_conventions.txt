@@ -13,7 +13,7 @@ p-      project dirs
 img-    screenshot and or image files (may tweak this one)
 ref-    reference / cheatsheet docs
 old-    deprecated, but kept
-scr-    scripts (may tweak this one)
+scr-    scripts [likely will conflict w 'screenshot'](may tweak this one)
 dot-    dot files (when not hidden via .config)
 cfg-    config files (may conflict w dot-)
 tmp-    tmp files likely ok to delete soon 
