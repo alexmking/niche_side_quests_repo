@@ -379,6 +379,10 @@ alias lsnohidden="ls"
 alias gst="git status"
 alias gs="git status"
 alias gfetch="git fetch"
+alias gpush="git push"
+alias gpull="git pull"
+alias gcm="git commit -m"
+alias gswitch="git switch"
 # ADD MORE HERE... TODO
 # ADD MORE HERE... TODO
 
