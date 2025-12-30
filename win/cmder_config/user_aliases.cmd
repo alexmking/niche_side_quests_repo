@@ -3,6 +3,31 @@
 ;= %SystemRoot%\system32\doskey /listsize=1000 /macrofile=%0%
 ;= rem In batch mode, jump to the end of the file
 ;= goto:eof
+
+;= rem ==================================================================
+;= rem GLOSSARY/SECTIONS    (ctrl-f "zz-" to jump to each section)
+;= rem ==================================================================
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem 1. GENERAL ALIASES
+;= rem 2. EDIT ALIASES
+;= rem 3. GIT ALIASES
+;= rem 4. MISC ALIASES
+;= rem 5. MAKE/BUILD ALIASES
+;= rem 6. CD ALIASES
+;= rem 7. FZF-BASED ALIASES
+;= rem 8. DRIVE INFO ALIASES
+;= rem 9. AHK LAUNCH ALIASES
+;= rem 10. ALIASES THAT TAKE ARGUMENT(S)
+;= rem 11. GREP ALIASES & FINDSTR() ALIASES 
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+
+
 ;= Add aliases below here
 e.=explorer .
 gl=git log --oneline --all --graph --decorate  $*
@@ -31,8 +56,13 @@ gpush=git push
 ;= rem scripts to update dotfile repo (tested single file w user_aliases.cmd and it worked great)
 updateuseraliasesongit=C:\alex_scripts\update_user_aliases_on_git.py
 moveuseraliasestogit=C:\alex_scripts\update_user_aliases_on_git.py
-;= rem sTODO: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
-;= rem sTODO: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+editupdateuseraliasesongit=code C:\alex_scripts\update_user_aliases_on_git.py
+;= rem ||TODO||: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+;= rem ||TODO||: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:
 updateallconfigstogit=C:\alex_scripts\update_all_dot_files_to_git.py
 moveallconfigstogit=C:\alex_scripts\update_all_dot_files_to_git.py
 updateniche=C:\alex_scripts\update_all_dot_files_to_git.py
@@ -41,10 +71,25 @@ updatalldotfiles=C:\alex_scripts\update_all_dot_files_to_git.py
 nicherepoupdate=C:\alex_scripts\update_all_dot_files_to_git.py
 preparetoupdateniche=C:\alex_scripts\update_all_dot_files_to_git.py
 preparetoupdatedotfiles=C:\alex_scripts\update_all_dot_files_to_git.py
-;= rem sTODO: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
-;= rem sTODO: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+editupdateallconfigstogit=code C:\alex_scripts\update_all_dot_files_to_git.py
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+;= rem ||TODO||: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
 
 
+;= rem pid and kill-command aliases
+pid=tasklist
+listpids=tasklist
+findpid=tasklist | grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+findpids=tasklist | grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+fzfpid=tasklist | fzf
+fzfpids=tasklist | fzf
+fzfprocesses=tasklist | fzf
+
+killpid=taskkill /PID %* /F
 
 
 
@@ -476,6 +521,107 @@ cdahk= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & run_my_ahk_s
 ahk_run_main_script= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & run_my_ahk_script.bat & cd /d C:\Users\aking\
 
 
+
+
+
+
+;= rem ==================================================================
+;= rem ALIASES THAT TAKE ARGUMENT(s)
+;= rem ==================================================================
+;= rem create an alias that mimics the LINUX 'touch' command to create new empty files
+;= rem (bc windows equiv to touch is this ugly mess: 'type nul > nameOfNewFile.txt')
+;= rem FLAG DEFINITIONS: /E /I /H /K /Y"
+;= rem  /E:     Copies directories and subdirectories, including empty ones. This flag implicitly includes the functionality of the /S flag (which copies subdirectories except empty ones).
+;= rem  /I:     If the destination does not exist and you are copying more than one file (or a directory), xcopy assumes the destination is a directory and creates it. This prevents the command from prompting you to specify whether the destination is a file or a directory.
+;= rem  /H:     Copies hidden and system files in addition to normal files. By default, xcopy does not copy files that have the hidden or system file attributes set.
+;= rem  /K:     Copies attributes, such as the read-only attribute, from the source files to the destination files. By default, xcopy removes the read-only attribute during the copy process.
+;= rem  /Y:     Suppresses prompting to confirm that you want to overwrite an existing destination file. This is useful for automated scripts or batch files where user interaction is not desired
+touch=type nul > $*
+copydir=xcopy /E /I /H /K /Y $* 
+mv=move /Y $*
+mvdir=move /Y $*
+movedir=move /Y $*
+
+;= rem ============= rm -rf command ================= (ignoring 'del' and 'rmdir' aliases bc got superior rm-rf command working on windows)
+rmrf=rm -rf $*
+
+;= rem ||TODO:|| FIND THE OTHER ALIASES THAT TAKE ARGUMENTS AND ORGANIZE THEM INTO THIS SECTION LATER
+;= rem ||TODO:|| FIND THE OTHER ALIASES THAT TAKE ARGUMENTS AND ORGANIZE THEM INTO THIS SECTION LATER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;= rem ===================================================================
+;= rem ====== IGNORE THIS BLOCK BELOW UNTIL rm -rf no longer works on WINDOWS
+;= rem ===================================================================
+
+;= rem ====== IGNORE THE BELOW 'DEL' & 'RMDIR' ALIASES SINCE I'M USING 'rm -rf' INSTEAD ======
+;= rem on windows... the 'del' command is for del FILES, while 'rmdir' is for del DIRECTORIES
+;= rem del FILES...(so del command)
+del=del /Q $*
+rmf=del /F /Q $*
+rmforce=del /F /Q $*
+;= rem del DIRECTORIES...(so rmdir command)
+rmdir=rmdir /S /Q $*
+deldir=rmdir /S /Q $*
+removedir=rmdir /S /Q $*
+deletedir=rmdir /S /Q $*
+rd=rmdir /S /Q $*
+rmrf=rmdir /S /Q $*
+;= rem bc 'del' wll NOT del the directories themselves, this alias will del all files within the dirs but leave the dirs intact
+;= rem FOR EXAMPLE: if we ran this in our /src dir, then all files within src & subdirs would be deleted, but the dirs themselves would remain
+;= rem so...the project would still have the same dir structure, and all the levels of subdirs etc BUT all the files within those dirs would be gone
+delallfilesbutleavedirs=del /s /q $*
+;= rem      NOTE ABOUT WILDCARDS w 'del' ...!!!
+;= rem      del *.txt	Deletes all files with the .txt extension in the current directory.
+;= rem      so basically...del with WILDCARD ** can make this 'del' command crazy powerful BUT...need to be super careful with the wildcard regex since ALL-MATCHES are deleted, so producing a too-wide-ranging pattern would obvi delete WAY MOER than I would want)
+
+;= rem ===================================================================
+;= rem ====== IGNORE THIS BLOCK ABOVE UNTIL rm -rf no longer works on WINDOWS
+;= rem ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
 ;= rem ============== BELOW IS EXPERIMENTAL versions of ahk script from cli ======================
 ;= rem ============== BELOW IS EXPERIMENTAL versions of ahk script from cli ======================
 ;= rem cdahk1= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\
@@ -495,6 +641,16 @@ ahk_run_main_script= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ 
 ;= rem GREP ALIASES
 ;= rem ==================================================================
 ;= rem TODO: add this ignore-file-types snippet to all grep aliases below from richard: | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+;= rem primary two grep aliases...
+;= rem [TRYING TO AVOID SETTING ALIASES FOR THE ACTUAL COMMAND ITSELF bc can cause issues (so no grep=grep -rnI "%*" .  alias etc)]
+;= rem grep=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+grp=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+gp=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+findinfiles=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+searchfilecontents=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+findinfilecontents=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+searchinfilecontents=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+;= rem other misc grep aliases......
 grepBETA=grep --color=auto  ;= rem Runs `grep` with color highlighting.
 grepi=grep -i --color=auto  ;= rem Case-insensitive `grep` with color highlighting.
 grepc=grep -c  ;= rem Counts the number of matching lines.
@@ -503,14 +659,17 @@ grepr=grep -r --color=auto  ;= rem Recursively searches directories with `grep`.
 grepin=grep -in --color=auto  ;= rem Case-insensitive recursive search with line numbers.
 grepl=grep -l  ;= rem Displays only filenames with matches.
 grepw=grep -w --color=auto  ;= rem Matches whole words only.
-
+;= rem ---------------------
 testgrep1=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
 testgrep2=grep -rnI "%*" .
 ;= rem testgrep2=grep -I "%*" . -r | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
 ;= rem testgrep2=grep -I "%*" .
-
 testgrep3=grep "%*" .
 
+;= rem || TODO: || try out this 'findstr' command and see how compares to grep 
+;= rem || TODO: || try out this 'findstr' command and see how compares to grep 
+;= rem || TODO: || try out this 'findstr' command and see how compares to grep 
+;= rem || TODO: || try out this 'findstr' command and see how compares to grep
 ;= rem FINDSTR ALIASES (Windows-native grep-like tool)
 find=findstr  ;= rem Basic `findstr` command.
 findi=findstr /i  ;= rem Case-insensitive search.
@@ -519,6 +678,9 @@ findv=findstr /v  ;= rem Excludes lines with the pattern.
 findr=findstr /s  ;= rem Recursive search in directories.
 findw=findstr /r  ;= rem Uses regular expressions.
 findl=findstr /m  ;= rem Displays only filenames with matches.
+;= rem || TODO: || 
+;= rem || TODO: || 
+;= rem || TODO: || 
 
 ;= rem ==================================================================
 ;= rem EXAMPLES
