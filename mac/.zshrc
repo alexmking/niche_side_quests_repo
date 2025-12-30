@@ -335,14 +335,51 @@ source $ZSH/oh-my-zsh.sh # AMK21
 # print    ==      ?? prob not using this one bc 'see' and 'show' and 'list' are all better/shorter
 
 
-
-
-##################################################
+##################################
 # REMINDER: MACs root vs home dir 
 #     /     means start at ROOT dir 
 #     ~/    means start at HOME dir (NOT root)
-##################################################
-# misc aliases
+##################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################
+# GLOSSARY/SECTIONS (ctrl-f "zz-" to quickly navigate):
+################################################################
+# 1. misc aliases zz-
+# 2. the alises that take arguments  zz-
+# 3. the 'edit' aliases zz-
+# 4. the 'cd' aliases zz-
+# 5. the SEARCH aliases zz-
+# 6. LIST aliases (aka print out to terminal) zz-
+# 7. the 'get' aliases zz-  (TODO)
+# 8. the 'copy' aliases zz- (TODO)
+# 9. the 'select' aliases zz- (TODO)
+# 10. the 'show' aliases zz- (TODO)
+# 11. the 'see' aliases zz- (TODO)
+
+# etc etc #TODO fix/re-arrange the above sections to fit the actual sections below...
+# etc etc #TODO fix/re-arrange the above sections to fit the actual sections below...
+# etc etc #TODO fix/re-arrange the above sections to fit the actual sections below...
+# etc etc #TODO fix/re-arrange the above sections to fit the actual sections below...
+
+
+
+
+###########################
+# misc aliases zz-
+###########################
 alias repos="cd /Users/alexking/local_docs/GIT_STUFF"
 alias cdrepos="cd /Users/alexking/local_docs/GIT_STUFF"
 alias go="cd /Users/alexking"
@@ -362,6 +399,55 @@ alias fixtopbar="sketchybar --reload"
 alias fixmenubar="sketchybar --reload"
 alias fixsketchybar="sketchybar --reload"
 
+# pid's and kill command
+alias findpid="pgrep"
+alias findpids="pgrep"
+alias getpid="pgrep"
+alias listpids="ps aux"
+alias fzfpids="ps aux | fzf"
+alias fzflistpids="ps aux | fzf"
+
+
+alias killpid="kill"
+
+
+###########################
+# the alises that take arguments  zz-
+###########################
+# add a copy alias here which is just shorthand for 'cp' command and must take the two args (source and dest)
+alias copy="cp"
+alias copydir="cp -r"
+alias move="mv"
+alias movedir="mv" # 'recursively' is default, so no need for -r flag here
+# these 'rm' aliases may need some tweaking [since we determined rm -rf is the swiss-army-knife of deletion commands on BOTH mac and windows (initially thought rm -rf != windows side and we'd have to use 'del' and 'rmdir' instead]
+alias rmrf="rm -rf" # THIS IS THE ONLY ONE WE'LL REALLY NEED (so the below 10ish aliases may be redundant/unneeded, esp after deciding we WONT be using 'del' and 'rmdir' aliases AT ALL, even on Win side, so there's no need to accomodate those window-specific commands anymore, bc remember, the goal is 'uniformity' across mac/lin/win, and 'rm -rf' ALREADY gives us that uniformity)
+alias rmdir="rm -r"
+alias rd="rm -r"
+alias remove="rm"
+alias removedir="rm -r"
+alias removefile="rm"
+alias removeforce="rm -rf"
+alias delete="rm"
+alias deletefile="rm"
+alias deletedir="rm -r"
+alias delfile="rm"
+alias deldir="rm -r"
+
+# #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
+# #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
+# #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
+# #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
+# #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
+
+
+
+
+
+
+
+
+
+
 
 # clean up/standardize these ls aliases later...
 alias lsall="ls -a"
@@ -375,7 +461,11 @@ alias lsdefault="ls"
 alias lsnohidden="ls"
 
 
-# some git aliases: (NOTE 'gf' is already working but not sure what the actual command is that it's tied to bc it's not defined here...)
+
+
+###########################
+# some git aliases:   zz-   (NOTE 'gf' is already working but not sure what the actual command is that it's tied to bc it's not defined here...)
+###########################
 alias gst="git status"
 alias gs="git status"
 alias gfetch="git fetch"
@@ -408,7 +498,87 @@ alias sourcezshrc="source ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zsh
 
 # alias path='echo; tr ";" "\n" <<< "$PATH"; echo;'
 
-# the 'cd' aliases
+
+
+
+
+
+
+###########################
+# add some standard / useful 'grep' aliases here  zz-
+###########################
+#alias grep="grep . -rnI" [TRYING TO AVOID SETTING ALIASES FOR THE ACTUAL COMMAND ITSELF BC THAT CAN CAUSE ISSUES LATER]]
+alias grp="grep -rnI" .
+alias gp="grep -rnI" .
+alias greprni="grep -rnI" .
+alias grepstandard="grep -rnI" .
+alias findinfiles="grep -rnI" .
+alias searchinfiles="grep -rnI" .
+alias findinfilecontents="grep -rnI" .
+alias findfilecontents="grep -rnI" .
+alias searchinfilecontents="grep -rnI" .
+alias searchfilecontents="grep -rnI" .
+# other grep aliases...
+alias grepignorecase="grep -i"
+alias grepi="grep -i"
+alias greprecursive="grep -r"
+alias grepr="grep -r"
+alias greprecursiveignorecase="grep -ri"
+alias grepri="grep -ri"
+
+
+######################################################
+# diff levels of 'find/search' (we should prob have 1 alias set up for each level here...)
+######################################################
+# 1. search for filename only (no dirs, no file contents)
+# 2. search for dir's only (no files, no file contents)
+# 3. search for file contents only (no files, no dirs)    [x] DONE with GREP...
+# 4. search for both filenames and dir's (no file contents)
+# 5. search for everything (filenames, dir's, and file contents)[MOST EXPENSIVE, SLOWEST, obvi]
+# ISSUE ON WINDOWS SIDE for #2, #4, and #5, all bc finder.py cannot search 'DIRECTORIES'...
+# SO NEED TO FIG OUT A WORKAROUND ON WINDOWS SIDE (fd-find) suggested via GPT so check that out
+
+###########################
+# the 'find' aliases  zz-
+###########################
+alias findfilenameonly="find . -type f -name"   # level 1 of 5 (not so imp, useful)
+alias finddironly="find . -type d -name"        # level 2 of 5 (not so imp, useful)
+alias findfilecontentsonly="grepdef -rnI" .     # level 3 of 5 (most useful, already done with grep)
+alias findfileanddirnames="find . -name"        # level 4 of 5 (useful)
+alias findeverything="find . -name"             # level 5 of 5 (most expensive, least useful)
+
+# ff == 'find files' (akin to Raycast's approach as well)
+alias ff="find . -name"        # level 4 of 5 (useful)
+alias ffiles="find . -name"        # level 4 of 5 (useful)
+alias fdirs="find . -type d -name"    
+alias ff="find . -name"        # level 4 of 5 (useful)
+alias widenetsearch="find . -name"             # level 5 of 5 (most expensive, least useful)
+alias searchall="find . -name"             # level 5 of 5 (most expensive, least useful)
+alias searcheverything="find . -name"             # level 5 of 5 (most expensive, least useful)
+
+
+# suggested combos for 'find' command:
+alias findallgitrepos="find ~ -name .git -type d -prune" # find all git repos
+alias findlargefiles="find . -type f -size +100M"  # find large files 
+alias findrecentmodified="find . -type f \( -name '*.ts' -o -name '*.js' \) -mtime -2" # recently modified ts and js files
+alias findanddelalldsstore="find . -name '.DS_Storeasdfasdfasdfasdf' -delete" # del all .DS_Store files
+
+# Flags and their explanations for the 'find' command:
+# -type f   : find files only
+# -type d   : find directories only
+# -name     : find by name (both files and directories)
+# -rnI     : grep flags for recursive, line number, ignore binary files
+# -iname   : case-insensitive name search
+
+
+
+
+
+
+
+###########################
+# the 'cd' aliases  zz-
+###########################
 alias cdconfigdot="cd /Users/alexking/.config"
 alias cdhome="cd /Users/alexking/"
 alias home="cd /Users/alexking"
@@ -440,7 +610,7 @@ alias cdniche="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
 
 
 ##############################################################################################
-# the SEARCH aliases #########################################################################
+# the FZF aliases  zz-
 ##############################################################################################
 # BEST-USECASE: when you forget a shortcut/alias on command-line and instead of having to
 # to leave terminal to open the file -> search then go back to terminal, you can simply 
@@ -482,7 +652,7 @@ alias fzfprefixes="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_re
 
 
 ###########################
-# the 'edit' aliases
+# the 'edit' aliases  zz-
 ###########################
 
 # ln -s
