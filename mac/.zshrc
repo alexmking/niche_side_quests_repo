@@ -388,6 +388,7 @@ alias explorer="open ."
 alias e.="open ."
 alias add_alias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 alias addalias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
+alias editalias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 alias fixsketchy="sketchybar --reload"
 alias sketchybarreload="sketchybar --reload"
 alias reloadsketchybar="sketchybar --reload"
@@ -473,6 +474,16 @@ alias gpush="git push"
 alias gpull="git pull"
 alias gcm="git commit -m"
 alias gswitch="git switch"
+
+#### when no need for git add step #### (aka I'm not adding any NEW files. aka only pushing files/changes that are already being tracked by git)
+alias gitquickcommit="git commit -a -m"
+
+# git commit -a -m "Your descriptive commit message here"
+
+
+
+
+
 # ADD MORE HERE... TODO
 # ADD MORE HERE... TODO
 
@@ -618,6 +629,7 @@ alias cdniche="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
 # having to leave terminal
 alias fzfaliases="cat /Users/alexking/.zshrc | fzf"
 alias fzfalias="cat /Users/alexking/.zshrc | fzf"
+alias fzfuseraliases="cat /Users/alexking/.zshrc | fzf"
 alias fzfcurrentkeyboardbindings="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
 alias fzfkeyboardbindings="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
 alias fzfbindings="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
@@ -638,9 +650,9 @@ alias fzfeditprompt="cat ~/.p10k.zsh | fzf"
 alias fzfprefixnamingconventions="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
 alias fzfprefixes="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
 
-##############################################################################################
-# DONT FORGET TO USE THE ABOVE search/fzf commands!! #########################################
-##############################################################################################
+###########################
+# || TIP REMINDER: || USE-CASE: if I'm in CLI and can't remember an alias exactly, I can do fzfalias, and then start with the 'DELIMITER' the alias uses (such as 'edit' or 'cd' or 'get' etc) and then fuzzy-find the rest of the alias from there
+###########################
 
 
 
@@ -870,9 +882,15 @@ alias listtaxonomy="/usr/local/bin/alexScripts/scr_list_prefix_naming_convention
 #     source /usr/share/fzf/key-bindings.zsh
 # fi
 
+# if [ -x "$(command -v fzf)"  ]
+# then
+#     source /usr/local/Cellar/fzf/0.61.0/shell/key-bindings.zsh
+# fi
+
+#### AFTER I DID brew upgrade, fzf was updated to 0.61.0 from 0.67.0, so I had to manually update this path here...
 if [ -x "$(command -v fzf)"  ]
 then
-    source /usr/local/Cellar/fzf/0.61.0/shell/key-bindings.zsh
+    source /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh
 fi
 
 # TODO the below line my not be needed, just caught it from a forum 

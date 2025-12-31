@@ -45,22 +45,37 @@ after-login-command = []
 # ============================================================
 # run #* sketchybar --reload
 # in terminal as way to refresh the dumb sketchybar state/frozen (esp w regards to highlighting the curr-workspace)
-after-startup-command = [
-	'exec-and-forget sketchybar',
-	'exec-and-forget borders',
-	'exec-and-forget sketchybar --reload'
-]
+# after-startup-command = [
+# 	'exec-and-forget sketchybar',
+# 	'exec-and-forget borders',
+# 	'exec-and-forget sketchybar --reload'
+# ]
 
-# TRYING TO ADD THE SKETCHYBAR --RELOAD as the default command upon opening. Below is what was there BEFORE my change
+# ## TRYING TO ADD THE SKETCHYBAR --RELOAD as the default command upon opening. Below is what was there BEFORE my change
 # after-startup-command = [
 # 	'exec-and-forget sketchybar',
 # 	'exec-and-forget borders'
 # ] 
 
-# Notify Sketchybar about workspace change
-exec-on-workspace-change = ['/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
-]
+
+##  REMOVING SKETCHYBAR altogether: --RELOAD as the default command upon opening. Below is what was there BEFORE my change
+after-startup-command = [
+	'exec-and-forget borders'
+] 
+
+# after-startup-command = ['exec-and-forget sketchybar']
+
+# # Notify Sketchybar about workspace change
+# exec-on-workspace-change = ['/bin/bash', '-c',
+#     'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+# ]
+
+##  REMOVING SKETCHYBAR altogether: 
+# # EXPERIMENTING w this areas syntax/debuggging issues (orig i right above) Notify Sketchybar about workspace change
+# exec-on-workspace-change = ['/bin/bash', '-c',
+#     'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+# ]
+
 
 # GO TO THIS LINK TO CONTINUE TRYING TO FIX THE SKETCHYBAR ISSUE: (why it only works w manual running sketchybar --reload in terminal but not automatically on aerospace start)
 # https://nikitabobko.github.io/AeroSpace/goodness#show-aerospace-workspaces-in-sketchybar
@@ -509,27 +524,77 @@ run = ["layout floating","move-node-to-workspace 8"]
     #*#######################################################################################################################################
     #*#######################################################################################################################################
 
+    # # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
+    # cmd-1 = 'workspace 1'
+    # cmd-2 = 'workspace [_2_]'
+    # cmd-3 = 'workspace <3>'
+    # cmd-4 = 'workspace 4-worksp'
+    # cmd-5 = 'workspace 5'
+    # cmd-6 = 'workspace 6'
+    # cmd-7 = 'workspace 7'
+    # cmd-8 = 'workspace 8'
+    # cmd-9 = 'workspace 9'
+
+    # # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+    # cmd-shift-1 = 'move-node-to-workspace 1'
+    # cmd-shift-2 = 'move-node-to-workspace [_2_]'
+    # cmd-shift-3 = 'move-node-to-workspace <3>'
+    # cmd-shift-4 = 'move-node-to-workspace 4-worksp'
+    # cmd-shift-5 = 'move-node-to-workspace 5'
+    # cmd-shift-6 = 'move-node-to-workspace 6'
+    # cmd-shift-7 = 'move-node-to-workspace 7'
+    # cmd-shift-8 = 'move-node-to-workspace 8'
+    # cmd-shift-9 = 'move-node-to-workspace 9'
+
+    # diff styles for workspace names (mainly for menubar visual now that no longer using sketchybar)
+    #   5<===      5<--- (_2_)   <_2_>   (_2_)   <_2_> 
+
+    # ===3===   ===4===   ===5=== 
+
+    # ---4---   ---5---   ---6---  
+
+    # [--6--]   [--7--]   [--8--] 
+
+    # [__6__]   [__7__]   [__8__] 
+
+
+
+
+
+    # MISC IDEA (del after): we have each worksp number repeat the int val that many times as its 'name'...
+    # example workspace 1 == 1, workspace 2 == 22, workspace 3 == 333, workspace 4 == 4444, etc
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
     cmd-1 = 'workspace 1'
-    cmd-2 = 'workspace 8'
-    cmd-3 = 'workspace 3'
-    cmd-4 = 'workspace 4'
-    cmd-5 = 'workspace 5'
-    cmd-6 = 'workspace 6'
-    cmd-7 = 'workspace 7'
-    cmd-8 = 'workspace 8'
-    cmd-9 = 'workspace 9'
-
+    cmd-2 = 'workspace 22'
+    cmd-3 = 'workspace 333'
+    cmd-4 = 'workspace 4444'
+    cmd-5 = 'workspace 55555'
+    cmd-6 = 'workspace 666666'
+    cmd-7 = 'workspace 7777777'
+    cmd-8 = 'workspace 88888888'
+    cmd-9 = 'workspace 999999999'
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     cmd-shift-1 = 'move-node-to-workspace 1'
-    cmd-shift-2 = 'move-node-to-workspace 2'
-    cmd-shift-3 = 'move-node-to-workspace 3'
-    cmd-shift-4 = 'move-node-to-workspace 4'
-    cmd-shift-5 = 'move-node-to-workspace 5'
-    cmd-shift-6 = 'move-node-to-workspace 6'
-    cmd-shift-7 = 'move-node-to-workspace 7'
-    cmd-shift-8 = 'move-node-to-workspace 8'
-    cmd-shift-9 = 'move-node-to-workspace 9'
+    cmd-shift-2 = 'move-node-to-workspace 22'
+    cmd-shift-3 = 'move-node-to-workspace 333'
+    cmd-shift-4 = 'move-node-to-workspace 4444'
+    cmd-shift-5 = 'move-node-to-workspace 55555'
+    cmd-shift-6 = 'move-node-to-workspace 666666'
+    cmd-shift-7 = 'move-node-to-workspace 7777777'
+    cmd-shift-8 = 'move-node-to-workspace 88888888'
+    cmd-shift-9 = 'move-node-to-workspace 999999999'
+
+
+
+
+
+
+
+
+
+
+
+
 
     # ************************************************************************************************************
     # **** the BUGGY-FROZEN-FLOATING-WINDOW commands *************************************************************
