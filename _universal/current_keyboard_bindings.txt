@@ -282,7 +282,7 @@ HYPER-t		________avail
 HYPER-y		________avail
 HYPER-u		________avail
 HYPER-i		________avail
-HYPER-o		________avail
+HYPER-o		Raycast Hotkey for OPEN-WITH (clever idea on reddit)(hyper-o likely a pain on windows side bc microsoft apps bullsh hogging hyper keyb real-estate)
 HYPER-p		________avail
 HYPER-[		________avail
 HYPER-]		________avail

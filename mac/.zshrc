@@ -719,9 +719,9 @@ alias editprompt="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.p10k.z
 # ln -s
 # ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/key-bindings.zsh 
 # /usr/local/Cellar/fzf/0.61.0/shell/key-bindings.zsh
-alias editfzf="code /usr/local/Cellar/fzf/0.61.0/shell/key-bindings.zsh"
-alias editfzfsettings="code /usr/local/Cellar/fzf/0.61.0/shell/key-bindings.zsh"
-alias editfzfbindings="code /usr/local/Cellar/fzf/0.61.0/shell/key-bindings.zsh"
+alias editfzf="code /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"
+alias editfzfsettings="code /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"
+alias editfzfbindings="code /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"
 
 # alias editkeyb="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
 # alias editkeybtxt="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
