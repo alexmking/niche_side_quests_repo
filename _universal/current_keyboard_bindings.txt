@@ -327,9 +327,9 @@ HYPER-UpArr	    ________avail
 HYPER-DownArr	________avail
 
 HYPER-`		________avail
-HYPER-1	    ________avail
-HYPER-2	    ________avail
-HYPER-3     Emoji search (akin to numbpad3 keyb (may need to be set up on WINDOWS side bc used Raycast on MACside))
+HYPER-1	    take screenshot1
+HYPER-2	    take screenshot2
+HYPER-3     take screenshot3 (maybe vid/gif variation instead of img)
 HYPER-4	    ________avail
 HYPER-5	    ________avail
 HYPER-6	    ________avail

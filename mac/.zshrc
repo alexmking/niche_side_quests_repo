@@ -353,21 +353,25 @@ source $ZSH/oh-my-zsh.sh # AMK21
 
 
 
-
+################################################################
 ################################################################
 # GLOSSARY/SECTIONS (ctrl-f "zz-" to quickly navigate):
+################################################################
 ################################################################
 # 1. misc aliases zz-
 # 2. the alises that take arguments  zz-
 # 3. the 'edit' aliases zz-
 # 4. the 'cd' aliases zz-
-# 5. the SEARCH aliases zz-
+# 5. the SEARCH/find aliases zz-
 # 6. LIST aliases (aka print out to terminal) zz-
-# 7. the 'get' aliases zz-  (TODO)
-# 8. the 'copy' aliases zz- (TODO)
-# 9. the 'select' aliases zz- (TODO)
-# 10. the 'show' aliases zz- (TODO)
-# 11. the 'see' aliases zz- (TODO)
+# 7. the 'git' aliases zz-  
+# 7. the 'GREP' aliases zz-  
+# 7. the 'get' aliases zz-  #TODO)
+# 8. the 'copy' aliases zz- #TODO)
+# 9. the 'select' aliases zz- #TODO)
+# 10. the 'show' aliases zz- #TODO)
+# 11. the 'see' aliases zz- #TODO)
+# RULE OF THUMB: each 'section' header should have TWO lines of ########### so clearly differentiated from other sections/sub-sections/misc-comments I have WITHIN sections
 
 # etc etc #TODO fix/re-arrange the above sections to fit the actual sections below...
 # etc etc #TODO fix/re-arrange the above sections to fit the actual sections below...
@@ -376,10 +380,11 @@ source $ZSH/oh-my-zsh.sh # AMK21
 
 
 
-
-###########################
-# misc aliases zz-
-###########################
+################################################################
+################################################################
+# misc aliases    zz-    [section _ of _]
+################################################################
+################################################################
 alias repos="cd /Users/alexking/local_docs/GIT_STUFF"
 alias cdrepos="cd /Users/alexking/local_docs/GIT_STUFF"
 alias go="cd /Users/alexking"
@@ -412,9 +417,12 @@ alias fzflistpids="ps aux | fzf"
 alias killpid="kill"
 
 
-###########################
-# the alises that take arguments  zz-
-###########################
+
+################################################################
+################################################################
+# the alises that take arguments    zz-    [section _ of _]
+################################################################
+################################################################
 # add a copy alias here which is just shorthand for 'cp' command and must take the two args (source and dest)
 alias copy="cp"
 alias copydir="cp -r"
@@ -463,10 +471,12 @@ alias lsnohidden="ls"
 
 
 
-
-###########################
-# some git aliases:   zz-   (NOTE 'gf' is already working but not sure what the actual command is that it's tied to bc it's not defined here...)
-###########################
+################################################################
+################################################################
+# some git aliases:   zz-     [section _ of _]
+################################################################
+################################################################
+# (NOTE 'gf' is already working but not sure what the actual command is that it's tied to bc it's not defined here...) 
 alias gst="git status"
 alias gs="git status"
 alias gfetch="git fetch"
@@ -475,8 +485,16 @@ alias gpull="git pull"
 alias gcm="git commit -m"
 alias gswitch="git switch"
 
-#### when no need for git add step #### (aka I'm not adding any NEW files. aka only pushing files/changes that are already being tracked by git)
+#### when no need for git add step #### 
+# (aka I'm not adding any NEW files. aka only pushing files/changes that are already being tracked by git)
 alias gitquickcommit="git commit -a -m"
+alias gitroutinecommit="git commit -a -m"
+alias gitfastcommit="git commit -a -m"
+alias gitsimplecommit="git commit -a -m"
+alias gquickcommit="git commit -a -m"
+alias groutinecommit="git commit -a -m"
+alias gfastcommit="git commit -a -m"
+alias gsimplecommit="git commit -a -m"
 
 # git commit -a -m "Your descriptive commit message here"
 
@@ -514,10 +532,11 @@ alias sourcezshrc="source ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zsh
 
 
 
-
-###########################
-# add some standard / useful 'grep' aliases here  zz-
-###########################
+################################################################
+################################################################
+# grep aliases:   zz-     [section _ of _]
+################################################################
+################################################################
 #alias grep="grep . -rnI" [TRYING TO AVOID SETTING ALIASES FOR THE ACTUAL COMMAND ITSELF BC THAT CAN CAUSE ISSUES LATER]]
 alias grp="grep -rnI" .
 alias gp="grep -rnI" .
@@ -538,9 +557,9 @@ alias greprecursiveignorecase="grep -ri"
 alias grepri="grep -ri"
 
 
-######################################################
+#----------------------------------------------------------------
 # diff levels of 'find/search' (we should prob have 1 alias set up for each level here...)
-######################################################
+#----------------------------------------------------------------
 # 1. search for filename only (no dirs, no file contents)
 # 2. search for dir's only (no files, no file contents)
 # 3. search for file contents only (no files, no dirs)    [x] DONE with GREP...
@@ -549,9 +568,11 @@ alias grepri="grep -ri"
 # ISSUE ON WINDOWS SIDE for #2, #4, and #5, all bc finder.py cannot search 'DIRECTORIES'...
 # SO NEED TO FIG OUT A WORKAROUND ON WINDOWS SIDE (fd-find) suggested via GPT so check that out
 
-###########################
-# the 'find' aliases  zz-
-###########################
+################################################################
+################################################################
+# the 'find' aliases:   zz-     [section _ of _]
+################################################################
+################################################################
 alias findfilenameonly="find . -type f -name"   # level 1 of 5 (not so imp, useful)
 alias finddironly="find . -type d -name"        # level 2 of 5 (not so imp, useful)
 alias findfilecontentsonly="grepdef -rnI" .     # level 3 of 5 (most useful, already done with grep)
@@ -587,9 +608,11 @@ alias findanddelalldsstore="find . -name '.DS_Storeasdfasdfasdfasdf' -delete" # 
 
 
 
-###########################
-# the 'cd' aliases  zz-
-###########################
+################################################################
+################################################################
+# the 'cd' aliases:   zz-     [section _ of _]
+################################################################
+################################################################
 alias cdconfigdot="cd /Users/alexking/.config"
 alias cdhome="cd /Users/alexking/"
 alias home="cd /Users/alexking"
@@ -620,9 +643,11 @@ alias cdniche="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
 
 
 
-##############################################################################################
-# the FZF aliases  zz-
-##############################################################################################
+################################################################
+################################################################
+# the 'fzf' aliases:   zz-     [section _ of _]
+################################################################
+################################################################
 # BEST-USECASE: when you forget a shortcut/alias on command-line and instead of having to
 # to leave terminal to open the file -> search then go back to terminal, you can simply 
 # run ones of these fzf aliases for the file and instantly find that command without ever 
@@ -650,9 +675,9 @@ alias fzfeditprompt="cat ~/.p10k.zsh | fzf"
 alias fzfprefixnamingconventions="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
 alias fzfprefixes="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
 
-###########################
+#---------------------------#
 # || TIP REMINDER: || USE-CASE: if I'm in CLI and can't remember an alias exactly, I can do fzfalias, and then start with the 'DELIMITER' the alias uses (such as 'edit' or 'cd' or 'get' etc) and then fuzzy-find the rest of the alias from there
-###########################
+#---------------------------#
 
 
 
@@ -663,10 +688,12 @@ alias fzfprefixes="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_re
 
 
 
-###########################
-# the 'edit' aliases  zz-
-###########################
 
+################################################################
+################################################################
+# the 'edit' aliases:   zz-     [section _ of _]
+################################################################
+################################################################
 # ln -s
 # ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml
 # ~/.config/aerospace/aerospace.toml
@@ -741,9 +768,9 @@ alias editfilenamingconventions="code /Users/alexking/local_docs/GIT_STUFF/niche
 
 
 
-##################################################
+#------------------------------------------------
 # REMINDER: How to alias with a path that has WHITE-SPACES in it:
-##################################################
+#------------------------------------------------
 # alias editvscodekeybindings='code "/Users/alexking/Library/Application Support/Code/User"'
 alias editvscodejson='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
 alias editvscodekeyb='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
@@ -760,13 +787,12 @@ alias editvscodekeybindingsjson='code "/Users/alexking/Library/Application Suppo
 
 
 
-##################################################
-# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO MANY TO ADD HERE TO MIRROR WINDOWS SIDE 
-# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO
-# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO
-# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO
-# LIST aliases (aka print out to terminal) ### TODO ### TODO ### TODO ### TODO
-##################################################
+
+################################################################
+################################################################
+# the 'list' aliases:   zz-     [section _ of _]  #TODO MANY MORE OF THESE 'list' ALIASES TO ADD HERE FYI
+################################################################
+################################################################
 alias listprefixnamingconventions="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
 alias listprefixes="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
 alias listnamingconventions="/usr/local/bin/alexScripts/scr_list_prefix_naming_conventions.py"
