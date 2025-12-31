@@ -495,6 +495,8 @@ alias gquickcommit="git commit -a -m"
 alias groutinecommit="git commit -a -m"
 alias gfastcommit="git commit -a -m"
 alias gsimplecommit="git commit -a -m"
+alias quickcommit="git commit -a -m"
+alias quickcommitgit="git commit -a -m"
 
 # git commit -a -m "Your descriptive commit message here"
 

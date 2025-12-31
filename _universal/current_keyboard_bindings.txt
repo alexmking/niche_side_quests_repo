@@ -11,6 +11,11 @@ current_keyboard_bindings
 2. ALT-SHIFT group of keybShortcuts
 3. HYPERKEY group of keybShortcuts
 
+[DEL ME AFTER WHILE...]
+MODIFIER PRIORITY REMINDER: ALT before HYPER
+the ALT modifier > HYPER modifier. So when adding new bindings, we should FIRST try and find an ALT-char binding and ONLY IF there's nothing good avail, THEN we can look at the HYPER-char options.
+point beingI think im becoming too sloppy w automatiicaly going for HYPER key for new keyb, which will eventually end up w me being confused if an action is say ALT-foobar or HYPER-foobar
+[DEL ME AFTER WHILE...]
 
 =====================================
 (ALT) group of commands	
