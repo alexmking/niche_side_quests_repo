@@ -236,6 +236,10 @@ run = ["layout floating","move-node-to-workspace ||--6--||"]
 if.app-id = 'com.culturedcode.ThingsMac'
 run = ["layout floating","move-node-to-workspace ||--8--||"]
 
+[[on-window-detected]]
+if.app-id = 'imagetasks.iStatistica-Pro'
+run = ["layout floating","move-node-to-workspace ||--9--||"]
+
 
 
 # [[on-window-detected]]
@@ -268,7 +272,9 @@ run = ["layout floating","move-node-to-workspace ||--8--||"]
 # OR...RUN THIS COMMAND IN TERMINAL to see CURRENTLY RUNNING APPs:
 #  > aerospace list-apps 
 
-
+    # "app-bundle-id" : "imagetasks.iStatistica-Pro",
+    # "app-name" : "iStatistica Pro",
+    # "app-pid" : 87679
 
 
 
