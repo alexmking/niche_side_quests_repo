@@ -800,30 +800,18 @@ alias editvscodekeybindingsjson='code "/Users/alexking/Library/Application Suppo
 # the 'list' aliases:   zz-     [section _ of _]  #TODO MANY MORE OF THESE 'list' ALIASES TO ADD HERE FYI
 ################################################################
 ################################################################
-# TODO for these prefixes outputting in CLI im just cating the txt file for now until I make the actual script to do this
-# TODO bc the prob w using script to print out nice list is there would have to be two SSOT (one from txt file and one from script.py))
-alias listprefixnamingconventions="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listprefixes="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listnamingconventions="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listfilenameconventions="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listnamingprefixes="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listprefixtaxonomy="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listtaxonomy="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-
-#### TODO QUICK ####
-#### TODO QUICK ####
-# try outputting only like the first 50 lines of 'cat' to avoid the bottom 'NOTES' section from showing up in terminal which is making it messy and have to scroll up to see the actual prefixes themselces
-# ASK GPT / google if can limit CAT output like this...
-#### TODO QUICK ####
-#### TODO QUICK ####
-
+# TODO (if I want a nicer/colorful output for these 'list' aliases later, can use 'bat' command instead of 'head' or 'cat' command)
+alias listprefixnamingconventions="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listprefixes="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listnamingconventions="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listfilenameconventions="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listnamingprefixes="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listprefixtaxonomy="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listtaxonomy="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
 ### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
 ### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
 ### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
 ### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
-
-
-
 
 ### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases ne
 
