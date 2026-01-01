@@ -1,0 +1,34 @@
+[WORK-IN-PROGRESS doc]
+=================================================================================
+SSOT of the tools/apps currently being used to accomplish the universal exp across mac,win,linux
+=================================================================================
+- most tools have a 1:1 mapping from OS to OS, it's just a different name that accomplishes the same thing. (AHK on windows, and BTT on Mac)
+
+
+=====================================
+CURRENT TOOLS/APPS AND THEIR EQUIV:
+=====================================
+
+--------------------------------------------------------
+|| MAC ||           || WINDOWS ||           || LINUX ||
+--------------------------------------------------------
+Raycast             Raycast
+LogiOptions+        LogiOptions+
+BTT                 AHK
+Aerospace           GlazeWM
+Ice                 ??
+iTerm2              cmder
+scripts             scripts                 scripts
+zsh                 flexprompt            
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+
+
+=====================================
+MISC...
+=====================================
+
