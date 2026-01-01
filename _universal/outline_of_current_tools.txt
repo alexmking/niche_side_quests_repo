@@ -26,7 +26,13 @@ TODO                TODO                    TODO
 TODO                TODO                    TODO 
 TODO                TODO                    TODO 
 TODO                TODO                    TODO 
-
+Trello              Trello                  Trello
+Things3             ???                     ???
+CleanshotX          ShareX                  ???
+VScode              VScode                  ???
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
 
 =====================================
 MISC...
