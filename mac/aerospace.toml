@@ -523,7 +523,8 @@ run = ["layout floating","move-node-to-workspace 8"]
     # * WORKSPACES SECTION + MISC NOTES/WINDOW-SPY-type useful info (aka graveyard) (section 5 of 5)
     #*#######################################################################################################################################
     #*#######################################################################################################################################
-
+    #TODO this section will have a few diff versions of the workspace name ideas so I can quickly comment/uncomment to test them out visually in sketchybar and see which one I like best
+    #TODO so after this process is over and i chose 1 or 2 to stick w, i can delete all the other versions below to clean up the config file
     # # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
     # cmd-1 = 'workspace 1'
     # cmd-2 = 'workspace [_2_]'
@@ -546,43 +547,285 @@ run = ["layout floating","move-node-to-workspace 8"]
     # cmd-shift-8 = 'move-node-to-workspace 8'
     # cmd-shift-9 = 'move-node-to-workspace 9'
 
-    # diff styles for workspace names (mainly for menubar visual now that no longer using sketchybar)
-    #   5<===      5<--- (_2_)   <_2_>   (_2_)   <_2_> 
+    # # another style 1   [meh did not look as good as I expected in menubar]
+    # cmd-1 = 'workspace ===1==='
+    # cmd-2 = 'workspace ===2==='
+    # cmd-3 = 'workspace ===3==='
+    # cmd-4 = 'workspace ===4==='
+    # cmd-5 = 'workspace ===5==='
+    # cmd-6 = 'workspace ===6==='
+    # cmd-7 = 'workspace ===7==='
+    # cmd-8 = 'workspace ===8==='
+    # cmd-9 = 'workspace ===9==='
+    # cmd-shift-1 = 'move-node-to-workspace ===1==='
+    # cmd-shift-2 = 'move-node-to-workspace ===2==='
+    # cmd-shift-3 = 'move-node-to-workspace ===3==='
+    # cmd-shift-4 = 'move-node-to-workspace ===4==='
+    # cmd-shift-5 = 'move-node-to-workspace ===5==='
+    # cmd-shift-6 = 'move-node-to-workspace ===6==='
+    # cmd-shift-7 = 'move-node-to-workspace ===7==='
+    # cmd-shift-8 = 'move-node-to-workspace ===8==='
+    # cmd-shift-9 = 'move-node-to-workspace ===9==='
 
-    # ===3===   ===4===   ===5=== 
+    # # another style 2
+    # cmd-1 = 'workspace ---1---'
+    # cmd-2 = 'workspace ---2---'
+    # cmd-3 = 'workspace ---3---'
+    # cmd-4 = 'workspace ---4---'
+    # cmd-5 = 'workspace ---5---'
+    # cmd-6 = 'workspace ---6---'
+    # cmd-7 = 'workspace ---7---'
+    # cmd-8 = 'workspace ---8---'
+    # cmd-9 = 'workspace ---9---'
+    # cmd-shift-1 = 'move-node-to-workspace ---1---'
+    # cmd-shift-2 = 'move-node-to-workspace ---2---'
+    # cmd-shift-3 = 'move-node-to-workspace ---3---'
+    # cmd-shift-4 = 'move-node-to-workspace ---4---'
+    # cmd-shift-5 = 'move-node-to-workspace ---5---'
+    # cmd-shift-6 = 'move-node-to-workspace ---6---'
+    # cmd-shift-7 = 'move-node-to-workspace ---7---'
+    # cmd-shift-8 = 'move-node-to-workspace ---8---'
+    # cmd-shift-9 = 'move-node-to-workspace ---9---'
 
-    # ---4---   ---5---   ---6---  
+    # # # another style 3
+    # cmd-1 = 'workspace [--1--]'
+    # cmd-2 = 'workspace [--2--]'
+    # cmd-3 = 'workspace [--3--]'
+    # cmd-4 = 'workspace [--4--]'
+    # cmd-5 = 'workspace [--5--]'
+    # cmd-6 = 'workspace [--6--]'
+    # cmd-7 = 'workspace [--7--]'
+    # cmd-8 = 'workspace [--8--]'
+    # cmd-9 = 'workspace [--9--]'
+    # cmd-shift-1 = 'move-node-to-workspace [--1--]'
+    # cmd-shift-2 = 'move-node-to-workspace [--2--]'
+    # cmd-shift-3 = 'move-node-to-workspace [--3--]'
+    # cmd-shift-4 = 'move-node-to-workspace [--4--]'
+    # cmd-shift-5 = 'move-node-to-workspace [--5--]'
+    # cmd-shift-6 = 'move-node-to-workspace [--6--]'
+    # cmd-shift-7 = 'move-node-to-workspace [--7--]'
+    # cmd-shift-8 = 'move-node-to-workspace [--8--]'
+    # cmd-shift-9 = 'move-node-to-workspace [--9--]'
 
-    # [--6--]   [--7--]   [--8--] 
+    # # another style 4
+    # cmd-1 = 'workspace [__1__]'
+    # cmd-2 = 'workspace [__2__]'
+    # cmd-3 = 'workspace [__3__]'
+    # cmd-4 = 'workspace [__4__]'
+    # cmd-5 = 'workspace [__5__]'
+    # cmd-6 = 'workspace [__6__]'
+    # cmd-7 = 'workspace [__7__]'
+    # cmd-8 = 'workspace [__8__]'
+    # cmd-9 = 'workspace [__9__]'
+    # cmd-shift-1 = 'move-node-to-workspace [__1__]'
+    # cmd-shift-2 = 'move-node-to-workspace [__2__]'
+    # cmd-shift-3 = 'move-node-to-workspace [__3__]'
+    # cmd-shift-4 = 'move-node-to-workspace [__4__]'
+    # cmd-shift-5 = 'move-node-to-workspace [__5__]'
+    # cmd-shift-6 = 'move-node-to-workspace [__6__]'
+    # cmd-shift-7 = 'move-node-to-workspace [__7__]'
+    # cmd-shift-8 = 'move-node-to-workspace [__8__]'
+    # cmd-shift-9 = 'move-node-to-workspace [__9__]'
 
-    # [__6__]   [__7__]   [__8__] 
+    # # another style 5
+    # cmd-1 = 'workspace (--1--)'
+    # cmd-2 = 'workspace (--2--)'
+    # cmd-3 = 'workspace (--3--)'
+    # cmd-4 = 'workspace (--4--)'
+    # cmd-5 = 'workspace (--5--)'
+    # cmd-6 = 'workspace (--6--)'
+    # cmd-7 = 'workspace (--7--)'
+    # cmd-8 = 'workspace (--8--)'
+    # cmd-9 = 'workspace (--9--)'
+    # cmd-shift-1 = 'move-node-to-workspace (--1--)'
+    # cmd-shift-2 = 'move-node-to-workspace (--2--)'
+    # cmd-shift-3 = 'move-node-to-workspace (--3--)'
+    # cmd-shift-4 = 'move-node-to-workspace (--4--)'
+    # cmd-shift-5 = 'move-node-to-workspace (--5--)'
+    # cmd-shift-6 = 'move-node-to-workspace (--6--)'
+    # cmd-shift-7 = 'move-node-to-workspace (--7--)'
+    # cmd-shift-8 = 'move-node-to-workspace (--8--)'
+    # cmd-shift-9 = 'move-node-to-workspace (--9--)'
+
+    # another style 6
+    cmd-1 = 'workspace ||--1--||'
+    cmd-2 = 'workspace ||--2--||'
+    cmd-3 = 'workspace ||--3--||'
+    cmd-4 = 'workspace ||--4--||'
+    cmd-5 = 'workspace ||--5--||'
+    cmd-6 = 'workspace ||--6--||'
+    cmd-7 = 'workspace ||--7--||'
+    cmd-8 = 'workspace ||--8--||'
+    cmd-9 = 'workspace ||--9--||'
+    cmd-shift-1 = 'move-node-to-workspace ||--1--||'
+    cmd-shift-2 = 'move-node-to-workspace ||--2--||'
+    cmd-shift-3 = 'move-node-to-workspace ||--3--||'
+    cmd-shift-4 = 'move-node-to-workspace ||--4--||'
+    cmd-shift-5 = 'move-node-to-workspace ||--5--||'
+    cmd-shift-6 = 'move-node-to-workspace ||--6--||'
+    cmd-shift-7 = 'move-node-to-workspace ||--7--||'
+    cmd-shift-8 = 'move-node-to-workspace ||--8--||'
+    cmd-shift-9 = 'move-node-to-workspace ||--9--||'
+
+
+    # # another style 7
+    # cmd-1 = 'workspace //_1_\\'
+    # cmd-2 = 'workspace //_2_\\'
+    # cmd-3 = 'workspace //_3_\\'
+    # cmd-4 = 'workspace //_4_\\'
+    # cmd-5 = 'workspace //_5_\\'
+    # cmd-6 = 'workspace //_6_\\'
+    # cmd-7 = 'workspace //_7_\\'
+    # cmd-8 = 'workspace //_8_\\'
+    # cmd-9 = 'workspace //_9_\\'
+    # cmd-shift-1 = 'move-node-to-workspace //_1_\\'
+    # cmd-shift-2 = 'move-node-to-workspace //_2_\\'
+    # cmd-shift-3 = 'move-node-to-workspace //_3_\\'
+    # cmd-shift-4 = 'move-node-to-workspace //_4_\\'
+    # cmd-shift-5 = 'move-node-to-workspace //_5_\\'
+    # cmd-shift-6 = 'move-node-to-workspace //_6_\\'
+    # cmd-shift-7 = 'move-node-to-workspace //_7_\\'
+    # cmd-shift-8 = 'move-node-to-workspace //_8_\\'
+    # cmd-shift-9 = 'move-node-to-workspace //_9_\\'
+
+    # # another style 8       
+    # cmd-1 = 'workspace \\_1_//'
+    # cmd-2 = 'workspace \\_2_//'
+    # cmd-3 = 'workspace \\_3_//'
+    # cmd-4 = 'workspace \\_4_//'
+    # cmd-5 = 'workspace \\_5_//'
+    # cmd-6 = 'workspace \\_6_//'
+    # cmd-7 = 'workspace \\_7_//'
+    # cmd-8 = 'workspace \\_8_//'
+    # cmd-9 = 'workspace \\_9_//'
+    # cmd-shift-1 = 'move-node-to-workspace \\_1_//'
+    # cmd-shift-2 = 'move-node-to-workspace \\_2_//'
+    # cmd-shift-3 = 'move-node-to-workspace \\_3_//'
+    # cmd-shift-4 = 'move-node-to-workspace \\_4_//'
+    # cmd-shift-5 = 'move-node-to-workspace \\_5_//'
+    # cmd-shift-6 = 'move-node-to-workspace \\_6_//'
+    # cmd-shift-7 = 'move-node-to-workspace \\_7_//'
+    # cmd-shift-8 = 'move-node-to-workspace \\_8_//'
+    # cmd-shift-9 = 'move-node-to-workspace \\_9_//'
+
+    # # another style 9
+    # cmd-1 = 'workspace /__1__\\'
+    # cmd-2 = 'workspace /__2__\\'
+    # cmd-3 = 'workspace /__3__\\'
+    # cmd-4 = 'workspace /__4__\\'
+    # cmd-5 = 'workspace /__5__\\'
+    # cmd-6 = 'workspace /__6__\\'
+    # cmd-7 = 'workspace /__7__\\'
+    # cmd-8 = 'workspace /__8__\\'
+    # cmd-9 = 'workspace /__9__\\'
+    # cmd-shift-1 = 'move-node-to-workspace /__1__\\'
+    # cmd-shift-2 = 'move-node-to-workspace /__2__\\'
+    # cmd-shift-3 = 'move-node-to-workspace /__3__\\'
+    # cmd-shift-4 = 'move-node-to-workspace /__4__\\'
+    # cmd-shift-5 = 'move-node-to-workspace /__5__\\'
+    # cmd-shift-6 = 'move-node-to-workspace /__6__\\'
+    # cmd-shift-7 = 'move-node-to-workspace /__7__\\'
+    # cmd-shift-8 = 'move-node-to-workspace /__8__\\'
+    # cmd-shift-9 = 'move-node-to-workspace /__9__\\'
+
+    # # another style 10
+    # cmd-1 = 'workspace \__1__/'
+    # cmd-2 = 'workspace \__2__/'
+    # cmd-3 = 'workspace \__3__/'
+    # cmd-4 = 'workspace \__4__/'
+    # cmd-5 = 'workspace \__5__/'
+    # cmd-6 = 'workspace \__6__/'
+    # cmd-7 = 'workspace \__7__/'
+    # cmd-8 = 'workspace \__8__/'
+    # cmd-9 = 'workspace \__9__/'
+    # cmd-shift-1 = 'move-node-to-workspace \__1__/'
+    # cmd-shift-2 = 'move-node-to-workspace \__2__/'
+    # cmd-shift-3 = 'move-node-to-workspace \__3__/'
+    # cmd-shift-4 = 'move-node-to-workspace \__4__/'
+    # cmd-shift-5 = 'move-node-to-workspace \__5__/'
+    # cmd-shift-6 = 'move-node-to-workspace \__6__/'
+    # cmd-shift-7 = 'move-node-to-workspace \__7__/'
+    # cmd-shift-8 = 'move-node-to-workspace \__8__/'
+    # cmd-shift-9 = 'move-node-to-workspace \__9__/'
+
+
+    # # another style 11
+    # cmd-1 = 'workspace >--1--<'
+    # cmd-2 = 'workspace >--2--<'
+    # cmd-3 = 'workspace >--3--<'
+    # cmd-4 = 'workspace >--4--<'
+    # cmd-5 = 'workspace >--5--<'
+    # cmd-6 = 'workspace >--6--<'
+    # cmd-7 = 'workspace >--7--<'
+    # cmd-8 = 'workspace >--8--<'
+    # cmd-9 = 'workspace >--9--<'
+    # cmd-shift-1 = 'move-node-to-workspace >--1--<'
+    # cmd-shift-2 = 'move-node-to-workspace >--2--<'
+    # cmd-shift-3 = 'move-node-to-workspace >--3--<'
+    # cmd-shift-4 = 'move-node-to-workspace >--4--<'
+    # cmd-shift-5 = 'move-node-to-workspace >--5--<'
+    # cmd-shift-6 = 'move-node-to-workspace >--6--<'
+    # cmd-shift-7 = 'move-node-to-workspace >--7--<'
+    # cmd-shift-8 = 'move-node-to-workspace >--8--<'
+    # cmd-shift-9 = 'move-node-to-workspace >--9--<'
+
+    # # another style...12 [LAST]
+    # cmd-1 = 'workspace 1'
+    # cmd-2 = 'workspace 22'
+    # cmd-3 = 'workspace 333'
+    # cmd-4 = 'workspace 4444'
+    # cmd-5 = 'workspace 55555'
+    # cmd-6 = 'workspace 666666'
+    # cmd-7 = 'workspace 7777777'
+    # cmd-8 = 'workspace 88888888'
+    # cmd-9 = 'workspace 999999999'
+    # cmd-shift-1 = 'move-node-to-workspace 1'
+    # cmd-shift-2 = 'move-node-to-workspace 22'
+    # cmd-shift-3 = 'move-node-to-workspace 333'
+    # cmd-shift-4 = 'move-node-to-workspace 4444'
+    # cmd-shift-5 = 'move-node-to-workspace 55555'
+    # cmd-shift-6 = 'move-node-to-workspace 666666'
+    # cmd-shift-7 = 'move-node-to-workspace 7777777'
+    # cmd-shift-8 = 'move-node-to-workspace 88888888'
+    # cmd-shift-9 = 'move-node-to-workspace 999999999'
 
 
 
 
 
-    # MISC IDEA (del after): we have each worksp number repeat the int val that many times as its 'name'...
-    # example workspace 1 == 1, workspace 2 == 22, workspace 3 == 333, workspace 4 == 4444, etc
-    # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    cmd-1 = 'workspace 1'
-    cmd-2 = 'workspace 22'
-    cmd-3 = 'workspace 333'
-    cmd-4 = 'workspace 4444'
-    cmd-5 = 'workspace 55555'
-    cmd-6 = 'workspace 666666'
-    cmd-7 = 'workspace 7777777'
-    cmd-8 = 'workspace 88888888'
-    cmd-9 = 'workspace 999999999'
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    cmd-shift-1 = 'move-node-to-workspace 1'
-    cmd-shift-2 = 'move-node-to-workspace 22'
-    cmd-shift-3 = 'move-node-to-workspace 333'
-    cmd-shift-4 = 'move-node-to-workspace 4444'
-    cmd-shift-5 = 'move-node-to-workspace 55555'
-    cmd-shift-6 = 'move-node-to-workspace 666666'
-    cmd-shift-7 = 'move-node-to-workspace 7777777'
-    cmd-shift-8 = 'move-node-to-workspace 88888888'
-    cmd-shift-9 = 'move-node-to-workspace 999999999'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

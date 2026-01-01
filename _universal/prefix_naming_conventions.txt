@@ -1,4 +1,3 @@
-
 =================================================================================
 SSOT for File name prefixes (to buff searches/nav)
 =================================================================================
@@ -9,11 +8,11 @@ SSOT for File name prefixes (to buff searches/nav)
 =====================================
 CURRENT PREFIXES AND THEIR DEFINITIONS:
 =====================================
+ss-     screenshot and or image files (may tweak this one)
+scr-    scripts [likely will conflict w 'screenshot'](may tweak this one)
 p-      project dirs    
-img-    screenshot and or image files (may tweak this one)
 ref-    reference / cheatsheet docs
 old-    deprecated, but kept
-scr-    scripts [likely will conflict w 'screenshot'](may tweak this one)
 dot-    dot files (when not hidden via .config)
 cfg-    config files (may conflict w dot-)
 tmp-    tmp files likely ok to delete soon 
@@ -27,6 +26,14 @@ OTHER POTENTIAL ONES TO CONSIDER...
 =====================================
 junk- 
 dot- vs cfg- ??
+
+
+
+
+
+
+
+
 
 
 
@@ -49,3 +56,15 @@ WRINKLES: should we combine both - and _ in file names for increased granularity
 p-nasa-simulation-app   OR...   p-nasa_simulation_app   OR...   p_nasa_simulation_app 
 old-resume-template1    OR...   old-resume_template1    OR...   old_resume_template1
 ref-zzshorts-25         OR...   ref-zzshorts_25         OR...   ref_zzshorts_25  
+
+
+
+
+
+tmp-NEED TO DECIDE ON 'screenshot' and 'script' prefixes: (del me afterward)
+    screenshot:(3 diff ones)        scr-    ss-     img- 
+    script:(2 diff ones)            scr-    script- 
+
+    OPTION2:    ss-     scr-    [top choice overall]
+    OPTION1:    scr-    script-   [option2 edges over this one]  
+    OPTION3:    ss-     script- [no bc mine as well make use of the 'scr-'] 
