@@ -353,6 +353,24 @@ source $ZSH/oh-my-zsh.sh # AMK21
 
 
 
+
+# ===================================
+# my environment variables (these WILL persist fyi)
+# ===================================
+export ALEXSCRIPTS_DIR="/usr/local/bin/alexScripts"
+export REPO_DIR="/Users/alexking/local_docs/GIT_STUFF"
+export NICHE_REPO_DIR="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
+#TODO ADD MORE ENV VARS LATER AS NEEDED...
+#TODO ADD MORE ENV VARS LATER AS NEEDED...
+#TODO ADD MORE ENV VARS LATER AS NEEDED...
+#TODO ADD MORE ENV VARS LATER AS NEEDED...
+
+
+
+
+
+
+
 ################################################################
 ################################################################
 # GLOSSARY/SECTIONS (ctrl-f "zz-" to quickly navigate):
@@ -385,15 +403,15 @@ source $ZSH/oh-my-zsh.sh # AMK21
 # misc aliases    zz-    [section _ of _]
 ################################################################
 ################################################################
-alias repos="cd /Users/alexking/local_docs/GIT_STUFF"
-alias cdrepos="cd /Users/alexking/local_docs/GIT_STUFF"
+alias repos="cd $REPO_DIR"
+alias cdrepos="cd $REPO_DIR"
 alias go="cd /Users/alexking"
 alias golocal="cd /Users/alexking/local_docs"
 alias explorer="open ."
 alias e.="open ."
-alias add_alias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
-alias addalias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
-alias editalias="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
+alias add_alias="code $NICHE_REPO_DIR/mac/.zshrc"
+alias addalias="code $NICHE_REPO_DIR/mac/.zshrc"
+alias editalias="code $NICHE_REPO_DIR/mac/.zshrc"
 alias fixsketchy="sketchybar --reload"
 alias sketchybarreload="sketchybar --reload"
 alias reloadsketchybar="sketchybar --reload"
@@ -404,6 +422,19 @@ alias topbarreload="sketchybar --reload"
 alias fixtopbar="sketchybar --reload"
 alias fixmenubar="sketchybar --reload"
 alias fixsketchybar="sketchybar --reload"
+
+alias rootdir="cd /"
+alias homedir="cd /Users/alexking"
+
+# prob not needed tbh but always forget the -a flag w native open command(so dont have to be in /Applications dir to open apps)
+alias openapp="open -a" 
+alias openapplication="open -a"
+alias openraycast="open -a Raycast"
+#TODO add more openapp/openapplication aliases for other apps I use frequently...
+#TODO aside from the RAYCAST one this may be pointless aliasing or overkill but going to try it anyway 
+#TODO RAYCAST one is useful bc when i close/restart raycast, I no logner have my shortcuts/spotlight-search etc and manually 
+#TODO so all i need is this one manual alias for RAYCAST bc once I have RAYCAST open, then I already have alias-like quick access to everything else via RAYCAST 
+#TODO (for ex like I wouldnt need say an 'alias=open -a chrome' bc once I have RAYCAST open, I can just do 'chrome' in RAYCAST to open chrome)
 
 # pid's and kill command
 alias findpid="pgrep"
@@ -621,30 +652,33 @@ alias home="cd /Users/alexking"
 alias cdak="cd /Users/alexking"
 alias cdalex="cd /Users/alexking"
 alias cdalexking="cd /Users/alexking"
+alias cdroot="cd /"
+alias cdhome="cd /Users/alexking"
 
 alias cdalexscripts="cd /usr/local/bin/alexScripts"
-alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
-alias cdapps="/Applications"
-alias cdapp="/Applications"
-alias cdapplications="/Applications"
-alias cddownloads="/Users/alexking/Downloads"
-alias cdquickref="/Users/alexking/quick_ref"
+alias cdallconfigs="cd /Users/alexking/ALL_CONFIGS"
+alias cdapps="cd /Applications"
+alias cdapp="cd /Applications"
+alias cdapplications="cd /Applications"
+alias cddownloads="cd /Users/alexking/Downloads"
+alias cdquickref="cd /Users/alexking/quick_ref"
 
 alias cddesktop="cd /Users/alexking/Desktop"
 alias cdleet="cd /Users/alexking/Desktop/LEET"
 alias cdlocaldocs="cd /Users/alexking/local_docs"
 alias cdlocal="cd /Users/alexking/local_docs"
 
-alias cddotfiles="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
-alias cdnichesidequest="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
-alias cdnicherepo="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
-alias cdsidequestrepo="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
-alias cdsidequest="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
-alias cdniche="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
-alias cdnicheuniversal="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal"
-alias cdnichemac="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac"
-alias cdnichelinux="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/linux"
-alias cdnichewindows="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/windows"
+alias cddotfiles="cd $REPO_DIR/niche_side_quests_repo"
+alias cddotfilesTestEnvVariable="cd $REPO_DIR/niche_side_quests_repo"
+alias cdnichesidequest="cd $REPO_DIR/niche_side_quests_repo"
+alias cdnicherepo="cd $REPO_DIR/niche_side_quests_repo"
+alias cdsidequestrepo="cd $REPO_DIR/niche_side_quests_repo"
+alias cdsidequest="cd $REPO_DIR/niche_side_quests_repo"
+alias cdniche="cd $REPO_DIR/niche_side_quests_repo"
+alias cdnicheuniversal="cd $REPO_DIR/niche_side_quests_repo/_universal"
+alias cdnichemac="cd $REPO_DIR/niche_side_quests_repo/mac"
+alias cdnichelinux="cd $REPO_DIR/niche_side_quests_repo/linux"
+alias cdnichewindows="cd $REPO_DIR/niche_side_quests_repo/windows"
 
 
 
@@ -662,13 +696,13 @@ alias cdnichewindows="cd /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_
 alias fzfaliases="cat /Users/alexking/.zshrc | fzf"
 alias fzfalias="cat /Users/alexking/.zshrc | fzf"
 alias fzfuseraliases="cat /Users/alexking/.zshrc | fzf"
-alias fzfcurrentkeyboardbindings="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfkeyboardbindings="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfbindings="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfkeyboard="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfkeyb="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfkb="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfshortcuts="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
+alias fzfcurrentkeyboardbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
+alias fzfkeyboardbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
+alias fzfbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
+alias fzfkeyboard="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
+alias fzfkeyb="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
+alias fzfkb="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
+alias fzfshortcuts="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
 
 alias fzfaero="cat /Users/alexking/.config/aerospace/aerospace.toml | fzf"
 alias fzfohmyzsh="cat ~/.oh-my-zsh | fzf"
@@ -679,8 +713,8 @@ alias fzfeditp10k="cat ~/.p10k.zsh | fzf"
 alias fzfeditprompt="cat ~/.p10k.zsh | fzf"
 
 
-alias fzfprefixnamingconventions="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
-alias fzfprefixes="cat /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
+alias fzfprefixnamingconventions="cat $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
+alias fzfprefixes="cat $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
 
 #---------------------------#
 # || TIP REMINDER: || USE-CASE: if I'm in CLI and can't remember an alias exactly, I can do fzfalias, and then start with the 'DELIMITER' the alias uses (such as 'edit' or 'cd' or 'get' etc) and then fuzzy-find the rest of the alias from there
@@ -716,6 +750,9 @@ alias ohmyzsh="code ~/.oh-my-zsh"
 alias zshconfig="code ~/.zshrc"
 alias editzsh="code ~/.zshrc"
 
+
+alias editoutlineofcurrenttools="code $REPO_DIR/niche_side_quests_repo/_universal/outline_of_current_tools.txt"
+
 # ln -s 
 # ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh
 # ~/.p10k.zsh
@@ -735,12 +772,11 @@ alias editfzfbindings="code /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"
 # alias editcurrentkeyb="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
 # alias editcurrentkeyboardbindings="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
 # alias editcurrentkeyboardbindingstxt="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
-alias editkeyb="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-alias editkeybtxt="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-alias editcurrentkeyb="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-alias editcurrentkeyboardbindings="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-alias editcurrentkeyboardbindingstxt="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-
+alias editkeyb="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
+alias editkeybtxt="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
+alias editcurrentkeyb="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
+alias editcurrentkeyboardbindings="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
+alias editcurrentkeyboardbindingstxt="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
 
 
 # for the CLOUD madden
@@ -767,12 +803,11 @@ alias seepath='echo; tr ":" "\n" <<< "$PATH"; echo;'
 alias cwd='pwd | pbcopy'
 # alias pwd='pwd | pbcopy'  # NOT SURE ABOUT THIS ONE ...
 
-alias editprefixnamingconventions="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias editprefixes="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias editnamingconventions="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias edittaxonomy="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias editfilenamingconventions="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-
+alias editprefixnamingconventions="code $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias editprefixes="code $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias editnamingconventions="code $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias edittaxonomy="code $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias editfilenamingconventions="code $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
 
 
 #------------------------------------------------
@@ -801,13 +836,13 @@ alias editvscodekeybindingsjson='code "/Users/alexking/Library/Application Suppo
 ################################################################
 ################################################################
 # TODO (if I want a nicer/colorful output for these 'list' aliases later, can use 'bat' command instead of 'head' or 'cat' command)
-alias listprefixnamingconventions="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listprefixes="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listnamingconventions="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listfilenameconventions="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listnamingprefixes="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listprefixtaxonomy="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
-alias listtaxonomy="head -n 30 /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listprefixnamingconventions="head -n 30 $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listprefixes="head -n 30 $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listnamingconventions="head -n 30 $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listfilenameconventions="head -n 30 $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listnamingprefixes="head -n 30 $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listprefixtaxonomy="head -n 30 $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
+alias listtaxonomy="head -n 30 $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt"
 ### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
 ### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 
 ### TODO but FIRST I NEED TO CREATE THE ACTUAL SCRIPTS THEMSELVES WHICH THESE 'list' aliases need 

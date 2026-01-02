@@ -1,9 +1,28 @@
 
 =================================================================================
-SSOT for File name prefixes (to buff searches/nav)
+SSOT for File name prefixes (to buff searches/nav) + RAYCAST config
 =================================================================================
 - integrate w raycast, grep, fzf etc
 - currently using hyphen '-' as the delimiter instead of underscore '_', mainly bc it's faster to type p- than p_ but this could change. Underscore has been my default for file names (c/c++) and is more standard overall.
+
+
+
+
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+
 
 
 =====================================
@@ -27,6 +46,64 @@ OTHER POTENTIAL ONES TO CONSIDER...
 =====================================
 junk- 
 dot- vs cfg- ??
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(this is out of place in this file obviously, but leaning towards consolidating and or EXPANDING what this prefix doc has)
+=====================================
+RAYCAST Aliases + Hotkeys + quicklinks etc:
+=====================================
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

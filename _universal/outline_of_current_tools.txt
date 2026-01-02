@@ -19,7 +19,17 @@ Aerospace           GlazeWM
 Ice                 ??
 iTerm2              cmder
 scripts             scripts                 scripts
-zsh                 flexprompt            
+zsh                 flexprompt          
+chrome              chrome                  chrome
+chromeExtention1
+chromeExtention1  
+chromeExtention1  
+chromeExtention1  
+chromeExtention1  (ADD THESE EXTENTIONS 1 by 1 here...)
+chromeExtention1  (ADD THESE EXTENTIONS 1 by 1 here...)
+chromeExtention1  (ADD THESE EXTENTIONS 1 by 1 here...)
+chromeExtention1  (ADD THESE EXTENTIONS 1 by 1 here...)
+
 TODO                TODO                    TODO 
 TODO                TODO                    TODO 
 TODO                TODO                    TODO 

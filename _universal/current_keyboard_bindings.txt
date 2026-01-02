@@ -6,10 +6,11 @@ when adding a new shortcut, use 'fzfkeyb' with 'avail' to quickly see all the ke
 ]
 
 current_keyboard_bindings
-[THREE MAIN SECTIONS]
+[THREE MAIN SECTIONS + 1 BESPOKE SECTION]
 1. ALT-ONLY group of keybShortcuts
 2. ALT-SHIFT group of keybShortcuts
 3. HYPERKEY group of keybShortcuts
+4. BESPOKE 'rightHYPER+Fn' group of keybShortcuts
 
 [DEL ME AFTER WHILE...]
 MODIFIER PRIORITY REMINDER: ALT before HYPER
@@ -17,6 +18,46 @@ the ALT modifier > HYPER modifier. So when adding new bindings, we should FIRST 
 point beingI think im becoming too sloppy w automatiicaly going for HYPER key for new keyb, which will eventually end up w me being confused if an action is say ALT-foobar or HYPER-foobar
 [DEL ME AFTER WHILE...]
 
+
+[DEL ME AFTER WHILE...]
+> should consider changing the TMP-PLAYGOUNRD group of keys from the NUMPAD 1-9 to the Fn row keys (if Fn keys can work w modifiers that well)
+WHY? bc im running into conflicts w some apps treating number row keys as the SAME as numPAD keys (so ALT-5 ===== ALT-numpad5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================
+TOP-PRIOIRTY: commands that need to be assigned a keyb:	
+=====================================
+- raycast global hotkey for 'quick add new event to google calendar'
+- global to open/switch-to DOING WORK trello board
+- global to open/switch-to ASPEN trello board
+- global to open/switch-to REFERENCE trello board
+- global to open/switch-to HOME-GOOGLE-SHEETS doc in chrome 
+- alt-shift-spacebar .... ?
+- HYPER-spacebar
+- HYPER-Enter
+- alt-enter??? 
+- alt-shift-enter??? 
+
+
+
+[SECTION 1 of 4]
 =====================================
 (ALT) group of commands	
 =====================================
@@ -47,16 +88,18 @@ alt-;	    shrink/grow window' group of commands
 alt-'	    ________avail
 alt-enter   ________avail
 
-alt-Z	ULTRA-OPTIMIZED-zzshortcuts command (likely will be moved to Fn to replace the prev zzshortcuts key)
-alt-x   ________avail
-alt-c   ________avail
-alt-v	set VERTICAL tile-style
-alt-b	pin-window-to-top
-alt-n   ________avail
-alt-m	minimize-window
-alt-,   ________avail
-alt-.   ________avail
-alt-/   ________avail
+alt-Z	    ULTRA-OPTIMIZED-zzshortcuts command (likely will be moved to Fn to replace the prev zzshortcuts key)
+alt-x       ________avail
+alt-c       ________avail
+alt-v	    set VERTICAL tile-style
+alt-b	    pin-window-to-top
+alt-n       ________avail
+alt-m	    minimize-window
+alt-,       ________avail
+alt-.       ________avail
+alt-/       ________avail
+
+alt-spaceb  raycast/spotlight search [CONST]
 
 alt-LeftArr	    ________avail
 alt-RightArr	________avail
@@ -77,7 +120,18 @@ alt-0       jump focus to desktop 10
 alt--	    ________avail
 alt-=	    ________avail
 
-(alt+fn+fKey)
+alt-numpad1	    3x3 numpadGrid for 'move-window' 
+alt-numpad2	    3x3 numpadGrid for 'move-window' 
+alt-numpad3	    3x3 numpadGrid for 'move-window' 
+alt-numpad4	    3x3 numpadGrid for 'move-window' 
+alt-numpad5	    3x3 numpadGrid for 'move-window' 
+alt-numpad6	    3x3 numpadGrid for 'move-window' 
+alt-numpad7	    3x3 numpadGrid for 'move-window' 
+alt-numpad8	    3x3 numpadGrid for 'move-window' 
+alt-numpad9	    3x3 numpadGrid for 'move-window' 
+alt-numpad0	    3x3 numpadGrid  [CENTER & almost-full-screen size] 
+
+(alt+fn+fKey) (use the right 'alt' key for these instead of the usual left 'alt')
 alt-Fn1	    ________avail
 alt-Fn2	    ________avail
 alt-Fn3	    ________avail
@@ -91,16 +145,6 @@ alt-Fn10	________avail
 alt-Fn11	________avail
 alt-Fn12	________avail
 
-alt-numpad1	    3x3 numpadGrid for 'move-window' 
-alt-numpad2	    3x3 numpadGrid for 'move-window' 
-alt-numpad3	    3x3 numpadGrid for 'move-window' 
-alt-numpad4	    3x3 numpadGrid for 'move-window' 
-alt-numpad5	    3x3 numpadGrid for 'move-window' 
-alt-numpad6	    3x3 numpadGrid for 'move-window' 
-alt-numpad7	    3x3 numpadGrid for 'move-window' 
-alt-numpad8	    3x3 numpadGrid for 'move-window' 
-alt-numpad9	    3x3 numpadGrid for 'move-window' 
-alt-numpad0	    3x3 numpadGrid  [CENTER & almost-full-screen size] 
 
 
 
@@ -134,9 +178,7 @@ alt-numpad0	    3x3 numpadGrid  [CENTER & almost-full-screen size]
 
 
 
-
-
-
+[SECTION 2 of 4]
 =====================================
 (ALT-SHIFT) group of commands	
 =====================================
@@ -197,19 +239,6 @@ alt-0       move window to desktop 10
 alt--	    ________avail
 alt-=	    ________avail
 
-(alt+fn+fKey)
-alt-Fn1	    ________avail
-alt-Fn2	    ________avail
-alt-Fn3	    ________avail
-alt-Fn4	    ________avail
-alt-Fn5	    ________avail
-alt-Fn6	    ________avail
-alt-Fn7	    ________avail
-alt-Fn8	    ________avail
-alt-Fn9	    ________avail
-alt-Fn10	________avail
-alt-Fn11	________avail
-alt-Fn12	________avail
 
 alt-shift-numpad1	VolumeDown (Misc-numpad group of commands)
 alt-shift-numpad2	VolumeUp (Misc-numpad group of commands)
@@ -222,6 +251,19 @@ alt-shift-numpad8	________ avail? TODO:
 alt-shift-numpad9	GithubDesktop (MAYBE? Bc it's almost just as fast as searching it via flow launcher/raycast)
 alt-shift-numpad0	________ avail? TODO: 
 
+(alt+shift+fn+fKey)(use the right 'alt' key for these instead of the usual left 'alt', same goes for the right 'shift' key)
+alt-shift-Fn1	    ________avail
+alt-shift-Fn2	    ________avail
+alt-shift-Fn3	    ________avail
+alt-shift-Fn4	    ________avail
+alt-shift-Fn5	    ________avail
+alt-shift-Fn6	    ________avail
+alt-shift-Fn7	    ________avail
+alt-shift-Fn8	    ________avail
+alt-shift-Fn9	    ________avail
+alt-shift-Fn10	    ________avail
+alt-shift-Fn11	    ________avail
+alt-shift-Fn12	    ________avail
 
 
 
@@ -272,18 +314,15 @@ alt-shift-numpad0	________ avail? TODO:
 
 
 
-
-
-
-
+[SECTION 3 of 4]
 =====================================
 (HYPERKEY) group of commands	
 =====================================
-HYPER-q		________avail
-HYPER-w		(opens Microsoft Word?)
-HYPER-e		open quick_ref dir in file expl
-HYPER-r		________avail
-HYPER-t		________avail
+HYPER-q		________avail(this one may not be ALLOWED for some 'q' for quit related conflict?)
+HYPER-w		go to ASPEN/EMER 'work' trello board tab    (opens Microsoft Word on Windows side?)
+HYPER-e		________avail
+HYPER-r		go to REFERENCE trello board tab
+HYPER-t		raycast global chromes 'search all' command (useful for jumping to open tabs from anywhere, esp trello boards)
 HYPER-y		________avail
 HYPER-u		________avail
 HYPER-i		________avail
@@ -295,7 +334,7 @@ HYPER-\		________avail
 	
 HYPER-a		    ________avail
 HYPER-s		    open_screenshots in file expl...
-HYPER-d		    ________avail
+HYPER-d		    go to DOING WORK trello board tab
 HYPER-f		    switch to firefox
 
 [DELETE THIS EXPL ONCE I NO LONGER NEED REMINDING OBVI]
@@ -307,7 +346,7 @@ in chrome when we trigger it, we obviously would have no use for the GLOBAL vers
 HYPER-g		    [1 of 2] GLOBAL-binding: quick-google-search via raycast 
 HYPER-g		    [2 of 2] CHOME-SPECIFIC binding: switch to chatGPT 'SUMMARY INSERTS' chat
 
-HYPER-h		    color picker (H for 'HEX' since C for 'color' was already taken)
+HYPER-h		    switch to HOME google-doc tab 
 HYPER-j		    ________avail
 HYPER-k		    ________avail
 HYPER-l		    ________avail
@@ -345,6 +384,18 @@ HYPER-0     ________avail
 HYPER--	    ________avail
 HYPER-=	    ________avail
 
+(this group is mainly used as spot to test out new shortcuts before det if they're worth giving a legit binding to)
+HYPER-numpad1       switch-to/open DOING_WORK trello board on chrome    [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
+HYPER-numpad2	    switch-to/open ASPEN trello board on chrome         [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
+HYPER-numpad3       switch-to/open REFERENCE trello board on chrome     [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
+HYPER-numpad4	    switch-to/open HOME-GOOGLE-SHEETS doc on chrome     [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
+HYPER-numpad5	    ________avail
+HYPER-numpad6	    ________avail
+HYPER-numpad7	    ________avail
+HYPER-numpad8	    ________avail
+HYPER-numpad9	    ________avail
+HYPER-numpad0       ________avail
+
 (HYPER+fn+fKey)
 HYPER-Fn1	________avail
 HYPER-Fn2	________avail
@@ -359,16 +410,88 @@ HYPER-Fn10	________avail
 HYPER-Fn11	________avail
 HYPER-Fn12	________avail
 
-HYPER-numpad1       ________avail
-HYPER-numpad2	    ________avail
-HYPER-numpad3       Emoji search (akin to numbpad3 keyb (may need to be set up on WINDOWS side bc used Raycast on MACside))
-HYPER-numpad4	    ________avail
-HYPER-numpad5	    ________avail
-HYPER-numpad6	    ________avail
-HYPER-numpad7	    ________avail
-HYPER-numpad8	    ________avail
-HYPER-numpad9	    ________avail
-HYPER-numpad0       ________avail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 4 of 4]
+*******************************************************************************
+BESPOKE 'right side of spacebar' GROUP: (rightHYPER-fn) OR... (alt-fn-opt) and (alt-fn-opt-shift)
+last-resort (using group of 3 mod keys on right of spacebar, as a way to make use of the Fn row keys)
+*******************************************************************************
+> UPDATE ON THIS SECTION: initially I abandoned my HYPER-fn attempt but found a slight workaround that works-so-far.
+> so we're scrapping the (alt-fn-opt) approach for now and if we encounter some issue with this rightHYPER-fn direction 
+> then we can always revert back to it.
+rHYPER-fn-F1   [DELETE ME whenever (set it raycast i think?) ]tmp-hacky 'open doing work in new tab'
+rHYPER-fn-F2   [DELETE ME whenever (set it raycast i think?) ]tmp-hacky 'open doing work in new tab'
+rHYPER-fn-F3   [DELETE ME whenever (set it raycast i think?) ]tmp-hacky 'open doing work in new tab'
+rHYPER-fn-F4   [DELETE ME whenever (set it raycast i think?) ]tmp-hacky 'open doing work in new tab'
+rHYPER-fn-F5   ________avail
+rHYPER-fn-F6   ________avail
+rHYPER-fn-F7   color picker [TODO: TRY AND FIND BETTER BINDING FOR THIS ONE as we had to move it to make room for more imp trello-board ones]
+rHYPER-fn-F8   ________avail
+rHYPER-fn-F9   ________avail
+rHYPER-fn-F10  ________avail
+rHYPER-fn-F11  ________avail
+rHYPER-fn-F12  ________avail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -417,3 +540,46 @@ DELETE THESE NOTES BELOW AFTER A WHILE...
 5. num row keys 
 6. fn row keys
 7. numpad 3x3 keys 
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------
+CONSIDER THESE TWO BLOCKS BELOW COMMENTED OUT (was the BESPOKE section originally until rHYPER got working)
+----------------------------------------------
+alt-fn-opt-F1   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F2   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F3   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F4   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F5   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F6   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F7   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F8   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F9   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F10  ________avail[DEPRECATED-ATM]
+alt-fn-opt-F11  ________avail[DEPRECATED-ATM]
+alt-fn-opt-F12  ________avail[DEPRECATED-ATM]
+[====SUPER-LAST-RESORT-BINDINGS====]:[DEPRECATED-ATM]
+alt-fn-opt-shift-F1   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F2   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F3   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F4   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F5   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F6   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F7   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F8   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F9   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F10  ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F11  ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F12  ________avail[DEPRECATED-ATM]
+
+
+
+
+
