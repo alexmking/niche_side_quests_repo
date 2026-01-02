@@ -365,6 +365,79 @@ export NICHE_REPO_DIR="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_re
 #TODO ADD MORE ENV VARS LATER AS NEEDED...
 #TODO ADD MORE ENV VARS LATER AS NEEDED...
 
+# Development paths
+export PROJECTS_DIR="$HOME/local_docs/GIT_STUFF"
+# export SCRIPTS_DIR="$ALEXSCRIPTS_DIR"  # You already have this defined
+
+# Editor preferences
+# export EDITOR="code"
+# export VISUAL="code"
+
+# Language/Tool specific
+# export PYTHON_PATH="/usr/local/bin/python3"
+# export NODE_PATH="$HOME/.nvm/versions/node/$(nvm current)/lib/node_modules"
+
+# History configuration
+# export HISTSIZE=10000
+# export SAVEHIST=10000
+# export HISTFILE="$HOME/.zsh_history"
+
+# Frequently accessed config directories
+# export CONFIG_DIR="$HOME/.config"
+# export VSCODE_USER_DIR="$HOME/Library/Application Support/Code/User"
+
+# # Common project shortcuts
+# export DESKTOP="$HOME/Desktop"
+# export DOWNLOADS="$HOME/Downloads"
+# export DOCUMENTS="$HOME/Documents"
+export QUICK_REF_DIR="$HOME/quick_ref"
+export ALL_CONFIGS_DIR="$HOME/ALL_CONFIGS"
+export LEET_DIR="$HOME/Desktop/LEET"
+export LOCAL_DOCS_DIR="$HOME/local_docs"
+export SCREENSHOTS_DIR="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0"
+
+# # Terminal colors
+# export CLICOLOR=1
+# export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# # FZF configuration
+# export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
+# export FZF_DEFAULT_COMMAND='find . -type f'
+
+# # Homebrew (if applicable)
+# export HOMEBREW_PREFIX="/usr/local"
+# export HOMEBREW_NO_ANALYTICS=1
+
+# # Git configuration
+# export GIT_EDITOR="code --wait"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -490,8 +563,12 @@ alias deldir="rm -r"
 
 
 # clean up/standardize these ls aliases later...
+alias lsfz="ls -a | fzf"  # UNDERRATED / UNDERUTILIZED ALIAS
+alias lsfzf="ls -a | fzf" # UNDERRATED / UNDERUTILIZED ALIAS
+alias fzfls="ls -a | fzf" # UNDERRATED / UNDERUTILIZED ALIAS
 alias lsall="ls -a"
-alias show_hidden="ls -a"
+alias showhidden="ls -a"
+alias lsshowhidden="ls -a"
 alias lsonlyhidden="ls -ad .*"
 alias lswithhidden="ls -a"
 alias lsh="ls -a"
@@ -656,6 +733,7 @@ alias cdroot="cd /"
 alias cdhome="cd /Users/alexking"
 
 alias cdalexscripts="cd /usr/local/bin/alexScripts"
+alias cdconfig="cd $HOME/.config"
 alias cdallconfigs="cd /Users/alexking/ALL_CONFIGS"
 alias cdapps="cd /Applications"
 alias cdapp="cd /Applications"
@@ -749,6 +827,7 @@ alias ohmyzsh="code ~/.oh-my-zsh"
 # ~/.zshrc
 alias zshconfig="code ~/.zshrc"
 alias editzsh="code ~/.zshrc"
+alias editzprofile="code ~/.zprofile"
 
 
 alias editoutlineofcurrenttools="code $REPO_DIR/niche_side_quests_repo/_universal/outline_of_current_tools.txt"
@@ -817,6 +896,9 @@ alias editfilenamingconventions="code $REPO_DIR/niche_side_quests_repo/_universa
 alias editvscodejson='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
 alias editvscodekeyb='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
 alias editvscodekeybindingsjson='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
+
+
+
 
 
 
