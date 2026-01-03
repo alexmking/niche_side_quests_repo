@@ -680,7 +680,7 @@ alias grepri="grep -ri"
 
 ################################################################
 ################################################################
-# the 'find' aliases:   zz-     [section _ of _]
+# the 'find' aliases:   zz-     [section _ of _]    'ff' 
 ################################################################
 ################################################################
 alias findfilenameonly="find . -type f -name"   # level 1 of 5 (not so imp, useful)
@@ -689,11 +689,16 @@ alias findfilecontentsonly="grepdef -rnI" .     # level 3 of 5 (most useful, alr
 alias findfileanddirnames="find . -name"        # level 4 of 5 (useful)
 alias findeverything="find . -name"             # level 5 of 5 (most expensive, least useful)
 
-# ff == 'find files' (akin to Raycast's approach as well)
+# ff == 'find files' , and ffd == 'find files and dirs' (akin to Raycast's approach as well)
 alias ff="find . -name"        # level 4 of 5 (useful)
 alias ffiles="find . -name"        # level 4 of 5 (useful)
-alias fdirs="find . -type d -name"    
-alias ff="find . -name"        # level 4 of 5 (useful)
+
+alias fdirs="find . -type d -name"    # level 2 of 5 (not so imp, useful)
+alias fd="find . -type d -name"    # level 2 of 5 (not so imp, useful)
+
+alias ffd="find . -name"        # level 4 of 5 (useful)
+alias ffilesanddirs="find . -name"        # level 4 of 5 (useful)
+
 alias widenetsearch="find . -name"             # level 5 of 5 (most expensive, least useful)
 alias searchall="find . -name"             # level 5 of 5 (most expensive, least useful)
 alias searcheverything="find . -name"             # level 5 of 5 (most expensive, least useful)

@@ -1,0 +1,191 @@
+=================================================================================
+EXCESS_SHELF: tmp dumping ground for any and everything
+=================================================================================
+- primarily being used to trim my other .txt docs to only essentials and long comments/ideas can be moved here where they're out of the way until I need them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************
+********************************************************************************************************************
+********************************************************************************************************************
+STUFF FROM current_keyboard_bindings.txt
+********************************************************************************************************************
+********************************************************************************************************************
+********************************************************************************************************************
+
+
+=================================================================================
+DELETE THESE NOTES BELOW AFTER A WHILE...
+=================================================================================
+> these are all the keys that can be paired with each of the 3 modifier groups this doc is for (ALT, ALT+SHIFT, and HYPER)
+> (it's imp to show all of these bc then you're able to quickly see which keys/bindings are unused atm (aka are OPEN to be assigned))
+> (also note I'm prob not going to include the keys around the numpad bc of how often they are interpreted differently from OS to OS, but the numpad keys themselves are still fair game obvi)
+
+> each of the 3 groups should have 7 sections which are defined like so:
+1. full row of qwer... keys 
+2. full row of asdf... keys 
+3.full row of zxcv... keys 
+4. 4 arrow keys (up down left right)
+5. num row keys 
+6. fn row keys
+7. numpad 3x3 keys 
+
+[
+TMP TIP 'fzfkeyb' with 'avail':
+when adding a new shortcut, use 'fzfkeyb' with 'avail' to quickly see all the keyb shortcuts you can assign it to w/o worrying about conflicts
+]
+
+
+
+
+
+[DEL ME AFTER WHILE...]
+MODIFIER PRIORITY REMINDER: ALT before HYPER
+the ALT modifier > HYPER modifier. So when adding new bindings, we should FIRST try and find an ALT-char binding and ONLY IF there's nothing good avail, THEN we can look at the HYPER-char options.
+point beingI think im becoming too sloppy w automatiicaly going for HYPER key for new keyb, which will eventually end up w me being confused if an action is say ALT-foobar or HYPER-foobar
+[DEL ME AFTER WHILE...]
+
+
+[DEL ME AFTER WHILE...]
+> should consider changing the TMP-PLAYGOUNRD group of keys from the NUMPAD 1-9 to the Fn row keys (if Fn keys can work w modifiers that well)
+WHY? bc im running into conflicts w some apps treating number row keys as the SAME as numPAD keys (so ALT-5 ===== ALT-numpad5)
+
+
+
+
+
+
+
+
+--------------------
+tmp-CLARIFICATION OF TERMS: (DELETE ME)
+--------------------
+key-binding: defines a mapping (of binding) of a hotkey to an action/command. So "(ALT + T)  ==  Open Terminal" is a key-binding, which maps ALT+T to OpenTerminal command
+shortcut: interchangeable with key-binding, it's just a more user-friendly term than key-binding 
+hotkey: a combination of keys/mods that triggers a command. So for our shortcut "(ALT + T)  ==  Open Terminal", the hotkey would be (ALT +T)
+
+EXAMPLE TO SHOW WHAT key-binding MEANS:
+(ALT + T)  ==  Open Terminal
+the 'key-binding' would be: (ALT + T)  ==  Open Terminal
+That entire mapping is the key-binding.
+A key-binding consists of two parts:
+    1. Key combination: Alt + T
+    2. Command/action: Open Terminal
+So when someone says “the key binding”, they are referring to the association between those two things, not just the keys by themselves.
+!! to help remember this, think 'bind' as needing at least 2 parts, since that's what 'binding' together means.
+!! so a key-binding 'binds' or 'maps' a key-combination => to a command/action. 
+!! imagine a single 'key-binding' just like a single entry of a dict/map. the entry obvious needs two parts bc it's mapping one with the other.
+    !! so like a dict entry is (key => val), a key-binding is (key-combination => command) or put simpler (hotkey => command)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************
+********************************************************************************************************************
+********************************************************************************************************************
+STUFF FROM prefix_naming_conventions.txt
+********************************************************************************************************************
+********************************************************************************************************************
+********************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************
+********************************************************************************************************************
+********************************************************************************************************************
+STUFF FROM ???
+********************************************************************************************************************
+********************************************************************************************************************
+********************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,63 +1,37 @@
-[MOVE THIS DOC TO MY PERSONAL REPO 'side quests' and then CHANGE THE hotkey/alias paths accpordingly]
-
-[
-TMP TIP 'fzfkeyb' with 'avail':
-when adding a new shortcut, use 'fzfkeyb' with 'avail' to quickly see all the keyb shortcuts you can assign it to w/o worrying about conflicts
-]
-
-current_keyboard_bindings
-[THREE MAIN SECTIONS + 1 BESPOKE SECTION]
+=====================================
+current_keyboard_bindings.   (use zz- to jump from section to section)
+=====================================
+[THREE MAIN SECTIONS + few MISC/BESPOKE SECTIONS]
 1. ALT-ONLY group of keybShortcuts
 2. ALT-SHIFT group of keybShortcuts
 3. HYPERKEY group of keybShortcuts
 4. BESPOKE 'rightHYPER+Fn' group of keybShortcuts
-
-[DEL ME AFTER WHILE...]
-MODIFIER PRIORITY REMINDER: ALT before HYPER
-the ALT modifier > HYPER modifier. So when adding new bindings, we should FIRST try and find an ALT-char binding and ONLY IF there's nothing good avail, THEN we can look at the HYPER-char options.
-point beingI think im becoming too sloppy w automatiicaly going for HYPER key for new keyb, which will eventually end up w me being confused if an action is say ALT-foobar or HYPER-foobar
-[DEL ME AFTER WHILE...]
-
-
-[DEL ME AFTER WHILE...]
-> should consider changing the TMP-PLAYGOUNRD group of keys from the NUMPAD 1-9 to the Fn row keys (if Fn keys can work w modifiers that well)
-WHY? bc im running into conflicts w some apps treating number row keys as the SAME as numPAD keys (so ALT-5 ===== ALT-numpad5)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+0. WORST hotkeys
+0.1 REF LIST OF ALL 15 MODIFIER-GROUPS
 
 
 
 =====================================
-TOP-PRIOIRTY: commands that need to be assigned a keyb:	
+TOP-PRIOIRTY: commands that need to be assigned a keyb:
 =====================================
 - raycast global hotkey for 'quick add new event to google calendar'
-- global to open/switch-to DOING WORK trello board
-- global to open/switch-to ASPEN trello board
-- global to open/switch-to REFERENCE trello board
-- global to open/switch-to HOME-GOOGLE-SHEETS doc in chrome 
 - alt-shift-spacebar .... ?
 - HYPER-spacebar
 - HYPER-Enter
 - alt-enter??? 
 - alt-shift-enter??? 
+- HYPER-LeftArr	
+- HYPER-RightArr	
+- HYPER-UpArr	    
+- HYPER-DownArr	
+- HYPER-(+)	
+- HYPER-(-)	
+- HYPER-?   maybe good GPT hotkey?
 
 
 
-[SECTION 1 of 4]
+
+[SECTION 1 of 4] zz-
 =====================================
 (ALT) group of commands	
 =====================================
@@ -178,7 +152,7 @@ alt-Fn12	________avail
 
 
 
-[SECTION 2 of 4]
+[SECTION 2 of 4] zz-
 =====================================
 (ALT-SHIFT) group of commands	
 =====================================
@@ -314,7 +288,7 @@ alt-shift-Fn12	    ________avail
 
 
 
-[SECTION 3 of 4]
+[SECTION 3 of 4] zz-
 =====================================
 (HYPERKEY) group of commands	
 =====================================
@@ -381,8 +355,8 @@ HYPER-7	    ________avail
 HYPER-8	    ________avail
 HYPER-9	    ________avail
 HYPER-0     ________avail
-HYPER--	    ________avail
-HYPER-=	    ________avail
+HYPER--	    ________avail   aka HYPER-minus
+HYPER-=	    ________avail   aka HYPER-plus
 
 (this group is mainly used as spot to test out new shortcuts before det if they're worth giving a legit binding to)
 HYPER-numpad1       switch-to/open DOING_WORK trello board on chrome    [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
@@ -442,7 +416,7 @@ HYPER-Fn12	________avail
 
 
 
-[SECTION 4 of 4]
+[SECTION 4 of 4] zz-
 *******************************************************************************
 BESPOKE 'right side of spacebar' GROUP: (rightHYPER-fn) OR... (alt-fn-opt) and (alt-fn-opt-shift)
 last-resort (using group of 3 mod keys on right of spacebar, as a way to make use of the Fn row keys)
@@ -450,18 +424,18 @@ last-resort (using group of 3 mod keys on right of spacebar, as a way to make us
 > UPDATE ON THIS SECTION: initially I abandoned my HYPER-fn attempt but found a slight workaround that works-so-far.
 > so we're scrapping the (alt-fn-opt) approach for now and if we encounter some issue with this rightHYPER-fn direction 
 > then we can always revert back to it.
-rHYPER-fn-F1   [DELETE ME whenever (set it raycast i think?) ]tmp-hacky 'open doing work in new tab'
-rHYPER-fn-F2   [DELETE ME whenever (set it raycast i think?) ]tmp-hacky 'open doing work in new tab'
-rHYPER-fn-F3   [DELETE ME whenever (set it raycast i think?) ]tmp-hacky 'open doing work in new tab'
-rHYPER-fn-F4   [DELETE ME whenever (set it raycast i think?) ]tmp-hacky 'open doing work in new tab'
+rHYPER-fn-F1   ________avail
+rHYPER-fn-F2   ________avail
+rHYPER-fn-F3   ________avail
+rHYPER-fn-F4   ________avail
 rHYPER-fn-F5   ________avail
 rHYPER-fn-F6   ________avail
-rHYPER-fn-F7   color picker [TODO: TRY AND FIND BETTER BINDING FOR THIS ONE as we had to move it to make room for more imp trello-board ones]
+rHYPER-fn-F7   ________avail
 rHYPER-fn-F8   ________avail
 rHYPER-fn-F9   ________avail
 rHYPER-fn-F10  ________avail
 rHYPER-fn-F11  ________avail
-rHYPER-fn-F12  ________avail
+rHYPER-fn-F12  color picker [TODO: TRY AND FIND BETTER BINDING FOR THIS ONE as we had to move it to make room for more imp trello-board ones]
 
 
 
@@ -473,86 +447,15 @@ rHYPER-fn-F12  ________avail
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=================================================================================
-DELETE THESE NOTES BELOW AFTER A WHILE...
-=================================================================================
-> these are all the keys that can be paired with each of the 3 modifier groups this doc is for (ALT, ALT+SHIFT, and HYPER)
-> (it's imp to show all of these bc then you're able to quickly see which keys/bindings are unused atm (aka are OPEN to be assigned))
-> (also note I'm prob not going to include the keys around the numpad bc of how often they are interpreted differently from OS to OS, but the numpad keys themselves are still fair game obvi)
-
-> each of the 3 groups should have 7 sections which are defined like so:
-1. full row of qwer... keys 
-2. full row of asdf... keys 
-3.full row of zxcv... keys 
-4. 4 arrow keys (up down left right)
-5. num row keys 
-6. fn row keys
-7. numpad 3x3 keys 
-
-
-
-
-
-
-
-
-
-
-----------------------------------------------
-CONSIDER THESE TWO BLOCKS BELOW COMMENTED OUT (was the BESPOKE section originally until rHYPER got working)
-----------------------------------------------
+[SECTION 5 of 4] zz-
+=====================================
+WORST-HOTKEYS!	
+=====================================
+> these are a list of some specific hotkeys that are awkward to use because hand : key : mod placement.
+> I'm keeping track of them bc they're ideal for middle-man shortcuts that 
+> basically for when I need a shortcut to exist but I won't be triggering it directly, instead it's triggered in the middle of a script or btt workflow.
+> this way we can still have the shortcut and not take up any of the good hotkeys.
+> (like how I have HYPER-Fn-F12 as my 'switch to chrome' shortcut. Not the LogiOption 'swtich to chrome' which I DO use directly) that I use for all my switch to trello board A,B,C stuff
 alt-fn-opt-F1   ________avail[DEPRECATED-ATM]
 alt-fn-opt-F2   ________avail[DEPRECATED-ATM]
 alt-fn-opt-F3   ________avail[DEPRECATED-ATM]
@@ -578,6 +481,142 @@ alt-fn-opt-shift-F9   ________avail[DEPRECATED-ATM]
 alt-fn-opt-shift-F10  ________avail[DEPRECATED-ATM]
 alt-fn-opt-shift-F11  ________avail[DEPRECATED-ATM]
 alt-fn-opt-shift-F12  ________avail[DEPRECATED-ATM]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION ? of 4] zz-
+=====================================
+(WINDOW MANAGEMENT group)   (ctrl-opt-alt) == (the 3 keys left of spacebar)
+>>  EXPERIMENTING WITH DSESIGNATING ctrl-opt-alt for all my window-management shortcuts...(prev was just including them in with the ALT-only group)
+<<  PRIMARILY BC I WAS SOLD ON THE 'CYCLING' FEATURE built into some of RAYCAST window man commands >>
+=====================================
+ctrl-opt-alt-(1-4)      4 corners 1/4 (top left, top right, bottom left, bottom right)
+ctrl-opt-alt-(1-4)      4 corners 1/4 (top left, top right, bottom left, bottom right)
+ctrl-opt-alt-(1-4)      4 corners 1/4 (top left, top right, bottom left, bottom right)
+ctrl-opt-alt-(1-4)      4 corners 1/4 (top left, top right, bottom left, bottom right)
+
+ctrl-opt-alt-M      maximize almost
+ctrl-opt-alt-C      center window
+
+ctrl-opt-alt-M      increase window size
+ctrl-opt-alt-C      decrease window size
+
+ctrl-opt-alt-leftArr        left half (has cycle funct)
+ctrl-opt-alt-RightArr       right half (has cycle funct)
+
+... MANY MORE IM PLAYING AROUND W ATM AND WILL ADD SOON 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zz-
+=============tmp-CLARIFICATION-OF-TERMS=============
+key-binding:    defines a mapping (of binding) of a hotkey to an action/command. So "(ALT + T)  ==  Open Terminal" is a key-binding, which maps ALT+T to OpenTerminal command
+shortcut:       interchangeable with key-binding, it's just a more user-friendly term than key-binding 
+hotkey:         a combination of keys/mods that triggers a command. So for our shortcut "(ALT + T)  ==  Open Terminal", the hotkey would be (ALT +T)
+
+
+
+
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+ALL 15 MODIFIER-KEY GROUPS (for ref): (from least to most keys) [with brief description of definitions/and best-practices]
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+=== groups with ONE mod-key === (4 tot)
+alt                     > global shortcuts
+ctrl                    > app-specific shortcuts
+opt                     > TODO!
+shift                   > variation of non-shift action
+
+=== groups with TWO mod-keys === (6 tot)
+alt-ctrl                > TODO!
+alt-opt                 > TODO!
+alt-shift               > TODO!
+ctrl-opt                > TODO!
+ctrl-shift              > TODO!
+opt-shift               > TODO!
+
+=== groups with THREE mod-keys === (4 tot)
+alt-ctrl-opt            > window-management-commands (TBD...)
+alt-ctrl-shift          > TODO!
+alt-opt-shift           > TODO!
+ctrl-opt-shift          > TODO!
+
+=== groups with FOUR mod-keys === (1 tot, aka HYPERKEY)
+alt-ctrl-opt-shift      > basic hyperkey, no expl needed here
+
+
+
+
 
 
 
