@@ -328,7 +328,7 @@ HYPER-;		    ________avail
 HYPER-'		    ________avail
 HYPER-enter     ________avail
 	
-HYPER-z		________avail
+HYPER-z		________avail   (NOTE this may be the new hotkey for zzshortcuts-ULTRA-optimized, which is currently ALT-Z)
 HYPER-x		________avail
 HYPER-c		raycast clipboard manager
 HYPER-v		Raycast Paste clipboard items one after another (paste-sequentially) (so each HYPER-v pastes another clipboard item)
@@ -613,7 +613,6 @@ ctrl-opt-shift          > TODO!
 
 === groups with FOUR mod-keys === (1 tot, aka HYPERKEY)
 alt-ctrl-opt-shift      > basic hyperkey, no expl needed here
-
 
 
 
