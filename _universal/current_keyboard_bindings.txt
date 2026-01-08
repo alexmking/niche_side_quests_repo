@@ -202,7 +202,7 @@ alt-shift-UpArr	        ________avail
 alt-shift-DownArr	    ________avail
     
 alt-`		    ________avail
-alt-shift-1	    move window to desktop 1
+alt-shift-1	    move window to desktop 1     
 alt-shift-2	    move window to desktop 2
 alt-shift-3     move window to desktop 3
 alt-shift-4	    move window to desktop 4
