@@ -9,10 +9,12 @@ current_keyboard_bindings.   (use zz- to jump from section to section)
 0. WORST hotkeys
 0.1 REF LIST OF ALL 15 MODIFIER-GROUPS
 
-
+======[REMAPPED_KEYS]======
+rightCtrl   ==      miniHYPERKEY (hyperkey without the SHIFT included)
+rightAlt    ==      rightArrow (to accept suggestions in terminal/editor/chrome/etc faster)
 
 =====================================
-TOP-PRIOIRTY: commands that need to be assigned a keyb:
+TMP-TOP-PRIOIRTY: commands that need to be assigned a keyb:
 =====================================
 - raycast global hotkey for 'quick add new event to google calendar'
 - alt-shift-spacebar .... ?
@@ -199,19 +201,19 @@ alt-shift-RightArr  	________avail
 alt-shift-UpArr	        ________avail
 alt-shift-DownArr	    ________avail
     
-alt-`		________avail
-alt-1	    move window to desktop 1
-alt-2	    move window to desktop 2
-alt-3       move window to desktop 3
-alt-4	    move window to desktop 4
-alt-5	    move window to desktop 5
-alt-6	    move window to desktop 6
-alt-7	    move window to desktop 7
-alt-8	    move window to desktop 8
-alt-9	    move window to desktop 9
-alt-0       move window to desktop 10
-alt--	    ________avail
-alt-=	    ________avail
+alt-`		    ________avail
+alt-shift-1	    move window to desktop 1
+alt-shift-2	    move window to desktop 2
+alt-shift-3     move window to desktop 3
+alt-shift-4	    move window to desktop 4
+alt-shift-5	    move window to desktop 5
+alt-shift-6	    move window to desktop 6
+alt-shift-7	    move window to desktop 7
+alt-shift-8	    move window to desktop 8
+alt-shift-9	    move window to desktop 9
+alt-shift-0     move window to desktop 10
+alt--	        _______avail
+alt-=	        ________avail
 
 
 alt-shift-numpad1	VolumeDown (Misc-numpad group of commands)
@@ -613,6 +615,79 @@ ctrl-opt-shift          > TODO!
 
 === groups with FOUR mod-keys === (1 tot, aka HYPERKEY)
 alt-ctrl-opt-shift      > basic hyperkey, no expl needed here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+THE TOP 'WINDOW-MANAGEMENT' commands + 'CLEANSHOTX-SCREENSHOT' commands that I'm trying-to/considering giving dedicated hotkeys to....
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+
+TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE and to the "tempSCRATCH" DOC at HOME GOOGLE SHEETS
+TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE and to the "tempSCRATCH" DOC at HOME GOOGLE SHEETS
+TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE and to the "tempSCRATCH" DOC at HOME GOOGLE SHEETS
+TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE and to the "tempSCRATCH" DOC at HOME GOOGLE SHEETS
+
+
+
+
+
+
+
+
+
+
 
 
 

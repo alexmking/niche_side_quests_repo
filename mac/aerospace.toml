@@ -322,23 +322,23 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
     # --------------------------------------------------------------------------------------
     # the BIG-3 sections (ALT + asdf) and (ALT + jkl;) and (ALT + uiop) *****
     # --------------------------------------------------------------------------------------
-    ### BIG-3 section (1 of 3): MOVE FOCUS to adj windows
-    cmd-u = 'focus left'
-    cmd-i = 'focus down'
-    cmd-o = 'focus up'
-    cmd-p = 'focus right'
+    # ### BIG-3 section (1 of 3): MOVE FOCUS to adj windows
+    # cmd-u = 'focus left'
+    # cmd-i = 'focus down'
+    # cmd-o = 'focus up'
+    # cmd-p = 'focus right'
 
-    ### BIG-3 section (2 of 3): MOVE WINDOW w/i worksp (if FLOATING: then 'nudges' || if TILED, then MOVES to diff tile)
-    cmd-a = 'move left' 
-    cmd-s = 'move down'
-    cmd-d = 'move up'
-    cmd-f = 'move right'
+    # ### BIG-3 section (2 of 3): MOVE WINDOW w/i worksp (if FLOATING: then 'nudges' || if TILED, then MOVES to diff tile)
+    # cmd-a = 'move left' 
+    # cmd-s = 'move down'
+    # cmd-d = 'move up'
+    # cmd-f = 'move right'
 
-    ### BIG-3 section (3 of 3): RESIZE curr window
-    cmd-j = 'resize width -40'
-    # cmd-k = 'resize height -40' # TODO REMINDER this one is temp DISBALED on MACside here bc RAYCASTS dumb Cmd-K thing conflict 
-    cmd-l = 'resize height +40'
-    cmd-semicolon = 'resize width +40' # cmd-;
+    # ### BIG-3 section (3 of 3): RESIZE curr window
+    # cmd-j = 'resize width -40'
+    # # cmd-k = 'resize height -40' # TODO REMINDER this one is temp DISBALED on MACside here bc RAYCASTS dumb Cmd-K thing conflict 
+    # cmd-l = 'resize height +40'
+    # cmd-semicolon = 'resize width +40' # cmd-;
 
     # ----------------------
     # t,g,y,b
@@ -346,7 +346,7 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
     # **** NOTE_FOR_BELOW_EXPL **** Even though 'accordion' is my preferred layout on Aerosp, I'm setting Cmd-g to be 'floating' so it better mirrors my GlazeWM setup (so accordion is moved to the more obscure cmd-y, at least for now)
     cmd-t = ['layout tiles'] # set ALL windows to tiles (glazewm sets only curr window)
     cmd-g = ['layout floating'] # set ONLY the curr window to floating # * CAUSES THE FROZEN-FLOATING-WINDOW BUG, but still need the 'floating' functionality so keeping this command for now and will try and work around the bug as best as I can
-    cmd-y = ['layout accordion'] # set ALL windows to Accordion layout (glazewm sets only curr window)
+    # cmd-y = ['layout accordion'] # set ALL windows to Accordion layout (glazewm sets only curr window)
     # cmd-b = 'reload-config' # RESERVED for BetterTouchTool shortcut: set window ON-TOP (same as cmd-keypad5 and cmd-shift-t)
 
     # ----------------------
@@ -361,9 +361,9 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
     # ----------------------
     # m,v,h
     # ----------------------
-    cmd-m = 'macos-native-minimize' # minimize curr window ( # * SORTA BUGGY #* \*# BUT never really going to use much anyway [always have the option to outsource this action to BTT instead which I know can minimize properly]
+    # cmd-m = 'macos-native-minimize' # minimize curr window ( # * SORTA BUGGY #* \*# BUT never really going to use much anyway [always have the option to outsource this action to BTT instead which I know can minimize properly]
     # cmd-v = ['layout tiles vertical'] # [DISABLED THIS ONE ON MAC SIDE SO iTerm2 PASTE can work properly]
-    cmd-h = ['layout tiles horizontal']
+    # cmd-h = ['layout tiles horizontal']
 
     # ----------------------
     # numpad-keys 
@@ -387,8 +387,8 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
     # ----------------------
     #TODO these 3 below commands need to be fused with Glaze side (curr glaze has EMPTY for all of these 3)
     # cmd-comma = 'layout tiles horizontal vertical'# [DISABLED THIS ONE bc CMD+, on mac is open-settings for most apps (HOWEVER with some clever stuff I can still have this enabled and use that command, just will do some other time] # TODO changed this to COMMA for now, since cmd-V conflicts with PASTE action atm. cmd-,
-    cmd-minus = 'resize smart -50' # cmd--
-    cmd-equal = 'resize smart +50' # cmd-+
+    # cmd-minus = 'resize smart -50' # cmd--
+    # cmd-equal = 'resize smart +50' # cmd-+
     # cmd-EMPTY = 'layout accordion horizontal vertical' # DETERMINED THIS IS pretty much POINTLESS for the Accordion layout so not worth giving it its own KEY
 
     # alias path='echo; tr ";" "\n" <<< "$PATH"; echo;'
