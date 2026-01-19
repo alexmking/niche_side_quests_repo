@@ -446,7 +446,7 @@ export SCREENSHOTS_DIR="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Scree
 
 ################################################################
 ################################################################
-# GLOSSARY/SECTIONS (ctrl-f "zz-" to quickly navigate):
+# GLOSSARY SECTIONS LEGEND (ctrl-f "zz-" to quickly navigate):
 ################################################################
 ################################################################
 # 1. misc aliases zz-
@@ -462,7 +462,7 @@ export SCREENSHOTS_DIR="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Scree
 # 9. the 'select' aliases zz- #TODO)
 # 10. the 'show' aliases zz- #TODO)
 # 11. the 'see' aliases zz- #TODO)
-# 12. the 'HELP' aliases #TODO THIS IS NEW ONE I JUST ADDED TO HELP ME STANDARDIZE ALL THE DIFF 'help/manpages' stuff from CLI
+# 12. the 'HELP' & 'VERSION' aliases #TODO THIS IS NEW ONE I JUST ADDED TO HELP ME STANDARDIZE ALL THE DIFF 'help/manpages' stuff from CLI
 # RULE OF THUMB: each 'section' header should have TWO lines of ########### so clearly differentiated from other sections/sub-sections/misc-comments I have WITHIN sections
 
 # etc etc #TODO fix/re-arrange the above sections to fit the actual sections below...
@@ -948,11 +948,24 @@ alias listtaxonomy="head -n 30 $REPO_DIR/niche_side_quests_repo/_universal/prefi
 
 ################################################################
 ################################################################
-# the 'HELP' aliases    zz-    [section _ of _]
+# the 'HELP' & 'VERSION' aliases    zz-    [section _ of _]
 ################################################################
 ################################################################
+#### HELP ALIASES ####
 alias helpgrep="man grep"
 alias helpfind="man find"
+#TODO ADD A TON MORE OF THESE
+#TODO ADD A TON MORE OF THESE
+#TODO ADD A TON MORE OF THESE
+
+#### VERSION ALIASES ####
+alias versionbrew="brew --version"
+alias versionfzf="fzf --version"
+alias versiongit="git --version"
+alias versionnode="node --version"
+alias versionpython="python3 --version"
+alias versionzsh="zsh --version"
+alias versioncode="code --version"
 #TODO ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAY-TO-DAY USAGE...
 #TODO ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAY-TO-DAY USAGE...
 #TODO ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAY-TO-DAY USAGE...
