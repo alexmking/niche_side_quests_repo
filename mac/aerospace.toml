@@ -236,6 +236,9 @@ run = ["layout floating","move-node-to-workspace ||--6--||"]
 if.app-id = 'com.culturedcode.ThingsMac'
 run = ["layout floating","move-node-to-workspace ||--8--||"]
 
+# FIXME: ================================================================================================
+# I THINK THIS ONE IS CAUSING ALL THE APPS TO OPEN ON workspace '9'???? since after this app opens-at-login, we start on workspace 9??? So then when we start to launch all the other apps (Which dont have a preset workspace number, they all just open on the workspace were currently at, which is 9)...
+# FIXME: ================================================================================================
 [[on-window-detected]]
 if.app-id = 'imagetasks.iStatistica-Pro'
 run = ["layout floating","move-node-to-workspace ||--9--||"]

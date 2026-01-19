@@ -9,9 +9,37 @@ current_keyboard_bindings.   (use zz- to jump from section to section)
 0. WORST hotkeys
 0.1 REF LIST OF ALL 15 MODIFIER-GROUPS
 
+======[(LHO) LEFT-HAND-ONLY-EMPH-REMINDER]======
+- Being able to trigger a shortcut using only my left-hand (roughly this is all the keys on middle/left-side of keyb, w some exceptions obvi)
+- we want to maximize this left-hand-only (LHO) real-estate when organizing our shortcuts
+- TODO: add the '(LHO)' indicator to ALL the shortcuts is applies to
+-
+
+======[GOOD RULES OF THUMB TO BE AWARE OF...]======
+- more modifier keys == more serious/hard-to-reverse action
+- Never re-use a family (If ALT + OPT launches apps, it always launches apps.)
+-
+-
+
+
+======[TODO: MISSING the 'TAB' and 'DELETE' and 'ENTER' keys from my shortcuts lists belowfor each of the MODIFIER GROUPS]======
+======[TODO: So i need to ADD these 3 keys for EACH of the modifierGroups]======
+- (i forgot TAB and ENTER are technically character keys just like a-z or 1-9 etc)
+- so I need to add ones like the following:
+    -HYPER-TAB, and 
+    -HYPER-DELETE and
+    -HYPER-ENTER and A
+    -ALT-ENTER...
+    -ALT-DELETE
+    -ALT-SHIFT-ENTER, etc etc...
+    -ALT-SHIFT-DELETE etc etc
+    - also dont forget the other modifier groups like CTRL-OPT-ALT-TAB, then CTRL-OPT-ALT-ENTER etc...
+
+
 ======[REMAPPED_KEYS]======
 rightCtrl   ==      miniHYPERKEY (hyperkey without the SHIFT included)
 rightAlt    ==      rightArrow (to accept suggestions in terminal/editor/chrome/etc faster)
+
 
 =====================================
 TMP-TOP-PRIOIRTY: commands that need to be assigned a keyb:
@@ -331,7 +359,7 @@ HYPER-'		    ________avail
 HYPER-enter     ________avail
 	
 HYPER-z		________avail   (NOTE this may be the new hotkey for zzshortcuts-ULTRA-optimized, which is currently ALT-Z)
-HYPER-x		________avail
+HYPER-x		________avail   switch to 'durMeetings' tab in Ref_Sheet excel doc (for office WINDOWS-side only, and x is unlikely to be used for anything on mac side anyway)
 HYPER-c		raycast clipboard manager
 HYPER-v		Raycast Paste clipboard items one after another (paste-sequentially) (so each HYPER-v pastes another clipboard item)
 HYPER-b		________avail
