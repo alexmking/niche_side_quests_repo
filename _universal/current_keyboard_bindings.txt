@@ -19,9 +19,9 @@ current_keyboard_bindings.   (use zz- to jump from section to section)
 
 
 ======[RARE ONE-OFF ERRORS/CONFLICTS of certain MODGROUPS <-> KEY pairings to be aware of when deciding on where shortcuts should be put]======
-- For ALT-ONLY group, Leave the 'K' key alone (bc that's MACs RAYCASTs CMD-K one that we need avail and BTT isnt able to do the normal app-specific workaround like usual bc raycast is overlay app w diff rules)
-- ALT-ONLY group, be careful with 'C' bc of some misc conflicts I've run into (not sure if BTT would be able to workaround this but as a rule of thumb I should try to avoid this CHAR in this MODGROUP)
-- ADD MORE HERE AS YOU REMEMBER THEM!!!
+- For ALT-ONLY group... Leave the 'K' key alone (bc that's MACs RAYCASTs CMD-K one that we need avail and BTT isnt able to do the normal app-specific workaround like usual bc raycast is overlay app w diff rules)
+- For ALT-ONLY group...be careful with 'C' bc of some misc conflicts I've run into (not sure if BTT would be able to workaround this but as a rule of thumb I should try to avoid this CHAR in this MODGROUP)
+- For ALT-ONLY group...(so far it's chars C, and K... but I know there's a few more problematic ones for the ALT-ONLY modGroup...)
 - ADD MORE HERE AS YOU REMEMBER THEM!!!
 - ADD MORE HERE AS YOU REMEMBER THEM!!!
 
