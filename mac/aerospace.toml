@@ -190,7 +190,7 @@ run = "layout floating"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Excel'
-run = "layout floating"
+run = ["layout floating","move-node-to-workspace ||--8--||"]
 
 [[on-window-detected]]
 if.app-id = 'com.apple.TextEdit'
@@ -216,9 +216,6 @@ run = "layout floating"
 if.app-id = 'com.apple.iCal'
 run = "layout floating"
 
-[[on-window-detected]]
-if.app-id = 'com.apple.ActivityMonitor'
-run = "layout floating"
 
 
 [[on-window-detected]]
@@ -243,6 +240,13 @@ run = ["layout floating","move-node-to-workspace ||--8--||"]
 if.app-id = 'imagetasks.iStatistica-Pro'
 run = ["layout floating","move-node-to-workspace ||--9--||"]
 
+[[on-window-detected]]
+if.app-id = 'com.spotify.client'
+run = ["layout floating","move-node-to-workspace ||--9--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'com.spotify.client'
+# run = ["layout floating","move-node-to-workspace ||--9--||"]
 
 
 # [[on-window-detected]]
@@ -272,6 +276,8 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
 
 # USE THIS URL FOR MORE APP IDS: (they're on section 12 of the page fyi)
 # https://nikitabobko.github.io/AeroSpace/goodies
+# AND...
+# https://nikitabobko.github.io/AeroSpace/guide#on-window-detected-callback
 # OR...RUN THIS COMMAND IN TERMINAL to see CURRENTLY RUNNING APPs:
 #  > aerospace list-apps 
 
@@ -279,7 +285,9 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
     # "app-name" : "iStatistica Pro",
     # "app-pid" : 87679
 
-
+    # "app-bundle-id" : "com.spotify.client",
+    # "app-name" : "Spotify",
+    # "app-pid" : 63780
 
 
 

@@ -9,17 +9,64 @@ current_keyboard_bindings.   (use zz- to jump from section to section)
 0. WORST hotkeys
 0.1 REF LIST OF ALL 15 MODIFIER-GROUPS
 
+
+
+
+
+
+
+
+
+=====================================================================================
+======[TODO IDEA: using the FnRow Keys as mini-categories of shortcuts (12 keys)]======
+=====================================================================================
+- bc we need to hit the Fn key to access the FnRow keys, we can add the Fn key to current modifierGroups to create a new mini-category of shortcuts
+- (it's only a 'mini' category bc the Fn modifier key only effects the 12 FnRow keys, which we found out during our miniHYPER side quest. IOW EXAMPLE: 'ALT-Fn-T' will do NOTHING bc it's being read as 'ALT-Fn' since the 'T' is ignored)
+- so we can create 3-5 mini-categories of shortcuts where we'll have 12 free keys to assign shortcuts
+    **************************
+    [THE 4 MODIFIER GROUPS THAT ARE SAFE FOR Fn pairing]
+    **************************
+    ALT + OPT + F       (tiny bit riskier than the other 3 fyi)
+    ALT + CTRL + F       
+    ALT + CTRL + OPT + F
+    ALT + CTRL + OPT + SHIFT + F
+    
+    =====USE-CASES FOR THESE mini-categories:=====
+    (1) temporary 'playground' area where we can freely add new shortcuts we're testing out and not have to worry about any conflicts (then when we want to officially add the new shortcut, we can move it from the playground to the actual modifiergroups (aka the ones without Fn mod))
+    (2) ?? 
+    (3) ??
+
+
+
+
+
+
+
+
+
+
+
 ======[(LHO) LEFT-HAND-ONLY-EMPH-REMINDER]======
 - Being able to trigger a shortcut using only my left-hand (roughly this is all the keys on middle/left-side of keyb, w some exceptions obvi)
 - we want to maximize this left-hand-only (LHO) real-estate when organizing our shortcuts
 - TODO: add the '(LHO)' indicator to ALL the shortcuts is applies to
 -
 
+
+
+
+
+
 ======[GOOD RULES OF THUMB TO BE AWARE OF...]======
 - more modifier keys == more serious/hard-to-reverse action
 - Never re-use a family (If ALT + OPT launches apps, it always launches apps.)
--
--
+
+
+
+
+
+
+
 
 
 ======[TODO: MISSING the 'TAB' and 'DELETE' and 'ENTER' keys from my shortcuts lists belowfor each of the MODIFIER GROUPS]======
@@ -36,9 +83,18 @@ current_keyboard_bindings.   (use zz- to jump from section to section)
     - also dont forget the other modifier groups like CTRL-OPT-ALT-TAB, then CTRL-OPT-ALT-ENTER etc...
 
 
+
+
+
+
 ======[REMAPPED_KEYS]======
 rightCtrl   ==      miniHYPERKEY (hyperkey without the SHIFT included)
 rightAlt    ==      rightArrow (to accept suggestions in terminal/editor/chrome/etc faster)
+
+
+
+
+
 
 
 =====================================
