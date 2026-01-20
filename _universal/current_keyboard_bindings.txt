@@ -6,8 +6,14 @@ current_keyboard_bindings.   (use zz- to jump from section to section)
 2. ALT-SHIFT group of keybShortcuts
 3. HYPERKEY group of keybShortcuts
 4. BESPOKE 'rightHYPER+Fn' group of keybShortcuts
-0. WORST hotkeys
-0.1 REF LIST OF ALL 15 MODIFIER-GROUPS
+[Fn mini-groups (4 tot)]
+    > ALT-OPT-Fn
+    > ALT-CTRL-Fn
+    > ALT-CTRL-OPT-Fn (miniHYPER)
+    > ALT-CTRL-OPT-SHIFT-Fn (HYPER)
+
+0.1 WORST hotkeys
+0.2 REF LIST OF ALL 15 MODIFIER-GROUPS
 
 
 
@@ -522,6 +528,86 @@ rHYPER-fn-F9   ________avail
 rHYPER-fn-F10  ________avail
 rHYPER-fn-F11  ________avail
 rHYPER-fn-F12  color picker [TODO: TRY AND FIND BETTER BINDING FOR THIS ONE as we had to move it to make room for more imp trello-board ones]
+
+
+
+*******************************************************************************
+*******************************************************************************
+The FOUR Fn Modifier Groups I'm playing around with atm (mini 12-key groups)
+*******************************************************************************
+*******************************************************************************
+
+*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
+*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
+*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
+*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
+
+==========ALT-OPT-Fn==========
+ALT-OPT-Fn-Fn1          ________avail
+ALT-OPT-Fn-Fn2          ________avail
+ALT-OPT-Fn-Fn3          ________avail
+ALT-OPT-Fn-Fn4          ________avail
+ALT-OPT-Fn-Fn5          ________avail
+ALT-OPT-Fn-Fn6          ________avail
+ALT-OPT-Fn-Fn7          ________avail
+ALT-OPT-Fn-Fn8          ________avail
+ALT-OPT-Fn-Fn9          ________avail
+ALT-OPT-Fn-Fn10         ________avail
+ALT-OPT-Fn-Fn11         ________avail
+ALT-OPT-Fn-Fn12         ________avail
+
+==========ALT-CTRL-Fn==========
+ALT-CTRL-Fn-Fn1          ________avail
+ALT-CTRL-Fn-Fn2          ________avail
+ALT-CTRL-Fn-Fn3          ________avail
+ALT-CTRL-Fn-Fn4          ________avail
+ALT-CTRL-Fn-Fn5          ________avail
+ALT-CTRL-Fn-Fn6          ________avail
+ALT-CTRL-Fn-Fn7          ________avail
+ALT-CTRL-Fn-Fn8          ________avail
+ALT-CTRL-Fn-Fn9          ________avail
+ALT-CTRL-Fn-Fn10         ________avail
+ALT-CTRL-Fn-Fn11         ________avail
+ALT-CTRL-Fn-Fn12         ________avail
+
+==========ALT-CTRL-OPT-Fn (cant use rightHyper bc it include SHIFT mod)==========
+ALT-OPT-CTRL-Fn-Fn1          ________avail
+ALT-OPT-CTRL-Fn-Fn2          ________avail
+ALT-OPT-CTRL-Fn-Fn3          ________avail
+ALT-OPT-CTRL-Fn-Fn4          ________avail
+ALT-OPT-CTRL-Fn-Fn5          ________avail
+ALT-OPT-CTRL-Fn-Fn6          ________avail
+ALT-OPT-CTRL-Fn-Fn7          ________avail
+ALT-OPT-CTRL-Fn-Fn8          ________avail
+ALT-OPT-CTRL-Fn-Fn9          ________avail
+ALT-OPT-CTRL-Fn-Fn10         ________avail
+ALT-OPT-CTRL-Fn-Fn11         ________avail
+ALT-OPT-CTRL-Fn-Fn12         ________avail
+
+==========ALT-CTRL-OPT-SHIFT-Fn (rightHYPER bc adjacent to the lone Fn modkey on MXKeys kb))==========
+ALT-OPT-CTRL-SHIFT-Fn-Fn1          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn2          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn3          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn4          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn5          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn6          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn7          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn8          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn9          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn10         ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn11         ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn12         ________avail
+
+
+
+
+
+
+
+
+
+
+
 
 
 
