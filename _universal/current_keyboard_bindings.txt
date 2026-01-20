@@ -531,17 +531,28 @@ rHYPER-fn-F12  color picker [TODO: TRY AND FIND BETTER BINDING FOR THIS ONE as w
 
 
 
+
+
+
+
+*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
+*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
+*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
+*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
+
+
+
+
+
+
+
+
+
 *******************************************************************************
 *******************************************************************************
 The FOUR Fn Modifier Groups I'm playing around with atm (mini 12-key groups)
 *******************************************************************************
 *******************************************************************************
-
-*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
-*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
-*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
-*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
-
 ==========ALT-OPT-Fn==========
 ALT-OPT-Fn-Fn1          ________avail
 ALT-OPT-Fn-Fn2          ________avail
@@ -584,6 +595,7 @@ ALT-OPT-CTRL-Fn-Fn10         ________avail
 ALT-OPT-CTRL-Fn-Fn11         ________avail
 ALT-OPT-CTRL-Fn-Fn12         ________avail
 
+[TRIGGER THESE WITH THE rightHYPER (aka rightCTRL)...so this section is the SAME as my initial rHYPER 'BESPOKE' section above (SO I SHOULD PROB DEL THAT SECTION ENTIRELY FOR CLARITY...)]
 ==========ALT-CTRL-OPT-SHIFT-Fn (rightHYPER bc adjacent to the lone Fn modkey on MXKeys kb))==========
 ALT-OPT-CTRL-SHIFT-Fn-Fn1          ________avail
 ALT-OPT-CTRL-SHIFT-Fn-Fn2          ________avail
