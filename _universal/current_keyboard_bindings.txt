@@ -862,6 +862,241 @@ TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE
 
 
 
+========================================================
+PHILO: when trying to det which apps get which letter/key...
+it's MORE IMP that your main apps get good/sensible letters, than to try to maximize the total number keys being used
+(or IOW...initially I was trying to pick 'meh' letters for some apps bc then it allowed for the more tricky-to-fit apps to also have a letter shortcut)
+(You literally do not use enough apps to to be able to take up all the letters anyway (or even 60% of the letters), so why waste your time trying to optimize the real-estate avail when 
+you know for sure they'll be 40% wide open space/letters avail no matter how perfectly you layout the apps->letters mappings)
+========================================================
+
+
+
+
+
+
+
+APP-SWITCHING KEY VOCABULARY
+(One key = one conceptual noun)
+
+========================================================
+LETTERS (A–Z)
+🔷 if MY-idea
+⭐ if recc is solid already or 
+✅ if good-as-is, leave alone (set in stone)
+❓ if should spend some time brainstorming/cant think of anything
+========================================================
+A → Agenda / Calendar | Admin / Accounts        ❓
+B → Browser | Books / Backlog                   ✅
+C → Code / IDE | Chat (only if no sep chat key) ✅
+D → Do / Done / Tasks | Dashboard / Database    🔷🔷🔷DOINGWORK board
+E → Editor (text/code) | Email                  ❓
+F → Files / Finder | File Manager               ✅
+G → Git | GitHub / GitLab                       🔷🔷🔷Google/ GPT
+H → Help / Docs | Home / Hub                    ⭐
+I → IDE | Inbox                                 ✅
+J → Jira | Journal                              ⭐   
+K → Kanban / Boards |Knowl(Wiki/Conflu)         ❓
+L → Logs | Library                              ❓
+M → Messages / Meetings | Music / Metrics       ✅ or 🔷🔷🔷MAIL
+N → Notes | Notion                              ✅
+O → Open / Launcher | Overview                  ❓
+P → Projects | Pull Requests / Planner          ⭐('Planner' could be useful, sorta akin/alternmative for trello or Things3)
+Q → Query | Queue                               ⭐('Queue' could be useful)
+R → Reference / Read | Reports                  ❓
+S → Slack / Social | Services                   ❓
+T → Terminal | Tasks (only if no task app)      ✅
+U → Utilities | Updates                         🔷🔷🔷SETTINGS?
+V → Video | Voice                               🔷🔷🔷[VSCODE or VISUALSTUDIO]
+W → Work (workspace / hub) | Web (generic)      ⭐[many things w 'work' or 'web' tbh...]
+X → Inspect / X-ray | Kill / Force Quit         ❓(DANGEROUS KEY apparently? May leave empty?)
+Y → YouTube | Video (specific)                  ⭐[YOUTUBE could be good...OR..⭐⭐Y-for-TRELLO(Since Y is trellos WindowREsize shortcut..)]
+Z → Zoom | Sleep / Lock                         🔷🔷🔷[zzshorts doc]
+3 → Things3 🔷🔷🔷 ⭐                            🔷🔷🔷Things3
+3 → T
+3 → T
+
+NUMBER ROW (OPTIONAL – HIGH LEVEL)
+
+1 → Primary / Main app
+2 → Secondary app
+3 → Tertiary app
+4–6 → Workspaces / Contexts
+7–9 → Environments / Profiles
+0 → Overview / All apps
+
+SYMBOL KEYS (USE SPARINGLY)
+
+`~` → Terminal / Shell
+/  → Search
+.  → Toggle / Focus current
+,  → Settings
+=  → Zoom / Scale
+
+AVOID FOR APP SWITCHING:
+;  '  \  [ ]   (low ergonomics / low mnemonic value)
+
+HIGH-VALUE PROTECTED KEYS (RECOMMENDED TO RESERVE)
+
+B → Browser
+T → Terminal
+C → Code
+F → Files
+N → Notes
+G → Git
+M → Messages
+D → Tasks
+K → Boards / Kanban
+
+DESIGN RULES (SUMMARY)
+
+• One key = one noun (never overload)
+• Keys identify WHAT, modifiers identify INTENT
+• Prefer generic concepts over specific brands
+• Launch-if-not-running is still “app targeting”
+• Protect high-value keys early to avoid future collisions
+
+
+
+
+
+
+
+
+
+========================================================
+= IMP DISTINCTION W 4-FANCY-CHROMETAB ones (doingWork, Aspentech, reference, HOMEgoogleDoc)
+========================================================
+> Unlike the apps, these are tied to the name of the BOARD / GoogleDoc itself, which we can change to whatever,whenever we want...
+> SO...I recommend saving these 4 for LAST, bc then we can survey the remaining letters/keys avail and then...
+> THEN...change the name(s) accordingly to fit with one of the avail letters/keys 
+> WORST CASE SCENARIO None of the 4 can be renamed well enough so then we just decide if should kick out the the apps taking up their letters etc etc
+===FOR EXAMPLE== if 'A' is avail in the end, then we could consider changing DOINGWORK board to 'AGENDA', then give it the A key 
+
+!!!!! KIM the DIRECTION of this mapping were trying to do here !!!!
+> were trying to find good letters/ keys for each app in our list...
+> so we dont start with the LETTER/KEY and try to think of possible apps for it, we INSTEAD ...
+> INSTEAD we start w the APPS and then try to find a good letter/key in the list of remaining ones
+
+
+========================================================
+TRACKING THE REM LETTERS/KEYS AVAIL AS WE GO...
+========================================================
+A → Agenda / Calendar | Admin / Accounts        ❓
+B → Browser | Books / Backlog                   ✅
+C → Code / IDE | Chat (only if no sep chat key) ✅
+D → Do / Done / Tasks | Dashboard / Database    🔷🔷🔷DOINGWORK board (chromeTab fancy)
+E → Editor (text/code) | Email                  ❓
+F → Files / Finder | File Manager               ✅
+G → Git | GitHub / GitLab                       🔷🔷🔷Google/ GPT
+H → Help / Docs | Home / Hub                    ⭐🔷🔷🔷HOME-googleDoc (chromeTab fancy)
+I → IDE | Inbox                                 ✅
+J → Jira | Journal                              ⭐   
+K → Kanban / Boards |Knowl(Wiki/Conflu)         ❓
+L → Logs | Library                              ❓
+M → Messages / Meetings | Music / Metrics       ✅ or 🔷🔷🔷MAIL
+N → Notes | Notion                              ✅
+O → Open / Launcher | Overview                  ❓
+P → Projects | Pull Requests / Planner          ⭐('Planner' could be useful, sorta akin/alternmative for trello or Things3)
+Q → Query | Queue                               ⭐('Queue' could be useful)
+R → Reference / Read | Reports                  ❓🔷🔷🔷REFERENCE board (chromeTab fancy)
+S → Slack / Social | Services                   ❓
+T → Terminal | Tasks (only if no task app)      ✅
+U → Utilities | Updates                         🔷🔷🔷SETTINGS?
+V → Video | Voice                               🔷🔷🔷[VSCODE or VISUALSTUDIO]
+W → Work (workspace / hub) | Web (generic)      ⭐['work' or 'web' both good options...]🔷🔷🔷ASPENTECHboard 'W==work'(chromeTab fancy)
+X → Inspect / X-ray | Kill / Force Quit         ❓(DANGEROUS? May leave empty?)
+Y → YouTube | Video (specific)                  ⭐[YOUTUBE/Y-for-TRELLO( Y is trelloWindowREsize shortcut..)]
+Z → Zoom | Sleep / Lock                         🔷🔷🔷[zzshorts doc]
+3 → Things3 🔷🔷🔷 ⭐                            🔷🔷🔷Things3
+~       → ?
+TAB     → ?
+ENTER   → ?
+SPACEB → ?
+
+--NUMROW--(could mirror FnRow apps until otherwise)
+1 → ?
+2 → ?
+3 → ?
+4 → ?
+5 → ?
+6 → ?
+7 → ?
+8 → ?
+9 → ?
+0 → ?
+
+--SYMBOLS/MISC/ ARROWKEYS? -- (lowest pri keys here fyi)
+- → ?
++ → ?
+[ → ?
+] → ?
+\ → ?
+; → ?
+" → ?
+< → ?
+> → ?
+/ → ?
+
+LeftArr     → ?
+rightArr    → ?
+upArrow     → ?
+downArrow   → ?
+
+
+
+
+
+
+
+
+
+
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+========================================================
+THE LETTERS/KEYS OPTIONS FOR EACH APP... (leaving out the 'set-in-stone' ones, like TERMINAL-> T)
+========================================================
+(remember the 4 'fancy' chromeTab/TrelloBoard ones CAN simply be renmaed to fit with a specific letter (since its going off the name of the BOARDS, as opposed to the name of app itself))
+vscode          C, V (Code or Vscode)
+VisualStudio    V, I (VisualSt or IDE)
+TrelloApp           ~,Y,Tab,D,A,A,P (~~ or Y or TAB or Done or Atlassian or Agenda or Planner)
+DOINGWORK board     D, or rename (DoingWork)
+ASPEN/EMERSON board     A,E,W,Q,or rename (for Aspen, Emerson, Work, Queue, or wildcareRename)
+REFERENCE board     R or rename (for REFERENCE or wildcard rename)     
+HOME google doc     H or rename (for HOME or wildcare rename)
+
+Things3             num3,~,D,~,Tab,A,R  (for number3/THings3::THree, Done/Do, TAB (bc of the "T" in TAB), Agenda or Routine)
+Excel Ref_Sheet     E, R    (for Excel, or Reference)
+
+Spotify     S, A    (Sportify, or Audio)
+
+Email/Mail  E,M,O,I     (for Email,Mail,Outlook or Inbox)
+
+(other misc ones I didn't set up as of now)
+Notes       N ?? TBD...
+Firefox     ??
+BetterTouchTools ??
+
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+
+
+
+
+
+
 
 
 

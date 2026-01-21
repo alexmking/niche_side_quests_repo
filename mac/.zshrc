@@ -523,6 +523,24 @@ alias fzflistpids="ps aux | fzf"
 alias killpid="kill"
 
 
+####### MY STARTUP 'LAUNCH MY MAIN APPS' SCRIPT ALIASES ###########
+alias setupalexenv="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias setupmyapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias setupmyenv="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias launchmainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias launchmyapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias launchmymainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias launchalexapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias scrsetupalexenv="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias scrsetupmyapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias scrsetupmyenv="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias scrlaunchmainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias scrlaunchmyapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias scrlaunchmymainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias scrlaunchalexapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+
+
+
 
 ################################################################
 ################################################################
@@ -904,6 +922,14 @@ alias editfilenamingconventions="code $REPO_DIR/niche_side_quests_repo/_universa
 alias editvscodejson='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
 alias editvscodekeyb='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
 alias editvscodekeybindingsjson='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
+
+
+alias editscrlaunchmainapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias editscrlaunchmyapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias editlaunchmainapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias editlaunchmyapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias editlaunchapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias editsrclaunchapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
 
 
 
