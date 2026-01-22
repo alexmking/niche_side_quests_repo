@@ -164,7 +164,7 @@ alt-c       ________avail
 alt-v	    set VERTICAL tile-style
 alt-b	    pin-window-to-top
 alt-n       ________avail
-alt-m	    minimize-window
+alt-m	    almost-maximize-window
 alt-,       ________avail
 alt-.       ________avail
 alt-/       ________avail
@@ -281,7 +281,7 @@ alt-shift-enter     ________avail
 
 alt-shift-Z		Backup zzshortcuts for when (ALT-Z) fails (when we call it from uncommon apps) command 
 alt-shift-x		close-all-windows-but-curr
-alt-shift-c		copy-path (one of my favs)(fileExpl, terminal, vscode, chrome etc)
+alt-shift-c		copy-path (one of my favs)(fileExpl, terminal, vscode, chrome etc) --<may move this one to modGroup that is better fit bc it's not really a mindowmanagement type shortcut whuich ALT-SHIFT group is supposed to be>--
 alt-shift-v		________avail
 alt-shift-b		________avail
 alt-shift-n		________avail
@@ -365,6 +365,79 @@ alt-shift-Fn12	    ________avail
 
 
 
+[SECTION 3.5 of 4] zz-
+=====================================
+ALT-OPT (APP-SWITCHER) group of commands	
+=====================================
+alt-opt-TAB     things3 (2ndary)
+alt-opt-q		________avail
+alt-opt-w		ASPENTECH board fancy chromeTab
+alt-opt-e		Excel ref doc
+alt-opt-r		REFERENCE board fancy chromeTab
+alt-opt-t		terminal /iTerm2 / Cmder
+alt-opt-y		trello desktop app
+alt-opt-u		________avail
+alt-opt-i		Inbox (email)
+alt-opt-o		________avail
+alt-opt-p		________avail
+alt-opt-[		________avail
+alt-opt-]		________avail
+alt-opt-\		________avail 
+	
+alt-opt-a		    things3 (2ndary)
+alt-opt-s           spotify
+alt-opt-d		    DOINGWORK board fancy chromeTab
+alt-opt-f		    Finder/ File-Expl
+alt-opt-g		    Github Desktop
+alt-opt-h		    HOME GoogleDoc fancy chromeTab
+alt-opt-j		    Jira 'mywork' fancy chromeTab
+alt-opt-k		    ________avail
+alt-opt-l		    ________avail
+alt-opt-;		    ________avail
+alt-opt-'		    ________avail
+alt-opt-enter       ________avail
+	
+alt-opt-z		zzshorts excel doc   
+alt-opt-x		________avail   
+alt-opt-c		vscode
+alt-opt-v		VisualStudio / IDE
+alt-opt-b		Chrome / Browser
+alt-opt-n		________avail
+alt-opt-m		Teams
+alt-opt-,		________avail
+alt-opt-.		________avail
+alt-opt-/		________avail
+	
+alt-opt-LeftArr	    ________avail
+alt-opt-RightArr    ________avail
+alt-opt-UpArr	    ________avail
+alt-opt-DownArr	    ________avail
+
+alt-opt-`		things3
+alt-opt-1	    Finder (numrow backup)
+alt-opt-2       terminal (numrow backup)
+alt-opt-3       chrome (numrow backup)
+alt-opt-4	    vscode (numrow backup)
+alt-opt-5	    Teams/Things3
+alt-opt-6	    Trello desktop app (numrow backup)
+alt-opt-7	    Ref excel doc (numrow backup)
+alt-opt-8	    zzshorts (numrow backup)
+alt-opt-9	    ________avail
+alt-opt-0       ________avail
+alt-opt--	    ________avail   
+alt-opt-=	    ________avail  
+
+(this group is mainly used as spot to test out new shortcuts before det if they're worth giving a legit binding to)
+alt-opt-numpad1     ________avail
+alt-opt-numpad2	    ________avail
+alt-opt-numpad3     ________avail
+alt-opt-numpad4	    ________avail
+alt-opt-numpad5	    ________avail
+alt-opt-numpad6	    ________avail
+alt-opt-numpad7	    ________avail
+alt-opt-numpad8	    ________avail
+alt-opt-numpad9	    ________avail
+alt-opt-numpad0     ________avail
 
 
 
@@ -384,10 +457,23 @@ alt-shift-Fn12	    ________avail
 
 
 
-[SECTION 3 of 4] zz-
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 3 ??? 4 of 4] zz-
 =====================================
 (HYPERKEY) group of commands	
 =====================================
+HYPER-TAB   ________avail
 HYPER-q		________avail(this one may not be ALLOWED for some 'q' for quit related conflict?)
 HYPER-w		go to ASPEN/EMER 'work' trello board tab    (opens Microsoft Word on Windows side?)
 HYPER-e		________avail
@@ -455,10 +541,10 @@ HYPER--	    ________avail   aka HYPER-minus
 HYPER-=	    ________avail   aka HYPER-plus
 
 (this group is mainly used as spot to test out new shortcuts before det if they're worth giving a legit binding to)
-HYPER-numpad1       switch-to/open DOING_WORK trello board on chrome    [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
-HYPER-numpad2	    switch-to/open ASPEN trello board on chrome         [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
-HYPER-numpad3       switch-to/open REFERENCE trello board on chrome     [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
-HYPER-numpad4	    switch-to/open HOME-GOOGLE-SHEETS doc on chrome     [wip, can only open URL in new tab, instead of switching to already opened tab which is the primary use-case we want to capture w these]
+HYPER-numpad1       ________avail
+HYPER-numpad2	    ________avail
+HYPER-numpad3       ________avail
+HYPER-numpad4	    ________avail
 HYPER-numpad5	    ________avail
 HYPER-numpad6	    ________avail
 HYPER-numpad7	    ________avail
@@ -479,6 +565,60 @@ HYPER-Fn9	________avail
 HYPER-Fn10	________avail
 HYPER-Fn11	________avail
 HYPER-Fn12	________avail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

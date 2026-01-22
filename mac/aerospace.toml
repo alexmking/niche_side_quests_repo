@@ -86,10 +86,11 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 
 accordion-padding = 100
 
+# checked Jan 2026 and there's still ONLY the TWO LAYOUT OPTIONS:  --> Tiles and Accordion ... (no 'floating' option)
 default-root-container-layout = 'accordion' # TODO should change this to TILES? 
 default-root-container-orientation = 'auto'
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-automatically-unhide-macos-hidden-apps = true
+automatically-unhide-macos-hidden-apps = true # TODO IS COULD BE WHAT WAS CAUSING THE ODD ISSUE WITH 'CMD-OPT-H' shortcut that resulted in glitchy window moving/disappearance behavior (i think it's bc it HID the window, and thne AEROSP's setting here automatically kciked in and instnatly re-adjusted the window back(ence the glitchy-impression)
 
 [key-mapping]
     preset = 'qwerty'
@@ -244,6 +245,10 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
 if.app-id = 'com.spotify.client'
 run = ["layout floating","move-node-to-workspace ||--9--||"]
 
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = ["layout floating","move-node-to-workspace ||--9--||"]
+
 # [[on-window-detected]]
 # if.app-id = 'com.spotify.client'
 # run = ["layout floating","move-node-to-workspace ||--9--||"]
@@ -289,7 +294,9 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
     # "app-name" : "Spotify",
     # "app-pid" : 63780
 
-
+    # "app-bundle-id" : "com.apple.mail",
+    # "app-name" : "Mail",
+    # "app-pid" : 75094
 
 
 
