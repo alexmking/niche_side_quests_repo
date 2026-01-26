@@ -1,35 +1,55 @@
-=====================================
-current_keyboard_bindings.   (use zz- to jump from section to section)
-=====================================
-[THREE MAIN SECTIONS + few MISC/BESPOKE SECTIONS]
-1. ALT-ONLY group of keybShortcuts
-2. ALT-SHIFT group of keybShortcuts
-3. HYPERKEY group of keybShortcuts
-4. BESPOKE 'rightHYPER+Fn' group of keybShortcuts
-[Fn mini-groups (4 tot)]
-    > ALT-OPT-Fn
-    > ALT-CTRL-Fn
-    > ALT-CTRL-OPT-Fn (miniHYPER)
-    > ALT-CTRL-OPT-SHIFT-Fn (HYPER)
-
+====================================================================================================================================================
+====================================================================================================================================================
+current_keyboard_bindings.txt   (use zz- to jump from section to section)
+====================================================================================================================================================
+====================================================================================================================================================
+[FOUR MAIN SECTIONS + few MISC/BESPOKE SECTIONS]
+0. todo's / reminders / ideas / pending-commands
+1. ALT-ONLY group of keybShortcuts      (---windowManagement1---)
+2. ALT-SHIFT group of keybShortcuts     (---windowManagement2---)
+3. ALT-OPT  group of keybShortcuts      (---app-switching---)
+4. HYPERKEY group of keybShortcuts      (---misc/other (TBD)---)
+-------
+5. MIDDLE-MAN / PLAYGROUND Fn-mini-groups of shortcuts
+*********
+*********
 0.1 WORST hotkeys
 0.2 REF LIST OF ALL 15 MODIFIER-GROUPS
 
 
 
 
-======[RARE ONE-OFF ERRORS/CONFLICTS of certain MODGROUPS <-> KEY pairings to be aware of when deciding on where shortcuts should be put]======
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 0 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
+todo's / reminders / ideas / pending-commands
+====================================================================================================================================================
+====================================================================================================================================================
+
+------------------------------------------------------------------
+-------[RARE ONE-OFF ERRORS/CONFLICTS of certain MODGROUPS <-> KEY pairings to be aware of when deciding on where shortcuts should be put]======
+------------------------------------------------------------------
 - For ALT-ONLY group... Leave the 'K' key alone (bc that's MACs RAYCASTs CMD-K one that we need avail and BTT isnt able to do the normal app-specific workaround like usual bc raycast is overlay app w diff rules)
 - For ALT-ONLY group...be careful with 'C' bc of some misc conflicts I've run into (not sure if BTT would be able to workaround this but as a rule of thumb I should try to avoid this CHAR in this MODGROUP)
 - For ALT-ONLY group...(so far it's chars C, and K... but I know there's a few more problematic ones for the ALT-ONLY modGroup...)
 - ADD MORE HERE AS YOU REMEMBER THEM!!!
 - ADD MORE HERE AS YOU REMEMBER THEM!!!
 
-
-
-=====================================================================================
-======[TODO IDEA: using the FnRow Keys as mini-categories of shortcuts (12 keys)]======
-=====================================================================================
+------------------------------------------------------------------
+[TODO IDEA: using the FnRow Keys as mini-categories of shortcuts (12 keys)]
+------------------------------------------------------------------
 - bc we need to hit the Fn key to access the FnRow keys, we can add the Fn key to current modifierGroups to create a new mini-category of shortcuts
 - (it's only a 'mini' category bc the Fn modifier key only effects the 12 FnRow keys, which we found out during our miniHYPER side quest. IOW EXAMPLE: 'ALT-Fn-T' will do NOTHING bc it's being read as 'ALT-Fn' since the 'T' is ignored)
 - so we can create 3-5 mini-categories of shortcuts where we'll have 12 free keys to assign shortcuts
@@ -46,41 +66,23 @@ current_keyboard_bindings.   (use zz- to jump from section to section)
     (2) ?? 
     (3) ??
 
-
-
-
-
-
-
-
-
-
-
-======[(LHO) LEFT-HAND-ONLY-EMPH-REMINDER]======
+------------------------------------------------------------------
+-----[(LHO) LEFT-HAND-ONLY-EMPH-REMINDER]======
+------------------------------------------------------------------
 - Being able to trigger a shortcut using only my left-hand (roughly this is all the keys on middle/left-side of keyb, w some exceptions obvi)
 - we want to maximize this left-hand-only (LHO) real-estate when organizing our shortcuts
 - TODO: add the '(LHO)' indicator to ALL the shortcuts is applies to
--
 
-
-
-
-
-
-======[GOOD RULES OF THUMB TO BE AWARE OF...]======
+------------------------------------------------------------------
+-----[GOOD RULES OF THUMB TO BE AWARE OF...]------
+------------------------------------------------------------------
 - more modifier keys == more serious/hard-to-reverse action
 - Never re-use a family (If ALT + OPT launches apps, it always launches apps.)
 
-
-
-
-
-
-
-
-
-======[TODO: MISSING the 'TAB' and 'DELETE' and 'ENTER' keys from my shortcuts lists belowfor each of the MODIFIER GROUPS]======
-======[TODO: So i need to ADD these 3 keys for EACH of the modifierGroups]======
+------------------------------------------------------------------
+-----[TODO: MISSING the 'TAB' and 'DELETE' and 'ENTER' keys from my shortcuts lists belowfor each of the MODIFIER GROUPS]======
+-----[TODO: So i need to ADD these 3 keys for EACH of the modifierGroups]-----
+------------------------------------------------------------------
 - (i forgot TAB and ENTER are technically character keys just like a-z or 1-9 etc)
 - so I need to add ones like the following:
     -HYPER-TAB, and 
@@ -92,24 +94,15 @@ current_keyboard_bindings.   (use zz- to jump from section to section)
     -ALT-SHIFT-DELETE etc etc
     - also dont forget the other modifier groups like CTRL-OPT-ALT-TAB, then CTRL-OPT-ALT-ENTER etc...
 
-
-
-
-
-
-======[REMAPPED_KEYS]======
+------------------------------------
+-----[REMAPPED_KEYS]-----
+------------------------------------
 rightCtrl   ==      miniHYPERKEY (hyperkey without the SHIFT included)
 rightAlt    ==      rightArrow (to accept suggestions in terminal/editor/chrome/etc faster)
 
-
-
-
-
-
-
-=====================================
+------------------------------------------------------------------
 TMP-TOP-PRIOIRTY: commands that need to be assigned a keyb:
-=====================================
+------------------------------------------------------------------
 - raycast global hotkey for 'quick add new event to google calendar'
 - alt-shift-spacebar .... ?
 - HYPER-spacebar
@@ -127,10 +120,52 @@ TMP-TOP-PRIOIRTY: commands that need to be assigned a keyb:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [SECTION 1 of 4] zz-
-=====================================
+====================================================================================================================================================
+====================================================================================================================================================
 (ALT) group of commands	
-=====================================
+====================================================================================================================================================
+====================================================================================================================================================
 alt-q	preset-window-size group of commands
 alt-w	preset-window-size group of commands
 alt-e	preset-window-size group of commands
@@ -242,16 +277,12 @@ alt-Fn12	________avail
 
 
 
-
-
-
-
-
-
 [SECTION 2 of 4] zz-
-=====================================
+====================================================================================================================================================
+====================================================================================================================================================
 (ALT-SHIFT) group of commands	
-=====================================
+====================================================================================================================================================
+====================================================================================================================================================
 alt-shift-q		quit/close window
 alt-shift-w		reset/redraw windows
 alt-shift-e		exit Aerosp/Glaze
@@ -361,14 +392,12 @@ alt-shift-Fn12	    ________avail
 
 
 
-
-
-
-
-[SECTION 3.5 of 4] zz-
-=====================================
+[SECTION 3 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
 ALT-OPT (APP-SWITCHER) group of commands	
-=====================================
+====================================================================================================================================================
+====================================================================================================================================================
 alt-opt-TAB     things3 (2ndary)
 alt-opt-q		________avail
 alt-opt-w		ASPENTECH board fancy chromeTab
@@ -466,13 +495,12 @@ alt-opt-numpad0     ________avail
 
 
 
-
-
-
-[SECTION 3 ??? 4 of 4] zz-
-=====================================
+[SECTION 4 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
 (HYPERKEY) group of commands	
-=====================================
+====================================================================================================================================================
+====================================================================================================================================================
 HYPER-TAB   ________avail
 HYPER-q		________avail(this one may not be ALLOWED for some 'q' for quit related conflict?)
 HYPER-w		go to ASPEN/EMER 'work' trello board tab    (opens Microsoft Word on Windows side?)
@@ -596,108 +624,32 @@ HYPER-Fn12	________avail
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[SECTION 4 of 4] zz-
-*******************************************************************************
-BESPOKE 'right side of spacebar' GROUP: (rightHYPER-fn) OR... (alt-fn-opt) and (alt-fn-opt-shift)
-last-resort (using group of 3 mod keys on right of spacebar, as a way to make use of the Fn row keys)
-*******************************************************************************
-> UPDATE ON THIS SECTION: initially I abandoned my HYPER-fn attempt but found a slight workaround that works-so-far.
-> so we're scrapping the (alt-fn-opt) approach for now and if we encounter some issue with this rightHYPER-fn direction 
-> then we can always revert back to it.
-rHYPER-fn-F1   ________avail
-rHYPER-fn-F2   ________avail
-rHYPER-fn-F3   ________avail
-rHYPER-fn-F4   ________avail
-rHYPER-fn-F5   ________avail
-rHYPER-fn-F6   ________avail
-rHYPER-fn-F7   ________avail
-rHYPER-fn-F8   ________avail
-rHYPER-fn-F9   ________avail
-rHYPER-fn-F10  ________avail
-rHYPER-fn-F11  ________avail
-rHYPER-fn-F12  color picker [TODO: TRY AND FIND BETTER BINDING FOR THIS ONE as we had to move it to make room for more imp trello-board ones]
-
-
-
-
-
-
-
-*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
-*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
-*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
-*** ALERT!!! THE BELOW Fn SHORTCUT INFO IS OUT OF DATE!!! Some of these ARE actually taken by a shortcut but it's not specified in this doc yet**
-
-
-
-
-
-
-
-
-
-*******************************************************************************
-*******************************************************************************
-The FOUR Fn Modifier Groups I'm playing around with atm (mini 12-key groups)
-*******************************************************************************
-*******************************************************************************
-==========ALT-OPT-Fn==========
+[SECTION 5 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
+MIDDLE-MAN & PLAYGROUND Fn-mini-groups of shortcuts
+====================================================================================================================================================
+====================================================================================================================================================
+MIDDLE-MAN shortcuts expl: these shortcuts are never triggered myself, but rather for the hacky workarounds where 1 app/tool has to pass execution onto another by sending keystrokes that trigger it. 
+    EX: my fancy-chrometab shortcut: hyper-d triggers the BTT shortcut which switches to chrome, then BTT sends keystrokes (the middle-man shortcut) which trigger the chrome-extensions 'jump-to-tab-by-URL' and so on. 
+    TIP: bc I never actually have to trigger these shortcuts myself, they can be super-awkward and impractical-to-press shortcuts since it's simply the keystrokes() which we hardcode beforehand
+    TIP: also you want to avoid using any actual useful/valuable shortcuts for these since they'll be wasted real-estate that you'll never manually trigger anyway. 
+PLAYGROUND shortcuts expl: these are groups of keys that aren't always open/avail for quick-adding a new-shortcut/command that you want to test/try-out before officially giving it an actual binding in one of the MAIN FOUR categories
+    EX: how I was using the ALT-SHIFT-NUMPAD 3x3 group, I'd add a command there first, try it out, and then after a while try moving the shortcut to the official main 4 categories
+
+----mini-groups(4):----
+ALT-OPT-Fn      ||     playground?
+ALT-CTRL-Fn     ||     middle-man?
+ALT-CTRL-OPT-Fn ||     middle-man?
+HYPER-Fn        ||     playground-shortcut for sure (bc so easy to trigger via the rightHYPER-Fn) 
+
+    <CAUTION> 
+    I may change/swap some of these mini-groups w other options like (ALT-OPT-SHIFT-Fn) and/or (ATL-CTRL-SHIFT-Fn)
+    <CAUTION> 
+
+----------------------------
+ALT-OPT-Fn  (mini-group middle-man/playgr)
+----------------------------
 ALT-OPT-Fn-Fn1          ________avail
 ALT-OPT-Fn-Fn2          ________avail
 ALT-OPT-Fn-Fn3          ________avail
@@ -711,7 +663,9 @@ ALT-OPT-Fn-Fn10         ________avail
 ALT-OPT-Fn-Fn11         ________avail
 ALT-OPT-Fn-Fn12         ________avail
 
-==========ALT-CTRL-Fn==========
+----------------------------
+ALT-CTRL-Fn  (mini-group middle-man/playgr)
+----------------------------
 ALT-CTRL-Fn-Fn1          ________avail
 ALT-CTRL-Fn-Fn2          ________avail
 ALT-CTRL-Fn-Fn3          ________avail
@@ -725,7 +679,9 @@ ALT-CTRL-Fn-Fn10         ________avail
 ALT-CTRL-Fn-Fn11         ________avail
 ALT-CTRL-Fn-Fn12         ________avail
 
-==========ALT-CTRL-OPT-Fn (cant use rightHyper bc it include SHIFT mod)==========
+----------------------------
+ALT-OPT-CTRL-Fn  (mini-group middle-man/playgr)
+----------------------------
 ALT-OPT-CTRL-Fn-Fn1          ________avail
 ALT-OPT-CTRL-Fn-Fn2          ________avail
 ALT-OPT-CTRL-Fn-Fn3          ________avail
@@ -739,8 +695,10 @@ ALT-OPT-CTRL-Fn-Fn10         ________avail
 ALT-OPT-CTRL-Fn-Fn11         ________avail
 ALT-OPT-CTRL-Fn-Fn12         ________avail
 
-[TRIGGER THESE WITH THE rightHYPER (aka rightCTRL)...so this section is the SAME as my initial rHYPER 'BESPOKE' section above (SO I SHOULD PROB DEL THAT SECTION ENTIRELY FOR CLARITY...)]
-==========ALT-CTRL-OPT-SHIFT-Fn (rightHYPER bc adjacent to the lone Fn modkey on MXKeys kb))==========
+
+----------------------------
+rightHYPER-Fn (mini-group middle-man/playgr)
+----------------------------
 ALT-OPT-CTRL-SHIFT-Fn-Fn1          ________avail
 ALT-OPT-CTRL-SHIFT-Fn-Fn2          ________avail
 ALT-OPT-CTRL-SHIFT-Fn-Fn3          ________avail
@@ -773,6 +731,128 @@ ALT-OPT-CTRL-SHIFT-Fn-Fn12         ________avail
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+-----EVERYTHING BELOW THIS IS MISC / INACTIVE STUFF THAT I'll LIKELY DEL AT SOME POINT...
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
 
 
 [SECTION 5 of 4] zz-
@@ -812,26 +892,6 @@ alt-fn-opt-shift-F12  ________avail[DEPRECATED-ATM]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [SECTION ? of 4] zz-
 =====================================
 (WINDOW MANAGEMENT group)   (ctrl-opt-alt) == (the 3 keys left of spacebar)
@@ -856,52 +916,11 @@ ctrl-opt-alt-RightArr       right half (has cycle funct)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 zz-
 =============tmp-CLARIFICATION-OF-TERMS=============
 key-binding:    defines a mapping (of binding) of a hotkey to an action/command. So "(ALT + T)  ==  Open Terminal" is a key-binding, which maps ALT+T to OpenTerminal command
 shortcut:       interchangeable with key-binding, it's just a more user-friendly term than key-binding 
 hotkey:         a combination of keys/mods that triggers a command. So for our shortcut "(ALT + T)  ==  Open Terminal", the hotkey would be (ALT +T)
-
-
-
 
 
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
@@ -943,39 +962,6 @@ alt-ctrl-opt-shift      > basic hyperkey, no expl needed here
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
 SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
 SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
@@ -996,12 +982,6 @@ TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE
 
 
 
-
-
-
-
-
-
 ========================================================
 PHILO: when trying to det which apps get which letter/key...
 it's MORE IMP that your main apps get good/sensible letters, than to try to maximize the total number keys being used
@@ -1009,9 +989,6 @@ it's MORE IMP that your main apps get good/sensible letters, than to try to maxi
 (You literally do not use enough apps to to be able to take up all the letters anyway (or even 60% of the letters), so why waste your time trying to optimize the real-estate avail when 
 you know for sure they'll be 40% wide open space/letters avail no matter how perfectly you layout the apps->letters mappings)
 ========================================================
-
-
-
 
 
 
@@ -1099,11 +1076,6 @@ DESIGN RULES (SUMMARY)
 
 
 
-
-
-
-
-
 ========================================================
 = IMP DISTINCTION W 4-FANCY-CHROMETAB ones (doingWork, Aspentech, reference, HOMEgoogleDoc)
 ========================================================
@@ -1182,12 +1154,6 @@ LeftArr     → ?
 rightArr    → ?
 upArrow     → ?
 downArrow   → ?
-
-
-
-
-
-
 
 
 
