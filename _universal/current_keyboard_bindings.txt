@@ -164,8 +164,10 @@ TMP-TOP-PRIOIRTY: commands that need to be assigned a keyb:
 ====================================================================================================================================================
 ====================================================================================================================================================
 (ALT) group of commands	
+EXPL: window-management/resizing/positioning
 ====================================================================================================================================================
 ====================================================================================================================================================
+alt-tab permanent 'prev window' switcher (obvi)
 alt-q	preset-window-size group of commands
 alt-w	preset-window-size group of commands
 alt-e	preset-window-size group of commands
@@ -280,9 +282,11 @@ alt-Fn12	________avail
 [SECTION 2 of 4] zz-
 ====================================================================================================================================================
 ====================================================================================================================================================
-(ALT-SHIFT) group of commands	
+(ALT-SHIFT) group of commands
+EXPL: shift-variation of the (ALT) modGroup window-management + misc-window-commands that would be pain to accidentally trigger (such as close-all-windows etc)
 ====================================================================================================================================================
 ====================================================================================================================================================
+alt-shift-tab   permanent prev/next app-switcher
 alt-shift-q		quit/close window
 alt-shift-w		reset/redraw windows
 alt-shift-e		exit Aerosp/Glaze
@@ -396,6 +400,7 @@ alt-shift-Fn12	    ________avail
 ====================================================================================================================================================
 ====================================================================================================================================================
 ALT-OPT (APP-SWITCHER) group of commands	
+EXPL: [todo]
 ====================================================================================================================================================
 ====================================================================================================================================================
 alt-opt-TAB     things3 (2ndary)
@@ -499,14 +504,15 @@ alt-opt-numpad0     ________avail
 ====================================================================================================================================================
 ====================================================================================================================================================
 (HYPERKEY) group of commands	
+EXPL: todo 
 ====================================================================================================================================================
 ====================================================================================================================================================
-HYPER-TAB   ________avail
+HYPER-tab   ________avail
 HYPER-q		________avail(this one may not be ALLOWED for some 'q' for quit related conflict?)
 HYPER-w		go to ASPEN/EMER 'work' trello board tab    (opens Microsoft Word on Windows side?)
-HYPER-e		________avail
+HYPER-e		Emoji-search
 HYPER-r		go to REFERENCE trello board tab
-HYPER-t		raycast global chromes 'search all' command (useful for jumping to open tabs from anywhere, esp trello boards)
+HYPER-t		quick-add-trello-card-from-DesktopApp
 HYPER-y		________avail
 HYPER-u		________avail
 HYPER-i		________avail
@@ -516,7 +522,7 @@ HYPER-[		________avail
 HYPER-]		________avail
 HYPER-\		________avail 
 	
-HYPER-a		    ________avail
+HYPER-a		    raycast global chromes 'search all' command (useful for jumping to open tabs from anywhere, esp trello boards)
 HYPER-s		    open_screenshots in file expl...
 HYPER-d		    go to DOING WORK trello board tab
 HYPER-f		    switch to firefox
@@ -537,6 +543,7 @@ HYPER-l		    ________avail
 HYPER-;		    ________avail
 HYPER-'		    ________avail
 HYPER-enter     ________avail
+HYPER-spacebar  quick-add-trello-card(also using HYPER-T so may elim one)
 	
 HYPER-z		________avail   (NOTE this may be the new hotkey for zzshortcuts-ULTRA-optimized, which is currently ALT-Z)
 HYPER-x		________avail   switch to 'durMeetings' tab in Ref_Sheet excel doc (for office WINDOWS-side only, and x is unlikely to be used for anything on mac side anyway)
