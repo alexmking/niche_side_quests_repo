@@ -543,7 +543,7 @@ HYPER-l		    ________avail
 HYPER-;		    ________avail
 HYPER-'		    ________avail
 HYPER-enter     ________avail
-HYPER-spacebar  quick-add-trello-card(also using HYPER-T so may elim one)
+HYPER-spacebar  quick-add-trello-card(also using HYPER-T so may elim one)[note we're using BTT/AHK to redir since trello only allows SPACE key for this shortcut]
 	
 HYPER-z		________avail   (NOTE this may be the new hotkey for zzshortcuts-ULTRA-optimized, which is currently ALT-Z)
 HYPER-x		________avail   switch to 'durMeetings' tab in Ref_Sheet excel doc (for office WINDOWS-side only, and x is unlikely to be used for anything on mac side anyway)

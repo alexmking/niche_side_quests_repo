@@ -566,6 +566,13 @@ alias deletedir="rm -r"
 alias delfile="rm"
 alias deldir="rm -r"
 
+# leet morning script aliases...(these can accept args just like the WINDOWS side does fyi)
+alias morningleet="/usr/local/bin/alexScripts/scr-leet_morning_random.py"
+alias nextproblem="/usr/local/bin/alexScripts/scr-leet_morning_random.py"
+alias nextleet="/usr/local/bin/alexScripts/scr-leet_morning_random.py"
+alias doaproblem="/usr/local/bin/alexScripts/scr-leet_morning_random.py"
+
+
 # #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
 # #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
 # #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
