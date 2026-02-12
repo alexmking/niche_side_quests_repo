@@ -512,8 +512,8 @@ HYPER-q		________avail(this one may not be ALLOWED for some 'q' for quit related
 HYPER-w		go to ASPEN/EMER 'work' trello board tab    (opens Microsoft Word on Windows side?)
 HYPER-e		Emoji-search
 HYPER-r		go to REFERENCE trello board tab
-HYPER-t		quick-add-trello-card-from-DesktopApp
-HYPER-y		________avail
+HYPER-t		________avail
+HYPER-y		quick-add-trello-card-from-DesktopApp
 HYPER-u		________avail
 HYPER-i		________avail
 HYPER-o		Raycast Hotkey for OPEN-WITH (clever idea on reddit)(hyper-o likely a pain on windows side bc microsoft apps bullsh hogging hyper keyb real-estate)
@@ -543,7 +543,7 @@ HYPER-l		    ________avail
 HYPER-;		    ________avail
 HYPER-'		    ________avail
 HYPER-enter     ________avail
-HYPER-spacebar  quick-add-trello-card(also using HYPER-T so may elim one)[note we're using BTT/AHK to redir since trello only allows SPACE key for this shortcut]
+HYPER-spacebar  quick-add-trello-card(also using HYPER-Y so may elim one)[note we're using BTT/AHK to redir since trello only allows SPACE key for this shortcut]
 	
 HYPER-z		________avail   (NOTE this may be the new hotkey for zzshortcuts-ULTRA-optimized, which is currently ALT-Z)
 HYPER-x		________avail   switch to 'durMeetings' tab in Ref_Sheet excel doc (for office WINDOWS-side only, and x is unlikely to be used for anything on mac side anyway)

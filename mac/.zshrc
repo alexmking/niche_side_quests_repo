@@ -937,8 +937,10 @@ alias editlaunchmyapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.
 alias editlaunchapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
 alias editsrclaunchapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
 
-
-
+alias editmorningleet="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
+alias editnextproblem="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
+alias editnextleet="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
+alias editdoaproblem="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
 
 
 
