@@ -15,7 +15,7 @@ ALL_LINKS = [
 	{"url": "https://leetcode.com/problems/contains-duplicate/description/?envType=list&envId=rwtad4ld", "difficulty": "easy", "category": 1},
 	{"url": "https://leetcode.com/problems/valid-anagram/description/?envType=list&envId=rwtad4ld", "difficulty": "easy", "category": 1},
     {"url": "https://leetcode.com/problems/two-sum/description/?envType=list&envId=rwtad4ld", "difficulty": "easy", "category": 1},
-	{"url": "https://leetcode.com/problems/group-anagrams/description/?envType=list&envId=rwtad4ld", "difficulty": "medium", "category": 1},
+	{"url": "https://leetcode.com/problems/group-anagrams/description/?envType=list&envId=rwtad4ld", "difficulty": "medium", "category": 1, "is_top_problem": True}, 	# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/top-k-frequent-elements/description/?envType=list&envId=rwtad4ld", "difficulty": "medium", "category": 1},
 	{"url": "https://leetcode.com/problems/product-of-array-except-self/description/?envType=list&envId=rwtad4ld", "difficulty": "medium", "category": 1},
 	{"url": "https://leetcode.com/problems/valid-sudoku/description/?envType=list&envId=rwtad4ld", "difficulty": "medium", "category": 1},
@@ -36,14 +36,14 @@ ALL_LINKS = [
 	{"url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/?envType=list&envId=rwtajj31", "difficulty": "medium", "category": 3},
 	{"url": "https://leetcode.com/problems/3sum/description/?envType=list&envId=rwtajj31", "difficulty": "medium", "category": 3},
 	{"url": "https://leetcode.com/problems/container-with-most-water/description/?envType=list&envId=rwtajj31", "difficulty": "medium", "category": 3},
-	{"url": "https://leetcode.com/problems/trapping-rain-water/description/?envType=list&envId=rwtajj31", "difficulty": "hard", "category": 3},
+	{"url": "https://leetcode.com/problems/trapping-rain-water/description/?envType=list&envId=rwtajj31", "difficulty": "hard", "category": 3, "is_top_problem": True}, 	# TOP-PROBLEM
 	##########################################################################################################
 	# SLIDING WINDOW (category 4)	6 tot
 	##########################################################################################################
 	{"url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/?envType=list&envId=rwtn7fvc", "difficulty": "easy", "category": 4},
-	{"url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/description/?envType=list&envId=rwtn7fvc", "difficulty": "medium", "category": 4},
-	{"url": "https://leetcode.com/problems/longest-repeating-character-replacement/description/?envType=list&envId=rwtn7fvc", "difficulty": "medium", "category": 4},
-	{"url": "https://leetcode.com/problems/permutation-in-string/description/?envType=list&envId=rwtn7fvc", "difficulty": "medium", "category": 4},
+	{"url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/description/?envType=list&envId=rwtn7fvc", "difficulty": "medium", "category": 4, "is_top_problem": True}, # TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/longest-repeating-character-replacement/description/?envType=list&envId=rwtn7fvc", "difficulty": "medium", "category": 4, "is_top_problem": True},	# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/permutation-in-string/description/?envType=list&envId=rwtn7fvc", "difficulty": "medium", "category": 4, "is_top_problem": True},				# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/minimum-window-substring/description/?envType=list&envId=rwtn7fvc", "difficulty": "hard", "category": 4},
 	{"url": "https://leetcode.com/problems/sliding-window-maximum/description/?envType=list&envId=rwtn7fvc", "difficulty": "hard", "category": 4},
 	##########################################################################################################
@@ -53,7 +53,7 @@ ALL_LINKS = [
 	{"url": "https://leetcode.com/problems/search-a-2d-matrix/description/?envType=list&envId=rwtnlcni", "difficulty": "medium", "category": 5},
 	{"url": "https://leetcode.com/problems/koko-eating-bananas/description/?envType=list&envId=rwtnlcni", "difficulty": "medium", "category": 5},
 	{"url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/?envType=list&envId=rwtnlcni", "difficulty": "medium", "category": 5},
-	{"url": "https://leetcode.com/problems/search-in-rotated-sorted-array/description/?envType=list&envId=rwtnlcni", "difficulty": "medium", "category": 5},
+	{"url": "https://leetcode.com/problems/search-in-rotated-sorted-array/description/?envType=list&envId=rwtnlcni", "difficulty": "medium", "category": 5, "is_top_problem": True},	# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/time-based-key-value-store/description/?envType=list&envId=rwtnlcni", "difficulty": "medium", "category": 5},
 	{"url": "https://leetcode.com/problems/median-of-two-sorted-arrays/description/?envType=list&envId=rwtnlcni", "difficulty": "hard", "category": 5},
 	##########################################################################################################
@@ -61,31 +61,31 @@ ALL_LINKS = [
 	##########################################################################################################
 	{"url": "https://leetcode.com/problems/reverse-linked-list/description/?envType=list&envId=rwtni42e", "difficulty": "easy", "category": 6},
 	{"url": "https://leetcode.com/problems/merge-two-sorted-lists/description/?envType=list&envId=rwtni42e", "difficulty": "easy", "category": 6},
-	{"url": "https://leetcode.com/problems/reorder-list/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6},
-	{"url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6},
+	{"url": "https://leetcode.com/problems/reorder-list/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6, "is_top_problem": True},  # TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6, "is_top_problem": True},# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/copy-list-with-random-pointer/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6},
 	{"url": "https://leetcode.com/problems/add-two-numbers/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6},
 	{"url": "https://leetcode.com/problems/linked-list-cycle/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6},
 	{"url": "https://leetcode.com/problems/find-the-duplicate-number/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6},
-	{"url": "https://leetcode.com/problems/lru-cache/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6},
+	{"url": "https://leetcode.com/problems/lru-cache/description/?envType=list&envId=rwtni42e", "difficulty": "medium", "category": 6, "is_top_problem": True},		# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/merge-k-sorted-lists/description/?envType=list&envId=rwtni42e", "difficulty": "hard", "category": 6},
-	{"url": "https://leetcode.com/problems/reverse-nodes-in-k-group/description/?envType=list&envId=rwtni42e", "difficulty": "hard", "category": 6},
+	{"url": "https://leetcode.com/problems/reverse-nodes-in-k-group/description/?envType=list&envId=rwtni42e", "difficulty": "hard", "category": 6, "is_top_problem": True},		# TOP-PROBLEM
 	##########################################################################################################
 	# TREES (category 7) 	16 tot 
 	##########################################################################################################
 	{"url": "https://leetcode.com/problems/invert-binary-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "easy", "category": 7},
 	{"url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "easy", "category": 7},
 	{"url": "https://leetcode.com/problems/diameter-of-binary-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "easy", "category": 7},
-	{"url": "https://leetcode.com/problems/balanced-binary-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "easy", "category": 7},
+	{"url": "https://leetcode.com/problems/balanced-binary-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "easy", "category": 7, "is_top_problem": True}, # TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/same-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "easy", "category": 7},
 	{"url": "https://leetcode.com/problems/subtree-of-another-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "easy", "category": 7},
 	{"url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7},
 	{"url": "https://leetcode.com/problems/binary-tree-postorder-traversal/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7},
 	{"url": "https://leetcode.com/problems/binary-tree-level-order-traversal/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7},
 	{"url": "https://leetcode.com/problems/binary-tree-right-side-view/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7},
-	{"url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7},
-	{"url": "https://leetcode.com/problems/validate-binary-search-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7},
-	{"url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7},
+	{"url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/validate-binary-search-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/?envType=list&envId=rwtnb7qc", "difficulty": "medium", "category": 7, "is_top_problem": True},# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/?envType=list&envId=rwtnb7qc", "difficulty": "hard", "category": 7},
 	{"url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/description/?envType=list&envId=rwtnb7qc", "difficulty": "hard", "category": 7},
 	{"url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/?envType=list&envId=rwtnb7qc", "difficulty": "hard", "category": 7},
@@ -93,22 +93,22 @@ ALL_LINKS = [
 	# TRIES (category 8)	3 tot			[NO-EASY's]
 	##########################################################################################################
 	{"url": "https://leetcode.com/problems/implement-trie-prefix-tree/description/?envType=list&envId=rwtvnp95", "difficulty": "medium", "category": 8},
-	{"url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/description/?envType=list&envId=rwtvnp95", "difficulty": "medium", "category": 8},
+	{"url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/description/?envType=list&envId=rwtvnp95", "difficulty": "medium", "category": 8, "is_top_problem": True},# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/word-search-ii/description/?envType=list&envId=rwtvnp95", "difficulty": "hard", "category": 8},
 	##########################################################################################################
     # HEAPS (category 9)	7 tot			
 	##########################################################################################################
-	{"url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/description/?envType=list&envId=rwtnf28e", "difficulty": "easy", "category": 9},
+	{"url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/description/?envType=list&envId=rwtnf28e", "difficulty": "easy", "category": 9, "is_top_problem": True}, # TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/last-stone-weight/description/?envType=list&envId=rwtnf28e", "difficulty": "easy", "category": 9},
 	{"url": "https://leetcode.com/problems/k-closest-points-to-origin/description/?envType=list&envId=rwtnf28e", "difficulty": "medium", "category": 9},
-	{"url": "https://leetcode.com/problems/kth-largest-element-in-an-array/description/?envType=list&envId=rwtnf28e", "difficulty": "medium", "category": 9},
-	{"url": "https://leetcode.com/problems/task-scheduler/description/?envType=list&envId=rwtnf28e", "difficulty": "medium", "category": 9},
-	{"url": "https://leetcode.com/problems/design-twitter/description/?envType=list&envId=rwtnf28e", "difficulty": "medium", "category": 9},
-	{"url": "https://leetcode.com/problems/find-median-from-data-stream/description/?envType=list&envId=rwtnf28e", "difficulty": "hard", "category": 9},
+	{"url": "https://leetcode.com/problems/kth-largest-element-in-an-array/description/?envType=list&envId=rwtnf28e", "difficulty": "medium", "category": 9, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/task-scheduler/description/?envType=list&envId=rwtnf28e", "difficulty": "medium", "category": 9, "is_top_problem": True}, # TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/design-twitter/description/?envType=list&envId=rwtnf28e", "difficulty": "medium", "category": 9, "is_top_problem": True}, # TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/find-median-from-data-stream/description/?envType=list&envId=rwtnf28e", "difficulty": "hard", "category": 9, "is_top_problem": True}, # TOP-PROBLEM
 	##########################################################################################################
 	# INTERVALS (category 10)	6 tot		[NO-EASY's]
 	##########################################################################################################
-	{"url": "https://leetcode.com/problems/insert-interval/description/?envType=list&envId=rtwdas4j", "difficulty": "medium", "category": 10},
+	{"url": "https://leetcode.com/problems/insert-interval/description/?envType=list&envId=rtwdas4j", "difficulty": "medium", "category": 10, "is_top_problem": True}, # TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/merge-intervals/?envType=list&envId=rtwdas4j", "difficulty": "medium", "category": 10},
 	{"url": "https://leetcode.com/problems/non-overlapping-intervals/description/?envType=list&envId=rtwdas4j", "difficulty": "medium", "category": 10},
 	{"url": "https://leetcode.com/problems/meeting-rooms/description/?envType=list&envId=rtwdas4j", "difficulty": "easy", "category": 10},
@@ -121,9 +121,9 @@ ALL_LINKS = [
 	{"url": "https://leetcode.com/problems/jump-game/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11},
 	{"url": "https://leetcode.com/problems/jump-game-ii/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11},
 	{"url": "https://leetcode.com/problems/gas-station/description/?envType=list&envId=rtwlwiei", "difficulty": "hard", "category": 11}, # says med, actually HARD
-	{"url": "https://leetcode.com/problems/hand-of-straights/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11},
-	{"url": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11},
-	{"url": "https://leetcode.com/problems/partition-labels/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11},
+	{"url": "https://leetcode.com/problems/hand-of-straights/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11, "is_top_problem": True},				# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/partition-labels/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11, "is_top_problem": True}, 				# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/valid-parenthesis-string/description/?envType=list&envId=rtwlwiei", "difficulty": "medium", "category": 11},
 	##########################################################################################################
     # BACKTRACKING (category 12)	9 tot		[NO-EASY's]
@@ -133,8 +133,8 @@ ALL_LINKS = [
 	{"url": "https://leetcode.com/problems/permutations/description/?envType=list&envId=rwtvvex6", "difficulty": "medium", "category": 12},
 	{"url": "https://leetcode.com/problems/subsets-ii/description/?envType=list&envId=rwtvvex6", "difficulty": "medium", "category": 12},
 	{"url": "https://leetcode.com/problems/combination-sum-ii/description/?envType=list&envId=rwtvvex6", "difficulty": "medium", "category": 12},
-	{"url": "https://leetcode.com/problems/word-search/description/?envType=list&envId=rwtvvex6", "difficulty": "medium", "category": 12},
-	{"url": "https://leetcode.com/problems/palindrome-partitioning/description/?envType=list&envId=rwtvvex6", "difficulty": "medium", "category": 12},
+	{"url": "https://leetcode.com/problems/word-search/description/?envType=list&envId=rwtvvex6", "difficulty": "medium", "category": 12, "is_top_problem": True},		# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/palindrome-partitioning/description/?envType=list&envId=rwtvvex6", "difficulty": "medium", "category": 12, "is_top_problem": True},	# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/?envType=list&envId=rwtvvex6", "difficulty": "medium", "category": 12},
 	{"url": "https://leetcode.com/problems/n-queens/description/?envType=list&envId=rwtvvex6", "difficulty": "hard", "category": 12},
 	##########################################################################################################
@@ -142,15 +142,15 @@ ALL_LINKS = [
 	##########################################################################################################
 	{"url": "https://leetcode.com/problems/climbing-stairs/description/?envType=list&envId=rtwt49bh", "difficulty": "easy", "category": 13},
 	{"url": "https://leetcode.com/problems/min-cost-climbing-stairs/description/?envType=list&envId=rtwt49bh", "difficulty": "easy", "category": 13},
-	{"url": "https://leetcode.com/problems/house-robber/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
+	{"url": "https://leetcode.com/problems/house-robber/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13, "is_top_problem": True}, 	# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/house-robber-ii/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
 	{"url": "https://leetcode.com/problems/longest-palindromic-substring/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
 	{"url": "https://leetcode.com/problems/palindromic-substrings/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
-	{"url": "https://leetcode.com/problems/decode-ways/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
-	{"url": "https://leetcode.com/problems/coin-change/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
-	{"url": "https://leetcode.com/problems/maximum-product-subarray/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
-	{"url": "https://leetcode.com/problems/word-break/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
-	{"url": "https://leetcode.com/problems/longest-increasing-subsequence/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
+	{"url": "https://leetcode.com/problems/decode-ways/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/coin-change/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/maximum-product-subarray/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/word-break/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/longest-increasing-subsequence/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13, "is_top_problem": True},# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/partition-equal-subset-sum/description/?envType=list&envId=rtwt49bh", "difficulty": "medium", "category": 13},
 	##########################################################################################################
 	# GRAPH (category 14)		14 tot 		[NO-EASY's]
@@ -160,10 +160,10 @@ ALL_LINKS = [
 	{"url": "https://leetcode.com/problems/max-area-of-island/description/", "difficulty": "medium", "category": 14},
 	{"url": "https://leetcode.com/problems/pacific-atlantic-water-flow/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14},
 	{"url": "https://leetcode.com/problems/surrounded-regions/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14},
-	{"url": "https://leetcode.com/problems/rotting-oranges/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14},
+	{"url": "https://leetcode.com/problems/rotting-oranges/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14, "is_top_problem": True},  # TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/walls-and-gates/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14},
-	{"url": "https://leetcode.com/problems/course-schedule/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14},
-	{"url": "https://leetcode.com/problems/course-schedule-ii/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14},
+	{"url": "https://leetcode.com/problems/course-schedule/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14, "is_top_problem": True},   # TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/course-schedule-ii/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14, "is_top_problem": True},  # TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/redundant-connection/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14},
 	{"url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/description/", "difficulty": "medium", "category": 14},
 	{"url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/?envType=list&envId=rtw8e97v", "difficulty": "medium", "category": 14},
@@ -174,18 +174,19 @@ ALL_LINKS = [
 	##########################################################################################################
 	{"url": "https://leetcode.com/problems/unique-paths/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
 	{"url": "https://leetcode.com/problems/unique-paths-ii/description/", "difficulty": "medium", "category": 15},
-	{"url": "https://leetcode.com/problems/longest-common-subsequence/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
-	{"url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
-	{"url": "https://leetcode.com/problems/coin-change-ii/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
+	{"url": "https://leetcode.com/problems/longest-common-subsequence/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15, "is_top_problem": True}, # TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15, "is_top_problem": True},# TOP-PROBLEM
+	{"url": "https://leetcode.com/problems/coin-change-ii/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15, "is_top_problem": True}, # TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/target-sum/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
-	{"url": "https://leetcode.com/problems/interleaving-string/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
+	{"url": "https://leetcode.com/problems/interleaving-string/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15, "is_top_problem": True},# TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/edit-distance/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
 	{"url": "https://leetcode.com/problems/ones-and-zeroes/description/", "difficulty": "medium", "category": 15},
-	{"url": "https://www.geeksforgeeks.org/dsa/0-1-knapsack-problem-dp-10/", "difficulty": "medium", "category": 15},
+	{"url": "https://www.geeksforgeeks.org/dsa/0-1-knapsack-problem-dp-10/", "difficulty": "medium", "category": 15, "is_top_problem": True}, # TOP-PROBLEM
 	{"url": "https://leetcode.com/problems/distinct-subsequences/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
 	{"url": "https://leetcode.com/problems/burst-balloons/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
 	{"url": "https://leetcode.com/problems/regular-expression-matching/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15},
 	{"url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/?envType=list&envId=rtw8vv91", "difficulty": "medium", "category": 15}
+
 ]
 
 
@@ -239,80 +240,91 @@ ALL_LINKS = [
 
 # Parse command-line arguments
 def main():
-    difficulty_filter = None
-    category_filter = None
-    difficulty_display = None  # For display purposes
-    category_display = None    # For display purposes
-    
-    # Get arguments (script name is sys.argv[0], so actual args start at index 1)
-    args = sys.argv[1:]
-    
-    if len(args) >= 1:
-        difficulty_arg = args[0].lower()
-        # Validate difficulty
-        if difficulty_arg not in ['easy', 'medium', 'hard', 'any']:
-            print(f"Error: Invalid difficulty '{args[0]}'. Must be 'easy', 'medium', 'hard', or 'any'.")
-            sys.exit(1)
-        # Set filter to None if 'any', but keep display value
-        difficulty_display = difficulty_arg
-        difficulty_filter = None if difficulty_arg == 'any' else difficulty_arg
-    
-    if len(args) >= 2:
-        category_arg = args[1].lower()
-        # Check if 'any' or a number
-        if category_arg == 'any':
-            category_display = 'any'
-            category_filter = None
-        else:
-            try:
-                category_filter = int(args[1])
-                category_display = str(category_filter)
-                # Validate category range
-                if category_filter < 1 or category_filter > 15:
-                    print(f"Error: Invalid category '{args[1]}'. Must be between 1 and 15, or 'any'.")
-                    sys.exit(1)
-            except ValueError:
-                print(f"Error: Category must be an integer between 1 and 15, or 'any'. Got '{args[1]}'.")
-                sys.exit(1)
-    
-    # Filter links based on arguments
-    filtered_links = ALL_LINKS
-    
-    if difficulty_filter:
-        filtered_links = [link for link in filtered_links if link["difficulty"] == difficulty_filter]
-    
-    if category_filter:
-        filtered_links = [link for link in filtered_links if link["category"] == category_filter]
-    
-    # Check if any links match the filters
-    if not filtered_links:
-        filter_desc = []
-        if difficulty_filter:
-            filter_desc.append(f"difficulty='{difficulty_filter}'")
-        if category_filter:
-            filter_desc.append(f"category={category_filter}")
-        print(f"Error: No links found matching {' and '.join(filter_desc)}.")
-        sys.exit(1)
-    
-    # Randomly select one link from filtered results
-    selected = random.choice(filtered_links)
-    selected_link = selected["url"]
-    
-    # Open the selected link in the default browser
-    webbrowser.open(selected_link)
-    
-    # Print info about what was selected
-    filter_info = []
-    if difficulty_display:
-        filter_info.append(f"difficulty: {difficulty_display}")
-    if category_display:
-        filter_info.append(f"category: {category_display}")
-    
-    if filter_info:
-        print(f"Filter: {', '.join(filter_info)}")
-        print(f"Matched {len(filtered_links)} link(s)")
-    
-    print(f"Opening: {selected_link}")
+	difficulty_filter = None
+	category_filter = None
+	top_filter = False
+	difficulty_display = None  # For display purposes
+	category_display = None    # For display purposes
+	top_display = None         # For display purposes
+
+	args = sys.argv[1:]
+
+	if len(args) > 3:
+		print("Error: Too many arguments.")
+		print("Usage: script.py [easy|medium|hard|any] [1-15|any] [top|any]")
+		sys.exit(1)
+
+	if len(args) >= 1:
+		difficulty_arg = args[0].lower()
+		if difficulty_arg not in ["easy", "medium", "hard", "any"]:
+			print(f"Error: Invalid difficulty '{args[0]}'. Must be 'easy', 'medium', 'hard', or 'any'.")
+			sys.exit(1)
+		difficulty_display = difficulty_arg
+		difficulty_filter = None if difficulty_arg == "any" else difficulty_arg
+
+	if len(args) >= 2:
+		category_arg = args[1].lower()
+		if category_arg == "any":
+			category_display = "any"
+			category_filter = None
+		else:
+			try:
+				category_filter = int(args[1])
+				category_display = str(category_filter)
+				if category_filter < 1 or category_filter > 15:
+					print(f"Error: Invalid category '{args[1]}'. Must be between 1 and 15, or 'any'.")
+					sys.exit(1)
+			except ValueError:
+				print(f"Error: Category must be an integer between 1 and 15, or 'any'. Got '{args[1]}'.")
+				sys.exit(1)
+
+	if len(args) >= 3:
+		top_arg = args[2].lower()
+		if top_arg not in ["top", "any"]:
+			print(f"Error: Invalid top filter '{args[2]}'. Must be 'top' or 'any'.")
+			sys.exit(1)
+		top_filter = top_arg == "top"
+		top_display = top_arg
+
+	filtered_links = ALL_LINKS
+
+	if difficulty_filter:
+		filtered_links = [link for link in filtered_links if link["difficulty"] == difficulty_filter]
+
+	if category_filter:
+		filtered_links = [link for link in filtered_links if link["category"] == category_filter]
+
+	if top_filter:
+		filtered_links = [link for link in filtered_links if link.get("is_top_problem", False)]
+
+	if not filtered_links:
+		filter_desc = []
+		if difficulty_filter:
+			filter_desc.append(f"difficulty='{difficulty_filter}'")
+		if category_filter:
+			filter_desc.append(f"category={category_filter}")
+		if top_filter:
+			filter_desc.append("is_top_problem=True")
+		print(f"Error: No links found matching {' and '.join(filter_desc)}.")
+		sys.exit(1)
+
+	selected = random.choice(filtered_links)
+	selected_link = selected["url"]
+	webbrowser.open(selected_link)
+
+	filter_info = []
+	if difficulty_display:
+		filter_info.append(f"difficulty: {difficulty_display}")
+	if category_display:
+		filter_info.append(f"category: {category_display}")
+	if top_display:
+		filter_info.append(f"top: {top_display}")
+
+	if filter_info:
+		print(f"Filter: {', '.join(filter_info)}")
+		print(f"Matched {len(filtered_links)} link(s)")
+
+	# print(f"Opening: {selected_link}")
 
 if __name__ == "__main__":
     main()
