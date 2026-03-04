@@ -568,6 +568,7 @@ alias deldir="rm -r"
 
 # leet morning script aliases...(these can accept args just like the WINDOWS side does fyi)
 alias morningleet="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
+alias morningwarmup="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
 alias nextproblem="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
 alias nextleet="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
 alias doaproblem="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
@@ -938,9 +939,14 @@ alias editlaunchapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py
 alias editsrclaunchapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
 
 alias editmorningleet="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
+alias editmorningwarmup="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
 alias editnextproblem="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
 alias editnextleet="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
 alias editdoaproblem="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
+
+
+alias editscratchpaper="code /usr/local/bin/alexScripts/scr-scratch_paper_area.py"
+alias scratchpaper="code /usr/local/bin/alexScripts/scr-scratch_paper_area.py"
 
 
 

@@ -7,6 +7,70 @@ import random
 import webbrowser
 import sys
 
+### CATEGORIES ### 
+# 1 = arrays			1
+# 2 = stacks					3?
+# 3 = two pointers		1
+# 4 = sliding window	1
+# 5 = binary search		1
+# 6 = linked list		1
+# 7 = trees					2
+# 8 = tries					2
+# 9 = heaps				1	2*
+# 10 = intervals		1
+# 11 = greedy					3
+# 12 = backtracking			2
+# 13 = 1D dyn prog			2	3*
+# 14 = graph				2
+# 15 = 2D dyn prog				3
+# *indicates* 'or' 
+
+### GROUPS ### ----- (IF NEEDED: we can split into four groups for more incremental progression...)
+# group1 = categories 1,3,4,5,6,9,10 		(arrays, two-ptr, sliding-win, bin-search, linked-list, heaps, intervals)	iffy == 
+# group2 = categories 7,8,12,13,14			(trees, tries, backtracking, 1D-dyn-prog, graph)							iffy == heaps/intervals could be group1
+# group3 = categories 11,15,2				(greedy, 2D-dyn-prog, stacks?)												iffy == greedy and DP1 could be group2 
+
+
+
+
+'''
+-------------------------------------
+FIRST DO THIS
+-------------------------------------
+TOP PRIORITY NEXT EXTENSION:
+allow 3 new values for 2nd argument (aka the category) called group1, group2 and group3
+	group1 is the first 5 categories (arrays, stacks, two-ptr, sliding-win, bin-search)
+	group2 is the next 5 categories (linked-list, trees, tries, heaps, intervals)
+	group3 is the last 2 categories (greedy and backtracking)
+this way you can give it a group and it will select from all probs in that group (which makes it way easier to practice the progression style that I'm trying to do (start w mastering group1 before moving on to group2 and then group3 etc) but ALSO, it prevents you from already knowing exactly which group the prob is targeting when you run the script 
+	since right now if we run morningwarmup any 3, we immeditately know the sol is TWO PTR which is not good for actually learning the concepts behind the problems which is the whole pt to being w))
+'''
+
+
+'''
+-------------------------------------
+SECOND DO THIS
+-------------------------------------
+progress through group1 then move onto group2 and then last group3 until you have a good-enough foundation
+(this will prob take a month or two, since each group will take 1-4 weeks to re-master, and much less since we decided were not dumping a ton of time into the 2D DP and the 'low-return, high-effort' probs/categories))
+'''
+
+
+
+'''
+-------------------------------------
+THIRD DO THIS
+-------------------------------------
+AFTER WE GET THROUGH all THREE GROUPS...THEN we can start using the super useful 'is top' arg for all of our practice pretty much since we no logner have to worry about pulling up 'over our head' probs
+AFTER WE GET THROUGH all THREE GROUPS...THEN we can start using the super useful 'is top' arg for all of our practice pretty much since we no logner have to worry about pulling up 'over our head' probs
+AFTER WE GET THROUGH all THREE GROUPS...THEN we can start using the super useful 'is top' arg for all of our practice pretty much since we no logner have to worry about pulling up 'over our head' probs
+AFTER WE GET THROUGH all THREE GROUPS...THEN we can start using the super useful 'is top' arg for all of our practice pretty much since we no logner have to worry about pulling up 'over our head' probs
+AFTER WE GET THROUGH all THREE GROUPS...THEN we can start using the super useful 'is top' arg for all of our practice pretty much since we no logner have to worry about pulling up 'over our head' probs
+AFTER WE GET THROUGH all THREE GROUPS...THEN we can start using the super useful 'is top' arg for all of our practice pretty much since we no logner have to worry about pulling up 'over our head' probs
+AFTER WE GET THROUGH all THREE GROUPS...THEN we can start using the super useful 'is top' arg for all of our practice pretty much since we no logner have to worry about pulling up 'over our head' probs
+'''
+
+
 # Hardcoded list of links
 ALL_LINKS = [
 	##########################################################################################################
@@ -239,9 +303,17 @@ ALL_LINKS = [
 # TODO ??? 
 
 # Parse command-line arguments
+CATEGORY_GROUPS = {
+	"group1": [1, 3, 4, 5, 6, 9, 10],
+	"group2": [7, 8, 12, 13, 14],
+	"group3": [11, 15, 2]
+}
+
+
 def main():
 	difficulty_filter = None
 	category_filter = None
+	category_filters = None
 	top_filter = False
 	difficulty_display = None  # For display purposes
 	category_display = None    # For display purposes
@@ -251,7 +323,7 @@ def main():
 
 	if len(args) > 3:
 		print("Error: Too many arguments.")
-		print("Usage: script.py [easy|medium|hard|any] [1-15|any] [top|any]")
+		print("Usage: script.py [easy|medium|hard|any] [1-15|group1|group2|group3|any] [top|any]")
 		sys.exit(1)
 
 	if len(args) >= 1:
@@ -266,16 +338,20 @@ def main():
 		category_arg = args[1].lower()
 		if category_arg == "any":
 			category_display = "any"
-			category_filter = None
+			category_filters = None
+		elif category_arg in CATEGORY_GROUPS:
+			category_display = category_arg
+			category_filters = set(CATEGORY_GROUPS[category_arg])
 		else:
 			try:
 				category_filter = int(args[1])
 				category_display = str(category_filter)
 				if category_filter < 1 or category_filter > 15:
-					print(f"Error: Invalid category '{args[1]}'. Must be between 1 and 15, or 'any'.")
+					print(f"Error: Invalid category '{args[1]}'. Must be between 1 and 15, 'group1', 'group2', 'group3', or 'any'.")
 					sys.exit(1)
+				category_filters = {category_filter}
 			except ValueError:
-				print(f"Error: Category must be an integer between 1 and 15, or 'any'. Got '{args[1]}'.")
+				print(f"Error: Category must be an integer between 1 and 15, 'group1', 'group2', 'group3', or 'any'. Got '{args[1]}'.")
 				sys.exit(1)
 
 	if len(args) >= 3:
@@ -291,8 +367,8 @@ def main():
 	if difficulty_filter:
 		filtered_links = [link for link in filtered_links if link["difficulty"] == difficulty_filter]
 
-	if category_filter:
-		filtered_links = [link for link in filtered_links if link["category"] == category_filter]
+	if category_filters is not None:
+		filtered_links = [link for link in filtered_links if link["category"] in category_filters]
 
 	if top_filter:
 		filtered_links = [link for link in filtered_links if link.get("is_top_problem", False)]
@@ -301,8 +377,8 @@ def main():
 		filter_desc = []
 		if difficulty_filter:
 			filter_desc.append(f"difficulty='{difficulty_filter}'")
-		if category_filter:
-			filter_desc.append(f"category={category_filter}")
+		if category_display and category_display != "any":
+			filter_desc.append(f"category='{category_display}'")
 		if top_filter:
 			filter_desc.append("is_top_problem=True")
 		print(f"Error: No links found matching {' and '.join(filter_desc)}.")
