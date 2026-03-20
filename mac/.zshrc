@@ -951,6 +951,10 @@ alias scratchpaper="code /usr/local/bin/alexScripts/scr-scratch_paper_area.py"
 
 
 
+alias editpythonsyntax="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/leet_python_syntaxes.py"
+alias editleetpythonsyntax="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/leet_python_syntaxes.py"
+
+
 # alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
 
 # ~/Library/Application Support/Code/User/keybindings.json
