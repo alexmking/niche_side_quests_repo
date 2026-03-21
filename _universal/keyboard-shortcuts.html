@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Shortcuts Visualizer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f1117;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 60px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #a0c4ff;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 28px;
+      font-size: 0.85rem;
+    }
+
+    /* ── Tabs ─────────────────────────────────────────────── */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .tab-btn {
+      padding: 9px 22px;
+      border: 1.5px solid #333;
+      background: #1a1a2a;
+      color: #888;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      transition: all 0.18s;
+    }
+
+    .tab-btn:hover { border-color: #555; color: #ccc; }
+
+    .tab-btn.active {
+      background: #1d4ed8;
+      border-color: #3b82f6;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(59,130,246,0.35);
+    }
+
+    .tab-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .tab-sub {
+      font-size: 0.72rem;
+      color: #555;
+      letter-spacing: 0.3px;
+      transition: color 0.18s;
+    }
+
+    .tab-wrap:has(.tab-btn.active) .tab-sub,
+    .tab-wrap:hover .tab-sub { color: #888; }
+
+    /* ── Outer layout: keyboard + sidebar ────────────────── */
+    .layout {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* ── Keyboard shell ───────────────────────────────────── */
+    .keyboard-wrap { display: flex; flex-direction: column; align-items: center; overflow-x: auto; max-width: 100%; }
+
+    .keyboard {
+      background: linear-gradient(145deg, #1e1e30, #161622);
+      border: 1px solid #2a2a40;
+      border-radius: 16px;
+      padding: 22px 24px 20px;
+      box-shadow:
+        0 24px 64px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .key-row {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+
+    /* ── Individual key ───────────────────────────────────── */
+    .key {
+      position: relative;
+      height: 64px;
+      width: 58px;
+      background: linear-gradient(160deg, #323248, #27273a);
+      border: 1px solid #44445a;
+      border-bottom: 3px solid #111120;
+      border-radius: 7px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      cursor: default;
+      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+      user-select: none;
+      overflow: hidden;
+    }
+
+    .key-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #9999bb;
+      line-height: 1;
+    }
+
+    .key-action {
+      font-size: 0.62rem;
+      color: #60a5fa;
+      text-align: center;
+      padding: 0 4px;
+      line-height: 1.25;
+      max-width: 100%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-break: break-word;
+    }
+
+    /* Bound key */
+    .key.bound {
+      background: linear-gradient(160deg, #1e3a6e, #162d5a);
+      border-color: #2563eb;
+      border-bottom-color: #1a40a0;
+      box-shadow: 0 0 0 1px rgba(59,130,246,0.2), 0 2px 8px rgba(37,99,235,0.3);
+    }
+
+    .key.bound .key-label { color: #93c5fd; }
+
+    .key.bound:hover {
+      background: linear-gradient(160deg, #1d4ed8, #1e40af);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(99,157,255,0.5), 0 4px 16px rgba(37,99,235,0.5);
+      z-index: 10;
+    }
+
+    /* Special widths */
+    .key.w-backspace { width: 96px; }
+    .key.w-tab       { width: 78px; }
+    .key.w-backslash { width: 78px; }
+    .key.w-caps      { width: 88px; }
+    .key.w-enter     { width: 110px; }
+    .key.w-lshift    { width: 110px; }
+    .key.w-rshift    { width: 140px; }
+    .key.w-modwide   { width: 76px; }
+    .key.w-space     { width: 340px; }
+    .key.w-arrow     { width: 40px; height: 24px; } /* half-height arrows */
+
+    /* Arrow cluster tweak */
+    .arrow-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .arrow-row { display: flex; gap: 5px; }
+
+    /* ── Nav cluster ──────────────────────────────────────── */
+    .nav-spacer { height: 69px; }
+    .key-invisible { visibility: hidden; }
+
+    /* ── Numpad ───────────────────────────────────────────── */
+    .kb-numpad {
+      display: grid;
+      grid-template-columns: repeat(4, 58px);
+      grid-auto-rows: 64px;
+      gap: 5px;
+    }
+    .kb-numpad .key { height: 100%; width: 100%; }
+    .kb-numpad .key.h-2 { grid-row: span 2; }
+    .kb-numpad .key.w-2col { grid-column: span 2; }
+
+    /* ── Tooltip ──────────────────────────────────────────── */
+    .key[data-tooltip]:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: calc(100% + 9px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0c1322;
+      color: #e2e8f0;
+      font-size: 0.76rem;
+      padding: 6px 11px;
+      border-radius: 7px;
+      white-space: nowrap;
+      z-index: 200;
+      border: 1px solid #2d3f60;
+      pointer-events: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .key[data-tooltip]:hover::before {
+      content: '';
+      position: absolute;
+      bottom: calc(100% + 3px);
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: #2d3f60;
+      z-index: 201;
+    }
+
+    /* ── Legend ───────────────────────────────────────────── */
+    .legend {
+      margin-top: 16px;
+      display: flex;
+      gap: 18px;
+      font-size: 0.78rem;
+      color: #666;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 7px; }
+
+    .legend-swatch {
+      width: 14px; height: 14px;
+      border-radius: 3px;
+    }
+    .swatch-bound   { background: #1e3a6e; border: 1px solid #2563eb; }
+    .swatch-unbound { background: #27273a; border: 1px solid #44445a; }
+
+    /* Hyper bound keys */
+    .hyper .key.bound {
+      background: linear-gradient(160deg, #3b1a6e, #2d1458);
+      border-color: #7c3aed;
+      border-bottom-color: #5b21b6;
+      box-shadow: 0 0 0 1px rgba(139,92,246,0.2), 0 2px 8px rgba(109,40,217,0.35);
+    }
+    .hyper .key.bound .key-label { color: #c4b5fd; }
+    .hyper .key.bound .key-action { color: #a78bfa; }
+    .hyper .key.bound:hover {
+      background: linear-gradient(160deg, #5b21b6, #4c1d95);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(167,139,250,0.5), 0 4px 16px rgba(109,40,217,0.5);
+    }
+    /* Modifier trigger keys (caps lock / cmd / shift / option) */
+    .key.mod-trigger {
+      background: linear-gradient(160deg, #3d2800, #2a1c00);
+      border-color: #d97706;
+      border-bottom-color: #92400e;
+      box-shadow: 0 0 0 1px rgba(251,191,36,0.35), 0 0 14px rgba(217,119,6,0.3);
+    }
+    .key.mod-trigger .key-label { color: #fcd34d; }
+    .key.mod-trigger .key-action { color: #fbbf24; font-weight: 700; }
+
+    /* ── Shortcut list panel ──────────────────────────────── */
+    .shortcut-list {
+      background: linear-gradient(160deg, #1e1e30, #161622);
+      border: 1px solid #2a2a40;
+      border-radius: 14px;
+      padding: 20px 18px;
+      min-width: 210px;
+      max-height: 430px;
+      overflow-y: auto;
+    }
+
+    .shortcut-list::-webkit-scrollbar { width: 6px; }
+    .shortcut-list::-webkit-scrollbar-track { background: transparent; }
+    .shortcut-list::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+    .shortcut-list h3 {
+      color: #7aa2e0;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #22223a;
+    }
+
+    .shortcut-item {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 9px;
+      font-size: 0.82rem;
+    }
+
+    .shortcut-key-badge {
+      background: #162d5a;
+      border: 1px solid #2563eb;
+      color: #93c5fd;
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-weight: 800;
+      font-size: 0.78rem;
+      flex-shrink: 0;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .shortcut-desc { color: #bbb; }
+
+    .no-shortcuts {
+      color: #555;
+      font-size: 0.82rem;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Keyboard Shortcuts Visualizer</h1>
+<p class="subtitle">Select a modifier group · Hover highlighted keys for details</p>
+
+<div class="tabs">
+  <div class="tab-wrap">
+    <button class="tab-btn active" onclick="setTab('alt')">Alt</button>
+    <span class="tab-sub">windowMan1</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('alt-shift')">Alt + Shift</button>
+    <span class="tab-sub">windowMan2</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('alt-option')">Alt + Option</button>
+    <span class="tab-sub">app-switch</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('hyper')">Hyper</button>
+    <span class="tab-sub">misc</span>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="keyboard-wrap">
+    <div class="keyboard" id="keyboard"></div>
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-swatch swatch-bound"></div> Shortcut assigned
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-unbound"></div> No shortcut
+      </div>
+    </div>
+  </div>
+
+  <div class="shortcut-list">
+    <h3 id="list-title">Alt Shortcuts</h3>
+    <div id="shortcut-items"></div>
+  </div>
+</div>
+
+<script>
+// ╔══════════════════════════════════════════════════════════╗
+// ║  SHORTCUTS DATA — replace placeholder values with yours ║
+// ╚══════════════════════════════════════════════════════════╝
+const shortcuts = {
+  'alt': {
+    't': 'Open Terminal',
+    'n': 'New File',
+    'w': 'Close Tab',
+    'f': 'Find in Files',
+    'p': 'Command Palette',
+    'r': 'Reload Window',
+    'z': 'Undo',
+    's': 'Save All',
+    'q': 'Quit App',
+    'e': 'Show Explorer',
+  },
+  'alt-shift': {
+    'f': 'Format Document',
+    'p': 'Peek Definition',
+    't': 'New Terminal',
+    'e': 'Show Explorer',
+    'x': 'Show Extensions',
+    'd': 'Start Debugging',
+    'g': 'Source Control',
+    'b': 'Toggle Sidebar',
+    'k': 'Clear Console',
+  },
+  'alt-option': {
+    't': 'Float Terminal',
+    'p': 'Toggle Panel',
+    'j': 'Toggle Output',
+    'k': 'Clear Terminal',
+    'n': 'New Window',
+    'w': 'Close Window',
+    'f': 'Toggle Full Screen',
+    'z': 'Zen Mode',
+    's': 'Split Editor',
+  },
+  'hyper': {
+    't': 'Open Terminal',
+    'b': 'Open Browser',
+    'n': 'Open Notes',
+    'm': 'Open Mail',
+    'c': 'Open Calendar',
+    'f': 'Open Finder',
+    's': 'Open Settings',
+    'e': 'Open Editor',
+    'l': 'Lock Screen',
+    'h': 'Home Dashboard',
+    'k': 'Task Manager',
+    'j': 'Open Journal',
+    'space': 'Spotlight Search',
+  }
+};
+
+// ── QWERTY keyboard layout definition ────────────────────────────────────────
+// Format: [displayLabel, lookupKey, ?extraCssClass]
+const rows = [
+  [ // number row
+    ['`','`'], ['1','1'], ['2','2'], ['3','3'], ['4','4'], ['5','5'],
+    ['6','6'], ['7','7'], ['8','8'], ['9','9'], ['0','0'], ['-','-'],
+    ['=','='], ['⌫','backspace','w-backspace']
+  ],
+  [ // QWERTY row
+    ['Tab','tab','w-tab'],
+    ['Q','q'],['W','w'],['E','e'],['R','r'],['T','t'],
+    ['Y','y'],['U','u'],['I','i'],['O','o'],['P','p'],
+    ['[','['], [']',']'], ['\\','\\','w-backslash']
+  ],
+  [ // ASDF row
+    ['Caps','caps','w-caps'],
+    ['A','a'],['S','s'],['D','d'],['F','f'],['G','g'],
+    ['H','h'],['J','j'],['K','k'],['L','l'],[';',';'],["'","'"],
+    ['↵','enter','w-enter']
+  ],
+  [ // ZXCV row
+    ['⇧','lshift','w-lshift'],
+    ['Z','z'],['X','x'],['C','c'],['V','v'],['B','b'],
+    ['N','n'],['M','m'],[',',','],['.','.'],['/','/',],
+    ['⇧','rshift','w-rshift']
+  ],
+  [ // bottom row
+    ['⌃','ctrl','w-modwide'],
+    ['⌥','option','w-modwide'],
+    ['⌘','cmd','w-modwide'],
+    ['','space','w-space'],
+    ['⌘','cmd2','w-modwide'],
+    ['fn','fn'],
+    ['⌥','option2','w-modwide'],
+  ]
+];
+
+// ── Navigation cluster ────────────────────────────────────────────────────────
+const navRows = [
+  [['Ins','ins'],  ['Home','home'], ['PgUp','pgup']],
+  [['Del','del'],  ['End','end'],   ['PgDn','pgdn']],
+  'spacer',
+  [['',''],        ['↑','up'],      ['','']],
+  [['←','left'],   ['↓','down'],    ['→','right']],
+];
+
+// ── Numpad ────────────────────────────────────────────────────────────────────
+// [label, lookupKey, ?cssClass]  h-2 = span 2 rows · w-2col = span 2 cols
+const numpadKeys = [
+  ['NmLk','numlock',null], ['/','num/',null],  ['*','num*',null],  ['-','num-',null],
+  ['7',   'num7',  null],  ['8','num8',null],  ['9','num9',null],  ['+','num+','h-2'],
+  ['4',   'num4',  null],  ['5','num5',null],  ['6','num6',null],
+  ['1',   'num1',  null],  ['2','num2',null],  ['3','num3',null],  ['↵','numenter','h-2'],
+  ['0',   'num0',  'w-2col'],                  ['.','num.',null],
+];
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let currentTab = 'alt';
+
+function setTab(tab) {
+  currentTab = tab;
+  const labels = ['alt', 'alt-shift', 'alt-option', 'hyper'];
+  document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', labels[i] === tab);
+  });
+  renderKeyboard();
+  renderList();
+}
+
+// ── Modifier trigger keys per tab ────────────────────────────────────────────
+const triggerKeys = {
+  'alt':        { cmd: '⌘ Alt' },
+  'alt-shift':  { cmd: '⌘ Alt', lshift: '⇧ Shift' },
+  'alt-option': { cmd: '⌘ Alt', option: '⌥ Option' },
+  'hyper':      { caps: 'Hyper (Caps Lock)' },
+};
+
+// ── Render keyboard ───────────────────────────────────────────────────────────
+function makeKey(label, id, extraClass, map) {
+  const action = id ? (map[id] || null) : null;
+  const triggerLabel = id ? (triggerKeys[currentTab]?.[id] || null) : null;
+  const keyEl = document.createElement('div');
+  keyEl.className = 'key'
+    + (extraClass ? ' ' + extraClass : '')
+    + (action ? ' bound' : '')
+    + (triggerLabel ? ' mod-trigger' : '')
+    + (!id ? ' key-invisible' : '');
+
+  if (triggerLabel) keyEl.setAttribute('data-tooltip', triggerLabel);
+  else if (action) keyEl.setAttribute('data-tooltip', action);
+
+  const labelEl = document.createElement('span');
+  labelEl.className = 'key-label';
+  labelEl.textContent = label;
+  keyEl.appendChild(labelEl);
+
+  const subLabel = triggerLabel
+    ? triggerLabel.replace(/ \(.*\)$/, '')   // strip parenthetical for compact display
+    : action;
+  if (subLabel) {
+    const actionEl = document.createElement('span');
+    actionEl.className = 'key-action';
+    actionEl.textContent = triggerLabel ? subLabel : action;
+    keyEl.appendChild(actionEl);
+  }
+  return keyEl;
+}
+
+function renderKeyboard() {
+  const map = shortcuts[currentTab] || {};
+  const kb = document.getElementById('keyboard');
+  kb.className = 'keyboard' + (currentTab === 'hyper' ? ' hyper' : '');
+  kb.innerHTML = '';
+
+  // ── Main keyboard ──────────────────────────────────────────
+  const mainSect = document.createElement('div');
+  mainSect.className = 'kb-section';
+  rows.forEach(row => {
+    const rowEl = document.createElement('div');
+    rowEl.className = 'key-row';
+    row.forEach(([label, id, extraClass]) => rowEl.appendChild(makeKey(label, id, extraClass, map)));
+    mainSect.appendChild(rowEl);
+  });
+
+  // ── Navigation cluster ─────────────────────────────────────
+  const navSect = document.createElement('div');
+  navSect.className = 'kb-section';
+  navRows.forEach(row => {
+    if (row === 'spacer') {
+      const sp = document.createElement('div');
+      sp.className = 'nav-spacer';
+      navSect.appendChild(sp);
+      return;
+    }
+    const rowEl = document.createElement('div');
+    rowEl.className = 'key-row';
+    row.forEach(([label, id]) => rowEl.appendChild(makeKey(label, id, null, map)));
+    navSect.appendChild(rowEl);
+  });
+
+  // ── Numpad ─────────────────────────────────────────────────
+  const numpadSect = document.createElement('div');
+  numpadSect.className = 'kb-section kb-numpad';
+  numpadKeys.forEach(([label, id, extraClass]) => numpadSect.appendChild(makeKey(label, id, extraClass, map)));
+
+  kb.appendChild(mainSect);
+  kb.appendChild(navSect);
+  kb.appendChild(numpadSect);
+}
+
+// ── Render shortcut list ──────────────────────────────────────────────────────
+function renderList() {
+  const map = shortcuts[currentTab] || {};
+  const titles = {
+    'alt':        'Alt Shortcuts',
+    'alt-shift':  'Alt + Shift Shortcuts',
+    'alt-option': 'Alt + Option Shortcuts',
+    'hyper':      'Hyper (Caps Lock) Shortcuts'
+  };
+  document.getElementById('list-title').textContent = titles[currentTab];
+
+  const container = document.getElementById('shortcut-items');
+  container.innerHTML = '';
+
+  const entries = Object.entries(map);
+  if (entries.length === 0) {
+    container.innerHTML = '<div class="no-shortcuts">No shortcuts defined</div>';
+    return;
+  }
+
+  entries.sort(([a], [b]) => a.localeCompare(b)).forEach(([key, action]) => {
+    const item = document.createElement('div');
+    item.className = 'shortcut-item';
+
+    const badge = document.createElement('span');
+    badge.className = 'shortcut-key-badge';
+    badge.textContent = key.toUpperCase();
+
+    const desc = document.createElement('span');
+    desc.className = 'shortcut-desc';
+    desc.textContent = action;
+
+    item.appendChild(badge);
+    item.appendChild(desc);
+    container.appendChild(item);
+  });
+}
+
+// Initial render
+renderKeyboard();
+renderList();
+
+// ── Keyboard navigation (← → to cycle tabs) ──────────────────────────────────
+const tabOrder = ['alt', 'alt-shift', 'alt-option', 'hyper'];
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+    e.preventDefault();
+    const idx = tabOrder.indexOf(currentTab);
+    const next = e.key === 'ArrowRight'
+      ? (idx + 1) % tabOrder.length
+      : (idx - 1 + tabOrder.length) % tabOrder.length;
+    setTab(tabOrder[next]);
+  }
+  const numMap = { '1': 'alt', '2': 'alt-shift', '3': 'alt-option', '4': 'hyper' };
+  if (numMap[e.key]) setTab(numMap[e.key]);
+});
+</script>
+</body>
+</html>
