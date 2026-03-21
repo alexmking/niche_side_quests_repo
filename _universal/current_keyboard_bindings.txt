@@ -185,8 +185,8 @@ alt-\	________avail
 alt-a	    move window' group of commands
 alt-s	    move window' group of commands
 alt-d	    move window' group of commands
-alt-f	    move window' group of commands
-alt-g	    set FLOATING layout/window
+alt-f	    toggle PIN-WINDOW-ON-TOP(aka 'F' for FLOAT-WINDOW)
+alt-g	    set FLOATING layout/window (not to be confused with pin-window)
 alt-h 	    set TALL-SKINNY window size (for trello window specifically). (TEMP DISABLED Aeros alt-h horiz to try out TRELLO tall-skinny resize-window)
 alt-j	    shrink/grow window' group of commands
 alt-k	    shrink/grow window' group of commands		(TEMP DISABLED ON MAC-Aerosp bc of conflict with Raycasts dumb UNMODIFIABLE Cmd-K action)
@@ -424,8 +424,8 @@ alt-opt-d		    DOINGWORK board fancy chromeTab
 alt-opt-f		    Finder/ File-Expl
 alt-opt-g		    Github Desktop
 alt-opt-h		    HOME GoogleDoc fancy chromeTab
-alt-opt-j		    Jira 'mywork' fancy chromeTab
-alt-opt-k		    ________avail
+alt-opt-j		    LEET-SESH-SETUP(laptop screen) || Jira 'mywork' fancy chromeTab || 
+alt-opt-k		    LEET-SESH-SETUP(Big screen)
 alt-opt-l		    ________avail
 alt-opt-;		    ________avail
 alt-opt-'		    ________avail
