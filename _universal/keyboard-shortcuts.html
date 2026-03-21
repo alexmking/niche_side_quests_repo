@@ -338,16 +338,16 @@
 
 <div class="tabs">
   <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('alt-option')">Alt + Option</button>
+    <span class="tab-sub">app-switch</span>
+  </div>
+  <div class="tab-wrap">
     <button class="tab-btn active" onclick="setTab('alt')">Alt</button>
     <span class="tab-sub">windowMan1</span>
   </div>
   <div class="tab-wrap">
     <button class="tab-btn" onclick="setTab('alt-shift')">Alt + Shift</button>
     <span class="tab-sub">windowMan2</span>
-  </div>
-  <div class="tab-wrap">
-    <button class="tab-btn" onclick="setTab('alt-option')">Alt + Option</button>
-    <span class="tab-sub">app-switch</span>
   </div>
   <div class="tab-wrap">
     <button class="tab-btn" onclick="setTab('hyper')">Hyper</button>
@@ -491,7 +491,7 @@ let currentTab = 'alt';
 
 function setTab(tab) {
   currentTab = tab;
-  const labels = ['alt', 'alt-shift', 'alt-option', 'hyper'];
+  const labels = ['alt-option', 'alt', 'alt-shift', 'hyper'];
   document.querySelectorAll('.tab-btn').forEach((btn, i) => {
     btn.classList.toggle('active', labels[i] === tab);
   });
@@ -623,7 +623,7 @@ renderKeyboard();
 renderList();
 
 // ── Keyboard navigation (← → to cycle tabs) ──────────────────────────────────
-const tabOrder = ['alt', 'alt-shift', 'alt-option', 'hyper'];
+const tabOrder = ['alt-option', 'alt', 'alt-shift', 'hyper'];
 document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
     e.preventDefault();
@@ -633,7 +633,7 @@ document.addEventListener('keydown', e => {
       : (idx - 1 + tabOrder.length) % tabOrder.length;
     setTab(tabOrder[next]);
   }
-  const numMap = { '1': 'alt', '2': 'alt-shift', '3': 'alt-option', '4': 'hyper' };
+  const numMap = { '1': 'alt-option', '2': 'alt', '3': 'alt-shift', '4': 'hyper' };
   if (numMap[e.key]) setTab(numMap[e.key]);
 });
 </script>
