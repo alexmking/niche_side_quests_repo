@@ -540,6 +540,39 @@ alias scrlaunchmymainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py
 alias scrlaunchalexapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
 
 
+# open KEYBOARD SHORTCUT VISUALIZER HTML FILE ALIASES (this is the one I use the most so def want an alias for it, and then also add a bunch of variations of the alias name so that no matter what combination of 'keyboard', 'shortcut', 'visualizer', 'viz', 'vis' etc I type, it will work and open the file)
+# alias keybhtml="open -a "chrome" "file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html""
+alias viskeyb="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias viskeyboard="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias vizkeyb="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias vizkeyboard="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias viskeyboardshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias vizkeyboardshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias visshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias vizshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias viskeybshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias vizkeybshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias viskeyboardshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias vizkeyboardshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keybvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keybviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keybshortcutvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keybshortcutviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keybshortcutsvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keybshortcutsviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keyboardshortcutsvisualizer="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keyboardshortcutsvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias keyboardshortcutsviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias shortcutsvisualizer="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias shortcutsvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias shortcutsviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+
+
+
+
+
+
+
 
 
 ################################################################
