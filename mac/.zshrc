@@ -955,6 +955,16 @@ alias editpythonsyntax="code /Users/alexking/local_docs/GIT_STUFF/niche_side_que
 alias editleetpythonsyntax="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/leet_python_syntaxes.py"
 
 
+alias editkeybhtml="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editkeybvisualizer="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editkeybviz="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editshortcutsvis="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editshortcutvisualizer="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editshortcutsviz="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editkeybvis="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+
+# code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html
+
 # alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
 
 # ~/Library/Application Support/Code/User/keybindings.json
