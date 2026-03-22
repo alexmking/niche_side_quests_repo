@@ -338,11 +338,11 @@
 
 <div class="tabs">
   <div class="tab-wrap">
-    <button class="tab-btn" onclick="setTab('alt-option')">Alt + Option</button>
+    <button class="tab-btn active" onclick="setTab('alt-option')">Alt + Option</button>
     <span class="tab-sub">app-switch</span>
   </div>
   <div class="tab-wrap">
-    <button class="tab-btn active" onclick="setTab('alt')">Alt</button>
+    <button class="tab-btn" onclick="setTab('alt')">Alt</button>
     <span class="tab-sub">windowMan1</span>
   </div>
   <div class="tab-wrap">
@@ -375,58 +375,254 @@
 </div>
 
 <script>
+
+
+
+
+
+// =========================================================
+// EXTENTIONS TO CONSIDER ADDING LATER:
+// 1. yellow-beta-shortcut: add a way to change color of a shortcut key to yellow to indicate that it's a 'beta' shortcut we're trying out for a bit and may be cemented/removed at later date (this is nice bc it lets us see that a key is technically still avail if we 'really' need it for a much higher-prioirty shortcut since the yellow color means it's taken-atm but NOT taken-officially)
+// 2. use raycast alias to instalty open the html via the chrome-open-url command on raycast (which I can also setup with shortcut too :) 
+// 3. add a way to set custom color for each shortcut (ideally by adding another arg in same spot where the shortcut is defined) EX:  'd': 'center window', 'color': 'red'  (and then use that color value to set the background color of the key to red instead of the default blue for bound keys) this would be nice for quickly visually categorizing shortcuts by their use or something (e.g. all window management shortcuts could be blue, all app-switching shortcuts could be green, all trello-related shortcuts could be orange, etc) and it would also be nice for quickly visually distinguishing between different 'types' of shortcuts like 'officially taken' vs 'beta testing' vs 'reserved but currently unassigned' vs 'available for use' etc (e.g. we could do officially taken = blue, beta testing = yellow, reserved but unassigned = grey, available for use = green)
+    // USE CASE: this is esp great for the windowMan1 modGroup where we want to have mini groups of shortcuts differ slightly in color (like a,s,z,x corner ones are a lighter blue than say 'q,w,e' half  screen ones etc, otherwise it's harder to read/follow at a glance. The off-color keys make it instnatly clear how/why keys are grouped together vs ones that are in a diff-but-similar group)
+// 4.
+// 5. add the Fn row keys
+// 6. add the "MIDDLE-MAN / PLAYGROUND Fn-mini-groups" to our current 4 main mod-groups (technically there's 4 of these but they need to be re-eval now that we changed how the Fn key works with other mods) 
+      // ALT-OPT-Fn      ||     playground?
+      // ALT-CTRL-Fn     ||     middle-man?
+      // ALT-CTRL-OPT-Fn ||     middle-man?
+      // HYPER-Fn        ||     playground-shortcut
+// 7. greyed-out shortcut: add a way to change color of a shortcut key to grey or something which I can use for all the RESERVED/OFF-LIMITS keys of each mod-group (like the arrowKeys for ALT-mod-group))
+// =========================================================
+// the diff key colors i'd want: 
+    // yellow:            temp/beta shortcut that's not official yet
+    // black/grey:        reserved/off-limits key that I don't want to forget is unavailable for use (e.g. alt-arrow keys)
+    // bright-red color:  (maybe?) for AVAIL KEYS that are super-useful (IOW the prime-real-estate keys that I should look at FIRST when trying to add/change a new shortcut) 
+    //                      (for exmaple, the entire numRow keys for the app-switch mod-group: it's easy to jst FORGET these keys are avail since for most of the other modGroups they are def NOT avail)
+    //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ╔══════════════════════════════════════════════════════════╗
 // ║  SHORTCUTS DATA — replace placeholder values with yours ║
 // ╚══════════════════════════════════════════════════════════╝
+
+// OFF-LIMITS KEYS for each mod-group:
+// alt => TAB, C, SPACE, ARROWS, K (may be more...)
+// alt-shift =>
+// alt-option =>
+// HYPER => (obvi depends on which mod group we chose to rep hyper key (either alt-opt, alt-ctrl, alt-opt-ctrl or all-4))
 const shortcuts = {
   'alt': {
-    't': 'Open Terminal',
-    'n': 'New File',
-    'w': 'Close Tab',
-    'f': 'Find in Files',
-    'p': 'Command Palette',
-    'r': 'Reload Window',
-    'z': 'Undo',
-    's': 'Save All',
-    'q': 'Quit App',
-    'e': 'Show Explorer',
+    '1': 'jump to desktop 1',
+    '2': 'jump to desktop 2',
+    '3': 'jump to desktop 3',
+    '4': 'jump to desktop 4',
+    '5': 'jump to desktop 5',
+    '6': 'jump to desktop 6',
+    '7': 'jump to desktop 7',
+    '8': 'jump to desktop 8',
+    '9': 'jump to desktop 9',
+    '0': 'jump to desktop 0',
+
+    't': 'set tile layout',
+    'g': 'set float layout',
+
+    'u': 'focus left', // TODO: FIXME
+    'i': 'focus down', // TODO: FIXME
+    'o': 'focus up',  // TODO: FIXME
+    'p': 'focus right', // TODO: FIXME
+
+    'q': 'left half+',
+    'w': 'center half+',
+    'e': 'right half+',
+    'r': 'reasonable resize',
+
+    'a': 'top left corner',
+    's': 'top right corner',
+    'z': 'bottom left corner',
+    'x': 'bottom right corner',
+    
+    'd': 'center window',
+    'f': 'float/pin window',
+  
+    'y': 'trello resize',
+
+    '[': 'max width',
+    ']': 'max height',
+
+    '-': 'make larger',
+    '=': 'make smaller',
+
+    'm': 'almost maximize',
+
+    'num1': '3x3 grid position',
+    'num2': '3x3 grid position',
+    'num3': '3x3 grid position',
+    'num4': '3x3 grid position',
+    'num5': '3x3 grid position',
+    'num6': '3x3 grid position',
+    'num7': '3x3 grid position',
+    'num8': '3x3 grid position',
+    'num9': '3x3 grid position',
+    'num0': 'TBD',
+    
+    // THE OFF LIMIT KEYS for this 'alt' group:
+    'left': 'alt reserved', // KIM can't use arrow keys for 'alt' shortcuts bc of some niche conflicts that aren't worth trying to dev some workaround for (esp alt-k :: raycast, and chrome/vscodes actions)
+    'right': 'alt reserved',
+    'up': 'alt reserved',
+    'down': 'alt reserved',
+    'k': 'alt reserved', // needs this one avail bc of raycasts internal 'alt-k' actions which we're not able to work around/change (at least until raycast adds option to customize this shortcut)
+    'tab': 'alt reserved',
+    'c': 'alt reserved',
+    'space': 'alt reserved',
   },
+
+
+
+
+
+
+
+
+
   'alt-shift': {
-    'f': 'Format Document',
-    'p': 'Peek Definition',
-    't': 'New Terminal',
-    'e': 'Show Explorer',
-    'x': 'Show Extensions',
-    'd': 'Start Debugging',
-    'g': 'Source Control',
-    'b': 'Toggle Sidebar',
-    'k': 'Clear Console',
+    '1': 'send app desktop 1',
+    '2': 'send app desktop 2',
+    '3': 'send app desktop 3',
+    '4': 'send app desktop 4',
+    '5': 'send app desktop 5',
+    '6': 'send app desktop 6',
+    '7': 'send app desktop 7',
+    '8': 'send app desktop 8',
+    '9': 'send app desktop 9',
+    '0': 'send app desktop 0',
+
+    'q': 'close app',
+    'w': 'redraw windows',
+    'e': 'exit aero/glaze',
+    'r': 'reload config',
+
+    'x': 'quit all but curr',
+
+    'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
+ 
+    'l': 'launch my apps scr',
+
+    'left': 'move left',
+    'right': 'move right',
+    'up': 'move up',
+    'down': 'move down',
+
+    // THE OFF LIMIT KEYS for this 'alt-shift' group:
+    'tab': 'alt-shift reserved', // 
   },
+
+
+
+
+
+
+
+
   'alt-option': {
-    't': 'Float Terminal',
-    'p': 'Toggle Panel',
-    'j': 'Toggle Output',
-    'k': 'Clear Terminal',
-    'n': 'New Window',
-    'w': 'Close Window',
-    'f': 'Toggle Full Screen',
-    'z': 'Zen Mode',
-    's': 'Split Editor',
+    'a': 'Things3 or Teams',
+    'w': 'aspen board',
+    'e': 'excel ref doc',
+    'r': 'ref board',
+    't': 'terminal',
+    'y': 'trello',
+    'i': 'inbox mail',
+    // 'tab': 'Things3 extra',
+    // '`': 'Things3 extra',
+
+    's': 'spotify',
+    'd': 'doing work',
+    'f': 'finder',
+    'g': 'github desktop',
+    'h': 'HOME googledoc',
+    'j': 'leetauto | jira', // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
+    'k': 'leetauto big', // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
+
+    'z': 'ultra zz shorts',
+    'c': 'vscode',
+    'v': 'visual studio',
+    'b': 'browser',
+    'm': 'teams',
+    'n': 'notes',
+
+    // FIXME! THESE NUMROW shortcuts are the old ones and I should consider del/replacing them since it's prime real-estate
+    // '1': 'PRIME AVAIL',
+    // '2': 'PRIME AVAIL',
+    // '3': 'PRIME AVAIL',
+    // '4': 'PRIME AVAIL',
+    // '5': 'PRIME AVAIL',
+    // '6': 'PRIME AVAIL',
+    // '7': 'PRIME AVAIL',
+    // '8': 'PRIME AVAIL',
+    // '9': 'PRIME AVAIL',
+    // '0': 'PRIME AVAIL',
+
+    // THE OFF LIMIT KEYS for this 'alt-option' group:
+    // '??': 'alt-opt reserved', // (none so far i think?)
   },
+
+
+
+
+
+
+
   'hyper': {
-    't': 'Open Terminal',
-    'b': 'Open Browser',
-    'n': 'Open Notes',
-    'm': 'Open Mail',
-    'c': 'Open Calendar',
-    'f': 'Open Finder',
-    's': 'Open Settings',
-    'e': 'Open Editor',
-    'l': 'Lock Screen',
-    'h': 'Home Dashboard',
-    'k': 'Task Manager',
-    'j': 'Open Journal',
-    'space': 'Spotlight Search',
+    'g': 'google srch qk',
+    'y': 'trello new card',
+    's': 'screensh dir',
+    'e': 'emoji picker',
+
+    'f': 'firefox?',
+
+    'k': 'keyboard visualizer', // maybe this should be moved to app-switch mod group bc it's a better fit?
+
+    'c': 'clipb manager',
+    'v': 'clipb paste',
+
+    'm': 'raycast trello?', // PROB GOING TO MOVE/DEL THIS ONE until I fig out it's actual use w raycast
+    'a': 'raycast srch-all', // PROB GOING TO MOVE/DEL THIS ONE until I fig out it's actual use w raycast
+
+    'space': 'trello new card', // MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
+
+    '1': 'screensh 1?',
+    '2': 'screensh 2?',
+    '3': 'screensh scrolling',
+    '4': 'screensh 4?',
+
+    // THE OFF LIMIT KEYS for this 'hyper' group:
+    // '??': 'hyper reserved', // none so far?? 
+    // TODO AFTER DONE ADDING ALL SHORTCUTS IN 4 MOD GROUPS:
+    // 1. open both MAC and WIND laptops side by side
+    // 2. open the keyb-visuaizer and test out each shortcut you see on the visualizer on both comps 
+    // 3. fix any discrepancies you find between the visualizer and the actual shortcuts (e.g. if you find a shortcut on the visualizer that doesn't work, or a shortcut that works but isn't on the visualizer, or if you find a tooltip that's wrong, etc)
   }
 };
 
@@ -487,7 +683,7 @@ const numpadKeys = [
 ];
 
 // ── State ─────────────────────────────────────────────────────────────────────
-let currentTab = 'alt';
+let currentTab = 'alt-option';
 
 function setTab(tab) {
   currentTab = tab;
