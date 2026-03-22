@@ -435,6 +435,37 @@
 // HYPER => (obvi depends on which mod group we chose to rep hyper key (either alt-opt, alt-ctrl, alt-opt-ctrl or all-4))
 const shortcuts = {
   'alt': {
+    't': 'set tile layout',
+    'g': 'set float layout',
+    
+    // 'u': '', // TODO: FIXME
+    // 'i': '', // TODO: FIXME
+    // 'o': '',  // TODO: FIXME
+    // 'p': '', // TODO: FIXME
+    
+    'q': 'left half+',
+    'w': 'center half+',
+    'e': 'right half+',
+    'r': 'reasonable resize',
+    
+    'a': 'top left corner',
+    's': 'top right corner',
+    'z': 'bottom left corner',
+    'x': 'bottom right corner',
+    
+    'd': 'center window',
+    'f': 'float/pin window',
+    
+    'y': 'trello resize',
+    
+    '[': 'max width',
+    ']': 'max height',
+    
+    '-': 'make larger',
+    '=': 'make smaller',
+    
+    'm': 'almost maximize',
+    
     '1': 'jump to desktop 1',
     '2': 'jump to desktop 2',
     '3': 'jump to desktop 3',
@@ -445,37 +476,6 @@ const shortcuts = {
     '8': 'jump to desktop 8',
     '9': 'jump to desktop 9',
     '0': 'jump to desktop 0',
-
-    't': 'set tile layout',
-    'g': 'set float layout',
-
-    'u': 'focus left', // TODO: FIXME
-    'i': 'focus down', // TODO: FIXME
-    'o': 'focus up',  // TODO: FIXME
-    'p': 'focus right', // TODO: FIXME
-
-    'q': 'left half+',
-    'w': 'center half+',
-    'e': 'right half+',
-    'r': 'reasonable resize',
-
-    'a': 'top left corner',
-    's': 'top right corner',
-    'z': 'bottom left corner',
-    'x': 'bottom right corner',
-    
-    'd': 'center window',
-    'f': 'float/pin window',
-  
-    'y': 'trello resize',
-
-    '[': 'max width',
-    ']': 'max height',
-
-    '-': 'make larger',
-    '=': 'make smaller',
-
-    'm': 'almost maximize',
 
     'num1': '3x3 grid position',
     'num2': '3x3 grid position',
@@ -498,8 +498,8 @@ const shortcuts = {
     'c': 'alt reserved',
     'space': 'alt reserved',
   },
-
-
+  
+  
 
 
 
@@ -508,6 +508,22 @@ const shortcuts = {
 
 
   'alt-shift': {
+    'q': 'close app',
+    'w': 'redraw windows',
+    'e': 'exit aero/glaze',
+    'r': 'reload config',
+    
+    'x': 'quit all but curr',
+    
+    'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
+    
+    'l': 'launch my apps scr',
+    
+    'left': 'move left',
+    'right': 'move right',
+    'up': 'move up',
+    'down': 'move down',
+
     '1': 'send app desktop 1',
     '2': 'send app desktop 2',
     '3': 'send app desktop 3',
@@ -519,21 +535,16 @@ const shortcuts = {
     '9': 'send app desktop 9',
     '0': 'send app desktop 0',
 
-    'q': 'close app',
-    'w': 'redraw windows',
-    'e': 'exit aero/glaze',
-    'r': 'reload config',
-
-    'x': 'quit all but curr',
-
-    'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
- 
-    'l': 'launch my apps scr',
-
-    'left': 'move left',
-    'right': 'move right',
-    'up': 'move up',
-    'down': 'move down',
+    'num1': 'vol down',
+    'num2': 'vol up',
+    'num3': 'apple emojis',
+    'num4': 'env_opt excel',
+    'num5': '',
+    'num6': 'BTT (better touch tool)',
+    'num7': '',
+    'num8': '',
+    'num9': '',
+    'num0': 'TBD',
 
     // THE OFF LIMIT KEYS for this 'alt-shift' group:
     'tab': 'alt-shift reserved', // 
@@ -616,6 +627,14 @@ const shortcuts = {
     '2': 'screensh 2?',
     '3': 'screensh scrolling',
     '4': 'screensh 4?',
+
+    'r': 'quick_ref dir',
+
+    // TODO: Consolidate all my LEET-SETUP shortcuts into ONE or TWO shortcuts (2 bc 1 for laptop screen, and the other for big monitor screen)
+    'l': 'leet setup', // FIXME (atm I have multiple leet-setup shortcuts across diff mod groups, as well as some through raycasts feats and others through scripts and or BTT stuff)
+
+    'z': 'zzshorts',
+
 
     // THE OFF LIMIT KEYS for this 'hyper' group:
     // '??': 'hyper reserved', // none so far?? 
