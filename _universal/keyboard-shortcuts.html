@@ -247,8 +247,14 @@
       width: 14px; height: 14px;
       border-radius: 3px;
     }
-    .swatch-bound   { background: #1e3a6e; border: 1px solid #2563eb; }
-    .swatch-unbound { background: #27273a; border: 1px solid #44445a; }
+    .swatch-bound      { background: #1e3a6e; border: 1px solid #2563eb; }
+    .swatch-unbound    { background: #27273a; border: 1px solid #44445a; }
+    .swatch-yellow     { background: #92400e; border: 1px solid #d97706; }
+    .swatch-red        { background: #7f1d1d; border: 1px solid #dc2626; }
+    .swatch-green      { background: #065f46; border: 1px solid #059669; }
+    .swatch-light-blue { background: #0369a1; border: 1px solid #0ea5e9; }
+    .swatch-dark-blue  { background: #1e3a8a; border: 1px solid #3b82f6; }
+    .swatch-dark-grey  { background: #374151; border: 1px solid #6b7280; }
 
     /* Hyper bound keys */
     .hyper .key.bound {
@@ -273,6 +279,196 @@
     }
     .key.mod-trigger .key-label { color: #fcd34d; }
     .key.mod-trigger .key-action { color: #fbbf24; font-weight: 700; }
+
+    /* Yellow key variant */
+    .key.bound-yellow {
+      background: linear-gradient(160deg, #92400e, #78350f);
+      border-color: #d97706;
+      border-bottom-color: #92400e;
+      box-shadow: 0 0 0 1px rgba(217,119,6,0.2), 0 2px 8px rgba(146,64,14,0.3);
+    }
+
+    .key.bound-yellow .key-label { color: #fcd34d; }
+    .key.bound-yellow .key-action { color: #fbbf24; }
+
+    .key.bound-yellow:hover {
+      background: linear-gradient(160deg, #a16207, #92400e);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(251,191,36,0.4), 0 4px 16px rgba(217,119,6,0.4);
+      z-index: 10;
+    }
+
+    /* Red key variant */
+    .key.bound-red {
+      background: linear-gradient(160deg, #7f1d1d, #6b1f1f);
+      border-color: #dc2626;
+      border-bottom-color: #7f1d1d;
+      box-shadow: 0 0 0 1px rgba(220,38,38,0.2), 0 2px 8px rgba(127,29,29,0.3);
+    }
+
+    .key.bound-red .key-label { color: #fca5a5; }
+    .key.bound-red .key-action { color: #f87171; }
+
+    .key.bound-red:hover {
+      background: linear-gradient(160deg, #991b1b, #7f1d1d);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(248,113,113,0.4), 0 4px 16px rgba(220,38,38,0.4);
+      z-index: 10;
+    }
+
+    /* Hyper mode overrides for colored keys */
+    .hyper .key.bound-yellow {
+      background: linear-gradient(160deg, #854d0e, #713f12);
+      border-color: #ca8a04;
+      border-bottom-color: #854d0e;
+      box-shadow: 0 0 0 1px rgba(202,138,4,0.2), 0 2px 8px rgba(133,77,14,0.3);
+    }
+    .hyper .key.bound-yellow .key-label { color: #facc15; }
+    .hyper .key.bound-yellow .key-action { color: #eab308; }
+    .hyper .key.bound-yellow:hover {
+      background: linear-gradient(160deg, #a16207, #854d0e);
+      box-shadow: 0 0 0 1px rgba(250,204,21,0.4), 0 4px 16px rgba(202,138,4,0.4);
+    }
+
+    .hyper .key.bound-red {
+      background: linear-gradient(160deg, #881337, #701a33);
+      border-color: #e11d48;
+      border-bottom-color: #881337;
+      box-shadow: 0 0 0 1px rgba(225,29,72,0.2), 0 2px 8px rgba(136,19,55,0.3);
+    }
+    .hyper .key.bound-red .key-label { color: #fda4af; }
+    .hyper .key.bound-red .key-action { color: #fb7185; }
+    .hyper .key.bound-red:hover {
+      background: linear-gradient(160deg, #9f1239, #881337);
+      box-shadow: 0 0 0 1px rgba(251,113,133,0.4), 0 4px 16px rgba(225,29,72,0.4);
+    }
+
+    /* Green key variant */
+    .key.bound-green {
+      background: linear-gradient(160deg, #065f46, #064e3b);
+      border-color: #059669;
+      border-bottom-color: #065f46;
+      box-shadow: 0 0 0 1px rgba(5,150,105,0.2), 0 2px 8px rgba(6,95,70,0.3);
+    }
+
+    .key.bound-green .key-label { color: #6ee7b7; }
+    .key.bound-green .key-action { color: #34d399; }
+
+    .key.bound-green:hover {
+      background: linear-gradient(160deg, #047857, #065f46);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(52,211,153,0.4), 0 4px 16px rgba(5,150,105,0.4);
+      z-index: 10;
+    }
+
+    /* Hyper mode overrides for green keys */
+    .hyper .key.bound-green {
+      background: linear-gradient(160deg, #166534, #14532d);
+      border-color: #16a34a;
+      border-bottom-color: #166534;
+      box-shadow: 0 0 0 1px rgba(22,163,74,0.2), 0 2px 8px rgba(22,101,52,0.3);
+    }
+    .hyper .key.bound-green .key-label { color: #86efac; }
+    .hyper .key.bound-green .key-action { color: #4ade80; }
+    .hyper .key.bound-green:hover {
+      background: linear-gradient(160deg, #15803d, #166534);
+      box-shadow: 0 0 0 1px rgba(74,222,128,0.4), 0 4px 16px rgba(22,163,74,0.4);
+    }
+
+    /* Light blue key variant */
+    .key.bound-light-blue {
+      background: linear-gradient(160deg, #0369a1, #0284c7);
+      border-color: #0ea5e9;
+      border-bottom-color: #0369a1;
+      box-shadow: 0 0 0 1px rgba(14,165,233,0.2), 0 2px 8px rgba(3,105,161,0.3);
+    }
+
+    .key.bound-light-blue .key-label { color: #7dd3fc; }
+    .key.bound-light-blue .key-action { color: #38bdf8; }
+
+    .key.bound-light-blue:hover {
+      background: linear-gradient(160deg, #0284c7, #0369a1);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(56,189,248,0.4), 0 4px 16px rgba(14,165,233,0.4);
+      z-index: 10;
+    }
+
+    /* Dark blue key variant */
+    .key.bound-dark-blue {
+      background: linear-gradient(160deg, #1e3a8a, #1e40af);
+      border-color: #3b82f6;
+      border-bottom-color: #1e3a8a;
+      box-shadow: 0 0 0 1px rgba(59,130,246,0.2), 0 2px 8px rgba(30,58,138,0.3);
+    }
+
+    .key.bound-dark-blue .key-label { color: #93c5fd; }
+    .key.bound-dark-blue .key-action { color: #60a5fa; }
+
+    .key.bound-dark-blue:hover {
+      background: linear-gradient(160deg, #1d4ed8, #1e3a8a);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(96,165,250,0.4), 0 4px 16px rgba(59,130,246,0.4);
+      z-index: 10;
+    }
+
+    /* Hyper mode overrides for blue variants */
+    .hyper .key.bound-light-blue {
+      background: linear-gradient(160deg, #1e40af, #1d4ed8);
+      border-color: #2563eb;
+      border-bottom-color: #1e40af;
+      box-shadow: 0 0 0 1px rgba(37,99,235,0.2), 0 2px 8px rgba(30,64,175,0.3);
+    }
+    .hyper .key.bound-light-blue .key-label { color: #dbeafe; }
+    .hyper .key.bound-light-blue .key-action { color: #93c5fd; }
+    .hyper .key.bound-light-blue:hover {
+      background: linear-gradient(160deg, #2563eb, #1e40af);
+      box-shadow: 0 0 0 1px rgba(147,197,253,0.4), 0 4px 16px rgba(37,99,235,0.4);
+    }
+
+    .hyper .key.bound-dark-blue {
+      background: linear-gradient(160deg, #312e81, #3730a3);
+      border-color: #6366f1;
+      border-bottom-color: #312e81;
+      box-shadow: 0 0 0 1px rgba(99,102,241,0.2), 0 2px 8px rgba(49,46,129,0.3);
+    }
+    .hyper .key.bound-dark-blue .key-label { color: #c7d2fe; }
+    .hyper .key.bound-dark-blue .key-action { color: #a5b4fc; }
+    .hyper .key.bound-dark-blue:hover {
+      background: linear-gradient(160deg, #4338ca, #312e81);
+      box-shadow: 0 0 0 1px rgba(165,180,252,0.4), 0 4px 16px rgba(99,102,241,0.4);
+    }
+
+    /* Dark grey key variant */
+    .key.bound-dark-grey {
+      background: linear-gradient(160deg, #374151, #4b5563);
+      border-color: #6b7280;
+      border-bottom-color: #374151;
+      box-shadow: 0 0 0 1px rgba(107,114,128,0.2), 0 2px 8px rgba(55,65,81,0.3);
+    }
+
+    .key.bound-dark-grey .key-label { color: #d1d5db; }
+    .key.bound-dark-grey .key-action { color: #9ca3af; }
+
+    .key.bound-dark-grey:hover {
+      background: linear-gradient(160deg, #4b5563, #374151);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(156,163,175,0.4), 0 4px 16px rgba(107,114,128,0.4);
+      z-index: 10;
+    }
+
+    /* Hyper mode overrides for dark grey */
+    .hyper .key.bound-dark-grey {
+      background: linear-gradient(160deg, #1f2937, #374151);
+      border-color: #4b5563;
+      border-bottom-color: #1f2937;
+      box-shadow: 0 0 0 1px rgba(75,85,99,0.2), 0 2px 8px rgba(31,41,55,0.3);
+    }
+    .hyper .key.bound-dark-grey .key-label { color: #e5e7eb; }
+    .hyper .key.bound-dark-grey .key-action { color: #d1d5db; }
+    .hyper .key.bound-dark-grey:hover {
+      background: linear-gradient(160deg, #374151, #1f2937);
+      box-shadow: 0 0 0 1px rgba(209,213,219,0.4), 0 4px 16px rgba(75,85,99,0.4);
+    }
 
     /* ── Shortcut list panel ──────────────────────────────── */
     .shortcut-list {
@@ -363,6 +559,24 @@
         <div class="legend-swatch swatch-bound"></div> Shortcut assigned
       </div>
       <div class="legend-item">
+        <div class="legend-swatch swatch-light-blue"></div> App/tool shortcuts
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-dark-blue"></div> System shortcuts
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-yellow"></div> Beta/testing
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-green"></div> Categories
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-dark-grey"></div> Reserved/disabled
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-red"></div> High priority
+      </div>
+      <div class="legend-item">
         <div class="legend-swatch swatch-unbound"></div> No shortcut
       </div>
     </div>
@@ -396,10 +610,11 @@
 // 7. greyed-out shortcut: add a way to change color of a shortcut key to grey or something which I can use for all the RESERVED/OFF-LIMITS keys of each mod-group (like the arrowKeys for ALT-mod-group))
 // =========================================================
 // the diff key colors i'd want: 
-    // yellow:            temp/beta shortcut that's not official yet
-    // black/grey:        reserved/off-limits key that I don't want to forget is unavailable for use (e.g. alt-arrow keys)
-    // bright-red color:  (maybe?) for AVAIL KEYS that are super-useful (IOW the prime-real-estate keys that I should look at FIRST when trying to add/change a new shortcut) 
-    //                      (for exmaple, the entire numRow keys for the app-switch mod-group: it's easy to jst FORGET these keys are avail since for most of the other modGroups they are def NOT avail)
+    // blue(curr default):    official shortcut that's 100% confirmed to be working and active 
+    // yellow:                temp/beta shortcut that's not official yet
+    // black/grey:            reserved/off-limits key that I don't want to forget is unavailable for use (e.g. alt-arrow keys)
+    // bright-red color:      (maybe?) for AVAIL KEYS that are super-useful (IOW the prime-real-estate keys that I should look at FIRST when trying to add/change a new shortcut) 
+            // (for exmaple, the entire numRow keys for the app-switch mod-group: it's easy to jst FORGET these keys are avail since for most of the other modGroups they are def NOT avail)
     //
 
 
@@ -451,20 +666,20 @@
         'g': 'github desktop',
         'h': 'HOMEdoc | jira',
         'j': 'jira || empty', 
-        'l': 'leetauto small', // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
-        ';': 'leetauto big', // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
+        'l': { action: 'leetauto small', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
+        ';': { action: 'leetauto big', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
       
         'z': 'zzshorts (no-ult)',
-        'c': 'vscode',
+        'c': 'vs code',
         'v': 'visual st. | empty',
         'b': 'browser',
         'm': 'teams | things3',
         'n': 'notes',
       
         // FIXME! THESE NUMROW shortcuts are the old ones and I should consider del/replacing them since it's prime real-estate
-        '1': 'fixme dw board',
-        '2': 'fixme aspen board',
-        '3': 'fixme ref board',
+        '1': { action: 'fixme dw board', color: 'green' },
+        '2': { action: 'fixme aspen board', color: 'green' },
+        '3': { action: 'fixme ref board', color: 'green' },
         // '4': 'PRIME AVAIL',
         // '5': 'PRIME AVAIL',
         // '6': 'PRIME AVAIL',
@@ -473,16 +688,16 @@
         // '9': 'PRIME AVAIL',
         // '0': 'PRIME AVAIL',
 
-        'num1': 'open for app',
-        'num2': 'open for app',
-        'num3': 'open for app',
-        'num4': 'open for app',
-        'num5': 'open for app',
-        'num6': 'open for app',
-        'num7': 'open for app',
-        'num8': 'open for app',
-        'num9': 'open for app',
-        'num0': 'open for app',
+        'num1': {'action': 'open for app', 'color': 'green'},
+        'num2': {'action': 'open for app', 'color': 'green'},
+        'num3': {'action': 'open for app', 'color': 'green'},
+        'num4': {'action': 'open for app', 'color': 'green'},
+        'num5': {'action': 'open for app', 'color': 'green'},
+        'num6': {'action': 'open for app', 'color': 'green'},
+        'num7': {'action': 'open for app', 'color': 'green'},
+        'num8': {'action': 'open for app', 'color': 'green'},
+        'num9': {'action': 'open for app', 'color': 'green'},
+        'num0': {'action': 'open for app', 'color': 'green'},
       
         // THE OFF LIMIT KEYS for this 'alt-option' group:
         // '??': 'alt-opt reserved', // (none so far i think?)
@@ -508,10 +723,10 @@
         'e': 'right half+',
         'r': 'reasonable resize',
         
-        'a': 'top left corner',
-        's': 'top right corner',
-        'z': 'bottom left corner',
-        'x': 'bottom right corner',
+        'a': { action: 'top left corner', color: 'light-blue' },
+        's': { action: 'top right corner', color: 'light-blue' },
+        'z': { action: 'bottom left corner', color: 'light-blue' },
+        'x': { action: 'bottom right corner', color: 'light-blue' },
         
         'd': 'center window',
         'f': 'float/pin window',
@@ -527,91 +742,86 @@
         '-': 'make larger',
         '=': 'make smaller',
     
-    'm': 'almost maximize',
+        'm': 'almost maximize',
     
-    '1': 'jump to desktop 1',
-    '2': 'jump to desktop 2',
-    '3': 'jump to desktop 3',
-    '4': 'jump to desktop 4',
-    '5': 'jump to desktop 5',
-    '6': 'jump to desktop 6',
-    '7': 'jump to desktop 7',
-    '8': 'jump to desktop 8',
-    '9': 'jump to desktop 9',
-    '0': 'jump to desktop 0',
+        '1': { action: 'jump to desktop 1', color: 'dark-blue' },
+        '2': { action: 'jump to desktop 2', color: 'dark-blue' },
+        '3': { action: 'jump to desktop 3', color: 'dark-blue' },
+        '4': { action: 'jump to desktop 4', color: 'dark-blue' },
+        '5': { action: 'jump to desktop 5', color: 'dark-blue' },
+        '6': { action: 'jump to desktop 6', color: 'dark-blue' },
+        '7': { action: 'jump to desktop 7', color: 'dark-blue' },
+        '8': { action: 'jump to desktop 8', color: 'dark-blue' },
+        '9': { action: 'jump to desktop 9', color: 'dark-blue' },
+        '0': { action: 'jump to desktop 0', color: 'dark-blue' },
 
-    'num1': '3x3 grid position',
-    'num2': '3x3 grid position',
-    'num3': '3x3 grid position',
-    'num4': '3x3 grid position',
-    'num5': '3x3 grid position',
-    'num6': '3x3 grid position',
-    'num7': '3x3 grid position',
-    'num8': '3x3 grid position',
-    'num9': '3x3 grid position',
-    'num0': 'TBD',
+        'num1': '3x3 grid position',
+        'num2': '3x3 grid position',
+        'num3': '3x3 grid position',
+        'num4': '3x3 grid position',
+        'num5': '3x3 grid position',
+        'num6': '3x3 grid position',
+        'num7': '3x3 grid position',
+        'num8': '3x3 grid position',
+        'num9': '3x3 grid position',
+        'num0': 'TBD',
     
-    // THE OFF LIMIT KEYS for this 'alt' group:
-    'left': 'alt reserved', // KIM can't use arrow keys for 'alt' shortcuts bc of some niche conflicts that aren't worth trying to dev some workaround for (esp alt-k :: raycast, and chrome/vscodes actions)
-    'right': 'alt reserved',
-    'up': 'alt reserved',
-    'down': 'alt reserved',
-    'k': 'alt reserved', // needs this one avail bc of raycasts internal 'alt-k' actions which we're not able to work around/change (at least until raycast adds option to customize this shortcut)
-    'tab': 'alt reserved',
-    'c': 'alt reserved',
-    'space': 'alt reserved',
-  },  
+        // THE OFF LIMIT KEYS for this 'alt' group:
+        'left': { action: 'alt reserved', color: 'dark-grey' }, // KIM can't use arrow keys for 'alt' shortcuts bc of some niche conflicts that aren't worth trying to dev some workaround for (esp alt-k :: raycast, and chrome/vscodes actions)
+        'right': { action: 'alt reserved', color: 'dark-grey' },
+        'up': { action: 'alt reserved', color: 'dark-grey' },
+        'down': { action: 'alt reserved', color: 'dark-grey' },
+        'k': { action: 'alt reserved', color: 'dark-grey' }, // needs this one avail bc of raycasts internal 'alt-k' actions which we're not able to work around/change (at least until raycast adds option to customize this shortcut)
+        'tab': { action: 'alt reserved', color: 'dark-grey' },
+        'c': { action: 'alt reserved', color: 'dark-grey' },
+        'space': { action: 'alt reserved', color: 'dark-grey' },
+      },  
   
   
 
+      'alt-shift': {
+        'q': 'close app',
+        'w': 'redraw windows',
+        'e': 'exit aero/glaze',
+        'r': 'reload config',
+        
+        'x': 'quit all but curr',
+        
+        'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
+        
+        // 'l': 'launch my apps scr',
+        'l': { action: 'launch my apps scr', color: 'yellow' },
+        
+        'left': 'move left',
+        'right': 'move right',
+        'up': 'move up',
+        'down': 'move down',
 
+        '1': 'send app desktop 1',
+        '2': 'send app desktop 2',
+        '3': 'send app desktop 3',
+        '4': 'send app desktop 4',
+        '5': 'send app desktop 5',
+        '6': 'send app desktop 6',
+        '7': 'send app desktop 7',
+        '8': 'send app desktop 8',
+        '9': 'send app desktop 9',
+        '0': 'send app desktop 0',
 
+        'num1': 'vol down',
+        'num2': 'vol up',
+        'num3': 'apple emojis',
+        'num4': 'env_opt excel',
+        'num5': '',
+        'num6': { action: 'BTT (better touch tool)', color: 'yellow' },
+        'num7': '',
+        'num8': '',
+        'num9': '',
+        'num0': 'TBD',
 
-
-
-
-  'alt-shift': {
-    'q': 'close app',
-    'w': 'redraw windows',
-    'e': 'exit aero/glaze',
-    'r': 'reload config',
-    
-    'x': 'quit all but curr',
-    
-    'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
-    
-    'l': 'launch my apps scr',
-    
-    'left': 'move left',
-    'right': 'move right',
-    'up': 'move up',
-    'down': 'move down',
-
-    '1': 'send app desktop 1',
-    '2': 'send app desktop 2',
-    '3': 'send app desktop 3',
-    '4': 'send app desktop 4',
-    '5': 'send app desktop 5',
-    '6': 'send app desktop 6',
-    '7': 'send app desktop 7',
-    '8': 'send app desktop 8',
-    '9': 'send app desktop 9',
-    '0': 'send app desktop 0',
-
-    'num1': 'vol down',
-    'num2': 'vol up',
-    'num3': 'apple emojis',
-    'num4': 'env_opt excel',
-    'num5': '',
-    'num6': 'BTT (better touch tool)',
-    'num7': '',
-    'num8': '',
-    'num9': '',
-    'num0': 'TBD',
-
-    // THE OFF LIMIT KEYS for this 'alt-shift' group:
-    'tab': 'alt-shift reserved', // 
-  },  
+        // THE OFF LIMIT KEYS for this 'alt-shift' group:
+        'tab': { action: 'alt-shift reserved', color: 'dark-grey' }, // 
+      },  
 
 
 
@@ -626,44 +836,46 @@
 
 
 
-  'hyper': {
-    'g': 'google srch qk',
-    'y': 'trello new card',
-    's': 'screensh dir',
-    'e': 'emoji picker',
+      'hyper': {
+        'g': 'google srch qk',
+        'y': 'trello new card',
+        's': 'screensh dir',
+        'e': 'emoji picker',
+        
+        'k': 'keyboard visualizer', // maybe this should be moved to app-switch mod group bc it's a better fit?
+        
+        'c': 'clipb manager',
+        'v': 'clipb paste',
+        
+        'm': 'rayc trello?', // PROB GOING TO MOVE/DEL THIS ONE until I fig out it's actual use w raycast
+        'a': 'rayc srch-all?', // PROB GOING TO MOVE/DEL THIS ONE until I fig out it's actual use w raycast
+        
+        'space': 'trello new card', // MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
+        
+        '1': 'screensh 1?',
+        '2': 'screensh 2?',
+        '3': 'screensh scrolling',
+        '4': 'screensh 4?',
+        
+        'r': 'quick_ref dir',
+        
+        'f': { action: 'firefox? | empty', color: 'yellow' },
+        'm': { action: 'rayc trello?', color: 'yellow' },
+        'a': { action: 'rayc srch-all?', color: 'yellow' },
+        'l': { action: 'leet setup fixme', color: 'yellow' },
+        // TODO: Consolidate all my LEET-SETUP shortcuts into ONE or TWO shortcuts (2 bc 1 for laptop screen, and the other for big monitor screen)
+        'l': { action: 'leet setup fixme', color: 'yellow' }, // FIXME (atm I have multiple leet-setup shortcuts across diff mod groups, as well as some through raycasts feats and others through scripts and or BTT stuff)
 
-    'f': 'firefox? | empty',
-
-    'k': 'keyboard visualizer', // maybe this should be moved to app-switch mod group bc it's a better fit?
-
-    'c': 'clipb manager',
-    'v': 'clipb paste',
-
-    'm': 'rayc trello?', // PROB GOING TO MOVE/DEL THIS ONE until I fig out it's actual use w raycast
-    'a': 'rayc srch-all?', // PROB GOING TO MOVE/DEL THIS ONE until I fig out it's actual use w raycast
-
-    'space': 'trello new card', // MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
-
-    '1': 'screensh 1?',
-    '2': 'screensh 2?',
-    '3': 'screensh scrolling',
-    '4': 'screensh 4?',
-
-    'r': 'quick_ref dir',
-
-    // TODO: Consolidate all my LEET-SETUP shortcuts into ONE or TWO shortcuts (2 bc 1 for laptop screen, and the other for big monitor screen)
-    'l': 'leet setup fixme', // FIXME (atm I have multiple leet-setup shortcuts across diff mod groups, as well as some through raycasts feats and others through scripts and or BTT stuff)
-
-    'z': 'zzshorts ultra',
+        'z': 'zzshorts ultra',
 
 
-    // THE OFF LIMIT KEYS for this 'hyper' group:
-    // '??': 'hyper reserved', // none so far?? 
-    // TODO AFTER DONE ADDING ALL SHORTCUTS IN 4 MOD GROUPS:
-    // 1. open both MAC and WIND laptops side by side
-    // 2. open the keyb-visuaizer and test out each shortcut you see on the visualizer on both comps 
-    // 3. fix any discrepancies you find between the visualizer and the actual shortcuts (e.g. if you find a shortcut on the visualizer that doesn't work, or a shortcut that works but isn't on the visualizer, or if you find a tooltip that's wrong, etc)
-  }
+        // THE OFF LIMIT KEYS for this 'hyper' group:
+        // '??': 'hyper reserved', // none so far?? 
+        // TODO AFTER DONE ADDING ALL SHORTCUTS IN 4 MOD GROUPS:
+        // 1. open both MAC and WIND laptops side by side
+        // 2. open the keyb-visuaizer and test out each shortcut you see on the visualizer on both comps 
+        // 3. fix any discrepancies you find between the visualizer and the actual shortcuts (e.g. if you find a shortcut on the visualizer that doesn't work, or a shortcut that works but isn't on the visualizer, or if you find a tooltip that's wrong, etc)
+      }
 };
 
 // ── QWERTY keyboard layout definition ────────────────────────────────────────
@@ -745,14 +957,47 @@ const triggerKeys = {
 
 // ── Render keyboard ───────────────────────────────────────────────────────────
 function makeKey(label, id, extraClass, map) {
-  const action = id ? (map[id] || null) : null;
+  const shortcutData = id ? (map[id] || null) : null;
   const triggerLabel = id ? (triggerKeys[currentTab]?.[id] || null) : null;
+  
+  // Handle both string and object formats for shortcuts
+  let action = null;
+  let color = null;
+  if (shortcutData) {
+    if (typeof shortcutData === 'string') {
+      action = shortcutData;
+    } else if (typeof shortcutData === 'object') {
+      action = shortcutData.action || shortcutData.description || null;
+      color = shortcutData.color || null;
+    }
+  }
+  
   const keyEl = document.createElement('div');
-  keyEl.className = 'key'
+  let className = 'key'
     + (extraClass ? ' ' + extraClass : '')
-    + (action ? ' bound' : '')
     + (triggerLabel ? ' mod-trigger' : '')
     + (!id ? ' key-invisible' : '');
+  
+  // Add color classes
+  if (action) {
+    if (color === 'yellow') {
+      className += ' bound-yellow';
+    } else if (color === 'red') {
+      className += ' bound-red';
+    } else if (color === 'green') {
+      className += ' bound-green';
+    } else if (color === 'light-blue') {
+      className += ' bound-light-blue';
+    } else if (color === 'dark-blue') {
+      className += ' bound-dark-blue';
+    } else if (color === 'dark-grey') {
+      className += ' bound-dark-grey';
+    } else {
+      className += ' bound';
+    }
+  }
+  
+  keyEl.className = className;
 
   if (triggerLabel) keyEl.setAttribute('data-tooltip', triggerLabel);
   else if (action) keyEl.setAttribute('data-tooltip', action);
@@ -836,12 +1081,52 @@ function renderList() {
     return;
   }
 
-  entries.sort(([a], [b]) => a.localeCompare(b)).forEach(([key, action]) => {
+  entries.sort(([a], [b]) => a.localeCompare(b)).forEach(([key, shortcutData]) => {
+    // Handle both string and object formats for shortcuts
+    let action = null;
+    let color = null;
+    if (typeof shortcutData === 'string') {
+      action = shortcutData;
+    } else if (typeof shortcutData === 'object') {
+      action = shortcutData.action || shortcutData.description || null;
+      color = shortcutData.color || null;
+    }
+
+    if (!action) return; // Skip if no action defined
+
     const item = document.createElement('div');
     item.className = 'shortcut-item';
 
     const badge = document.createElement('span');
     badge.className = 'shortcut-key-badge';
+    
+    // Add color-specific styling to badge
+    if (color === 'yellow') {
+      badge.style.background = '#92400e';
+      badge.style.borderColor = '#d97706';
+      badge.style.color = '#fcd34d';
+    } else if (color === 'red') {
+      badge.style.background = '#7f1d1d';
+      badge.style.borderColor = '#dc2626';
+      badge.style.color = '#fca5a5';
+    } else if (color === 'green') {
+      badge.style.background = '#065f46';
+      badge.style.borderColor = '#059669';
+      badge.style.color = '#6ee7b7';
+    } else if (color === 'light-blue') {
+      badge.style.background = '#0369a1';
+      badge.style.borderColor = '#0ea5e9';
+      badge.style.color = '#7dd3fc';
+    } else if (color === 'dark-blue') {
+      badge.style.background = '#1e3a8a';
+      badge.style.borderColor = '#3b82f6';
+      badge.style.color = '#93c5fd';
+    } else if (color === 'dark-grey') {
+      badge.style.background = '#374151';
+      badge.style.borderColor = '#6b7280';
+      badge.style.color = '#d1d5db';
+    }
+    
     badge.textContent = key.toUpperCase();
 
     const desc = document.createElement('span');
