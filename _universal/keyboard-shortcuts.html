@@ -556,25 +556,25 @@
     <div class="keyboard" id="keyboard"></div>
     <div class="legend">
       <div class="legend-item">
-        <div class="legend-swatch swatch-bound"></div> Shortcut assigned
+        <div class="legend-swatch swatch-bound"></div> Official shortcuts1
       </div>
       <div class="legend-item">
-        <div class="legend-swatch swatch-light-blue"></div> App/tool shortcuts
+        <div class="legend-swatch swatch-light-blue"></div> Official shortcuts2
       </div>
       <div class="legend-item">
-        <div class="legend-swatch swatch-dark-blue"></div> System shortcuts
+        <div class="legend-swatch swatch-dark-blue"></div> Official shortcuts3
       </div>
       <div class="legend-item">
         <div class="legend-swatch swatch-yellow"></div> Beta/testing
       </div>
       <div class="legend-item">
-        <div class="legend-swatch swatch-green"></div> Categories
+        <div class="legend-swatch swatch-green"></div> prime real estate avail
       </div>
       <div class="legend-item">
         <div class="legend-swatch swatch-dark-grey"></div> Reserved/disabled
       </div>
       <div class="legend-item">
-        <div class="legend-swatch swatch-red"></div> High priority
+        <div class="legend-swatch swatch-red"></div> Still need to set up/activate
       </div>
       <div class="legend-item">
         <div class="legend-swatch swatch-unbound"></div> No shortcut
@@ -610,12 +610,14 @@
 // 7. greyed-out shortcut: add a way to change color of a shortcut key to grey or something which I can use for all the RESERVED/OFF-LIMITS keys of each mod-group (like the arrowKeys for ALT-mod-group))
 // =========================================================
 // the diff key colors i'd want: 
-    // blue(curr default):    official shortcut that's 100% confirmed to be working and active 
-    // yellow:                temp/beta shortcut that's not official yet
-    // black/grey:            reserved/off-limits key that I don't want to forget is unavailable for use (e.g. alt-arrow keys)
-    // bright-red color:      (maybe?) for AVAIL KEYS that are super-useful (IOW the prime-real-estate keys that I should look at FIRST when trying to add/change a new shortcut) 
+    // blue(curr default):    -official shortcut that's 100% confirmed to be working and active 
+    // yellow:                -temp/beta shortcut that's not official yet but being tried for a bit before we det if it should be officially added or del
+    // green:                 -an avail key that is extra-valuable (so green should draw attention to it that it should be at top of consideration when looking for a new shortcut key 
+    // red:                   -shortcut that I STILL NEED to set up/activate 
+    // black/grey:            -reserved/off-limits key that I don't want to forget is unavailable for use (e.g. alt-arrow keys)
+    // purple:                -BUGGY shortcut that is technically set up but isn't working properly yet for some reason (so I want to be able to visually mark it as 'buggy' so I don't forget that it's not fully functional yet and that I still need to troubleshoot it)
+    // bright-red color:      -(maybe?) for AVAIL KEYS that are super-useful (IOW the prime-real-estate keys that I should look at FIRST when trying to add/change a new shortcut) 
             // (for exmaple, the entire numRow keys for the app-switch mod-group: it's easy to jst FORGET these keys are avail since for most of the other modGroups they are def NOT avail)
-    //
 
 
 
@@ -666,9 +668,7 @@
         'g': 'github desktop',
         'h': 'HOMEdoc | jira',
         'j': 'jira || empty', 
-        'l': { action: 'leetauto small', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
-        ';': { action: 'leetauto big', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
-      
+
         'z': 'zzshorts (no-ult)',
         'c': 'vs code',
         'v': 'visual st. | empty',
@@ -677,9 +677,9 @@
         'n': 'notes',
       
         // FIXME! THESE NUMROW shortcuts are the old ones and I should consider del/replacing them since it's prime real-estate
-        '1': { action: 'fixme dw board', color: 'green' },
-        '2': { action: 'fixme aspen board', color: 'green' },
-        '3': { action: 'fixme ref board', color: 'green' },
+        '1': { action: 'fixme dw board', color: 'red' },
+        '2': { action: 'fixme aspen board', color: 'red' },
+        '3': { action: 'fixme ref board', color: 'red' },
         // '4': 'PRIME AVAIL',
         // '5': 'PRIME AVAIL',
         // '6': 'PRIME AVAIL',
@@ -699,6 +699,10 @@
         'num9': {'action': 'open for app', 'color': 'green'},
         'num0': {'action': 'open for app', 'color': 'green'},
       
+
+        // ********************************************************************************
+        // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
+        // REMEMBER! so even if I change 'alt' to be app-switch instead of windowMan1, the alt off-limit keys (like alt-c & alt-tab etc) are STILL THE EXACT SAME (e.g. alt-tab is still off-limits even if alt is now app-switch category instead of windowMan1 category) since those off-limit keys are reserved for system/app-switching actions that I don't want to mess with regardless of which mod group is app-switching vs window management vs misc etc.
         // THE OFF LIMIT KEYS for this 'alt-option' group:
         // '??': 'alt-opt reserved', // (none so far i think?)
       },
@@ -765,7 +769,10 @@
         'num8': '3x3 grid position',
         'num9': '3x3 grid position',
         'num0': 'TBD',
-    
+
+        // ********************************************************************************
+        // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
+        // REMEMBER! so even if I change 'alt' to be app-switch instead of windowMan1, the alt off-limit keys (like alt-c & alt-tab etc) are STILL THE EXACT SAME (e.g. alt-tab is still off-limits even if alt is now app-switch category instead of windowMan1 category) since those off-limit keys are reserved for system/app-switching actions that I don't want to mess with regardless of which mod group is app-switching vs window management vs misc etc.
         // THE OFF LIMIT KEYS for this 'alt' group:
         'left': { action: 'alt reserved', color: 'dark-grey' }, // KIM can't use arrow keys for 'alt' shortcuts bc of some niche conflicts that aren't worth trying to dev some workaround for (esp alt-k :: raycast, and chrome/vscodes actions)
         'right': { action: 'alt reserved', color: 'dark-grey' },
@@ -790,7 +797,7 @@
         'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
         
         // 'l': 'launch my apps scr',
-        'l': { action: 'launch my apps scr', color: 'yellow' },
+        'l': { action: 'launch my apps scr', color: 'red' },
         
         'left': 'move left',
         'right': 'move right',
@@ -818,7 +825,10 @@
         'num8': '',
         'num9': '',
         'num0': 'TBD',
-
+    
+        // ********************************************************************************
+        // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
+        // REMEMBER! so even if I change 'alt' to be app-switch instead of windowMan1, the alt off-limit keys (like alt-c & alt-tab etc) are STILL THE EXACT SAME (e.g. alt-tab is still off-limits even if alt is now app-switch category instead of windowMan1 category) since those off-limit keys are reserved for system/app-switching actions that I don't want to mess with regardless of which mod group is app-switching vs window management vs misc etc.
         // THE OFF LIMIT KEYS for this 'alt-shift' group:
         'tab': { action: 'alt-shift reserved', color: 'dark-grey' }, // 
       },  
@@ -858,17 +868,22 @@
         '4': 'screensh 4?',
         
         'r': 'quick_ref dir',
+
+        'l': { action: 'leetauto small', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
+        ';': { action: 'leetauto big', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
+      
         
         'f': { action: 'firefox? | empty', color: 'yellow' },
         'm': { action: 'rayc trello?', color: 'yellow' },
         'a': { action: 'rayc srch-all?', color: 'yellow' },
-        'l': { action: 'leet setup fixme', color: 'yellow' },
         // TODO: Consolidate all my LEET-SETUP shortcuts into ONE or TWO shortcuts (2 bc 1 for laptop screen, and the other for big monitor screen)
         'l': { action: 'leet setup fixme', color: 'yellow' }, // FIXME (atm I have multiple leet-setup shortcuts across diff mod groups, as well as some through raycasts feats and others through scripts and or BTT stuff)
 
         'z': 'zzshorts ultra',
 
-
+        // ********************************************************************************
+        // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
+        // REMEMBER! so even if I change 'alt' to be app-switch instead of windowMan1, the alt off-limit keys (like alt-c & alt-tab etc) are STILL THE EXACT SAME (e.g. alt-tab is still off-limits even if alt is now app-switch category instead of windowMan1 category) since those off-limit keys are reserved for system/app-switching actions that I don't want to mess with regardless of which mod group is app-switching vs window management vs misc etc.
         // THE OFF LIMIT KEYS for this 'hyper' group:
         // '??': 'hyper reserved', // none so far?? 
         // TODO AFTER DONE ADDING ALL SHORTCUTS IN 4 MOD GROUPS:
