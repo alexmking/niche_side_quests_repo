@@ -424,48 +424,108 @@
 
 
 
-// ╔══════════════════════════════════════════════════════════╗
-// ║  SHORTCUTS DATA — replace placeholder values with yours ║
-// ╚══════════════════════════════════════════════════════════╝
+    // ╔══════════════════════════════════════════════════════════╗    
+    // ║  SHORTCUTS DATA — replace placeholder values with yours ║
+    // ╚══════════════════════════════════════════════════════════╝
+    
+    // OFF-LIMITS KEYS for each mod-group:
+    // alt => TAB, C, SPACE, ARROWS, K (may be more...)
+    // alt-shift =>
+    // alt-option =>
+    // HYPER => (obvi depends on which mod group we chose to rep hyper key (either alt-opt, alt-ctrl, alt-opt-ctrl or all-4))
+    const shortcuts = {
+      'alt-option': {
+        'a': 'Things3 or Teams',
+        'w': 'aspenB | jira',
+        'e': 'excel ref doc',
+        'r': 'ref board || excel',
+        't': 'terminal',
+        'y': 'trello',
+        'i': 'inbox mail',
+        // 'tab': 'Things3 extra',
+        // '`': 'Things3 extra',
+      
+        's': 'spotify',
+        'd': 'doingW | jira',
+        'f': 'finder',
+        'g': 'github desktop',
+        'h': 'HOMEdoc | jira',
+        'j': 'jira || empty', 
+        'l': 'leetauto small', // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
+        ';': 'leetauto big', // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
+      
+        'z': 'zzshorts (no-ult)',
+        'c': 'vscode',
+        'v': 'visual st. | empty',
+        'b': 'browser',
+        'm': 'teams | things3',
+        'n': 'notes',
+      
+        // FIXME! THESE NUMROW shortcuts are the old ones and I should consider del/replacing them since it's prime real-estate
+        '1': 'fixme dw board',
+        '2': 'fixme aspen board',
+        '3': 'fixme ref board',
+        // '4': 'PRIME AVAIL',
+        // '5': 'PRIME AVAIL',
+        // '6': 'PRIME AVAIL',
+        // '7': 'PRIME AVAIL',
+        // '8': 'PRIME AVAIL',
+        // '9': 'PRIME AVAIL',
+        // '0': 'PRIME AVAIL',
 
-// OFF-LIMITS KEYS for each mod-group:
-// alt => TAB, C, SPACE, ARROWS, K (may be more...)
-// alt-shift =>
-// alt-option =>
-// HYPER => (obvi depends on which mod group we chose to rep hyper key (either alt-opt, alt-ctrl, alt-opt-ctrl or all-4))
-const shortcuts = {
-  'alt': {
-    't': 'set tile layout',
-    'g': 'set float layout',
+        'num1': 'open for app',
+        'num2': 'open for app',
+        'num3': 'open for app',
+        'num4': 'open for app',
+        'num5': 'open for app',
+        'num6': 'open for app',
+        'num7': 'open for app',
+        'num8': 'open for app',
+        'num9': 'open for app',
+        'num0': 'open for app',
+      
+        // THE OFF LIMIT KEYS for this 'alt-option' group:
+        // '??': 'alt-opt reserved', // (none so far i think?)
+      },
     
-    // 'u': '', // TODO: FIXME
-    // 'i': '', // TODO: FIXME
-    // 'o': '',  // TODO: FIXME
-    // 'p': '', // TODO: FIXME
-    
-    'q': 'left half+',
-    'w': 'center half+',
-    'e': 'right half+',
-    'r': 'reasonable resize',
-    
-    'a': 'top left corner',
-    's': 'top right corner',
-    'z': 'bottom left corner',
-    'x': 'bottom right corner',
-    
-    'd': 'center window',
-    'f': 'float/pin window',
-    
-    'y': 'trello resize',
-    'u': 'leet top resize',
-    'i': 'leet side resize',
-
-    
-    '[': 'max width',
-    ']': 'max height',
-    
-    '-': 'make larger',
-    '=': 'make smaller',
+      
+      
+      
+      
+      
+      
+      'alt': {
+        't': 'set tile layout',
+        'g': 'set float layout',
+        
+        // 'u': '', // TODO: FIXME
+        // 'i': '', // TODO: FIXME
+        // 'o': '',  // TODO: FIXME
+        // 'p': '', // TODO: FIXME
+        
+        'q': 'left half+',
+        'w': 'center half+',
+        'e': 'right half+',
+        'r': 'reasonable resize',
+        
+        'a': 'top left corner',
+        's': 'top right corner',
+        'z': 'bottom left corner',
+        'x': 'bottom right corner',
+        
+        'd': 'center window',
+        'f': 'float/pin window',
+        
+        'y': 'trello resize',
+        'u': 'leet top resize',
+        'i': 'leet side resize',
+        
+        
+        '[': 'max width',
+        ']': 'max height',
+        
+        '-': 'make larger',
+        '=': 'make smaller',
     
     'm': 'almost maximize',
     
@@ -500,7 +560,7 @@ const shortcuts = {
     'tab': 'alt reserved',
     'c': 'alt reserved',
     'space': 'alt reserved',
-  },
+  },  
   
   
 
@@ -551,7 +611,7 @@ const shortcuts = {
 
     // THE OFF LIMIT KEYS for this 'alt-shift' group:
     'tab': 'alt-shift reserved', // 
-  },
+  },  
 
 
 
@@ -559,49 +619,6 @@ const shortcuts = {
 
 
 
-
-  'alt-option': {
-    'a': 'Things3 or Teams',
-    'w': 'aspenB | jira',
-    'e': 'excel ref doc',
-    'r': 'ref board || excel',
-    't': 'terminal',
-    'y': 'trello',
-    'i': 'inbox mail',
-    // 'tab': 'Things3 extra',
-    // '`': 'Things3 extra',
-
-    's': 'spotify',
-    'd': 'doingW | jira',
-    'f': 'finder',
-    'g': 'github desktop',
-    'h': 'HOMEdoc | jira',
-    'j': 'jira || empty', 
-    'l': 'leetauto small', // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
-    ';': 'leetauto big', // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
-
-    'z': 'zzshorts (no-ult)',
-    'c': 'vscode',
-    'v': 'visual st. | empty',
-    'b': 'browser',
-    'm': 'teams | things3',
-    'n': 'notes',
-
-    // FIXME! THESE NUMROW shortcuts are the old ones and I should consider del/replacing them since it's prime real-estate
-    // '1': 'PRIME AVAIL',
-    // '2': 'PRIME AVAIL',
-    // '3': 'PRIME AVAIL',
-    // '4': 'PRIME AVAIL',
-    // '5': 'PRIME AVAIL',
-    // '6': 'PRIME AVAIL',
-    // '7': 'PRIME AVAIL',
-    // '8': 'PRIME AVAIL',
-    // '9': 'PRIME AVAIL',
-    // '0': 'PRIME AVAIL',
-
-    // THE OFF LIMIT KEYS for this 'alt-option' group:
-    // '??': 'alt-opt reserved', // (none so far i think?)
-  },
 
 
 
