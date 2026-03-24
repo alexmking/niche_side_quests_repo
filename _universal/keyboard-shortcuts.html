@@ -255,20 +255,21 @@
     .swatch-light-blue { background: #0369a1; border: 1px solid #0ea5e9; }
     .swatch-dark-blue  { background: #1e3a8a; border: 1px solid #3b82f6; }
     .swatch-dark-grey  { background: #374151; border: 1px solid #6b7280; }
+    .swatch-purple     { background: #4a1d96; border: 1px solid #7c3aed; }
 
     /* Hyper bound keys */
     .hyper .key.bound {
-      background: linear-gradient(160deg, #3b1a6e, #2d1458);
-      border-color: #7c3aed;
-      border-bottom-color: #5b21b6;
-      box-shadow: 0 0 0 1px rgba(139,92,246,0.2), 0 2px 8px rgba(109,40,217,0.35);
+      background: linear-gradient(160deg, #1e3a6e, #162d5a);
+      border-color: #2563eb;
+      border-bottom-color: #1a40a0;
+      box-shadow: 0 0 0 1px rgba(59,130,246,0.2), 0 2px 8px rgba(37,99,235,0.3);
     }
-    .hyper .key.bound .key-label { color: #c4b5fd; }
-    .hyper .key.bound .key-action { color: #a78bfa; }
+    .hyper .key.bound .key-label { color: #93c5fd; }
+    .hyper .key.bound .key-action { color: #60a5fa; }
     .hyper .key.bound:hover {
-      background: linear-gradient(160deg, #5b21b6, #4c1d95);
+      background: linear-gradient(160deg, #1d4ed8, #1e40af);
       transform: translateY(-2px);
-      box-shadow: 0 0 0 1px rgba(167,139,250,0.5), 0 4px 16px rgba(109,40,217,0.5);
+      box-shadow: 0 0 0 1px rgba(99,157,255,0.5), 0 4px 16px rgba(37,99,235,0.5);
     }
     /* Modifier trigger keys (caps lock / cmd / shift / option) */
     .key.mod-trigger {
@@ -470,6 +471,38 @@
       box-shadow: 0 0 0 1px rgba(209,213,219,0.4), 0 4px 16px rgba(75,85,99,0.4);
     }
 
+    /* Purple key variant */
+    .key.bound-purple {
+      background: linear-gradient(160deg, #4a1d96, #3b0764);
+      border-color: #7c3aed;
+      border-bottom-color: #4a1d96;
+      box-shadow: 0 0 0 1px rgba(124,58,237,0.2), 0 2px 8px rgba(74,29,150,0.3);
+    }
+
+    .key.bound-purple .key-label { color: #c4b5fd; }
+    .key.bound-purple .key-action { color: #a78bfa; }
+
+    .key.bound-purple:hover {
+      background: linear-gradient(160deg, #6d28d9, #4a1d96);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(167,139,250,0.4), 0 4px 16px rgba(124,58,237,0.4);
+      z-index: 10;
+    }
+
+    /* Hyper mode overrides for purple */
+    .hyper .key.bound-purple {
+      background: linear-gradient(160deg, #5b21b6, #4c1d95);
+      border-color: #8b5cf6;
+      border-bottom-color: #5b21b6;
+      box-shadow: 0 0 0 1px rgba(139,92,246,0.2), 0 2px 8px rgba(91,33,182,0.3);
+    }
+    .hyper .key.bound-purple .key-label { color: #ddd6fe; }
+    .hyper .key.bound-purple .key-action { color: #c4b5fd; }
+    .hyper .key.bound-purple:hover {
+      background: linear-gradient(160deg, #7c3aed, #5b21b6);
+      box-shadow: 0 0 0 1px rgba(196,181,253,0.4), 0 4px 16px rgba(139,92,246,0.4);
+    }
+
     /* ── Shortcut list panel ──────────────────────────────── */
     .shortcut-list {
       background: linear-gradient(160deg, #1e1e30, #161622);
@@ -575,6 +608,9 @@
       </div>
       <div class="legend-item">
         <div class="legend-swatch swatch-red"></div> Still need to set up/activate
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-purple"></div> Buggy/not working properly
       </div>
       <div class="legend-item">
         <div class="legend-swatch swatch-unbound"></div> No shortcut
@@ -792,7 +828,7 @@
         'e': 'exit aero/glaze',
         'r': 'reload config',
         
-        'x': 'quit all but curr',
+        'x': { action: 'quit all but curr', color: 'purple' },
         
         'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
         
@@ -867,7 +903,7 @@
         '3': 'screensh scrolling',
         '4': 'screensh 4?',
         
-        'r': 'quick_ref dir',
+        'r': { action: 'quick_ref dir', color: 'purple' },
 
         'l': { action: 'leetauto small', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
         ';': { action: 'leetauto big', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
@@ -1007,6 +1043,8 @@ function makeKey(label, id, extraClass, map) {
       className += ' bound-dark-blue';
     } else if (color === 'dark-grey') {
       className += ' bound-dark-grey';
+    } else if (color === 'purple') {
+      className += ' bound-purple';
     } else {
       className += ' bound';
     }
