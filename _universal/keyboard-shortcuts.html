@@ -896,37 +896,42 @@
       'hyper': {
         'g': 'google srch qk',
         'y': 'trello new card',
-        's': { action: 'screenshot dir', color: 'purple' },
         'e': 'emoji picker',
-
-        'n': { action: 'search notes rayc', color: 'red' },
-
         
         'k': 'keyboard visualizer', // maybe this should be moved to app-switch mod group bc it's a better fit?
         
         'c': 'clipb manager',
         'v': 'clipb paste',
         
-        'm': 'rayc trello?', // PROB GOING TO MOVE/DEL THIS ONE until I fig out it's actual use w raycast
-        'a': 'rayc srch-all?', // PROB GOING TO MOVE/DEL THIS ONE until I fig out it's actual use w raycast
-        
         'space': 'trello new card', // MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
         
-        '1': 'screensh 1?',
-        '2': { action: 'screensh 2?', color: 'purple' },
-        '3': { action: 'screensh scroll?', color: 'purple' },
-        '4': { action: 'screensh 4?', color: 'purple' },
+        '1': 'screensh main',
+        '2': 'screensh fast',
+        '3': 'screensh video',
+        '4': 'screensh scrolling',
+        '5': 'screensh menu',
+        '6': 'screensh GIF',
         
-        'r': { action: 'quick_ref dir', color: 'purple' },
-
-        'l': { action: 'leetauto small', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
-        ';': { action: 'leetauto big', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
-      
-        'f': { action: 'firefox? | empty', color: 'yellow' },
-        'm': { action: 'rayc trello?', color: 'yellow' },
-        'a': { action: 'rayc srch-all?', color: 'yellow' }, // fzf search across all chrome tabs currently open (still NOT SURE if this is useful enough to merit its own key/shortuctu here)
-
+        
+        's': 'screenshot dir',
+        'r': 'quick_ref dir', 
+        
+        'l': 'leetauto small',
+        ';': 'leetauto big',
+        
         'z': 'zzshorts ultra',
+        
+        'tab': { action: 'srch tabs (chrome)', color: 'yellow' }, // fzf search across all chrome tabs currently open (still NOT SURE if this is useful enough to merit its own key/shortuctu here)  (GOOD KEYS ARE: hyper-T, hyper-TAB, hyper-B (for browser))
+        'm': { action: 'srch menu bar', color: 'yellow' }, // fzf search all MENU options of curr window/app (IOW, if you're in VSCODE, it will fzf search all the top-bar vs-code stuff like File, Edit, Selection,View,Go,Run,Terminal,Window,Help) 
+        'f': { action: 'firefox? | empty', color: 'yellow' },
+        
+        // TODO: det diff between rayc-NOTES and rayc-SNIPPETS, and then decide what to do w these quick-search shortcuts...
+        // TODO: EXMAPLE: maybe for what I need, it's better to just put everything into SNIPPETS and then have one search-shortuct ...(or vice versa for notes)
+        'n': { action: 'search notes rayc', color: 'red' },
+        'num1': { action: 'srch snippets (R)', color: 'red' },
+
+
+
 
         // ********************************************************************************
         // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
