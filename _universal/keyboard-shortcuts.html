@@ -669,7 +669,18 @@
 
 
 
-
+    // -------------------------------
+    // LIST OF SMALLER ISSUES/TO-DOs:
+    // -------------------------------
+    // 1. hyper-s and r on windows are NOT switching to explorer window
+    // 2. hyper-k on windows is NOT switching to chrome after opening the html file 
+    // 3. cement what we want the other 2 or 3 screenshot shortcuts to actually do (maybe 1 just for scrolling, maybe 1 that brings up big options seleection etc)
+    // 4. TODO:
+    // 5. TODO:
+    // 6. TODO:
+    // 7. TODO:
+    // 8. TODO:
+    // 9. TODO:
 
 
 
@@ -833,7 +844,7 @@
         'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
         
         // 'l': 'launch my apps scr',
-        'l': { action: 'launch my apps scr', color: 'red' },
+        'l': { action: 'launch my apps scr', color: 'red' }, // (NOT set up in MAC side) (search "!+l" in ahk for win-side...)
         
         'left': 'move left',
         'right': 'move right',
@@ -885,7 +896,7 @@
       'hyper': {
         'g': 'google srch qk',
         'y': 'trello new card',
-        's': 'screensh dir',
+        's': { action: 'screenshot dir', color: 'purple' },
         'e': 'emoji picker',
         
         'k': 'keyboard visualizer', // maybe this should be moved to app-switch mod group bc it's a better fit?
@@ -899,21 +910,18 @@
         'space': 'trello new card', // MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
         
         '1': 'screensh 1?',
-        '2': 'screensh 2?',
-        '3': 'screensh scrolling',
-        '4': 'screensh 4?',
+        '2': { action: 'screensh 2?', color: 'purple' },
+        '3': { action: 'screensh scroll?', color: 'purple' },
+        '4': { action: 'screensh 4?', color: 'purple' },
         
         'r': { action: 'quick_ref dir', color: 'purple' },
 
         'l': { action: 'leetauto small', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
         ';': { action: 'leetauto big', color: 'yellow' }, // THESE TWO LEET-SETUP shortcuts can EASILY be moved elsewhere (i just assigned them to j and k randomely when I first was trying to create the auto to test it)
       
-        
         'f': { action: 'firefox? | empty', color: 'yellow' },
         'm': { action: 'rayc trello?', color: 'yellow' },
-        'a': { action: 'rayc srch-all?', color: 'yellow' },
-        // TODO: Consolidate all my LEET-SETUP shortcuts into ONE or TWO shortcuts (2 bc 1 for laptop screen, and the other for big monitor screen)
-        'l': { action: 'leet setup fixme', color: 'yellow' }, // FIXME (atm I have multiple leet-setup shortcuts across diff mod groups, as well as some through raycasts feats and others through scripts and or BTT stuff)
+        'a': { action: 'rayc srch-all?', color: 'yellow' }, // fzf search across all chrome tabs currently open (still NOT SURE if this is useful enough to merit its own key/shortuctu here)
 
         'z': 'zzshorts ultra',
 
