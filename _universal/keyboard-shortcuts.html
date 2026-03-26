@@ -663,12 +663,6 @@
 
 
 
-
-
-
-
-
-
     // -------------------------------
     // LIST OF SMALLER ISSUES/TO-DOs:
     // -------------------------------
@@ -897,13 +891,13 @@
         'g': 'google srch qk',
         'y': 'trello new card',
         'e': 'emoji picker',
-        
-        'k': 'keyboard visualizer', // maybe this should be moved to app-switch mod group bc it's a better fit?
-        
         'c': 'clipb manager',
         'v': 'clipb paste',
         
-        'space': 'trello new card', // MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
+        'k': 'keyboard visualizer', // maybe this should be moved to app-switch mod group bc it's a better fit?
+        
+        
+        'space': 'trello new card', // (leave this one alone...)MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
         
         '1': 'screensh main',
         '2': 'screensh fast',
@@ -925,8 +919,13 @@
         'm': { action: 'srch menu bar', color: 'yellow' }, // fzf search all MENU options of curr window/app (IOW, if you're in VSCODE, it will fzf search all the top-bar vs-code stuff like File, Edit, Selection,View,Go,Run,Terminal,Window,Help) 
         'f': { action: 'firefox? | empty', color: 'yellow' },
         
+        //--------------------------------------------------------------------------------
         // TODO: det diff between rayc-NOTES and rayc-SNIPPETS, and then decide what to do w these quick-search shortcuts...
         // TODO: EXMAPLE: maybe for what I need, it's better to just put everything into SNIPPETS and then have one search-shortuct ...(or vice versa for notes)
+        //--------------------------------------------------------------------------------
+        // *******UPDATE****** 
+        // SNIPPETS: def merits its own key. So many diff applications for this (see REF board list I made just for snippet ideas/use-cases)
+        // NOTES: anything longer than a couple paragraphs should prob default to NOTES instead of SNIPPETS...
         'n': { action: 'search notes rayc', color: 'red' },
         'num1': { action: 'srch snippets (R)', color: 'red' },
 
