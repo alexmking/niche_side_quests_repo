@@ -677,7 +677,14 @@
     // 9. TODO:
 
 
-
+    // -------------------------------
+    // SHORTCUTS TO CONSIDER ADDING/TRYING:
+    // -------------------------------
+    // 1. ?
+    // 2. search across all -ssot trello cards:     (this way when I want to add something to say, the raycast part of REF board, I can just search -ssot and then sel the card that's right there (as opposed to having to switch-to-REF-board --> scroll left/right uuntil i find it and/or do trello-internal search of '/' or ))
+    // 3. ?
+    // 4. ?
+    // 5. ?
 
 
 
@@ -894,7 +901,7 @@
         'c': 'clipb manager',
         'v': 'clipb paste',
         
-        'k': 'keyboard visualizer', // maybe this should be moved to app-switch mod group bc it's a better fit?
+        'k': { action: 'keyboard visualizer', color: 'purple' }, // [WINDOWS-SIDE is buggy bc it is not Switching to chrome window after opening the html like it does on MAC] maybe this should be moved to app-switch mod group bc it's a better fit?
         
         
         'space': 'trello new card', // (leave this one alone...)MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
@@ -907,7 +914,7 @@
         '6': 'screensh GIF',
         
         
-        's': 'screenshot dir',
+        '`': { action: 'screenshot dir', color: 'light-blue' }, // CONSIDER moving this to make room for raycast 'search-notes' shortcut which may prove to be more imp/ useful (then maybe I could move this sceenshot dir shortcut to one of the numRow keys? since that's where all the other screenshot shortcuts are rn)
         'r': 'quick_ref dir', 
         
         'l': 'leetauto small',
@@ -926,8 +933,10 @@
         // *******UPDATE****** 
         // SNIPPETS: def merits its own key. So many diff applications for this (see REF board list I made just for snippet ideas/use-cases)
         // NOTES: anything longer than a couple paragraphs should prob default to NOTES instead of SNIPPETS...
-        'n': { action: 'search notes rayc', color: 'red' },
-        'num1': { action: 'srch snippets (R)', color: 'red' },
+        'n': 'search notes rayc',
+        's': 'srch snippets',
+        'num2': { action: 'srch trello cards', color: 'yellow' }, // this is meant to only search for the PREFIXED-like cards (like ssot-) bc obvi there's way too many cards across all my boards to search them all at once [SO...this shortcut is basically a quick-jump-to function for the 10-20 MOST-IMP cards across my 4 boards (like all the 'ssot-' cards and the header-cards like QUEUE, DUE_TODAY, RESO etc')
+
 
 
 
