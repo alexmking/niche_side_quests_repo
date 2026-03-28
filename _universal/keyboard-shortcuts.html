@@ -703,6 +703,34 @@
 
 
 
+  //-------------------------------------------------------------
+  //-------------------------------------------------------------
+  //-------------------------------------------------------------
+  // ============================================================
+  // ============================================================
+  // ############################################################
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  // Replace all the aliases/shortcuts setup for **current_keyboard_bindings.txt** with this doc (mainly the quicky-search for shortcut via CLI + fzf stuff)
+  // GOAL: remember the purpose of that .txt file was two fold:
+  //    1. serve as the SSOT for keyboard shortcuts (at least the big 4 mod groups)
+  //    2. make it easy to quickly search for shortcuts via CLI (using fzf + alias + cat current_keyboard_bindings.txt) so that I can quickly find the shortcut I'm looking for without having to open the html file and visually scan for it
+  // now that I added all the commented-shortcuts on the right of each shortcut defined below, we should be able to search this html file relatively as fast as the .txt file 
+      // yes every search will have to waste time searching the first 500 lines above, but it shouldnt be slower from my POV bc it's just text-search on a pretty small html file.
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  // ############################################################
+  // ============================================================
+  // ============================================================
+  //-------------------------------------------------------------
+  //-------------------------------------------------------------
+  //-------------------------------------------------------------
+
+
+
+
+
+
     // ╔══════════════════════════════════════════════════════════╗    
     // ║  SHORTCUTS DATA — replace placeholder values with yours ║
     // ╚══════════════════════════════════════════════════════════╝
@@ -713,7 +741,6 @@
     // alt-option =>
     // HYPER => (obvi depends on which mod group we chose to rep hyper key (either alt-opt, alt-ctrl, alt-opt-ctrl or all-4))
     const shortcuts = {
-
       // -------------------------------------------------
       // LIKELY will be changed to OPT-only (after creating minHYPER key from left-opt key, so now...
       // left-opt ==> (alt-opt) 
@@ -721,34 +748,34 @@
       // -------------------------------------------------
       // %%%%%% STRIVE FOR (MAC | WINDOWS) %%%%%%%% in below key-defintions (mac definition comes first on line1, then windows-def on line 2) 
       'alt-option': {
-        'a': 'things3 || teams',
-        'w': 'aspenB | jira',
-        'e': 'excel ref doc',
-        'r': 'ref board || excel',
-        't': 'iTerm2 | cmder',
-        'y': 'trello desktop',
-        'i': 'inbox mail',
+        'a': 'things3 || teams',    // alt-opt-a
+        'w': 'aspenB | jira',       // alt-opt-w
+        'e': 'excel ref doc',       // alt-opt-e
+        'r': 'ref board || excel',  // alt-opt-r
+        't': 'iTerm2 | cmder',      // alt-opt-t
+        'y': 'trello desktop',      // alt-opt-y
+        'i': 'inbox mail',          // alt-opt-i
         // 'tab': 'Things3 extra',
         // '`': 'Things3 extra',
       
-        's': 'spotify',
-        'd': 'doingW | jira',
-        'f': 'finder',
-        'g': 'github desktop',
-        'h': 'HOMEdoc | jira',
-        'j': '____ || jira', 
+        's': 'spotify',           // alt-opt-s
+        'd': 'doingW | jira',     // alt-opt-d
+        'f': 'finder',            // alt-opt-f
+        'g': 'github desktop',    // alt-opt-g
+        'h': 'HOMEdoc | jira',    // alt-opt-h
+        'j': '____ || jira',      // alt-opt-j
 
-        'z': 'zzshorts (no-ult)',
-        'c': 'vs code',
-        'v': '____ || visual st.',
-        'b': 'browser',
-        'm': 'things3 || teams',
-        'n': 'notes',
+        'z': 'zzshorts (no-ult)', // alt-opt-z
+        'c': 'vs code',           // alt-opt-c
+        'v': '____ || visual st.',// alt-opt-v
+        'b': 'browser',           // alt-opt-b
+        'm': 'things3 || teams',  // alt-opt-m
+        'n': 'notes',             // alt-opt-n
       
         // FIXME! THESE NUMROW shortcuts are the old ones and I should consider del/replacing them since it's prime real-estate
-        '1': { action: 'fixme dw board', color: 'red' },
-        '2': { action: 'fixme aspen board', color: 'red' },
-        '3': { action: 'fixme ref board', color: 'red' },
+        '1': { action: 'fixme dw board', color: 'red' },    // alt-opt-1
+        '2': { action: 'fixme aspen board', color: 'red' }, // alt-opt-2
+        '3': { action: 'fixme ref board', color: 'red' },   // alt-opt-3
         // '4': 'PRIME AVAIL',
         // '5': 'PRIME AVAIL',
         // '6': 'PRIME AVAIL',
@@ -757,16 +784,16 @@
         // '9': 'PRIME AVAIL',
         // '0': 'PRIME AVAIL',
 
-        'num1': {'action': 'open for app', 'color': 'green'},
-        'num2': {'action': 'open for app', 'color': 'green'},
-        'num3': {'action': 'open for app', 'color': 'green'}, 
-        'num4': {'action': 'open for app', 'color': 'green'},
-        'num5': {'action': 'open for app', 'color': 'green'},
-        'num6': {'action': 'open for app', 'color': 'green'},
-        'num7': {'action': 'open for app', 'color': 'green'},
-        'num8': {'action': 'open for app', 'color': 'green'},
-        'num9': {'action': 'open for app', 'color': 'green'},
-        'num0': {'action': 'open for app', 'color': 'green'},
+        'num1': {'action': 'open for app', 'color': 'green'},   // alt-opt-num1
+        'num2': {'action': 'open for app', 'color': 'green'},   // alt-opt-num2
+        'num3': {'action': 'open for app', 'color': 'green'},   // alt-opt-num3
+        'num4': {'action': 'open for app', 'color': 'green'},   // alt-opt-num4
+        'num5': {'action': 'open for app', 'color': 'green'},   // alt-opt-num5
+        'num6': {'action': 'open for app', 'color': 'green'},   // alt-opt-num6
+        'num7': {'action': 'open for app', 'color': 'green'},   // alt-opt-num7
+        'num8': {'action': 'open for app', 'color': 'green'},   // alt-opt-num8
+        'num9': {'action': 'open for app', 'color': 'green'},   // alt-opt-num9
+        'num0': {'action': 'open for app', 'color': 'green'},   // alt-opt-num0
       
 
         // ********************************************************************************
@@ -783,71 +810,71 @@
       
       
       'alt': {
-        't': 'set tile layout',
-        'g': 'set float layout',
+        't': 'set tile layout',   // alt-t
+        'g': 'set float layout',  // alt-g
         
         // 'u': '', // TODO: FIXME
         // 'i': '', // TODO: FIXME
         // 'o': '',  // TODO: FIXME
         // 'p': '', // TODO: FIXME
         
-        'q': 'left half+',
-        'w': 'center half+',
-        'e': 'right half+',
-        'r': 'reasonable resize',
+        'q': 'left half+',            // alt-q
+        'w': 'center half+',          // alt-w
+        'e': 'right half+',           // alt-e
+        'r': 'reasonable resize',     // alt-r
         
-        'a': { action: 'top left corner', color: 'light-blue' },
-        's': { action: 'top right corner', color: 'light-blue' },
-        'z': { action: 'bottom left corner', color: 'light-blue' },
-        'x': { action: 'bottom right corner', color: 'light-blue' },
+        'a': { action: 'top left corner', color: 'light-blue' },      // alt-a
+        's': { action: 'top right corner', color: 'light-blue' },     // alt-s
+        'z': { action: 'bottom left corner', color: 'light-blue' },   // alt-z
+        'x': { action: 'bottom right corner', color: 'light-blue' },  // alt-x
         
-        'd': 'center window',
-        'f': 'float/pin window',
+        'd': 'center window',          // alt-d
+        'f': 'float/pin window',       // alt-f
         
-        'y': 'trello resize',
-        'u': 'leet top resize',
-        'i': 'leet side resize',
+        'y': 'trello resize',          // alt-y
+        'u': 'leet top resize',        // alt-u
+        'i': 'leet side resize',       // alt-i
         
         
-        '[': 'max width',
-        ']': 'max height',
+        '[': 'max width',              // alt-[
+        ']': 'max height',             // alt-]
         
-        '-': 'make larger',
-        '=': 'make smaller',
+        '-': 'make larger',            // alt--
+        '=': 'make smaller',           // alt-=
     
-        'm': 'almost maximize',
+        'm': 'almost maximize',        // alt-m
     
-        '1': { action: 'jump to desktop 1', color: 'dark-blue' },
-        '2': { action: 'jump to desktop 2', color: 'dark-blue' },
-        '3': { action: 'jump to desktop 3', color: 'dark-blue' },
-        '4': { action: 'jump to desktop 4', color: 'dark-blue' },
-        '5': { action: 'jump to desktop 5', color: 'dark-blue' },
-        '6': { action: 'jump to desktop 6', color: 'dark-blue' },
-        '7': { action: 'jump to desktop 7', color: 'dark-blue' },
-        '8': { action: 'jump to desktop 8', color: 'dark-blue' },
-        '9': { action: 'jump to desktop 9', color: 'dark-blue' },
-        '0': { action: 'jump to desktop 0', color: 'dark-blue' },
+        '1': { action: 'jump to desktop 1', color: 'dark-blue' },   // alt-1
+        '2': { action: 'jump to desktop 2', color: 'dark-blue' },   // alt-2
+        '3': { action: 'jump to desktop 3', color: 'dark-blue' },   // alt-3
+        '4': { action: 'jump to desktop 4', color: 'dark-blue' },   // alt-4
+        '5': { action: 'jump to desktop 5', color: 'dark-blue' },   // alt-5
+        '6': { action: 'jump to desktop 6', color: 'dark-blue' },   // alt-6
+        '7': { action: 'jump to desktop 7', color: 'dark-blue' },   // alt-7
+        '8': { action: 'jump to desktop 8', color: 'dark-blue' },   // alt-8
+        '9': { action: 'jump to desktop 9', color: 'dark-blue' },   // alt-9
+        '0': { action: 'jump to desktop 0', color: 'dark-blue' },   // alt-0
 
-        'num1': '3x3 grid position',
-        'num2': '3x3 grid position',
-        'num3': '3x3 grid position',
-        'num4': '3x3 grid position',
-        'num5': '3x3 grid position',
-        'num6': '3x3 grid position',
-        'num7': '3x3 grid position',
-        'num8': '3x3 grid position',
-        'num9': '3x3 grid position',
-        'num0': { action: 'resize & center', color: 'red' },
+        'num1': '3x3 grid position',  // alt-num1
+        'num2': '3x3 grid position',  // alt-num2
+        'num3': '3x3 grid position',  // alt-num3
+        'num4': '3x3 grid position',  // alt-num4
+        'num5': '3x3 grid position',  // alt-num5
+        'num6': '3x3 grid position',  // alt-num6
+        'num7': '3x3 grid position',  // alt-num7
+        'num8': '3x3 grid position',  // alt-num8
+        'num9': '3x3 grid position',  // alt-num9
+        'num0': { action: 'resize & center', color: 'red' },  // alt-num0
 
         // ********************************************************************************
         // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
         // REMEMBER! so even if I change 'alt' to be app-switch instead of windowMan1, the alt off-limit keys (like alt-c & alt-tab etc) are STILL THE EXACT SAME (e.g. alt-tab is still off-limits even if alt is now app-switch category instead of windowMan1 category) since those off-limit keys are reserved for system/app-switching actions that I don't want to mess with regardless of which mod group is app-switching vs window management vs misc etc.
         // THE OFF LIMIT KEYS for this 'alt' group:
-        'left': { action: 'alt reserved', color: 'dark-grey' }, // KIM can't use arrow keys for 'alt' shortcuts bc of some niche conflicts that aren't worth trying to dev some workaround for (esp alt-k :: raycast, and chrome/vscodes actions)
+        'left': { action: 'alt reserved', color: 'dark-grey' },    // KIM can't use arrow keys for 'alt' shortcuts bc of some niche conflicts that aren't worth trying to dev some workaround for (esp alt-k :: raycast, and chrome/vscodes actions)
         'right': { action: 'alt reserved', color: 'dark-grey' },
         'up': { action: 'alt reserved', color: 'dark-grey' },
         'down': { action: 'alt reserved', color: 'dark-grey' },
-        'k': { action: 'alt reserved', color: 'dark-grey' }, // needs this one avail bc of raycasts internal 'alt-k' actions which we're not able to work around/change (at least until raycast adds option to customize this shortcut)
+        'k': { action: 'alt reserved', color: 'dark-grey' },       // needs this one avail bc of raycasts internal 'alt-k' actions which we're not able to work around/change (at least until raycast adds option to customize this shortcut)
         'tab': { action: 'alt reserved', color: 'dark-grey' },
         'c': { action: 'alt reserved', color: 'dark-grey' },
         'space': { action: 'alt reserved', color: 'dark-grey' },
@@ -856,50 +883,50 @@
   
 
       'alt-shift': {
-        'q': 'quit app',
-        'w': 'close window',
-        'e': 'exit aero/glaze',
-        'r': 'reload config',
+        'q': 'quit app',        // alt-shift-q
+        'w': 'close window',    // alt-shift-w
+        'e': 'exit aero/glaze', // alt-shift-e
+        'r': 'reload config',   // alt-shift-r
         
-        'x': { action: 'quit all but curr', color: 'purple' },
+        'x': { action: 'quit all but curr', color: 'purple' }, // alt-shift-x
         
-        'c': 'cpy path special', // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
+        'c': 'cpy path special', // alt-shift-c             // TODO: FIXME this shortcut may be better fit in MISC/HYPER cat
         
         // 'l': 'launch my apps scr',
-        'l': { action: 'launch my apps scr', color: 'red' }, // (NOT set up in MAC side) (search "!+l" in ahk for win-side...)
+        'l': { action: 'launch my apps scr', color: 'red' },   // alt-shift-l        // (NOT set up in MAC side) (search "!+l" in ahk for win-side...)
         
-        'left': 'move left',
-        'right': 'move right',
-        'up': 'move up',
-        'down': 'move down',
+        'left': 'move left',    // alt-shift-left
+        'right': 'move right',  // alt-shift-right
+        'up': 'move up',        // alt-shift-up
+        'down': 'move down',    // alt-shift-down
 
-        '1': 'send app desktop 1',
-        '2': 'send app desktop 2',
-        '3': 'send app desktop 3',
-        '4': 'send app desktop 4',
-        '5': 'send app desktop 5',
-        '6': 'send app desktop 6',
-        '7': 'send app desktop 7',
-        '8': 'send app desktop 8',
-        '9': 'send app desktop 9',
-        '0': 'send app desktop 0',
+        '1': 'send app desktop 1',    // alt-shift-1
+        '2': 'send app desktop 2',    // alt-shift-2
+        '3': 'send app desktop 3',    // alt-shift-3
+        '4': 'send app desktop 4',    // alt-shift-4
+        '5': 'send app desktop 5',    // alt-shift-5 
+        '6': 'send app desktop 6',    // alt-shift-6
+        '7': 'send app desktop 7',    // alt-shift-7
+        '8': 'send app desktop 8',    // alt-shift-8
+        '9': 'send app desktop 9',    // alt-shift-9
+        '0': 'send app desktop 0',    // alt-shift-0
 
-        'num1': 'vol down',
-        'num2': 'vol up',
-        'num3': 'emojis picker',
-        'num4': 'env_opt || ____',
-        'num5': '',
-        'num6': { action: 'BTT  | AHK?', color: 'yellow' },
-        'num7': '',
-        'num8': '',
-        'num9': '',
-        'num0': 'TBD',
+        'num1': 'vol down',     // alt-shift-num1
+        'num2': 'vol up',     // alt-shift-num2
+        'num3': 'emojis picker',  // alt-shift-num3
+        'num4': 'env_opt || ____', // alt-shift-num4
+        'num5': '', // alt-shift-num5
+        'num6': { action: 'BTT  | AHK?', color: 'yellow' }, // alt-shift-num6
+        'num7': '', // alt-shift-num7
+        'num8': '', // alt-shift-num8
+        'num9': '', // alt-shift-num9
+        'num0': 'TBD', // alt-shift-num0
     
         // ********************************************************************************
         // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
         // REMEMBER! so even if I change 'alt' to be app-switch instead of windowMan1, the alt off-limit keys (like alt-c & alt-tab etc) are STILL THE EXACT SAME (e.g. alt-tab is still off-limits even if alt is now app-switch category instead of windowMan1 category) since those off-limit keys are reserved for system/app-switching actions that I don't want to mess with regardless of which mod group is app-switching vs window management vs misc etc.
         // THE OFF LIMIT KEYS for this 'alt-shift' group:
-        'tab': { action: 'alt-shift reserved', color: 'dark-grey' }, // 
+        'tab': { action: 'alt-shift reserved', color: 'dark-grey' }, // alt-shift-tab
       },  
 
 
@@ -924,7 +951,6 @@
         
         'k': { action: 'keyboard visualizer', color: 'purple' }, // [WINDOWS-SIDE is buggy bc it is not Switching to chrome window after opening the html like it does on MAC] maybe this should be moved to app-switch mod group bc it's a better fit?
         
-        
         'space': 'trello new card', // (leave this one alone...)MAY NOT BE ABLE TO CHANGE THIS ONE BC OUR HYPER-Y shortcut works by sending the HYPER-spacebar keys bc Trello app doesnt have many options for their global new-card command)
         
         '1': 'screensh main',
@@ -933,7 +959,6 @@
         '4': 'screensh scrolling',
         '5': 'screensh menu',
         '6': 'screensh GIF',
-        
         
         '`': { action: 'screensh dir', color: 'red' }, // TODO: get setup on WINDOWS-side(unsure how backtick (`) syntax is in AHK)
         'r': 'quick_ref dir', 
