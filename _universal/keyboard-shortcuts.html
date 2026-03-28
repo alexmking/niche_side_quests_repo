@@ -719,13 +719,14 @@
       // left-opt ==> (alt-opt) 
       // (and bc the actual input is the same on the os's end, we don't have to change any of the below shortcuts since they still are technically 'alt-option' shortcuts even though in practice they're really 'opt' shortcuts (since 1 opt key press is now === alt-opt press))
       // -------------------------------------------------
+      // %%%%%% STRIVE FOR (MAC | WINDOWS) %%%%%%%% in below key-defintions (mac definition comes first on line1, then windows-def on line 2) 
       'alt-option': {
-        'a': 'Things3 or Teams',
+        'a': 'things3 || teams',
         'w': 'aspenB | jira',
         'e': 'excel ref doc',
         'r': 'ref board || excel',
-        't': 'terminal',
-        'y': 'trello',
+        't': 'iTerm2 | cmder',
+        'y': 'trello desktop',
         'i': 'inbox mail',
         // 'tab': 'Things3 extra',
         // '`': 'Things3 extra',
@@ -735,13 +736,13 @@
         'f': 'finder',
         'g': 'github desktop',
         'h': 'HOMEdoc | jira',
-        'j': 'jira || empty', 
+        'j': '____ || jira', 
 
         'z': 'zzshorts (no-ult)',
         'c': 'vs code',
-        'v': 'visual st. | empty',
+        'v': '____ || visual st.',
         'b': 'browser',
-        'm': 'teams | things3',
+        'm': 'things3 || teams',
         'n': 'notes',
       
         // FIXME! THESE NUMROW shortcuts are the old ones and I should consider del/replacing them since it's prime real-estate
@@ -836,7 +837,7 @@
         'num7': '3x3 grid position',
         'num8': '3x3 grid position',
         'num9': '3x3 grid position',
-        'num0': 'TBD',
+        'num0': { action: 'resize & center', color: 'red' },
 
         // ********************************************************************************
         // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
@@ -885,10 +886,10 @@
 
         'num1': 'vol down',
         'num2': 'vol up',
-        'num3': 'apple emojis',
-        'num4': 'env_opt excel',
+        'num3': 'emojis picker',
+        'num4': 'env_opt || ____',
         'num5': '',
-        'num6': { action: 'BTT (better touch tool)', color: 'yellow' },
+        'num6': { action: 'BTT  | AHK?', color: 'yellow' },
         'num7': '',
         'num8': '',
         'num9': '',
@@ -934,7 +935,7 @@
         '6': 'screensh GIF',
         
         
-        '`': { action: 'screenshot dir', color: 'light-blue' }, // CONSIDER moving this to make room for raycast 'search-notes' shortcut which may prove to be more imp/ useful (then maybe I could move this sceenshot dir shortcut to one of the numRow keys? since that's where all the other screenshot shortcuts are rn)
+        '`': { action: 'screensh dir', color: 'red' }, // TODO: get setup on WINDOWS-side(unsure how backtick (`) syntax is in AHK)
         'r': 'quick_ref dir', 
         
         'l': 'leetauto small',
@@ -944,7 +945,7 @@
         
         'tab': { action: 'srch tabs (chrome)', color: 'yellow' }, // fzf search across all chrome tabs currently open (still NOT SURE if this is useful enough to merit its own key/shortuctu here)  (GOOD KEYS ARE: hyper-T, hyper-TAB, hyper-B (for browser))
         'm': { action: 'srch menu bar', color: 'yellow' }, // fzf search all MENU options of curr window/app (IOW, if you're in VSCODE, it will fzf search all the top-bar vs-code stuff like File, Edit, Selection,View,Go,Run,Terminal,Window,Help) 
-        'f': { action: 'firefox? | empty', color: 'yellow' },
+        'f': { action: 'firefox? | ___', color: 'yellow' },
         
         //--------------------------------------------------------------------------------
         // TODO: det diff between rayc-NOTES and rayc-SNIPPETS, and then decide what to do w these quick-search shortcuts...
