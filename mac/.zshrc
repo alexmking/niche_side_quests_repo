@@ -840,13 +840,17 @@ alias cdnichewindows="cd $REPO_DIR/niche_side_quests_repo/windows"
 alias fzfaliases="cat /Users/alexking/.zshrc | fzf"
 alias fzfalias="cat /Users/alexking/.zshrc | fzf"
 alias fzfuseraliases="cat /Users/alexking/.zshrc | fzf"
-alias fzfcurrentkeyboardbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfkeyboardbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfkeyboard="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfkeyb="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfkb="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
-alias fzfshortcuts="cat $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt | fzf"
+
+
+alias fzfkeyb="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html | fzf"
+alias fzfkeybvis="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
+alias fzfkeybviz="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
+alias fzfcurrentkeyboardbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
+alias fzfkeyboardbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
+alias fzfbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
+alias fzfkeyboard="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
+alias fzfkb="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
+alias fzfshortcuts="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
 
 alias fzfaero="cat /Users/alexking/.config/aerospace/aerospace.toml | fzf"
 alias fzfohmyzsh="cat ~/.oh-my-zsh | fzf"
@@ -912,16 +916,18 @@ alias editfzf="code /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"
 alias editfzfsettings="code /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"
 alias editfzfbindings="code /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"
 
-# alias editkeyb="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
-# alias editkeybtxt="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
-# alias editcurrentkeyb="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
-# alias editcurrentkeyboardbindings="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
-# alias editcurrentkeyboardbindingstxt="code /usr/local/bin/alexScripts/current_keyboard_bindings.txt"
-alias editkeyb="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-alias editkeybtxt="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-alias editcurrentkeyb="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-alias editcurrentkeyboardbindings="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
-alias editcurrentkeyboardbindingstxt="code $REPO_DIR/niche_side_quests_repo/_universal/current_keyboard_bindings.txt"
+
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+alias editkeyb="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editkeybtxt="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editcurrentkeyb="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editcurrentkeyboardbindings="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editcurrentkeyboardbindingstxt="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 # for the CLOUD madden
