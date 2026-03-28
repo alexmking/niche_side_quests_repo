@@ -457,11 +457,20 @@ run = ["layout floating","move-node-to-workspace ||--9--||"]
     # qwer
     # ----------------------
     # cmd-shift-q = ['QUIT ENTIRE APPLICATION'] # this one is hard for BTT to do atm and aero cant do it either so not sure what todo here yet
-    cmd-shift-w = ['close'] # close curr window (bc 
     # cmd-shift-e = ['exit-or-kill-aerospace'] # (using BTT for this one, BUT likely Aerosp will release their own 'exit' command like glaze has)
     cmd-shift-r = ['reload-config']
-    cmd-shift-t = ['flatten-workspace-tree'] # reset layout was previously cmd-shift-w, but moved it bc I like the standard **cmd-shift-W == closeWindow/Tab, and cmd-shift-Q == closeEntireApplication**
+    # cmd-shift-t = ['flatten-workspace-tree'] # reset layout was previously cmd-shift-w, but moved it bc I like the standard **cmd-shift-W == closeWindow/Tab, and cmd-shift-Q == closeEntireApplication**
     
+    # 2 options for the 'w' shortcut: (close window, or reset layout)...
+    # I may just export this out to BTT...since I dont trust Aeros commands as much as BTT...
+    # cmd-shift-w = ['close'] # REDRAW WINDOWS (prob not that useful anymore now that were not doing TILIING default but still good to keep around, at least for now
+    # cmd-shift-w = ['close (PREVISOULY USED 'W' here for another global/universal close-WINDOW command to go along with the global/univeral CLOSE-APP command )'] # close curr window (bc 
+    
+
+
+
+
+
     # ----------------------
     # x,L,t 
     # ----------------------
