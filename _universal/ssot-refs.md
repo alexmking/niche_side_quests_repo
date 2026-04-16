@@ -1,5 +1,10 @@
 # ssot-refs 
 
+#### MISC TODOS:
+- ripgrep reads this .md file as plain-text instead of the markdown-version (so atm the results are including all the ugly markdown stuff)
+    - NOT 100% sure if I want our lookup auto to read plain-text 
+    - ALSO...this could be **resolved** after we check out **GPTs** 'formatted' output and other enhancements to the .sh script 
+
 #### topics/sections in this ref doc
 - acronyms / terminology / clients / etc
 - keywords / prefixes / naming-conventions
