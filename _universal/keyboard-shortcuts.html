@@ -558,6 +558,35 @@
       text-align: center;
       margin-top: 20px;
     }
+
+    /* ── Shortlist panel ──────────────────────────────────── */
+    .shortlist-subtitle {
+      color: #555;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: -10px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #22223a;
+    }
+
+    .shortlist-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 9px;
+      font-size: 0.82rem;
+      color: #888;
+    }
+
+    .shortlist-bullet {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #444;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -616,6 +645,12 @@
         <div class="legend-swatch swatch-unbound"></div> No shortcut
       </div>
     </div>
+  </div>
+
+  <div class="shortcut-list" id="shortlist-panel">
+    <h3 id="shortlist-title">Shortlist to Consider</h3>
+    <p class="shortlist-subtitle">may try adding</p>
+    <div id="shortlist-items"></div>
   </div>
 
   <div class="shortcut-list">
@@ -973,8 +1008,8 @@
         'z': 'zzshorts ultra',      // hyper-z
         
         'tab': { action: 'srch tabs (chrome)', color: 'yellow' }, // hyper-tab        // fzf search across all chrome tabs currently open (still NOT SURE if this is useful enough to merit its own key/shortuctu here)  (GOOD KEYS ARE: hyper-T, hyper-TAB, hyper-B (for browser))
-        'm': { action: 'srch menu bar', color: 'yellow' },        // hyper-m          // fzf search all MENU options of curr window/app (IOW, if you're in VSCODE, it will fzf search all the top-bar vs-code stuff like File, Edit, Selection,View,Go,Run,Terminal,Window,Help) 
-        'f': { action: 'firefox? | ___', color: 'yellow' },       // hyper-f          
+        // 'm': { action: 'srch menu bar', color: 'yellow' },        // hyper-m          // fzf search all MENU options of curr window/app (IOW, if you're in VSCODE, it will fzf search all the top-bar vs-code stuff like File, Edit, Selection,View,Go,Run,Terminal,Window,Help) 
+        // 'f': { action: 'firefox? | ___', color: 'yellow' },       // hyper-f          
         
         //--------------------------------------------------------------------------------
         // TODO: det diff between rayc-NOTES and rayc-SNIPPETS, and then decide what to do w these quick-search shortcuts...
@@ -984,7 +1019,7 @@
         // SNIPPETS: def merits its own key. So many diff applications for this (see REF board list I made just for snippet ideas/use-cases)
         // NOTES: anything longer than a couple paragraphs should prob default to NOTES instead of SNIPPETS...
         'n': 'search notes rayc',     // hyper-n
-        's': 'srch snippets',         // hyper-s
+        // 's': 'srch snippets',         // hyper-s
         
         // playground for trying other mini-hypers like the one guy on reddit outlined:  https://trello.com/c/XQ73wXyp/677-imagepng
         //
@@ -1023,6 +1058,48 @@
         // 3. fix any discrepancies you find between the visualizer and the actual shortcuts (e.g. if you find a shortcut on the visualizer that doesn't work, or a shortcut that works but isn't on the visualizer, or if you find a tooltip that's wrong, etc)
       }
 };
+
+// ── Shortlist to Consider — per modifier group ──────────────────────────────
+    // (placeholder items — edit these to suit your needs)
+    const shortlistToConsider = {
+      'alt-option': [
+        'Placeholder shortcut idea 1',
+        'Placeholder shortcut idea 2',
+        'Placeholder shortcut idea 3',
+        'Placeholder shortcut idea 4',
+      ],
+      'alt': [
+        'Placeholder shortcut idea 1',
+        'Placeholder shortcut idea 2',
+        'Placeholder shortcut idea 3',
+        'Placeholder shortcut idea 4',
+      ],
+      'alt-shift': [
+        'COPIED FROM HYPER modGROUP fyi',
+        'lookup-madden (M, P, A,S,D,UIOP?)',
+        'lookup-keybVis (? above)',
+        'lookup-refs (R? above?)',
+        'search/lookup snippets (S?)',
+        'firefox?? (F)',
+        'maybe try to get all the lookups to be clustered together like ASZX or UIOP etc',
+        '',
+        '',
+        'search menu bar (M)(better as ALT-SHIFT bc lower pri?)',
+        '',
+      ],
+      'hyper': [
+        'lookup-madden (M, P, A,S,D,UIOP?)',
+        'lookup-keybVis (? above)',
+        'lookup-refs (R? above?)',
+        'search/lookup snippets (S?)',
+        'firefox?? (F)',
+        'maybe try to get all the lookups to be clustered together like ASZX or UIOP etc',
+        '',
+        '',
+        'search menu bar (M)(better as ALT-SHIFT bc lower pri?',
+        '',
+      ],
+    };
 
 // ── QWERTY keyboard layout definition ────────────────────────────────────────
 // Format: [displayLabel, lookupKey, ?extraCssClass]
@@ -1091,6 +1168,7 @@ function setTab(tab) {
   });
   renderKeyboard();
   renderList();
+  renderShortlist();
 }
 
 // ── Modifier trigger keys per tab ────────────────────────────────────────────
@@ -1209,6 +1287,38 @@ function renderKeyboard() {
   kb.appendChild(numpadSect);
 }
 
+// ── Render shortlist to consider ────────────────────────────────────────────
+function renderShortlist() {
+  const items = shortlistToConsider[currentTab] || [];
+  const titles = {
+    'alt':        'Alt — Shortlist',
+    'alt-shift':  'Alt + Shift — Shortlist',
+    'alt-option': 'Alt + Option — Shortlist',
+    'hyper':      'Hyper — Shortlist',
+  };
+  document.getElementById('shortlist-title').textContent = titles[currentTab];
+
+  const container = document.getElementById('shortlist-items');
+  container.innerHTML = '';
+
+  if (items.length === 0) {
+    container.innerHTML = '<div class="no-shortcuts">No items listed</div>';
+    return;
+  }
+
+  items.forEach(text => {
+    const item = document.createElement('div');
+    item.className = 'shortlist-item';
+    const bullet = document.createElement('span');
+    bullet.className = 'shortlist-bullet';
+    const desc = document.createElement('span');
+    desc.textContent = text;
+    item.appendChild(bullet);
+    item.appendChild(desc);
+    container.appendChild(item);
+  });
+}
+
 // ── Render shortcut list ──────────────────────────────────────────────────────
 function renderList() {
   const map = shortcuts[currentTab] || {};
@@ -1290,6 +1400,7 @@ function renderList() {
 // Initial render
 renderKeyboard();
 renderList();
+renderShortlist();
 
 // ── Keyboard navigation (← → to cycle tabs) ──────────────────────────────────
 const tabOrder = ['alt-option', 'alt', 'alt-shift', 'hyper'];
