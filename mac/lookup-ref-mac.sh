@@ -1,15 +1,18 @@
 #!/bin/bash
 
 # @raycast.schemaVersion 1
-# @raycast.title Lookup Aero
+# @raycast.title Lookup-Ref
 # @raycast.mode fullOutput
-# @raycast.argument1 { "type": "text", "placeholder": "Lookup Aero..." }
+# @raycast.argument1 { "type": "text", "placeholder": "Lookup-Ref..." }
+# @raycast.description lookup ssot-ref doc
+# @raycast.packageName Developer Utils
+# @raycast.icon 👀
 
 # FILE="$HOME/ssot-refs.txt"
 # /usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt
 # FILE="/usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt"
 # FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
 
 QUERY="$1"
 

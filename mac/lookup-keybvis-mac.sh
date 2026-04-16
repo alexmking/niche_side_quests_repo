@@ -1,14 +1,17 @@
 #!/bin/bash
 
 # @raycast.schemaVersion 1
-# @raycast.title Search Madden
+# @raycast.title Lookup-KeybVis
 # @raycast.mode fullOutput
-# @raycast.argument1 { "type": "text", "placeholder": "Search Madden..." }
+# @raycast.argument1 { "type": "text", "placeholder": "Lookup-KeybVis..." }
+# @raycast.description lookup keyboard visualization html
+# @raycast.packageName Developer Utils
+# @raycast.icon 👀
 
 # FILE="$HOME/ssot-refs.txt"
 # /usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt
 # FILE="/usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt"
-FILE="/usr/local/bin/alexScripts/raycast_scripts/ssot-madden.txt"
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
 
 QUERY="$1"
 

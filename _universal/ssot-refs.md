@@ -1,9 +1,16 @@
 # ssot-refs 
 
-#### MISC TODOS:
+#### MISC TODOS: (DELETE THESE FREQUENTLY)
 - ripgrep reads this .md file as plain-text instead of the markdown-version (so atm the results are including all the ugly markdown stuff)
     - NOT 100% sure if I want our lookup auto to read plain-text 
     - ALSO...this could be **resolved** after we check out **GPTs** 'formatted' output and other enhancements to the .sh script 
+- QUESTION: is there ANY .sh file that could be used for both win and mac? ANSWER: No, bc FILEpath needs to be diff, 
+    - SO THEN TODO: remove all .sh files in _UNIVERSAL dir and move them to their respective /win or /mac dir 
+    - this is NOT talking about the actual files 'BEING' searched (like .txt or keybvis.html). These CAN be shared for both win and mac so theese SHOULD be in the _UNVIERSAL dir (unlike the .sh files)
+- Change all .sh filenames to use 'lookup' instead of 'search' 
+    - also append the prefix 'scr-' to all of the .sh file names as well
+        - search-keybvis.sh ==> scr-lookup-keybvis.sh
+
 
 #### topics/sections in this ref doc
 - acronyms / terminology / clients / etc
@@ -88,6 +95,107 @@ blah blah blah.
 
 ### CATCH-ALL / MISC
 *** 
+
+GIT PROMPT SYMBOLS and how to read/interpret them:  
+https://chatgpt.com/c/69e167f7-a508-83ea-be41-4ec2d78654a7  
+- main !13 ?6 ---> means you have 13 files with changes that have NOT been staged yet () and 6 files are UNTRACKED (aka need to git add)
+- !13 == means 13 of your 'tracked' files have changes that are not staged yet ... OR IOW...
+- !N == “Out of all tracked files, N of them have changes that are not staged.”  ... OR IOW...
+- !N == “N tracked files have been modified in the **working directory** but are not in the index (not staged).”
+- 
+- 
+- 
+
+```
+======================
+GIT PROMPT CHEAT SHEET
+======================
+
+BRANCH / POSITION
+-----------------
+main                → current branch
+feature/login       → current branch
+HEAD                → detached HEAD state
+
+FILE STATE INDICATORS
+---------------------
+!N   → Modified (unstaged changes)
++N   → Staged changes (ready to commit)
+?N   → Untracked files (not added to git)
+
+Example:
+main !13 +2 ?6
+→ 13 modified, 2 staged, 6 untracked
+
+
+REMOTE SYNC STATUS
+------------------
+⇡N   → Ahead of remote by N commits (need git push)
+⇣N   → Behind remote by N commits (need git pull)
+⇡N ⇣M → Diverged (both ahead and behind)
+
+Example:
+main ⇡3       → 3 commits ahead
+main ⇣2       → 2 commits behind
+main ⇡2 ⇣1    → diverged
+
+
+MERGE / REBASE STATES
+---------------------
+MERGING        → merge in progress
+REBASING       → rebase in progress
+CHERRY-PICKING → cherry-pick in progress
+
+(avoid switching branches until resolved)
+
+
+STASH
+-----
+$N   → N stashes exist
+
+Example:
+$3 → 3 stashed changes
+
+
+CONFLICTS
+---------
+✖N   → N files have merge conflicts
+
+
+REPO STATUS
+-----------
+✔    → clean working directory
+✗    → dirty (has changes)
+
+
+QUICK VERIFY COMMANDS
+---------------------
+git status       → full detailed view
+git status -sb   → compact view (similar to prompt)
+
+
+MENTAL MODEL
+------------
+Where am I?        → branch name
+What changed?      → ! (modified), + (staged), ? (untracked)
+Am I synced?       → ⇡ / ⇣
+Anything unusual?  → merge, rebase, conflicts, stash
+
+
+EXAMPLE BREAKDOWN
+-----------------
+main !13 ?6
+
+main → branch
+!13  → 13 modified (unstaged)
+?6   → 6 untracked
+(no +) → nothing staged
+(no arrows) → in sync with remote
+```
+
+
+
+
 blah blah blah.  
 blah blah blah.  
 blah blah blah.  
