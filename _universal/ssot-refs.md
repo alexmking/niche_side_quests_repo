@@ -102,7 +102,8 @@ https://chatgpt.com/c/69e167f7-a508-83ea-be41-4ec2d78654a7
 - !13 == means 13 of your 'tracked' files have changes that are not staged yet ... OR IOW...
 - !N == “Out of all tracked files, N of them have changes that are not staged.”  ... OR IOW...
 - !N == “N tracked files have been modified in the **working directory** but are not in the index (not staged).”
-- 
+- EXAMPLE main !13 ?6:
+    - now when I run 'git add .' then we'll get 'main +24'...(UPDATE! it turns out this +24 val is some issue w my prompts git feature on macs-side(not confirmed if also exists on windows prompt side) so dont read too into it at the moment.
 - 
 - 
 
