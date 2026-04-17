@@ -2,10 +2,10 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Lookup KeybVis
+# @raycast.title Lookup Ref
 # @raycast.mode fullOutput
-# @raycast.argument1 { "type": "text", "placeholder": "Lookup KeybVis..." }
-# @raycast.description Lookup KeybVis config
+# @raycast.argument1 { "type": "text", "placeholder": "Lookup Ref..." }
+# @raycast.description Lookup ssot-ref.md 
 # @raycast.packageName Developer Utils
 # @raycast.icon 👀
 
@@ -18,8 +18,7 @@
 # FILE="/usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt"
 # FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
 # FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
-# FILE="C:\Users\aking\Downloads\cmder\config\user_aliases.cmd"
-FILE="D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html"
+FILE="D:\git\niche_side_quests_repo\_universal\ssot-refs.md"
 
 QUERY="$1"
 
@@ -36,3 +35,5 @@ if [ -n "$PRIMARY" ]; then
 fi
 
 rg -i "$QUERY" "$FILE" | head -n 20
+
+

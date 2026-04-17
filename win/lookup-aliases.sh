@@ -5,7 +5,9 @@
 # @raycast.title Lookup Aliases
 # @raycast.mode fullOutput
 # @raycast.argument1 { "type": "text", "placeholder": "Lookup Aliases..." }
-# @raycast.icon 🤖
+# @raycast.description Lookup Aliases config
+# @raycast.packageName Developer Utils
+# @raycast.icon 👀
 
 # Documentation:
 # @raycast.author alexmking921
