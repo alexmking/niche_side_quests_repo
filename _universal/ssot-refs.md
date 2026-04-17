@@ -4,12 +4,12 @@
 - ripgrep reads this .md file as plain-text instead of the markdown-version (so atm the results are including all the ugly markdown stuff)
     - NOT 100% sure if I want our lookup auto to read plain-text 
     - ALSO...this could be **resolved** after we check out **GPTs** 'formatted' output and other enhancements to the .sh script 
-- QUESTION: is there ANY .sh file that could be used for both win and mac? ANSWER: No, bc FILEpath needs to be diff, 
-    - SO THEN TODO: remove all .sh files in _UNIVERSAL dir and move them to their respective /win or /mac dir 
-    - this is NOT talking about the actual files 'BEING' searched (like .txt or keybvis.html). These CAN be shared for both win and mac so theese SHOULD be in the _UNVIERSAL dir (unlike the .sh files)
 - Change all .sh filenames to use 'lookup' instead of 'search' 
     - also append the prefix 'scr-' to all of the .sh file names as well
         - search-keybvis.sh ==> scr-lookup-keybvis.sh
+- **Remaining EDIT commands to consider creating:**
+    - **mac:** zprofile, p10k, prompt, madden??, morning-leet, scratchpaper,launchmainapps, vscode-keybindings, (and a bunch of other misc ones I'm prob forgetting)
+    - **win:** flexprompt, morningleet, launchmyapps,  scratchpaper, fzf?, (and all my mini scripts like listenvvariables etc)
 
 
 #### topics/sections in this ref doc
@@ -21,6 +21,7 @@
     - TODO: prob will take some time, but can do it gradually 
 - some ssot-like info from EXCEL DOCS (both mac and win)
     - TODO: prob will take some time, but can do it gradually
+- useful Links/paths (esp to quick-copy on the fly)
 - catch-all / misc 
 
 ###### other topics likely not going to be in this doc:
@@ -91,9 +92,22 @@ blah blah blah.
 ##### this section will likely be combined into the other ones based on the actual info of the EXCEL doc(s). But the first step is to simply get the info here in this doc and then worry about where/which-section later.
 blah blah blah.  
 blah blah blah.  
-blah blah blah.  
+blah blah blah. 
 
-### CATCH-ALL / MISC
+
+### USEFUL LINKS/PATHS 
+*** 
+##### (this is where the enhancement of auto-copying results would be nice as it would allow us to quickly grab paths/links on the fly which is lowkey super-useful, as it would be another upgrade similar to my amazing ALT-SHIFT-C 'copy-path' script that I use 100 times a day)
+FILE="/usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt"  
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"  
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"  
+FILE="/Users/alexking/Desktop/DESKTOP_SHELF/2024_and_prior/  TEMPORARY_FOLDER_TO_CLEAR_DESKTOP_UNTIL_INTERNSHIP_SEARCHDONE/ssot-madden.txt"  
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"  
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"  
+
+
+
+### CATCH-ALL / MISC / USEFUL-LINKS/PATHS 
 *** 
 
 GIT PROMPT SYMBOLS and how to read/interpret them:  
