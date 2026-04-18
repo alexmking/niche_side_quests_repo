@@ -44,6 +44,10 @@ fi
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/bin:$PATH"  # ADDED Dec 4, 2025 after pbcopy command not found...
+# !!! WHEN WE MOVE alexScripts to amk/tools we will have to UNCOMMENT the below line so it can find the new script dir (and this puts it at the top of the path-searches so it should be just as fast)
+export PATH="$HOME/amk/tools/alexScripts:$PATH"
+# !!! WHEN WE MOVE alexScripts to amk/tools we will have to UNCOMMENT the below line so it can find the new script dir (and this puts it at the top of the path-searches so it should be just as fast)
+
 
 # /usr/local/bin:$PATH
 
@@ -357,16 +361,32 @@ source $ZSH/oh-my-zsh.sh # AMK21
 # ===================================
 # my environment variables (these WILL persist fyi)
 # ===================================
-export ALEXSCRIPTS_DIR="/usr/local/bin/alexScripts"
-export REPO_DIR="/Users/alexking/local_docs/GIT_STUFF"
-export NICHE_REPO_DIR="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
+# export AMK_DIR="$HOME/amk"
+# export ALEXSCRIPTS_DIR="$HOME/amk/tools/alexScripts"
+# export REPO_DIR="/Users/alexking/local_docs/GIT_STUFF"
+# export NICHE_REPO_DIR="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo"
+
+export AMK_DIR="$HOME/amk"
+export ALEXSCRIPTS_DIR="$HOME/amk/tools/alexScripts"
+export REPO_DIR="/Users/alexking/amk/tools/GIT_STUFF"
+export NICHE_REPO_DIR="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo"
+
+# export AMK_DIR="/Users/alexking/amk"
+# export ALEXSCRIPTS_DIR="/Users/alexking/amk/tools/alexScripts"
+# export REPO_DIR="/Users/alexking/amk/tools/GIT_STUFF"
+# export NICHE_REPO_DIR="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo"
+
+# /Users/alexking/amk/dropzone/local_docs/GIT_STUFF/niche_side_quests_repo
+
 #TODO ADD MORE ENV VARS LATER AS NEEDED...
 #TODO ADD MORE ENV VARS LATER AS NEEDED...
 #TODO ADD MORE ENV VARS LATER AS NEEDED...
 #TODO ADD MORE ENV VARS LATER AS NEEDED...
 
 # Development paths
-export PROJECTS_DIR="$HOME/local_docs/GIT_STUFF"
+# export PROJECTS_DIR="$HOME/local_docs/GIT_STUFF"
+export PROJECTS_DIR="$HOME/amk/projects"
+
 # export SCRIPTS_DIR="$ALEXSCRIPTS_DIR"  # You already have this defined
 
 # Editor preferences
@@ -390,7 +410,7 @@ export PROJECTS_DIR="$HOME/local_docs/GIT_STUFF"
 # export DESKTOP="$HOME/Desktop"
 # export DOWNLOADS="$HOME/Downloads"
 # export DOCUMENTS="$HOME/Documents"
-export QUICK_REF_DIR="$HOME/quick_ref"
+export QUICK_REF_DIR="$AMK_DIR/notes/quick_ref"
 export ALL_CONFIGS_DIR="$HOME/ALL_CONFIGS"
 export LEET_DIR="$HOME/Desktop/LEET"
 export LOCAL_DOCS_DIR="$HOME/local_docs"
@@ -500,12 +520,17 @@ alias fixsketchybar="sketchybar --reload"
 
 alias rootdir="cd /"
 alias homedir="cd /Users/alexking"
-
 alias cdrootdir="cd /"
 alias cdhomedir="cd ~"
+alias cdroot="cd /"
+alias cdhome="cd ~"
+alias cdamk="cd ~/Users/alexking/amk"
+alias amk="cd ~/Users/alexking/amk"
 
 
-####### NEW 'HOME' after FILE-SYSTEM re-organizing 2026 #####
+
+
+####### NEW 'HOME' after FILE-SYSTEM re-organizming 2026 #####
 # we're leaving Users/alexking alone and instead creating new dir in Users/alexking which will serve as my ACTUAL home dir
 # this way we can leave all the messy hidden config files in alexking dir where they are now and wont have to worry about breaking a bunch of finicky config paths after moving stuff all around
 ##### name ideas ####
@@ -533,10 +558,10 @@ alias cdhomedir="cd ~"
 
 
 
-alias cdrealhome="cd /Users/alexking/<INSERT DIR HERE>"
-alias cdaking="cd /Users/alexking/<INSERT DIR HERE>"
-alias cdking="cd /Users/alexking/<INSERT DIR HERE>"
-alias cdrealhome="cd /Users/alexking/<INSERT DIR HERE>"
+alias cdrealhome="cd /Users/alexking/amk"
+alias cdaking="cd /Users/alexking/amk"
+alias cdking="cd /Users/alexking/amk"
+alias cdrealhome="cd /Users/alexking/amk"
 
 
 # prob not needed tbh but always forget the -a flag w native open command(so dont have to be in /Applications dir to open apps)
@@ -562,48 +587,48 @@ alias killpid="kill"
 
 
 ####### MY STARTUP 'LAUNCH MY MAIN APPS' SCRIPT ALIASES ###########
-alias setupalexenv="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias setupmyapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias setupmyenv="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias launchmainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias launchmyapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias launchmymainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias launchalexapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias scrsetupalexenv="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias scrsetupmyapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias scrsetupmyenv="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias scrlaunchmainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias scrlaunchmyapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias scrlaunchmymainapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias scrlaunchalexapps="/usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias setupalexenv="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias setupmyapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias setupmyenv="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias launchmainapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias launchmyapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias launchmymainapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias launchalexapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias scrsetupalexenv="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias scrsetupmyapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias scrsetupmyenv="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias scrlaunchmainapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias scrlaunchmyapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias scrlaunchmymainapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias scrlaunchalexapps="$ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
 
 
 # open KEYBOARD SHORTCUT VISUALIZER HTML FILE ALIASES (this is the one I use the most so def want an alias for it, and then also add a bunch of variations of the alias name so that no matter what combination of 'keyboard', 'shortcut', 'visualizer', 'viz', 'vis' etc I type, it will work and open the file)
 # alias keybhtml="open -a "chrome" "file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html""
-alias viskeyb="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias viskeyboard="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias vizkeyb="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias vizkeyboard="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias viskeyboardshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias vizkeyboardshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias visshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias vizshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias viskeybshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias vizkeybshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias viskeyboardshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias vizkeyboardshortcuts="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keybvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keybviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keybshortcutvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keybshortcutviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keybshortcutsvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keybshortcutsviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keyboardshortcutsvisualizer="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keyboardshortcutsvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias keyboardshortcutsviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias shortcutsvisualizer="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias shortcutsvis="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias shortcutsviz="open file:///Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias viskeyb="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias viskeyboard="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias vizkeyb="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias vizkeyboard="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias viskeyboardshortcuts="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias vizkeyboardshortcuts="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias visshortcuts="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias vizshortcuts="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias viskeybshortcuts="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias vizkeybshortcuts="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias viskeyboardshortcuts="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias vizkeyboardshortcuts="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keybvis="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keybviz="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keybshortcutvis="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keybshortcutviz="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keybshortcutsvis="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keybshortcutsviz="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keyboardshortcutsvisualizer="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keyboardshortcutsvis="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias keyboardshortcutsviz="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias shortcutsvisualizer="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias shortcutsvis="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias shortcutsviz="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
 
 
 
@@ -638,11 +663,11 @@ alias delfile="rm"
 alias deldir="rm -r"
 
 # leet morning script aliases...(these can accept args just like the WINDOWS side does fyi)
-alias morningleet="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-alias morningwarmup="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-alias nextproblem="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-alias nextleet="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-alias doaproblem="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
+alias morningleet="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+alias morningwarmup="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+alias nextproblem="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+alias nextleet="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+alias doaproblem="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
 
 # #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
 # #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
@@ -730,8 +755,8 @@ alias quickcommitgit="git commit -a -m"
 
 # alias sz="source ~/.zshrc; echo '~/zshrc sourced :)'"
 # alias sourcezshrc="source ~/.zshrc; echo '~/zshrc sourced :)'"
-alias sz="source ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc; echo '~/zshrc sourced :)'"
-alias sourcezshrc="source ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc; echo '~/zshrc sourced :)'"
+alias sz="source $NICHE_REPO_DIR/mac/.zshrc; echo '~/zshrc sourced :)'"
+alias sourcezshrc="source $NICHE_REPO_DIR/mac/.zshrc; echo '~/zshrc sourced :)'"
 
 
 # alias path='echo; tr ";" "\n" <<< "$PATH"; echo;'
@@ -836,19 +861,19 @@ alias cdalexking="cd /Users/alexking"
 alias cdroot="cd /"
 alias cdhome="cd /Users/alexking"
 
-alias cdalexscripts="cd /usr/local/bin/alexScripts"
+alias cdalexscripts="cd $ALEX_SCRIPTS_DIR"
 alias cdconfig="cd $HOME/.config"
 alias cdallconfigs="cd /Users/alexking/ALL_CONFIGS"
 alias cdapps="cd /Applications"
 alias cdapp="cd /Applications"
 alias cdapplications="cd /Applications"
-alias cddownloads="cd /Users/alexking/Downloads"
-alias cdquickref="cd /Users/alexking/quick_ref"
+alias cddownloads="cd $HOME/Downloads"
+alias cdquickref="cd $AMK_DIR/notes/quick_ref"
 
-alias cddesktop="cd /Users/alexking/Desktop"
-alias cdleet="cd /Users/alexking/Desktop/LEET"
-alias cdlocaldocs="cd /Users/alexking/local_docs"
-alias cdlocal="cd /Users/alexking/local_docs"
+alias cddesktop="cd $HOME/Desktop"
+alias cdleet="cd $HOME/Desktop/LEET"
+alias cdlocaldocs="cd $HOME/local_docs"
+alias cdlocal="cd $HOME/local_docs"
 
 alias cddotfiles="cd $REPO_DIR/niche_side_quests_repo"
 alias cddotfilesTestEnvVariable="cd $REPO_DIR/niche_side_quests_repo"
@@ -875,22 +900,22 @@ alias cdnichewindows="cd $REPO_DIR/niche_side_quests_repo/windows"
 # to leave terminal to open the file -> search then go back to terminal, you can simply 
 # run ones of these fzf aliases for the file and instantly find that command without ever 
 # having to leave terminal
-alias fzfaliases="cat /Users/alexking/.zshrc | fzf"
-alias fzfalias="cat /Users/alexking/.zshrc | fzf"
-alias fzfuseraliases="cat /Users/alexking/.zshrc | fzf"
+alias fzfaliases="cat $HOME/.zshrc | fzf"
+alias fzfalias="cat $HOME/.zshrc | fzf"
+alias fzfuseraliases="cat $HOME/.zshrc | fzf"
 
 
-alias fzfkeyb="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html | fzf"
-alias fzfkeybvis="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
-alias fzfkeybviz="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
-alias fzfcurrentkeyboardbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
-alias fzfkeyboardbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
-alias fzfbindings="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
-alias fzfkeyboard="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
-alias fzfkb="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
-alias fzfshortcuts="cat $REPO_DIR/niche_side_quests_repo/_universal/keyboard-visualizer.html | fzf"
+alias fzfkeyb="cat $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html | fzf"
+alias fzfkeybvis="cat $NICHE_REPO_DIR/_universal/keyboard-visualizer.html | fzf"
+alias fzfkeybviz="cat $NICHE_REPO_DIR/_universal/keyboard-visualizer.html | fzf"
+alias fzfcurrentkeyboardbindings="cat $NICHE_REPO_DIR/_universal/keyboard-visualizer.html | fzf"
+alias fzfkeyboardbindings="cat $NICHE_REPO_DIR/_universal/keyboard-visualizer.html | fzf"
+alias fzfbindings="cat $NICHE_REPO_DIR/_universal/keyboard-visualizer.html | fzf"
+alias fzfkeyboard="cat $NICHE_REPO_DIR/_universal/keyboard-visualizer.html | fzf"
+alias fzfkb="cat $NICHE_REPO_DIR/_universal/keyboard-visualizer.html | fzf"
+alias fzfshortcuts="cat $NICHE_REPO_DIR/_universal/keyboard-visualizer.html | fzf"
 
-alias fzfaero="cat /Users/alexking/.config/aerospace/aerospace.toml | fzf"
+alias fzfaero="cat $HOME/.config/aerospace/aerospace.toml | fzf"
 alias fzfohmyzsh="cat ~/.oh-my-zsh | fzf"
 alias fzfzshconfig="cat ~/.zshrc | fzf"
 alias fzfeditzsh="cat ~/.zshrc | fzf"
@@ -898,7 +923,7 @@ alias fzfp10kconfig="cat ~/.p10k.zsh | fzf"
 alias fzfeditp10k="cat ~/.p10k.zsh | fzf"
 alias fzfeditprompt="cat ~/.p10k.zsh | fzf"
 
-
+# !!! ALERT SOME OF THESE are now broken bc I moved the misc prefix/ naming-conv .txt files to sep new folder...since that info is likely going to be consolidated into the main ref doc
 alias fzfprefixnamingconventions="cat $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
 alias fzfprefixes="cat $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
 
@@ -921,12 +946,84 @@ alias fzfprefixes="cat $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming
 # the 'edit' aliases:   zz-     [section _ of _]
 ################################################################
 ################################################################
+
+
+
+
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# OLD COMMANDS for the hardlinks were trying to repalce
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # ln -s
 # ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml
 # ~/.config/aerospace/aerospace.toml
-alias editaero="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"
 
-# ????
+# ln -s
+# ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc
+# ~/.zshrc
+
+# ln -s 
+# ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh
+# ~/.p10k.zsh
+
+
+
+
+
+# DONE! get copies of curr hardlinks jst in case 
+# change the name of the orig so we can keep it there when we create the new one instead of del it entirely
+# then move GIT_STUFF to /tools
+# then do the following for EACH of the 3:
+#   run the ln command to create new one
+#  once all 3 are done, then restart iterm and pray
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# NEW COMMANDS for the amk/tools/GIT_STUFF/etc...
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# ln -s
+# ~/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml
+# ~/.config/aerospace/aerospace.toml
+
+# ln -s
+# ~/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.zshrc
+# ~/.zshrc
+
+# ln -s 
+# ~/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh
+# ~/.p10k.zsh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# I think these symbolic links I setup to get my active .dot files to be on my REPO
+# are what is CAUSING THE PROBLEM when I try to move things to my new FILE SYSTEM dirs... 
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# ln -s
+# ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml
+# ~/.config/aerospace/aerospace.toml
+alias editaero="code $NICHE_REPO_DIR/mac/aerospace.toml"
+alias editaero2="code $HOME/.config/aerospace/aerospace.toml"
+
+
+#### TAKING A GUESS WHAT THIS ln -s command was bc looks like i accidentally del it
+## actually it looks like this one does not have a hard link like the other so jsut leaving
 alias editohmyzsh="code ~/.oh-my-zsh"
 alias ohmyzsh="code ~/.oh-my-zsh"
 
@@ -938,15 +1035,17 @@ alias editzsh="code ~/.zshrc"
 alias editzprofile="code ~/.zprofile"
 
 
-alias editoutlineofcurrenttools="code $REPO_DIR/niche_side_quests_repo/_universal/outline_of_current_tools.txt"
-
 # ln -s 
 # ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh
 # ~/.p10k.zsh
-alias p10kconfig="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh"
-alias editp10k="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh"
-alias editprompt="code ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh"
+alias p10kconfig="code $NICHE_REPO_DIR/mac/.p10k.zsh"
+alias editp10k="code $NICHE_REPO_DIR/mac/.p10k.zsh"
+alias editprompt="code $NICHE_REPO_DIR/mac/.p10k.zsh"
 
+
+# !!! NOTE this symbolic link no longer exists bbc of version change from .61 to .67
+# !!! so i think i abandoned it since the key-bindings.zsh file is never updated anyway
+# !!! theres not a big need/usefulnesss in having in in repo like there is w the other 3 above files
 # ln -s
 # ~/local_docs/GIT_STUFF/niche_side_quests_repo/mac/key-bindings.zsh 
 # /usr/local/Cellar/fzf/0.61.0/shell/key-bindings.zsh
@@ -956,16 +1055,42 @@ alias editfzfbindings="code /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-alias editkeyb="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editkeybtxt="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editcurrentkeyb="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editcurrentkeyboardbindings="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editcurrentkeyboardbindingstxt="code $REPO_DIR/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editkeyb="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editkeybtxt="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editcurrentkeyb="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editcurrentkeyboardbindings="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editcurrentkeyboardbindingstxt="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+# !!! anoter broken link bc consolidation. (prob del this)
+alias editoutlineofcurrenttools="code $NICHE_REPO_DIR/_universal/outline_of_current_tools.txt"
 
 
 # for the CLOUD madden
@@ -984,6 +1109,7 @@ alias path='echo; tr ":" "\n" <<< "$PATH"; echo;'
 alias listpath='echo; tr ":" "\n" <<< "$PATH"; echo;'
 alias echopath='echo; tr ":" "\n" <<< "$PATH"; echo;'
 alias seepath='echo; tr ":" "\n" <<< "$PATH"; echo;'
+alias printpath='echo; tr ":" "\n" <<< "$PATH"; echo;'
 
 
 
@@ -1008,39 +1134,39 @@ alias editvscodekeyb='code "/Users/alexking/Library/Application Support/Code/Use
 alias editvscodekeybindingsjson='code "/Users/alexking/Library/Application Support/Code/User/keybindings.json"'
 
 
-alias editscrlaunchmainapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias editscrlaunchmyapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias editlaunchmainapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias editlaunchmyapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias editlaunchapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
-alias editsrclaunchapps="code /usr/local/bin/alexScripts/scr-launch_my_main_apps.py"
+alias editscrlaunchmainapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias editscrlaunchmyapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias editlaunchmainapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias editlaunchmyapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias editlaunchapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
+alias editsrclaunchapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
 
-alias editmorningleet="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-alias editmorningwarmup="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-alias editnextproblem="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-alias editnextleet="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-alias editdoaproblem="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py"
-
-
-alias editscratchpaper="code /usr/local/bin/alexScripts/scr-scratch_paper_area.py"
-alias scratchpaper="code /usr/local/bin/alexScripts/scr-scratch_paper_area.py"
+alias editmorningleet="code $ALEXSCRIPTS_DIR/scr-leet_morning_random.py"
+alias editmorningwarmup="code $ALEXSCRIPTS_DIR/scr-leet_morning_random.py"
+alias editnextproblem="code $ALEXSCRIPTS_DIR/scr-leet_morning_random.py"
+alias editnextleet="code $ALEXSCRIPTS_DIR/scr-leet_morning_random.py"
+alias editdoaproblem="code $ALEXSCRIPTS_DIR/scr-leet_morning_random.py"
 
 
+alias editscratchpaper="code $ALEXSCRIPTS_DIR/scr-scratch_paper_area.py"
+alias scratchpaper="code $ALEXSCRIPTS_DIR/scr-scratch_paper_area.py"
 
 
-alias editpythonsyntax="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/leet_python_syntaxes.py"
-alias editleetpythonsyntax="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/leet_python_syntaxes.py"
 
 
-alias editkeybhtml="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editkeybvisualizer="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editkeybviz="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editshortcutsvis="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editshortcutvisualizer="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editshortcutsviz="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-alias editkeybvis="code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+alias editpythonsyntax="code $NICHE_REPO_DIR/_universal/leet_python_syntaxes.py"
+alias editleetpythonsyntax="code $NICHE_REPO_DIR/_universal/leet_python_syntaxes.py"
 
-# code /Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html
+
+alias editkeybhtml="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editkeybvisualizer="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editkeybviz="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editshortcutsvis="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editshortcutvisualizer="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editshortcutsviz="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+alias editkeybvis="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
+
+# code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html
 
 # alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
 
