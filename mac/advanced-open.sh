@@ -5,6 +5,9 @@
 # @raycast.title Advanced Open
 # @raycast.mode silent
 
+#%%%%%% 'Smart Open' may be better name for this %%%%%%%%
+
+
 # Optional parameters:
 # @raycast.icon 🤖
 

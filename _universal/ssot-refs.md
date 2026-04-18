@@ -1,5 +1,26 @@
 # ssot-refs 
 
+# DEV BUFFS to SETUP:
+| MAC       | WIN       | Buff Description |
+| -----     | ---       | -------- |
+| ✅        |❗TODO     | open selected file in vscode (from finder window selection obvi) |
+| ❗TODO    |❗TODO     | open file from path in clipboard (few wrinkles to this) |
+| ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
+| ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### MISC TODOS: (DELETE THESE FREQUENTLY)
 - ripgrep reads this .md file as plain-text instead of the markdown-version (so atm the results are including all the ugly markdown stuff)
     - NOT 100% sure if I want our lookup auto to read plain-text 
@@ -10,6 +31,9 @@
 - **Remaining EDIT commands to consider creating:**
     - **mac:** zprofile, p10k, prompt, madden??, morning-leet, scratchpaper,launchmainapps, vscode-keybindings, (and a bunch of other misc ones I'm prob forgetting)
     - **win:** flexprompt, morningleet, launchmyapps,  scratchpaper, fzf?, (and all my mini scripts like listenvvariables etc)
+
+
+
 
 
 #### topics/sections in this ref doc
@@ -371,3 +395,86 @@ Line two
 
 
 ```
+
+
+
+
+
+
+
+
+
+
+## FILE SYSTEM RULES (Quick Reference)
+#### ❗ RE-READ these frequently to help catch yourself falling into the same bad mental-model/habits 
+
+1. ⭐ Optimize for retrieval > storage
+   - You should find anything in ~5 seconds
+
+2. Top-level structure (keep it simple)
+   /Workspace
+     /Work
+     /Projects
+     /Learning
+     /Personal
+     /Inbox
+     /Archive
+
+3. Organize by purpose, NOT file type
+   - Group everything related to a project together
+   - Avoid: /Documents, /Images, /Code
+
+4. ⭐ Naming > folders
+   - Use clear, searchable names
+   - Formats:
+     YYYY-MM-DD - description
+     project - detail
+   - Bad: notes.txt
+   - Good: kafka-backpressure-notes.md
+
+5. Keep folder depth shallow (≤3 levels)
+   - Avoid deep nesting
+   - Use filenames instead
+
+6. Active vs Archive
+   - Keep current work clean
+   - Move finished work to /Archive
+
+7. Standard project structure
+   project-name/
+     README.md
+     notes.md
+     /src
+     /scripts
+     /docs
+     /assets
+
+8. Use a dropzone/Inbox
+   /dropzone 
+   - Dump files quickly
+   - Clean weekly
+
+9. Weekly cleanup (10 min)
+   - Rename files
+   - Move from Inbox
+   - Archive old work
+
+10. ⭐ Design for search
+   - Use keywords in filenames
+   - Think: “what would I type to find this?”
+
+11. Avoid
+   - Too many folders
+   - Over-organizing
+   - Perfectionism
+
+
+
+
+
+
+
+
+
+
+

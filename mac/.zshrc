@@ -501,6 +501,44 @@ alias fixsketchybar="sketchybar --reload"
 alias rootdir="cd /"
 alias homedir="cd /Users/alexking"
 
+alias cdrootdir="cd /"
+alias cdhomedir="cd ~"
+
+
+####### NEW 'HOME' after FILE-SYSTEM re-organizing 2026 #####
+# we're leaving Users/alexking alone and instead creating new dir in Users/alexking which will serve as my ACTUAL home dir
+# this way we can leave all the messy hidden config files in alexking dir where they are now and wont have to worry about breaking a bunch of finicky config paths after moving stuff all around
+##### name ideas ####
+# aking, amk, mrking, workspace or ws, dev, hub, lab, hq, (hq for headquarters), cc (command-center),work, ak, 
+# /Users/alexking/<INSERT DIR HERE>
+# /Users/alexking/aking
+# /Users/alexking/amk
+# /Users/alexking/mrking
+# /Users/alexking/workspace(1)
+
+# FINALISTS are: amk, ak, lab, dojo, zen
+# CHOOSING ==> amk officially...
+
+#%%%%%%%%%%% KEEP IN MIND your curr WORK LAPTOP FileSYSTEM and try to MIRROR it as much as possible
+# /Users/aking/<INSTERT NEW DIR HERE>
+# vs my mac side:
+# /Users/alexking/<INSTERT NEW DIR HERE>
+# so maybe something like this so they both have the same NEW DIR name...
+# /Users/aking/aking (WINDOWS)
+# /Users/alexking/aking (MAC)
+# OR 
+# /Users/aking/amk (WINDOWS)
+# /Users/alexking/amk (MAC)
+
+
+
+
+alias cdrealhome="cd /Users/alexking/<INSERT DIR HERE>"
+alias cdaking="cd /Users/alexking/<INSERT DIR HERE>"
+alias cdking="cd /Users/alexking/<INSERT DIR HERE>"
+alias cdrealhome="cd /Users/alexking/<INSERT DIR HERE>"
+
+
 # prob not needed tbh but always forget the -a flag w native open command(so dont have to be in /Applications dir to open apps)
 alias openapp="open -a" 
 alias openapplication="open -a"

@@ -5,6 +5,7 @@
 # @raycast.title Advanced Finder
 # @raycast.mode silent
 
+#%%%%%% 'Smart Finder' may be better name for this %%%%%%%%
 # Optional parameters:
 # @raycast.icon 🤖
 

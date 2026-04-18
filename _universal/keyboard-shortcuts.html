@@ -782,6 +782,7 @@
       // (and bc the actual input is the same on the os's end, we don't have to change any of the below shortcuts since they still are technically 'alt-option' shortcuts even though in practice they're really 'opt' shortcuts (since 1 opt key press is now === alt-opt press))
       // -------------------------------------------------
       // %%%%%% STRIVE FOR (MAC | WINDOWS) %%%%%%%% in below key-defintions (mac definition comes first on line1, then windows-def on line 2) 
+      // -zz
       'alt-option': {
         'a': 'things3 || teams',    // alt-opt-a
         'w': 'aspenB | jira',       // alt-opt-w
@@ -843,7 +844,7 @@
       
       
       
-      
+      // -zz
       'alt': {
         't': 'set tile layout',   // alt-t
         'g': 'set float layout',  // alt-g
@@ -905,18 +906,20 @@
         // REMEMBER! These off-limit keys do NOT change when we switch to another of 6 remaining options (like app-switch == hyper, and misc == alt-opt). The SAME keys are still off-limits regardless of which category meaning the modgroup has. 
         // REMEMBER! so even if I change 'alt' to be app-switch instead of windowMan1, the alt off-limit keys (like alt-c & alt-tab etc) are STILL THE EXACT SAME (e.g. alt-tab is still off-limits even if alt is now app-switch category instead of windowMan1 category) since those off-limit keys are reserved for system/app-switching actions that I don't want to mess with regardless of which mod group is app-switching vs window management vs misc etc.
         // THE OFF LIMIT KEYS for this 'alt' group:
-        'left': { action: 'alt reserved', color: 'dark-grey' },    // KIM can't use arrow keys for 'alt' shortcuts bc of some niche conflicts that aren't worth trying to dev some workaround for (esp alt-k :: raycast, and chrome/vscodes actions)
-        'right': { action: 'alt reserved', color: 'dark-grey' },
-        'up': { action: 'alt reserved', color: 'dark-grey' },
-        'down': { action: 'alt reserved', color: 'dark-grey' },
-        'k': { action: 'alt reserved', color: 'dark-grey' },       // needs this one avail bc of raycasts internal 'alt-k' actions which we're not able to work around/change (at least until raycast adds option to customize this shortcut)
-        'tab': { action: 'alt reserved', color: 'dark-grey' },
-        'c': { action: 'alt reserved', color: 'dark-grey' },
-        'space': { action: 'alt reserved', color: 'dark-grey' },
+        'left': { action: 'alt reserved', color: 'dark-grey' },    // alt-left   KIM can't use arrow keys for 'alt' shortcuts bc of some niche conflicts that aren't worth trying to dev some workaround for (esp alt-k :: raycast, and chrome/vscodes actions)
+        'right': { action: 'alt reserved', color: 'dark-grey' }, // alt-right
+        'up': { action: 'alt reserved', color: 'dark-grey' }, // alt-up
+        'down': { action: 'alt reserved', color: 'dark-grey' }, // alt-down
+        'k': { action: 'alt reserved', color: 'dark-grey' },       // alt-k needs   this one avail bc of raycasts internal 'alt-k' actions which we're not able to work around/change (at least until raycast adds option to customize this shortcut)
+        'enter': { action: 'alt reserved', color: 'dark-grey' },       // alt-enter   needs this one avail bc of raycasts internal 'alt-Enter' actions which I found myself wanting to use just as much as the alt-k so decided it's best to RESERVE this (at least until raycast adds option to customize this shortcut to CTRL based in which case ctrl-enter would be fine)
+        'tab': { action: 'alt reserved', color: 'dark-grey' }, // alt-tab
+        'c': { action: 'alt reserved', color: 'dark-grey' }, // alt-c
+        'v': { action: 'alt reserved', color: 'dark-grey' }, // alt-v
+        'space': { action: 'alt reserved', color: 'dark-grey' }, // alt-space
       },  
   
   
-
+      // -zz
       'alt-shift': {
         'q': 'quit app',        // alt-shift-q
         'w': 'close window',    // alt-shift-w
@@ -979,8 +982,7 @@
 
 
 
-
-
+      // -zz
       'hyper': {
         'g': 'google srch qk',    // hyper-g
         'y': 'trello new card', // hyper-y
@@ -998,7 +1000,11 @@
         '4': 'screensh scrolling',  // hyper-4
         '5': 'screensh menu',       // hyper-5
         '6': 'screensh GIF',        // hyper-6
-        
+
+        '0': { action: 'open w vscode', color: 'yellow' },  // hyper-0  (opens the file selected in Finder in vscode) [MEMORY-TRICK: think the zero as another O letter for 'open']
+        'o': { action: 'open with...', color: 'yellow' },  // hyper-o   (brings up fzf-able list to quickly find what you want to open the selected file with)
+
+
         '`': { action: 'screensh dir', color: 'red' },  // hyper-`    // TODO: get setup on WINDOWS-side(unsure how backtick (`) syntax is in AHK)
         // 'r': { action: 'quick_ref dir', color: 'yellow' },   // hyper-r [MAYBE SHOULLD BE lookup-refs now that we finally got the lookup-ref concept fully realized through raycast script-commands :)]
 
