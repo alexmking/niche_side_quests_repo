@@ -11,8 +11,8 @@
 # FILE="$HOME/ssot-refs.txt"
 # /usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt
 # FILE="/usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt"
-# FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
-FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
+# FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 
 QUERY="$1"
 
