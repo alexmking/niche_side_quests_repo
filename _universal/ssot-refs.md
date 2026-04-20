@@ -36,28 +36,29 @@
 - niche-repo [✅ quickL DONE]
 - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk) [✅ quickL DONE]
 - downloads [✅ quickL DONE]
+- Desktop  [✅ quickL DONE]
 
 
 
 ## WINDOWS:
 - root and home obvi
-- amk
-- screenshots (already has hotkey anyway in HYPER-`)
-- alexScripts
-- projects (1 of the 5 main amk dirs)
-- notes (1 of the 5 main amk dirs)
-- tools (1 of the 5 main amk dirs)
-- dropzone (1 of the 5 main amk dirs)
-- archive (1 of the 5 main amk dirs)
-- niche-repo 
+- amk  [✅ quickL DONE]
+- screenshots (already has hotkey anyway in HYPER-`)  [✅ quickL DONE]
+- alexScripts  [✅ quickL DONE]
+- projects (1 of the 5 main amk dirs)  [✅ quickL DONE]
+- notes (1 of the 5 main amk dirs) [✅ quickL DONE]
+- tools (1 of the 5 main amk dirs) [✅ quickL DONE]
+- dropzone (1 of the 5 main amk dirs) [✅ quickL DONE]
+- archive (1 of the 5 main amk dirs) [✅ quickL DONE]
+- niche-repo  [✅ quickL DONE]
 - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk)
 - CDrive
 - DDrive
-- osi dir 
+- osi dir   [✅ quickL DONE]
 - downloads
 - TODO!!! theres more that are unique to WINDOWS Side pretty sure, so fill them here
 - TODO!!!
--
+- Desktop  [✅ quickL DONE]
 
 
 ## OFFICIAL-ISH list of OUTPOST dirs(macside)
@@ -73,7 +74,7 @@
 - niche-repo
 - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk)
 - downloads
-- mac dir within NICHE repo ? (and obvi WINDOWS dir within NICHE for win side)
+- mac dir within NICHE repo ? (and obvi WINDOWS dir within NICHE for win side)[✅ quickL DONE]
 
 
 
