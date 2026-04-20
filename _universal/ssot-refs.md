@@ -8,6 +8,73 @@
 | ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
 | ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
 
+# TMP EXPL ON HOW OUTPUT DIRS SHOULD BE IMPL:
+- ⭐ list out all the somewhat-imp dir's, and then create a RAYCAST quicklink for ALL OF THEM 
+   - KIM only a few of them will have HOTKEYS, but all em should have a quicklink so we can always jump to them via basic raycast-search
+- ⭐ Pick a few out of the list to be the EXTRA-IMP dirs and give them each a HOTKEY 
+- ⭐ ?????
+- ⭐ Lastly, create the SMART-FINDER-OPENER script-command w fzf/dropdown, and use this list to be all the dirs in our search area 
+   - so each dir will be 1 arg in the super-long argument1 specifier for raycast scripts (which we cant use $VARIABLES for so this will be ugly gigantic 1-liner for sure) 
+
+
+
+
+# IMP DIRS 
+### tmp list of imp dirs in MAC and WIND sides, which I'll use to decide on theofficial OUTPOST dirs
+
+## MAC:
+- root and home obvi [✅ quickL DONE]
+- amk [✅ quickL DONE]
+- screenshots (already has hotkey anyway in HYPER-`) [✅ quickL DONE]
+- alexScripts [quickL DONE]
+- projects (1 of the 5 main amk dirs) [✅ quickL DONE]
+- notes (1 of the 5 main amk dirs) [✅ quickL DONE]
+- tools (1 of the 5 main amk dirs) [✅ quickL DONE]
+- career (1 of the 5 main amk dirs) [✅ quickL DONE]
+- archive (1 of the 5 main amk dirs) [✅ quickL DONE]
+- dropzone (1 of the 5 main amk dirs) [✅ quickL DONE]
+- niche-repo [✅ quickL DONE]
+- KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk) [✅ quickL DONE]
+- downloads [✅ quickL DONE]
+
+
+
+## WINDOWS:
+- root and home obvi
+- amk
+- screenshots (already has hotkey anyway in HYPER-`)
+- alexScripts
+- projects (1 of the 5 main amk dirs)
+- notes (1 of the 5 main amk dirs)
+- tools (1 of the 5 main amk dirs)
+- dropzone (1 of the 5 main amk dirs)
+- archive (1 of the 5 main amk dirs)
+- niche-repo 
+- KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk)
+- CDrive
+- DDrive
+- osi dir 
+- downloads
+- TODO!!! theres more that are unique to WINDOWS Side pretty sure, so fill them here
+- TODO!!!
+-
+
+
+## OFFICIAL-ISH list of OUTPOST dirs(macside)
+- root and home obvi (maybe on these? not sure atm...)
+- amk
+- alexScripts
+- projects (1 of the 5 main amk dirs)
+- notes (1 of the 5 main amk dirs)
+- tools (1 of the 5 main amk dirs)
+- career (1 of the 5 main amk dirs)
+- archive (1 of the 5 main amk dirs)
+- dropzone (1 of the 5 main amk dirs)
+- niche-repo
+- KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk)
+- downloads
+- mac dir within NICHE repo ? (and obvi WINDOWS dir within NICHE for win side)
+
 
 
 

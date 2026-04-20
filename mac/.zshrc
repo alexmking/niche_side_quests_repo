@@ -413,7 +413,9 @@ export PROJECTS_DIR="$HOME/amk/projects"
 export QUICK_REF_DIR="$AMK_DIR/notes/quick_ref"
 export ALL_CONFIGS_DIR="$HOME/ALL_CONFIGS"
 export LEET_DIR="$HOME/Desktop/LEET"
-export LOCAL_DOCS_DIR="$HOME/local_docs"
+# export LOCAL_DOCS_DIR="$HOME/local_docs"
+export LOCAL_DOCS_DIR="/Users/alexking/amk/dropzone/local_docs" #### WILL NEED TO CHANGE SOON OBVI once its no longer in DROPZONE...
+# /Users/alexking/amk/dropzone/local_docs
 export SCREENSHOTS_DIR="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0"
 
 # # Terminal colors
@@ -500,7 +502,7 @@ export SCREENSHOTS_DIR="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Scree
 alias repos="cd $REPO_DIR"
 alias cdrepos="cd $REPO_DIR"
 alias go="cd /Users/alexking"
-alias golocal="cd /Users/alexking/local_docs"
+alias golocal="cd $LOCAL_DOCS_DIR"
 alias explorer="open ."
 alias e.="open ."
 alias add_alias="code $NICHE_REPO_DIR/mac/.zshrc"
@@ -872,8 +874,8 @@ alias cdquickref="cd $AMK_DIR/notes/quick_ref"
 
 alias cddesktop="cd $HOME/Desktop"
 alias cdleet="cd $HOME/Desktop/LEET"
-alias cdlocaldocs="cd $HOME/local_docs"
-alias cdlocal="cd $HOME/local_docs"
+alias cdlocaldocs="cd $LOCAL_DOCS_DIR"
+alias cdlocal="cd $LOCAL_DOCS_DIR"
 
 alias cddotfiles="cd $REPO_DIR/niche_side_quests_repo"
 alias cddotfilesTestEnvVariable="cd $REPO_DIR/niche_side_quests_repo"
@@ -992,6 +994,31 @@ alias fzfprefixes="cat $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming
 # ~/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh
 # ~/.p10k.zsh
 
+
+# *****************************************************
+# *****************************************************
+# *****************************************************
+# *****************************************************
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# AFTER I REMOVE niche from GIT_STUFF repo, I'll have to do all these commands again (as awell as the other annoying substeps...)
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# FIRST: do full TIME MACHINE backup of the whole system (just in case) (do RIGHT BEFORE i do this so can easily revert back if encounter any issues)
+# *****************************************************
+# ln -s
+# ~/amk/tools/niche_side_quests_repo/mac/aerospace.toml
+# ~/.config/aerospace/aerospace.toml
+
+# ln -s
+# ~/amk/tools/niche_side_quests_repo/mac/.zshrc
+# ~/.zshrc
+
+# ln -s 
+# ~/amk/tools/niche_side_quests_repo/mac/.p10k.zsh
+# ~/.p10k.zsh
+# *****************************************************
+# *****************************************************
+# *****************************************************
+# *****************************************************
 
 
 
