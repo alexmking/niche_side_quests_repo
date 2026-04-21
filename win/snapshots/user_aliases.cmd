@@ -1,0 +1,1054 @@
+;= @echo off
+;= rem Call DOSKEY and use this file as the macrofile
+;= %SystemRoot%\system32\doskey /listsize=1000 /macrofile=%0%
+;= rem In batch mode, jump to the end of the file
+;= goto:eof
+
+;= rem ==================================================================
+;= rem GLOSSARY/SECTIONS    (ctrl-f "zz-" to jump to each section)
+;= rem ==================================================================
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem 1. GENERAL ALIASES
+;= rem 2. EDIT ALIASES
+;= rem 3. GIT ALIASES
+;= rem 4. MISC ALIASES
+;= rem 5. MAKE/BUILD ALIASES
+;= rem 6. CD ALIASES
+;= rem 7. FZF-BASED ALIASES
+;= rem 8. DRIVE INFO ALIASES
+;= rem 9. AHK LAUNCH ALIASES
+;= rem 10. ALIASES THAT TAKE ARGUMENT(S)
+;= rem 11. GREP ALIASES & FINDSTR() ALIASES 
+;= rem 12. 'HELP' and 'VERSION' ALIASES (||||| THIS ONE IS NEW IDEA OF MINE TO HELP FIX CONSTANT CHANGING OF SYNTAX FOR 'help' info on common apps/scripts etc)
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+;= rem || TODO: || FILL/RE-ARRANGE IN THE SECTIONS BELOW LATER
+
+;= rem ==================================================================
+;= rem VARIABLES AND PATHS AND DIRS...
+;= rem ==================================================================
+;= rem UPDATE!!!! these are defined as ENV-VARIABLES in my system, just like S3 and other variables...this was only way it would work, fow now
+;= rem Main directories
+;= rem ALEX_SCRIPTS_DIR="C:\Users\aking\amk\tools\alex_scripts"
+;= rem QUICK_REF_DIR=C:\Users\aking\amk\notes\quick_ref
+;= rem GIT_DIR=D:\git
+;= rem NICHE_REPO_DIR=%GIT_DIR%\niche_side_quests_repo
+;= rem KEYBOARD_SHORTCUTS_HTML=%NICHE_REPO_DIR%\_universal\keyboard-shortcuts.html
+;= rem USER_HOME=C:\Users\aking
+;= rem CMDER_CONFIG_DIR=%CMDER_ROOT%\config
+
+;= rem Specific files
+;= rem ZZSHORTCUTS_PATH=%QUICK_REF_DIR%\zzshortcuts.xlsm
+;= rem  REF_SHEET_PATH=%QUICK_REF_DIR%\ref_sheet2025.xlsx
+
+
+
+
+
+
+;= rem ==================================================================
+;= rem ADD ALIASES HERE...
+;= rem ==================================================================
+;= Add aliases below here
+e.=explorer .
+gl=git log --oneline --all --graph --decorate  $*
+clear=cls
+unalias=alias /d $1
+repos=cd /d D:\git\
+home=cd /d C:\Users\aking\
+vi=vim $*
+cmderr=cd /d "%CMDER_ROOT%"
+pwsh=%SystemRoot%/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command "Invoke-Expression '. ''%CMDER_ROOT%/vendor/profile.ps1'''"
+ak=cd /d %ALEX_SCRIPTS_DIR%\
+ls=ls
+pwd=cd | clip
+cpydir=cd | clip
+cwd=cd | clip
+copydir=cd | clip
+c=cd | clip
+copieddir=cd | clip
+
+;= rem MY GIT ALIASES (more to come...)
+gs=git status
+gf=git fetch
+gpull=git pull
+gpush=git push
+
+;= rem MORNING LEET SCRIPT ALIASES...
+morningleet="%ALEX_SCRIPTS_DIR%"\scr-morning_leet_random.py $*
+morningwarmup=%ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py $*
+morningprep=%ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py $*
+nextproblem=%ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py $*
+doaproblem=%ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py $*
+nextleet=%ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py $*
+
+
+;= rem KEYBOARD SHORTCUT VISUALIZER HTML
+keyboardshortcutvisualizer=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keyboardshortcutvis=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keyboardshortcutviz=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keybshortcutvisualizer=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keybshortcutvis=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keybshortcutviz=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keybshortcutsvisualizer=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keybshortcutsvis=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keybshortcutsviz=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keybshortsr=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+keybshortcuts=start chrome "%KEYBOARD_SHORTCUTS_HTML%"
+
+
+;= rem ||TODO||: 
+;= rem ||TODO||: 
+;= rem ||TODO||: 
+;= rem ||TODO||: 
+;= rem ============> ADD aliases for the devenv command (the command to open vs projects directly (richards way))
+;= rem EXMAPLE: openvsproject=devenv "C:\path\to\project.sln"
+;= rem ||TODO||: 
+;= rem ||TODO||: 
+;= rem ||TODO||: 
+;= rem ||TODO||: 
+
+
+
+
+
+
+
+
+
+
+;= rem scripts to update dotfile repo (tested single file w user_aliases.cmd and it worked great)
+
+
+;= rem rmrf=rm -rf $* [use the $* when want to pass an arg like a file or dir name, otherwise if just want to run 'rmrf' alone then it will just run 'rm -rf' with no target which is safer than accidentally doing 'rm -rf *' or etc]
+
+
+
+;= rem scripts to update dotfile repo (tested single file w user_aliases.cmd and it worked great)
+updateuseraliasesongit=%ALEX_SCRIPTS_DIR%\update_user_aliases_on_git.py
+moveuseraliasestogit=%ALEX_SCRIPTS_DIR%\update_user_aliases_on_git.py
+editupdateuseraliasesongit=code "%ALEX_SCRIPTS_DIR%\update_user_aliases_on_git.py"
+;= rem ||TODO||: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+;= rem ||TODO||: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:
+updateallconfigstogit=%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py
+moveallconfigstogit=%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py
+updateniche=%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py
+moveallniche=%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py
+updatalldotfiles=%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py
+nicherepoupdate=%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py
+preparetoupdateniche=%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py
+preparetoupdatedotfiles=%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py
+editupdateallconfigstogit=code "%ALEX_SCRIPTS_DIR%\update_all_dot_files_to_git.py"
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:
+;= rem ||TODO||:duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+;= rem ||TODO||: duplicate the above script and EXTEND IT to move ALL NICHE REPO CONFIG FILES instead of just user_aliases.cmd
+
+
+;= rem pid and kill-command aliases
+pid=tasklist
+listpids=tasklist
+findpid=tasklist | grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+findpids=tasklist | grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+fzfpid=tasklist | fzf
+fzfpids=tasklist | fzf
+fzfprocesses=tasklist | fzf
+
+killpid=taskkill /PID %* /F
+
+
+
+
+;= rem think of best replacement for 'make clean' and 'make' commands from below aliases
+;= rem mc & mk   ... or ... mclean & m ... or ... makeclean & make ... or ... makecl & mk etc etc...
+;= rem mc & mk [THIS IS PROB THE BEST ONE SO FAR]
+mc=make clean
+mclean=make clean
+makeclean=make clean
+makecl=make clean
+m=make
+mk=make
+build=make
+
+;= rem MY MISC ALIASES
+;= rem sz=call D:\git\niche_side_quests_repo\win\user_aliases.cmd && echo user_aliases.cmd sourced :)
+sz=call C:\Users\aking\Downloads\cmder\config\user_aliases.cmd && echo user_aliases.cmd sourced :)
+lh=dir /a
+lsh=dir /a:h
+show_hidden_files=dir /a 
+show_only_hidden_files=dir /a:h
+..=cd ..
+cd..=cd ..
+...=cd ../../../
+....=cd ../../../../
+.....=cd ../../../../../
+.3=cd ../../../
+.4=cd ../../../../
+.5=cd ../../../../../
+cd-=cd -
+fz=fzf
+
+
+
+;= rem =========MY STARTUP LAUNCH ALL MY APPS script=================
+setupalexenv=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+scrsetupalexapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+setupalex=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+scrsetupalexapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+scrlaunchmyapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+scrlaunchallmyapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+scrlaunchapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+launchmyapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+launchallmyapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+launchmainapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+launchalexapps=%ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+
+
+;= rem ============ PR CHECKBOX UNIT TESTS ============
+;= rem THESE ARE THE TESTS WE RUN FOR EACH PR [it's literally a PR checkbox list item]
+;= rem ADD MORE VARIATIONS FOR THESE 6 'run_unit_tests' aliases below when have time...
+run_unit_testsopenscada="%OSI%"\ci\OpenSCADA\run_unit_tests.py
+run_unit_testsscadainterface="%OSI%"\ci\SCADAInterface\run_unit_tests.py
+run_unit_testsscadawebcomp="%OSI%"\ci\SCADAWeb-Components\run_unit_tests.py
+run_unit_testsscadasdk="%OSI%"\ci\SCADA_SDK\run_unit_tests.py
+run_unit_teststagsubsystem="%OSI%"\ci\TagSubsystem\run_unit_tests.py
+run_unit_testsviewpoint="%OSI%"\ci\ViewPoint\run_unit_tests.py
+
+unittestsforopenscada="%OSI%"\ci\OpenSCADA\run_unit_tests.py
+unitestsforscadainterface="%OSI%"\ci\SCADAInterface\run_unit_tests.py
+
+pullrequnittestsforscadainterface="%OSI%"\ci\SCADAInterface\run_unit_tests.py
+openscadapullrequnittests="%OSI%"\ci\SCADAInterface\run_unit_tests.py
+
+
+
+
+
+
+
+
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem = SPEND 10-20 MIN determining which commands/aliases can be added to RAYCAST for quick access there...
+;= rem (obviously the cd aliases are a bit tricky since they depend on current env, but the others should be easy enough to add there)
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+;= rem ==================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;= rem ==================================================================
+;= rem = RULES OF THUMB for 'prefaces' of aliases...
+;= rem ==================================================================
+;= rem 		cd 		== 		obvi
+;= rem 		edit 	== 		edit the file in VS Code
+;= rem 		fz 		== 		doing fzf over some output 
+;= rem 
+;= rem 		list 	== 		printing a list sep by new lines (like PATH) or etc
+;= rem 		get 	== 		either returns only 1 simple thing (like a single env var) AND/OR copies it to clipboard at same time
+;= rem 		cpy 	== 		?? this one is good alternative to 'get' 
+;= rem
+;= rem  	///////////////////////////////////////////////
+;= rem  	/////////// other ones to consider ////////////
+;= rem  	///////////////////////////////////////////////
+;= rem 		my 		== 		??
+;= rem 		sel 	== 		short for 'select'. This one is another alt/variation of 'get' and/or 'cpy'?? 
+;= rem 		show 	== 		?? maybe inbetween 'list' and 'get'? such as show-drive-info ?? 
+;= rem 		see 	== 		?? interchangeable with 'show' i think ??
+;= rem 
+;= rem 		print 	== 		?? prob not using this one bc 'see' and 'show' and 'list' are all better/shorter
+;= rem 
+;= rem 
+;= rem 
+
+
+;= rem ==================================================================
+;= rem = clever idea of setting up many aliases to the SAME single script (instead of having many scripts with name variations, we have 1 script with many aliases)
+;= rem ==================================================================
+list_all_my_scripts=list_all_my_scripts.py
+listallmyscripts=list_all_my_scripts.py
+listmyscripts=list_all_my_scripts.py
+list_my_scripts=list_all_my_scripts.py
+list_all_alex_scripts=list_all_my_scripts.py
+listallalexscripts=list_all_my_scripts.py
+get_all_my_scripts=list_all_my_scripts.py
+getallmyscripts=list_all_my_scripts.py
+getalexscripts=list_all_my_scripts.py
+getallalexscripts=list_all_my_scripts.py
+showallalexscripts=list_all_my_scripts.py
+show_all_my_scripts=list_all_my_scripts.py
+myscripts =list_all_my_scripts.py
+my_scripts =list_all_my_scripts.py
+
+;= rem TODO ADD A KEYBOARD SHORTCUT FOR THIS (bc it makes more sense than a script, considering when you typically need a screenshot it's not terminal related at all)
+myscreenshots =open_my_screenshots_amk.py
+screenshots =open_my_screenshots_amk.py
+seemyscreenshots =open_my_screenshots_amk.py
+openmyscreenshots =open_my_screenshots_amk.py
+openscreenshots =open_my_screenshots_amk.py
+
+create_new_python_script=create_new_python_script_amk.py $*
+createnewpythonscript=create_new_python_script_amk.py $*
+new_script=create_new_python_script_amk.py $*
+;= rem BELOW is me trying to pipe the output path to 'code' CLI so can open in vs code how I need but no such luck
+;= rem new_script=create_new_python_script_amk.py $* | code $*.py 
+;= rem new_script=create_new_python_script_amk.py $*
+
+list_all_environments=list_envs_amk.py
+listallenvironments=list_envs_amk.py
+listallmyenvironments=list_envs_amk.py
+listmyenvironments=list_envs_amk.py
+showmyenvironments=list_envs_amk.py
+show_my_environments=list_envs_amk.py
+show_all_my_environments=list_envs_amk.py
+showallmyenvironments=list_envs_amk.py
+myenvironments=list_envs_amk.py
+my_environments=list_envs_amk.py
+
+listsizemyenvironments=list_size_envs_amk.py
+listsizeallenvironments=list_size_envs_amk.py
+listsizeofallmyenvironments=list_size_envs_amk.py
+listmyenvironmentssize=list_size_envs_amk.py
+
+getdriveinfo=get_drive_info_amk.py
+get_my_drive_info=get_drive_info_amk.py
+getmydriveinfo=get_drive_info_amk.py
+showdrives=get_drive_info_amk.py
+showdriveinfo=get_drive_info_amk.py
+
+; = rem 13.1 TRUNKS
+list131trunks=list_13.1_trunks_amk.py
+listtrunks131=list_13.1_trunks_amk.py
+list131rel=list_13.1_trunks_amk.py
+listrel131=list_13.1_trunks_amk.py
+list13trunks=list_13.1_trunks_amk.py
+listtrunks13=list_13.1_trunks_amk.py
+; = rem 12.1 TRUNKS
+list121trunks=list_12.1_trunks_amk.py
+listtrunks121=list_12.1_trunks_amk.py
+list121rel=list_12.1_trunks_amk.py
+listrel121=list_12.1_trunks_amk.py
+list12trunks=list_12.1_trunks_amk.py
+listtrunks12=list_12.1_trunks_amk.py
+; = rem 11.3 TRUNKS
+list113trunks=list_11.3_trunks_amk.py
+listtrunks113=list_11.3_trunks_amk.py
+list113rel=list_11.3_trunks_amk.py
+listrel113=list_11.3_trunks_amk.py
+list11trunks=list_11.3_trunks_amk.py
+listtrunks11=list_11.3_trunks_amk.py
+
+
+listdblegend=%ALEX_SCRIPTS_DIR%\src-list_db_legend.py
+
+
+; = rem work-in-progress alias to get the struct member info from SCADA.SKM file
+get_struct_member_info=cat "%OSI%"\db\SCADA.SKM | fzf 
+getstructinfo=cat "%OSI%"\db\SCADA.SKM | fzf 
+getstructmemberinfo=cat "%OSI%"\db\SCADA.SKM | fzf 
+
+;= rem QUICK WAYS TO SEE ENV VARIABLE CURR VALUES 
+echoosi=echo %OSI%
+getosi=echo %OSI%
+
+;= rem C:\Users\aking\Downloads\cmder\config\flexprompt_config.lua
+;= rem C:\Users\aking\Downloads\cmder\vendor\clink\flexprompt_config.lua
+;= rem QUICK WAYS TO EDIT SPECIFIC CONFIGS...(notice we have 2 variations for each)
+
+
+;= rem THESE WILL BE FOR WHEN WE OFFICIALLY MOVE CMDER CONFIGS TO MY DOTFILE REPO NICHESIDEQUESTS
+;= rem add_alias=code D:\git\niche_side_quests_repo\win\user_aliases.cmd
+;= rem addalias=code D:\git\niche_side_quests_repo\win\user_aliases.cmd
+addalias=code C:\Users\aking\Downloads\cmder\config\user_aliases.cmd
+editalias=code C:\Users\aking\Downloads\cmder\config\user_aliases.cmd
+editaliases=code C:\Users\aking\Downloads\cmder\config\user_aliases.cmd
+
+
+editlistdblegend=code %ALEX_SCRIPTS_DIR%\src-list_db_legend.py
+editlistdblegendHardcodePath=code C:\Users\aking\amk\tools\alex_scripts\src-list_db_legend.py ;= rem I thought maybe this one would be faster to open than when the path is using my env var ALEX_SCRIPTS_DIR
+
+
+
+;= rem edit_config_flexprompt=code C:\Users\aking\Downloads\cmder\vendor\clink\flexprompt_config.lua
+;= rem editflex=code C:\Users\aking\Downloads\cmder\vendor\clink\flexprompt_config.lua
+editflex=code C:\Users\aking\Downloads\cmder\config\flexprompt_config.lua
+editprompt=code C:\Users\aking\Downloads\cmder\config\flexprompt_config.lua
+edit_config_glaze=code C:\Users\aking\.glzr\glazewm\config.yaml
+editglaze=code C:\Users\aking\.glzr\glazewm\config.yaml
+edit_config_ahk=code C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\king_app_switcher1.ahk
+;= rem editahk=code %ALEX_SCRIPTS_DIR%\king_app_switcher1.ahk
+;= rem editahk=code C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\king_app_switcher1.ahk
+editahk=code "C:\Program Files\AutoHotkey\UX\king_app_switcher1.ahk"
+
+editquickcompare=code D:\git\S3\utilities\s3\quick_compare.py
+editglaze=code C:\Users\aking\.glzr\glazewm\config.yaml
+
+editfzfbindings=code C:\Users\aking\Downloads\cmder\vendor\clink\clink_gizmos\fzf.lua
+editfzf=code C:\Users\aking\Downloads\cmder\vendor\clink\clink_gizmos\fzf.lua
+editfzflua=code C:\Users\aking\Downloads\cmder\vendor\clink\clink_gizmos\fzf.lua
+editfzfinputrc=code C:\Users\aking\Downloads\cmder\config\inputrc
+;= rem OLD FZF editfzf=code C:\Users\aking\Downloads\cmder\config\inputrc
+;= rem OLD FZF editfzflua=code C:\Users\aking\Downloads\cmder\vendor\fzf.lua
+
+editcreatenewpythonscript=code %ALEX_SCRIPTS_DIR%\create_new_python_script_amk.py
+edittemplateforpythonscripts=code %ALEX_SCRIPTS_DIR%\template_to_dup_for_new_python_scripts.py
+editlistdriveinfo=code %ALEX_SCRIPTS_DIR%\get_drive_info_amk.py
+editlistenvs=code %ALEX_SCRIPTS_DIR%\list_envs_amk.py
+
+editscrlaunchallmyapps=code %ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+editscrlaunchapps=code %ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+editscrlaunchmyapps=code %ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+editlaunchmyapps=code %ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+editlaunchmyapps=code %ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+editlaunchapps=code %ALEX_SCRIPTS_DIR%\scr-launch_my_main_apps.py
+
+
+working1=cd /d "%CMDER_ROOT%"
+working11=echo "%CMDER_ROOT%"
+working2=cd /d "%S3%"
+working3=echo "%USERNAME%"
+working4=echo %USERNAME%
+working5=echo "%ALEX_SCRIPTS_DIR%"
+working6=echo %ALEX_SCRIPTS_DIR%
+working7=echo "%S3%"
+working8=echo %S3%
+
+working0=cd /d "%ALEX_SCRIPTS_DIR%"
+cdtest1=cd /d "%ALEX_SCRIPTS_DIR%"
+cdtest2=cd /d "%ALEX_SCRIPTS_DIR%"
+cdtest3=echo "%ALEX_SCRIPTS_DIR%"
+cdtest4=echo %ALEX_SCRIPTS_DIR%
+editleettest7=code "%ALEX_SCRIPTS_DIR%"\scr-morning_leet_random.py
+editleettest8=code %ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py
+editleettest9=code C:\Users\aking\amk\tools\alex_scripts\scr-morning_leet_random.py
+
+
+editmorningleet=code %ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py
+editmorningwarmup=code %ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py
+editmorningprep=code %ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py
+editnextproblem=code %ALEX_SCRIPTS_DIR%\scr-morning_leet_random.py
+
+editlistmyenvironments=code %ALEX_SCRIPTS_DIR%\list_envs_amk.py
+editlistsizemyenvironments=code %ALEX_SCRIPTS_DIR%\list_size_envs_amk.py
+
+editlist121trunks=code %ALEX_SCRIPTS_DIR%\list_12.1_trunks_amk.py
+editlist131trunks=code %ALEX_SCRIPTS_DIR%\list_13.1_trunks_amk.py
+
+
+editgetdriveinfo=code %ALEX_SCRIPTS_DIR%\get_drive_info_amk.py
+
+;= rem ||TODO:||
+;= rem ||TODO:||
+;= rem ||TODO:||
+;= rem ||TODO:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+;= rem =================================================================
+;= rem ATTEMPTIN to MIMMICK THE Ctrl-F Cmder Command I have set up w/i fzf configs: (bc it CAN find both dirs and filenames)
+;= rem =================================================================
+;= rem ||TODO:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+;= rem FIRST i need to find the EXACT command that fzf is running (which i think is something like: "dir *super_specific* /b /s")
+;= rem THEN I can set up a few aliases for that command here 
+;= rem THEN just use the same alias names for FILE + DIR searches that I did on MAC side for UNIVERSAL exp satisfied 
+;= rem luafunc:fzf_file
+
+;= rem (files & dir) search with no fzf
+findfilesanddirs=dir /b /s $*
+findfandd=dir /b /s $*
+ffd=dir /b /s $*    ;= rem REMEMBER 'ffd' stands for 'find files and dirs' (akin to ff for 'find file')
+;= rem (files & dir) search ***WITH FZF***
+findfilesanddirsfzf=dir /b /s | fzf
+findfileanddirfzf=dir /b /s | fzf
+ffdfzf=dir /b /s | fzf
+
+;= rem findfiles=finder.py $* --files
+findfiles=finder.py $* 
+
+
+
+
+
+;= rem beta_findfandd "*specific*"
+;= rem the above command outputs EXACT SAME OUTPUT as if just ran 'dir /b /s' alone...so not quite right yet
+;= rem the above command outputs EXACT SAME OUTPUT as if just ran 'dir /b /s' alone...so not quite right yet
+;= rem the above command outputs EXACT SAME OUTPUT as if just ran 'dir /b /s' alone...so not quite right yet
+;= rem the above command outputs EXACT SAME OUTPUT as if just ran 'dir /b /s' alone...so not quite right yet
+;= rem the above command outputs EXACT SAME OUTPUT as if just ran 'dir /b /s' alone...so not quite right yet
+;= rem the above command outputs EXACT SAME OUTPUT as if just ran 'dir /b /s' alone...so not quite right yet
+;= rem and i confirmed it's not bc any of the quotes or wildcard placements etc...
+
+
+
+findfileanddir=dir "TBD FIXME!"
+findfilenameanddir=dir "TBD FIXME!"
+;= rem ||TODO:||
+;= rem ||TODO:||
+;= rem ||TODO:||
+;= rem ||TODO:||
+
+
+;= rem D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+
+
+;= rem DONE adjusting these to new git repo path
+editkeybvis=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editkeybviz=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editshortcuts=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editkeybshortcuts=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editkeybindings=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editkeyboardshortcuts=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editofficialshortcuts=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editofficialbindings=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+
+;= rem editvscodekeybindingsjson=code C:\Users\aking\AppData\Roaming\Code\User\keybindings.json
+;= rem C:\Users\aking\AppData\Roaming\Code\User\keybindings.json
+
+scratchpaper=code %ALEX_SCRIPTS_DIR%\scr-scratch_paper_area.py
+editscratchpaper= code %ALEX_SCRIPTS_DIR%\scr-scratch_paper_area.py
+
+editkeyboardshortcutvisualizer=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editkeyboardshortcutvis=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+editkeyboardshortcutviz=code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html
+
+
+editref=code D:\git\niche_side_quests_repo\_universal\ssot-refs.md
+editssotref=code D:\git\niche_side_quests_repo\_universal\ssot-refs.md
+editssotrefs=code D:\git\niche_side_quests_repo\_universal\ssot-refs.md
+editrefs=code D:\git\niche_side_quests_repo\_universal\ssot-refs.md
+
+
+
+
+
+
+
+;= rem ==================================================================
+;= rem sol for when you can't remember the command AND/OR alias so can do
+;= rem this fzf search over my alises within this doc AND my scripts in alex_scripts/ dir ... 
+;= rem ==================================================================
+list_all_my_aliases=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+listaliases=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+listallmyaliases=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+listmyaliases=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+list_all_my_aliases_and_scripts=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+listaliasesandscripts=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+listaliasesscripts=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+listallmyaliasesandscripts=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+listmyaliasesandscripts=cat C:\Users\aking\Downloads\cmder\config\user_aliases.cmd | fzf 
+
+;= rem ||TODO:|| figure out how to do ONE fzf across the DIR list of /alex_scripts/ AND the user_aliases.cmd file CONTENTS (not just file name)
+;= rem ||TODO:|| bc the above aliases for this section only search the user_aliases.cmd file, not the alex_scripts dir
+;= rem ||TODO:|| QUICK_SOL1: just do an 'ls' of alex_scripts, then paste output to bottom of this file. Then my fzf over user_aliases will still be hitting the alex_Scripts files 
+;= rem ||TODO:|| QUICK_SOL1: CONT... HOWEVER, we must update this list manually, so not ideal, but it's just a simple copy/paste of LS output so not too bad
+;= rem ||TODO:|| QUICK_SOL1: CONT2... This way, you can find the what you need WITHOUT ever having to leave CLI, even if you don't remember the alias/script name on the spot
+
+
+
+;= rem ==================================================================
+;= rem MY 'get/cpy' ALIASES ... 
+;= rem ==================================================================
+gets3path= echo D:\git\S3\
+getalexscriptspath = echo %ALEX_SCRIPTS_DIR%
+getspaceremaining=get_space_remaining_amk.py
+showspaceremaining=get_space_remaining_amk.py
+
+
+
+
+
+
+
+;= rem ==================================================================
+;= rem MY CD ALIASES ... (the %OSI% ones obvi only work when have sel env first)
+;= rem ==================================================================
+cdsrc=cd /d "%OSI%"\src\
+cdsrcwww=cd /d "%OSI%"\srcWWW\
+cdsrcnet=cd /d "%OSI%"\srcNET\
+cdcsharp=cd /d "%OSI%"\srcNET\
+csharp=cd /d "%OSI%"\srcNET\
+cdasi=cd /d "%OSI%"\src\asi\
+cdopenscada=cd /d "%OSI%"\src\openscada\
+cdsdk=cd /d "%OSI%"\src\scada_sdk\
+cdscadasdk=cd /d "%OSI%"\src\scada_sdk\
+cdotsfw=cd /d "%OSI%"\src\otsfw\
+cdinterface=cd /d "%OSI%"\src\scada_interface\
+cdscadainterface=cd /d "%OSI%"\src\scada_interface\
+cdtagging=cd /d "%OSI%"\src\tagging_subsystem\
+cdviewpoint=cd /d "%OSI%"\src\viewpoint\
+cdrc=cd /d "%OSI%"\sys\rc\
+cdrcfiles=cd /d "%OSI%"\sys\rc\
+cddata=cd /d "%OSI%"\data
+cddatafiles=cd /d "%OSI%"\data
+cddb=cd /d "%OSI%"\db
+cddbfiles=cd /d "%OSI%"\db
+cdrel=cd /d "%OSI%"\rel
+cdrelfiles=cd /d "%OSI%"\rel
+cdci=cd /d "%OSI%"\ci
+
+;= rem CD aliases for GIT REPOS (1 for each main prod, just like the above local-osi cd aliases)
+;= rem for these git-side ones I'm using the D:\git\TagSubsystem\src\tagging_subsystem instead of the less-useful top-level path def like this: D:\git\TagSubsystem\src\tagging_subsystem 
+;= rem ||TODO:|| decide if it's better to use the D:\git\ProductName\ instead of the deeper level path I set up originally, like D:\git\TagSubsystem\src\tagging_subsystem
+cdgitopenscada= cd /d D:\git\OpenSCADA\src\openscada\
+cdgitsdk= cd /d D:\git\SCADA-SDK\src\scada_sdk\
+cdgitscadasdk= cd /d D:\git\SCADA-SDK\src\scada_sdk\
+cdgitotsfw= cd /d D:\git\OTS-Framework\src\otsfw\
+cdgitinterface= cd /d D:\git\ScadaInterface\src\scada_interface\
+cdgitscadainterface= cd /d D:\git\ScadaInterface\src\scada_interface\
+cdgitviewpoint= cd /d D:\git\ViewPoint\src\viewpoint\
+cdgittagging= cd /d D:\git\TagSubsystem\src\tagging_subsystem\
+cdgitasi= cd /d D:\git\ASI\src\asi\
+cds3=cd /d D:\git\s3\
+;= rem REMINDER that I made two sep aliases (see above 'cdgit' alias section) for the git repos of scada interface and scada sdk (1 that uses the prefix 'scada' and 1 that does not, so no matter what I can get there asap whether I included the scada part or not)
+cdallconfigs=cd /d C:\Users\aking\ALL_CONFIGS\
+cddesktop=cd /d C:\Users\aking\Desktop\
+cdosi=cd /d D:\osi\
+cdalexscripts=cd /d %ALEX_SCRIPTS_DIR%\
+cdconfig=cd /d C:\Users\aking\.config\
+cdcdrive=cd /d C:\Users\aking\
+cdc=cd /d C:\Users\aking\
+cddrive=cd /d D:\osi\
+cdd=cd /d D:\osi\
+cdclink =cd /d C:\Users\aking\Downloads\cmder\vendor\clink
+cddownloads=cd /d C:\Users\aking\Downloads\
+cdaking=cd /d C:\Users\aking\
+cdquickref=cd /d %QUICK_REF_DIR%\
+cdrepos=cd /d D:\git\
+cdgit=cd /d D:\git\
+cdcmder=cd /d C:\Users\aking\Downloads\cmder
+prettyprintpath=echo %PATH:;=&echo.% 
+
+cdniche=cd /d %NICHE_REPO_DIR%\
+cddotfiles=cd /d %NICHE_REPO_DIR%\
+cdsidequests=cd /d %NICHE_REPO_DIR%\
+
+cdnichewin=cd /d %NICHE_REPO_DIR%\win\
+cddotfileswin=cd /d %NICHE_REPO_DIR%\win\
+cduniversal=cd /d %NICHE_REPO_DIR%\_universal
+
+cddesktop=cd /d "C:\Users\aking\OneDrive - Emerson\Desktop"
+
+
+
+;= rem fzfenvvariables=fzf_over_all_env_variables.py | fzf --preview 'echo {}' --preview-window=up:30% --bind 'enter:execute(echo {} | clip)'
+
+
+;= rem ==================================================================
+;= rem =FZF-based aliases [all of these should be prefixed with a 'fz', just like 'cd' and 'edit' aliases]
+;= rem ==================================================================
+fzfenvvariables=fzf_over_all_env_variables.py | fzf
+fzenvvariables=fzf_over_all_env_variables.py | fzf
+fzprettyprintpath=echo %PATH:;=&echo.% | fzf 
+fzprintpath=print_path_variable_pretty_amk.py | fzf
+;= REM Alias for fzf command to recursively search for only ***subdirectories*** (not files)
+fzfsubdirs=dir /s /b /ad | fzf
+fzsubdirs=dir /s /b /ad | fzf
+fzfdirs=dir /s /b /ad | fzf
+fzdirs=dir /s /b /ad | fzf
+;= REM Alias for fzf command to recursively search for only ***FILES*** (not subdirs like the above fzfsubdirs command)
+fzffiles=dir /s /b /a-d | fzf
+fzfiles=dir /s /b /a-d | fzf
+fzfs3=dir /s /b D:\git\S3\ | fzf
+
+
+
+
+;= rem ||TODO:|| change the below aliases to use the new keyboard-shortcuts.html file ...
+fzfkeybshortcuts=%ALEX_SCRIPTS_DIR%\fzf_keyboard_shortcuts_amk.py
+fzfkeyboardbindings=%ALEX_SCRIPTS_DIR%\fzf_keyboard_shortcuts_amk.py
+fzfbindings=%ALEX_SCRIPTS_DIR%\fzf_keyboard_shortcuts_amk.py
+fzfofficialkeyb=%ALEX_SCRIPTS_DIR%\fzf_keyboard_shortcuts_amk.py
+fzfshortcuts=%ALEX_SCRIPTS_DIR%\fzf_keyboard_shortcuts_amk.py
+fzfofficialbindings=%ALEX_SCRIPTS_DIR%\fzf_keyboard_shortcuts_amk.py
+
+
+
+searchkeybbyshortcut=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+searchkeybbycommand=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+
+
+;= rem FZF for keyboard-shortcut doc (aka keyboard-shortcuts.html)
+fzfkeybvis=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzfkeybviz=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzfkeybshortcutvis=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzfkeybshortcutviz=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzfkeybshortcutvisualizer=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf 
+fzfkeybshortcuts=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzfkeyboardbindings=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzfbindings=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzfofficialkeyb=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+
+fzkeybvis=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzkeybviz=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzkeybshortcutvis=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzkeybshortcutviz=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzkeybshortcutvisualizer=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf 
+fzkeybshortcuts=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzkeyboardbindings=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzbindings=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+fzofficialkeyb=cat D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html | fzf
+
+
+
+;= rem fzf_keyboard_shortcuts_amk.py
+
+
+;= rem fzf command to recursively search for only subdirectories (not files)
+;= rem  fzfsubdirs=dir /s /b /ad | fzf --preview 'echo {}' --preview-window=up:30% --bind 'enter:execute(echo {} | clip)'
+;= rem fzfsubdirs=dir /s /b /ad | fzf --preview 'echo {}' --preview-window=up:30% --bind 'enter:execute(echo {})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;= rem ==================================================================
+;= rem *****UPDATE***** I made a script to do this instead (get_drive_info_amk.py)
+;= rem =display specs of all DRIVES (C and D drives in this case) [ONLY PROB IS THE CONVERSION FROM BYTES TO GBs needs a workaround in cmd.exe]
+;= rem TODO suggestion: simplifiy this command to only return/print the one drives 'free space' val (Which will bein bytes) and then pipe that to some other script/etc that will convert it to GBs
+;= rem UPDATE!! I made a script to do this instead (get_drive_info_amk.py)
+;= rem ==================================================================
+;= rem for /f "skip=1 tokens=1,2,3" %a in ('wmic logicaldisk get name^,size^,freespace') do @if not "%a"=="" @echo Drive %a - Total: %c bytes (%=c/1073741824 GB), Free: %b bytes (%=b/1073741824 GB)^C
+
+;= rem ==================================================================
+;= rem =trying to be able2 launch my ahk app-switcher script from CLI
+;= rem ==================================================================
+;= rem below is the good enough for now, the only slight downside is that it returns us to HOME cd instead of the original dir we were in when we ran the command
+cdahk= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & run_my_ahk_script.bat & cd /d C:\Users\aking\
+ahk_run_main_script= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & run_my_ahk_script.bat & cd /d C:\Users\aking\
+
+
+
+
+
+
+;= rem ==================================================================
+;= rem ALIASES THAT TAKE ARGUMENT(s)
+;= rem ==================================================================
+;= rem create an alias that mimics the LINUX 'touch' command to create new empty files
+;= rem (bc windows equiv to touch is this ugly mess: 'type nul > nameOfNewFile.txt')
+;= rem FLAG DEFINITIONS: /E /I /H /K /Y"
+;= rem  /E:     Copies directories and subdirectories, including empty ones. This flag implicitly includes the functionality of the /S flag (which copies subdirectories except empty ones).
+;= rem  /I:     If the destination does not exist and you are copying more than one file (or a directory), xcopy assumes the destination is a directory and creates it. This prevents the command from prompting you to specify whether the destination is a file or a directory.
+;= rem  /H:     Copies hidden and system files in addition to normal files. By default, xcopy does not copy files that have the hidden or system file attributes set.
+;= rem  /K:     Copies attributes, such as the read-only attribute, from the source files to the destination files. By default, xcopy removes the read-only attribute during the copy process.
+;= rem  /Y:     Suppresses prompting to confirm that you want to overwrite an existing destination file. This is useful for automated scripts or batch files where user interaction is not desired
+touch=type nul > $*
+copydir=xcopy /E /I /H /K /Y $* 
+mv=move /Y $*
+mvdir=move /Y $*
+movedir=move /Y $*
+
+;= rem ============= rm -rf command ================= (ignoring 'del' and 'rmdir' aliases bc got superior rm-rf command working on windows)
+rmrf=rm -rf $*
+
+;= rem ||TODO:|| FIND THE OTHER ALIASES THAT TAKE ARGUMENTS AND ORGANIZE THEM INTO THIS SECTION LATER
+;= rem ||TODO:|| FIND THE OTHER ALIASES THAT TAKE ARGUMENTS AND ORGANIZE THEM INTO THIS SECTION LATER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;= rem ===================================================================
+;= rem ====== IGNORE THIS BLOCK BELOW UNTIL rm -rf no longer works on WINDOWS
+;= rem ===================================================================
+
+;= rem ====== IGNORE THE BELOW 'DEL' & 'RMDIR' ALIASES SINCE I'M USING 'rm -rf' INSTEAD ======
+;= rem on windows... the 'del' command is for del FILES, while 'rmdir' is for del DIRECTORIES
+;= rem del FILES...(so del command)
+del=del /Q $*
+rmf=del /F /Q $*
+rmforce=del /F /Q $*
+;= rem del DIRECTORIES...(so rmdir command)
+rmdir=rmdir /S /Q $*
+deldir=rmdir /S /Q $*
+removedir=rmdir /S /Q $*
+deletedir=rmdir /S /Q $*
+rd=rmdir /S /Q $*
+rmrf=rmdir /S /Q $*
+;= rem bc 'del' wll NOT del the directories themselves, this alias will del all files within the dirs but leave the dirs intact
+;= rem FOR EXAMPLE: if we ran this in our /src dir, then all files within src & subdirs would be deleted, but the dirs themselves would remain
+;= rem so...the project would still have the same dir structure, and all the levels of subdirs etc BUT all the files within those dirs would be gone
+delallfilesbutleavedirs=del /s /q $*
+;= rem      NOTE ABOUT WILDCARDS w 'del' ...!!!
+;= rem      del *.txt	Deletes all files with the .txt extension in the current directory.
+;= rem      so basically...del with WILDCARD ** can make this 'del' command crazy powerful BUT...need to be super careful with the wildcard regex since ALL-MATCHES are deleted, so producing a too-wide-ranging pattern would obvi delete WAY MOER than I would want)
+
+;= rem ===================================================================
+;= rem ====== IGNORE THIS BLOCK ABOVE UNTIL rm -rf no longer works on WINDOWS
+;= rem ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+;= rem ============== BELOW IS EXPERIMENTAL versions of ahk script from cli ======================
+;= rem ============== BELOW IS EXPERIMENTAL versions of ahk script from cli ======================
+;= rem cdahk1= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\
+;= rem cdahk2= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & run_my_ahk_script.bat
+;= rem ;= rem FOR SOME REASON I'm unable to get the 'cd -' command to work, it just keeps erroring about unable to find path
+;= rem cdahk3= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & run_my_ahk_script.bat & cd -
+;= rem cdahk4= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & cd -
+;= rem cdahk5= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & cd /d -
+;= rem cdahk6= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & cd /d -
+;= rem ;= rem it DOES WORK when it's the FIRST/only command, as opposed to being &'d with another cd (which i think is what is causing the 'unalbe to find path' error, in that, cding somewhere BEFORE the cd - cmd within the same single line command prob causing issues) I'm unable to get the 'cd -' command to work, it just keeps erroring about unable to find path
+;= rem cdahk7= cd -
+;= rem cdahk8= /d cd -
+;= rem ;= rem cdahk2=cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & run_my_ahk_script.bat
+;= rem cdahk9= cd /d C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\ & run_my_ahk_script.bat & cd /d C:\Users\aking\
+
+;= rem ==================================================================
+;= rem GREP ALIASES
+;= rem ==================================================================
+;= rem TODO: add this ignore-file-types snippet to all grep aliases below from richard: | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+;= rem primary two grep aliases...
+;= rem [TRYING TO AVOID SETTING ALIASES FOR THE ACTUAL COMMAND ITSELF bc can cause issues (so no grep=grep -rnI "%*" .  alias etc)]
+;= rem grep=grep -rnI "%*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+;= rem --------------------------------
+;= rem MOST COMMON USAGE EXAMPLES:
+;= rem      findinfiles SCADA.DB         (notice no need to specify the . or dir to search in, since it's already included in the alias definition)
+;= rem      findinfiles SCADA.DB*         (notice no need to specify the . or dir to search in, since it's already included in the alias definition)
+;= rem --------------------------------
+
+grp=grep -rnI "$*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+gp=grep -rnI "$*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+findinfiles=grep -rnI "$*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj 
+searchfilecontents=grep -rnI "$*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+findinfilecontents=grep -rnI "$*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+searchinfilecontents=grep -rnI "$*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+;= rem other misc grep aliases......
+grepBETA=grep --color=auto  ;= rem Runs `grep` with color highlighting.
+grepi=grep -i --color=auto  ;= rem Case-insensitive `grep` with color highlighting.
+grepc=grep -c  ;= rem Counts the number of matching lines.
+grepv=grep -v  ;= rem Inverts the match (excludes lines with the pattern).
+grepr=grep -r --color=auto  ;= rem Recursively searches directories with `grep`.
+grepin=grep -in --color=auto  ;= rem Case-insensitive recursive search with line numbers.
+grepl=grep -l  ;= rem Displays only filenames with matches.
+grepw=grep -w --color=auto  ;= rem Matches whole words only.
+;= rem ---------------------
+testgrep1=grep -rnI "$*" . | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+testgrep2=grep -rnI "$*" .
+;= rem testgrep2=grep -I "$*" . -r | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+;= rem testgrep2=grep -I "$*" .
+testgrep3=grep "$*" .
+;= rem || TODO: || try out this 'findstr' command and see how compares to grep 
+;= rem || TODO: || try out this 'findstr' command and see how compares to grep 
+;= rem || TODO: || try out this 'findstr' command and see how compares to grep 
+;= rem || TODO: || try out this 'findstr' command and see how compares to grep
+;= rem FINDSTR ALIASES (Windows-native grep-like tool)
+find=findstr  ;= rem Basic `findstr` command.
+findi=findstr /i  ;= rem Case-insensitive search.
+findc=findstr /c  ;= rem Searches for an exact string.
+findv=findstr /v  ;= rem Excludes lines with the pattern.
+findr=findstr /s  ;= rem Recursive search in directories.
+findw=findstr /r  ;= rem Uses regular expressions.
+findl=findstr /m  ;= rem Displays only filenames with matches.
+;= rem || TODO: || 
+;= rem || TODO: || 
+;= rem || TODO: || 
+
+;= rem ==================================================================
+;= rem EXAMPLES
+;= rem ==================================================================
+grepall=grep -r --color=auto $*  ;= rem Searches for a string recursively in all files in the current directory.
+findall=findstr /s /i $*  ;= rem Windows-native recursive search for a string.
+grepfile=grep --color=auto $1 $2  ;= rem Searches for a string in a specific file.
+findfile=findstr $1 $2  ;= rem Windows-native search for a string in a specific file.
+
+
+
+;= rem ==================================================================
+;= rem ALIASES TO LIST/PRINT/SEE ALL GREP FLAGS VIA A SCRIPT
+listgrepflags=%ALEX_SCRIPTS_DIR%\list_grep_flags_amk.py
+printgrepflags=%ALEX_SCRIPTS_DIR%\list_grep_flags_amk.py
+seegrepflags=%ALEX_SCRIPTS_DIR%\list_grep_flags_amk.py
+listgflags=%ALEX_SCRIPTS_DIR%\list_grep_flags_amk.py
+
+
+
+;= rem ==================================================================
+;= rem brief expl of all the grep flags, roughly sorted by most useful to least useful
+;= rem ==================================================================
+;= rem  -r  :   Recursively search directories.
+;= rem  -n  :   Show line numbers of matches.
+;= rem  -i  :   Case-insensitive search.
+;= rem  -v  :   Invert match (show lines that do NOT match).
+;= rem  -I  :   Ignore binary files.
+;= rem  -l  :   List only filenames with matches.
+;= rem  -c  :   Count the number of matching lines.
+;= rem  -w  :   Match whole words only.
+;= rem  --color=auto :   Highlight matches in color (if output is to a terminal).
+;= rem ==================================================================
+;= rem my top flag(s) combos:
+;= rem ==================================================================
+;= rem  -rnI  :   Recursive, show line numbers, ignore binary files.
+;= rem  | grep -v boost | grep -v comms | grep -v fep | grep -v vcxproj
+;= rem ==================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;= rem ==================================================================
+;= rem 'HELP' and 'VERSION' ALIASES...
+;= rem ==================================================================
+;= rem #### the 'HELP' ALIASES... ####
+helpwinget= winget --help
+helpgit= git --help
+helpgrep= grep --help
+helpdbset= dbset --help
+;= rem ||TODO|| ADD A TON MORE OF THESE 
+;= rem ||TODO|| ADD A TON MORE OF THESE 
+;= rem ||TODO|| ADD A TON MORE OF THESE 
+
+;= rem #### the 'VERSION' ALIASES... ####
+versionwinget= winget --version
+versiongit= git --version
+versiongrep= grep --version
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+;= rem ||TODO|| ADD A TON MORE OF THESE AS YOU COME ACROSS THEM IN YOUR DAILY USAGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
