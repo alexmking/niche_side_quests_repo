@@ -5,7 +5,7 @@
 # @raycast.title morning prep (via rayc)(beta)
 # @raycast.mode fullOutput
 
-# Optional parameters:
+# Optional parameters:¥
 # @raycast.icon 🤖
 # @raycast.argument1 { "type": "text", "placeholder": "Placeholder" }
 # @raycast.argument2 { "type": "text", "placeholder": "Placeholder" }
@@ -18,8 +18,7 @@
 # @raycast.authorURL https://raycast.com/alexmking921
 
 # from curses import echo
-import os
-import sys
+
 # print("Hello World! Argument1 value: " + sys.argv[1])
 # print("Hello World! Argument2 value: " + sys.argv[2])
 
@@ -39,7 +38,8 @@ import sys
 
 
 # os.system("/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py any any")
-
+import os
+import sys
 os.system("/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-leet_morning_random.py " + sys.argv[1] + " " + sys.argv[2])
 
 

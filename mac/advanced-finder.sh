@@ -9,6 +9,11 @@
 # Optional parameters:
 # @raycast.icon 🤖
 
+#####################################################
+# ALERT!! Use smart-configs.py as the template for this...
+#####################################################
+
+
 # Documentation:
 # @raycast.description opens a new finder window at the selected location (SELECTION via fuzzyfinding/dropdown mech) similar to my Advanced-Open script command idea(s)...not sure on specifics for this one just yet as it could be kinda redundant??
 # @raycast.author alexmking921

@@ -12,7 +12,9 @@
 ###### @raycast.mode inline
 ###### @raycast.refreshTime 1
 
-
+#####################################################
+# ALERT!! Use smart-configs.py as the template for this...
+#####################################################
 
 ###### DOCUMENTATION for Script-Commands here: ###########
 ###     https://github.com/raycast/script-commands

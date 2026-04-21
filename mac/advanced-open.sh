@@ -8,6 +8,10 @@
 #%%%%%% 'Smart Open' may be better name for this %%%%%%%%
 
 
+#####################################################
+# ALERT!! Use smart-configs.py as the template for this...
+#####################################################
+
 # Optional parameters:
 # @raycast.icon 🤖
 
