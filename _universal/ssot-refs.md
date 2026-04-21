@@ -5,7 +5,7 @@
 | -----     | ---       | -------- |
 | ✅        |❗TODO     | open selected file in vscode (from finder window selection obvi) |
 | ❗TODO    |❗TODO     | open file from path in clipboard (few wrinkles to this) |
-| ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
+| ✅        |❗TODO     | some dir-related stuff that's WITHIN the actual envs (DDrive/osi/monarch etc)
 | ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
 
 # TMP EXPL ON HOW OUTPUT DIRS SHOULD BE IMPL:
@@ -17,6 +17,38 @@
    - so each dir will be 1 arg in the super-long argument1 specifier for raycast scripts (which we cant use $VARIABLES for so this will be ugly gigantic 1-liner for sure) 
 
 
+
+# SCRIPT / BUFF IDEAS:
+- collect all common paths and setup either quicklink(s) or individual-snippets or script-command-dropdown that allows you to instantly find the path and copy/paste it (regular 'enter' could be 'copy to clip' while ctrl-enter could be direct paste)
+   - then we setup a hotkey for this (it merits it, beleive me) that brings you right to the 'search' part (obvi) (iow so we dont have to type the single-char alias like with 'f' for find files etc)
+   - ontop of the HOTKEY, we ALSO want some alias tied to it as well (like s)
+   - WRINKLE: we could also apply the same terminal-alias system that pre-pends some char or word to indicate the intent (w no space) and then have sep quicklink/snippet for each path 
+         - FOR EXAMPLE: cdosi uses the 'cd'. so I could have something like the following:
+            - pathzzshorts
+            - pathniche
+            - pathkeybvis
+            - pathahk
+            - etc, etc
+- ⭐😮 Expanding on my idea of mirroring the same pre-pend word/char in alias stuff that I have for my terminal (such as cd, edit, list, get ...), I just realized we can actually capture THIS and all the OTHER alias/char-triggers/etc everything else at the same time:
+   - EXPL:
+         - p == signle char alias for 'search-my-main-paths' command in raycast (maybe needs to be a script-command)
+         - HOTKEY == for the above 'search-my-main-paths' command in raycast (so both p and the HOTKEY would be on the same command) 
+         - pzzshortcuts == raycast-alias for the individual snippet/quicklink with zzshortcuts PATH (so every path would have 1 of these created just for it within raycast)
+         - 🤩 we CAN have all these setup and active AT THE SAME TIME (so 3 diff routes to get to same thing)
+         - *TODO:* set this up IMMEDIATELY 
+
+
+
+# ⚠️ TODO BELOW
+# RAYCAST's single-char triggers:
+- f or ff for file-search
+- p for path-search (wip) 
+- ?
+- ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+- s or ss for search snippets? 
+- ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+- ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+- ?
 
 
 # IMP DIRS 
