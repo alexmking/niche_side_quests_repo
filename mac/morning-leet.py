@@ -38,9 +38,9 @@
 
 import os
 import sys
-print("Hello World! Argument1 value: " + sys.argv[1])
-print("Hello World! Argument2 value: " + sys.argv[2])
-print("Hello World! Argument3 value: " + sys.argv[3])
+# print("Hello World! Argument1 value: " + sys.argv[1])
+# print("Hello World! Argument2 value: " + sys.argv[2])
+# print("Hello World! Argument3 value: " + sys.argv[3])
 
 arg1Difficulty = sys.argv[1]
 arg2Category = sys.argv[2]
