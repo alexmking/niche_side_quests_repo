@@ -16,11 +16,43 @@
 
 
 
+# ALL PATHS 
+- may move this to separate script or file just for simplicity until I get all the paths added 
+- ## MAC:
+- ? 
+- ?
 
 
 
 
 
+
+
+
+==================================================================
+# RULES OF THUMB for 'prefaces' of aliases...
+==================================================================
+- cd       ==      obvi
+- edit     ==      edit the file in VS Code
+- fz       ==      doing fzf over some output
+
+- list     ==      printing a list sep by new lines (like PATH) or etc
+- get      ==      either returns only 1 simple thing (like a single env var) AND/OR copies it to clipboard at same time
+- cpy      ==      ?? this one is good alternative to 'get'
+- ===================================
+- other ones to consider...
+- ===================================
+- my       ==      ??
+- sel      ==      short for 'select'. This one is another alt/variation of 'get' and/or 'cpy'??
+- show     ==      ?? maybe inbetween 'list' and 'get'? such as show-drive-info ??
+- see      ==      ?? interchangeable with 'show' i think ??
+
+- print    ==      ?? prob not using this one bc 'see' and 'show' and 'list' are all better/shorter
+
+
+- REMINDER: MACs root vs home dir 
+-      /     means start at ROOT dir 
+-    ~/    means start at HOME dir (NOT root)
 
 
 # DEV BUFFS to SETUP:
@@ -85,10 +117,10 @@
             - etc, etc
 - ⭐😮 Expanding on my idea of mirroring the same pre-pend word/char in alias stuff that I have for my terminal (such as cd, edit, list, get ...), I just realized we can actually capture THIS and all the OTHER alias/char-triggers/etc everything else at the same time:
    - EXPL:
-         - p == signle char alias for 'search-my-main-paths' command in raycast (maybe needs to be a script-command)
-         - HOTKEY == for the above 'search-my-main-paths' command in raycast (so both p and the HOTKEY would be on the same command) 
-         - pzzshortcuts == raycast-alias for the individual snippet/quicklink with zzshortcuts PATH (so every path would have 1 of these created just for it within raycast)
-         - 🤩 we CAN have all these setup and active AT THE SAME TIME (so 3 diff routes to get to same thing)
+         - 1️⃣ p == signle char alias for 'search-my-main-paths' command in raycast (maybe needs to be a script-command)
+         - 2️⃣ HOTKEY == for the above 'search-my-main-paths' command in raycast (so both p and the HOTKEY would be on the same command) 
+         - 3️⃣ pzzshortcuts == raycast-alias for the individual snippet/quicklink with zzshortcuts PATH (so every path would have 1 of these created just for it within raycast)
+            - 🤩 we CAN have all these setup and active AT THE SAME TIME (so 3 diff routes to get to same thing)
          - *TODO:* set this up IMMEDIATELY 
 - FZF/DROPDOWN for EACH of the following (mainly work-stuff):
    - DBs in monarch/db (the main ones )
