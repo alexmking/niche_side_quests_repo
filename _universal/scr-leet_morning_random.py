@@ -6,7 +6,6 @@
 # Cross-platform solution: This shebang works on both Mac and Windows
 # Just ensure python3 is in your PATH on both systems
 
-
 import random
 import webbrowser
 import sys

@@ -665,24 +665,45 @@ alias delfile="rm"
 alias deldir="rm -r"
 
 # leet morning script aliases...(these can accept args just like the WINDOWS side does fyi)
-alias morningleet="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
-alias morningwarmup="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
-alias nextproblem="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
-alias nextleet="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
-alias doaproblem="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+alias morningleet="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+alias morningwarmup="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+alias nextproblem="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+alias nextleet="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+alias doaproblem="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
 
 ######### HARDCODED-ARG VERSIONS OF MORNING-LEET script (shorthand if I just want some standard practice probs and its been a while so i dont really know what the args are (yes I could just do TerminalHISTORY search but this is nice to have as is))
-alias morningleetgroup1="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group1 onlytopproblems"
-alias leetgroup1="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group1 onlytopproblems"
-alias standardleet1="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group1 onlytopproblems"
+alias morningleetgroup1="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group1 onlytopproblems"
+alias leetgroup1="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group1 onlytopproblems"
+alias standardleet1="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group1 onlytopproblems"
 
-alias morningleetgroup2="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group2 onlytopproblems"
-alias leetgroup2="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group2 onlytopproblems"
-alias standardleet2="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group2 onlytopproblems"
+alias morningleetgroup2="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group2 onlytopproblems"
+alias leetgroup2="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group2 onlytopproblems"
+alias standardleet2="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group2 onlytopproblems"
 
-alias morningleetgroup3="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group3 onlytopproblems"
-alias leetgroup3="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group3 onlytopproblems"
-alias standardleet3="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group3 onlytopproblems"
+alias morningleetgroup3="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group3 onlytopproblems"
+alias leetgroup3="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group3 onlytopproblems"
+alias standardleet3="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easymed group3 onlytopproblems"
+
+###### REVERT BACK TO THESE IF _universal DIR ISNT WORKIN OUT WELL FOR MORNINGLEET SCRIPT...
+# # leet morning script aliases...(these can accept args just like the WINDOWS side does fyi)
+# alias morningleet="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+# alias morningwarmup="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+# alias nextproblem="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+# alias nextleet="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+# alias doaproblem="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+
+# ######### HARDCODED-ARG VERSIONS OF MORNING-LEET script (shorthand if I just want some standard practice probs and its been a while so i dont really know what the args are (yes I could just do TerminalHISTORY search but this is nice to have as is))
+# alias morningleetgroup1="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group1 onlytopproblems"
+# alias leetgroup1="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group1 onlytopproblems"
+# alias standardleet1="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group1 onlytopproblems"
+
+# alias morningleetgroup2="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group2 onlytopproblems"
+# alias leetgroup2="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group2 onlytopproblems"
+# alias standardleet2="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group2 onlytopproblems"
+
+# alias morningleetgroup3="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group3 onlytopproblems"
+# alias leetgroup3="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group3 onlytopproblems"
+# alias standardleet3="$NICHE_REPO_DIR/mac/scr-leet_morning_random.py easymed group3 onlytopproblems"
 
 
 
@@ -1185,11 +1206,19 @@ alias editlaunchmyapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
 alias editlaunchapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
 alias editsrclaunchapps="code $ALEXSCRIPTS_DIR/scr-launch_my_main_apps.py"
 
-alias editmorningleet="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
-alias editmorningwarmup="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
-alias editnextproblem="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
-alias editnextleet="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
-alias editdoaproblem="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+
+alias editmorningleet="code $NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+alias editmorningwarmup="code $NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+alias editnextproblem="code $NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+alias editnextleet="code $NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+alias editdoaproblem="code $NICHE_REPO_DIR/_universal/scr-leet_morning_random.py"
+
+# #### REVERT BACK TO THESE IF _universal DIR ISNT WORKIN OUT WELL FOR MORNINGLEET SCRIPT...
+# alias editmorningleet="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+# alias editmorningwarmup="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+# alias editnextproblem="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+# alias editnextleet="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
+# alias editdoaproblem="code $NICHE_REPO_DIR/mac/scr-leet_morning_random.py"
 
 
 alias editscratchpaper="code $ALEXSCRIPTS_DIR/scr-scratch_paper_area.py"
