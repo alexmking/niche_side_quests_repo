@@ -5,7 +5,7 @@
 # @raycast.title Morning Leet
 # @raycast.mode fullOutput
 
-# Optional parameters:¥
+# Optional parameters:
 # @raycast.icon 🤖
 # @raycast.argument1 { "type": "text", "placeholder": "Placeholder" }
 # @raycast.argument2 { "type": "text", "placeholder": "Placeholder" }
