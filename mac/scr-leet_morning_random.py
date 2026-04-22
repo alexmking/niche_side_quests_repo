@@ -1,7 +1,14 @@
-#!/Library/Frameworks/Python.framework/Versions/3.8/bin/python3
+#!/usr/bin/env python3
 
 # reminder may have to make executable after copying/creating new script from my template here: 
 # chmod +x /usr/local/bin/alexScripts/scr-script-name.py
+
+### THIS IS old python path on MAC side (just in case this cross-compat becomes too annoying to maintain)
+#######-(#!/Library/Frameworks/Python.framework/Versions/3.8/bin/python3)
+# WORST CASE: we can keep two sep version of this script (/mac and /win) and then copy/paste the entire contents to WIN SIDE each time (and the only thing wed have to change is UNCOMMENT the WIN PATH and COMMENT OUT the default MAC PATH which is no big deal
+### and considering how infrequenly we actually update this file, we wont have to do that very often anyway.)
+#### #!/usr/bin/env python3(this is the NEW python path that supposedly works on both MAC and WIN...)
+
 
 import random
 import webbrowser
