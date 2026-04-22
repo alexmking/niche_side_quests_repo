@@ -7,6 +7,53 @@ import random
 import webbrowser
 import sys
 
+##############################################
+### ARGS QUICK EXPLANATION: (3 args total, but 3rd is optional)
+##############################################
+# (difficulty, category, is_top)
+# difficulty = 		can be 'easy' or 'medium' or 'hard' or 'any' to select from any difficulty
+# category = 		can be 'any' or a specific category number (1-15) or group1 or group2 or group3
+# is_top = 			can be 'any' or 'top' to only select from top problems in the category/group
+
+# difficulty = 		easy, medium, hard, any, easymed, ezmed,ezm, emed
+# category = 		any, 1-15, group1, group2, group3
+# is_top = 			any, top	(optional arg)
+
+# GROUPS EXPL: 		the 3 GROUPS are just a way to mirror the 3 GROUPS I outlined in my goal to catch up on my leetcode progress...this way whatever group im currently working on, I can select that group and it will pull from all the categories in that group which makes it way easier to practice the progression style that I'm trying to do (start w mastering group1 before moving on to group2 and then group3 etc) but ALSO, it prevents you from already knowing exactly which group the prob is targeting when you run the script since right now if we run morningwarmup any 3, we immeditately know the sol is TWO PTR which is not good for actually learning the concepts behind the problems which is the whole pt to being w))
+# IS_TOP: 			the 3rd arg (is_top) is a high-level way to ensure I only pull up one of the TOP-problems from whatever list-of-matching-problems that result from the FIRST TWO ARGS...
+
+# arg1 = category (can be 'any' or a specific category number or group1 or group2 or group3)
+# arg2 = is_top (can be 'any' or 'top' to only select from top problems in the category/group)
+
+
+
+
+
+
+
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# USE THE BELOW ARG-COMBOS!!! 
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+##############################################
+### COMMON/USEFUL ARG COMBOS:
+##############################################
+# easymed group1 toponly 	===		pulls only the top 'easy' and 'medium' problems from group1 (which is a good way to get a good variety of probs but still ensure theyre all probs I should know well by now since theyre all in group1 and theyre all top probs in that group)
+# easymed group2 toponly 	===		pulls only the top 'easy' and 'medium' problems from group2 (which is a good way to get a good variety of probs but still ensure theyre all probs I should know well by now since theyre all in group2 and theyre all top probs in that group)
+# easymed group3 toponly 	===		pulls only the top 'easy' and 'medium' problems from group3 (which is a good way to get a good variety of probs but still ensure theyre all probs I should know well by now since theyre all in group3 and theyre all top probs in that group)
+# EXPL: use the above 3 based on whatever GROUP you're currently on, as it will give you the most legit/beneficial problems of that group :)
+#
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# USE THE ABOVE ARG-COMBOS!!! 
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
 ### CATEGORIES ### 
 # 1 = arrays			1
 # 2 = stacks					3?
@@ -328,14 +375,25 @@ def main():
 
 	if len(args) >= 1:
 		difficulty_arg = args[0].lower()
-		if difficulty_arg not in ["easy", "medium", "hard", "any"]:
-			print(f"Error: Invalid difficulty '{args[0]}'. Must be 'easy', 'medium', 'hard', or 'any'.")
+		if difficulty_arg == "med":
+			difficulty_arg = "medium"
+		if difficulty_arg in ["em", "ezmed", "ezm", "easym", "emed"]:
+			difficulty_arg = "easymed"
+		if difficulty_arg not in ["easy", "medium", "hard", "any", "easymed"]:
+			print(f"Error: Invalid difficulty '{args[0]}'. Must be 'easy', 'medium', 'med', 'hard', 'easymed', or 'any'.")
 			sys.exit(1)
 		difficulty_display = difficulty_arg
-		difficulty_filter = None if difficulty_arg == "any" else difficulty_arg
+		if difficulty_arg == "any":
+			difficulty_filter = None
+		elif difficulty_arg == "easymed":
+			difficulty_filter = {"easy", "medium"}
+		else:
+			difficulty_filter = {difficulty_arg}
 
 	if len(args) >= 2:
 		category_arg = args[1].lower()
+		if category_arg in ["g1", "g2", "g3"]:
+			category_arg = "group" + category_arg[1]
 		if category_arg == "any":
 			category_display = "any"
 			category_filters = None
@@ -356,6 +414,8 @@ def main():
 
 	if len(args) >= 3:
 		top_arg = args[2].lower()
+		if top_arg in ["y", "onlytop", "onlytopprobs", "topprobs", "topprobsonly", "onlypullfromtopproblems", "onlytopproblems", "topproblemsonly"]:
+			top_arg = "top"
 		if top_arg not in ["top", "any"]:
 			print(f"Error: Invalid top filter '{args[2]}'. Must be 'top' or 'any'.")
 			sys.exit(1)
@@ -365,7 +425,7 @@ def main():
 	filtered_links = ALL_LINKS
 
 	if difficulty_filter:
-		filtered_links = [link for link in filtered_links if link["difficulty"] == difficulty_filter]
+		filtered_links = [link for link in filtered_links if link["difficulty"] in difficulty_filter]
 
 	if category_filters is not None:
 		filtered_links = [link for link in filtered_links if link["category"] in category_filters]
