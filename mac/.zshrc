@@ -963,6 +963,12 @@ alias fzfp10kconfig="cat ~/.p10k.zsh | fzf"
 alias fzfeditp10k="cat ~/.p10k.zsh | fzf"
 alias fzfeditprompt="cat ~/.p10k.zsh | fzf"
 
+
+alias editref="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
+alias editssotref="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
+
+
+
 # !!! ALERT SOME OF THESE are now broken bc I moved the misc prefix/ naming-conv .txt files to sep new folder...since that info is likely going to be consolidated into the main ref doc
 alias fzfprefixnamingconventions="cat $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
 alias fzfprefixes="cat $REPO_DIR/niche_side_quests_repo/_universal/prefix_naming_conventions.txt | fzf"
