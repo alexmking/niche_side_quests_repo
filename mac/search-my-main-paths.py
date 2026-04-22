@@ -49,13 +49,18 @@
 #                       pssot-ref       == 
 #                       pmadden         == 
 #                       ... etc ... etc ...
+#                       👀 SNIPPET-KEYWORD EXAMPLES 👀 (should be shorter than the p-aliases)
+#                       zzshortcuts     ==  pzz     ⭐
+#                       pkeybvis        ==  pkey    ⭐
+#                       pssot-ref       ==  pref    ⭐
+#                       pmadden         ==  pmad    ⭐
+
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
 #                       ! CAUTION: Remember these quicklinks/snippets with the leading 'p' only copy/grab the PATH of the file (hence the 'p' for path)....so DONT CONFUSE these with the other normal quicklinks that actually OPEN the said file...rather these 'p' based quicklinks ONLY COPY/GRAB the PATH for that file...
-#                       ! CAUTION: Remember these quicklinks/snippets with the leading 'p' only copy/grab the PATH of the file (hence the 'p' for path)....so DONT CONFUSE these with the other normal quicklinks that actually OPEN the said file...rather these 'p' based quicklinks ONLY COPY/GRAB the PATH for that file...
-##########################################################################################################
-##########################################################################################################
-##########################################################################################################
-##########################################################################################################
-##########################################################################################################
 
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -64,7 +69,10 @@
 # !     HOTKEY == for the above 'search-my-main-paths' command in ray (HOTKEY will prob be something like HYPER-P or smthn)
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
+        #  - 4️⃣ FOUND ANOTHER LAYER w SNIPPETS-KEYWORDS...snippet-keywords are diff from ALIASES in that they automatically paste hte entire sniipet once you type out the ykeyword, ANYWHERE
+        #     - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
+        #     - so if i set 'pzz' as keyword for zzshorts path, then i type pzz and instantly it will be replaced by /Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm
+        #     - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
 
 
 

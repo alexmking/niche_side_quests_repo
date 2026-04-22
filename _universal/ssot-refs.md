@@ -122,6 +122,11 @@
          - 3️⃣ pzzshortcuts == raycast-alias for the individual snippet/quicklink with zzshortcuts PATH (so every path would have 1 of these created just for it within raycast)
             - 🤩 we CAN have all these setup and active AT THE SAME TIME (so 3 diff routes to get to same thing)
          - *TODO:* set this up IMMEDIATELY 
+         - 4️⃣ FOUND ANOTHER LAYER w SNIPPETS-KEYWORDS...snippet-keywords are diff from ALIASES in that they automatically paste hte entire sniipet once you type out the ykeyword, ANYWHERE
+            - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
+            - so if i set 'pzz' as keyword for zzshorts path, then i type pzz and instantly it will be replaced by /Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm
+            - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
+
 - FZF/DROPDOWN for EACH of the following (mainly work-stuff):
    - DBs in monarch/db (the main ones )
    - SKMs in monarch/data
