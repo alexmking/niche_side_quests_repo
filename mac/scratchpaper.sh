@@ -2,7 +2,7 @@
 
 # @raycast.schemaVersion 1
 # @raycast.title Edit Scratch Paper
-# @raycast.mode compact
+# @raycast.mode silent
 # @raycast.description Open scratch paper file in VS Code for quick edits
 # @raycast.packageName Developer Utils
 # @raycast.icon 📝

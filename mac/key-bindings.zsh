@@ -11,6 +11,23 @@
 # - $FZF_ALT_C_COMMAND
 # - $FZF_ALT_C_OPTS
 
+########################################################################################################################################################################
+########################################################################################################################################################################
+# NOTE: this is **NOT** the active file, rather just a copy/pasted version of it to have as a backup in case it gets overwritten/lost upon updates to fzf or something... 
+
+# THIS IS ACTIVE FILE LOCATION:
+# /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh
+
+# THIS IS THE BACKUP COPY OF THE ACTIVE FILE LOCATION:
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/key-bindings.zsh
+
+# Reminder, this is config file that defines the keyb-shortcuts for the 3 main fzf commands: (which I edited to better suit my preferences of:
+# ctrl-F for file search and ctrl-D for cd search, instead of the default ctrl-T and alt-C respectively)
+# so... it's very unlikely you'll ever need to edit this file unless you want to change the keyb-shortcuts for those 3 main fzf commands OR...
+# OR... if you wanted to get super fancy and customize the behavior of these commands by editing the actual functions but that's not recommended or needed at all rn...
+########################################################################################################################################################################
+########################################################################################################################################################################
+
 
 # TODO: these are the functions tied to each of the 3 main fzf commands (the functs are in key-bindings.zsh file)
 # (ctrl + t) == edit the  __fsel()              function

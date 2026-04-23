@@ -928,6 +928,15 @@ alias cdnichelinux="cd $REPO_DIR/niche_side_quests_repo/linux"
 alias cdnichewindows="cd $REPO_DIR/niche_side_quests_repo/windows"
 
 
+alias cdnichemac="cd $REPO_DIR/niche_side_quests_repo/mac"
+alias cdnicheuniversal="cd $REPO_DIR/niche_side_quests_repo/_universal"
+
+
+# WHITE SPACE PATH syntax: 
+alias cdscreenshots='cd "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0"'
+
+# SCREENSHOTS FOLDER PATH:
+# "/Users/alexking/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0/"
 
 
 
@@ -1250,8 +1259,6 @@ alias editkeybvis="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
 # alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
 
 # ~/Library/Application Support/Code/User/keybindings.json
-
-
 
 
 

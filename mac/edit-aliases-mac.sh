@@ -2,7 +2,7 @@
 
 # @raycast.schemaVersion 1
 # @raycast.title Edit Aliases
-# @raycast.mode compact
+# @raycast.mode silent
 # @raycast.description Open aliases file in VS Code for quick edits
 # @raycast.packageName Developer Utils
 # @raycast.icon 📝

@@ -29,3 +29,10 @@ if [ -n "$PRIMARY" ]; then
 fi
 
 rg -i "$QUERY" "$FILE" | head -n 20
+
+
+
+# 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
+# ASK GPT THIS QUESTION FOR THIS SCRIPT, just like I did for LOOKUP-REF script:
+# I want to enhance this script by adding some formatting to the matches it's showing in the output.
+# 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 

@@ -13,6 +13,41 @@
       - *other topics likely not going to be in this doc:*
          - madden
          - glaze,aero,aliases
+      - ❗TODO❗ ADD THE HEADER-PREFIX that we decide on to ALL the above headers throughout the doc
+      - ⭐EXAMPLE: python-syntax should instead be rpython-syntax (the 'r' will bring us right to the header we want)
+
+
+
+# FIXME: we need some unique keyword or identifier on every HEADER for this doc, to make lookups much more useful...
+   - EXAMPLE: if I wanted to quick lookup all our prefix keywords (like edit, cd, lookup, copy, getpath, path etc), then what I want is to be able to match on the HEADER for this topic HOWEVER, the header is just TEXT like normal so when I search 'prefix' i get 100 hits 
+   - SOLUTION: so we can have some -zz- like keyword that ONLY exists in the headers, and then INCLUDE this keyword with our search term:
+      - EXMAPLE: instead of searhing KEYWORD, we search rKEYWORD, which will ONLY match on the HEADERS use of KEYWORD (which there should only be maybe 1 or 2 of. Then the reuslts will bring us RIGHT to the header we want and show the following few lines below the match and boom, solved.)
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+   - ❗TODO❗ WHAT SHOULD THIS 'prefix' be for all of our headers in this doc?
+
 
 
 
@@ -29,30 +64,78 @@
 
 
 
-==================================================================
-# RULES OF THUMB for 'prefaces' of aliases...
-==================================================================
-- cd       ==      obvi
-- edit     ==      edit the file in VS Code
-- fz       ==      doing fzf over some output
 
-- list     ==      printing a list sep by new lines (like PATH) or etc
-- get      ==      either returns only 1 simple thing (like a single env var) AND/OR copies it to clipboard at same time
-- cpy      ==      ?? this one is good alternative to 'get'
-- ===================================
-- other ones to consider...
-- ===================================
-- my       ==      ??
-- sel      ==      short for 'select'. This one is another alt/variation of 'get' and/or 'cpy'??
-- show     ==      ?? maybe inbetween 'list' and 'get'? such as show-drive-info ??
-- see      ==      ?? interchangeable with 'show' i think ??
+# KEYWORDS, PREFIXES, NAMING-CONVENTIONS, RULES OF THUMB for aliases, scripts, commands, snippets etc
+   - cd           ==       obvi
+   - edit         ==       edit the file in VS Code
+   - fz           ==       doing fzf over some output
+   - scr          ==       short for 'script' and all script files should start w 'scr-(script-name)' format
+   - ss           ==       short for screenshot (all screenshots should start with 'ss-' which I already automated via my screenshot apps settings)
+   - ssot         ==       single-source-of-truth, indicator, title files, trello-cards/lists, etc with 'ssot-' and use search to find all of them fast
+   - ;            ==       leading char for raycast SNIPPETS (and ONLY raycast snippets. Not to be used with aliases or other ish)
+   - e            ==       Emoji prefix (like echeck or ealert, ALSO prob will have the same but with ';' for SNIPPETS such as ;checkg and ;alert etc )❗TODO❗❗
+   - lookup 🤔    ==       prefix for my on-the-fly search of contents of file without actually having to open the whole file itself (like zzmadden and keyvis quick lookups)
+   - look or lk   ==       ❓ maybe should replace the 'lookup' keyword prefix??               
+                              ❗TODO❗ brainstorm some alternative to 'lookup' bc it's a bit long and awkward for my liking...
+                                 - peek ? or look ? or ??
+   - list         ==       printing a list sep by new lines (like PATH) or etc
+   - get          ==       either returns only 1 simple thing (like a single env var) AND/OR copies it to clipboard at same time
+   - cpy          ==       ?? this one is good alternative to 'get'
+   - p  | path    ==       path-related, usually means we're copying a path to clipb or pasting directly (very similar to below 'gp', 'getpath' etc)
+   - gp | getp | getpath | gpath |     == prefix for get-path, indicating the return should be to copy-path to clipb or paste-path 
+   - pp | pastep | pastepath | ppath   == 
 
-- print    ==      ?? prob not using this one bc 'see' and 'show' and 'list' are all better/shorter
+   - (note about paste-path separate prefix: I'm still considering if it's going TOO granular to have a 'getpath' and then a 'pastepath' when they're so similar anyway, and getpath can become paste-paste with just a simple 'paste' immediately after...)
 
 
-- REMINDER: MACs root vs home dir 
--      /     means start at ROOT dir 
--    ~/    means start at HOME dir (NOT root)
+   ### other ones to consider...
+      - my       ==      ??
+      - sel      ==      short for 'select'. This one is another alt/variation of 'get' and/or 'cpy'??
+      - show     ==      ?? maybe inbetween 'list' and 'get'? such as show-drive-info ??
+      - see      ==      ?? interchangeable with 'show' i think ??
+      - proj      ==       short for project, all project dirs should start with proj-...
+      - ssot
+
+      - print    ==      ?? prob not using this one bc 'see' and 'show' and 'list' are all better/shorter
+
+
+      - REMINDER: MACs root vs home dir 
+      -      /     means start at ROOT dir 
+      -    ~/    means start at HOME dir (NOT root)
+
+   ### SNIPPETS prefix approach:
+   - semicolon ; is the designated leading-char for most/all SNIPPETs, like so:  ;zzshorts  ||  ;keybvis
+   - the semicolon is *ONLY* for SNIPPETS. So you cant use it with any quicklink or raycast-alias defintions.
+      - this way, we don't have to worry about triggering snippets on accident while in middle of raycast-search while at the same time still being able to use very short snippet triggers like 'pzz'
+      - since 'pzz' can be the raycast alias, and ';pzz' can be the snippet
+   - HOWEVER, the above prefixes like 'p' or 'path' or 'edit' etc CAN be used for quicklink/aliases.
+   - We should have multiple snippets for the same shortcut/action so it's easier to trigger on the fly w/o needing to remember the exact single one (as long as the mult snippets dont interfere with the quickLink/alias equiv)
+      - the STANDARD snippet is the one with the leading ';', such as   ;zzshort    .... or ... ';pzpz' 
+         - Note because the context of SNIPPETS are already known, you dont really need the prefix like quicklink-names and aliases kinda do (like typing zzshorts in rayc-search, it's not clear what you want to do with zzshorts, which is why a prefix like 'p' or 'edit' is needed)
+            - However, with Snippets, you alraedy know you're trying to paste some string, so there's no need to define the snippet like ;pathzzshorts or ;pzshorts since the filename alone is enough to remove any ambiguity 
+
+
+
+
+# SUMMARY: HOW TO DEFINE/SETUP PATH STUFF FOR OPTIMAL PERF:
+      - SNIPPET3 ========== ;pathzzshortcuts	(; + file-name)                  
+      - SNIPPET2 ========== ;pzzsh			    (; + same-as-alias) 	           
+      - SNIPPET1 ========== ;zzshorts			(; + abbreviated-file-name)      
+      - COMMAND-NAME ====== path zzshortcuts	(path + “ ” + full-file-Name)   
+      - ALIAS ============= pzzsh			    (p + abbreviated-file-name       
+
+      - SNIPPET3:  
+         - (the most verbose option, last resort)(the filename can be abbreviated or full, either way it shouldnt matter bc ;path removes any chance of conflicts with command-name/alias
+      - SNIPPET2:  
+         - (whatever alias is used for the command, this snippet is meant to copy it exactly but with the leading ‘;’ )
+      - SNIPPET1: 
+         - (no additional prefix like ‘p’ unless there’s ambiguity)  
+      - COMMAND-NAME"
+         - (path keyword, then empty space, then full file name)
+      - ALIAS"
+         - (p + abbreviated-file-name       (the shortest, just the p-keyword prepending onto the abbreviated (or extra-abbreviated)filename)
+
+
 
 
 # DEV BUFFS to SETUP:
@@ -388,7 +471,7 @@ tmp list of imp dirs in MAC and WIND sides, which I'll use to decide on theoffic
 
 
 
-# ACRONYMS / TERMINOLOGY / CLIENTS / ETC
+# KEYWORDS ? ACRONYMS / TERMINOLOGY / CLIENTS / ETC
 + RAR	    ==	FROM MARKD md :) ppl who review the doc / design
 + LA		==	life cycle thinig 1
 + GA		== 	general avail of prod cycle
