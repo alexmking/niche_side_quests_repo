@@ -114,6 +114,30 @@
          - Note because the context of SNIPPETS are already known, you dont really need the prefix like quicklink-names and aliases kinda do (like typing zzshorts in rayc-search, it's not clear what you want to do with zzshorts, which is why a prefix like 'p' or 'edit' is needed)
             - However, with Snippets, you alraedy know you're trying to paste some string, so there's no need to define the snippet like ;pathzzshorts or ;pzshorts since the filename alone is enough to remove any ambiguity 
 
+   ### list of the basic snippets I want active on both sides (mac/wind):
+      - *(replace all the '!' with ';' obviously)*
+      - !todo
+      - !done
+      - !pink     (pink emoji)
+      - !quick    (pink emoji)
+      - !qk       (pink emoji)
+      - !ADDMOREHERE!!! ❗TODO❗
+      - !ADDMOREHERE!!! ❗TODO❗
+      - !ADDMOREHERE!!! ❗TODO❗
+      - !ADDMOREHERE!!! ❗TODO❗
+      - !ADDMOREHERE!!! ❗TODO❗
+      - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
+      - emojis to try to insert into cmder 'active tab' defintion:
+         - 📌🔳💠🟢🟦🔹▪️⭐🦄🐢🍄🍇     ScreenshotDONE
+         - 🐢🍄🍇🎃✨🎀🏆🏅🥇🪄           ScreenshotDONE
+         - 🔮🎱🧩♟️🌍🧱🏠🚀☀️🌜           ScreenshotDONE
+         - 🌀🌈🔥⚡💧💎🎩👑💡🔖           ScreenshotDONE
+         - 📍🗿🔰❇️✴️✳️♻️Ⓜ️                ScreenshotDONE
+         - (%c) %m___CUR___m %n     ORGINAL ONE HERE FYI
+         - LOOK AT ALL MY MINI SCREENSHOTS to decide on which one to go with...
+         - DELETE THIS WHOLE SUBSECTION WHEN DONE AND HAVE OFFICIAL SYMBOL THING SETUP FOR THE ACTIVE-CMDER-TAB...
+         - THE TOP CONTENDERS:
+            - 🔳🟢🟦🦄🍄🍇
 
 
 
