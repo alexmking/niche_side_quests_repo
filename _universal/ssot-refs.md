@@ -206,6 +206,7 @@
       - !mdpython    (python codeblock markdown) ;todo ❗TODO❗ MANY OTHER 'md' based snippets to create, such as !mdtable1, etc etc
       - !mdcpp       (c/c++ code block markdown)
       - !mdcs        (csharp markdwon)
+      - !rem      ;= rem (the annoying comment syntax for windows-alias doc )
       - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
  
 
@@ -2956,8 +2957,8 @@ securesync      rel/1_trunk
   - ***SO...we need to look at the list ew get in return when we do 'get windows' at start of shortcut and see if we can dtermine some filtering condition we could add to it such that it remvoes all the invisible windows and only keeps the real windows in the list***
 
 
-
-
+NIK QUESTION:
+Any idea why this simple upmerge to 13.1 wouldn't be working the same as it was on 12.1: https://git.dev.osii.com/osi/OpenSCADA/pull/1795 (the 12.1 SWR we briefly looked at together last month if you remember). I spent some time on this a couple weeks ago and was surprised it wasn't working since the 12.1 -> 13.1 diff of the surrounding code shows no big changes. 
 
 
 
