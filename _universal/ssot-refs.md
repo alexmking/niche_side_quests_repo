@@ -136,6 +136,7 @@
    - scan | scanner (like path-scanner or config-scanner)
    - search (prob least likely?)
 
+
    - (note about paste-path separate prefix: I'm still considering if it's going TOO granular to have a 'getpath' and then a 'pastepath' when they're so similar anyway, and getpath can become paste-paste with just a simple 'paste' immediately after...)
 
 
@@ -147,6 +148,7 @@
       - see      ==      ?? interchangeable with 'show' i think ??
       - proj      ==       short for project, all project dirs should start with proj-...
       - ssot
+      - md        ==       markdown, (see how I used with snippets like ;mdpython )
 
       - print    ==      ?? prob not using this one bc 'see' and 'show' and 'list' are all better/shorter
 
@@ -167,7 +169,7 @@
 
    ### SNIPPET KEYWORDS(kinda): list of the basic snippets I want active on both sides (mac/wind):
       - *(replace all the '!' with ';' obviously)*
-      - ## FYI ALL THESE ARE ALREADY SETUP ON MAC SIDE, JUST NEED TO DO SAME ON ❗❗❗WIN❗❗❗ SIDE...
+      - ## FYI ALL THESE (except maybe some of the new/bottom ones) ARE ALREADY SETUP ON MAC SIDE, JUST NEED TO DO SAME ON ❗❗❗WIN❗❗❗ SIDE...
       - !todo     ❗TODO❗
       - !done     ✅DONE✅
       - !pink     🎟️ (pink emoji)
@@ -199,6 +201,11 @@
       - !new      🆕  
       - !brick    🧱
       - !rainb    🌈
+      - !idk      🤷‍♂️
+      - !shrug     🤷‍♂️
+      - !mdpython    (python codeblock markdown) ;todo ❗TODO❗ MANY OTHER 'md' based snippets to create, such as !mdtable1, etc etc
+      - !mdcpp       (c/c++ code block markdown)
+      - !mdcs        (csharp markdwon)
       - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
  
 
@@ -208,7 +215,7 @@
    - p for path-search (wip) 
    - s for search-Snippets (may repl w something more deserving since snippets ill rarely need to search for tbh)
    - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
-   - s or ss for search snippets? 
+   - n for search RaycastNotes (changed since hyper-n was better suited for 'open a specific raycast-note' instead of 'search my raycast notes' since we dont want a bunch of sep raycastNotes bc that's what this ref doc/trello is for...rather RaycastNOTES should ONLY be for a quick spot/window to jot down misc stuff on the fly which we can do without leaving context of curr window etc etc)
    - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
    - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
    - ?
@@ -251,20 +258,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -zz-TBD
 # DEV BUFFS to SETUP:
 | MAC       | WIN       | Buff Description |
@@ -273,46 +266,6 @@
 | ❗TODO    |❗TODO     | open file from path in clipboard (few wrinkles to this) |
 | ✅        |❗TODO     | some dir-related stuff that's WITHIN the actual envs (DDrive/osi/monarch etc)
 | ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -793,102 +746,6 @@ srcNET\ViewPoint\makecs.bat
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -zz-TBD
 # IMP DIRS 
 tmp list of imp dirs in MAC and WIND sides, which I'll use to decide on theofficial OUTPOST dirs
@@ -1109,20 +966,6 @@ blah blah blah.
          - now when I run 'git add .' then we'll get 'main +24'...(UPDATE! it turns out this +24 val is some issue w my prompts git feature on macs-side(not confirmed if also exists on windows prompt side) so dont read too into it at the moment.
       - 
       - 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1474,6 +1317,2022 @@ Line two
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+# GO THROUGH THE BELOW STUFF WHICH I COPY/PASTED FROM ALL THE OTHER RAYCAST-NOTES I HAD BEFORE I DECIDED I SHOULD ONLY USE 1 raycnote
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ 
+
+# DISK CLEANUP STEPS: 
+- [x] Backup as much of /Macintosh HD (default) as you can 
+- [ ] backup as much of /Machintosh HD/Volumes/Machintosh HD - Data as you can
+- [ ] backup /Users dir 
+- [x] do full Time Machine backup on new ext harddrive 
+- [ ] Buy/download DaisyDisk and try it out
+- [ ] find largest files in 3 below dirs:
+      - [ ] Users/alexking/local_docs, 
+      - [ ] Users/alexking/Library
+      - [ ] Users/alexking/Downloads
+- [ ] Identify all the ones you think are safe to del
+- [ ] BACKUP all these before actually deleting
+- [ ] DELETE those files
+- [ ] RESTART macbook
+- [ ] Check SSD usage and see if still at 92+% 
+- [ ] IF STILL NO REAL IMPROVEMENT…then make appt at Apple to go over the confusing Volumes/ Disk stuff and see what can/cant delete safely 
+      1. (bc the main idea is that we likely have 2x duplicates of entire drive which is what’s causing the bloated disk drive despite me purging so many files to backup ext drive several months ago
+
+
+
+# Python-leet-syntax
+**__SETUP-INFO:__**
+
+BIG-MONITOR 	== zoom 90% on chrome (or 110% if stick w new zoomed-in style)
+
+LAPTOP 		== zoom 80% on chrome-Windows (100% on chrome-mac)
+
+**__SHORTCUTS:__**
+
+ctrl-‘					runcode
+
+ctrl-ENTER 			        submit
+
+ctrl-]					max/exit Panel
+
+ctrl-[					toggle-Panel
+
+alt-up/down			        move lines up/down (editor)
+
+ctrl-/					toggle-comment (editor)
+
+ctrl-z					undo/redo (editor)
+
+*(note if some of these aren’t working on Mac it’s likely bc BTT needs to be restarted bc some of them are chrome-specific redirects through BTT in order to get the MAC <=>WIND universality)*
+
+
+```python
+def hello_world():
+print("Hello, Markdown!")
+```
+
+
+
+
+```python
+############ PYTHON SYNTAX REF ###############
+nums = [100,200,300,400]
+myDict = {"a": 1, "b": 2, "c": 3}
+ 
+##### annoying python syntaxes that i have to deal with when writing code for leetcode problems
+
+myList = [ [] for i in range(5)]     # creates a list of 5 separate **empty** lists
+
+# Sorting a word (2 lines) 
+myWord = sorted("myword")     # sorts the "myword"
+sortedWord = "".join(myWord)  # 2nd part, since sorted() only returns like a list of chars sorted 
+# Sorted a word (1 liner):
+sortedWord = "".join(sorted("myword"))     # sorts the letters in a word and then joins them back together into a string (since sorted() returns a **list** of the sorted characters for some reason)
+
+myList = [0] * 10    # creates a list of 10 zeros. If I did myList = [[0] * 10] * 10, it would create a list of 10 references to the same inner list, which is not what I want. This way, each inner list is a separate object in memory.
+
+# create an list of length 10, filled with no value (None)
+myList = [] * 10
+
+
+nums = [100,200,300,400]
+myDict = {"a": 1, "b": 2, "c": 3}
+
+# variations of the multi-variable usage w 'for' loop (lists, vs dicts etc)
+for outerInd, outerElem in enumerate(nums):
+    print(outerInd)
+    print(outerElem)
+
+for outerInd, outerElem in myDict.items():
+    print(outerInd, outerElem)
+
+# ############# COMMON WRONG SYNTAX ##################
+# ### WRONG / COMMON conflating if rusty on python ####
+# for outerInd, outerElem in nums: # WRONG!
+#     print(outerElem) # WRONG!
+# ### WRONG / COMMON conflating if rusty on python ####
+# for outerInd, outerElem in myDict:# WRONG!
+#     print(outerInd, outerElem)# WRONG!
+# ### WRONG / COMMON conflating if rusty on python ####
+
+# MOD OPERATION (to get 2nd digit of a 2 digit integer)(for the linked-list add-2-numbers prob)
+secondDigit = tot % 10
+```
+
+
+
+
+
+
+# madden 06
+1. N**OTE! **when deciding how to setup/use a command/hotkey etc, focus on the **larger picture end-goal **of what were doing and then set it up to take you there immediately, as opposed to the mini-steps before hand (SEE EXAMPLE BELOW)
+2. **EXAMPLE: **What is the **larger picture end-goal **of this MADDEN06 doc/note?
+   1. **ANSWER:** it’s to quickly lookup/find a specific entry within the doc. 90% of the time when I’m opening this doc, it’s to do that, and the other times it’s just to add /edit a new entry
+   2. **SO…**How should we define the quicklink for this note then?
+   3. AN**SWER: **we have the hotkey bring us directly to ’SEARCHING WITHIN’ this doc (instead of the typical setup of simply ‘opening’ the doc)
+3. MISC rambling expl:make sure to define the quicklink for this such that it SEARCHES the contents of this note (as opposed to just opening the note and THEN us having to manually input the ’search w/i note’ command afterwards) because the PRIMARY USE-CASE for this note/doc is quickly LOOKING-UP the info, and NOT adding/editing new info.
+
+KingPurple 21 4242*$@$@ → alexking921@y
+
+KingPurple 21 4242*$@$@ → alexking921@y
+
+KingPurple 21 4242*$@$@ → alexking921@y
+
+KingPurple 21 4242*$@$@ → alexking921@y
+
+KingPurple 21 4242*$@$@ → alexking921@y
+
+KingPurple 21 4242*$@$@ → alexking921@y
+
+KingPurple 21 4242*$@$@ → alexking921@y
+
+KingPurple 21 4242*$@$@ → alexking921@y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### How to get multi-instance same-app switching to work on MAC side:
+
+- currently we are using RAYCAST for most of the app-switching shortcuts …
+- BTT has ‘show window switcher for actuve app’ command now which can get us CLOSE-ENOUGH to the ‘cycling through same-app windows’ behavior we want (and successfully got working on windows via AHK script)
+- HOW IT WORKS: 
+1. we try to move switching shortcuts to BTT instead of recast(not end of workd if we cant)
+2. Then we have TWO of the same shortcuts defined for each app
+   1. ONE if defined globally in ‘FOR ALL APPS’ of btt and this one simply opens/switches to the app in question
+   2. SECOND is defined in the app-itselfs own section and this one triggers the ’show window switcer for actuve app’ command, which will allow us to repeatedly cycle through all the windows of that app by simply hitting the shortcut again (no manually selecting if we dont want to)
+   3. bc the app-specific ones take precident over FOR ALL APPS section, when we trigger the shortcut while ALREADY in the app itself, then it’ll give us the ‘show window switcher for active app’ feat that allows us to cycle 
+      1. and when we trigger the app when NOT already in the app itself, we just get teh same simple siwth-to-app behavior we have already
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Monarch x Sofi rule fixing / cleanup…
+## CURRENT PLAN BEFORE THE REMAINING BULLETS BELOW:
+1. Create some rules to target the 3 big ZELLE transfers as best you can
+2. Leave everything as is for 1-2 months and see if everything works as intended already 
+   1. There may be a few errors where we need to add/edit some rules but big picture wise, our curr rule setup should get us 95% there
+3. KEEP IN MIND the MOST IMPORTANT thing is to ensure all the TRANSFERS are actually being read as TRANSFERS and not (+-) debits which fuck up our budget numbers big time
+   1. From my POV, my curr rules are enough to accomplish this. Then the other stuff is cherry-on-top stuff I can mess about down the road when have more time
+
+# AFTER THE ABOVE LIST IS DONE, then can continue w below bullets:
+- [ ] Deleting / consolidating old rules
+      - [x] use chrome-search 2make sure only ONE rule exists for each recurring merch 
+      - [x] search for other key names/companies to elim duplicates
+      - [x] focus on finding DUPLICATES rules
+      - [ ] focus on finding NEVER-TRIGGERED rules
+      - [ ] focus on finding NOT-NEEDED-ANYMORE rules
+      - [ ] focus on finding PIECE-MEAL rules (rules that only do a fraction of what we need that rule to do, so should consolidate/combine w other relevant rules OR del the piece-meal rule and create the robust rule we actually need
+- [ ] AFTER moved all rules I want to del to below the 🚨TMP RULE 🚨, take a screenshot of them all and then DELETE THEM!!
+- [ ] creating new rules around Sofi Vaults transactions/transfers etc 
+      - [ ] how to capture the End of month transfers
+      - [ ] how to capture BOTH the bill splitting between monarchs internal splitting and my Sofi splitting (or IOW make sure they dont get in the way of each other)
+- [x] update/fix the recurring merchants (add any new / del any old ones)
+- [ ] After updating all recurring merchants stuff, then RECALCULATE the amount I need to transfer to WELLS CHECKING for each paycheck in order to cover all future recurr charges (bc the current 250-ish may no longer be enough)
+- [x] ⭐ ⭐  After done laying out each type of Sofi-transaction-w-vaults, do 1 test-transfer for EACH of them so we can see how MONARCH is reading it on its end (well def need this to dev the right rules)
+      - [x] SEND A 1-10 dollar amt for each Diff type of transfer transaction…
+      - [ ] Wait a day or two until these all show up on Monarch side
+      - [ ] Eval how monarch is reading each diff type of transaction (using the specific amt transfered as way to quick check what type of transaction it is on my HOME google doc
+      - [ ] use this info to inform how we want to define the RULES on monarch such that it defines all these correctly while still having sep carved out rules for recurring ones like the 3 ZELLE Transfers and Extra Debt payment etc
+      - [ ] ??
+- [ ] Lastly: Fix/update my numbers in Monarchs “BUDGET” section…
+
+# Stuff I need the rules to capture:
+- [ ] Zelle 3 transfers (fixed, fixed, varying-amt, varying-amt-for-extraDebt-payment)
+- [ ] My PER-PAYCHECK transfers:
+      - [ ]  (like 250 from Sofi→ wells)
+      - [ ] leftover vault transfer(s)
+      - [ ] End of Month Transfers from Rent VAULT → sofiChecking(b4 Zelle)
+- [ ] ??
+- [ ] ??
+- [ ] ??
+- [ ] ??
+- [ ] ??
+
+# VAULT RELATED transactions to capture:
+
+- [ ] FROM 
+
+
+
+
+
+
+
+
+# RAYC EXTENTIONS to TRY OUT:
+Pipe Commands
+Fuzzy File search
+Finder Utilities
+? (cant tell if Pipe-Commands ext is sorta-useful or a mf game-changer amazingness level of useful?
+
+
+
+
+
+
+
+
+
+
+
+
+## TODO for Raycast new LOOKUP script commands:
+- [x] set up bare bones of the 3-7ish commands on both Mac and win
+- [ ] Read the enhancements GPT mentioned (like formatted output and auto copy/paste etc)
+- [ ] Start conslidating the ref doc stuff so ssot-ref.txt is actually useful (
+- [x] look at my list of files/info that may merit their own lookup command and defcide what to do for each
+      - [ ] (like what info should be consolidated into the giant ref doc vs having its own sep doc etc
+- [ ] CHERRY ON TOP: 🍒 
+      - [ ] after I get the ouput, it would be ideal if one of the CMD-K options was to open the doc it was searching (this would be great for when the output didn’t find what I wanted and need to do a more robust search w manual CTRL-F after opening)
+            - Otherwise I could hit a hotkey to open it (if the doc is imp enough to have its own (which big ref doc will def have at least) which would give me about the same effect
+
+# TRY THIS ASAP! (using the script command feat to FINALLY get some/most my alias commands to be triggerable via raycast <3 
+- [x] EXAMPLE: typing ‘editaero’ in raycast would do SAME as running it in terminal (obviously some commands arent going to fit w this ‘running from raycast’ (like a cd command for example) but MANY MANY will (such as any of the edit commands or any of the listmyabc or getspaceremaining etc
+- [x] Create the above command and test it
+- [x] ⭐ Create all edit commands on both MAC and WIN sides
+      - [x] **MAC: **(zshrc, aero, keybViz, madden? ,optional-ones: ====> zprofile, p10k, prompt, madden??, morning-leet, scratchpaper,launchmainapps, vscode-keybindings, 
+      - [x] **WIN:** user_aliases.cmd, ahk, keyboardVis, glaze, quick-compare,  optional-ones: ====> flexprompt, morningleet, launchmyapps,  scratchpaper, fzf?, and all my mini scripts like listenvvariables and 
+- **FUN WRINKLE TO TRY OUT:**
+  - [ ] make the same command except have it take an argument, and then this argument could be 1 of say 10 most common edit files (which would prob need to be HARDCODED in the script or something 
+        - IDEAL: if we could get some dropdown funtionality that would be amazing and DEFINITELY would be worth learning how to setup because it could be applied in so many other scripts/raycast stuff
+          - (im pretty sure I saw the __dropdown__ once in a Raycasts own vid but there wasnt not alot of explanation on HOW they set it up but i at least know its possible
+
+# IDEA3 to try!!
+- ORIG-IDEA: (not that much ‘faster’ than I thought, so ignore this idea and instead refer to the BETTER IDEA below in bullet pt) Script-command that opens file in vscode and takes **full-path** as its arg (which we’d get via our handy alt-shift-c “Copy path” script 
+- we’d prob have hotkey trigger which would take us right to the ‘arg’ input, and that’s when we’d paste our copied path and enter.
+  - Now that I think of it, this is only a** moderate **upgrade from what Ive been doing this whole time which is copy-path, then switch-to-terminal, then type ‘code’ before pasting our copied full path and enter, (Since it only saves the tiny step of typing out ‘code’ before pasting (since switching to terminal step is equiv to launching-the-script-command via raycast)
+- **__BETTER IDEA: __**
+  - script-command that opens the ‘current-seleceted-file’ in vscode (as in, selected in a finder-window for examople)
+  - This would actually save 2-3 steps but it’s pretty LOW PRI atm
+
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
+
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+
+FILE="/Users/alexking/Desktop/DESKTOP_SHELF/2024_and_prior/TEMPORARY_FOLDER_TO_CLEAR_DESKTOP_UNTIL_INTERNSHIP_SEARCHDONE/ssot-madden.txt"
+
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
+
+FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"
+
+## inline mode:
+ the first line of output will be directly shown in the command item and automatically refresh according to the specified refreshTime. Tip: Set your dashboard items as favorites via the action menu in Raycast. NOTE: refreshTime parameter is required for inline mode. When not specified, compact mode will be used instead. 
+
+## silent mode:
+the last line (if exists) will be shown in overlaying HUD toast after Raycast window is closed. 
+
+## compact mode:
+the last line of the standard output is shown in the toast
+
+## fullOutput: 
+the entire output is presented on a separate view, similar to a terminal window. This is handy when your script generates output to consume. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# SCRIPT-COMMAND-IDEAS:
+1. open fileExpl window at selected location, but the selection is fuzzyFind/dropdown across a hard-coded collection of my most common/useful directory spots
+
+2. ***__a lot of similar ideas that all revolve around selecting via fuzzyFinding/dropdown from a predefined list ofmy most useful apps, files, directories, or paths__***
+
+3. this **__'selection via fuzzyFinding/dropdown'__** approach is insanely powerful and expandable/flexible, so most of my curr ideas for script-commands are about leveraging this mechanism to streamline access to frequently used resources
+
+- open terminal at **SELECTED **location (via fuzzyFinding/dropdown as the selection mechanism)
+
+- copy path that's **SELECTED** (via fuzzyFinding/dropdown as the selection mechanism)
+
+- open file in VS Code that's **SELECTED **(via fuzzyFinding/dropdown as the selection mechanism)
+- ETC MORE TO ADD!!
+- ETC MORE TO ADD!!
+- ETC MORE TO ADD!!
+- ETC MORE TO ADD!!
+- ETC MORE TO ADD!!
+
+
+
+
+
+
+
+
+
+
+
+
+# OUTPOST Directories
+
+- [ ] create 3-5 commands/QUICKLINKS that open finder window at hardcoded path
+      - 😀use QUICKLINKS for all these just like I set up for my screenshots dir with HYPER-backtick 
+- [ ] create 1 fuzzy/dropdown command that has all outpost dirs (and maybe even a few more dirs that may not be imp enough to merit being one of the 3-5 we have designated hotkeys for but are still useful/imp enough to have quick access to 
+      - We can add a bunch of extra dirs bc they’re not taking up any hotkey real-estate like the designated commands are so there is no real downside to filling up that dropdown list 
+
+### Candidates for OUTPOST dirs:
+
+(remember these are DIRS PATHS, not paths to specific files/apps)
+- alexScripts
+- quickref
+- Desktop
+- .config
+- screenshots
+- downloads
+- nicherepo
+- alexking (this is where new finder windows open by default)
+- localdocs
+- **_____ 2nd tier below _____**
+- applications dir
+- icloud drive
+- GIT_STUFF?
+- ALL_CONFIGS
+- Resume stuff? (create new dir for this and consolidate everything there?)
+- NOTE: 🚨  before creating all these quicklinks, I may want to re-evaluate my file system in general (which I had planned on doing a while back) to better fit some basic standards / best-practices etc 
+  - ALSO 🚨 …this would help with MENTAL-MODEL of my file system as well
+  - GPT: [https://chatgpt.com/c/69e27baa-4fdc-83ea-86fb-3849fe311a55](https://chatgpt.com/c/69e27baa-4fdc-83ea-86fb-3849fe311a55)
+  - 
+
+## actual full paths of the above candidates:
+
+-  "/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/"
+- aasd
+- asd
+- sdf
+- sdf
+- sdf
+
+# SUB DIRS for /amk:
+
+- /dropzone (def using this one) (or inbox?)
+- /projects (100% using this one)
+- /archive (100% using ths after gpt expl)
+- /
+- /
+- /
+- /
+- /projects (100% using this one)
+- / ???
+- / ???
+- / (optional)
+- /dropzone (def using this one) (or inbox?)
+- /archive (100% using ths after gpt expl)
+- /
+- /
+- /
+- /
+- /
+- /
+- / GOOD OPTIONS FOR THE REMAINING 2-3 dir-spots:
+
+Notes > knowledge
+
+Notes AND Ref
+
+projects
+
+notes
+
+reference
+
+tools
+
+dropzone
+
+archive
+
+OR… 
+
+projects
+
+notes/reference
+
+tools
+
+dropzone
+
+archive
+
+
+### (VERY SIMILAR SECTION to this below one IS WAY UP TOP FYI...)
+## TODO for Raycast new LOOKUP script commands: 
+- [ ] set up bare bones of the 3-7ish commands on both Mac and win
+- [ ] Read the enhancements GPT mentioned (like formatted output and auto copy/paste etc)
+- [ ] Start conslidating the ref doc stuff so ssot-ref.txt is actually useful (
+      - GOOD QUESTION: which of these searchable files can/should be put in UNIVERSAL dir and shared between both mac and win?
+        - the keyboard-vis.html is ALREADY doing this btw … 
+        - so IOW…which other files should be set up universlly just like our keyboard-vis.html is right now?
+- [ ] look at my list of files/info that may merit their own lookup command and defcide what to do for each
+      - [ ] (like what info should be consolidated into the giant ref doc vs having its own sep doc etc
+
+
+
+
+
+
+
+
+
+
+
+
+__GLOBAL DEFINED:__
+ALT-SHIFT-Q: == quit app
+ALT-SHIFT-W: ==  close curr window (quit all if it was the last window)
+
+__APP-SPECIFIC:__
+Ctrl-Q: == quit app (2ndary backuip if alt-shift-q doesnt work)
+Ctrl-W:  == close tab (tech backup option for close-window but going to try to keep this one to ONLY close-tab)
+
+Commands:
+- Quit-current-app (and obvi all windows of app)
+- close curr window (w added perk of quitting app if it was last window)
+- close TAB (glued to ctrl-w)
+
+sequence of what to try for closing an app:
+1. ctrl-Q
+2. alt-shift-q 
+   1. OR…always start w global of alt-shift-q, and then ignore/remove the ctrl-Q one altogether
+      1. (so this would mean we’d define alt-shift-q on EACH APP instead of ALL OF APPS global (….OR we try to use AERO’s built-in command but last time it wouldnt entire quit the app, only close the windows)…
+
+sequence of what to try for closing curr window:
+
+### DIFF VARATIONS OF APP SWITCHING:
+(same desktop vs diff desktop)###
+(one window or multiple windows of same app)
+()
+()
+
+# logic of excel refSheet switching (alt-opt-E):
+- PATH1: If excel not running: open refSheet.xlxs, return
+- PATH2: If activeWin == refSheet:
+  - do multi-intance logic here(will rarely ever go over 2 windows)
+    - if there’s another excel window, then switch to that
+    - (if no other excel-windows => do-nothing
+- PATH3: if activeWin ≠ refSheet:
+  - get all excel windows and check if one of them is RefSheet
+    - if none are refSheet, then open refSheet, return
+    - If refSheet IS one of the excel windows, then switch to it, return
+
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+# GO THROUGH THE ABOVE STUFF WHICH I COPY/PASTED FROM ALL THE OTHER RAYCAST-NOTES I HAD BEFORE I DECIDED I SHOULD ONLY USE 1 raycnote
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+
+
+
+
+
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+# BELOW IS SUB-SECCTION WHERE IM PASTING ALL THE mini .txt docs content to decide if should keep it or del it...
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+=================================================================================
+SSOT for TRELLO-CARD prefixes (to buff trellos internal searches/nav, which is powerful in 25'
+=================================================================================
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+- TODO spend some time brainstorming which prefixes make sense in trello-world, since most my filename convention prefixes dont really apply to how im using trello cards
+
+
+=====================================
+CURRENT TRELLO-CARD TITLE PREFIXES AND THEIR DEFINITIONS:
+=====================================
+??      ??
+??      ??
+??      ??
+'''     header-cards that I want pinned to top of the special-lists like QUEUE/andor TASK BANK etc
+??      ??
+??      ??
+
+
+=====================================
+OTHER POTENTIAL ONES TO CONSIDER...
+=====================================
+??      ??
+??      ??
+??      ??
+??      ??
+??      ??
+
+
+
+=====================================
+MISC NOTES etc...
+=====================================
+> may want the prefixes to be more granular than filename ones, idk
+
+
+
+=================================================================================
+DELETE THESE NOTES BELOW AFTER A WHILE...
+=================================================================================
+> these are all the keys that can be paired with each of the 3 modifier groups this doc is for (ALT, ALT+SHIFT, and HYPER)
+> (it's imp to show all of these bc then you're able to quickly see which keys/bindings are unused atm (aka are OPEN to be assigned))
+> (also note I'm prob not going to include the keys around the numpad bc of how often they are interpreted differently from OS to OS, but the numpad keys themselves are still fair game obvi)
+
+> each of the 3 groups should have 7 sections which are defined like so:
+1. full row of qwer... keys 
+2. full row of asdf... keys 
+3.full row of zxcv... keys 
+4. 4 arrow keys (up down left right)
+5. num row keys 
+6. fn row keys
+7. numpad 3x3 keys 
+
+[
+TMP TIP 'fzfkeyb' with 'avail':
+when adding a new shortcut, use 'fzfkeyb' with 'avail' to quickly see all the keyb shortcuts you can assign it to w/o worrying about conflicts
+]
+
+
+
+
+
+[DEL ME AFTER WHILE...]
+MODIFIER PRIORITY REMINDER: ALT before HYPER
+the ALT modifier > HYPER modifier. So when adding new bindings, we should FIRST try and find an ALT-char binding and ONLY IF there's nothing good avail, THEN we can look at the HYPER-char options.
+point beingI think im becoming too sloppy w automatiicaly going for HYPER key for new keyb, which will eventually end up w me being confused if an action is say ALT-foobar or HYPER-foobar
+[DEL ME AFTER WHILE...]
+
+
+[DEL ME AFTER WHILE...]
+> should consider changing the TMP-PLAYGOUNRD group of keys from the NUMPAD 1-9 to the Fn row keys (if Fn keys can work w modifiers that well)
+WHY? bc im running into conflicts w some apps treating number row keys as the SAME as numPAD keys (so ALT-5 ===== ALT-numpad5)
+
+
+
+
+
+
+
+
+--------------------
+tmp-CLARIFICATION OF TERMS: (DELETE ME)
+--------------------
+key-binding: defines a mapping (of binding) of a hotkey to an action/command. So "(ALT + T)  ==  Open Terminal" is a key-binding, which maps ALT+T to OpenTerminal command
+shortcut: interchangeable with key-binding, it's just a more user-friendly term than key-binding 
+hotkey: a combination of keys/mods that triggers a command. So for our shortcut "(ALT + T)  ==  Open Terminal", the hotkey would be (ALT +T)
+
+EXAMPLE TO SHOW WHAT key-binding MEANS:
+(ALT + T)  ==  Open Terminal
+the 'key-binding' would be: (ALT + T)  ==  Open Terminal
+That entire mapping is the key-binding.
+A key-binding consists of two parts:
+    1. Key combination: Alt + T
+    2. Command/action: Open Terminal
+So when someone says “the key binding”, they are referring to the association between those two things, not just the keys by themselves.
+!! to help remember this, think 'bind' as needing at least 2 parts, since that's what 'binding' together means.
+!! so a key-binding 'binds' or 'maps' a key-combination => to a command/action. 
+!! imagine a single 'key-binding' just like a single entry of a dict/map. the entry obvious needs two parts bc it's mapping one with the other.
+    !! so like a dict entry is (key => val), a key-binding is (key-combination => command) or put simpler (hotkey => command)
+
+
+
+
+
+
+
+
+
+
+
+[WORK-IN-PROGRESS doc]
+=================================================================================
+SSOT of the tools/apps currently being used to accomplish the universal exp across mac,win,linux
+=================================================================================
+- most tools have a 1:1 mapping from OS to OS, it's just a different name that accomplishes the same thing. (AHK on windows, and BTT on Mac)
+
+
+=====================================
+CURRENT TOOLS/APPS AND THEIR EQUIV:
+=====================================
+
+--------------------------------------------------------
+|| MAC ||           || WINDOWS ||           || LINUX ||
+--------------------------------------------------------
+Raycast             Raycast
+LogiOptions+        LogiOptions+
+BTT                 AHK
+Aerospace           GlazeWM
+Ice                 ??
+iTerm2              cmder
+scripts             scripts                 scripts
+zsh                 flexprompt          
+chrome              chrome                  chrome
+chromeExtention1
+chromeExtention1  
+chromeExtention1  
+chromeExtention1  
+chromeExtention1  (ADD THESE EXTENTIONS 1 by 1 here...)
+chromeExtention1  (ADD THESE EXTENTIONS 1 by 1 here...)
+chromeExtention1  (ADD THESE EXTENTIONS 1 by 1 here...)
+chromeExtention1  (ADD THESE EXTENTIONS 1 by 1 here...)
+
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+Trello              Trello                  Trello
+Things3             ???                     ???
+CleanshotX          ShareX                  ???
+VScode              VScode                  ???
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+TODO                TODO                    TODO 
+
+=====================================
+MISC...
+=====================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================================================================================
+SSOT for File name prefixes (to buff searches/nav) + RAYCAST config
+=================================================================================
+- integrate w raycast, grep, fzf etc
+- currently using hyphen '-' as the delimiter instead of underscore '_', mainly bc it's faster to type p- than p_ but this could change. Underscore has been my default for file names (c/c++) and is more standard overall.
+
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+TODO: maybe we should just CONSOLIDATE all 3 of the PREFIX .txt docs into this one here bc well alos be adding a RAYCAST one and that one def doesnt need its own sep .txt file just to outline all the ALIASSE and QUICKLINKS etc
+
+
+
+=====================================
+CURRENT PREFIXES AND THEIR DEFINITIONS:
+=====================================
+ss-     screenshot and or image files (may tweak this one)
+scr-    scripts [likely will conflict w 'screenshot'](may tweak this one)
+p-      project dirs    
+ref-    reference / cheatsheet docs
+old-    deprecated, but kept
+dot-    dot files (when not hidden via .config)
+cfg-    config files (may conflict w dot-)
+tmp-    tmp files likely ok to delete soon 
+data-   data sets
+bak-    backups (or just 'back-'?)
+wip-    work in progress
+
+
+=====================================
+OTHER POTENTIAL ONES TO CONSIDER...
+=====================================
+junk- 
+dot- vs cfg- ??
+
+
+
+(this is out of place in this file obviously, but leaning towards consolidating and or EXPANDING what this prefix doc has)
+=====================================
+RAYCAST Aliases + Hotkeys + quicklinks etc:
+=====================================
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+TODO!!
+
+
+
+
+
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+# ABOVE IS SUB-SECCTION WHERE IM PASTING ALL THE mini .txt docs content to decide if should keep it or del it...
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
+
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+❗TODO❗ 
+# THIS .TXT FILE HAD TOO MUCH STUFF TO INCLUDE IN THE ABOVE SECTION, so going to process this one after everyrthing else is done bc it's going to be alot of info...
+# BUT... it def has some great infomation on it so dont rush processing it !!!
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼 
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   
+# WORK/OSI ONLY SECTION!!
+### (drop all the work-related notes/ref stuff here in this section, bc im 90% sure were going to end up separating this section into its own separate doc)
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼 
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼  
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼   💼 
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
 # 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
 # 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
@@ -1626,5 +3485,298 @@ Line two
    - This would be nice to have in general, as it gives a quick eagle-eye view of a big directory (like if it was a MAP, then it would return all the TOWNS/CITIES o the map. That's pretty much what I want, where the 'imp-dirs' are the 'towns/cities')
    - THEN I could use this script for each of our PRODUCTS dir and get a solid list of the imp dirs I need for all my other scripts/commands/ideas/dropdowns/quick-compare etc
       - KEEP IN MIND: we're only using GPT to write the script itself...and we are NOT actually giving any of our source code to GPT (it's NOT as if I'm like 'scan this code from /monarch dir and give me what you think are the most imp directories. Obviously that would be a giant no-no.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

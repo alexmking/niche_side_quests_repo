@@ -1,3 +1,17 @@
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+- STILL NEED TO GO THROUGH ALL THIS DOC AND TRANSFER ALL GOOD STUFF TO REF DOC before DELETING this .txt file entirely (part of CONSOLIDATION process)
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+⚠️  ❗TODO❗
+
 ====================================================================================================================================================
 ====================================================================================================================================================
 current_keyboard_bindings.txt   (use zz- to jump from section to section)
