@@ -213,7 +213,7 @@ These are the imp/primary sub directories for each product (very similar to my q
          - get GPT to write a script that accepts a dir as input, and then returns all the directories that contain a MAKE FILE (including CSHARP make file) and this could be good starting point for which dirs are more imp than others
    - 2. Ask the product-owner of each of the 6 products what they consider are the most imp/connected directories within that product(mention it's for my quick-compare script)
    - 3. Manually go through each product dir yourself and add any you think make sense
-manually going through each prod)
+
    - ### TAGSUBSYSTEM:
          - \src\tagging_subsystem\adaptor
          - src\tagging_subsystem\validate
