@@ -147,7 +147,7 @@
       - !pink     (pink emoji)
       - !quick    (pink emoji)
       - !qk       (pink emoji)
-      - !All-my-most-common-emojis such as: 🚨❗✅❌👀⭐⚠️🍒❗TODO❗
+      - !All-my-most-common-emojis such as: 🚨❗✅❌👀⭐⚠️💎🔷🍒🟢🔵❓♻️🔄🆕🧱🌈❗TODO❗
       - !ADDMOREHERE!!! ❗TODO❗
       - !ADDMOREHERE!!! ❗TODO❗
       - !ADDMOREHERE!!! ❗TODO❗
@@ -214,7 +214,7 @@ These are the imp/primary sub directories for each product (very similar to my q
    - 2. Ask the product-owner of each of the 6 products what they consider are the most imp/connected directories within that product(mention it's for my quick-compare script)
    - 3. Manually go through each product dir yourself and add any you think make sense
 
-   - ### TAGSUBSYSTEM:
+   - ### TAGSUBSYSTEM:  (lead= EdFitz, RO=NathanMoore , prodMan= TonyCoyle)
          - \src\tagging_subsystem\adaptor
          - src\tagging_subsystem\validate
          - ?
@@ -223,14 +223,14 @@ These are the imp/primary sub directories for each product (very similar to my q
             - findfiles *makecs' to get good list to pull from
          - ? 
          - ?
-   - ### SCADA-SDK:
+   - ### SCADA-SDK:  (lead= MattB, RO= EricReusch , prodMan= TonyCoyle) 
          - ?\src\scada_sdk\scadaapi"
          - ?"\src\scada_sdk\scada_tag_provider"
          -  ❗TODO: run the following two commands to get good list of dirs to pull from:
             - findfiles *MakeFile
             - findfiles *makecs' to get good list to pull from
          - ?
-   - ### OPENSCADA:
+   - ### OPENSCADA:  (lead=Greg, RO=Richard, PM=TonyCoyle)
          - ?r"\src\openscada\limits"
          - ? r"\src\alarms\alarm"
          - ?"\src\openscada\validate"
@@ -239,7 +239,7 @@ These are the imp/primary sub directories for each product (very similar to my q
             - findfiles *makecs' to get good list to pull from
          - ?
          - ?
-   - ### SCADA-INTERFACE:
+   - ### SCADA-INTERFACE: (lead=Sonya, RO=ErikChomko, PM=TonyCoyle)
          - ?"\src\scada_interface\osii_control_adaptor"
          - ?\src\scada_interface\osii_control_sim" 
          -  ❗TODO: run the following two commands to get good list of dirs to pull from:
@@ -247,7 +247,7 @@ These are the imp/primary sub directories for each product (very similar to my q
             - findfiles *makecs' to get good list to pull from
          - ?
          - ?
-   - ### VIEWPOINT:
+   - ### VIEWPOINT:   (lead=Owen, RO=NathanWestlund, PM=TonyCoyle)
          - ?
          - ?
          -  ❗TODO: run the following two commands to get good list of dirs to pull from:
@@ -255,7 +255,7 @@ These are the imp/primary sub directories for each product (very similar to my q
             - findfiles *makecs' to get good list to pull from
          - ?
          - ?
-   - ### OTSFW:
+   - ### OTSFW: (lead=Nik, RO=Me, PM=TonyCoyle)
          - "\src\otsfw\otsfw_adaptor
          - ?"\src\otsfw\otsfw_api" 
          -  ❗TODO: run the following two commands to get good list of dirs to pull from:
@@ -263,9 +263,18 @@ These are the imp/primary sub directories for each product (very similar to my q
             - findfiles *makecs' to get good list to pull from
          - ?
          - ?
-   - ### SECURESYNC:
+   - ### SECURESYNC: (lead=greg, RO=nik, prodMan=tonyCoyle)
          - \src\secure_sync\client"
          - ?"\src\secure_sync\adaptor"
+         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
+            - findfiles *MakeFile
+            - findfiles *makecs' to get good list to pull from
+         - ?
+         - ?
+
+   - ### ALARMS-DIR(not really a PROD but may make sense to include it as such for this):
+         - ?"
+         - ??"
          -  ❗TODO: run the following two commands to get good list of dirs to pull from:
             - findfiles *MakeFile
             - findfiles *makecs' to get good list to pull from
@@ -412,7 +421,15 @@ tmp list of imp dirs in MAC and WIND sides, which I'll use to decide on theoffic
 
 
 
-
+-zz-TBD
+# DECIDE ON OFFICIAL DEFINTIONS OF THE FOLLOWING TERMS/WORDS so they can actually become way more useful:
+   - For each of the below terms/words, do the following:
+   - 1. FIRST decide if you want to use this term at all (or if it's too similar to a better word, kinda like notes > references)
+   - 2. SECOND IF you decided you are going to use it, then decide on an exact defintion, and of course make sure that definition doesnt conflict/overlap too much with another
+      - keyword
+      - prefix
+      - naming-convention
+      - 
 
 
 
