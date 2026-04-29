@@ -2926,9 +2926,34 @@ TODO!!
 📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘
 
 
+```
+121trunks
+12.1_TRUNKS_FOR_EACH_PRODUCT:
+tagging         rel/1_trunk
+scadasdk        rel/4_trunk
+openscada       rel/10_trunk
+scadainterface  rel/7_trunk
+viewpoint       rel/4_trunk
+otsfw           rel/5_trunk
+webcomponents   rel/2_trunk
+securesync      rel/1_trunk
+```
 
 
 
+
+
+## TEMP PROMPT TO POSE to debug DetectingWindows issue:
+- I use GlazeWM for virtual desktops and the window detection isn't working when an apps windows are in multiple virtual desktops. I noticed if I set DetectHiddenWindows(1) then it does 'detect' all the windows 
+- WITH VIRTUAL_DESKTOPS:  DetectHiddenWindows(0) == only det windows in curr deskt
+  - DetectHiddenWindows(1) == can detect windows in all other virt desktops BUT also detects tons of hidden windows that create illusion of 'not switching'. 
+  - **TRY: try reading the list of windows it first returns and see what these invis windows are being defined as..then try to add some additional logic step that will ignore the 'hiddenwindow' strings so were only left with the acutal windows**
+
+
+
+- quick checking if windows native virt desktops has same problems as glazeWM v-desktops:
+  - RESULT == YES we get the same issue with it unable to detect any windows outside of cur desktop when detecthiddenwindow(0). and then when set == 1, we CAN detect the other windows in diff virt desktops BUT...we also detect like 10+ hidden windows that mess up the switching stuff completely. 
+  - ***SO...we need to look at the list ew get in return when we do 'get windows' at start of shortcut and see if we can dtermine some filtering condition we could add to it such that it remvoes all the invisible windows and only keeps the real windows in the list***
 
 
 
