@@ -1,5 +1,6 @@
 # ssot-refs 
    - **LEGEND: topics/sections in this ref doc**
+      - (use -zz- and -xx- to jump to each header and then sub-header quickly ( ❗TODO❗all my large configs should have these added for easier navigation))
       - acronyms / terminology / clients / etc
       - keywords / prefixes / naming-conventions
       - code syntax (leet-python, and maybe C++, JS)
@@ -18,7 +19,22 @@
 
 
 
-# FIXME: we need some unique keyword or identifier on every HEADER for this doc, to make lookups much more useful...
+-zz-
+# REF DOC SETUP TODOs (DEL THIS SECTION AFTER all todos are done):
+- this is all the things I still need to do so this ref doc is officially ready to be used as official replacement for prev ref stuff
+| MAC       | WIN       | Description |
+| -----     | ---       | -------- |
+| ❗TODO        |❗TODO     | consolidate all my **Works/OSI** EXCEL-REF doc info (this is alot, and may 1st move it all to sep doc and then decide if should insert it all here in this ref doc) |
+| ❗TODO    |❗TODO     | consolidate all my MAC-side EXCEL-REF doc info (this is alot, and may 1st move it all to sep doc and then decide if should insert it all here in this ref doc) |
+| ❗TODO     |❗TODO     | ??? |
+| ❗TODO    |❗TODO     | ???|
+
+
+
+
+
+-zz-TBD
+# FIXME: we need some unique keyword or identifier on every HEADER for this doc, to make lookups much more useful... -zz- -xx-
    - EXAMPLE: if I wanted to quick lookup all our prefix keywords (like edit, cd, lookup, copy, getpath, path etc), then what I want is to be able to match on the HEADER for this topic HOWEVER, the header is just TEXT like normal so when I search 'prefix' i get 100 hits 
    - SOLUTION: so we can have some -zz- like keyword that ONLY exists in the headers, and then INCLUDE this keyword with our search term:
       - EXMAPLE: instead of searhing KEYWORD, we search rKEYWORD, which will ONLY match on the HEADERS use of KEYWORD (which there should only be maybe 1 or 2 of. Then the reuslts will bring us RIGHT to the header we want and show the following few lines below the match and boom, solved.)
@@ -50,11 +66,11 @@
 
 
 
-
+-zz-TBD
 # ALL PATHS 
 - may move this to separate script or file just for simplicity until I get all the paths added 
 - ## MAC:
-- ? 
+- ?  ❗TODO❗Decide if we want this section at all in this doc, considering we have the ALL PATHS stuff...
 - ?
 
 
@@ -64,7 +80,7 @@
 
 
 
-
+-zz-TBD
 # KEYWORDS, PREFIXES, NAMING-CONVENTIONS, RULES OF THUMB for aliases, scripts, commands, snippets etc
    - cd           ==       obvi
    - edit         ==       edit the file in VS Code
@@ -85,10 +101,20 @@
    - gp | getp | getpath | gpath |     == prefix for get-path, indicating the return should be to copy-path to clipb or paste-path 
    - pp | pastep | pastepath | ppath   == 
 
+   - ❗TODO❗DECIDE WHICH OF BELOW ONES YOU WANT TO USE FOR REAL...
+   - pick | picker 
+   - hub (like path-hub)
+   - find | finder 
+   - seek | seeker
+   - peek | peeker (like peek-paths)
+   - scan | scanner (like path-scanner or config-scanner)
+   - search (prob least likely?)
+
    - (note about paste-path separate prefix: I'm still considering if it's going TOO granular to have a 'getpath' and then a 'pastepath' when they're so similar anyway, and getpath can become paste-paste with just a simple 'paste' immediately after...)
 
 
-   ### other ones to consider...
+
+   ### other ones to consider... ❗TODO❗ LOTS OF GOOD ONES FROM GPT TO CONSIDER USING/REPLACING my CURR ONE(s)...
       - my       ==      ??
       - sel      ==      short for 'select'. This one is another alt/variation of 'get' and/or 'cpy'??
       - show     ==      ?? maybe inbetween 'list' and 'get'? such as show-drive-info ??
@@ -121,67 +147,19 @@
       - !pink     (pink emoji)
       - !quick    (pink emoji)
       - !qk       (pink emoji)
-      - !ADDMOREHERE!!! ❗TODO❗
+      - !All-my-most-common-emojis such as: 🚨❗✅❌👀⭐⚠️🍒❗TODO❗
       - !ADDMOREHERE!!! ❗TODO❗
       - !ADDMOREHERE!!! ❗TODO❗
       - !ADDMOREHERE!!! ❗TODO❗
       - !ADDMOREHERE!!! ❗TODO❗
       - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
-      - emojis to try to insert into cmder 'active tab' defintion:
-         - 📌🔳💠🟢🟦🔹▪️⭐🦄🐢🍄🍇     ScreenshotDONE
-         - 🐢🍄🍇🎃✨🎀🏆🏅🥇🪄           ScreenshotDONE
-         - 🔮🎱🧩♟️🌍🧱🏠🚀☀️🌜           ScreenshotDONE
-         - 🌀🌈🔥⚡💧💎🎩👑💡🔖           ScreenshotDONE
-         - 📍🗿🔰❇️✴️✳️♻️Ⓜ️                ScreenshotDONE
-         - (%c) %m___CUR___m %n     ORGINAL ONE HERE FYI
-         - LOOK AT ALL MY MINI SCREENSHOTS to decide on which one to go with...
-         - DELETE THIS WHOLE SUBSECTION WHEN DONE AND HAVE OFFICIAL SYMBOL THING SETUP FOR THE ACTIVE-CMDER-TAB...
-         - THE TOP CONTENDERS:
-            - 🔳🟢🟦🦄🍄🍇
-            - 🎃✨🎀🏆🏅🥇
-            - 🔮🎱♟️🌍🏠
-            - 🌈🔥⚡💎🎩👑
-            - 🔰♻️☢️⚛️☯️⚜️💲🅰️
-         - The BOLD/EYE-CATCHING ONES FROM THE ABOVE CONTENDERS:
-            - ⚜️🔮🎱♟️🔥🎩✨🔳
-            - NOT-BOLD/BOLD-ish ones:
-               - 🟢🟦🦄🍄🍇🎃🎀🏆🏅🥇
-               - 🌍🏠🌈⚡💎👑
-               - 🔰♻️☢️⚛️☯️💲🅰️
-         - The ones i LIKE the most, in general
-               - 🎱♟️🎃🥇⚡💎👑🌍🏠🔰⚛️
-               - ⚜️🔮🔥🎩✨🔳
-               - 🟢🟦🎀🏆🏅
-               - 🌈
-               - ♻️☢️⚛️☯️💲🅰️
-               - 🎱♟️🎃🥇⚡💎👑🌍🏠🔰⚛️⚜️🔮🔥🎩✨🔳
-               - FINAL LIST OF LEGIT OPTIONS:
-                  - 🎩🎱♟️🌍🏠🔮🔥⚜️🔰🔳💎👑⚛️✨
+ 
 
             
 
 
-# SUMMARY: HOW TO DEFINE/SETUP PATH STUFF FOR OPTIMAL PERF:
-      - SNIPPET3 ========== ;pathzzshortcuts	(; + file-name)                  
-      - SNIPPET2 ========== ;pzzsh			    (; + same-as-alias) 	           
-      - SNIPPET1 ========== ;zzshorts			(; + abbreviated-file-name)      
-      - COMMAND-NAME ====== path zzshortcuts	(path + “ ” + full-file-Name)   
-      - ALIAS ============= pzzsh			    (p + abbreviated-file-name       
 
-      - SNIPPET3:  
-         - (the most verbose option, last resort)(the filename can be abbreviated or full, either way it shouldnt matter bc ;path removes any chance of conflicts with command-name/alias
-      - SNIPPET2:  
-         - (whatever alias is used for the command, this snippet is meant to copy it exactly but with the leading ‘;’ )
-      - SNIPPET1: 
-         - (no additional prefix like ‘p’ unless there’s ambiguity)  
-      - COMMAND-NAME"
-         - (path keyword, then empty space, then full file name)
-      - ALIAS"
-         - (p + abbreviated-file-name       (the shortest, just the p-keyword prepending onto the abbreviated (or extra-abbreviated)filename)
-
-
-
-
+-zz-TBD
 # DEV BUFFS to SETUP:
 | MAC       | WIN       | Buff Description |
 | -----     | ---       | -------- |
@@ -211,13 +189,6 @@
 
 
 
-# TMP EXPL ON HOW OUTPUT DIRS SHOULD BE IMPL:
-- ⭐ list out all the somewhat-imp dir's, and then create a RAYCAST quicklink for ALL OF THEM 
-   - KIM only a few of them will have HOTKEYS, but all em should have a quicklink so we can always jump to them via basic raycast-search
-- ⭐ Pick a few out of the list to be the EXTRA-IMP dirs and give them each a HOTKEY 
-- ⭐ ?????
-- ⭐ Lastly, create the SMART-FINDER-OPENER script-command w fzf/dropdown, and use this list to be all the dirs in our search area 
-   - so each dir will be 1 arg in the super-long argument1 specifier for raycast scripts (which we cant use $VARIABLES for so this will be ugly gigantic 1-liner for sure) 
 
 
 
@@ -231,57 +202,8 @@
 
 
 
-# SCRIPT / BUFF IDEAS:
-- collect all common paths and setup either quicklink(s) or individual-snippets or script-command-dropdown that allows you to instantly find the path and copy/paste it (regular 'enter' could be 'copy to clip' while ctrl-enter could be direct paste)
-   - then we setup a hotkey for this (it merits it, beleive me) that brings you right to the 'search' part (obvi) (iow so we dont have to type the single-char alias like with 'f' for find files etc)
-   - ontop of the HOTKEY, we ALSO want some alias tied to it as well (like s)
-   - WRINKLE: we could also apply the same terminal-alias system that pre-pends some char or word to indicate the intent (w no space) and then have sep quicklink/snippet for each path 
-         - FOR EXAMPLE: cdosi uses the 'cd'. so I could have something like the following:
-            - pathzzshorts
-            - pathniche
-            - pathkeybvis
-            - pathahk
-            - etc, etc
-- ⭐😮 PATH SEARCH SYSTEM: Expanding on my idea of mirroring the same pre-pend word/char in alias stuff that I have for my terminal (such as cd, edit, list, get ...), I just realized we can actually capture THIS and all the OTHER alias/char-triggers/etc everything else at the same time:
-   - EXPL:
-         - 1️⃣ p == signle char alias for 'search-my-main-paths' command in raycast (maybe needs to be a script-command)
-         - 2️⃣ HOTKEY == for the above 'search-my-main-paths' command in raycast (so both p and the HOTKEY would be on the same command) 
-         - 3️⃣ pzzshortcuts == raycast-alias for the individual snippet/quicklink with zzshortcuts PATH (so every path would have 1 of these created just for it within raycast)
-            - 🤩 we CAN have all these setup and active AT THE SAME TIME (so 3 diff routes to get to same thing)
-         - *TODO:* set this up IMMEDIATELY 
-         - 4️⃣ FOUND ANOTHER LAYER w SNIPPETS-KEYWORDS...snippet-keywords are diff from ALIASES in that they automatically paste hte entire sniipet once you type out the ykeyword, ANYWHERE
-            - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
-            - so if i set 'pzz' as keyword for zzshorts path, then i type pzz and instantly it will be replaced by /Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm
-            - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
 
-- FZF/DROPDOWN for EACH of the following (mainly work-stuff):
-   - DBs in monarch/db (the main ones )
-   - SKMs in monarch/data
-   - etc
-   - etc TODO: DEF MORE TO ADD HERE!
-- DIR-related scripts/commands for WITHIN /monarch environemnts (the ones that require 'sel evironment' for the paths to work)
-   - 1. mirror all the ones I have terminal aliases for (this is the least we can do)
-   - 2. 📌IMP-SUB-TODO: for each of our products, determine the primary directories for that product (sort of like the EQUIV of OUTPOST dirs but only within context of that products dirs)
-      - this is very-related to my QUICK_COMPARE.PY script, where we want to add the most-imp sub-dirs for each prod so quick-compare can be used easily no matter where are you within a products dir (since you can just cd .. until you hit an IMP-DIR where the script can work from)
-      - ASK QUESTION: maybe good idea to ping richard/nathan and ask 'what are the most imp/primary dirs within Openscada...then same question for SCADA-SDK...the same for Scadainterface etc..
-- Script/command/hotkey that opens the active file in FILE-EXPLORER (as in, the actual file I have open and am using/editing right then) (see below for expl)
-   - EX: when I'm in Ref_Sheet2025.xlsx, I'd like to be able to open file expl where this file is at
-   - EX2: Same goes for editing a file in VS code, say I'm editing keyb-vis.html file, I'd like to hit a hotkey and instnatly open a file-expl window where this file is
-      - IMPLEMENTATION APPROACH:
-         - I can have 1 big sciprt like in AHK, that can handle the diff logic needed for each type of file/app (AHK is prob only way to handle the EXCEL FILE logic)
-         - VSCODE part is actually SUPER EASY bc it already has a built-in command '(ALT-SHIFT-R) == Reveal-in-fileExplorer' that I can leverage any way I want
-         - NOT SURE if any other contexts where this script would be needed, sinc eeverything else Id have open is in CHROME? I think??
-
-
-
-
-
-
-
-
-
-
--zz-
+-zz-TBD
 # PRODUCT SUB-DIRECTORIES:
 These are the imp/primary sub directories for each product (very similar to my quick-compare.py script wants to index the MOST COMMON DIRs for each product...I want to list those out here and then ref this when creating more scripts/commands that target the ENVIRONMENT-DIRS (the dirs that need select-env to work))
 - (ALREADY ADDED ALL I COULD FIND IN **quick-compare.py**...so now it's just ...
@@ -361,13 +283,6 @@ manually going through each prod)
 
 
 
-# ONE-OFF SCRIPT IDEA (get GPT/Claude to churn this one out)(lower-importance!!!)
-   - create a script that takes a DIR path as input, and outputs a list of all the most-important/connected dirs within it
-   - EX: so I'd pass it a product dir like *D:\osi\13.1_emer2\monarch* and then it would output me a list of all its top dirs like *openscada/validate* and ish like that.
-   - I think I'd leave it to claude or whatever to det some criteria for 'importance' (doesnt need to be perfect)
-   - This would be nice to have in general, as it gives a quick eagle-eye view of a big directory (like if it was a MAP, then it would return all the TOWNS/CITIES o the map. That's pretty much what I want, where the 'imp-dirs' are the 'towns/cities')
-   - THEN I could use this script for each of our PRODUCTS dir and get a solid list of the imp dirs I need for all my other scripts/commands/ideas/dropdowns/quick-compare etc
-      - KEEP IN MIND: we're only using GPT to write the script itself...and we are NOT actually giving any of our source code to GPT (it's NOT as if I'm like 'scan this code from /monarch dir and give me what you think are the most imp directories. Obviously that would be a giant no-no.)
 
 
 
@@ -380,16 +295,12 @@ manually going through each prod)
 
 
 
-
-
-
-
--zz-
+-zz-TBD
 # RAYCAST's single-char triggers:
 ⚠️ TODO BELOW
 - f or ff for file-search
 - p for path-search (wip) 
-- ?
+- s for search-Snippets (may repl w something more deserving since snippets ill rarely need to search for tbh)
 - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
 - s or ss for search snippets? 
 - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
@@ -416,88 +327,76 @@ manually going through each prod)
 
 
 
-
+-zz-TBD
 # IMP DIRS 
 tmp list of imp dirs in MAC and WIND sides, which I'll use to decide on theofficial OUTPOST dirs
 
-- ## MAC:
-   - root and home obvi [✅ quickL DONE]
-   - amk [✅ quickL DONE]
-   - screenshots (already has hotkey anyway in HYPER-`) [✅ quickL DONE]
-   - alexScripts [quickL DONE]
-   - projects (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - notes (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - tools (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - career (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - archive (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - dropzone (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - niche-repo [✅ quickL DONE]
-   - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk) [✅ quickL DONE]
-   - downloads [✅ quickL DONE]
-   - Desktop  [✅ quickL DONE]
+   - ## MAC:
+      - root and home obvi [✅ quickL DONE]
+      - amk [✅ quickL DONE]
+      - screenshots (already has hotkey anyway in HYPER-`) [✅ quickL DONE]
+      - alexScripts [quickL DONE]
+      - projects (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - notes (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - tools (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - career (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - archive (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - dropzone (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - niche-repo [✅ quickL DONE]
+      - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk) [✅ quickL DONE]
+      - downloads [✅ quickL DONE]
+      - Desktop  [✅ quickL DONE]
 
 
-- ## WINDOWS:
-   - root and home obvi
-   - amk  [✅ quickL DONE]
-   - screenshots (already has hotkey anyway in HYPER-`)  [✅ quickL DONE]
-   - alexScripts  [✅ quickL DONE]
-   - projects (1 of the 5 main amk dirs)  [✅ quickL DONE]
-   - notes (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - tools (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - dropzone (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - archive (1 of the 5 main amk dirs) [✅ quickL DONE]
-   - niche-repo  [✅ quickL DONE]
-   - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk)
-   - CDrive
-   - DDrive
-   - osi dir   [✅ quickL DONE]
-   - downloads
-   - TODO!!! theres more that are unique to WINDOWS Side pretty sure, so fill them here
-   - TODO!!!
-   - Desktop  [✅ quickL DONE]
+   - ## WINDOWS: 🪟
+      - root and home obvi
+      - amk  [✅ quickL DONE]
+      - screenshots (already has hotkey anyway in HYPER-`)  [✅ quickL DONE]
+      - alexScripts  [✅ quickL DONE]
+      - projects (1 of the 5 main amk dirs)  [✅ quickL DONE]
+      - notes (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - tools (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - dropzone (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - archive (1 of the 5 main amk dirs) [✅ quickL DONE]
+      - niche-repo  [✅ quickL DONE]
+      - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk)
+      - CDrive
+      - DDrive
+      - osi dir   [✅ quickL DONE]
+      - downloads
+      - TODO!!! theres more that are unique to WINDOWS Side pretty sure, so fill them here
+      - TODO!!!
+      - Desktop  [✅ quickL DONE]
 
 
-# OFFICIAL-ISH list of OUTPOST dirs(macside)
-   - root and home obvi (maybe on these? not sure atm...)
-   - amk
-   - alexScripts
-   - projects (1 of the 5 main amk dirs)
-   - notes (1 of the 5 main amk dirs)
-   - tools (1 of the 5 main amk dirs)
-   - career (1 of the 5 main amk dirs)
-   - archive (1 of the 5 main amk dirs)
-   - dropzone (1 of the 5 main amk dirs)
-   - niche-repo
-   - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk)
-   - downloads
-   - mac dir within NICHE repo ? (and obvi WINDOWS dir within NICHE for win side)[✅ quickL DONE]
+   # OFFICIAL-ISH list of OUTPOST dirs(macside) 
+      - root and home obvi (maybe on these? not sure atm...)
+      - amk
+      - alexScripts
+      - projects (1 of the 5 main amk dirs)
+      - notes (1 of the 5 main amk dirs)
+      - tools (1 of the 5 main amk dirs)
+      - career (1 of the 5 main amk dirs)
+      - archive (1 of the 5 main amk dirs)
+      - dropzone (1 of the 5 main amk dirs)
+      - niche-repo
+      - KIM we dont need one for whatever our default-dir is for new windows (either alexking or amk)
+      - downloads
+      - mac dir within NICHE repo ? (and obvi WINDOWS dir within NICHE for win side)[✅ quickL DONE]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# MISC TODOS: (DELETE THESE FREQUENTLY)
-- ripgrep reads this .md file as plain-text instead of the markdown-version (so atm the results are including all the ugly markdown stuff)
-    - NOT 100% sure if I want our lookup auto to read plain-text 
-    - ALSO...this could be **resolved** after we check out **GPTs** 'formatted' output and other enhancements to the .sh script 
-- Change all .sh filenames to use 'lookup' instead of 'search' 
-    - also append the prefix 'scr-' to all of the .sh file names as well
-        - search-keybvis.sh ==> scr-lookup-keybvis.sh
-- **Remaining EDIT commands to consider creating:**
-    - **mac:** zprofile, p10k, prompt, madden??, morning-leet, scratchpaper,launchmainapps, vscode-keybindings, (and a bunch of other misc ones I'm prob forgetting)
-    - **win:** flexprompt, morningleet, launchmyapps,  scratchpaper, fzf?, (and all my mini scripts like listenvvariables etc)
+   # OFFICIAL-ISH list of OUTPOST dirs(WIN side) ❗TODO❗
+      - root and home obvi (maybe on these? not sure atm...)
+      - amk
+      - ❗TODO❗ 
+      - ❗TODO❗ 
+      - ❗TODO❗ 
+      - ❗TODO❗ 
+      - ❗TODO❗ 
+      - ❗TODO❗ 
+      - ❗TODO❗ 
+      - ❗TODO❗ 
+      - ❗TODO❗ 
 
 
 
@@ -515,6 +414,15 @@ tmp list of imp dirs in MAC and WIND sides, which I'll use to decide on theoffic
 
 
 
+
+
+
+
+
+
+
+
+-zz-TBD
 # KEYWORDS ? ACRONYMS / TERMINOLOGY / CLIENTS / ETC
 + RAR	    ==	FROM MARKD md :) ppl who review the doc / design
 + LA		==	life cycle thinig 1
@@ -525,19 +433,8 @@ tmp list of imp dirs in MAC and WIND sides, which I'll use to decide on theoffic
  
 * asdf 
 
--BroadRidge21*2121*@!@!   
--Cargill21*2121*@!@!   
--GeneralMills21*2121  
--Entegris21*2121  
--Vontier21*2121  
--Ameriprise21*2121  
--UnitedOptum21*2121  
--Target21*2121  
--Epicor21*2121 —(vRad eden Pr) (alexmking921)  
--ProtoLabs21*2121  
--Banner21*2121s  
--Delaget21*2121  
-
+ 
+-zz-TBD
 # KEYWORDS / PREFIXES / NAMING-CONVENTIONS
 blah blah blah.  
 blah blah blah.  
@@ -551,7 +448,7 @@ blah blah blah.
 
 
 
-
+-zz-TBD
 # CODE SYNTAX (leet-python, C/C++, JS)
 blah blah blah.  
 blah blah blah.  
@@ -566,7 +463,7 @@ blah blah blah.
 
 
 
-
+-zz-TBD
 # MY SCRIPTS (unsure how this section will be used atm)
 blah blah blah.  
 blah blah blah.  
@@ -584,7 +481,7 @@ blah blah blah.
 
 
 
-
+-zz-TBD
 # TRELLO CARDS 
 - this section will likely be combined into the other ones based on the actual info of the card(s). But the first step is to simply get the info here in this doc and then worry about where/which-section later.
 blah blah blah.  
@@ -603,7 +500,7 @@ blah blah blah.
 
 
 
-
+-zz-TBD
 # EXCEL DOCS 
 - this section will likely be combined into the other ones based on the actual info of the EXCEL doc(s). But the first step is to simply get the info here in this doc and then worry about where/which-section later.
 blah blah blah.  
@@ -620,7 +517,7 @@ blah blah blah.
 
 
 
-
+-zz-TBD
 # USEFUL LINKS/PATHS 
 - (this is where the enhancement of auto-copying results would be nice as it would allow us to quickly grab paths/links on the fly which is lowkey super-useful, as it would be another upgrade similar to my amazing ALT-SHIFT-C 'copy-path' script that I use 100 times a day)
    - FILE="/usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt"  
@@ -639,7 +536,7 @@ blah blah blah.
 
 
 
-
+-zz-TBD
 # CATCH-ALL / MISC / USEFUL-LINKS/PATHS 
 - GIT PROMPT SYMBOLS and how to read/interpret them:  
    - https://chatgpt.com/c/69e167f7-a508-83ea-be41-4ec2d78654a7  
@@ -675,7 +572,7 @@ blah blah blah.
 
 
 
--zz- git
+-zz-git
 # GIT PROMPT CHEAT SHEET
 ```
 ======================
@@ -786,7 +683,7 @@ blah blah blah.
 
 
 
--zz- markdown
+-zz-markdown
 # TMP MARKDOWN CHEAT SHEET
 ```
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1005,8 +902,6 @@ Line two
 
 - [ ] Task not done
 - [x] Task done  
-[] asdf asdf  
-[] asdf sdf
 
 
 
@@ -1016,5 +911,159 @@ Line two
 
 
 
+
+
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# IDEAS-ONLY BELOW THIS POINT (all ref stuff ABOVE)
+   - will likely move all this 'idea' related text to SEPARATE doc bc it's drowning all the ref stuff id want to be able to quickly find via lookup etc
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+# 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 🧠 
+
+
+
+
+
+
+
+
+
+# MISC TODOS: (DELETE THESE FREQUENTLY)
+- ripgrep reads this .md file as plain-text instead of the markdown-version (so atm the results are including all the ugly markdown stuff)
+    - NOT 100% sure if I want our lookup auto to read plain-text 
+    - ALSO...this could be **resolved** after we check out **GPTs** 'formatted' output and other enhancements to the .sh script 
+- Change all .sh filenames to use 'lookup' instead of 'search' 
+    - also append the prefix 'scr-' to all of the .sh file names as well
+        - search-keybvis.sh ==> scr-lookup-keybvis.sh
+- **Remaining EDIT commands to consider creating:**
+    - **mac:** zprofile, p10k, prompt, madden??, morning-leet, scratchpaper,launchmainapps, vscode-keybindings, (and a bunch of other misc ones I'm prob forgetting)
+    - **win:** flexprompt, morningleet, launchmyapps,  scratchpaper, fzf?, (and all my mini scripts like listenvvariables etc)
+
+
+
+
+
+
+# EMOJIS FOR CMDER TAB (prob del all these bc they're in trello card?)
+     - emojis to try to insert into cmder 'active tab' defintion:
+         - 📌🔳💠🟢🟦🔹▪️⭐🦄🐢🍄🍇     ScreenshotDONE
+         - 🐢🍄🍇🎃✨🎀🏆🏅🥇🪄           ScreenshotDONE
+         - 🔮🎱🧩♟️🌍🧱🏠🚀☀️🌜           ScreenshotDONE
+         - 🌀🌈🔥⚡💧💎🎩👑💡🔖           ScreenshotDONE
+         - 📍🗿🔰❇️✴️✳️♻️Ⓜ️                ScreenshotDONE
+         - (%c) %m___CUR___m %n     ORGINAL ONE HERE FYI
+         - LOOK AT ALL MY MINI SCREENSHOTS to decide on which one to go with...
+         - DELETE THIS WHOLE SUBSECTION WHEN DONE AND HAVE OFFICIAL SYMBOL THING SETUP FOR THE ACTIVE-CMDER-TAB...
+         - THE TOP CONTENDERS:
+            - 🔳🟢🟦🦄🍄🍇
+            - 🎃✨🎀🏆🏅🥇
+            - 🔮🎱♟️🌍🏠
+            - 🌈🔥⚡💎🎩👑
+            - 🔰♻️☢️⚛️☯️⚜️💲🅰️
+         - The BOLD/EYE-CATCHING ONES FROM THE ABOVE CONTENDERS:
+            - ⚜️🔮🎱♟️🔥🎩✨🔳
+            - NOT-BOLD/BOLD-ish ones:
+               - 🟢🟦🦄🍄🍇🎃🎀🏆🏅🥇
+               - 🌍🏠🌈⚡💎👑
+               - 🔰♻️☢️⚛️☯️💲🅰️
+         - The ones i LIKE the most, in general
+               - 🎱♟️🎃🥇⚡💎👑🌍🏠🔰⚛️
+               - ⚜️🔮🔥🎩✨🔳
+               - 🟢🟦🎀🏆🏅
+               - 🌈
+               - ♻️☢️⚛️☯️💲🅰️
+               - 🎱♟️🎃🥇⚡💎👑🌍🏠🔰⚛️⚜️🔮🔥🎩✨🔳
+               - FINAL LIST OF LEGIT OPTIONS:
+                  - 🎩🎱♟️🌍🏠🔮🔥⚜️🔰🔳💎👑⚛️✨
+
+
+
+# SUMMARY: HOW TO DEFINE/SETUP PATH STUFF FOR OPTIMAL PERF:
+      - SNIPPET3 ========== ;pathzzshortcuts	(; + file-name)                  
+      - SNIPPET2 ========== ;pzzsh			    (; + same-as-alias) 	           
+      - SNIPPET1 ========== ;zzshorts			(; + abbreviated-file-name)      
+      - COMMAND-NAME ====== path zzshortcuts	(path + “ ” + full-file-Name)   
+      - ALIAS ============= pzzsh			    (p + abbreviated-file-name       
+
+      - SNIPPET3:  
+         - (the most verbose option, last resort)(the filename can be abbreviated or full, either way it shouldnt matter bc ;path removes any chance of conflicts with command-name/alias
+      - SNIPPET2:  
+         - (whatever alias is used for the command, this snippet is meant to copy it exactly but with the leading ‘;’ )
+      - SNIPPET1: 
+         - (no additional prefix like ‘p’ unless there’s ambiguity)  
+      - COMMAND-NAME"
+         - (path keyword, then empty space, then full file name)
+      - ALIAS"
+         - (p + abbreviated-file-name       (the shortest, just the p-keyword prepending onto the abbreviated (or extra-abbreviated)filename)
+
+
+# SCRIPT / BUFF IDEAS:
+- collect all common paths and setup either quicklink(s) or individual-snippets or script-command-dropdown that allows you to instantly find the path and copy/paste it (regular 'enter' could be 'copy to clip' while ctrl-enter could be direct paste)
+   - then we setup a hotkey for this (it merits it, beleive me) that brings you right to the 'search' part (obvi) (iow so we dont have to type the single-char alias like with 'f' for find files etc)
+   - ontop of the HOTKEY, we ALSO want some alias tied to it as well (like s)
+   - WRINKLE: we could also apply the same terminal-alias system that pre-pends some char or word to indicate the intent (w no space) and then have sep quicklink/snippet for each path 
+         - FOR EXAMPLE: cdosi uses the 'cd'. so I could have something like the following:
+            - pathzzshorts
+            - pathniche
+            - pathkeybvis
+            - pathahk
+            - etc, etc
+- ⭐😮 PATH SEARCH SYSTEM: Expanding on my idea of mirroring the same pre-pend word/char in alias stuff that I have for my terminal (such as cd, edit, list, get ...), I just realized we can actually capture THIS and all the OTHER alias/char-triggers/etc everything else at the same time:
+   - EXPL:
+         - 1️⃣ p == signle char alias for 'search-my-main-paths' command in raycast (maybe needs to be a script-command)
+         - 2️⃣ HOTKEY == for the above 'search-my-main-paths' command in raycast (so both p and the HOTKEY would be on the same command) 
+         - 3️⃣ pzzshortcuts == raycast-alias for the individual snippet/quicklink with zzshortcuts PATH (so every path would have 1 of these created just for it within raycast)
+            - 🤩 we CAN have all these setup and active AT THE SAME TIME (so 3 diff routes to get to same thing)
+         - *TODO:* set this up IMMEDIATELY 
+         - 4️⃣ FOUND ANOTHER LAYER w SNIPPETS-KEYWORDS...snippet-keywords are diff from ALIASES in that they automatically paste hte entire sniipet once you type out the ykeyword, ANYWHERE
+            - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
+            - so if i set 'pzz' as keyword for zzshorts path, then i type pzz and instantly it will be replaced by /Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm
+            - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
+
+- FZF/DROPDOWN for EACH of the following (mainly work-stuff):
+   - DBs in monarch/db (the main ones )
+   - SKMs in monarch/data
+   - etc
+   - etc TODO: DEF MORE TO ADD HERE!
+- DIR-related scripts/commands for WITHIN /monarch environemnts (the ones that require 'sel evironment' for the paths to work)
+   - 1. mirror all the ones I have terminal aliases for (this is the least we can do)
+   - 2. 📌IMP-SUB-TODO: for each of our products, determine the primary directories for that product (sort of like the EQUIV of OUTPOST dirs but only within context of that products dirs)
+      - this is very-related to my QUICK_COMPARE.PY script, where we want to add the most-imp sub-dirs for each prod so quick-compare can be used easily no matter where are you within a products dir (since you can just cd .. until you hit an IMP-DIR where the script can work from)
+      - ASK QUESTION: maybe good idea to ping richard/nathan and ask 'what are the most imp/primary dirs within Openscada...then same question for SCADA-SDK...the same for Scadainterface etc..
+- Script/command/hotkey that opens the active file in FILE-EXPLORER (as in, the actual file I have open and am using/editing right then) (see below for expl)
+   - EX: when I'm in Ref_Sheet2025.xlsx, I'd like to be able to open file expl where this file is at
+   - EX2: Same goes for editing a file in VS code, say I'm editing keyb-vis.html file, I'd like to hit a hotkey and instnatly open a file-expl window where this file is
+      - IMPLEMENTATION APPROACH:
+         - I can have 1 big sciprt like in AHK, that can handle the diff logic needed for each type of file/app (AHK is prob only way to handle the EXCEL FILE logic)
+         - VSCODE part is actually SUPER EASY bc it already has a built-in command '(ALT-SHIFT-R) == Reveal-in-fileExplorer' that I can leverage any way I want
+         - NOT SURE if any other contexts where this script would be needed, sinc eeverything else Id have open is in CHROME? I think??
+
+
+
+# TMP EXPL ON HOW OUTPUT DIRS SHOULD BE IMPL:
+- ⭐ list out all the somewhat-imp dir's, and then create a RAYCAST quicklink for ALL OF THEM 
+   - KIM only a few of them will have HOTKEYS, but all em should have a quicklink so we can always jump to them via basic raycast-search
+- ⭐ Pick a few out of the list to be the EXTRA-IMP dirs and give them each a HOTKEY 
+- ⭐ ?????
+- ⭐ Lastly, create the SMART-FINDER-OPENER script-command w fzf/dropdown, and use this list to be all the dirs in our search area 
+   - so each dir will be 1 arg in the super-long argument1 specifier for raycast scripts (which we cant use $VARIABLES for so this will be ugly gigantic 1-liner for sure) 
+
+
+
+
+
+# ONE-OFF SCRIPT IDEA (get GPT/Claude to churn this one out)(lower-importance!!!)
+   - create a script that takes a DIR path as input, and outputs a list of all the most-important/connected dirs within it
+   - EX: so I'd pass it a product dir like *D:\osi\13.1_emer2\monarch* and then it would output me a list of all its top dirs like *openscada/validate* and ish like that.
+   - I think I'd leave it to claude or whatever to det some criteria for 'importance' (doesnt need to be perfect)
+   - This would be nice to have in general, as it gives a quick eagle-eye view of a big directory (like if it was a MAP, then it would return all the TOWNS/CITIES o the map. That's pretty much what I want, where the 'imp-dirs' are the 'towns/cities')
+   - THEN I could use this script for each of our PRODUCTS dir and get a solid list of the imp dirs I need for all my other scripts/commands/ideas/dropdowns/quick-compare etc
+      - KEEP IN MIND: we're only using GPT to write the script itself...and we are NOT actually giving any of our source code to GPT (it's NOT as if I'm like 'scan this code from /monarch dir and give me what you think are the most imp directories. Obviously that would be a giant no-no.)
 
 
