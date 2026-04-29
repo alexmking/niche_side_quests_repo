@@ -172,31 +172,38 @@
       - !pink     (pink emoji)
       - !quick    (pink emoji)
       - !qk       (pink emoji)
-      - !All-my-most-common-emojis such as: 🚨❗✅❌👀⭐⚠️💎🔷🍒🟢🔵❓♻️🔄🆕🧱🌈❗TODO❗
       - !
       - !
       - !
       - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !
-      - !ADDMOREHERE!!! ❗TODO❗
-      - !ADDMOREHERE!!! ❗TODO❗
-      - !ADDMOREHERE!!! ❗TODO❗
-      - !ADDMOREHERE!!! ❗TODO❗
+
+      - ## ALL THESE ARE ALREADY SETUP ON MAC SIDE, JUST NEED TO DO SAME ON ❗❗❗WIN❗❗❗ SIDE...
+      - !alert 🚨
+      - !siren 🚨
+      - !done ✅DONE✅
+      - !excl ❗
+      - !peek 👀
+      - !look 👀
+      - !eyes 👀
+      - !x        ❌
+      - !no       ❌
+      - !redx    ❌
+      - !star ⭐
+      - !caut ⚠️
+      - !diam 💎
+      - !bluediam 🔷
+      - !bluecirc 🔵
+      - !greencirc 🟢
+      - !circle 🔵
+      - !square 🟦
+      - !bluesqu 🟦
+      - !cherry   🍒
+      - !quest    ❓
+      - !recyc    ♻️
+      - !cycle    🔄
+      - !new      🆕  
+      - !brick    🧱
+      - !rainb    🌈
       - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
  
 
