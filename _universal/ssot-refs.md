@@ -167,17 +167,12 @@
 
    ### SNIPPET KEYWORDS(kinda): list of the basic snippets I want active on both sides (mac/wind):
       - *(replace all the '!' with ';' obviously)*
-      - !todo
-      - !done
-      - !pink     (pink emoji)
-      - !quick    (pink emoji)
-      - !qk       (pink emoji)
-      - !
-      - !
-      - !
-      - !
-
-      - ## ALL THESE ARE ALREADY SETUP ON MAC SIDE, JUST NEED TO DO SAME ON ❗❗❗WIN❗❗❗ SIDE...
+      - ## FYI ALL THESE ARE ALREADY SETUP ON MAC SIDE, JUST NEED TO DO SAME ON ❗❗❗WIN❗❗❗ SIDE...
+      - !todo     ❗TODO❗
+      - !done     ✅DONE✅
+      - !pink     🎟️ (pink emoji)
+      - !quick    🎟️ (pink emoji)
+      - !qk       🎟️ (pink emoji)
       - !alert 🚨
       - !siren 🚨
       - !done ✅DONE✅
