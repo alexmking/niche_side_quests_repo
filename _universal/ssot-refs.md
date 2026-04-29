@@ -138,7 +138,27 @@
          - DELETE THIS WHOLE SUBSECTION WHEN DONE AND HAVE OFFICIAL SYMBOL THING SETUP FOR THE ACTIVE-CMDER-TAB...
          - THE TOP CONTENDERS:
             - 🔳🟢🟦🦄🍄🍇
+            - 🎃✨🎀🏆🏅🥇
+            - 🔮🎱♟️🌍🏠
+            - 🌈🔥⚡💎🎩👑
+            - 🔰♻️☢️⚛️☯️⚜️💲🅰️
+         - The BOLD/EYE-CATCHING ONES FROM THE ABOVE CONTENDERS:
+            - ⚜️🔮🎱♟️🔥🎩✨🔳
+            - NOT-BOLD/BOLD-ish ones:
+               - 🟢🟦🦄🍄🍇🎃🎀🏆🏅🥇
+               - 🌍🏠🌈⚡💎👑
+               - 🔰♻️☢️⚛️☯️💲🅰️
+         - The ones i LIKE the most, in general
+               - 🎱♟️🎃🥇⚡💎👑🌍🏠🔰⚛️
+               - ⚜️🔮🔥🎩✨🔳
+               - 🟢🟦🎀🏆🏅
+               - 🌈
+               - ♻️☢️⚛️☯️💲🅰️
+               - 🎱♟️🎃🥇⚡💎👑🌍🏠🔰⚛️⚜️🔮🔥🎩✨🔳
+               - FINAL LIST OF LEGIT OPTIONS:
+                  - 🎩🎱♟️🌍🏠🔮🔥⚜️🔰🔳💎👑⚛️✨
 
+            
 
 
 # SUMMARY: HOW TO DEFINE/SETUP PATH STUFF FOR OPTIMAL PERF:
