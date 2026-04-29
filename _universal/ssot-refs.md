@@ -19,6 +19,10 @@
 
 
 
+
+
+
+
 -zz-
 # REF DOC SETUP TODOs (DEL THIS SECTION AFTER all todos are done):
 - this is all the things I still need to do so this ref doc is officially ready to be used as official replacement for prev ref stuff
@@ -77,11 +81,33 @@
 
 
 
+-zz-TBD
+# DECIDE ON OFFICIAL DEFINTIONS OF THE FOLLOWING TERMS/WORDS so they can actually become way more useful:
+   - For each of the below terms/words, do the following:
+   - 1. FIRST decide if you want to use this term at all (or if it's too similar to a better word, kinda like notes > references)
+   - 2. SECOND IF you decided you are going to use it, then decide on an exact defintion, and of course make sure that definition doesnt conflict/overlap too much with another
+      - keyword
+      - prefix
+      - naming-convention
+      - guideline
+      - rule of thumb
+      - ? 
+   
+| WORD/TERM   | DESCRIPTION / DEFINTION |
+| -----       | -------- |
+| keyword    | means any word that has special meaning/signifigance. This will be the most broad term. All prefixes are also keywords, but not all keywords are prefixes. All my alias prefixes like 'edit' and 'cd' are keywords for example, but so are 'ssot' and '-zz-'.  ⚠️CAUTION⚠️ make sure you think of keywords the SAME way you do as keywords in code, (like you dont use the keyword NEW in Java for example bc it'll become needlessly confusing having to discern b/w the keyword 'NEW' and an object name or variable 'NEW') so DONT name things with 'ssot' or 'scr' or 'edit' unless it ACTUALLY APPLIES for that keywords def. (all this is super obvi but still expl)  |
+| prefix    | a prefix is a type of keyword that are meant to be used at start of word/command as a subtle shorthand to help convey what it's meant to do. Note the prefix is not meant to have a space b/w the term/command it's 'prefixing' to, for obvious search/conflict reasons. For example 'editaliases'(GOOD, nospace) vs 'edit aliases'(BAD, space). |
+| naming-conv     | add info here! |
+| guideline     | add info here! |
+
 
 
 
 -zz-TBD
-# KEYWORDS, PREFIXES, NAMING-CONVENTIONS, RULES OF THUMB for aliases, scripts, commands, snippets etc
+# KEYWORDS MASTER LIST
+   - ##### note bc KEYWORD applies to all prefixes, naming-conventions etc, it should ALL be listed under this master list...(worry about categorizing/organizing them all later, if at all tbh)
+   - #### KEYWORDS, PREFIXES, NAMING-CONVENTIONS, RULES OF THUMB for aliases, scripts, commands, snippets etc
+   - ### KEYWORDS (terminal mainly?): 
    - cd           ==       obvi
    - edit         ==       edit the file in VS Code
    - fz           ==       doing fzf over some output
@@ -129,6 +155,61 @@
       -      /     means start at ROOT dir 
       -    ~/    means start at HOME dir (NOT root)
 
+   ### NAMING CONVENTION keywords:
+      - these are guidelines for how we name certain files/dirs (mostly to make searches easier/faster)(many of these can also be considered 'prefixes for naming files/dirs' but just going to use the broad def of naming-conventions bc some of these are NOT just prefixes but rather full naming convention)
+      - proj   for projects obvi
+      - scr    == script 
+      - ss     == screenshot 
+      - ssot     == single source of truth (also kinda a prefix too)
+      - ?? 
+      - ?? 
+
+
+   ### SNIPPET KEYWORDS(kinda): list of the basic snippets I want active on both sides (mac/wind):
+      - *(replace all the '!' with ';' obviously)*
+      - !todo
+      - !done
+      - !pink     (pink emoji)
+      - !quick    (pink emoji)
+      - !qk       (pink emoji)
+      - !All-my-most-common-emojis such as: 🚨❗✅❌👀⭐⚠️💎🔷🍒🟢🔵❓♻️🔄🆕🧱🌈❗TODO❗
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !
+      - !ADDMOREHERE!!! ❗TODO❗
+      - !ADDMOREHERE!!! ❗TODO❗
+      - !ADDMOREHERE!!! ❗TODO❗
+      - !ADDMOREHERE!!! ❗TODO❗
+      - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
+ 
+
+
+   ### RAYCAST's single-char triggers:
+   - f or ff for file-search
+   - p for path-search (wip) 
+   - s for search-Snippets (may repl w something more deserving since snippets ill rarely need to search for tbh)
+   - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+   - s or ss for search snippets? 
+   - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+   - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+   - ?
    ### SNIPPETS prefix approach:
    - semicolon ; is the designated leading-char for most/all SNIPPETs, like so:  ;zzshorts  ||  ;keybvis
    - the semicolon is *ONLY* for SNIPPETS. So you cant use it with any quicklink or raycast-alias defintions.
@@ -139,23 +220,46 @@
       - the STANDARD snippet is the one with the leading ';', such as   ;zzshort    .... or ... ';pzpz' 
          - Note because the context of SNIPPETS are already known, you dont really need the prefix like quicklink-names and aliases kinda do (like typing zzshorts in rayc-search, it's not clear what you want to do with zzshorts, which is why a prefix like 'p' or 'edit' is needed)
             - However, with Snippets, you alraedy know you're trying to paste some string, so there's no need to define the snippet like ;pathzzshorts or ;pzshorts since the filename alone is enough to remove any ambiguity 
+   
 
-   ### list of the basic snippets I want active on both sides (mac/wind):
-      - *(replace all the '!' with ';' obviously)*
-      - !todo
-      - !done
-      - !pink     (pink emoji)
-      - !quick    (pink emoji)
-      - !qk       (pink emoji)
-      - !All-my-most-common-emojis such as: 🚨❗✅❌👀⭐⚠️💎🔷🍒🟢🔵❓♻️🔄🆕🧱🌈❗TODO❗
-      - !ADDMOREHERE!!! ❗TODO❗
-      - !ADDMOREHERE!!! ❗TODO❗
-      - !ADDMOREHERE!!! ❗TODO❗
-      - !ADDMOREHERE!!! ❗TODO❗
-      - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
- 
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -167,6 +271,36 @@
 | ❗TODO    |❗TODO     | open file from path in clipboard (few wrinkles to this) |
 | ✅        |❗TODO     | some dir-related stuff that's WITHIN the actual envs (DDrive/osi/monarch etc)
 | ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -218,68 +352,53 @@ These are the imp/primary sub directories for each product (very similar to my q
          - \src\tagging_subsystem\adaptor
          - src\tagging_subsystem\validate
          - ?
-         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
-            - findfiles *MakeFile
-            - findfiles *makecs' to get good list to pull from
+         - TASK1: look at the giant list of makefile paths below for this products section and choose which ones to bring up in the official list here
+         - TASK2: ask the product lead or RO what they consider tis products 'main' directories and add any not already added
          - ? 
          - ?
    - ### SCADA-SDK:  (lead= MattB, RO= EricReusch , prodMan= TonyCoyle) 
          - ?\src\scada_sdk\scadaapi"
          - ?"\src\scada_sdk\scada_tag_provider"
-         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
-            - findfiles *MakeFile
-            - findfiles *makecs' to get good list to pull from
+         - TASK1: look at the giant list of makefile paths below for this products section and choose which ones to bring up in the official list here
+         - TASK2: ask the product lead or RO what they consider tis products 'main' directories and add any not already added
          - ?
    - ### OPENSCADA:  (lead=Greg, RO=Richard, PM=TonyCoyle)
          - ?r"\src\openscada\limits"
          - ? r"\src\alarms\alarm"
          - ?"\src\openscada\validate"
-         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
-            - findfiles *MakeFile
-            - findfiles *makecs' to get good list to pull from
+         - TASK1: look at the giant list of makefile paths below for this products section and choose which ones to bring up in the official list here
+         - TASK2: ask the product lead or RO what they consider tis products 'main' directories and add any not already added
          - ?
          - ?
    - ### SCADA-INTERFACE: (lead=Sonya, RO=ErikChomko, PM=TonyCoyle)
          - ?"\src\scada_interface\osii_control_adaptor"
          - ?\src\scada_interface\osii_control_sim" 
-         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
-            - findfiles *MakeFile
-            - findfiles *makecs' to get good list to pull from
+         - TASK1: look at the giant list of makefile paths below for this products section and choose which ones to bring up in the official list here
+         - TASK2: ask the product lead or RO what they consider tis products 'main' directories and add any not already added
          - ?
          - ?
    - ### VIEWPOINT:   (lead=Owen, RO=NathanWestlund, PM=TonyCoyle)
-         - ?
-         - ?
-         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
-            - findfiles *MakeFile
-            - findfiles *makecs' to get good list to pull from
+         - TASK1: look at the giant list of makefile paths below for this products section and choose which ones to bring up in the official list here
+         - TASK2: ask the product lead or RO what they consider tis products 'main' directories and add any not already added
          - ?
          - ?
    - ### OTSFW: (lead=Nik, RO=Me, PM=TonyCoyle)
          - "\src\otsfw\otsfw_adaptor
          - ?"\src\otsfw\otsfw_api" 
-         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
-            - findfiles *MakeFile
-            - findfiles *makecs' to get good list to pull from
+         - TASK1: look at the giant list of makefile paths below for this products section and choose which ones to bring up in the official list here
+         - TASK2: ask the product lead or RO what they consider tis products 'main' directories and add any not already added
          - ?
          - ?
    - ### SECURESYNC: (lead=greg, RO=nik, prodMan=tonyCoyle)
          - \src\secure_sync\client"
          - ?"\src\secure_sync\adaptor"
-         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
-            - findfiles *MakeFile
-            - findfiles *makecs' to get good list to pull from
-         - ?
-         - ?
+         - TASK1: look at the giant list of makefile paths below for this products section and choose which ones to bring up in the official list here
+         - TASK2: ask the product lead or RO what they consider tis products 'main' directories and add any not already added
+
 
    - ### ALARMS-DIR(not really a PROD but may make sense to include it as such for this):
-         - ?"
-         - ??"
-         -  ❗TODO: run the following two commands to get good list of dirs to pull from:
-            - findfiles *MakeFile
-            - findfiles *makecs' to get good list to pull from
-         - ?
-         - ?
+         - TASK1: look at the giant list of makefile paths below for this products section and choose which ones to bring up in the official list here
+         - TASK2: ask the product lead or RO what they consider tis products 'main' directories and add any not already added
    - ### TOP-LEVEL DIRS THAT EVERY PROD HAS:
          - /monarch/db
          - /monarch/data
@@ -749,19 +868,6 @@ srcNET\ViewPoint\makecs.bat
 
 
 
--zz-TBD
-# RAYCAST's single-char triggers:
-⚠️ TODO BELOW
-- f or ff for file-search
-- p for path-search (wip) 
-- s for search-Snippets (may repl w something more deserving since snippets ill rarely need to search for tbh)
-- ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
-- s or ss for search snippets? 
-- ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
-- ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
-- ?
-
-
 
 
 
@@ -866,15 +972,6 @@ tmp list of imp dirs in MAC and WIND sides, which I'll use to decide on theoffic
 
 
 
--zz-TBD
-# DECIDE ON OFFICIAL DEFINTIONS OF THE FOLLOWING TERMS/WORDS so they can actually become way more useful:
-   - For each of the below terms/words, do the following:
-   - 1. FIRST decide if you want to use this term at all (or if it's too similar to a better word, kinda like notes > references)
-   - 2. SECOND IF you decided you are going to use it, then decide on an exact defintion, and of course make sure that definition doesnt conflict/overlap too much with another
-      - keyword
-      - prefix
-      - naming-convention
-      - 
 
 
 
