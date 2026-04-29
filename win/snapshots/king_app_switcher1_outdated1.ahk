@@ -2,7 +2,7 @@
 #SingleInstance Force
 
 ;*##############################
-;*# THE SECTIONS OF THIS DOC: search for -zz- & -xx- to jump b/w main sections (use -xx- to then jump sub-sections)
+;*# THE SECTIONS OF THIS DOC: search for '   zz-  or -zz  '
 ;*##############################
 ;#      1. INITIAL GLOBAL VARIABLES/PATHS           (plus USEFUL REF STUFF (like LEGEND))
 ;#      x. APP-SPECIFIC COMMANDS                    (like when CHROME is active window...then certain hotkeys do certain things)
@@ -13,11 +13,6 @@
 ;#      6. Ctrl + Numpad COMMANDS                   (app-specific 9 commands) ;![***NOT CREATED YET***] MAY ACTUALLY MOVE THIS ONE AND INSTEAD HAVE IT BE ONE OF THE groups of commands within the MISC SECTION
 ;#      7. Other/Misc COMMANDS                      (like Alt + Char or Alt + Shift + char)
 ;#      8. EVERYTHING-ELSE: COMMANDS/IDEAS-STILL-IN-THE-WORKS/ CHERRY-ON-TOP-CATEGORY
-
-;TRY TO GET EVERY 'SUB-SECTION' TO USE THE BELOW FORMAT: (notice the leading -xx-, this is imp)
-; =====================================
-; -xx- SUB-SECTION NAME/DESCRIPTION:
-; =====================================
 
 ;*####################################################################################################
 ;*####################################################################################################
@@ -63,55 +58,6 @@
 ;     }
 
 ; #HotIf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ; -zz-
 ;*####################################################################################################
@@ -236,6 +182,21 @@ vscode_class_string := "ahk_class Chrome_WidgetWin_1" ; CONFIRMED WORKS FOR VS C
 vs2017_class_string := "ahk_exe devenv.exe"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ; =================
 ; TEAMS stuff below is broken so they're just placeholder for now
 ; =================
@@ -298,74 +259,6 @@ winTitle_teams := 'ahk_exe ' teams
 ; If WinActive("ahk_exe cmd (Admin)")
 ; If WinActive("ahk_exe C:\Users\aking\Downloads\cmder\vendor\conemu-maximus5\ConEmu64.exe")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ; -zz-
 ;*####################################################################################################
 ;*####################################################################################################
@@ -375,7 +268,7 @@ winTitle_teams := 'ahk_exe ' teams
 ;* NOTE this section is EQUIV to my BTT app-specific shortcuts under the top 'For All Apps' section. But we wont need NEARLY as much here on WINDOWS since we dont need to mass remap ALT <-> CTRL like we do for EVERY app on MAC side)
 
 ; =====================================
-; -xx- CMDER's APP-SPECIFIC COMMANDS:
+; CMDER's APP-SPECIFIC COMMANDS:
 ; =====================================
 SetTitleMatchMode 2
 #HotIf WinActive(winTitle_cmder)
@@ -427,9 +320,8 @@ SetTitleMatchMode 2
 }
 #HotIf
 
-
 ; =====================================
-; -xx- FILE-EXPLORER's APP-SPECIFIC COMMANDS:
+; FILE-EXPLORER's APP-SPECIFIC COMMANDS:
 ; =====================================
 #HotIf WinActive(winTitle_file_expl)
 {
@@ -504,7 +396,7 @@ SetTitleMatchMode 2
 ; }
 
 ; =====================================
-; -xx- CHROME's APP-SPECIFIC COMMANDS:
+; CHROME's APP-SPECIFIC COMMANDS:
 ; =====================================
 SetTitleMatchMode 2
 #HotIf WinActive(winTitle_chrome)
@@ -639,8 +531,8 @@ SetTitleMatchMode 2
 ; any others worth enabling this feature for? ... 
 ; %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ; REMINDER: of how the "Send #{1}" type of commands kill TWO-BIRDS with ONE-STONE, so don't need any IF( ) checks and can simply put (Win+1)
+; FOR FILE EXPL
 ; currently using roundabout approach where I use AHK to send the (WinKey+1) command instead of simply having the LogiOptions itself be the (Winkey+1)
-; -xx- FOR FILE EXPL
 !#f::
 ^!F1::
 ^!+F1::
@@ -715,7 +607,6 @@ SetTitleMatchMode 2
 }
 
 
-; -xx- CMDER switching
 !#t::
 {
     ;########################### NOTE ###################################
@@ -791,7 +682,7 @@ SetTitleMatchMode 2
 
 
 
-; -xx-FOR CHROME switching (and cycling if multiple windows):
+; FOR CHROME
 !#b::
 ^!F3::
 ^!+F3::
@@ -908,9 +799,9 @@ SetTitleMatchMode 2
 ; vscode_class_string := "ahk_class Chrome_WidgetWin_1" ; CONFIRMED WORKS FOR VS Code
 ; vs2017_class_string := "ahk_exe devenv.exe"
 
+; VS_CODE || VISUALSTUDIO-17/22
 ; outdated info here? CURRENT BUG WHERE the VisualStudio2017/22 Functionalitt ONLY works if it's in the same WORKSPACE as VSCODE...
 ; So this may MEAN it's a TIMING issue? I need to give it more time to find the window instance across worksapces? IDK
-; -xx- VS_CODE || VISUALSTUDIO-17/22 switching (and cycling if multiple windows):
 !#c::
 ^!F4::
 {
@@ -922,12 +813,8 @@ SetTitleMatchMode 2
     ; vscode_windows := WinGetList(vscode_class_string) ; OLD/BROKEN 
     ; vs_all_windows := WinGetList(vs2017_class_string) ; OLD/ BROKEN This will get both VS2017 and VS2022 since they use same exe
     
-    ; THESE TWO BELOW WERE WORKING FOR A WHILE BUT THEN KEPT HITTING ON 2 extra 'setup' invis windows, so the new two defintions below solved that...well see how they hold up over time but they seem to be working well for now and also seem to be more specific to the actual windows we care about (since they include the 'Setup' keyword that seems to be in the title of these windows but not in the actual VS2017/22 windows)
-    ; vscode_windows := WinGetList("Code", , vscode_class_string)
-    ; vs_all_windows := WinGetList("- Microsoft Visual Studio", , vs2017_class_string)
-
-    vscode_windows := WinGetList("Code", "", "Setup", "") ; NEW ONE THAT WORKS (excludes windows with 'Setup' in title, which were the invisible ones that were being mistakenly included before)
-    vs_all_windows := WinGetList("- Microsoft Visual Studio", , "Setup") ; NEW ONE THAT WORKS... 
+    vscode_windows := WinGetList("Code", , vscode_class_string)
+    vs_all_windows := WinGetList("- Microsoft Visual Studio", , vs2017_class_string)
 
     ; ; ; ##### EVERYTHING NEEDED FOR VSCODE/17/22 switcher shortcut
     ; ; combine ids1 and ids2 into one list of ids to visit (since both vscode and visual studio are code editors that I want to be able to cycle through with the same shortcut, it makes sense to combine them into one list for the purposes of this visiting-each-window loop)
@@ -1032,13 +919,13 @@ SetTitleMatchMode 2
 }
 
 
+; TEAMS
 ; UPDATE: went back to LogiOption straight key-shortcut instead of going through AHK bc this was buggy (like it not being able to switch if youre currently in VisualStudio 2017)
 ; currently using roundabout approach where I use AHK to send the (WinKey+1) command instead of simply having the LogiOptions itself be the (Winkey+1)
 ; BUGFIX is LIKELY JUST NEED TO ADD SOME 'WAIT' and or 'PAUSE' commands around the SEND() but idk...
 ;===========================================================
 ; TODO: DECIDE ON THE 3 DIFF SHORTCUTS FOR TEAMS HERE (A or 5, now that M was det to be too awkward/cant-reach-w-1-hand)
 ;============================================================
-; -xx- TEAMS switching (and cycling if multiple windows):
 !#5::
 !#a::
 !#m::
@@ -1122,7 +1009,7 @@ SetTitleMatchMode 2
     ; return
 }
 
-; -xx- TRELLO switching 
+; TRELLO
 ; NOTE I'm removing the 'SHIFT' from this hotjey to avoid the dumb M365-CoPilot launch action that's for some reason designated to the ^!+F6 giant-ass hotkey
 ; NOTE2: I had to FURTHER devolve this down to ALT-F6 just bc stupid COPILOT is now overridding my (Alt + Ctrl + F6) command which was ALREADY meant to be avoiding the FIRST TIME COPILOT stole the global shrotcut
 !#y::
@@ -1147,7 +1034,7 @@ SetTitleMatchMode 2
 ; and then from there we want to make sure it always tries to open the same file for its shortcut (so R should always first open Ref_sheet, while E === )
 ; %%%%%%%%% little update below %%%%%
 ; #### actually on WINDOWS here, we we can just have the same shortcut for R and E since E SHOULD be for REF BOARD on trello but bc were not using that on windows laptop, it's a FREE KEY that we can just use as another EXCEL swithcher...
-; -xx- EXCEL-ref_sheet2025-speciic file (ctrl + alt) and (ctrl + alt + shift )
+; EXCEL-ref_sheet2025-speciic file (ctrl + alt) and (ctrl + alt + shift )
 !#r::
 !#e::
 ^!F7::
@@ -1156,7 +1043,7 @@ SetTitleMatchMode 2
 
     global current_excel_index
     SetTitleMatchMode 2
-    ; MsgBox "DEBUG: reading as if in the alt-opt-e or r hotkey for EXCEL"
+    
     ; Get list of all Excel windows
     ; excel_windows := WinGetList(excel_class_string)
     excel_windows := WinGetList("ref", , excel_class_string)
@@ -1234,7 +1121,7 @@ SetTitleMatchMode 2
     ; return
 }
 
-; -xx- EXCEL-zzshortcuts-speciic file switching
+; EXCEL-zzshortcuts-speciic file
 !#z::
 ^!F8::
 {
@@ -1337,10 +1224,9 @@ SetTitleMatchMode 2
     ; return
 }
 
-
-
 ; OTHERS TO ADD FOR APP-SWITCHER...
-; -xx- Github Desktop, Mail/Outlook, VisualStudio(17/22?), Spotify
+; Github Desktop, Mail/Outlook, VisualStudio(17/22?), Spotify
+
 !#g::
 {
     ; UPDATE!! may have to move this one off the win-numRow hotkeys to make room for both VS17 and VS22 (until I'm able to get my fancy 17 & 22 single-key functionality to work)
@@ -1368,7 +1254,6 @@ SetTitleMatchMode 2
     WinActivate(winTitle_github_desktop)
 }
 
-; -xx- OUTLOOK switching
 !#i::
 {
 
@@ -1393,7 +1278,6 @@ SetTitleMatchMode 2
     return
 }
 
-; -xx- spotify switching 
 !#s::
 {
     ; spotify...
@@ -1416,7 +1300,6 @@ SetTitleMatchMode 2
     return
 }
 
-; -xx- TBD (may be VISUAL-STUDIO-ONLY switching (aka no vscode))
 !#v::
 {
 
@@ -1458,7 +1341,7 @@ SetTitleMatchMode 2
 ; ==================================================================
 ; FIRST ATTEMPT AT FANCY CHROME TAB SWITCHING AUTO on windows...(w==jira, d==codeReview? h==jira, j==jira)
 ; ==================================================================
-; -xx- Fancy googleChrome auto to jump to the 'MYWORK' JIRA PAGE, globally (while also only creating a new tab if needed, or iOW will jump to the open tab if this page is already open in chrome)
+; Fancy googleChrome auto to jump to the 'MYWORK' JIRA PAGE, globally (while also only creating a new tab if needed, or iOW will jump to the open tab if this page is already open in chrome)
 !#w::
 {
     ; TWO STEPS FOR THESE FANCY CHROME SHORTCUTS:
@@ -1508,8 +1391,7 @@ SetTitleMatchMode 2
     ; WinWaitActive(winTitle_chrome)
 }
 
-
-; -xx-  JUMP TO CODE-REVIEW URL TAB...(fancy chrome tab auto)
+; JUMP TO CODE-REVIEW URL TAB...(fancy chrome tab auto)
 !#d::
 {
     ; similar to the above shortcut, but for a different chrome extension shortcut that jumps to a different JIRA page (like the 'jump to mywork jira' shortcut above, but this one is for the 'jump to my backlog jira' chrome extension shortcut)
@@ -1533,7 +1415,7 @@ SetTitleMatchMode 2
     }
 }
 
-; -xx- JUMP TO CODE-REVIEW URL TAB...(fancy chrome tab auto)
+; JUMP TO CODE-REVIEW URL TAB...(fancy chrome tab auto)
 !#h::
 {
     ; similar to the above shortcut, but for a different chrome extension shortcut that jumps to a different JIRA page (like the 'jump to mywork jira' shortcut above, but this one is for the 'jump to my backlog jira' chrome extension shortcut)
@@ -1559,6 +1441,7 @@ SetTitleMatchMode 2
     }
 }
 
+; JUMP TO CODE-REVIEW URL TAB...(fancy chrome tab auto)
 ; %%%%%%% NOTE THIS ONE NEEDS TO ONLY BE alt-ctrl-j bc the chromes-internal shortcut is alt-ctrl-shift-j ... and we can't use full hyper involving alt-ctrl-shift-option-j because that auto-launches co-pilot bullsh%
 ; %%%%%%% NOTE THIS ONE NEEDS TO ONLY BE alt-ctrl-j bc the chromes-internal shortcut is alt-ctrl-shift-j ... and we can't use full hyper involving alt-ctrl-shift-option-j because that auto-launches co-pilot bullsh%
 ; %%%%%%% NOTE THIS ONE NEEDS TO ONLY BE alt-ctrl-j bc the chromes-internal shortcut is alt-ctrl-shift-j ... and we can't use full hyper involving alt-ctrl-shift-option-j because that auto-launches co-pilot bullsh%
@@ -1566,7 +1449,6 @@ SetTitleMatchMode 2
 ; %%%% THE FIX FOR THIS:
 ; %%%% THE FIX FOR THIS:
 ; %%%% THE FIX FOR THIS: is changing the chrome-internal-shortcut to be a shortcut from the obscure shortcut groups (like Fn keys and stuff) so that way we dont have to work around this conflict involving alt-ctrl-shift-j 
-; -xx- JUMP TO CODE-REVIEW URL TAB...(fancy chrome tab auto)
 !#j::
 {
     ; similar to the above shortcut, but for a different chrome extension shortcut that jumps to a different JIRA page (like the 'jump to mywork jira' shortcut above, but this one is for the 'jump to my backlog jira' chrome extension shortcut)
@@ -1622,7 +1504,7 @@ SetTitleMatchMode 2
 
 
 ; #####################################################
-; -xx- leet setup (small screen) #####
+; ##### leet setup (small screen) #####
 ; #####################################################
 ; 1. launch this script (via hyper-L), then run morningprep script (via terminal) OR...now can prob do via Raycasts SCRIPT-COMMAND!!
 ; !!! TODO !!!
@@ -1696,9 +1578,6 @@ SetTitleMatchMode 2
     return
 }
 
-; #####################################################
-; -xx- leet setup (BIG screen) #####
-; #####################################################
 !#;::
 {
 
@@ -1766,10 +1645,6 @@ SetTitleMatchMode 2
 ; %%%%%%%%%%%%%%%% UPDATE: %%%%%%%%%%%%%%%%%%%%%%%%%%
 ;  maybe going to keep this perm bc it's actually pretty useful for debugging and checking window class names and stuff like that %%%%%%%%%%%%%%%%
 ; %%%%%%%%%%%%%%%% UPDATE: %%%%%%%%%%%%%%%%%%%%%%%%%%
-
-; #####################################################
-; -xx- useful debugging section for all my WINDOW-DETECTION/SWITCHING stuff...(KEEPING THIS AS PERM FOR NOW)
-; #####################################################
 !+b::
 {
 ; ids := WinGetList(,, "Program Manager")
@@ -1819,9 +1694,6 @@ SetTitleMatchMode 2
 vs2022_class_string := "ahk_exe devenv.exe"         ; Visual Studio 2017/2022 (same exe name)
 
 excel_class_string := "ahk_exe EXCEL.EXE"        ; Microsoft Excel window identifier
-
-
-
 
 
 ; explorer_windows := WinGetList(explorer_class_string) WORKS FINE AS IS (not as complex as the chrome window stuff i gues)
@@ -1938,24 +1810,9 @@ vs2017_class_string := "ahk_exe devenv.exe"
 
 
 vscode_class_string := "ahk_class Chrome_WidgetWin_1" ; CONFIRMED WORKS FOR VS Code
-; vscode_class_string := "ahk_class Chrome_WidgetWin_1" ; CONFIRMED WORKS FOR VS Code
 
-; vscode_windows := WinGetList("Code", , vscode_class_string) ; 
+vscode_windows := WinGetList("Code", , vscode_class_string) ; 
 ; vs_all_windows := WinGetList("- Microsoft Visual Studio", , vs2017_class_string)
-
-
-; vscode_windows := WinGetList("Code", , vscode_class_string) ; ORGINAL that 'was' working for a while...
-; vscode_windows := WinGetList("Code", , vscode_class_string, "Setup")
-; vscode_windows := WinGetList("Code", vscode_class_string, "Setup")
-; vscode_windows := WinGetList("Code", "", vscode_class_string)
-; vscode_windows := WinGetList("Code", "", "Setup", "")
-
-; ; vs_all_windows := WinGetList("Code", "", "Setup", "")
-; vscode_windows := WinGetList("- Microsoft Visual Studio", , vs2017_class_string) ; ORGIN ONE THAT 'WAS' WORKING FOR A WHILE...
-; vscode_windows := WinGetList("- Microsoft Visual Studio", , "Setup") ; ORGIN ONE THAT 'WAS' WORKING FOR A WHILE...(excludes windows w 'Setup' in title...)
-
-vscode_windows := WinGetList("Code", "", "Setup", "")
-vs_all_windows := WinGetList("- Microsoft Visual Studio", , "Setup") ; NEW ONE THAT WORKS... 
 
 ; ; ##### EVERYTHING NEEDED FOR VSCODE/17/22 switcher shortcut
 ; combine ids1 and ids2 into one list of ids to visit (since both vscode and visual studio are code editors that I want to be able to cycle through with the same shortcut, it makes sense to combine them into one list for the purposes of this visiting-each-window loop)
@@ -1963,9 +1820,9 @@ all_editor_windows := []
 for index, id in vscode_windows {
     all_editor_windows.Push(id)
 }
-for index, id in vs_all_windows {
-    all_editor_windows.Push(id)
-}
+; for index, id in vs_all_windows {
+;     all_editor_windows.Push(id)
+; }
     
 ; window title
 ; window class
@@ -2115,45 +1972,6 @@ MsgBox full_info
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ;#3   -zz-altz
 ;*####################################################################################################
 ;*####################################################################################################
@@ -2161,7 +1979,7 @@ MsgBox full_info
 ;*####################################################################################################
 ;*####################################################################################################
 ; =================================================================
-; -xx- The ULTRA-OPTIMIZED-zzshortcuts command :D (it's a masterpiece)
+; *The ULTRA-OPTIMIZED-zzshortcuts command :D (it's a masterpiece)
 ; =================================================================
 ;! TODO: fix the STICKY-KEY issue that's getting triggered by the (Alt + Z) command somehow
 ;! >> adding the winWait() as first tier of fixing the sticky-key issue
@@ -2227,8 +2045,7 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
     }
 
     ; jumps to VS sheet either of the 3 (vscode, studio17, studio22) ;! BROKEN for the Studio17 and Studio22 window det (VSCODE window det DOES work)
-    ; if WinActive(winTitle_vs_code || winTitle_visual_studio_17 || winTitle_visual_studio_22 || "ahk_exe devenv.exe") {
-    if WinActive(winTitle_vs_code) || WinActive(winTitle_visual_studio_17) || WinActive(winTitle_visual_studio_22) || WinActive("ahk_exe devenv.exe") {
+    if WinActive(winTitle_vs_code || winTitle_visual_studio_17 || winTitle_visual_studio_22 || "ahk_exe devenv.exe") {
         WinActivate(zzshortcuts)
         WinWait(zzshortcuts) ; SOL1 TO FIX STICKY-KEY ISSUE
         ; Sleep(100) ; SOL2 TO FIX STICKY-KEY ISSUE [uncomment if SOL1 doesn't work]
@@ -2302,269 +2119,6 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
     Send '^{k}' ; this sends us to TEAMS sheet no matter what. So half the time it'll be 'correct' anyway :)
     return
 }
-
-
-
-; ---------------------------------------------------------------------
-; creating UNIVERSAL 'open-settings' hotkey that will behave smiilar to how I setup the above ULTRA-zzshortcuts hotkey 
-; ( where it detects which app we're in and then sends the appropriate shortcut to open that app's settings, and if it can't detect the app,
-;  it just opens the settings of the most commonly used app (which is probably TEAMS since that's the one I use the most after chrome, and 
-; also has a pretty complex settings menu that I often need to access)
-; (alt-shift-comma) at least for right now...
-; ---------------------------------------------------------------------
-; =====================================
-; -xx- UNIVERSAL 'open-settings' hotkey that will behave smiilar to how I setup the above ULTRA-zzshortcuts hotkey
-; =====================================
-!+,::
-{
-    SetTitleMatchMode 2
-
-
-    if WinActive(winTitle_file_expl) {
-        Send '!{Enter}' ; this the best we could do for the file-expl settings/options atm...
-        return
-    }
-
-    if WinActive(winTitle_cmder) {
-        Send '!#{t}' ; should open the cmder settings...
-        return
-    }
-
-    if WinActive(winTitle_chrome) {
-        ; Nothing for WINDOWS-CHROME side, so may have to use this workaround of simple opening this URL: 
-        ; URL ==> "chrome://settings/"
-        ; open the chrome settings page via the URL since there isn't a native shortcut for it on windows (unlike on mac where it's Opt+,)
-        Run("chrome.exe chrome://settings/") ; DOES NOT WORK LIKE WE WANT ATM!! 
-        MsgBox "This one is not working atm (as it only seems to open a new chrome window and not even at the settings url page, but overall I rarely use chrome-settings anyway so just tabling this one since it's not worth the time to dig into it right now)"
-        ; Send '^{g}'
-        return
-    }
-
-    ; jumps to VS sheet either of the 3 (vscode, studio17, studio22) ;! BROKEN for the Studio17 and Studio22 window det (VSCODE window det DOES work)
-    ; if WinActive(winTitle_vs_code || winTitle_visual_studio_17 || winTitle_visual_studio_22 || "ahk_exe devenv.exe") {
-
-    if WinActive(winTitle_vs_code) || WinActive(winTitle_visual_studio_17) || WinActive(winTitle_visual_studio_22) || WinActive("ahk_exe devenv.exe") {
-
-        ; Sleep(100) ; SOL2 TO FIX STICKY-KEY ISSUE [uncomment if SOL1 doesn't work]
-        ; SOL3 last resort: increase the SLEEP time until it works, otherwise we know it's not a time issue
-        Send '^{,}'
-        return
-    }
-
-    ; TODO this TEAMS one is broken (likely due to same TEAMS-only issue of not being able to detect TEANS is already open)
-    if WinActive(winTitle_teams) || WinActive("ahk_exe ms-teams.exe") {
-        ; Sleep(100) ; SOL2 TO FIX STICKY-KEY ISSUE [uncomment if SOL1 doesn't work]
-        ; SOL3 last resort: increase the SLEEP time until it works, otherwise we know it's not a time issue
-
-        ; Activity | cyberSCADA Standup 8.0 (ends 5/26) | Emerson | alex.king@emerson.com | Microsoft Teams
-        ; ahk_class TeamsWebView
-        ; ahk_exe ms-teams.exe
-        ; ahk_pid 17272
-        ; ahk_id 131844
-
-        Send '^{,}'
-        return
-    }
-
-    if WinActive(winTitle_trello) {
-        Sleep(100) ; SOL2 TO FIX STICKY-KEY ISSUE [uncomment if SOL1 doesn't work]  
-        ; SOL3 last resort: increase the SLEEP time until it works, otherwise we know it's not a time issue
-        Send '^{,}'
-
-        return
-    }
-
-    if WinActive(winTitle_github_desktop) || WinActive("ahk_exe GitHubDesktop.exe") {
-        Send '^{,}'
-        return
-    }
-
-    if WinActive(winTitle_excel_gen) {
-        ; FOR THIS ONE I NEED TO DO THE EXCEL SEQUENCE OF KEYS: ALT -> F -> T  (similar to ny NPOD sequence for adding image ontop of cells in excel)
-        ;!! TODO!! need to create a custom shortcut in excel for this since the native excel shortcut for opening settings is actually pretty complex and involves multiple keys (Alt -> F -> T) so it would be better to just have a simple one-key shortcut for it that I can trigger from here, and then that excel shortcut can trigger the native excel settings shortcut
-        ; Send '!ft' ; this is the native excel shortcut for opening settings, but as mentioned
-
-
-        ; Send "{Ctrl down}{Alt down}{Shift down}x{Shift up}{Alt up}{Ctrl up}"  ; 
-        ; Send "{Alt down}{Alt up}ft"  ; this is the native excel shortcut for opening settings, but as mentioned
-        ; Send "{Alt down}{Alt up}"  ; this is the native excel shortcut for opening settings, but as mentioned
-        ; Send "f"
-        ; Send "t"
-
-        ; Send "{Alt down}{Alt up}"  ; this is the native excel shortcut for opening settings, but as mentioned
-        ; Send "!" ; this is the native excel shortcut for opening settings, but as mentioned
-        ; Sleep(1000)
-        ; Send "f"
-        ; Sleep(1000)
-        ; Send "t"
-        ; Sleep(1000)
-
-        ; 📌
-        ; TODO LOOK UP ON AHK FORUMS HOW TO SETUP THESE MICROSOFT SEQUENCIAL KEYS BETTER (ALT -> F -> T) since the above is pretty janky and not super reliable, so def room for improvement here in how I trigger the native excel settings shortcut
-        ; 📌
-        ; 📌
-        ; TODO LOOK UP ON AHK FORUMS HOW TO SETUP THESE MICROSOFT SEQUENCIAL KEYS BETTER (ALT -> F -> T) since the above is pretty janky and not super reliable, so def room for improvement here in how I trigger the native excel settings shortcut
-        ; 📌
-
-        ; 📌
-        ; TODO LOOK UP ON AHK FORUMS HOW TO SETUP THESE MICROSOFT SEQUENCIAL KEYS BETTER (ALT -> F -> T) since the above is pretty janky and not super reliable, so def room for improvement here in how I trigger the native excel settings shortcut
-        ; 📌
-        ; 📌
-        ; TODO LOOK UP ON AHK FORUMS HOW TO SETUP THESE MICROSOFT SEQUENCIAL KEYS BETTER (ALT -> F -> T) since the above is pretty janky and not super reliable, so def room for improvement here in how I trigger the native excel settings shortcut
-        ; 📌
-
-        ; 📌
-        ; TODO LOOK UP ON AHK FORUMS HOW TO SETUP THESE MICROSOFT SEQUENCIAL KEYS BETTER (ALT -> F -> T) since the above is pretty janky and not super reliable, so def room for improvement here in how I trigger the native excel settings shortcut
-        ; 📌
-        ; 📌
-        ; TODO LOOK UP ON AHK FORUMS HOW TO SETUP THESE MICROSOFT SEQUENCIAL KEYS BETTER (ALT -> F -> T) since the above is pretty janky and not super reliable, so def room for improvement here in how I trigger the native excel settings shortcut
-        ; 📌
-        MsgBox "TODO! FIXME! need to create a custom shortcut in excel for this since the native excel shortcut for opening settings is actually pretty complex and involves multiple keys (Alt -> F -> T) so it would be better to just have a simple one-key shortcut for it that I can trigger from here, and then that excel shortcut can trigger the native excel settings shortcut"
-
-        return
-    }
-
-    ; *============ LAST CASE TO HANDLE ============
-    ;  for the case where we get NO MATCHES, we can just switch to zzshorts the exact same way weve done this whole time
-    ;  (simply switching to zzshorts and then depending on the LogiOptions leftTab/RightTab actions to quickly move to the sheet we want
-    ; CLEVER WORKAROUND for TEAMS if() not working:
-    MsgBox "NO MATCHES found for our UNIVERSAL open-settings shortcut, so doing the default action of CTRL-COMMA..."
-    ; WinActivate(zzshortcuts)
-    ; WinWait(zzshortcuts) ; SOL1 TO FIX STICKY-KEY ISSUE
-    ; Sleep(100) ; SOL2 TO FIX STICKY-KEY ISSUE [uncomment if SOL1 doesn't work]
-    ; SOL3 last resort: increase the SLEEP time until it works, otherwise we know it's not a time issue
-    ; Send '^{k}' ; this sends us to TEAMS sheet no matter what. So half the time it'll be 'correct' anyway :)
-    return
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ;#4   -zz-altnumpad
 ;*####################################################################################################
@@ -2716,9 +2270,6 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
 ;! EXPERIMENTAL alt-Y resize just for TRELLO (tall-skinny)
 ; !+y::
 ; !h::
-; =====================================
-; -xx- custom resize for TRELLO (tall-skinny)
-; =====================================
 !y::
 {
     ; MsgBox "debug - this is the experimental alt-y resize just for trello (tall-skinny)"
@@ -2731,7 +2282,7 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
     return
 }
 
-; -xx- CUSTOM SIZE for ALT-T (raycast custom size may replace this later) ======
+; ====== CUSTOM SIZE for ALT-T (raycast custom size may replace this later) ======
 !t::
 {
     ; FIRST RESIZE WINDOW to almost full screen...
@@ -2746,7 +2297,7 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
     return
 }
 
-; -xx- CUSTOM SIZE for ALT-U
+; ====== CUSTOM SIZE for ALT-U
 ;======= (USE THIS ONE AS THE LEET-SESH FLOATING WINDOW THAT COVERS THE PROB NAME/PREV-SOL WHEN YOU OPEN THE LINK LIKE I HAD SETUP W STICKIES GUARDRAIL WINDOW)
 !u::
 {
@@ -2767,7 +2318,7 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
     return
 }
 
-; -xx- CUSTOM SIZE for ALT-I
+; ====== CUSTOM SIZE for ALT-I
 ;======= (USE THIS ONE AS THE LEET-SESH FLOATING WINDOW THAT COVERS THE PROB NAME/PREV-SOL WHEN YOU OPEN THE LINK LIKE I HAD SETUP W STICKIES GUARDRAIL WINDOW)
 !i::
 {
@@ -2787,108 +2338,6 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
 
     return
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ;#5   -zz-altshiftnumpad
 ;*####################################################################################################
@@ -3023,112 +2472,6 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
 ; --this is definitely a CHERRY-ON-TOP category
 ; ==============================================================================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ;#6   -zz-ctrlnumpad
 ; TODO This category may honestly be better off in BOTTOM SECTION area bc idk if it's even realistic
 ;*####################################################################################################
@@ -3195,102 +2538,16 @@ zzshortcuts := "zzshortcuts.xlsm - Excel"
     return
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ;#7   -zz-other
 ;*####################################################################################################
 ;*####################################################################################################
-;*# SECTION 7: Other/Misc COMMANDS (like HYPERKEY setup, Alt + Char or Alt + Shift + char)
+;*# SECTION 7: Other/Misc COMMANDS (like Alt + Char or Alt + Shift + char)
 ;*####################################################################################################
 ;*####################################################################################################
 
 
 ; #############################################################################
-; -xx- PART1:  REMAP winKey ==> (alt-opt) minHyper   ###############
+; ########     PART1:  REMAP winKey ==> (alt-opt) minHyper   ###############
 ; #############################################################################
 ; FIRST TRY ATTEMPTING TO turn leftOpt (aka winkey) iunto miniHyper (alt-opt) and then move the actual opt key to replace the rightCtrl key...
 ; Remap Left Win to Hyper (Ctrl+Shift+Alt+Win)
@@ -3390,12 +2647,9 @@ RCtrl::RWin
 ;     return
 ; }
 
-
-
-
 ; j:: Send "{Ctrl down}{Shift down}{Alt down}{LWin down}j{LWin up}{Alt up}{Shift up}{Ctrl up}"
 ; #############################################################################
-; -xx- close-all-file-explorer-windows (BETA)   ###############
+; ######## close-all-file-explorer-windows (BETA)   ###############
 ; #############################################################################
 !+f::
 {
@@ -3428,7 +2682,7 @@ RCtrl::RWin
 
 
 ; #####################################################
-; -xx-   REMAP rightALT key to be rightArrow ##########
+; ####   REMAP rightALT key to be rightArrow ##########
 ; #####################################################
 ; remap right-alt key to act as right-arrow, so that I can accept suggestions faster in terminal, since the right-alt key is in much easier location on MXkeys than the right arrow key.
 RAlt::
@@ -3438,7 +2692,7 @@ RAlt::
 }
 
 ; #####################################################
-; -xx-     CAPSLOCK HYPERKEY       ###############
+; ########      CAPSLOCK HYPERKEY       ###############
 ; #####################################################
 
 CapsLock:: {
@@ -3740,8 +2994,6 @@ scriptDir := "C:\Users\YourUser\Documents"
 ; ---- end of hyperkey shortcuts ----
 ; -----------------------------------
 
-
-
 ; Capslock:: (DOESNT WORK so using above more complicated CAPLOCK-hyper which DOES WORK)
 ; {
 ;     Send '^+!#' ; This sends Ctrl+Shift+Alt+Win
@@ -3754,7 +3006,7 @@ scriptDir := "C:\Users\YourUser\Documents"
 ; "{Ctrl down}{Alt down}{LWin down}x{LWin up}{Alt up}{Ctrl up}"
 
 ; #####################################################################
-; -xx- open the durMeetings tab in ref_sheet excel doc ############
+; ######## open the durMeetings tab in ref_sheet excel doc ############
 ; #####################################################################
 ; !^#x::
 ^+!x::
@@ -3784,7 +3036,7 @@ scriptDir := "C:\Users\YourUser\Documents"
 }
 
 ; #####################################################################
-; -xx- open the quick_ref directory in file explorer ############
+; open the quick_ref directory in file explorer ############
 ; #####################################################################
 !+^r::
 {
@@ -3877,7 +3129,7 @@ scriptDir := "C:\Users\YourUser\Documents"
 
 
 ; #####################################################################
-; -xx- open the screenshots directory in file explorer ############
+; ######## open the screenshots directory in file explorer ############
 ; #####################################################################
 ; these are SCREENSHOTS so we want this window to open in larger than typical expl windows bc we want to see the thumbnails better, so we'll use the same code as above for resizing/moving the window, just with different dimensions for the WinMove command in ATTEMPT 3
 !+^b::
@@ -3929,14 +3181,12 @@ scriptDir := "C:\Users\YourUser\Documents"
 ;     return
 ; }
 
-
-
-
 ; #####################################################
-; -xx- the 'LAUNCH ALL MAIN-APPS' shortcut ########
+; ######## the 'LAUNCH ALL MAIN-APPS' shortcut ########
 ; #####################################################
 ; AHK FIRST run as admin: ===>
 ; "C:\Program Files\AutoHotkey\UX\king_app_switcher1.ahk"
+
 ; glazewm,Cmder, chrome, vscode?, trello, excel-ref, excel-zzshorts, github-desktopm glaze/auto-tiling-script
 !+l::
 {
@@ -4031,9 +3281,7 @@ scriptDir := "C:\Users\YourUser\Documents"
 
 
 
-; #####################################################
-; -xx- TRYING TO fix the hyper-k so it switches to chrome as it opens the html file...
-; #####################################################
+; TRYING TO fix the hyper-k so it switches to chrome as it opens the html file...
 !+^k::
 {
 
@@ -4171,113 +3419,6 @@ scriptDir := "C:\Users\YourUser\Documents"
 ;     return
 ; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ;#8   -zz-etc
 ;*####################################################################################################
 ;*####################################################################################################
@@ -4348,9 +3489,6 @@ scriptDir := "C:\Users\YourUser\Documents"
 ; This is a way we can ensure we dont have to 'return' from 'no matches' WAY less often
 ;! TMP DISABLED THIS Ctrl-spacebar COMMAND BC TO TEST THE fzf COMMANDS (which needs Ctrl-spacebar binding)
 ; ^Space::
-; =====================================
-; -xx- TBD (AVAIL, NOT SURE WHAT THIS SECTION IS ATM...? it was a ctrl-spacebar for app-specific commands but idk anymore??))
-; =====================================
 !+^Space::
 {
 
