@@ -2,13 +2,14 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title TEMPL: Config Dropdown1
-# @raycast.mode compact
+# @raycast.title Config Picker
+# @raycast.mode silent
 # @raycast.icon 🤖
 # @raycast.packageName Developer Utils
 # @raycast.description trying fzf/dropdown for all configs
 
-# @raycast.argument1 { "type": "dropdown", "placeholder": "sel config", "required": true, "data": [{"title": "aliases", "value": "A"}, {"title": "ahk", "value": "H"}, {"title": "glaze", "value": "G"}, {"title": "flexprompt", "value": "P"}, {"title": "fzf", "value": "F"}, {"title": "keybVis", "value": "K"}, {"title": "ssot-refs", "value": "R"}, {"title": "madden", "value": "M"} ] }
+# @raycast.argument1 { "type": "dropdown", "placeholder": "sel config", "required": true, "data": [{"title": "aliases", "value": "A"}, {"title": "ahk", "value": "H"}, {"title": "glaze", "value": "G"}, {"title": "flexprompt", "value": "P"}, {"title": "fzf", "value": "F"}, {"title": "keybVis", "value": "K"}, {"title": "ssot-refs", "value": "R"} ] }
+#####BACKUP@raycast.argument1 { "type": "dropdown", "placeholder": "sel config", "required": true, "data": [{"title": "aliases", "value": "A"}, {"title": "ahk", "value": "H"}, {"title": "glaze", "value": "G"}, {"title": "flexprompt", "value": "P"}, {"title": "fzf", "value": "F"}, {"title": "keybVis", "value": "K"}, {"title": "ssot-refs", "value": "R"}, {"title": "madden", "value": "M"} ] }
 
 
 
@@ -46,8 +47,6 @@ elif selection == "K":
     os.system(r"Code D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html")
 elif selection == "R":
     os.system(r"Code D:\git\niche_side_quests_repo\_universal\ssot-refs.md")
-elif selection == "M":
-    os.system(r"Code MADDEN")
 else:
     print("ERROR!!!")
 

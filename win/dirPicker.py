@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title TEMPL: Config Dropdown1
+# @raycast.title Config Dropdown1
 # @raycast.mode compact
 # @raycast.icon 🤖
 # @raycast.packageName Developer Utils
