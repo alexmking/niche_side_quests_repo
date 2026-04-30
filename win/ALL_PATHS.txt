@@ -25,6 +25,9 @@ C:\Users\aking\amk\archive
 D:\git\niche_side_quests_repo
 D:\git\niche_side_quests_repo\_universal
 
+leet
+___ leet
+
 D:\git\niche_side_quests_repo\win\standard-leet-1.py
 D:\git\niche_side_quests_repo\win\standard-leet-2.py
 D:\git\niche_side_quests_repo\win\standard-leet-3.py
