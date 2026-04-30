@@ -2,26 +2,34 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title File Picker
+# @raycast.title Everything Picker
 # @raycast.mode silent
 # @raycast.icon 🤖
 # @raycast.packageName Developer Utils
 # @raycast.description fzf/dropdown of all useful/common files, and opens the selected file (as far as if it opens for editing in vscode or just opens the file normally (like an excelFile), that depends on the selection itself (so some will open for edintg in vscode while others will open normally etc etc))
 
+### OTHER NAMES I CONSIDERED BUT DIDN'T GO WITH:
+### @raycast.title      Omni Picker
+# ##@raycast.title      Universal Picker
+### @raycast.title      All-In-One Picker
+# ##@raycast.title      Config & File & Dir Picker
 
-###############################################################################################################################################
-###############################################################################################################################################
-################ UNIQUE PERK OF THIS 'FILE' PICKER script compared to the other picket scripts (like the configPicker and dirPicker) is that this one will have a MIX of some files that will open for editing in vscode, while other files will just open normally (like excel files, pdfs, etc), and the logic for which files should open for editing in vscode vs which files should just open normally will be determined on a case by case basis depending on the specific file in question (so for example if its a config file then it will open for editing in vscode, but if its an excel file then it will just open normally instead of in vscode since excel files are meant to be opened normally and not in vscode etc etc)
-# the ACTION we take on the selected file CHANGES dpeending on the file, which makes this a good all-around option that can handle alot of what you want to do
-# FOR EXAMPLE, if we selected a CONFIG file, then we open-for-editing-in-vscode (since thats very likely the action that makes sense for that specific file)
-# BUT... if we selected an EXCEL file, then we just open it normally (since excel files are meant to be opened normally and not in vscode, and also since if we opened an excel file in vscode then it would just open the raw underlying code of the excel file which is not what we want since excel files are meant to be opened normally and not in vscode etc etc)
-# i could even include some DIRECTORIES as options to select (in which case it would OPEN NEW FILE EXPLORER WINDOW AT THE SELECTED DIRECTORY instead of opening the file in vscode or just opening the file normally etc etc), but for now im just doing files in this 'filePicker' script, and then i have a separate 'dirPicker' script that is specifically for picking directories and then opening new explorer window at the selected directory, so for now im just keeping directories out of this 'filePicker' script and only including files in this 'filePicker' script, but in the future i could always add some directories to this 'filePicker' script as well if i wanted to (but for now im just keeping directories out of this 'filePicker' script and only including files in this 'filePicker' script, and then if i want to open new explorer window at a specific directory then i can just use my separate 'dirPicker' script that is specifically for picking directories and then opening new explorer window at the selected directory etc etc)
-#      ⭐ IMP NOTE ⭐ : maybe we should CHANGE THE NAME to someting MORE GENERIC/broader-spectrum than 'FILE' (since we may include directories too)
-#      ⭐ IMP NOTE ⭐ : maybe we should CHANGE THE NAME to someting MORE GENERIC/broader-spectrum than 'FILE' (since we may include directories too)
-#      ⭐ IMP NOTE ⭐ : maybe we should CHANGE THE NAME to someting MORE GENERIC/broader-spectrum than 'FILE' (since we may include directories too)
-###############################################################################################################################################
-###############################################################################################################################################
-###############################################################################################################################################
+
+#++++++++++++++++++++++++++++++++++++++++++++++
+# 📌EXPL OF THIS SCRIPT:
+# this is like a 'mega' picker that includes a mix of both files and directories and configs and whatever else i want to include, so its like a one-stop-shop for picking any file
+# after i started adding DIRECTORIES to the FILE PICKER script, i realized that the name 'filePicker' is no longer super accurate since its not just files in there but also directories, so maybe we should change the name to something more generic/broader-spectrum than 'filePicker' since it includes more than just files (since it also includes directories and configs and whatever else i want to include etc etc), but for now im still keeping the name as 'filePicker' since its just easier to keep the name as is for now instead of going through the process of changing the name and then changing all the references to that name in other scripts and stuff etc etc, but in the future if we end up adding a lot of directories and other non-file things to this picker then we might want to consider changing the name to something more generic/broader-spectrum than 'filePicker' since it includes more than just files (since it also includes directories and configs and whatever else i want to include etc etc)
+# so... this picker should have the LARGEST DROPDWON of all the picker scripts (since it's combining most/all of them into one), and then the other picker scripts (like the configPicker and dirPicker) can be more focused with smaller dropdowns that are just for picking configs or just for picking directories etc etc, but this 'everythingPicker' script can be the one with the largest dropdown that includes everything all together in one place etc etc
+# #### DONT FORGET: the action we take on the selected entry CHANGES depending on the specific entry that was selected (so for example if we selected a config file, then we would open it for editing in vscode since thats likely the action we want to take for a config file, but if we selected a directory, then we would open new explorer window at that directory instead of opening it in vscode since directories are meant to be opened in explorer and not in vscode etc etc, so the action we take on the selected entry CHANGES depending on the specific entry that was selected, which makes this 'everythingPicker' script a good all-around option that can handle alot of different types of entries and the appropriate actions for those entries since the action we take changes depending on the specific entry that was selected etc etc)
+#++++++++++++++++++++++++++++++++++++++++++++++
+### THE DIFF ACTION WE WANT TO TAKE FOR EACH DIFF SELECTION TYPE:
+    # for config files      ===>    open for editing in vscode
+    # for directories       ===>    open new explorer window at that directory
+    # for excel files       ===>    open normally (since excel files are meant to be opened normally and
+    # for pdf files         ===>    open normally (since pdf files are meant to be opened normally and not in vscode etc etc)
+    # for other misc types  ===>    we can decide on a case by case
+
+
 
 
 
@@ -108,11 +116,11 @@ elif selection == "K":
 elif selection == "R":
     os.system(r"Code D:\git\niche_side_quests_repo\_universal\ssot-refs.md")
 elif selection == "Z":
-    # TODO (IF NEEDED. atm it's working fine without it) add conditional logic so it will only SWITCH-TO this excel file if its already open, and if its not already open, then it will OPEN it (since if its already open, then opening it again will just open a new instance of the file, which is not what i want since i want it to just switch to the already open instance of the file)
+    # TODO add conditional logic so it will only SWITCH-TO this excel file if its already open, and if its not already open, then it will OPEN it (since if its already open, then opening it again will just open a new instance of the file, which is not what i want since i want it to just switch to the already open instance of the file)
     # open zzshortcuts.xlsm normally (not in vscode, since its an excel file)
     os.startfile(r"C:\Users\aking\amk\notes\quick_ref\zzshortcuts.xlsm")
 elif selection == "E":
-    # TODO (IF NEEDED. atm it's working fine without it) add conditional logic so it will only SWITCH-TO this excel file if its already open, and if its not already open, then it will OPEN it (since if its already open, then opening it again will just open a new instance of the file, which is not what i want since i want it to just switch to the already open instance of the file)
+    # TODO add conditional logic so it will only SWITCH-TO this excel file if its already open, and if its not already open, then it will OPEN it (since if its already open, then opening it again will just open a new instance of the file, which is not what i want since i want it to just switch to the already open instance of the file)
     os.startfile(r"C:\Users\aking\amk\notes\quick_ref\ref_sheet2025.xlsx")
 else:
     print("ERROR!!!")
