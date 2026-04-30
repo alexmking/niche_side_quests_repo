@@ -21,6 +21,18 @@
 
 
 
+# ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+# POTENTIAL NAME CHANGES THAT I MAY MAKE SOON:
+# - All-in-One Picker
+# - Omni Picker
+# - Universal Picker
+# - Master Picker
+# - Every Picker
+# ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
 
 import os
 import sys
