@@ -312,7 +312,7 @@ pickFile()     (opens sel file but not necc for editing (like EXCELdoc foe examp
 
 2. NOUN + 'PICKER' style (also great, as problaby a little better fit for the COMMAND-NAME itself...)
 config-picker
-path-picker
+path-pickerG
 dir-picker
 file-picker
 
@@ -328,6 +328,7 @@ config-picker   (opens selection for editing in vs code)
 path-picker     (copies selection to clipboard)
 dir-picker  (open new finder window at selection )
 file-picker    (opens sel file but not necc for editing (like EXCELdoc foe example)) (SOME OVERLAP W pickConfig(), may be a problem idk..)
+everything-picker    (NEW one that combines all dirs/files/configs etc and does most-likely action based on the selection type (so if you sel a DIR then itll open finderwindow at that dir, but if you sel a excel file itll just open normally etc etc ))) (SOME OVERLAP W pickConfig(), may be a problem idk..)
 
 
 

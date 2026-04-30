@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Smart Configs
+# @raycast.title Config Picker
 # @raycast.mode compact
 
 # Optional parameters:
