@@ -149,6 +149,7 @@
       - proj      ==       short for project, all project dirs should start with proj-...
       - ssot
       - md        ==       markdown, (see how I used with snippets like ;mdpython )
+      - bookm     ==       for 'bookmark' / bookmarked... 
 
       - print    ==      ?? prob not using this one bc 'see' and 'show' and 'list' are all better/shorter
 
@@ -207,6 +208,14 @@
       - !mdcpp       (c/c++ code block markdown)
       - !mdcs        (csharp markdwon)
       - !rem      ;= rem (the annoying comment syntax for windows-alias doc )
+      - !explode    💥💣🧨🤯 (one of these)
+      - !collision       💥💣🧨🤯 (one of these)
+      - !boom      💥💣🧨🤯 (one of these)
+      - !bomb      💥💣🧨🤯 (one of these)
+      - !idea     💡
+      - !bulb     💡
+      - !
+
       - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
  
 
@@ -255,30 +264,70 @@
 
 
 
-
-
-
-
 -zz-TBD
 # DEV BUFFS to SETUP:
 | MAC       | WIN       | Buff Description |
 | -----     | ---       | -------- |
-| ✅        |❗TODO     | open selected file in vscode (from finder window selection obvi) |
+| ✅        |❗TODO     | open sele==cted file in vscode (from finder window selection obvi) |
 | ❗TODO    |❗TODO     | open file from path in clipboard (few wrinkles to this) |
-| ✅        |❗TODO     | some dir-related stuff that's WITHIN the actual envs (DDrive/osi/monarch etc)
-| ❗TODO    |❗TODO     | ❗DEF MORE TO ADD HERE!! |
+| ✅        |❗TODO     | some dir-related stuff that's WITHIN the actual envs (DDrive/osi/monarch etc) |
+| ❗TODO    |❗TODO     | try to get the ENV-BASED paths/dirs working from RAYCASTS end (only diff is we'll need access to the ENV-VARIABLE to define the PATHS and some handling/catch-case for when we run it without any ENV-SELECTED...|
+| ❗TODO     |❗TODO     | building upon my ENV-BASED paths/dirs above, create my CD-PICKER script-IDEA (explained in TASK_BANK card AND in WINDOWS-ALIAS file near the top |
+| ❗TODO      |❗TODO     | open selected file in vscode (from finder window selection obvi) |
+| ❗TODO      |❗TODO     | ????|
+| ❗TODO      |❗TODO     | ????|
+| ❗TODO      |❗TODO     | ????|
+| ❗TODO      |❗TODO     | ????|
+| ❗TODO      |❗TODO     | ????|
+| ❗TODO      |❗TODO     | ????|
 
 
 
 
+# all the SMART script commands I'd like setup on both mac/windows: (DELETEME after)
+- dir-picker (or pick-path) == fzf/drop of all my main directories, which opens new finder/explorer window at the selected dir upon selection...
+- path-picker == (or pick-path) same as above except copies the selected path to clipboard (or directly pastes it, or both, whatever i prefer)
+- edit-picker == (or pick-config or config-picker etc) same as above except we OPEN FOR EDIT in VSCODE upon selection (obviously only applies to files we'd want to edit anyway)
+- ?
+- PORB NOT--> but a terminal-directory-picker which opens new terminal at selected path (not priority atm tbh)
+- ?
+- ?
+- ?
+   - ### the TERMINAL-equiv to the above script commandsRayc:
+      - cd-picker-idea: same as dir-picker except instead of opening new finderWindow at the selected dir, we CD into that dir in our curr terminal...
+      - path-picker?? same as the raycasts path-picker, except we copy to clipboard in terminal?? (actually this one may not be needed at all bc I could just call the raycast command and get the path on my clipboard anyway)
+
+
+PROS/CONS of each naming-style:
+1. FUNCTION-like verbNoun() (very familiar w this format already, and super clear what's doing)
+pickPath()     (copies selection to clipboard)
+pickDir()      (open new finder window at selection )
+pickConfig()   (opens selection for editing in vs code)
+pickFile()     (opens sel file but not necc for editing (like EXCELdoc foe example)) (SOME OVERLAP W pickConfig(), may be a problem idk..)
+--> pickFile() may not actually be needed but I'll problaby create/set it up anyway just to try out...
+               --> why not needed? bc any FILE we'd want to open will ALREADY have its own: 
+                  1. OPEN-FILE-QUICKLINK (for when I just want to open/launch the file)
+                  2. Edit-FILE script-command (that I can just as easily call via raycast)
+                  .... SO. ... those pretty much cover most/all of when id use pickPile()
+
+2. NOUN + 'PICKER' style (also great, as problaby a little better fit for the COMMAND-NAME itself...)
+config-picker
+path-picker
+dir-picker
+file-picker
+
+
+--- EITHER WAY...lets encorprate BOTH naming styles in the SCRIPT-COMMAND like so:
+1. name the script command path-picker...
+2. set the ALIAS for it to be the pickPath() style
 
 
 
 
-
-
-
-
+config-picker   (opens selection for editing in vs code)
+path-picker     (copies selection to clipboard)
+dir-picker  (open new finder window at selection )
+file-picker    (opens sel file but not necc for editing (like EXCELdoc foe example)) (SOME OVERLAP W pickConfig(), may be a problem idk..)
 
 
 
@@ -2952,13 +3001,10 @@ securesync      rel/1_trunk
 
 
 
-- quick checking if windows native virt desktops has same problems as glazeWM v-desktops:
+- quick checking if windows native virt desktops has same problems as glazeWM v-desktops: 
   - RESULT == YES we get the same issue with it unable to detect any windows outside of cur desktop when detecthiddenwindow(0). and then when set == 1, we CAN detect the other windows in diff virt desktops BUT...we also detect like 10+ hidden windows that mess up the switching stuff completely. 
   - ***SO...we need to look at the list ew get in return when we do 'get windows' at start of shortcut and see if we can dtermine some filtering condition we could add to it such that it remvoes all the invisible windows and only keeps the real windows in the list***
 
-
-NIK QUESTION:
-Any idea why this simple upmerge to 13.1 wouldn't be working the same as it was on 12.1: https://git.dev.osii.com/osi/OpenSCADA/pull/1795 (the 12.1 SWR we briefly looked at together last month if you remember). I spent some time on this a couple weeks ago and was surprised it wasn't working since the 12.1 -> 13.1 diff of the surrounding code shows no big changes. 
 
 
 
@@ -3375,7 +3421,23 @@ Any idea why this simple upmerge to 13.1 wouldn't be working the same as it was 
 
 
 
-
+# RAYCAST EXTENTIONS I INSTALLED AND NEED TO TRY OUT/ EXPERIMENT WITH:
+      visual studio code
+      google Chrome
+      Things
+      iTerm
+      installed extensions
+      kill process
+      spotify player
+      Google Search
+      chatGPT
+      cleanShotX (screenshot app)
+      system monitor
+      timer
+   ### other extensions I SHOULD INSTALL/try... 
+      ?  
+      ?  
+      ?  
 
 
 
