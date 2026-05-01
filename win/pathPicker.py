@@ -3,8 +3,8 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Path Picker
-####@raycast.mode silent
-# @raycast.mode fullOutput
+# @raycast.mode silent
+##@raycast.mode fullOutput
 # @raycast.icon 🤖
 # @raycast.packageName Developer Utils
 # @raycast.description trying fzf/dropdown for all configs
@@ -142,8 +142,8 @@ if selection == "A":
     # copy the following path to clipboard: "C:\Users\aking\Downloads\cmder\config\user_aliases.cmd"
     os.system(r'echo C:\Users\aking\Downloads\cmder\config\user_aliases.cmd| clip')
 elif selection == "H":
-    # copy the following path to clipboard: "C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\king_app_switcher1.ahk"
-    os.system(r'echo C:\Users\aking\AppData\Local\Programs\AutoHotkey\UX\king_app_switcher1.ahk| clip')
+    # copy the following path to clipboard: "C:\Program Files\AutoHotkey\UX\king_app_switcher1.ahk"
+    os.system(r'echo C:\Program Files\AutoHotkey\UX\king_app_switcher1.ahk| clip')
 elif selection == "G":
     # copy the following path to clipboard: "C:\Users\aking\.glzr\glazewm\config.yaml"
     os.system(r'echo C:\Users\aking\.glzr\glazewm\config.yaml| clip')
