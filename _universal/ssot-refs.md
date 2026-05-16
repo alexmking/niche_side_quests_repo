@@ -167,6 +167,52 @@
       - ?? 
       - ?? 
 
+   ### TRELLO prefixes (upon-creation and search/filter prefixes) keywords:
+      - atm trellos prefix is a PERIOD . (bc of phone keyboard has much easier access to period than ';' or some other symbol)
+      - trello needs a couple 'upon-creation' prefixes to enable some functionality when creating cards via my phones cquick-add shortcut (like add label or move-this-card to spec list) and we do this via pairing a rule or two with the prefixes 'starting-with' 
+      - .qk    ==    adds a PINK quick label to the card [upon-creation prefix] ✅DONE✅(as in, I created tge rule for this, at least on DW board)
+      - .pink    ==    adds a PINK quick label to the card [upon-creation prefix] ✅DONE✅
+      - .pp    ==    adds a PINK quick label to the card [upon-creation prefix] ✅DONE✅
+
+      - .id    ==    move the card to the IDEA list (and/or add IDEA label) (also could be .idea .lab etc )✅DONE✅(as in, I created tge rule for this, at least on DW board)
+      - .idea  ==    same as .id above, just an additional more-verbose version in case I forget what the official prefix of .id ✅DONE✅(as in, I created tge rule for this, at least on DW board)
+      - .ii     ==   same as idea above ✅DONE✅(as in, I created tge rule for this, at least on DW board)
+
+      - .buy     ==    moves card to the BUY_BACKLOG list ✅DONE✅
+      - .bb     ==    same as above ❗TODO❗
+
+      - .quote ==    move this card to the ssot-QUOTES list [upon-creation prefix] ✅DONE✅(as in, I created tge rule for this, at least on DW board)
+      - .qq     ==   same as above (move this card etc)✅DONE✅(as in, I created tge rule for this, at least on DW board)
+
+      - NOTE the 'triple-repeating-letter' is prob pointless, since double-repeating is unique enough (so no .bbb or .iii, instead just have .bb and .ii) 
+      
+      - 💥 THE SEARCH prefixes (for trello-search/filter) ❗TODO❗ BRAINSTORM MORE OF THESE! ❗TODO❗
+      - EXPL: these are all the cards that would be nice to be able to quickly find/pull up (anything else are just cards that we should be fine with leaving as is(aka not-searchable-optimzied))
+      - -ssot     ==    should pull up all the ssot cards on the board/board(s)
+      - _ssot     ==       ??
+      - .ssot     ==       ??
+      - ??     ==       ??
+      - ??     ==       ??
+      - ??     ==       ??
+
+
+
+   ### TRELLO LABELS and their corresp actions/rules etc 
+      - 1 GREEN ($$$)
+      - 2 YELLOW (waiting_for_event...) [✅DONE✅set in stone as 'waiting']
+      - 3 ORANGE   jSearch
+      - 4 RED [set in stone as 'imp'] ✅DONE✅
+      - 5 PURPLE  IDEAS 
+      - 6 BLUE  QUOTES
+      - 7 TEAL-ish  BUY
+      - 8 lightGREEN (LATER) (8s for later)[prob set in stone?]
+      - 9 PINK quick pink [set in stone] ✅DONE✅
+      - 0 GREY (keep in mind)
+
+      - I NEED 1 label for the IDEA stuff, and 1 label for the QUOTE stuff(i tihnk, unless i could get away w not having label?)
+
+
+
 
    ### SNIPPET KEYWORDS(kinda): list of the basic snippets I want active on both sides (mac/wind):
       - *(replace all the '!' with ';' obviously)*
