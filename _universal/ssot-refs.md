@@ -191,14 +191,16 @@
       - -ssot     ==    should pull up all the ssot cards on the board/board(s)
       - _ssot     ==       ??
       - .ssot     ==       ??
-      - ??     ==       ??
-      - ??     ==       ??
-      - ??     ==       ??
+      - .bookm ==          add the BOOKMARK label to this card (no need to MOVE to any list since bookmark cards are kinda meant to not have a home list and rather be accessible via search)
+      - .bb     ==         same as above
+      - .bm or bmark? ==   same as above
+         - 👀 EXPL WHY BOOKMARK is a good prefix AND label as well: it signifies this is an imp card that will likely be around for a bit and interatively added-to/edited/referenced. And this may sound like a pretty niche type of card but actually it's pretty common use case im running into.
+         - So whenver I see an imp card or create a card that i know ill be needing to augment later, I can just quickly add the BOOKM label/prefix and then do filter/search for it to pull up ALL the bookmark cards, where I then can just scroll through to the one I want
 
 
 
    ### TRELLO LABELS and their corresp actions/rules etc 
-      - 1 GREEN ($$$)
+      - 1 GREEN ($$$)  ❗TODO❗MAY CHANGE THIS TO 'BOOKMARK' label
       - 2 YELLOW (waiting_for_event...) [✅DONE✅set in stone as 'waiting']
       - 3 ORANGE   jSearch
       - 4 RED [set in stone as 'imp'] ✅DONE✅
@@ -3051,16 +3053,6 @@ securesync      rel/1_trunk
 - quick checking if windows native virt desktops has same problems as glazeWM v-desktops: 
   - RESULT == YES we get the same issue with it unable to detect any windows outside of cur desktop when detecthiddenwindow(0). and then when set == 1, we CAN detect the other windows in diff virt desktops BUT...we also detect like 10+ hidden windows that mess up the switching stuff completely. 
   - ***SO...we need to look at the list ew get in return when we do 'get windows' at start of shortcut and see if we can dtermine some filtering condition we could add to it such that it remvoes all the invisible windows and only keeps the real windows in the list***
-
-
-
-
-
-
-
-
-
-
 
 
 
