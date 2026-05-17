@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VS Code Keyboard Shortcuts</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f1117;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 60px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #4ec9ff;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 28px;
+      font-size: 0.85rem;
+    }
+
+    /* ── Tabs ─────────────────────────────────────────────── */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tab-btn {
+      padding: 9px 22px;
+      border: 1.5px solid #333;
+      background: #1a1a2a;
+      color: #888;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      transition: all 0.18s;
+    }
+
+    .tab-btn:hover { border-color: #555; color: #ccc; }
+
+    .tab-btn.active {
+      background: #0f6292;
+      border-color: #0ea5e9;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(14,165,233,0.35);
+    }
+
+    .tab-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .tab-sub {
+      font-size: 0.72rem;
+      color: #555;
+      letter-spacing: 0.3px;
+      transition: color 0.18s;
+    }
+
+    .tab-wrap:has(.tab-btn.active) .tab-sub,
+    .tab-wrap:hover .tab-sub { color: #888; }
+
+    /* ── Outer layout: keyboard + sidebar ────────────────── */
+    .layout {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* ── Keyboard shell ───────────────────────────────────── */
+    .keyboard-wrap { display: flex; flex-direction: column; align-items: center; overflow-x: auto; max-width: 100%; }
+
+    .keyboard {
+      background: linear-gradient(145deg, #1e1e30, #161622);
+      border: 1px solid #2a2a40;
+      border-radius: 16px;
+      padding: 22px 24px 20px;
+      box-shadow:
+        0 24px 64px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .key-row {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+
+    /* ── Individual key ───────────────────────────────────── */
+    .key {
+      position: relative;
+      height: 64px;
+      width: 58px;
+      background: linear-gradient(160deg, #323248, #27273a);
+      border: 1px solid #44445a;
+      border-bottom: 3px solid #111120;
+      border-radius: 7px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      cursor: default;
+      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+      user-select: none;
+      overflow: hidden;
+    }
+
+    .key-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #9999bb;
+      line-height: 1;
+    }
+
+    .key-action {
+      font-size: 0.62rem;
+      color: #38bdf8;
+      text-align: center;
+      padding: 0 4px;
+      line-height: 1.25;
+      max-width: 100%;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-break: break-word;
+    }
+
+    /* Bound key (default blue — primary vscode commands) */
+    .key.bound {
+      background: linear-gradient(160deg, #0f4f72, #0c3d5e);
+      border-color: #0ea5e9;
+      border-bottom-color: #0a6fa3;
+      box-shadow: 0 0 0 1px rgba(14,165,233,0.2), 0 2px 8px rgba(14,165,233,0.25);
+    }
+
+    .key.bound .key-label { color: #7dd3fc; }
+
+    .key.bound:hover {
+      background: linear-gradient(160deg, #0369a1, #0f4f72);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(56,189,248,0.5), 0 4px 16px rgba(14,165,233,0.5);
+      z-index: 10;
+    }
+
+    /* Special widths */
+    .key.w-backspace { width: 96px; }
+    .key.w-tab       { width: 78px; }
+    .key.w-backslash { width: 78px; }
+    .key.w-caps      { width: 88px; }
+    .key.w-enter     { width: 110px; }
+    .key.w-lshift    { width: 110px; }
+    .key.w-rshift    { width: 140px; }
+    .key.w-modwide   { width: 76px; }
+    .key.w-space     { width: 340px; }
+    .key.w-arrow     { width: 40px; height: 24px; }
+    .key.w-fnkey     { width: 66px; height: 52px; }
+
+    /* Arrow cluster tweak */
+    .arrow-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .arrow-row { display: flex; gap: 5px; }
+
+    /* ── Nav cluster ──────────────────────────────────────── */
+    .nav-spacer { height: 69px; }
+    .key-invisible { visibility: hidden; }
+
+    /* ── Numpad ───────────────────────────────────────────── */
+    .kb-numpad {
+      display: grid;
+      grid-template-columns: repeat(4, 58px);
+      grid-auto-rows: 64px;
+      gap: 5px;
+    }
+    .kb-numpad .key { height: 100%; width: 100%; }
+    .kb-numpad .key.h-2 { grid-row: span 2; }
+    .kb-numpad .key.w-2col { grid-column: span 2; }
+
+    /* ── Tooltip ──────────────────────────────────────────── */
+    .key[data-tooltip]:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: calc(100% + 9px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0c1322;
+      color: #e2e8f0;
+      font-size: 0.76rem;
+      padding: 6px 11px;
+      border-radius: 7px;
+      white-space: nowrap;
+      z-index: 200;
+      border: 1px solid #1d3f60;
+      pointer-events: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .key[data-tooltip]:hover::before {
+      content: '';
+      position: absolute;
+      bottom: calc(100% + 3px);
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: #1d3f60;
+      z-index: 201;
+    }
+
+    /* ── Legend ───────────────────────────────────────────── */
+    .legend {
+      margin-top: 16px;
+      display: flex;
+      gap: 18px;
+      font-size: 0.78rem;
+      color: #666;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 7px; }
+
+    .legend-swatch {
+      width: 14px; height: 14px;
+      border-radius: 3px;
+    }
+    .swatch-bound      { background: #0f4f72; border: 1px solid #0ea5e9; }
+    .swatch-unbound    { background: #27273a; border: 1px solid #44445a; }
+    .swatch-yellow     { background: #92400e; border: 1px solid #d97706; }
+    .swatch-red        { background: #7f1d1d; border: 1px solid #dc2626; }
+    .swatch-green      { background: #065f46; border: 1px solid #059669; }
+    .swatch-light-blue { background: #0369a1; border: 1px solid #0ea5e9; }
+    .swatch-dark-blue  { background: #1e3a8a; border: 1px solid #3b82f6; }
+    .swatch-dark-grey  { background: #374151; border: 1px solid #6b7280; }
+    .swatch-purple     { background: #4a1d96; border: 1px solid #7c3aed; }
+
+    /* Modifier trigger keys */
+    .key.mod-trigger {
+      background: linear-gradient(160deg, #292015, #1f1811);
+      border-color: #a16207;
+      border-bottom-color: #713f12;
+      box-shadow: 0 0 0 1px rgba(161,98,7,0.25), 0 0 8px rgba(161,98,7,0.2);
+    }
+    .key.mod-trigger .key-label { color: #e4c441; }
+    .key.mod-trigger .key-action { color: #ca8a04; font-weight: 600; }
+
+    /* Yellow key variant */
+    .key.bound-yellow {
+      background: linear-gradient(160deg, #92400e, #78350f);
+      border-color: #d97706;
+      border-bottom-color: #92400e;
+      box-shadow: 0 0 0 1px rgba(217,119,6,0.2), 0 2px 8px rgba(146,64,14,0.3);
+    }
+    .key.bound-yellow .key-label { color: #fcd34d; }
+    .key.bound-yellow .key-action { color: #fbbf24; }
+    .key.bound-yellow:hover {
+      background: linear-gradient(160deg, #a16207, #92400e);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(251,191,36,0.4), 0 4px 16px rgba(217,119,6,0.4);
+      z-index: 10;
+    }
+
+    /* Red key variant */
+    .key.bound-red {
+      background: linear-gradient(160deg, #7f1d1d, #6b1f1f);
+      border-color: #dc2626;
+      border-bottom-color: #7f1d1d;
+      box-shadow: 0 0 0 1px rgba(220,38,38,0.2), 0 2px 8px rgba(127,29,29,0.3);
+    }
+    .key.bound-red .key-label { color: #fca5a5; }
+    .key.bound-red .key-action { color: #f87171; }
+    .key.bound-red:hover {
+      background: linear-gradient(160deg, #991b1b, #7f1d1d);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(248,113,113,0.4), 0 4px 16px rgba(220,38,38,0.4);
+      z-index: 10;
+    }
+
+    /* Green key variant */
+    .key.bound-green {
+      background: linear-gradient(160deg, #065f46, #064e3b);
+      border-color: #059669;
+      border-bottom-color: #065f46;
+      box-shadow: 0 0 0 1px rgba(5,150,105,0.2), 0 2px 8px rgba(6,95,70,0.3);
+    }
+    .key.bound-green .key-label { color: #6ee7b7; }
+    .key.bound-green .key-action { color: #34d399; }
+    .key.bound-green:hover {
+      background: linear-gradient(160deg, #047857, #065f46);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(52,211,153,0.4), 0 4px 16px rgba(5,150,105,0.4);
+      z-index: 10;
+    }
+
+    /* Light blue key variant */
+    .key.bound-light-blue {
+      background: linear-gradient(160deg, #0369a1, #0284c7);
+      border-color: #0ea5e9;
+      border-bottom-color: #0369a1;
+      box-shadow: 0 0 0 1px rgba(14,165,233,0.2), 0 2px 8px rgba(3,105,161,0.3);
+    }
+    .key.bound-light-blue .key-label { color: #7dd3fc; }
+    .key.bound-light-blue .key-action { color: #38bdf8; }
+    .key.bound-light-blue:hover {
+      background: linear-gradient(160deg, #0284c7, #0369a1);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(56,189,248,0.4), 0 4px 16px rgba(14,165,233,0.4);
+      z-index: 10;
+    }
+
+    /* Dark blue key variant */
+    .key.bound-dark-blue {
+      background: linear-gradient(160deg, #1e3a8a, #1e40af);
+      border-color: #3b82f6;
+      border-bottom-color: #1e3a8a;
+      box-shadow: 0 0 0 1px rgba(59,130,246,0.2), 0 2px 8px rgba(30,58,138,0.3);
+    }
+    .key.bound-dark-blue .key-label { color: #93c5fd; }
+    .key.bound-dark-blue .key-action { color: #60a5fa; }
+    .key.bound-dark-blue:hover {
+      background: linear-gradient(160deg, #1d4ed8, #1e3a8a);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(96,165,250,0.4), 0 4px 16px rgba(59,130,246,0.4);
+      z-index: 10;
+    }
+
+    /* Dark grey key variant */
+    .key.bound-dark-grey {
+      background: linear-gradient(160deg, #374151, #4b5563);
+      border-color: #6b7280;
+      border-bottom-color: #374151;
+      box-shadow: 0 0 0 1px rgba(107,114,128,0.2), 0 2px 8px rgba(55,65,81,0.3);
+    }
+    .key.bound-dark-grey .key-label { color: #d1d5db; }
+    .key.bound-dark-grey .key-action { color: #9ca3af; }
+    .key.bound-dark-grey:hover {
+      background: linear-gradient(160deg, #4b5563, #374151);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(156,163,175,0.4), 0 4px 16px rgba(107,114,128,0.4);
+      z-index: 10;
+    }
+
+    /* Purple key variant */
+    .key.bound-purple {
+      background: linear-gradient(160deg, #4a1d96, #3b0764);
+      border-color: #7c3aed;
+      border-bottom-color: #4a1d96;
+      box-shadow: 0 0 0 1px rgba(124,58,237,0.2), 0 2px 8px rgba(74,29,150,0.3);
+    }
+    .key.bound-purple .key-label { color: #c4b5fd; }
+    .key.bound-purple .key-action { color: #a78bfa; }
+    .key.bound-purple:hover {
+      background: linear-gradient(160deg, #6d28d9, #4a1d96);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px rgba(167,139,250,0.4), 0 4px 16px rgba(124,58,237,0.4);
+      z-index: 10;
+    }
+
+    /* ── Shortcut list panel ──────────────────────────────── */
+    .shortcut-list {
+      background: linear-gradient(160deg, #1e1e30, #161622);
+      border: 1px solid #2a2a40;
+      border-radius: 14px;
+      padding: 20px 18px;
+      min-width: 210px;
+      max-height: 560px;
+      overflow-y: auto;
+    }
+
+    .shortcut-list::-webkit-scrollbar { width: 6px; }
+    .shortcut-list::-webkit-scrollbar-track { background: transparent; }
+    .shortcut-list::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+    .shortcut-list h3 {
+      color: #4ec9ff;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #22223a;
+    }
+
+    .shortcut-item {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 9px;
+      font-size: 0.82rem;
+    }
+
+    .shortcut-key-badge {
+      background: #0c3d5e;
+      border: 1px solid #0ea5e9;
+      color: #7dd3fc;
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-weight: 800;
+      font-size: 0.78rem;
+      flex-shrink: 0;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .shortcut-desc { color: #bbb; }
+
+    .no-shortcuts {
+      color: #555;
+      font-size: 0.82rem;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* ── Shortlist panel ──────────────────────────────────── */
+    .shortlist-subtitle {
+      color: #555;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: -10px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #22223a;
+    }
+
+    .shortlist-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 9px;
+      font-size: 0.82rem;
+      color: #888;
+    }
+
+    .shortlist-bullet {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #444;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>VS Code Keyboard Shortcuts</h1>
+<p class="subtitle">Select a modifier group · Hover highlighted keys for details</p>
+
+<div class="tabs">
+  <div class="tab-wrap">
+    <button class="tab-btn active" onclick="setTab('ctrl')">Ctrl</button>
+    <span class="tab-sub">basics</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('ctrl-shift')">Ctrl + Shift</button>
+    <span class="tab-sub">panels & views</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('ctrl-alt')">Ctrl + Alt</button>
+    <span class="tab-sub">multi-cursor</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('ctrl-alt-shift')">Ctrl + Alt + Shift</button>
+    <span class="tab-sub">advanced</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('alt')">Alt</button>
+    <span class="tab-sub">navigation</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('alt-shift')">Alt + Shift</button>
+    <span class="tab-sub">selection</span>
+  </div>
+  <div class="tab-wrap">
+    <button class="tab-btn" onclick="setTab('fn')">Fn</button>
+    <span class="tab-sub">debug & help</span>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="keyboard-wrap">
+    <div class="keyboard" id="keyboard"></div>
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-swatch swatch-bound"></div> Built-in default
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-light-blue"></div> Editor actions
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-dark-blue"></div> Navigation
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-yellow"></div> Custom / remapped
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-green"></div> Available / open slot
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-dark-grey"></div> Reserved / off-limits
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-red"></div> Still need to set up
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-purple"></div> Buggy / not working
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-unbound"></div> No shortcut
+      </div>
+    </div>
+  </div>
+
+  <div class="shortcut-list" id="shortlist-panel">
+    <h3 id="shortlist-title">Shortlist to Consider</h3>
+    <p class="shortlist-subtitle">may try adding</p>
+    <div id="shortlist-items"></div>
+  </div>
+
+  <div class="shortcut-list">
+    <h3 id="list-title">Ctrl Shortcuts</h3>
+    <div id="shortcut-items"></div>
+  </div>
+</div>
+
+<script>
+
+    // ╔══════════════════════════════════════════════════════════╗
+    // ║  VSCODE SHORTCUTS — replace placeholder values with yours ║
+    // ╚══════════════════════════════════════════════════════════╝
+
+    const shortcuts = {
+
+      // ─── CTRL ─────────────────────────────────────────────────
+      'ctrl': {
+        '`': 'toggle terminal',        // ctrl-`
+        '1': 'focus editor group 1',   // ctrl-1
+        '2': 'focus editor group 2',   // ctrl-2
+        '3': 'focus editor group 3',   // ctrl-3
+        '4': 'focus editor group 4',   // ctrl-4
+        '5': 'focus editor group 5',   // ctrl-5
+        '-': 'zoom out',               // ctrl--
+        '=': 'zoom in',                // ctrl-=
+        '[': 'outdent line',           // ctrl-[
+        ']': 'indent line',            // ctrl-]
+        '/': { action: 'toggle comment', color: 'light-blue' }, // ctrl-/
+
+        'a': 'select all',             // ctrl-a
+        'b': 'toggle sidebar',         // ctrl-b
+        'c': 'copy',                   // ctrl-c
+        'd': 'add next occurrence',    // ctrl-d
+        'e': 'go to file',             // ctrl-e
+        'f': 'find',                   // ctrl-f
+        'g': 'go to line/col',         // ctrl-g
+        'h': 'replace',                // ctrl-h
+        'i': 'trigger suggest',        // ctrl-i
+        'j': 'toggle panel',           // ctrl-j
+        'k': { action: 'chord prefix', color: 'dark-grey' }, // ctrl-k (chord)
+        'l': 'expand line select',     // ctrl-l
+        'm': 'toggle tab focus mode',  // ctrl-m
+        'n': 'new untitled file',      // ctrl-n
+        'o': 'open file',              // ctrl-o
+        'p': 'quick open',             // ctrl-p
+        'q': 'quick access',           // ctrl-q
+        'r': 'open recent',            // ctrl-r
+        's': 'save',                   // ctrl-s
+        't': 'go to symbol (wksp)',    // ctrl-t
+        'u': 'cursor undo',            // ctrl-u
+        'v': 'paste',                  // ctrl-v
+        'w': 'close editor',           // ctrl-w
+        'x': 'cut',                    // ctrl-x
+        'y': 'redo',                   // ctrl-y
+        'z': 'undo',                   // ctrl-z
+
+        'left':  { action: 'cursor word left', color: 'dark-blue' },  // ctrl-left
+        'right': { action: 'cursor word right', color: 'dark-blue' }, // ctrl-right
+        'up':    { action: 'scroll line up', color: 'dark-blue' },    // ctrl-up
+        'down':  { action: 'scroll line down', color: 'dark-blue' },  // ctrl-down
+
+        'backspace': { action: 'delete word left', color: 'light-blue' }, // ctrl-backspace
+        'enter':     { action: 'insert line below', color: 'light-blue' }, // ctrl-enter
+      },
+
+
+      // ─── CTRL + SHIFT ──────────────────────────────────────────
+      'ctrl-shift': {
+        '`': 'new terminal',           // ctrl-shift-`
+        '[': 'fold region',            // ctrl-shift-[
+        ']': 'unfold region',          // ctrl-shift-]
+        '/': { action: 'toggle block comment', color: 'light-blue' }, // ctrl-shift-/
+
+        'a': { action: 'toggle block comment', color: 'light-blue' }, // ctrl-shift-a
+        'b': { action: 'build task', color: 'yellow' },               // ctrl-shift-b
+        'd': 'open run & debug',       // ctrl-shift-d
+        'e': 'show explorer',          // ctrl-shift-e
+        'f': 'find in files',          // ctrl-shift-f
+        'g': 'show source control',    // ctrl-shift-g
+        'h': 'replace in files',       // ctrl-shift-h
+        'i': 'format document',        // ctrl-shift-i
+        'j': { action: 'toggle search details', color: 'yellow' },    // ctrl-shift-j
+        'k': 'delete line',            // ctrl-shift-k
+        'l': 'select all occurrences', // ctrl-shift-l
+        'm': 'toggle problems panel',  // ctrl-shift-m
+        'n': 'new window',             // ctrl-shift-n
+        'o': 'go to symbol in file',   // ctrl-shift-o
+        'p': 'command palette',        // ctrl-shift-p
+        's': 'save all',               // ctrl-shift-s
+        't': 'reopen closed editor',   // ctrl-shift-t
+        'u': 'toggle output panel',    // ctrl-shift-u
+        'v': 'preview markdown',       // ctrl-shift-v
+        'w': 'close workspace',        // ctrl-shift-w
+        'x': 'show extensions',        // ctrl-shift-x
+        'y': 'toggle debug console',   // ctrl-shift-y
+        'z': { action: 'redo (alt)', color: 'yellow' },               // ctrl-shift-z
+
+        'left':  { action: 'shrink selection', color: 'dark-blue' },  // ctrl-shift-left
+        'right': { action: 'expand selection', color: 'dark-blue' },  // ctrl-shift-right
+        'up':    { action: 'copy line up', color: 'light-blue' },     // ctrl-shift-up
+        'down':  { action: 'copy line down', color: 'light-blue' },   // ctrl-shift-down
+
+        'enter': { action: 'insert line above', color: 'light-blue' }, // ctrl-shift-enter
+      },
+
+
+      // ─── CTRL + ALT ────────────────────────────────────────────
+      'ctrl-alt': {
+        'up':    { action: 'add cursor above', color: 'light-blue' }, // ctrl-alt-up
+        'down':  { action: 'add cursor below', color: 'light-blue' }, // ctrl-alt-down
+        'left':  { action: 'go prev word (custom)', color: 'yellow' }, // ctrl-alt-left
+        'right': { action: 'go next word (custom)', color: 'yellow' }, // ctrl-alt-right
+
+        'n': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-n
+        'f': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-f
+        'r': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-r
+        's': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-s
+        'd': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-d
+        'b': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-b
+        'e': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-e
+        't': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-t
+        'g': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-g
+        'p': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-p
+      },
+
+
+      // ─── CTRL + ALT + SHIFT ────────────────────────────────────
+      'ctrl-alt-shift': {
+        'f': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-f
+        'p': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-p
+        's': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-s
+        'r': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-r
+        'n': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-n
+        'g': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-g
+        'e': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-e
+        'd': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-d
+        'b': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-b
+        't': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-t
+      },
+
+
+      // ─── ALT ───────────────────────────────────────────────────
+      'alt': {
+        'up':    'move line up',         // alt-up
+        'down':  'move line down',       // alt-down
+        'left':  { action: 'go back (navigate)', color: 'dark-blue' },    // alt-left
+        'right': { action: 'go forward (navigate)', color: 'dark-blue' }, // alt-right
+
+        'z':     'toggle word wrap',     // alt-z
+        'enter': 'quick fix',            // alt-enter
+        'f4':    { action: 'close window', color: 'dark-grey' },          // alt-f4
+
+        '1': { action: 'go to tab 1', color: 'dark-blue' },   // alt-1
+        '2': { action: 'go to tab 2', color: 'dark-blue' },   // alt-2
+        '3': { action: 'go to tab 3', color: 'dark-blue' },   // alt-3
+        '4': { action: 'go to tab 4', color: 'dark-blue' },   // alt-4
+        '5': { action: 'go to tab 5', color: 'dark-blue' },   // alt-5
+        '6': { action: 'go to tab 6', color: 'dark-blue' },   // alt-6
+        '7': { action: 'go to tab 7', color: 'dark-blue' },   // alt-7
+        '8': { action: 'go to tab 8', color: 'dark-blue' },   // alt-8
+        '9': { action: 'go to tab 9', color: 'dark-blue' },   // alt-9
+
+        'b': { action: 'placeholder cmd', color: 'yellow' },  // alt-b
+        'c': { action: 'placeholder cmd', color: 'yellow' },  // alt-c
+        'd': { action: 'placeholder cmd', color: 'yellow' },  // alt-d
+        'f': { action: 'placeholder cmd', color: 'yellow' },  // alt-f
+        'g': { action: 'placeholder cmd', color: 'yellow' },  // alt-g
+        'n': { action: 'placeholder cmd', color: 'yellow' },  // alt-n
+        'p': { action: 'placeholder cmd', color: 'yellow' },  // alt-p
+        'r': { action: 'placeholder cmd', color: 'yellow' },  // alt-r
+        't': { action: 'placeholder cmd', color: 'yellow' },  // alt-t
+        'w': { action: 'placeholder cmd', color: 'yellow' },  // alt-w
+
+        // off-limits / system reserved
+        'tab':   { action: 'alt reserved (OS)', color: 'dark-grey' }, // alt-tab
+        'space': { action: 'alt reserved (OS)', color: 'dark-grey' }, // alt-space
+      },
+
+
+      // ─── ALT + SHIFT ───────────────────────────────────────────
+      'alt-shift': {
+        'f':     'format document',      // alt-shift-f
+        'up':    { action: 'copy line up', color: 'light-blue' },     // alt-shift-up
+        'down':  { action: 'copy line down', color: 'light-blue' },   // alt-shift-down
+        'left':  { action: 'shrink selection', color: 'dark-blue' },  // alt-shift-left
+        'right': { action: 'expand selection', color: 'dark-blue' },  // alt-shift-right
+
+        'i': 'add cursors to line ends', // alt-shift-i
+        'a': 'toggle block comment',     // alt-shift-a
+        'o': 'organize imports',         // alt-shift-o
+        'r': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-r
+        'g': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-g
+        'n': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-n
+        'p': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-p
+        's': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-s
+        't': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-t
+        'd': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-d
+        'e': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-e
+        'b': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-b
+        'c': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-c
+        'k': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-k
+        'm': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-m
+        'w': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-w
+      },
+
+
+      // ─── Fn (bare function keys) ────────────────────────────────
+      'fn': {
+        'f1':  'help / command palette', // F1
+        'f2':  'rename symbol',          // F2
+        'f3':  'find next',              // F3
+        'f4':  { action: 'placeholder', color: 'yellow' },    // F4
+        'f5':  'start / continue debug', // F5
+        'f6':  'focus next part',        // F6
+        'f7':  'go to next diff',        // F7
+        'f8':  'next error/warning',     // F8
+        'f9':  'toggle breakpoint',      // F9
+        'f10': 'step over',              // F10
+        'f11': 'step into / fullscreen', // F11
+        'f12': 'go to definition',       // F12
+      },
+
+    };
+
+
+    // ── Shortlist to Consider — per modifier group ────────────────────────────
+    const shortlistToConsider = {
+      'ctrl': [
+        'ctrl-k is a chord prefix — consider what chord shortcuts you want under it',
+        'ctrl-space is trigger suggest (may overlap with OS)',
+        'ctrl-. is quick fix in some setups',
+        'ctrl-F2 selects all occurrences of word at cursor',
+        'ctrl-D adds selection to next find match (additive)',
+        'ctrl-G goes to a specific line number (useful more than you think)',
+      ],
+      'ctrl-shift': [
+        'ctrl-shift-K deletes the entire line (no clipboard)',
+        'ctrl-shift-L selects ALL occurrences — diff from ctrl-D (additive)',
+        'ctrl-shift-P is command palette — the most important shortcut to memorize',
+        'ctrl-shift-E focuses the file explorer sidebar',
+        'Think about which panel shortcuts you actually use vs. ones you forget',
+      ],
+      'ctrl-alt': [
+        'ctrl-alt-up/down adds multi-cursors above/below — core multi-cursor workflow',
+        'Most ctrl-alt combos are custom — fill in with your frequent extension commands',
+        'Consider mapping language-specific format/fix commands here',
+        'ctrl-alt is a good spot for infrequent but important one-off commands',
+      ],
+      'ctrl-alt-shift': [
+        'This mod group has the fewest conflicts — good for rare but important actions',
+        'Consider using this for global workspace-level commands',
+        'Good candidate for extension-specific advanced actions',
+      ],
+      'alt': [
+        'alt-left/right for navigate back/forward is extremely useful in large codebases',
+        'alt-up/down to move entire lines is a core editing action — learn it well',
+        'alt-click to place multiple cursors anywhere (mouse shortcut)',
+        'alt-1 through alt-9 for jumping to specific editor tabs directly',
+        'alt-Z for toggle word wrap is easy to forget but very handy',
+      ],
+      'alt-shift': [
+        'alt-shift-F to format document — one of the most used shortcuts',
+        'alt-shift-I to add cursors at end of each selected line',
+        'alt-shift-left/right to shrink/expand selection by scope',
+        'alt-shift-O organizes imports — great for TypeScript/Python cleanup',
+        'Consider mapping alt-shift to selection-based transformation commands',
+      ],
+      'fn': [
+        'F5 is the primary debug run/continue — learn the full debug shortcut family',
+        'Shift+F5 = stop debugging | Ctrl+F5 = run without debugging',
+        'Shift+F12 = find all references | Alt+F12 = peek definition',
+        'Ctrl+Shift+F5 = restart debugging',
+        'F7/Shift+F7 to navigate diffs in the diff editor',
+        'F8/Shift+F8 cycle through all errors & warnings in the file',
+        'Consider whether you want Fn keys mapped in other mod groups too (e.g. Ctrl+F5)',
+      ],
+    };
+
+
+    // ── QWERTY keyboard layout ────────────────────────────────────────────────
+    // Format: [displayLabel, lookupKey, ?extraCssClass]
+    const fnRow = [
+      ['Esc','esc','w-fnkey'],
+      ['F1','f1','w-fnkey'],['F2','f2','w-fnkey'],['F3','f3','w-fnkey'],['F4','f4','w-fnkey'],
+      ['F5','f5','w-fnkey'],['F6','f6','w-fnkey'],['F7','f7','w-fnkey'],['F8','f8','w-fnkey'],
+      ['F9','f9','w-fnkey'],['F10','f10','w-fnkey'],['F11','f11','w-fnkey'],['F12','f12','w-fnkey'],
+    ];
+
+    const rows = [
+      [ // number row
+        ['`','`'], ['1','1'], ['2','2'], ['3','3'], ['4','4'], ['5','5'],
+        ['6','6'], ['7','7'], ['8','8'], ['9','9'], ['0','0'], ['-','-'],
+        ['=','='], ['⌫','backspace','w-backspace']
+      ],
+      [ // QWERTY row
+        ['Tab','tab','w-tab'],
+        ['Q','q'],['W','w'],['E','e'],['R','r'],['T','t'],
+        ['Y','y'],['U','u'],['I','i'],['O','o'],['P','p'],
+        ['[','['], [']',']'], ['\\','\\','w-backslash']
+      ],
+      [ // ASDF row
+        ['Caps','caps','w-caps'],
+        ['A','a'],['S','s'],['D','d'],['F','f'],['G','g'],
+        ['H','h'],['J','j'],['K','k'],['L','l'],[';',';'],["'","'"],
+        ['↵','enter','w-enter']
+      ],
+      [ // ZXCV row
+        ['⇧','lshift','w-lshift'],
+        ['Z','z'],['X','x'],['C','c'],['V','v'],['B','b'],
+        ['N','n'],['M','m'],[',',','],['.','.'],['/','/',],
+        ['⇧','rshift','w-rshift']
+      ],
+      [ // bottom row
+        ['⌃','ctrl','w-modwide'],
+        ['⌥','option','w-modwide'],
+        ['⌘','cmd','w-modwide'],
+        ['','space','w-space'],
+        ['⌘','cmd2','w-modwide'],
+        ['fn','fn'],
+        ['⌥','option2','w-modwide'],
+      ]
+    ];
+
+    // ── Navigation cluster ────────────────────────────────────────────────────
+    const navRows = [
+      [['Ins','ins'],  ['Home','home'], ['PgUp','pgup']],
+      [['Del','del'],  ['End','end'],   ['PgDn','pgdn']],
+      'spacer',
+      [['',''],        ['↑','up'],      ['','']],
+      [['←','left'],   ['↓','down'],    ['→','right']],
+    ];
+
+    // ── Numpad ────────────────────────────────────────────────────────────────
+    const numpadKeys = [
+      ['NmLk','numlock',null], ['/','num/',null],  ['*','num*',null],  ['-','num-',null],
+      ['7',   'num7',  null],  ['8','num8',null],  ['9','num9',null],  ['+','num+','h-2'],
+      ['4',   'num4',  null],  ['5','num5',null],  ['6','num6',null],
+      ['1',   'num1',  null],  ['2','num2',null],  ['3','num3',null],  ['↵','numenter','h-2'],
+      ['0',   'num0',  'w-2col'],                  ['.','num.',null],
+    ];
+
+    // ── State ─────────────────────────────────────────────────────────────────
+    let currentTab = 'ctrl';
+
+    function setTab(tab) {
+      currentTab = tab;
+      const labels = ['ctrl', 'ctrl-shift', 'ctrl-alt', 'ctrl-alt-shift', 'alt', 'alt-shift', 'fn'];
+      document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+        btn.classList.toggle('active', labels[i] === tab);
+      });
+      renderKeyboard();
+      renderList();
+      renderShortlist();
+    }
+
+    // ── Modifier trigger keys per tab ─────────────────────────────────────────
+    const triggerKeys = {
+      'ctrl':          { ctrl: '⌃ Ctrl' },
+      'ctrl-shift':    { ctrl: '⌃ Ctrl', lshift: '⇧ Shift' },
+      'ctrl-alt':      { ctrl: '⌃ Ctrl', option: '⌥ Alt' },
+      'ctrl-alt-shift':{ ctrl: '⌃ Ctrl', option: '⌥ Alt', lshift: '⇧ Shift' },
+      'alt':           { option: '⌥ Alt' },
+      'alt-shift':     { option: '⌥ Alt', lshift: '⇧ Shift' },
+      'fn':            { fn: 'Fn' },
+    };
+
+    // ── Render keyboard ───────────────────────────────────────────────────────
+    function makeKey(label, id, extraClass, map) {
+      const shortcutData = id ? (map[id] || null) : null;
+      const triggerLabel = id ? (triggerKeys[currentTab]?.[id] || null) : null;
+
+      let action = null;
+      let color = null;
+      if (shortcutData) {
+        if (typeof shortcutData === 'string') {
+          action = shortcutData;
+        } else if (typeof shortcutData === 'object') {
+          action = shortcutData.action || shortcutData.description || null;
+          color = shortcutData.color || null;
+        }
+      }
+
+      const keyEl = document.createElement('div');
+      let className = 'key'
+        + (extraClass ? ' ' + extraClass : '')
+        + (triggerLabel ? ' mod-trigger' : '')
+        + (!id ? ' key-invisible' : '');
+
+      if (action) {
+        if (color === 'yellow')      className += ' bound-yellow';
+        else if (color === 'red')    className += ' bound-red';
+        else if (color === 'green')  className += ' bound-green';
+        else if (color === 'light-blue') className += ' bound-light-blue';
+        else if (color === 'dark-blue')  className += ' bound-dark-blue';
+        else if (color === 'dark-grey')  className += ' bound-dark-grey';
+        else if (color === 'purple') className += ' bound-purple';
+        else                         className += ' bound';
+      }
+
+      keyEl.className = className;
+
+      if (triggerLabel) keyEl.setAttribute('data-tooltip', triggerLabel);
+      else if (action)  keyEl.setAttribute('data-tooltip', action);
+
+      const labelEl = document.createElement('span');
+      labelEl.className = 'key-label';
+      labelEl.textContent = label;
+      keyEl.appendChild(labelEl);
+
+      const subLabel = triggerLabel
+        ? triggerLabel.replace(/ \(.*\)$/, '')
+        : action;
+      if (subLabel) {
+        const actionEl = document.createElement('span');
+        actionEl.className = 'key-action';
+        actionEl.textContent = triggerLabel ? subLabel : action;
+        keyEl.appendChild(actionEl);
+      }
+      return keyEl;
+    }
+
+    function renderKeyboard() {
+      const map = shortcuts[currentTab] || {};
+      const kb = document.getElementById('keyboard');
+      kb.className = 'keyboard';
+      kb.innerHTML = '';
+
+      // ── Main keyboard ──────────────────────────────────────────
+      const mainSect = document.createElement('div');
+      mainSect.className = 'kb-section';
+
+      // Fn row (above number row, always shown)
+      const fnRowEl = document.createElement('div');
+      fnRowEl.className = 'key-row';
+      fnRow.forEach(([label, id, extraClass]) => fnRowEl.appendChild(makeKey(label, id, extraClass, map)));
+      mainSect.appendChild(fnRowEl);
+
+      // Spacer between fn row and number row
+      const fnSpacer = document.createElement('div');
+      fnSpacer.style.height = '6px';
+      mainSect.appendChild(fnSpacer);
+
+      rows.forEach(row => {
+        const rowEl = document.createElement('div');
+        rowEl.className = 'key-row';
+        row.forEach(([label, id, extraClass]) => rowEl.appendChild(makeKey(label, id, extraClass, map)));
+        mainSect.appendChild(rowEl);
+      });
+
+      // ── Navigation cluster ─────────────────────────────────────
+      const navSect = document.createElement('div');
+      navSect.className = 'kb-section';
+
+      // Spacer to align nav cluster with number row (to account for fn row height)
+      const navTopSpacer = document.createElement('div');
+      navTopSpacer.style.height = '58px'; // fn row height (52) + spacer (6)
+      navSect.appendChild(navTopSpacer);
+
+      navRows.forEach(row => {
+        if (row === 'spacer') {
+          const sp = document.createElement('div');
+          sp.className = 'nav-spacer';
+          navSect.appendChild(sp);
+          return;
+        }
+        const rowEl = document.createElement('div');
+        rowEl.className = 'key-row';
+        row.forEach(([label, id]) => rowEl.appendChild(makeKey(label, id, null, map)));
+        navSect.appendChild(rowEl);
+      });
+
+      // ── Numpad ─────────────────────────────────────────────────
+      const numpadSect = document.createElement('div');
+      numpadSect.className = 'kb-section kb-numpad';
+
+      // Spacer to align numpad with number row
+      const numpadTopSpacer = document.createElement('div');
+      numpadTopSpacer.style.height = '58px';
+      numpadTopSpacer.style.gridColumn = 'span 4';
+      numpadSect.appendChild(numpadTopSpacer);
+
+      numpadKeys.forEach(([label, id, extraClass]) => numpadSect.appendChild(makeKey(label, id, extraClass, map)));
+
+      kb.appendChild(mainSect);
+      kb.appendChild(navSect);
+      kb.appendChild(numpadSect);
+    }
+
+    // ── Render shortlist to consider ──────────────────────────────────────────
+    function renderShortlist() {
+      const items = shortlistToConsider[currentTab] || [];
+      const titles = {
+        'ctrl':           'Ctrl — Shortlist',
+        'ctrl-shift':     'Ctrl+Shift — Shortlist',
+        'ctrl-alt':       'Ctrl+Alt — Shortlist',
+        'ctrl-alt-shift': 'Ctrl+Alt+Shift — Shortlist',
+        'alt':            'Alt — Shortlist',
+        'alt-shift':      'Alt+Shift — Shortlist',
+        'fn':             'Fn — Shortlist',
+      };
+      document.getElementById('shortlist-title').textContent = titles[currentTab];
+
+      const container = document.getElementById('shortlist-items');
+      container.innerHTML = '';
+
+      if (items.length === 0) {
+        container.innerHTML = '<div class="no-shortcuts">No items listed</div>';
+        return;
+      }
+
+      items.forEach(text => {
+        const item = document.createElement('div');
+        item.className = 'shortlist-item';
+        const bullet = document.createElement('span');
+        bullet.className = 'shortlist-bullet';
+        const desc = document.createElement('span');
+        desc.textContent = text;
+        item.appendChild(bullet);
+        item.appendChild(desc);
+        container.appendChild(item);
+      });
+    }
+
+    // ── Render shortcut list ──────────────────────────────────────────────────
+    function renderList() {
+      const map = shortcuts[currentTab] || {};
+      const titles = {
+        'ctrl':           'Ctrl Shortcuts',
+        'ctrl-shift':     'Ctrl + Shift Shortcuts',
+        'ctrl-alt':       'Ctrl + Alt Shortcuts',
+        'ctrl-alt-shift': 'Ctrl + Alt + Shift Shortcuts',
+        'alt':            'Alt Shortcuts',
+        'alt-shift':      'Alt + Shift Shortcuts',
+        'fn':             'Function Key Shortcuts',
+      };
+      document.getElementById('list-title').textContent = titles[currentTab];
+
+      const container = document.getElementById('shortcut-items');
+      container.innerHTML = '';
+
+      const entries = Object.entries(map);
+      if (entries.length === 0) {
+        container.innerHTML = '<div class="no-shortcuts">No shortcuts defined</div>';
+        return;
+      }
+
+      entries.sort(([a], [b]) => a.localeCompare(b)).forEach(([key, shortcutData]) => {
+        let action = null;
+        let color = null;
+        if (typeof shortcutData === 'string') {
+          action = shortcutData;
+        } else if (typeof shortcutData === 'object') {
+          action = shortcutData.action || shortcutData.description || null;
+          color = shortcutData.color || null;
+        }
+        if (!action) return;
+
+        const item = document.createElement('div');
+        item.className = 'shortcut-item';
+
+        const badge = document.createElement('span');
+        badge.className = 'shortcut-key-badge';
+
+        if (color === 'yellow') {
+          badge.style.background = '#92400e'; badge.style.borderColor = '#d97706'; badge.style.color = '#fcd34d';
+        } else if (color === 'red') {
+          badge.style.background = '#7f1d1d'; badge.style.borderColor = '#dc2626'; badge.style.color = '#fca5a5';
+        } else if (color === 'green') {
+          badge.style.background = '#065f46'; badge.style.borderColor = '#059669'; badge.style.color = '#6ee7b7';
+        } else if (color === 'light-blue') {
+          badge.style.background = '#0369a1'; badge.style.borderColor = '#0ea5e9'; badge.style.color = '#7dd3fc';
+        } else if (color === 'dark-blue') {
+          badge.style.background = '#1e3a8a'; badge.style.borderColor = '#3b82f6'; badge.style.color = '#93c5fd';
+        } else if (color === 'dark-grey') {
+          badge.style.background = '#374151'; badge.style.borderColor = '#6b7280'; badge.style.color = '#d1d5db';
+        } else if (color === 'purple') {
+          badge.style.background = '#4a1d96'; badge.style.borderColor = '#7c3aed'; badge.style.color = '#c4b5fd';
+        }
+
+        badge.textContent = key.toUpperCase();
+
+        const desc = document.createElement('span');
+        desc.className = 'shortcut-desc';
+        desc.textContent = action;
+
+        item.appendChild(badge);
+        item.appendChild(desc);
+        container.appendChild(item);
+      });
+    }
+
+    // Initial render
+    renderKeyboard();
+    renderList();
+    renderShortlist();
+
+    // ── Keyboard navigation (← → to cycle tabs) ──────────────────────────────
+    const tabOrder = ['ctrl', 'ctrl-shift', 'ctrl-alt', 'ctrl-alt-shift', 'alt', 'alt-shift', 'fn'];
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const idx = tabOrder.indexOf(currentTab);
+        const next = e.key === 'ArrowRight'
+          ? (idx + 1) % tabOrder.length
+          : (idx - 1 + tabOrder.length) % tabOrder.length;
+        setTab(tabOrder[next]);
+      }
+      const numMap = { '1':'ctrl', '2':'ctrl-shift', '3':'ctrl-alt', '4':'ctrl-alt-shift', '5':'alt', '6':'alt-shift', '7':'fn' };
+      if (numMap[e.key]) setTab(numMap[e.key]);
+    });
+
+</script>
+</body>
+</html>
