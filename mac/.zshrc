@@ -633,6 +633,7 @@ alias shortcutsvis="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.h
 alias shortcutsviz="open file:///$NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
 
 # the VSCODE-visualizer (NEW html)
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/vscode-shortcuts.html
 alias vskeybvis="open file:///$NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
 alias visvscodekeyb="open file:///$NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
 alias visvscodekeyboard="open file:///$NICHE_REPO_DIR/_universal/vscode-shortcuts.html"

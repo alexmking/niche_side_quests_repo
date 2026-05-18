@@ -554,225 +554,337 @@
 
 <script>
 
+    // NOTE: 👀 there's a couple of these CTRL-ONLY shortcuts below that are OVERRATED and could be replaced w a more useful command, (SEE MY GPT chat about this) but for now it's def LOW-PRIORITY
+
+
     // ╔══════════════════════════════════════════════════════════╗
     // ║  VSCODE SHORTCUTS — replace placeholder values with yours ║
     // ╚══════════════════════════════════════════════════════════╝
 
     const shortcuts = {
-
+      // -zz-
       // ─── CTRL ─────────────────────────────────────────────────
       'ctrl': {
-        '`': 'toggle terminal',        // ctrl-`
-        '1': 'focus editor group 1',   // ctrl-1
-        '2': 'focus editor group 2',   // ctrl-2
-        '3': 'focus editor group 3',   // ctrl-3
-        '4': 'focus editor group 4',   // ctrl-4
-        '5': 'focus editor group 5',   // ctrl-5
-        '-': 'zoom out',               // ctrl--
-        '=': 'zoom in',                // ctrl-=
-        '[': 'outdent line',           // ctrl-[
-        ']': 'indent line',            // ctrl-]
-        '/': { action: 'toggle comment', color: 'light-blue' }, // ctrl-/
+        // the NEW GPT univ shortcuts I added for ctrl mod group...
+        'p': 'search filenames',        // ctrl-p
+        'f': 'find in current file',        // ctrl-f
+        't': 'go to symbol (wksp)',        // ctrl-t
+        'g': 'go to line number',        // ctrl-g
+        'd': 'add next occurrence',        // ctrl-d
+        '.': 'quick-fix/ refactor',        // ctrl-.
+        '/': 'toggle line comment',        // ctrl-/   ❗TODO❗ the BLOCK-comment shortcut needs a more similar htokey to this one UNLESS we determine we actually dont/wont use BLOCK comment anyways in which case just remove it
+        'h': 'replace current file',        // ctrl-h
+        // ❌ MISSING THE toggle-LINE-comment vs toggle-BLOCK-comment (it looks like I accidentally used CTRL-/ as the BLOCK-comment? which seems wrong??)
+        // ❌ MISSING THE toggle-LINE-comment vs toggle-BLOCK-comment (it looks like I accidentally used CTRL-/ as the BLOCK-comment? which seems wrong??)
+        // ❌ MISSING THE toggle-LINE-comment vs toggle-BLOCK-comment (it looks like I accidentally used CTRL-/ as the BLOCK-comment? which seems wrong??)
+        // ❌ MISSING THE toggle-LINE-comment vs toggle-BLOCK-comment (it looks like I accidentally used CTRL-/ as the BLOCK-comment? which seems wrong??)
 
-        'a': 'select all',             // ctrl-a
-        'b': 'toggle sidebar',         // ctrl-b
-        'c': 'copy',                   // ctrl-c
-        'd': 'add next occurrence',    // ctrl-d
-        'e': 'go to file',             // ctrl-e
-        'f': 'find',                   // ctrl-f
-        'g': 'go to line/col',         // ctrl-g
-        'h': 'replace',                // ctrl-h
-        'i': 'trigger suggest',        // ctrl-i
-        'j': 'toggle panel',           // ctrl-j
-        'k': { action: 'chord prefix', color: 'dark-grey' }, // ctrl-k (chord)
-        'l': 'expand line select',     // ctrl-l
-        'm': 'toggle tab focus mode',  // ctrl-m
-        'n': 'new untitled file',      // ctrl-n
-        'o': 'open file',              // ctrl-o
-        'p': 'quick open',             // ctrl-p
-        'q': 'quick access',           // ctrl-q
-        'r': 'open recent',            // ctrl-r
-        's': 'save',                   // ctrl-s
-        't': 'go to symbol (wksp)',    // ctrl-t
-        'u': 'cursor undo',            // ctrl-u
-        'v': 'paste',                  // ctrl-v
-        'w': 'close editor',           // ctrl-w
-        'x': 'cut',                    // ctrl-x
-        'y': 'redo',                   // ctrl-y
-        'z': 'undo',                   // ctrl-z
+        // '`': 'toggle terminal',        // ctrl-`
+        // '1': 'focus editor group 1',   // ctrl-1
+        // '2': 'focus editor group 2',   // ctrl-2
+        // '3': 'focus editor group 3',   // ctrl-3
+        // '4': 'focus editor group 4',   // ctrl-4
+        // '5': 'focus editor group 5',   // ctrl-5
+        // '-': 'zoom out',               // ctrl--
+        // '=': 'zoom in',                // ctrl-=
+        // '[': 'outdent line',           // ctrl-[
+        // ']': 'indent line',            // ctrl-]
+        // '/': { action: 'toggle comment', color: 'light-blue' }, // ctrl-/
 
-        'left':  { action: 'cursor word left', color: 'dark-blue' },  // ctrl-left
-        'right': { action: 'cursor word right', color: 'dark-blue' }, // ctrl-right
-        'up':    { action: 'scroll line up', color: 'dark-blue' },    // ctrl-up
-        'down':  { action: 'scroll line down', color: 'dark-blue' },  // ctrl-down
 
-        'backspace': { action: 'delete word left', color: 'light-blue' }, // ctrl-backspace
-        'enter':     { action: 'insert line below', color: 'light-blue' }, // ctrl-enter
+        // 'a': 'select all',             // ctrl-a
+        // 'b': 'toggle sidebar',         // ctrl-b
+        // 'c': 'copy',                   // ctrl-c
+        // 'd': 'add next occurrence',    // ctrl-d
+        // 'e': 'go to file',             // ctrl-e
+        // 'f': 'find',                   // ctrl-f
+        // 'g': 'go to line/col',         // ctrl-g
+        // 'h': 'replace',                // ctrl-h
+        // 'i': 'trigger suggest',        // ctrl-i
+        // 'j': 'toggle panel',           // ctrl-j
+        // 'k': { action: 'chord prefix', color: 'dark-grey' }, // ctrl-k (chord)
+        // 'l': 'expand line select',     // ctrl-l
+        // 'm': 'toggle tab focus mode',  // ctrl-m
+        // 'n': 'new untitled file',      // ctrl-n
+        // 'o': 'open file',              // ctrl-o
+        // 'p': 'quick open',             // ctrl-p
+        // 'q': 'quick access',           // ctrl-q
+        // 'r': 'open recent',            // ctrl-r
+        // 's': 'save',                   // ctrl-s
+        // 't': 'go to symbol (wksp)',    // ctrl-t
+        // 'u': 'cursor undo',            // ctrl-u
+        // 'v': 'paste',                  // ctrl-v
+        // 'w': 'close editor',           // ctrl-w
+        // 'x': 'cut',                    // ctrl-x
+        // 'y': 'redo',                   // ctrl-y
+        // 'z': 'undo',                   // ctrl-z
+
+        // 'left':  { action: 'cursor word left', color: 'dark-blue' },  // ctrl-left
+        // 'right': { action: 'cursor word right', color: 'dark-blue' }, // ctrl-right
+        // 'up':    { action: 'scroll line up', color: 'dark-blue' },    // ctrl-up
+        // 'down':  { action: 'scroll line down', color: 'dark-blue' },  // ctrl-down
+
+        // 'backspace': { action: 'delete word left', color: 'light-blue' }, // ctrl-backspace
+        // 'enter':     { action: 'insert line below', color: 'light-blue' }, // ctrl-enter
       },
 
-
+      // -zz-
       // ─── CTRL + SHIFT ──────────────────────────────────────────
       'ctrl-shift': {
-        '`': 'new terminal',           // ctrl-shift-`
-        '[': 'fold region',            // ctrl-shift-[
+
+        // the NEW GPT univ shortcuts I added for ctrl-shift mod group...
+        'o': 'go to symbol in file',          // ctrl-shift-o
+        'f': 'find in project',          // ctrl-shift-f
+        'l': 'select all occurrences',          // ctrl-shift-l
+        '[': 'fold region',          // ctrl-shift-[
         ']': 'unfold region',          // ctrl-shift-]
-        '/': { action: 'toggle block comment', color: 'light-blue' }, // ctrl-shift-/
+        'p': 'command palette',          // ctrl-shift-p
+        'r': 'replace across project',          // ctrl-shift-r
+        't': 'show type hierarchy',          // ctrl-shift-t
+        'h': 'view call hierarchy',          // ctrl-shift-h
+        'e': 'reveal active file in explorer',          // ctrl-shift-e
+        'n': 'navigate related files',          // ctrl-shift-n
+        's': 'switch header/source',          // ctrl-shift-s
+        'right': 'expand smart selection',          // ctrl-shift-right
+        'left': 'shrink smart selection',          // ctrl-shift-left
 
-        'a': { action: 'toggle block comment', color: 'light-blue' }, // ctrl-shift-a
-        'b': { action: 'build task', color: 'yellow' },               // ctrl-shift-b
-        'd': 'open run & debug',       // ctrl-shift-d
-        'e': 'show explorer',          // ctrl-shift-e
-        'f': 'find in files',          // ctrl-shift-f
-        'g': 'show source control',    // ctrl-shift-g
-        'h': 'replace in files',       // ctrl-shift-h
-        'i': 'format document',        // ctrl-shift-i
-        'j': { action: 'toggle search details', color: 'yellow' },    // ctrl-shift-j
-        'k': 'delete line',            // ctrl-shift-k
-        'l': 'select all occurrences', // ctrl-shift-l
-        'm': 'toggle problems panel',  // ctrl-shift-m
-        'n': 'new window',             // ctrl-shift-n
-        'o': 'go to symbol in file',   // ctrl-shift-o
-        'p': 'command palette',        // ctrl-shift-p
-        's': 'save all',               // ctrl-shift-s
-        't': 'reopen closed editor',   // ctrl-shift-t
-        'u': 'toggle output panel',    // ctrl-shift-u
-        'v': 'preview markdown',       // ctrl-shift-v
-        'w': 'close workspace',        // ctrl-shift-w
-        'x': 'show extensions',        // ctrl-shift-x
-        'y': 'toggle debug console',   // ctrl-shift-y
-        'z': { action: 'redo (alt)', color: 'yellow' },               // ctrl-shift-z
+        // '`': 'new terminal',           // ctrl-shift-`
+        // '[': 'fold region',            // ctrl-shift-[
+        // ']': 'unfold region',          // ctrl-shift-]
+        // '/': { action: 'toggle block comment', color: 'light-blue' }, // ctrl-shift-/
 
-        'left':  { action: 'shrink selection', color: 'dark-blue' },  // ctrl-shift-left
-        'right': { action: 'expand selection', color: 'dark-blue' },  // ctrl-shift-right
-        'up':    { action: 'copy line up', color: 'light-blue' },     // ctrl-shift-up
-        'down':  { action: 'copy line down', color: 'light-blue' },   // ctrl-shift-down
+        // 'a': { action: 'toggle block comment', color: 'light-blue' }, // ctrl-shift-a
+        // 'b': { action: 'build task', color: 'yellow' },               // ctrl-shift-b
+        // 'd': 'open run & debug',       // ctrl-shift-d
+        // 'e': 'show explorer',          // ctrl-shift-e
+        // 'f': 'find in files',          // ctrl-shift-f
+        // 'g': 'show source control',    // ctrl-shift-g
+        // 'h': 'replace in files',       // ctrl-shift-h
+        // 'i': 'format document',        // ctrl-shift-i
+        // 'j': { action: 'toggle search details', color: 'yellow' },    // ctrl-shift-j
+        // 'k': 'delete line',            // ctrl-shift-k
+        // 'l': 'select all occurrences', // ctrl-shift-l
+        // 'm': 'toggle problems panel',  // ctrl-shift-m
+        // 'n': 'new window',             // ctrl-shift-n
+        // 'o': 'go to symbol in file',   // ctrl-shift-o
+        // 'p': 'command palette',        // ctrl-shift-p
+        // 's': 'save all',               // ctrl-shift-s
+        // 't': 'reopen closed editor',   // ctrl-shift-t
+        // 'u': 'toggle output panel',    // ctrl-shift-u
+        // 'v': 'preview markdown',       // ctrl-shift-v
+        // 'w': 'close workspace',        // ctrl-shift-w
+        // 'x': 'show extensions',        // ctrl-shift-x
+        // 'y': 'toggle debug console',   // ctrl-shift-y
+        // 'z': { action: 'redo (alt)', color: 'yellow' },               // ctrl-shift-z
 
-        'enter': { action: 'insert line above', color: 'light-blue' }, // ctrl-shift-enter
+        // 'left':  { action: 'shrink selection', color: 'dark-blue' },  // ctrl-shift-left
+        // 'right': { action: 'expand selection', color: 'dark-blue' },  // ctrl-shift-right
+        // 'up':    { action: 'copy line up', color: 'light-blue' },     // ctrl-shift-up
+        // 'down':  { action: 'copy line down', color: 'light-blue' },   // ctrl-shift-down
+
+        // 'enter': { action: 'insert line above', color: 'light-blue' }, // ctrl-shift-enter
       },
 
-
+      // -zz-
       // ─── CTRL + ALT ────────────────────────────────────────────
       'ctrl-alt': {
-        'up':    { action: 'add cursor above', color: 'light-blue' }, // ctrl-alt-up
-        'down':  { action: 'add cursor below', color: 'light-blue' }, // ctrl-alt-down
-        'left':  { action: 'go prev word (custom)', color: 'yellow' }, // ctrl-alt-left
-        'right': { action: 'go next word (custom)', color: 'yellow' }, // ctrl-alt-right
+        // the GPT univ shortcuts I added for ctrl-alt mod group...
+        '[': 'next reference result',          // ctrl-alt-[
+        ']': 'previous reference result',          // ctrl-alt-]
+        'down': 'next bookmark',          // ctrl-alt-down
+        'up': 'previous bookmark',          // ctrl-alt-up
+        'b': 'toggle bookmark on line',          // ctrl-alt-b
+        'm': 'bookmarks manager window',          // ctrl-alt-m
+        '0': 'collapse all regions',          // ctrl-alt-0
+        '9': 'expand all regions',          // ctrl-alt-9
+        'k': 'open keyboard shortcuts',          // ctrl-alt-k
+        'f': 'format selection',          // ctrl-alt-f
+        '/': 'toggle block comment',          // ctrl-alt-/
+        'r': 'reveal active file in explorer',          // ctrl-alt-r
 
-        'n': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-n
-        'f': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-f
-        'r': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-r
-        's': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-s
-        'd': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-d
-        'b': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-b
-        'e': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-e
-        't': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-t
-        'g': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-g
-        'p': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-p
+
+
+        // 'up':    { action: 'add cursor above', color: 'light-blue' }, // ctrl-alt-up
+        // 'down':  { action: 'add cursor below', color: 'light-blue' }, // ctrl-alt-down
+        // 'left':  { action: 'go prev word (custom)', color: 'yellow' }, // ctrl-alt-left
+        // 'right': { action: 'go next word (custom)', color: 'yellow' }, // ctrl-alt-right
+
+        // 'n': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-n
+        // 'f': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-f
+        // 'r': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-r
+        // 's': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-s
+        // 'd': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-d
+        // 'b': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-b
+        // 'e': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-e
+        // 't': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-t
+        // 'g': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-g
+        // 'p': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-p
       },
 
-
+      // -zz-
       // ─── CTRL + ALT + SHIFT ────────────────────────────────────
       'ctrl-alt-shift': {
-        'f': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-f
-        'p': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-p
-        's': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-s
-        'r': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-r
-        'n': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-n
-        'g': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-g
-        'e': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-e
-        'd': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-d
-        'b': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-b
-        't': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-t
+        // the GPT univ shortcuts I added for ctrl-alt-shift mod group...(only 1 atm...)
+        'b': 'clear all bookmarks',          // ctrl-alt-shift-b
+
+
+        // 'f': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-f
+        // 'p': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-p
+        // 's': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-s
+        // 'r': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-r
+        // 'n': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-n
+        // 'g': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-g
+        // 'e': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-e
+        // 'd': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-d
+        // 't': { action: 'placeholder cmd', color: 'yellow' }, // ctrl-alt-shift-t
       },
 
-
+      // -zz-
       // ─── ALT ───────────────────────────────────────────────────
       'alt': {
-        'up':    'move line up',         // alt-up
-        'down':  'move line down',       // alt-down
-        'left':  { action: 'go back (navigate)', color: 'dark-blue' },    // alt-left
-        'right': { action: 'go forward (navigate)', color: 'dark-blue' }, // alt-right
+        // the GPT univ shortcuts I added for alt mod group...
+        'f12':    'peek-definition',         // alt-f12
 
-        'z':     'toggle word wrap',     // alt-z
-        'enter': 'quick fix',            // alt-enter
-        'f4':    { action: 'close window', color: 'dark-grey' },          // alt-f4
+        // 'up':    'move line up',         // alt-up
+        // 'down':  'move line down',       // alt-down
+        // 'left':  { action: 'go back (navigate)', color: 'dark-blue' },    // alt-left
+        // 'right': { action: 'go forward (navigate)', color: 'dark-blue' }, // alt-right
 
-        '1': { action: 'go to tab 1', color: 'dark-blue' },   // alt-1
-        '2': { action: 'go to tab 2', color: 'dark-blue' },   // alt-2
-        '3': { action: 'go to tab 3', color: 'dark-blue' },   // alt-3
-        '4': { action: 'go to tab 4', color: 'dark-blue' },   // alt-4
-        '5': { action: 'go to tab 5', color: 'dark-blue' },   // alt-5
-        '6': { action: 'go to tab 6', color: 'dark-blue' },   // alt-6
-        '7': { action: 'go to tab 7', color: 'dark-blue' },   // alt-7
-        '8': { action: 'go to tab 8', color: 'dark-blue' },   // alt-8
-        '9': { action: 'go to tab 9', color: 'dark-blue' },   // alt-9
+        // 'z':     'toggle word wrap',     // alt-z
+        // 'enter': 'quick fix',            // alt-enter
+        // 'f4':    { action: 'close window', color: 'dark-grey' },          // alt-f4
 
-        'b': { action: 'placeholder cmd', color: 'yellow' },  // alt-b
-        'c': { action: 'placeholder cmd', color: 'yellow' },  // alt-c
-        'd': { action: 'placeholder cmd', color: 'yellow' },  // alt-d
-        'f': { action: 'placeholder cmd', color: 'yellow' },  // alt-f
-        'g': { action: 'placeholder cmd', color: 'yellow' },  // alt-g
-        'n': { action: 'placeholder cmd', color: 'yellow' },  // alt-n
-        'p': { action: 'placeholder cmd', color: 'yellow' },  // alt-p
-        'r': { action: 'placeholder cmd', color: 'yellow' },  // alt-r
-        't': { action: 'placeholder cmd', color: 'yellow' },  // alt-t
-        'w': { action: 'placeholder cmd', color: 'yellow' },  // alt-w
+        // '1': { action: 'go to tab 1', color: 'dark-blue' },   // alt-1
+        // '2': { action: 'go to tab 2', color: 'dark-blue' },   // alt-2
+        // '3': { action: 'go to tab 3', color: 'dark-blue' },   // alt-3
+        // '4': { action: 'go to tab 4', color: 'dark-blue' },   // alt-4
+        // '5': { action: 'go to tab 5', color: 'dark-blue' },   // alt-5
+        // '6': { action: 'go to tab 6', color: 'dark-blue' },   // alt-6
+        // '7': { action: 'go to tab 7', color: 'dark-blue' },   // alt-7
+        // '8': { action: 'go to tab 8', color: 'dark-blue' },   // alt-8
+        // '9': { action: 'go to tab 9', color: 'dark-blue' },   // alt-9
 
-        // off-limits / system reserved
-        'tab':   { action: 'alt reserved (OS)', color: 'dark-grey' }, // alt-tab
-        'space': { action: 'alt reserved (OS)', color: 'dark-grey' }, // alt-space
+        // 'b': { action: 'placeholder cmd', color: 'yellow' },  // alt-b
+        // 'c': { action: 'placeholder cmd', color: 'yellow' },  // alt-c
+        // 'd': { action: 'placeholder cmd', color: 'yellow' },  // alt-d
+        // 'f': { action: 'placeholder cmd', color: 'yellow' },  // alt-f
+        // 'g': { action: 'placeholder cmd', color: 'yellow' },  // alt-g
+        // 'n': { action: 'placeholder cmd', color: 'yellow' },  // alt-n
+        // 'p': { action: 'placeholder cmd', color: 'yellow' },  // alt-p
+        // 'r': { action: 'placeholder cmd', color: 'yellow' },  // alt-r
+        // 't': { action: 'placeholder cmd', color: 'yellow' },  // alt-t
+        // 'w': { action: 'placeholder cmd', color: 'yellow' },  // alt-w
+
+        // // off-limits / system reserved
+        // 'tab':   { action: 'alt reserved (OS)', color: 'dark-grey' }, // alt-tab
+        // 'space': { action: 'alt reserved (OS)', color: 'dark-grey' }, // alt-space
       },
 
-
+      // -zz-
       // ─── ALT + SHIFT ───────────────────────────────────────────
       'alt-shift': {
-        'f':     'format document',      // alt-shift-f
-        'up':    { action: 'copy line up', color: 'light-blue' },     // alt-shift-up
-        'down':  { action: 'copy line down', color: 'light-blue' },   // alt-shift-down
-        'left':  { action: 'shrink selection', color: 'dark-blue' },  // alt-shift-left
-        'right': { action: 'expand selection', color: 'dark-blue' },  // alt-shift-right
+        // the GPT univ shortcuts I added for alt-shift mod group...
+        'up': 'duplicate-line-up', // alt-shift-up
+        'down': 'duplicate-line-down', // alt-shift-down
+        'f': 'Format Entire Document', // alt-shift-f
+        'a': '❌toggle BLOCK comment ❌', // alt-shift-a ❌ ALERT THIS SHORTCUT NEEDS TO BE RE-EVAL I THINK bc alt-shift-A is not great mapping when the LINE COMMENT variation of it is completely different (CTRL-/)
 
-        'i': 'add cursors to line ends', // alt-shift-i
-        'a': 'toggle block comment',     // alt-shift-a
-        'o': 'organize imports',         // alt-shift-o
-        'r': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-r
-        'g': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-g
-        'n': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-n
-        'p': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-p
-        's': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-s
-        't': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-t
-        'd': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-d
-        'e': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-e
-        'b': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-b
-        'c': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-c
-        'k': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-k
-        'm': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-m
-        'w': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-w
+
+
+        // 'up':    { action: 'copy line up', color: 'light-blue' },     // alt-shift-up
+        // 'down':  { action: 'copy line down', color: 'light-blue' },   // alt-shift-down
+        // 'left':  { action: 'shrink selection', color: 'dark-blue' },  // alt-shift-left
+        // 'right': { action: 'expand selection', color: 'dark-blue' },  // alt-shift-right
+
+        // 'i': 'add cursors to line ends', // alt-shift-i
+        // 'a': 'toggle block comment',     // alt-shift-a
+        // 'o': 'organize imports',         // alt-shift-o
+        // 'r': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-r
+        // 'g': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-g
+        // 'n': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-n
+        // 'p': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-p
+        // 's': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-s
+        // 't': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-t
+        // 'd': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-d
+        // 'e': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-e
+        // 'b': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-b
+        // 'c': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-c
+        // 'k': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-k
+        // 'm': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-m
+        // 'w': { action: 'placeholder cmd', color: 'yellow' },  // alt-shift-w
       },
 
-
+      // -zz-
       // ─── Fn (bare function keys) ────────────────────────────────
       'fn': {
+        // the GPT univ shortcuts I added for fn mod group...
         'f1':  'help / command palette', // F1
         'f2':  'rename symbol',          // F2
-        'f3':  'find next',              // F3
-        'f4':  { action: 'placeholder', color: 'yellow' },    // F4
-        'f5':  'start / continue debug', // F5
-        'f6':  'focus next part',        // F6
-        'f7':  'go to next diff',        // F7
-        'f8':  'next error/warning',     // F8
-        'f9':  'toggle breakpoint',      // F9
-        'f10': 'step over',              // F10
-        'f11': 'step into / fullscreen', // F11
-        'f12': 'go to definition',       // F12
+        'f4':  'go-to-next-search-result', // F4
+        'f12':  'go-to-definition', // F12
+
+
+        // 'f1':  'help / command palette', // F1
+        // 'f3':  'find next',              // F3
+        // 'f4':  { action: 'placeholder', color: 'yellow' },    // F4
+        // 'f5':  'start / continue debug', // F5
+        // 'f6':  'focus next part',        // F6
+        // 'f7':  'go to next diff',        // F7
+        // 'f8':  'next error/warning',     // F8
+        // 'f9':  'toggle breakpoint',      // F9
+        // 'f10': 'step over',              // F10
+        // 'f11': 'step into / fullscreen', // F11
+        // 'f12': 'go to definition',       // F12
       },
 
     };
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // ── Shortlist to Consider — per modifier group ────────────────────────────
     const shortlistToConsider = {
       'ctrl': [
+        '=======================================================',
+        '🚨TMP USING THIS SPACE TO PUT ALL THE TWO-PARTER/MISC SHORTCUTS THAT ILL PROB EVENTUALLY CREATE A NEW DIV/TEXTBOX FOR SOON',
+        '=======================================================',
+        'Ctrl+K, Ctrl+K Open keyboard shortcuts',
+        'Ctrl+M, Ctrl+M Toggle fold region',
+        'Ctrl+M, Ctrl+0 Collapse all regions',
+        'Ctrl+M, Ctrl+9 Expand all regions',
+        'Ctrl+M, Ctrl+9 Expand all regions',
+        'Ctrl+R, Ctrl+R Rename symbol',
+        'Ctrl+R, Ctrl+M Extract method/refactor',
+        'Shift+F12 Find all references',
+        'Ctrl+B, Ctrl+B Toggle bookmark',
+        'Ctrl+B, Ctrl+N Next bookmark',
+        'Ctrl+B, Ctrl+P Previous bookmark',
+        'Ctrl+B, Ctrl+L Bookmarks manager',
+        'Ctrl+B, Ctrl+C Clear all bookmarks',
+        '⚠️ (this one is not a TWO-PARTER, just no other place for it atm) Shift-F12 Find all references',
+        '=======================================================',
+        '---',
+        '---',
+        '---',
         'ctrl-k is a chord prefix — consider what chord shortcuts you want under it',
         'ctrl-space is trigger suggest (may overlap with OS)',
         'ctrl-. is quick fix in some setups',

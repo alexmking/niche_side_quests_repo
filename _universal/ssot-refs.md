@@ -211,6 +211,10 @@
       - 9 PINK quick pink [set in stone] ✅DONE✅
       - 0 GREY (keep in mind)
 
+      - CUTTING ROOM FLOOR:
+      - WIP (aka WORK IN PROGRESS  ⭐⭐⭐⭐⭐⭐ THIS ONE COULD ACTUALLY BE 'USEFUL' AS A LABEL, more so than some other curr labels I have active above)
+      
+
       - I NEED 1 label for the IDEA stuff, and 1 label for the QUOTE stuff(i tihnk, unless i could get away w not having label?)
 
 
