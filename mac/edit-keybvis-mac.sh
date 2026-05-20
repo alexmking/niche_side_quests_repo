@@ -26,4 +26,3 @@ code "$FILE"
 # Open in VS Code (TRYING TO FIX THE SLOWNESS w this same-window flag, idk)
 # code --reuse-window "$FILE"
 
-/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo
