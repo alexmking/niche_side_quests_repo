@@ -2576,6 +2576,710 @@ TODO!!
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Keyboard Mnemonic Cheat Sheet
+
+### ⭐ The way I'll be using this information like a cheatsheet where every time I see an available hotkey, I'd look up that key on this cheatsheet and get some ideas for the type of shortcuts that could go well with it.
+- The goal here is not “the correct meaning” for a key — it’s to create a **pool of mental associations** you can reuse consistently across apps, editors, scripts, window managers, terminals, launchers, etc.
+- A strong shortcut system usually emerges when:
+
+* the same letter always *roughly* means the same thing
+* categories stay emotionally/logically consistent
+* high-frequency actions get the strongest mnemonics
+
+---
+
+# Letters
+
+## A
+
+* App
+* Applications
+* AI
+* Actions
+* Assistant
+* Archive
+* All
+* Alternate
+* Accounts
+* Audio
+
+## B
+
+* Browser
+* Build
+* Bookmarks
+* Back
+* Buffers
+* Board
+* Branch
+* Bluetooth
+* Background
+
+## C
+
+* Copy
+* Code
+* Chat
+* Config
+* Console
+* Commit
+* Calendar
+* Close
+* Create
+* Compile
+
+## D
+
+* Duplicate
+* Delete
+* Debug
+* Diff
+* Dashboard
+* Docs
+* Downloads
+* Database
+* Disconnect
+* Details
+
+## E
+
+* Explorer
+* Edit
+* Editor
+* Email
+* Execute
+* Environment
+* Expand
+* Evaluate
+* Errors
+
+## F
+
+* Find
+* Files
+* Focus
+* Format
+* Forward
+* Favorites
+* Fullscreen
+* Filter
+* Fold
+* Fetch
+
+## G
+
+* Git
+* Go
+* Graph
+* Generate
+* Groups
+* Global
+* Grab
+* Goto
+* Games
+
+## H
+
+* Help
+* Home
+* History
+* Hide
+* Hyperlink
+* Highlights
+* Hints
+* Horizontal
+* Host
+
+## I
+
+* Inspect
+* Info
+* Inbox
+* Issues
+* Import
+* Initialize
+* Images
+* Implementation
+* Instances
+
+## J
+
+* Jump
+* Join
+* Journal
+* Jobs
+* JSON
+* Jupyter
+* Justify
+
+## K
+
+* Kill
+* Keyboard
+* Knowledge
+* Kubernetes
+* Keep
+* Keybindings
+
+## L
+
+* Logs
+* Layout
+* Launch
+* Library
+* Left
+* Links
+* List
+* Line
+* Local
+* Lock
+
+## M
+
+* Move
+* Monitor
+* Merge
+* Messages
+* Minimize
+* Media
+* Markdown
+* Maximize
+* Memory
+
+## N
+
+* New
+* Notes
+* Next
+* Navigate
+* Notifications
+* Network
+* Node
+* Namespaces
+
+## O
+
+* Open
+* Output
+* Overview
+* Options
+* Obsidian
+* Objects
+* Organization
+
+## P
+
+* Projects
+* Preview
+* Panel
+* Paste
+* Profiles
+* Productivity
+* Performance
+* Processes
+* Push
+* Pull
+
+## Q
+
+* Quick
+* Quit
+* Queue
+* Queries
+* Quickfix
+* Quick Open
+* Questions
+
+## R
+
+* Run
+* Rename
+* Refresh
+* Reload
+* References
+* Replace
+* Right
+* Repository
+* Refactor
+* Review
+
+## S
+
+* Search
+* Save
+* Settings
+* Source
+* Split
+* Sidebar
+* Scripts
+* Symbols
+* Sync
+* Staging
+
+## T
+
+* Terminal
+* Tasks
+* Toggle
+* Tabs
+* Teams
+* Tests
+* Trello
+* Tools
+* Tree
+* Timeline
+
+## U
+
+* Undo
+* Upload
+* Utilities
+* UI
+* Update
+* Users
+* Usage
+* Unstage
+
+## V
+
+* View
+* VSCode
+* Visualize
+* Vertical
+* Variables
+* Version
+* Vault
+* Video
+
+## W
+
+* Window
+* Workspace
+* Web
+* Wrap
+* Watch
+* Warnings
+* Wiki
+* Widgets
+
+## X
+
+* Close
+* Cut
+* Kill
+* Delete
+* Danger Zone
+* Experimental
+* Diagnostics
+* Exit
+
+(“X” often feels destructive/aggressive, which makes it powerful for dangerous actions.)
+
+## Y
+
+* Yank
+* YAML
+* Yes
+* Yield
+* History Redo
+* Sync
+
+## Z
+
+* Zoom
+* Zsh
+* Zap
+* Collapse
+* Sleep
+* Undo (common convention)
+
+---
+
+# Numbers
+
+## 1–9
+
+These work best for:
+
+* workspace numbers
+* tab slots
+* priority levels
+* layouts
+* monitor positions
+* favorites
+* bookmarks
+
+Example patterns:
+
+* `MOD-1` → Workspace 1
+* `MOD-2` → Browser
+* `MOD-3` → Terminal
+* `MOD-4` → Editor
+
+Or:
+
+* `1 = tiny`
+* `5 = center`
+* `9 = fullscreen`
+
+## 0
+
+* Reset
+* Default
+* Fullscreen
+* Global
+* Overview
+* Workspace 10
+
+---
+
+# Symbol Keys
+
+## `-`
+
+* Minimize
+* Collapse
+* Zoom out
+* Decrease
+* Shrink
+* Fold
+
+## `=`
+
+* Maximize
+* Expand
+* Zoom in
+* Equalize
+* Balance
+
+## `[`
+
+* Previous
+* Left
+* Back
+* Collapse section
+* Parent scope
+
+## `]`
+
+* Next
+* Right
+* Forward
+* Expand section
+* Child scope
+
+## `\`
+
+* Terminal
+* Shell
+* Pipe
+* Split
+* Escape route
+
+## `/`
+
+* Search
+* Command palette
+* Help
+* Query
+* Slash commands
+
+## `;`
+
+* Commands
+* REPL
+* Console
+* Terminal
+* Semantics
+
+## `'`
+
+* Quotes
+* Notes
+* Comments
+* Snippets
+
+## `,`
+
+* Previous
+* Smaller
+* Backward
+* Step left
+
+## `.`
+
+* Next
+* Larger
+* Forward
+* Repeat
+
+## `` ` ``
+
+* Terminal
+* Console
+* Scratchpad
+* Quick switch
+* Tilde dropdown
+
+---
+
+# Arrow Keys
+
+## ↑
+
+* Previous
+* Up
+* Parent
+* Earlier
+* History back
+
+## ↓
+
+* Next
+* Down
+* Child
+* Details
+* Expand
+
+## ←
+
+* Back
+* Left
+* Previous tab
+* Snap left
+
+## →
+
+* Forward
+* Right
+* Next tab
+* Snap right
+
+---
+
+# Space
+
+* Launcher
+* Spotlight
+* Command palette
+* Leader key
+* Context actions
+* AI/chat
+
+---
+
+# Tab
+
+* Switch
+* Cycle
+* Next editor
+* Completion
+* Workspace rotation
+
+---
+
+# Enter
+
+* Execute
+* Confirm
+* Open
+* Run
+* Submit
+
+---
+
+# Escape
+
+* Cancel
+* Exit mode
+* Clear
+* Dismiss
+* Focus reset
+
+---
+
+# Backspace/Delete
+
+* Remove
+* Clear
+* Undo typing
+* Trash
+* Kill item
+
+---
+
+# Modifier Mnemonic Ideas
+
+## CTRL
+
+* precise
+* technical
+* editing
+* manipulation
+
+## ALT / OPT
+
+* navigation
+* movement
+* layouts
+* window management
+
+## SHIFT
+
+* stronger version
+* reverse direction
+* alternate behavior
+* expand selection
+
+## CMD / SUPER
+
+* app-level actions
+* system-level actions
+* launching
+* workspace control
+
+## HYPERKEY
+
+* “god mode”
+* global actions
+* automation
+* app switching
+* system orchestration
+
+---
+
+# Useful Consistency Patterns
+
+## Navigation Pattern
+
+* F = Find
+* G = Go
+* J = Jump
+* N = Next
+* P = Previous
+* R = References
+
+## Window Management Pattern
+
+* HJKL or arrows = movement
+* F = fullscreen
+* M = maximize
+* C = center
+* T = top
+* B = bottom
+
+## Git Pattern
+
+* G = Git menu
+* C = Commit
+* P = Push/Pull
+* D = Diff
+* B = Branch
+* L = Log
+
+## IDE Pattern
+
+* E = Explorer
+* S = Search
+* T = Terminal
+* O = Open
+* R = Rename/Refactor
+* I = Implementation/Inspect
+
+## Task/Workflow Pattern
+
+* Q = Queue
+* T = Tasks
+* N = Notes
+* P = Projects
+* A = Archive
+* R = Review
+
+---
+
+# High-Value “Universal” Associations
+
+These tend to feel natural across almost every tool/ecosystem:
+
+| Key | Strong Universal Meaning |
+| --- | ------------------------ |
+| F   | Find                     |
+| S   | Save/Search              |
+| T   | Terminal/Tabs            |
+| P   | Projects/Palette         |
+| E   | Explorer/Edit            |
+| R   | Run/Refresh/Rename       |
+| D   | Duplicate/Delete         |
+| G   | Git/Go                   |
+| O   | Open                     |
+| N   | New                      |
+| W   | Window/Workspace         |
+| M   | Move/Monitor             |
+| L   | Layout/Logs              |
+| C   | Copy/Code/Chat           |
+| X   | Dangerous/Close/Delete   |
+| Q   | Quick/Quit/Queue         |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 🏀 
 # ABOVE IS SUB-SECCTION WHERE IM PASTING ALL THE mini .txt docs content to decide if should keep it or del it...
