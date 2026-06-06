@@ -733,6 +733,8 @@ alias standardleet3="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easym
 
 
 # clean up/standardize these ls aliases later...
+alias lsz="ls -a | fzf"  # UNDERRATED / UNDERUTILIZED ALIAS
+alias lsf="ls -a | fzf"  # UNDERRATED / UNDERUTILIZED ALIAS
 alias lsfz="ls -a | fzf"  # UNDERRATED / UNDERUTILIZED ALIAS
 alias lsfzf="ls -a | fzf" # UNDERRATED / UNDERUTILIZED ALIAS
 alias fzfls="ls -a | fzf" # UNDERRATED / UNDERUTILIZED ALIAS
