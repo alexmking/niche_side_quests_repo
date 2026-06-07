@@ -48,6 +48,11 @@ export PATH="/usr/bin:$PATH"  # ADDED Dec 4, 2025 after pbcopy command not found
 export PATH="$HOME/amk/tools/alexScripts:$PATH"
 # !!! WHEN WE MOVE alexScripts to amk/tools we will have to UNCOMMENT the below line so it can find the new script dir (and this puts it at the top of the path-searches so it should be just as fast)
 
+# KIM this line below is APPENDING to our list of PATHS. It's NOT REDEFINING the PATH to just be the path we're giving it on the line (in this case the path to the niche_side_quests_repo/mac dir). So this is good bc it means we can still access all the other PATHS that were already in our PATH variable before, but now we also have the new path to the niche_side_quests_repo/mac dir added to the list of places it will look for executables when we run commands in terminal.
+export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
+
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
+# "$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
 
 # /usr/local/bin:$PATH
 
@@ -528,6 +533,16 @@ alias cdroot="cd /"
 alias cdhome="cd ~"
 alias cdamk="cd ~/Users/alexking/amk"
 alias amk="cd ~/Users/alexking/amk"
+
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
+# /scr-update_dev_landscape1.py
+
+
+alias updatedevlandscape="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias updatelandscape="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias updatedevlandscapetaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias updatedevtaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias updatelandscapetaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
 
 
 
@@ -1268,6 +1283,16 @@ alias editkeybvis="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
 # alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
 
 # ~/Library/Application Support/Code/User/keybindings.json
+
+
+
+alias editdevlandscape="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias editdevtaxonomy="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias editdevlandscapetaxonomy="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias editlandscape="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias editlandscapevis="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias editdevlandscapevis="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+
 
 
 

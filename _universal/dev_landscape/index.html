@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Development Taxonomy</title>
+  <style>
+/* ═══════════════════════════════════════════════════════════════
+   Software Development Taxonomy Viewer — styles.css
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Reset ──────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 15px; -webkit-font-smoothing: antialiased; }
+
+/* ── Base Tokens ─────────────────────────────────────────────── */
+:root {
+  --bg:        #0c1117;
+  --surface:   #161b22;
+  --border:    #30363d;
+  --text-1:    #e6edf3;
+  --text-2:    #8b949e;
+  --text-3:    #484f58;
+  --radius-s:  4px;
+  --radius-m:  8px;
+  --radius-l:  12px;
+  --shadow-s:  0 1px 3px rgba(0,0,0,.4), 0 1px 2px rgba(0,0,0,.3);
+  --shadow-m:  0 4px 16px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.4);
+  --ease:      180ms ease;
+
+  /* Continent theme slots — defaults match Development (blue) */
+  --c-header:     #1d4ed8;
+  --c-header-fg:  #fff;
+  --c-section:    #0d1526;
+  --c-bd:         #1d3461;
+  --c-card-bd:    #1d3461;
+  --c-cat-label:  #60a5fa;
+  --c-sub-sep:    #1d3461;
+  --c-chip:       #172038;
+  --c-chip-fg:    #93c5fd;
+  --c-chip-bd:    #1e40af;
+  --c-chip-hov:   #1d3461;
+}
+
+/* ── Continent theme overrides ───────────────────────────────── */
+.continent-development {
+  --c-header:    #1d4ed8;
+  --c-header-fg: #fff;
+  --c-section:   #0d1526;
+  --c-bd:        #1d3461;
+  --c-card-bd:   #1d3461;
+  --c-cat-label: #60a5fa;
+  --c-sub-sep:   #1d3461;
+  --c-chip:      #172038;
+  --c-chip-fg:   #93c5fd;
+  --c-chip-bd:   #1e40af;
+  --c-chip-hov:  #1d3461;
+}
+
+.continent-infrastructure {
+  --c-header:    #0f766e;
+  --c-header-fg: #fff;
+  --c-section:   #091a18;
+  --c-bd:        #0d3b35;
+  --c-card-bd:   #0d3b35;
+  --c-cat-label: #2dd4bf;
+  --c-sub-sep:   #0d3b35;
+  --c-chip:      #0a2e2a;
+  --c-chip-fg:   #5eead4;
+  --c-chip-bd:   #0f766e;
+  --c-chip-hov:  #0d3b35;
+}
+
+.continent-engineering {
+  --c-header:    #6d28d9;
+  --c-header-fg: #fff;
+  --c-section:   #110d20;
+  --c-bd:        #2d1b5c;
+  --c-card-bd:   #2d1b5c;
+  --c-cat-label: #a78bfa;
+  --c-sub-sep:   #2d1b5c;
+  --c-chip:      #1e1340;
+  --c-chip-fg:   #c4b5fd;
+  --c-chip-bd:   #5b21b6;
+  --c-chip-hov:  #2d1b5c;
+}
+
+/* Fallback for unknown continents — slate */
+.continent-unknown {
+  --c-header:    #334155;
+  --c-header-fg: #fff;
+  --c-section:   #111418;
+  --c-bd:        #2d3748;
+  --c-card-bd:   #2d3748;
+  --c-cat-label: #94a3b8;
+  --c-sub-sep:   #2d3748;
+  --c-chip:      #1a202c;
+  --c-chip-fg:   #cbd5e1;
+  --c-chip-bd:   #334155;
+  --c-chip-hov:  #2d3748;
+}
+
+/* ── App Layout ──────────────────────────────────────────────── */
+body {
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Site Header ─────────────────────────────────────────────── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
+  box-shadow: 0 2px 8px rgba(0,0,0,.28);
+}
+
+.header-inner {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: .625rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.header-brand { flex: 0 0 auto; }
+
+.header-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -.01em;
+}
+
+.header-tagline {
+  font-size: .7rem;
+  color: #64748b;
+  margin-top: 1px;
+}
+
+/* ── Search ──────────────────────────────────────────────────── */
+.search-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  min-width: 0;
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+  max-width: 460px;
+}
+
+.search-box-icon {
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.search-box-input {
+  width: 100%;
+  padding: .45rem 2.1rem .45rem 1.95rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: var(--radius-m);
+  color: #f1f5f9;
+  font-size: .85rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--ease), box-shadow var(--ease);
+}
+
+.search-box-input::placeholder { color: #64748b; }
+
+.search-box-input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96,165,250,.2);
+}
+
+/* Remove browser-native clear button in type=search */
+.search-box-input::-webkit-search-cancel-button,
+.search-box-input::-webkit-search-decoration { -webkit-appearance: none; }
+
+.search-clear-btn {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #64748b;
+  border-radius: var(--radius-s);
+  transition: color var(--ease);
+}
+
+.search-clear-btn:hover { color: #f1f5f9; }
+
+.search-status {
+  font-size: .72rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Main / loading / error ──────────────────────────────────── */
+.taxonomy-root {
+  flex: 1;
+  padding: 1.25rem 0 2.5rem;
+}
+
+.initial-msg {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-3);
+  font-size: .875rem;
+}
+
+.error-state {
+  max-width: 560px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-m);
+}
+
+.error-title {
+  font-size: 1.1rem;
+  color: #dc2626;
+  margin-bottom: .75rem;
+}
+
+.error-state p {
+  font-size: .875rem;
+  color: var(--text-2);
+  margin-bottom: .5rem;
+}
+
+.error-state pre {
+  background: #1e293b;
+  border-radius: var(--radius-m);
+  padding: .75rem 1rem;
+  margin: .5rem 0 1rem;
+  overflow-x: auto;
+}
+
+.error-state code {
+  font-family: ui-monospace, "Cascadia Code", Menlo, monospace;
+  font-size: .8rem;
+  color: #a5f3fc;
+}
+
+.error-state a { color: #60a5fa; }
+
+/* ── Continent ───────────────────────────────────────────────── */
+.continent {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.continent-inner {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.continent-header {
+  background: var(--c-header);
+  color: var(--c-header-fg);
+  padding: .75rem 1.25rem;
+  border-radius: var(--radius-l) var(--radius-l) 0 0;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.continent-name {
+  font-size: .95rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.continent-question {
+  font-size: .78rem;
+  opacity: .75;
+  font-style: italic;
+}
+
+.continent-body {
+  background: var(--c-section);
+  border: 1px solid var(--c-bd);
+  border-top: none;
+  border-radius: 0 0 var(--radius-l) var(--radius-l);
+  padding: .875rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  gap: .875rem;
+  align-items: start;
+}
+
+/* ── Category Card ───────────────────────────────────────────── */
+.category-card {
+  background: var(--surface);
+  border: 1px solid var(--c-card-bd);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  box-shadow: var(--shadow-s);
+  transition: box-shadow var(--ease);
+}
+
+.category-card:hover { box-shadow: var(--shadow-m); }
+
+.category-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .55rem .85rem;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(255,255,255,.04);
+  border-bottom: 1px solid var(--c-card-bd);
+  gap: .4rem;
+  min-height: 36px;
+}
+
+.category-card-header:hover { background: rgba(255,255,255,.08); }
+
+.category-card-title {
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--c-cat-label);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  line-height: 1.35;
+}
+
+.collapse-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--c-cat-label);
+  opacity: .55;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: var(--radius-s);
+  flex-shrink: 0;
+  transition: transform var(--ease), opacity var(--ease);
+}
+
+.collapse-toggle:hover { opacity: 1; }
+
+.category-card.collapsed .collapse-toggle { transform: rotate(-90deg); }
+
+.category-card-body { padding: .625rem .75rem; }
+
+.category-card.collapsed .category-card-body { display: none; }
+
+/* ── Subcategory ─────────────────────────────────────────────── */
+.subcategory + .subcategory {
+  margin-top: .65rem;
+  padding-top: .65rem;
+  border-top: 1px dashed var(--c-sub-sep);
+}
+
+.subcategory-label {
+  font-size: .67rem;
+  font-weight: 600;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: .4rem;
+}
+
+/* ── Terms ───────────────────────────────────────────────────── */
+.terms-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.term-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--c-chip);
+  color: var(--c-chip-fg);
+  border: 1px solid var(--c-chip-bd);
+  font-size: .77rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: 1px;
+  line-height: 1.45;
+  transition: background var(--ease), transform var(--ease),
+              opacity var(--ease), box-shadow var(--ease),
+              outline-color var(--ease);
+}
+
+.term-chip:hover {
+  background: var(--c-chip-hov);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,.09);
+}
+
+.term-chip:focus-visible {
+  outline-color: var(--c-cat-label);
+}
+
+.term-chip.selected {
+  outline-color: var(--c-cat-label);
+  box-shadow: 0 0 0 3px rgba(0,0,0,.08);
+}
+
+/* ── Search states ───────────────────────────────────────────── */
+.term-chip.search-match {
+  background: #fef08a;
+  color: #713f12;
+  border-color: #fbbf24;
+  font-weight: 600;
+  transform: none;
+}
+
+.term-chip.search-match:hover {
+  background: #fde047;
+  transform: translateY(-1px);
+}
+
+.term-chip.search-no-match {
+  opacity: .17;
+  pointer-events: none;
+}
+
+.category-card.category-all-hidden {
+  opacity: .35;
+}
+
+.category-card.category-all-hidden .category-card-header {
+  pointer-events: none;
+}
+
+/* ── Detail Panel (slide-in drawer) ─────────────────────────── */
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
+.detail-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.detail-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(440px, 100vw);
+  background: var(--surface);
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -6px 0 32px rgba(0,0,0,.6);
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(.4, 0, .2, 1);
+  overflow: hidden;
+}
+
+.detail-panel.is-open { transform: translateX(0); }
+
+.detail-header {
+  flex-shrink: 0;
+  background: #0f172a;
+  padding: .875rem 1rem .875rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.detail-breadcrumb {
+  flex: 1;
+  font-size: .71rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.detail-breadcrumb .bc-sep {
+  margin: 0 .3em;
+  color: #475569;
+}
+
+.detail-breadcrumb .bc-current {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.detail-breadcrumb .bc-ancestor {
+  color: #94a3b8;
+}
+
+.detail-close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-s);
+  display: flex;
+  align-items: center;
+  transition: color var(--ease), background var(--ease);
+  margin-top: 1px;
+}
+
+.detail-close:hover {
+  color: #f1f5f9;
+  background: #334155;
+}
+
+.detail-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 1.25rem 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: #30363d transparent;
+}
+
+.detail-term-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-1);
+  margin-bottom: 1.25rem;
+  padding-bottom: .875rem;
+  border-bottom: 1px solid var(--border);
+  word-break: break-word;
+}
+
+/* ── Detail fields (dl/dt/dd) ────────────────────────────────── */
+.detail-fields {
+  display: grid;
+  gap: 0;
+}
+
+.detail-field {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: .5rem;
+  align-items: start;
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-field:last-child { border-bottom: none; }
+
+.detail-field dt {
+  font-size: .67rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--text-3);
+  padding-top: 1px;
+}
+
+.detail-field dd {
+  font-size: .85rem;
+  color: var(--text-1);
+  min-width: 0;
+}
+
+.detail-id {
+  font-family: ui-monospace, "Cascadia Code", Menlo, monospace;
+  font-size: .8rem;
+  background: #0c1117;
+  color: #e6edf3;
+  padding: 2px 8px;
+  border-radius: var(--radius-s);
+  border: 1px solid var(--border);
+  display: inline-block;
+}
+
+.detail-empty {
+  color: var(--text-3);
+  font-style: italic;
+}
+
+.detail-aliases,
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.detail-alias {
+  background: #2d1f06;
+  border: 1px solid #78350f;
+  border-radius: var(--radius-s);
+  padding: 2px 8px;
+  font-size: .78rem;
+  color: #fbbf24;
+}
+
+.detail-tag {
+  background: #1e2733;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: .78rem;
+  color: var(--text-2);
+}
+
+.detail-notes {
+  line-height: 1.6;
+  color: var(--text-2);
+  font-size: .85rem;
+}
+
+/* ── About / Footer ──────────────────────────────────────────── */
+.site-footer {
+  background: #1e293b;
+  color: #94a3b8;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.about-block { border-top: 1px solid #334155; }
+
+.about-summary {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .8rem 0;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #94a3b8;
+  outline: none;
+}
+
+.about-summary::-webkit-details-marker { display: none; }
+.about-summary:hover { color: #cbd5e1; }
+
+.about-arrow { transition: transform var(--ease); }
+details[open] .about-arrow { transform: rotate(90deg); }
+
+.about-content {
+  padding: 1rem 0 1.75rem;
+  border-top: 1px solid #334155;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-col-title {
+  font-size: .67rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: #64748b;
+  margin-bottom: .625rem;
+}
+
+.about-rules-list {
+  padding-left: 1.25rem;
+  color: #94a3b8;
+  font-size: .8rem;
+  line-height: 1.75;
+}
+
+.about-rules-list li { margin-bottom: .15rem; }
+
+.about-continents-list {
+  font-size: .8rem;
+  display: grid;
+  gap: .375rem;
+}
+
+.about-continents-list dt {
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.about-continents-list dd {
+  font-style: italic;
+  color: #94a3b8;
+  margin-left: 0;
+  padding-left: .75rem;
+  margin-bottom: .25rem;
+  border-left: 2px solid #334155;
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .header-inner {
+    padding: .6rem 1rem;
+    gap: .625rem;
+    flex-wrap: wrap;
+  }
+
+  .header-brand { flex: 1 1 100%; }
+
+  .search-box { max-width: 100%; }
+
+  .continent { padding: 0 .75rem; }
+
+  .continent-body {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: .625rem;
+    gap: .625rem;
+  }
+
+  .detail-panel { width: 100vw; }
+
+  .footer-inner { padding: 0 1rem; }
+}
+
+@media (max-width: 420px) {
+  .continent-body { grid-template-columns: 1fr; }
+}
+
+  </style>
+</head>
+<body>
+  <div id="app">
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-brand">
+          <h1 class="header-title">Software Development Taxonomy</h1>
+          <p class="header-tagline" id="header-tagline"></p>
+        </div>
+        <div class="search-area">
+          <div class="search-box">
+            <svg class="search-box-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input
+              type="search"
+              id="search-input"
+              class="search-box-input"
+              placeholder="Search by name, ID, or alias…"
+              autocomplete="off"
+              spellcheck="false"
+              aria-label="Search taxonomy terms"
+            >
+            <button type="button" id="clear-btn" class="search-clear-btn"
+                    title="Clear search" aria-label="Clear search" hidden>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          <span class="search-status" id="search-status" hidden aria-live="polite"></span>
+        </div>
+      </div>
+    </header>
+
+    <main id="taxonomy-root" class="taxonomy-root">
+      <p class="initial-msg">Loading…</p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <details class="about-block">
+          <summary class="about-summary">
+            <svg class="about-arrow" width="11" height="11" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <span>About this taxonomy</span>
+          </summary>
+          <div id="about-content" class="about-content"></div>
+        </details>
+      </div>
+    </footer>
+
+  </div><!-- /#app -->
+
+  <div id="detail-overlay" class="detail-overlay" aria-hidden="true"></div>
+
+  <aside id="detail-panel" class="detail-panel" aria-label="Term details" aria-hidden="true">
+    <header class="detail-header">
+      <nav id="detail-breadcrumb" class="detail-breadcrumb" aria-label="Term location"></nav>
+      <button type="button" id="detail-close" class="detail-close" aria-label="Close detail panel">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </header>
+    <div class="detail-body">
+      <h2 id="detail-term-name" class="detail-term-name"></h2>
+      <dl id="detail-fields" class="detail-fields"></dl>
+    </div>
+  </aside>
+
+  <!-- Embedded data — read by script.js at startup -->
+  <script type="application/json" id="taxonomy-data">{"Development":{"Languages":{"Programming Languages":[{"id":"java","name":"Java","aliases":[],"notes":"","tags":[]},{"id":"javascript","name":"JavaScript","aliases":["JS"],"notes":"","tags":[]},{"id":"typescript","name":"TypeScript","aliases":["TS"],"notes":"","tags":[]},{"id":"assembly","name":"Assembly","aliases":[],"notes":"","tags":[]},{"id":"bash","name":"Bash","aliases":[],"notes":"","tags":[]},{"id":"c","name":"C","aliases":[],"notes":"","tags":[]},{"id":"cpp","name":"C++","aliases":[],"notes":"","tags":[]},{"id":"c-cpp","name":"C/C++","aliases":[],"notes":"","tags":[]},{"id":"csharp","name":"C#","aliases":[],"notes":"","tags":[]},{"id":"fsharp","name":"F#","aliases":[],"notes":"","tags":[]},{"id":"go","name":"Go","aliases":[],"notes":"","tags":[]},{"id":"golang","name":"Golang","aliases":[],"notes":"","tags":[]},{"id":"kotlin","name":"Kotlin","aliases":[],"notes":"","tags":[]},{"id":"php","name":"PHP","aliases":[],"notes":"","tags":[]},{"id":"powershell","name":"PowerShell","aliases":[],"notes":"","tags":[]},{"id":"python","name":"Python","aliases":[],"notes":"","tags":[]},{"id":"ruby","name":"Ruby","aliases":[],"notes":"","tags":[]},{"id":"sql","name":"SQL","aliases":[],"notes":"","tags":[]},{"id":"swift","name":"Swift","aliases":[],"notes":"","tags":[]}],"Markup & Data Languages":[{"id":"css","name":"CSS","aliases":[],"notes":"","tags":[]},{"id":"html","name":"HTML","aliases":[],"notes":"","tags":[]},{"id":"html5","name":"HTML5","aliases":[],"notes":"","tags":[]},{"id":"json","name":"JSON","aliases":[],"notes":"","tags":[]},{"id":"sass","name":"SASS","aliases":[],"notes":"","tags":[]},{"id":"xml","name":"XML","aliases":[],"notes":"","tags":[]}]},"Frameworks & Libraries":[{"id":"angular","name":"Angular","aliases":[],"notes":"","tags":[]},{"id":"angularjs","name":"AngularJS","aliases":[],"notes":"","tags":[]},{"id":"aspnet","name":"ASP.NET","aliases":[],"notes":"","tags":[]},{"id":"bootstrap","name":"Bootstrap","aliases":[],"notes":"","tags":[]},{"id":"django","name":"Django","aliases":[],"notes":"","tags":[]},{"id":"expressjs","name":"Express.js","aliases":[],"notes":"","tags":[]},{"id":"flask","name":"Flask","aliases":[],"notes":"","tags":[]},{"id":"jquery","name":"jQuery","aliases":[],"notes":"","tags":[]},{"id":"laravel","name":"Laravel","aliases":[],"notes":"","tags":[]},{"id":"nextjs","name":"Next.js","aliases":[],"notes":"","tags":[]},{"id":"react","name":"React","aliases":[],"notes":"","tags":[]},{"id":"reactjs","name":"ReactJS","aliases":[],"notes":"","tags":[]},{"id":"react-native","name":"React Native","aliases":[],"notes":"","tags":[]},{"id":"ruby-on-rails","name":"Ruby on Rails","aliases":[],"notes":"","tags":[]},{"id":"socketio","name":"SocketIO","aliases":[],"notes":"","tags":[]},{"id":"spring","name":"Spring","aliases":[],"notes":"","tags":[]},{"id":"spring-boot","name":"Spring Boot","aliases":[],"notes":"","tags":[]},{"id":"tensorflow","name":"TensorFlow","aliases":[],"notes":"","tags":[]}],"Platforms & Runtimes":[{"id":"dotnet","name":".NET","aliases":[],"notes":"","tags":[]},{"id":"dotnet-core","name":".NET Core","aliases":[],"notes":"","tags":[]},{"id":"firebase","name":"Firebase","aliases":[],"notes":"","tags":[]},{"id":"jvm","name":"JVM","aliases":[],"notes":"","tags":[]},{"id":"nodejs","name":"Node.js","aliases":[],"notes":"","tags":[]},{"id":"nodejs-alt","name":"NodeJS","aliases":[],"notes":"","tags":[]}],"Development Tools":{"IDEs & Editors":[{"id":"android-studio","name":"Android Studio","aliases":[],"notes":"","tags":[]},{"id":"eclipse","name":"Eclipse","aliases":[],"notes":"","tags":[]},{"id":"emacs","name":"Emacs","aliases":[],"notes":"","tags":[]},{"id":"nano","name":"Nano","aliases":[],"notes":"","tags":[]},{"id":"neovim","name":"Neovim","aliases":[],"notes":"","tags":[]},{"id":"notepad-plus-plus","name":"Notepad++","aliases":[],"notes":"","tags":[]},{"id":"vim","name":"Vim","aliases":[],"notes":"","tags":[]},{"id":"vscode","name":"Visual Studio Code (VS Code)","aliases":[],"notes":"","tags":[]},{"id":"xcode","name":"Xcode","aliases":[],"notes":"","tags":[]}],"Version Control":[{"id":"git","name":"Git","aliases":[],"notes":"","tags":[]},{"id":"github","name":"GitHub","aliases":[],"notes":"","tags":[]},{"id":"gitlab","name":"GitLab","aliases":[],"notes":"","tags":[]},{"id":"svn","name":"SVN","aliases":[],"notes":"","tags":[]},{"id":"subversion","name":"Subversion","aliases":[],"notes":"","tags":[]}],"Build & Dependency Tools":[{"id":"jenkins","name":"Jenkins","aliases":[],"notes":"","tags":[]},{"id":"maven","name":"Maven","aliases":[],"notes":"","tags":[]}]}},"Infrastructure":{"Operating Systems":[{"id":"linux","name":"Linux","aliases":[],"notes":"","tags":[]},{"id":"macos","name":"MacOS","aliases":[],"notes":"","tags":[]},{"id":"ubuntu","name":"Ubuntu","aliases":[],"notes":"","tags":[]},{"id":"unix","name":"UNIX","aliases":[],"notes":"","tags":[]},{"id":"windows","name":"Windows","aliases":[],"notes":"","tags":[]}],"Databases":{"Database Systems":[{"id":"cloud-firestore","name":"Cloud Firestore","aliases":[],"notes":"","tags":[]},{"id":"mongodb","name":"MongoDB","aliases":[],"notes":"","tags":[]},{"id":"mysql","name":"MySQL","aliases":[],"notes":"","tags":[]},{"id":"oracle","name":"Oracle","aliases":[],"notes":"","tags":[]},{"id":"postgresql","name":"PostgreSQL","aliases":[],"notes":"","tags":[]},{"id":"postgres","name":"Postgres","aliases":[],"notes":"","tags":[]},{"id":"microsoft-sql-server","name":"Microsoft SQL Server","aliases":[],"notes":"","tags":[]}],"Database Models":[{"id":"nosql","name":"NoSQL","aliases":[],"notes":"","tags":[]},{"id":"rdbms","name":"RDBMS","aliases":[],"notes":"","tags":[]}]},"Cloud":{"Cloud Platforms":[{"id":"aws","name":"AWS","aliases":[],"notes":"","tags":[]},{"id":"amazon-aws","name":"Amazon AWS","aliases":[],"notes":"","tags":[]},{"id":"amazon-web-services","name":"Amazon Web Services (AWS)","aliases":[],"notes":"","tags":[]},{"id":"google-cloud-platform","name":"Google Cloud Platform","aliases":[],"notes":"","tags":[]},{"id":"microsoft-azure","name":"Microsoft Azure","aliases":[],"notes":"","tags":[]}],"Cloud Service Models":[{"id":"iaas","name":"IaaS","aliases":[],"notes":"","tags":[]},{"id":"paas","name":"PaaS","aliases":[],"notes":"","tags":[]},{"id":"saas","name":"SaaS","aliases":[],"notes":"","tags":[]},{"id":"software-as-a-service","name":"Software as a Service (SaaS)","aliases":[],"notes":"","tags":[]}]},"Containerization & Orchestration":[{"id":"docker","name":"Docker","aliases":[],"notes":"","tags":[]},{"id":"docker-products","name":"Docker Products","aliases":[],"notes":"","tags":[]},{"id":"kubernetes","name":"Kubernetes","aliases":[],"notes":"","tags":[]}],"Networking":[{"id":"mininet","name":"Mininet","aliases":[],"notes":"","tags":[]},{"id":"netsim","name":"NetSim","aliases":[],"notes":"","tags":[]},{"id":"putty","name":"PuTTY","aliases":[],"notes":"","tags":[]},{"id":"wireshark","name":"Wireshark","aliases":[],"notes":"","tags":[]}],"Security":[{"id":"metasploit-framework","name":"MSF (Metasploit Framework)","aliases":[],"notes":"","tags":[]},{"id":"system-penetration-testing","name":"System Penetration Testing","aliases":[],"notes":"","tags":[]}],"Web Servers":[{"id":"apache","name":"Apache","aliases":[],"notes":"","tags":[]},{"id":"iis","name":"IIS","aliases":[],"notes":"","tags":[]},{"id":"nginx","name":"nginx","aliases":[],"notes":"","tags":[]}]},"Engineering":{"Architecture & Design":{"Architecture Patterns":[{"id":"distributed-systems","name":"Distributed Systems","aliases":[],"notes":"","tags":[]},{"id":"microservices","name":"Microservices","aliases":[],"notes":"","tags":[]},{"id":"mvc","name":"Model-View-Controller (MVC)","aliases":[],"notes":"","tags":[]},{"id":"serverless-architecture","name":"Serverless Architecture","aliases":[],"notes":"","tags":[]},{"id":"soa","name":"Service-Oriented Architecture (SOA)","aliases":[],"notes":"","tags":[]}],"Design & Modeling":[{"id":"class-diagram","name":"Class Diagram","aliases":[],"notes":"","tags":[]},{"id":"design-pattern","name":"Design Pattern","aliases":[],"notes":"","tags":[]},{"id":"er-diagram","name":"E-R Diagram","aliases":[],"notes":"","tags":[]},{"id":"sequence-diagram","name":"Sequence Diagram","aliases":[],"notes":"","tags":[]},{"id":"uml","name":"UML","aliases":[],"notes":"","tags":[]}]},"Methodologies":{"Project Methodologies":[{"id":"agile","name":"Agile","aliases":[],"notes":"","tags":[]},{"id":"agile-methodologies","name":"Agile Methodologies","aliases":[],"notes":"","tags":[]},{"id":"kanban","name":"Kanban","aliases":[],"notes":"","tags":[]},{"id":"scrum","name":"Scrum","aliases":[],"notes":"","tags":[]},{"id":"sdlc","name":"SDLC","aliases":[],"notes":"","tags":[]},{"id":"software-development-life-cycle","name":"Software Development Life Cycle (SDLC)","aliases":[],"notes":"","tags":[]},{"id":"six-sigma","name":"Six Sigma","aliases":[],"notes":"","tags":[]}],"Development Practices":[{"id":"bdd","name":"BDD","aliases":[],"notes":"","tags":[]},{"id":"cicd","name":"CI/CD","aliases":[],"notes":"","tags":[]},{"id":"devops","name":"DevOps","aliases":[],"notes":"","tags":[]},{"id":"end-to-end","name":"End-to-End (E2E)","aliases":[],"notes":"","tags":[]},{"id":"pair-programming","name":"Pair Programming","aliases":[],"notes":"","tags":[]},{"id":"tdd","name":"TDD","aliases":[],"notes":"","tags":[]},{"id":"test-driven-development","name":"Test Driven Development (TDD)","aliases":[],"notes":"","tags":[]}]},"API Technologies":[{"id":"crud","name":"CRUD","aliases":[],"notes":"","tags":[]},{"id":"rest-api","name":"REST API","aliases":[],"notes":"","tags":[]},{"id":"restful-api","name":"RESTful API","aliases":[],"notes":"","tags":[]},{"id":"sdk","name":"SDK","aliases":[],"notes":"","tags":[]},{"id":"web-services","name":"Web Services","aliases":[],"notes":"","tags":[]}],"Testing":{"Testing Methodologies":[{"id":"unit-testing","name":"Unit Testing","aliases":[],"notes":"","tags":[]}],"Testing Tools":[{"id":"chrome-dev-tools","name":"Google Chrome Dev Tools","aliases":[],"notes":"","tags":[]},{"id":"jasmine","name":"Jasmine","aliases":[],"notes":"","tags":[]},{"id":"postman","name":"Postman","aliases":[],"notes":"","tags":[]}]},"Debugging & Profiling":[{"id":"gnu-debugger","name":"GNU Debugger (GDB)","aliases":[],"notes":"","tags":[]},{"id":"lldb","name":"LLDB","aliases":[],"notes":"","tags":[]},{"id":"valgrind","name":"Valgrind","aliases":[],"notes":"","tags":[]}],"Software Engineering Concepts":[{"id":"backend","name":"Backend","aliases":[],"notes":"","tags":[]},{"id":"client","name":"Client","aliases":[],"notes":"","tags":[]},{"id":"cloud-computing","name":"Cloud Computing","aliases":[],"notes":"","tags":[]},{"id":"containerization","name":"Containerization","aliases":[],"notes":"","tags":[]},{"id":"deployment","name":"Deployment","aliases":[],"notes":"","tags":[]},{"id":"enterprise-architecture","name":"Enterprise Architecture","aliases":[],"notes":"","tags":[]},{"id":"enterprise-software","name":"Enterprise Software","aliases":[],"notes":"","tags":[]},{"id":"frontend","name":"Frontend","aliases":[],"notes":"","tags":[]},{"id":"full-stack","name":"Full Stack","aliases":[],"notes":"","tags":[]},{"id":"integration","name":"Integration","aliases":[],"notes":"","tags":[]},{"id":"object-oriented-programming","name":"Object-Oriented Programming (OOP)","aliases":[],"notes":"","tags":[]},{"id":"orchestration","name":"Orchestration","aliases":[],"notes":"","tags":[]},{"id":"release-line","name":"Release Line","aliases":[],"notes":"","tags":[]},{"id":"server","name":"Server","aliases":[],"notes":"","tags":[]},{"id":"software-architecture","name":"Software Architecture","aliases":[],"notes":"","tags":[]},{"id":"software-development","name":"Software Development","aliases":[],"notes":"","tags":[]},{"id":"software-project-management","name":"Software Project Management","aliases":[],"notes":"","tags":[]},{"id":"system-design","name":"System Design","aliases":[],"notes":"","tags":[]},{"id":"technical-leadership","name":"Technical Leadership","aliases":[],"notes":"","tags":[]},{"id":"web-development","name":"Web Development","aliases":[],"notes":"","tags":[]}]}}</script>
+  <script type="application/json" id="rules-data">{"taxonomy_name":"Software Development Landscape","classification_rules":["Classify terms by what they fundamentally are, not by how they are commonly used.","Every term belongs to exactly one category.","Every category belongs to exactly one continent.","Subcategories are optional.","If a category contains subcategories, every term in that category must belong to exactly one subcategory.","Avoid duplicate terms across categories.","Prefer stable classifications over perfect classifications.","Use aliases for alternate names, abbreviations, and spelling variations."],"continents":{"Development":{"question":"What do I build software with?"},"Infrastructure":{"question":"What does software run on?"},"Engineering":{"question":"How is software designed and developed?"}}}</script>
+
+  <script>
+/**
+ * script.js — Software Development Taxonomy Viewer
+ *
+ * Hierarchy assumed: continent → category → optional subcategory → term[]
+ * Terms have: { id, name, aliases, notes, tags }
+ */
+(function () {
+  'use strict';
+
+  // ── State ──────────────────────────────────────────────────────
+  let _taxonomy    = null;
+  let _rules       = null;
+  let _panelOpen   = false;
+  let _lastChip    = null;   // previously selected chip element
+
+  // ── DOM helpers ────────────────────────────────────────────────
+  function $(id) { return document.getElementById(id); }
+
+  function el(tag, props, children) {
+    const e = document.createElement(tag);
+    if (props) {
+      for (const [k, v] of Object.entries(props)) {
+        if (k === 'className')    e.className   = v;
+        else if (k === 'text')    e.textContent = v;
+        else if (k === 'html')    e.innerHTML   = v;
+        else                      e.setAttribute(k, v);
+      }
+    }
+    if (children) {
+      for (const child of children) {
+        if (!child) continue;
+        e.appendChild(typeof child === 'string'
+          ? document.createTextNode(child) : child);
+      }
+    }
+    return e;
+  }
+
+  function esc(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // Convert a continent name to a CSS-safe slug for theming.
+  // Known continents map to predefined theme classes; unknown get 'unknown'.
+  const CONTINENT_SLUGS = {
+    'development':    'development',
+    'infrastructure': 'infrastructure',
+    'engineering':    'engineering',
+  };
+
+  function continentSlug(name) {
+    const key = name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    return CONTINENT_SLUGS[key] ?? 'unknown';
+  }
+
+  // ── Data loading ───────────────────────────────────────────────
+  function loadData() {
+    const taxEl   = document.getElementById('taxonomy-data');
+    const rulesEl = document.getElementById('rules-data');
+    if (!taxEl || !rulesEl) throw new Error('Embedded data blocks not found.');
+    _taxonomy = JSON.parse(taxEl.textContent);
+    _rules    = JSON.parse(rulesEl.textContent);
+  }
+
+  function showLoadError(msg) {
+    $('taxonomy-root').innerHTML = `
+      <div class="error-state">
+        <h2 class="error-title">Could not load taxonomy data</h2>
+        <p>${esc(msg)}</p>
+
+      </div>
+    `;
+  }
+
+  // ── Rendering: taxonomy ────────────────────────────────────────
+  function renderTaxonomy() {
+    if (_rules?.taxonomy_name) {
+      $('header-tagline').textContent = _rules.taxonomy_name;
+    }
+
+    const root = $('taxonomy-root');
+    root.innerHTML = '';
+
+    const frag = document.createDocumentFragment();
+    for (const [continentName, continentData] of Object.entries(_taxonomy)) {
+      const question = _rules?.continents?.[continentName]?.question ?? '';
+      frag.appendChild(buildContinent(continentName, continentData, question));
+    }
+    root.appendChild(frag);
+  }
+
+  function buildContinent(name, data, question) {
+    const section = el('section', {
+      className: `continent continent-${continentSlug(name)}`,
+    });
+    section.dataset.continent = name;
+
+    const inner = el('div', { className: 'continent-inner' });
+
+    // Header bar
+    const header = el('div', { className: 'continent-header' }, [
+      el('span', { className: 'continent-name', text: name }),
+      question ? el('span', { className: 'continent-question', text: question }) : null,
+    ]);
+
+    // Grid of category cards
+    const body = el('div', { className: 'continent-body' });
+    for (const [catName, catValue] of Object.entries(data)) {
+      body.appendChild(buildCategoryCard(catName, catValue, name));
+    }
+
+    inner.appendChild(header);
+    inner.appendChild(body);
+    section.appendChild(inner);
+    return section;
+  }
+
+  function buildCategoryCard(name, value, continentName) {
+    const card = el('div', { className: 'category-card' });
+    card.dataset.continent = continentName;
+    card.dataset.category  = name;
+
+    // Collapsible header
+    const cardHeader = el('div', { className: 'category-card-header' });
+    cardHeader.appendChild(el('h3', { className: 'category-card-title', text: name }));
+
+    const toggleBtn = el('button', {
+      className: 'collapse-toggle',
+      type: 'button',
+      'aria-label': `Toggle ${name}`,
+      html: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+               <path d="m6 9 6 6 6-6"/>
+             </svg>`,
+    });
+
+    cardHeader.appendChild(toggleBtn);
+    cardHeader.addEventListener('click', () => card.classList.toggle('collapsed'));
+
+    const cardBody = el('div', { className: 'category-card-body' });
+
+    if (Array.isArray(value)) {
+      // Category has terms directly (no subcategories)
+      cardBody.appendChild(buildTermsWrap(value, {
+        continent:   continentName,
+        category:    name,
+        subcategory: null,
+      }));
+    } else {
+      // Category has subcategories (each value is a term array)
+      for (const [subcatName, terms] of Object.entries(value)) {
+        cardBody.appendChild(buildSubcategory(subcatName, terms, {
+          continent: continentName,
+          category:  name,
+        }));
+      }
+    }
+
+    card.appendChild(cardHeader);
+    card.appendChild(cardBody);
+    return card;
+  }
+
+  function buildSubcategory(name, terms, path) {
+    const div = el('div', { className: 'subcategory' });
+    div.dataset.subcategory = name;
+    div.appendChild(el('p', { className: 'subcategory-label', text: name }));
+    div.appendChild(buildTermsWrap(terms, { ...path, subcategory: name }));
+    return div;
+  }
+
+  function buildTermsWrap(terms, path) {
+    const wrap = el('div', { className: 'terms-wrap' });
+    for (const term of terms) {
+      wrap.appendChild(buildTermChip(term, path));
+    }
+    return wrap;
+  }
+
+  function buildTermChip(term, path) {
+    const chip = el('span', {
+      className: 'term-chip',
+      role: 'button',
+      tabindex: '0',
+      title: `${term.id}`,
+    });
+
+    chip.textContent = term.name;
+
+    // Data attributes for search filtering
+    chip.dataset.id          = term.id;
+    chip.dataset.nameLower   = term.name.toLowerCase();
+    chip.dataset.aliasesLower = (term.aliases ?? []).join('\n').toLowerCase();
+
+    // Stash path for detail panel (not rendered to DOM)
+    chip._term = term;
+    chip._path = path;
+
+    chip.addEventListener('click', () => openDetail(term, path, chip));
+    chip.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openDetail(term, path, chip);
+      }
+    });
+
+    return chip;
+  }
+
+  // ── Detail panel ──────────────────────────────────────────────
+  function openDetail(term, path, chipEl) {
+    // 1. Open the panel FIRST — CSS transition starts on the very next paint.
+    $('detail-panel').classList.add('is-open');
+    $('detail-panel').setAttribute('aria-hidden', 'false');
+    $('detail-overlay').classList.add('is-open');
+    $('detail-overlay').setAttribute('aria-hidden', 'false');
+    _panelOpen = true;
+
+    // 2. Swap selected-chip highlight using the stored reference — no DOM scan.
+    if (_lastChip) _lastChip.classList.remove('selected');
+    _lastChip = chipEl ?? null;
+    if (_lastChip) _lastChip.classList.add('selected');
+
+    // 3. Populate content. This runs after the transition has already started.
+    const bcEl = $('detail-breadcrumb');
+    bcEl.innerHTML = '';
+    const parts = [path.continent, path.category];
+    if (path.subcategory) parts.push(path.subcategory);
+    parts.push(term.name);
+    parts.forEach((part, i) => {
+      if (i > 0) bcEl.appendChild(el('span', { className: 'bc-sep', html: '&rsaquo;' }));
+      bcEl.appendChild(el('span', {
+        className: i === parts.length - 1 ? 'bc-current' : 'bc-ancestor',
+        text: part,
+      }));
+    });
+
+    $('detail-term-name').textContent = term.name;
+
+    const fieldsEl = $('detail-fields');
+    fieldsEl.innerHTML = '';
+
+    const fieldDefs = [
+      { label: 'ID',      value: term.id,               type: 'id'      },
+      { label: 'Aliases', value: term.aliases ?? [],     type: 'aliases' },
+      { label: 'Notes',   value: term.notes  ?? '',      type: 'notes'   },
+      { label: 'Tags',    value: term.tags   ?? [],      type: 'tags'    },
+    ];
+
+    for (const def of fieldDefs) {
+      const div = el('div', { className: 'detail-field' });
+      const dt  = el('dt', { text: def.label });
+      const dd  = el('dd');
+
+      switch (def.type) {
+        case 'id':
+          dd.appendChild(el('code', { className: 'detail-id', text: def.value }));
+          break;
+
+        case 'aliases':
+          if (def.value.length === 0) {
+            dd.appendChild(el('span', { className: 'detail-empty', text: '\u2014' }));
+          } else {
+            const wrap = el('span', { className: 'detail-aliases' });
+            def.value.forEach(alias =>
+              wrap.appendChild(el('span', { className: 'detail-alias', text: alias })));
+            dd.appendChild(wrap);
+          }
+          break;
+
+        case 'tags':
+          if (def.value.length === 0) {
+            dd.appendChild(el('span', { className: 'detail-empty', text: '\u2014' }));
+          } else {
+            const wrap = el('span', { className: 'detail-tags' });
+            def.value.forEach(tag =>
+              wrap.appendChild(el('span', { className: 'detail-tag', text: tag })));
+            dd.appendChild(wrap);
+          }
+          break;
+
+        case 'notes':
+        default:
+          if (!def.value || def.value.trim() === '') {
+            dd.appendChild(el('span', { className: 'detail-empty', text: '\u2014' }));
+          } else {
+            dd.appendChild(el('span', { className: 'detail-notes', text: def.value }));
+          }
+          break;
+      }
+
+      div.appendChild(dt);
+      div.appendChild(dd);
+      fieldsEl.appendChild(div);
+    }
+
+    // Move focus to close button after transition starts (non-blocking).
+    setTimeout(() => $('detail-close').focus(), 30);
+  }
+
+  function closeDetail() {
+    $('detail-panel').classList.remove('is-open');
+    $('detail-panel').setAttribute('aria-hidden', 'true');
+    $('detail-overlay').classList.remove('is-open');
+    $('detail-overlay').setAttribute('aria-hidden', 'true');
+    _panelOpen = false;
+
+    if (_lastChip) { _lastChip.classList.remove('selected'); _lastChip = null; }
+  }
+
+  // ── Search ────────────────────────────────────────────────────
+  function setupSearch() {
+    const input   = $('search-input');
+    const clearBt = $('clear-btn');
+
+    input.addEventListener('input', () => {
+      const q = input.value;
+      clearBt.hidden = (q.length === 0);
+      filterTerms(q);
+    });
+
+    clearBt.addEventListener('click', () => {
+      input.value = '';
+      clearBt.hidden = true;
+      filterTerms('');
+      input.focus();
+    });
+  }
+
+  function filterTerms(rawQuery) {
+    const q      = rawQuery.trim().toLowerCase();
+    const status = $('search-status');
+
+    if (!q) {
+      // Restore any cards that were expanded during search
+      document.querySelectorAll('.category-card[data-search-expanded]').forEach(card => {
+        card.classList.add('collapsed');
+        card.removeAttribute('data-search-expanded');
+      });
+
+      document.querySelectorAll('.term-chip')
+        .forEach(chip => chip.classList.remove('search-match', 'search-no-match'));
+
+      document.querySelectorAll('.category-card')
+        .forEach(card => card.classList.remove('category-all-hidden'));
+
+      status.hidden = true;
+      return;
+    }
+
+    // Expand collapsed cards so matches are visible, remembering original state
+    document.querySelectorAll('.category-card.collapsed').forEach(card => {
+      card.setAttribute('data-search-expanded', '1');
+      card.classList.remove('collapsed');
+    });
+
+    // Classify each chip
+    let matchCount = 0;
+    document.querySelectorAll('.term-chip').forEach(chip => {
+      const nameMatch  = chip.dataset.nameLower.includes(q);
+      const idMatch    = chip.dataset.id.toLowerCase().includes(q);
+      const aliasMatch = chip.dataset.aliasesLower.includes(q);
+      const matched    = nameMatch || idMatch || aliasMatch;
+
+      chip.classList.toggle('search-match',    matched);
+      chip.classList.toggle('search-no-match', !matched);
+
+      if (matched) matchCount++;
+    });
+
+    // Dim cards that have no matches at all
+    document.querySelectorAll('.category-card').forEach(card => {
+      const hasMatch = card.querySelector('.term-chip.search-match');
+      card.classList.toggle('category-all-hidden', !hasMatch);
+    });
+
+    status.textContent = `${matchCount} term${matchCount !== 1 ? 's' : ''} matched`;
+    status.hidden = false;
+  }
+
+  // ── About section ─────────────────────────────────────────────
+  function renderAbout() {
+    if (!_rules) return;
+
+    const container = $('about-content');
+    container.innerHTML = '';
+
+    // Classification rules column
+    if (_rules.classification_rules?.length > 0) {
+      const col = el('div', { className: 'about-column' });
+      col.appendChild(el('h3', { className: 'about-col-title', text: 'Classification Rules' }));
+
+      const ol = el('ol', { className: 'about-rules-list' });
+      for (const rule of _rules.classification_rules) {
+        ol.appendChild(el('li', { text: rule }));
+      }
+      col.appendChild(ol);
+      container.appendChild(col);
+    }
+
+    // Continents column
+    if (_rules.continents) {
+      const col = el('div', { className: 'about-column' });
+      col.appendChild(el('h3', { className: 'about-col-title', text: 'Continents' }));
+
+      const dl = el('dl', { className: 'about-continents-list' });
+      for (const [name, info] of Object.entries(_rules.continents)) {
+        dl.appendChild(el('dt', { text: name }));
+        dl.appendChild(el('dd', { text: info.question }));
+      }
+      col.appendChild(dl);
+      container.appendChild(col);
+    }
+  }
+
+  // ── Global event wiring ───────────────────────────────────────
+  function setupEvents() {
+    $('detail-close').addEventListener('click', closeDetail);
+    $('detail-overlay').addEventListener('click', closeDetail);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && _panelOpen) closeDetail();
+    });
+  }
+
+  // ── Bootstrap ─────────────────────────────────────────────────
+  async function init() {
+    setupEvents();
+    try {
+      loadData();
+      renderTaxonomy();
+      renderAbout();
+      setupSearch();
+    } catch (err) {
+      showLoadError(err.message);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+}());
+
+  </script>
+</body>
+</html>

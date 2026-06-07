@@ -1,0 +1,239 @@
+{
+  "Development": {
+    "Languages": {
+      "Programming Languages": [
+        { "name": "Assembly" },
+        { "name": "Bash" },
+        { "name": "C" },
+        { "name": "C++" },
+        { "name": "C/C++" },
+        { "name": "C#" },
+        { "name": "F#" },
+        { "name": "Go" },
+        { "name": "Golang" },
+        { "name": "Java" },
+        { "name": "JavaScript" },
+        { "name": "Kotlin" },
+        { "name": "PHP" },
+        { "name": "PowerShell" },
+        { "name": "Python" },
+        { "name": "Ruby" },
+        { "name": "SQL" },
+        { "name": "Swift" },
+        { "name": "TypeScript" }
+      ],
+      "Markup & Data Languages": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "HTML5" },
+        { "name": "JSON" },
+        { "name": "SASS" },
+        { "name": "XML" }
+      ]
+    },
+
+    "Frameworks & Libraries": [
+      { "name": "Angular" },
+      { "name": "AngularJS" },
+      { "name": "ASP.NET" },
+      { "name": "Bootstrap" },
+      { "name": "Django" },
+      { "name": "Express.js" },
+      { "name": "Flask" },
+      { "name": "jQuery" },
+      { "name": "Laravel" },
+      { "name": "Next.js" },
+      { "name": "React" },
+      { "name": "ReactJS" },
+      { "name": "React Native" },
+      { "name": "Ruby on Rails" },
+      { "name": "SocketIO" },
+      { "name": "Spring" },
+      { "name": "Spring Boot" },
+      { "name": "TensorFlow" }
+    ],
+
+    "Platforms & Runtimes": [
+      { "name": ".NET" },
+      { "name": ".NET Core" },
+      { "name": "Firebase" },
+      { "name": "JVM" },
+      { "name": "Node.js" },
+      { "name": "NodeJS" }
+    ],
+
+    "Development Tools": {
+      "IDEs & Editors": [
+        { "name": "Android Studio" },
+        { "name": "Eclipse" },
+        { "name": "Emacs" },
+        { "name": "Nano" },
+        { "name": "Neovim" },
+        { "name": "Notepad++" },
+        { "name": "Vim" },
+        { "name": "Visual Studio Code (VS Code)" },
+        { "name": "Xcode" }
+      ],
+      "Version Control": [
+        { "name": "Git" },
+        { "name": "GitHub" },
+        { "name": "GitLab" },
+        { "name": "SVN" },
+        { "name": "Subversion" }
+      ],
+      "Build & Dependency Tools": [
+        { "name": "Jenkins" },
+        { "name": "Maven" }
+      ]
+    }
+  },
+
+  "Infrastructure": {
+    "Operating Systems": [
+      { "name": "Linux" },
+      { "name": "MacOS" },
+      { "name": "Ubuntu" },
+      { "name": "UNIX" },
+      { "name": "Windows" }
+    ],
+
+    "Databases": {
+      "Database Systems": [
+        { "name": "Cloud Firestore" },
+        { "name": "MongoDB" },
+        { "name": "MySQL" },
+        { "name": "Oracle" },
+        { "name": "PostgreSQL" },
+        { "name": "Postgres" },
+        { "name": "Microsoft SQL Server" }
+      ],
+      "Database Models": [
+        { "name": "NoSQL" },
+        { "name": "RDBMS" }
+      ]
+    },
+
+    "Cloud": {
+      "Cloud Platforms": [
+        { "name": "AWS" },
+        { "name": "Amazon AWS" },
+        { "name": "Amazon Web Services (AWS)" },
+        { "name": "Google Cloud Platform" },
+        { "name": "Microsoft Azure" }
+      ],
+      "Cloud Service Models": [
+        { "name": "IaaS" },
+        { "name": "PaaS" },
+        { "name": "SaaS" }
+      ]
+    },
+
+    "Containerization & Orchestration": [
+      { "name": "Docker" },
+      { "name": "Docker Products" },
+      { "name": "Kubernetes" }
+    ],
+
+    "Networking": [
+      { "name": "Mininet" },
+      { "name": "NetSim" },
+      { "name": "PuTTY" },
+      { "name": "Wireshark" }
+    ],
+
+    "Security": [
+      { "name": "MSF (Metasploit Framework)" },
+      { "name": "System Penetration Testing" }
+    ],
+
+    "Web Servers": [
+      { "name": "Apache" },
+      { "name": "IIS" },
+      { "name": "nginx" }
+    ]
+  },
+
+  "Engineering": {
+    "Architecture & Design": {
+      "Architecture Patterns": [
+        { "name": "Distributed Systems" },
+        { "name": "Microservices" },
+        { "name": "Model-View-Controller (MVC)" },
+        { "name": "Serverless Architecture" },
+        { "name": "Service-Oriented Architecture (SOA)" }
+      ],
+      "Design & Modeling": [
+        { "name": "Class Diagram" },
+        { "name": "Design Pattern" },
+        { "name": "E-R Diagram" },
+        { "name": "Sequence Diagram" },
+        { "name": "UML" }
+      ]
+    },
+
+    "Methodologies": {
+      "Project Methodologies": [
+        { "name": "Agile" },
+        { "name": "Kanban" },
+        { "name": "Scrum" },
+        { "name": "SDLC" },
+        { "name": "Six Sigma" }
+      ],
+      "Development Practices": [
+        { "name": "BDD" },
+        { "name": "CI/CD" },
+        { "name": "DevOps" },
+        { "name": "Pair Programming" },
+        { "name": "TDD" }
+      ]
+    },
+
+    "API Technologies": [
+      { "name": "CRUD" },
+      { "name": "REST API" },
+      { "name": "RESTful API" },
+      { "name": "SDK" },
+      { "name": "Web Services" }
+    ],
+
+    "Testing": {
+      "Testing Methodologies": [
+        { "name": "Unit Testing" }
+      ],
+      "Testing Tools": [
+        { "name": "Google Chrome Dev Tools" },
+        { "name": "Jasmine" },
+        { "name": "Postman" }
+      ]
+    },
+
+    "Debugging & Profiling": [
+      { "name": "GNU Debugger (GDB)" },
+      { "name": "LLDB" },
+      { "name": "Valgrind" }
+    ],
+
+    "Software Engineering Concepts": [
+      { "name": "Backend" },
+      { "name": "Client" },
+      { "name": "Cloud Computing" },
+      { "name": "Containerization" },
+      { "name": "Deployment" },
+      { "name": "Enterprise Architecture" },
+      { "name": "Enterprise Software" },
+      { "name": "Frontend" },
+      { "name": "Full Stack" },
+      { "name": "Integration" },
+      { "name": "Object-Oriented Programming (OOP)" },
+      { "name": "Orchestration" },
+      { "name": "Release Line" },
+      { "name": "Server" },
+      { "name": "Software Architecture" },
+      { "name": "Software Development" },
+      { "name": "Software Project Management" },
+      { "name": "System Design" },
+      { "name": "Technical Leadership" },
+      { "name": "Web Development" }
+    ]
+  }
+}

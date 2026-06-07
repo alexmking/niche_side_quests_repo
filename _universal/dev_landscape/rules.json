@@ -1,0 +1,28 @@
+{
+  "taxonomy_name": "Software Development Landscape",
+
+  "classification_rules": [
+    "Classify terms by what they fundamentally are, not by how they are commonly used.",
+    "Every term belongs to exactly one category.",
+    "Every category belongs to exactly one continent.",
+    "Subcategories are optional.",
+    "If a category contains subcategories, every term in that category must belong to exactly one subcategory.",
+    "Avoid duplicate terms across categories.",
+    "Prefer stable classifications over perfect classifications.",
+    "Use aliases for alternate names, abbreviations, and spelling variations."
+  ],
+
+  "continents": {
+    "Development": {
+      "question": "What do I build software with?"
+    },
+
+    "Infrastructure": {
+      "question": "What does software run on?"
+    },
+
+    "Engineering": {
+      "question": "How is software designed and developed?"
+    }
+  }
+}
