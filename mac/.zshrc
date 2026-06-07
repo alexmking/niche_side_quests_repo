@@ -655,9 +655,16 @@ alias visvscodekeyboard="open file:///$NICHE_REPO_DIR/_universal/vscode-shortcut
 alias vizvscodekeyb="open file:///$NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
 
 
+# the DEV LANDSCAPE-visualizer (NEW html)
+alias devlandscape="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias devlandscapevis="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias devlandscapevisualizer="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias opendevlandscapevisualizer="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias opendevlandscape="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias rundevlandscapevisualizer="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias rundevlandscape="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
 
-
-
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/index.html
 
 
 
@@ -1285,13 +1292,20 @@ alias editkeybvis="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
 # ~/Library/Application Support/Code/User/keybindings.json
 
 
+### Editing aliases for dev-landscape (two files: the taxonomy.json is the default (since it's the more common one we want to edit) and the html is the other one)
+alias editdevlandscape="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+alias editdevlandscapevis="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+alias editdevlandscapeviz="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+alias editdevtaxonomy="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+alias editdevlandscapetaxonomy="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
 
-alias editdevlandscape="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias editdevtaxonomy="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias editdevlandscapetaxonomy="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias editlandscape="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias editlandscapevis="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias editdevlandscapevis="code $NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+# the 'html' editing for dev-landscape (less common but still wanted aliases for it bc i anticipate eventually we'll be editing the HTML more often as we extend the functionality etc))
+alias editdevlandscapehtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias editlandscapehtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias editlandscapevishtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias editlandscapevizhtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+
+
 
 
 
