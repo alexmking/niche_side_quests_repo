@@ -544,6 +544,21 @@ alias updatedevlandscapetaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.
 alias updatedevtaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
 alias updatelandscapetaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
 
+alias updatedl="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias updatedevl="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias updatedland="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+
+
+
+alias helpdevlandscape="node taxonomy.js --help"
+alias helpdevl="node taxonomy.js --help"
+alias helpdl="node taxonomy.js --help"
+alias helpdland="node taxonomy.js --help"
+alias devlandscapehelp="node taxonomy.js --help"
+alias devlhelp="node taxonomy.js --help"
+alias dlhelp="node taxonomy.js --help"
+alias dlandhelp="node taxonomy.js --help"
+
 
 
 
@@ -663,6 +678,19 @@ alias opendevlandscapevisualizer="open file:///$NICHE_REPO_DIR/_universal/dev_la
 alias opendevlandscape="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
 alias rundevlandscapevisualizer="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
 alias rundevlandscape="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+
+alias devl="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias dl="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias opendevl="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias opendl="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias rundevl="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias rundl="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+
+alias dland="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias opendland="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias rundland="open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+
+
 
 # /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/index.html
 
@@ -1298,12 +1326,29 @@ alias editdevlandscapevis="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonom
 alias editdevlandscapeviz="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
 alias editdevtaxonomy="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
 alias editdevlandscapetaxonomy="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+alias editdevl="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+
+alias editdevltaxonomy="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+
+
+alias editdl="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+
+alias editdltaxonomy="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+
+
+alias editdland="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+alias editdlandtaxonomy="code $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.json"
+
 
 # the 'html' editing for dev-landscape (less common but still wanted aliases for it bc i anticipate eventually we'll be editing the HTML more often as we extend the functionality etc))
 alias editdevlandscapehtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
 alias editlandscapehtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
 alias editlandscapevishtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
 alias editlandscapevizhtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias editdevlhtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+alias editdlhtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
+
+alias editdlandlhtml="code $NICHE_REPO_DIR/_universal/dev_landscape/index.html"
 
 
 
