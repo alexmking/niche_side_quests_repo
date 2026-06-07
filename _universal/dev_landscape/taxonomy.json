@@ -12,14 +12,18 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "aliases": ["JS"],
+          "aliases": [
+            "JS"
+          ],
           "notes": "",
           "tags": []
         },
         {
           "id": "typescript",
           "name": "TypeScript",
-          "aliases": ["TS"],
+          "aliases": [
+            "TS"
+          ],
           "notes": "",
           "tags": []
         },
@@ -181,7 +185,6 @@
         }
       ]
     },
-
     "Frameworks & Libraries": [
       {
         "id": "angular",
@@ -216,7 +219,11 @@
         "name": "Django",
         "aliases": [],
         "notes": "",
-        "tags": []
+        "tags": [
+          "python",
+          "backend",
+          "web-framework"
+        ]
       },
       {
         "id": "expressjs",
@@ -308,10 +315,23 @@
         "aliases": [],
         "notes": "",
         "tags": []
+      },
+      {
+        "id": "vue",
+        "name": "vueJS",
+        "aliases": [
+          "Vue",
+          "VueTestAlias1",
+          "Vue 3"
+        ],
+        "notes": "frontend?",
+        "tags": [
+          "frontend",
+          "newTag1Test",
+          "newtag2"
+        ]
       }
     ],
-
-
     "Platforms & Runtimes": [
       {
         "id": "dotnet",
@@ -356,7 +376,6 @@
         "tags": []
       }
     ],
-
     "Development Tools": {
       "IDEs & Editors": [
         {
@@ -423,7 +442,6 @@
           "tags": []
         }
       ],
-
       "Version Control": [
         {
           "id": "git",
@@ -461,7 +479,6 @@
           "tags": []
         }
       ],
-
       "Build & Dependency Tools": [
         {
           "id": "jenkins",
@@ -480,7 +497,6 @@
       ]
     }
   },
-
   "Infrastructure": {
     "Operating Systems": [
       {
@@ -519,7 +535,6 @@
         "tags": []
       }
     ],
-
     "Databases": {
       "Database Systems": [
         {
@@ -572,7 +587,6 @@
           "tags": []
         }
       ],
-
       "Database Models": [
         {
           "id": "nosql",
@@ -590,7 +604,6 @@
         }
       ]
     },
-
     "Cloud": {
       "Cloud Platforms": [
         {
@@ -629,7 +642,6 @@
           "tags": []
         }
       ],
-
       "Cloud Service Models": [
         {
           "id": "iaas",
@@ -661,7 +673,6 @@
         }
       ]
     },
-
     "Containerization & Orchestration": [
       {
         "id": "docker",
@@ -685,7 +696,6 @@
         "tags": []
       }
     ],
-
     "Networking": [
       {
         "id": "mininet",
@@ -716,7 +726,6 @@
         "tags": []
       }
     ],
-
     "Security": [
       {
         "id": "metasploit-framework",
@@ -733,7 +742,6 @@
         "tags": []
       }
     ],
-
     "Web Servers": [
       {
         "id": "apache",
@@ -758,7 +766,6 @@
       }
     ]
   },
-
   "Engineering": {
     "Architecture & Design": {
       "Architecture Patterns": [
@@ -798,7 +805,6 @@
           "tags": []
         }
       ],
-
       "Design & Modeling": [
         {
           "id": "class-diagram",
@@ -837,7 +843,6 @@
         }
       ]
     },
-
     "Methodologies": {
       "Project Methodologies": [
         {
@@ -890,7 +895,6 @@
           "tags": []
         }
       ],
-
       "Development Practices": [
         {
           "id": "bdd",
@@ -943,7 +947,6 @@
         }
       ]
     },
-
     "API Technologies": [
       {
         "id": "crud",
@@ -981,7 +984,6 @@
         "tags": []
       }
     ],
-
     "Testing": {
       "Testing Methodologies": [
         {
@@ -992,7 +994,6 @@
           "tags": []
         }
       ],
-
       "Testing Tools": [
         {
           "id": "chrome-dev-tools",
@@ -1017,7 +1018,6 @@
         }
       ]
     },
-
     "Debugging & Profiling": [
       {
         "id": "gnu-debugger",
@@ -1041,7 +1041,6 @@
         "tags": []
       }
     ],
-
     "Software Engineering Concepts": [
       {
         "id": "backend",
