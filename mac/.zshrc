@@ -550,14 +550,15 @@ alias updatedland="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
 
 
 
-alias helpdevlandscape="node taxonomy.js --help"
-alias helpdevl="node taxonomy.js --help"
-alias helpdl="node taxonomy.js --help"
-alias helpdland="node taxonomy.js --help"
-alias devlandscapehelp="node taxonomy.js --help"
-alias devlhelp="node taxonomy.js --help"
-alias dlhelp="node taxonomy.js --help"
-alias dlandhelp="node taxonomy.js --help"
+
+alias helpdevlandscape="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js --help"
+alias helpdevl="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js --help"
+alias helpdl="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js --help"
+alias helpdland="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js --help"
+alias devlandscapehelp="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js --help"
+alias devlhelp="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js --help"
+alias dlhelp="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js --help"
+alias dlandhelp="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js --help"
 
 
 
@@ -764,7 +765,8 @@ alias standardleet3="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easym
 
 
 
-
+## these 'call' aliases have YOU provide the specific function as one of the args (unlike the other section right below this one that has the function included in the alias itself)
+# in other words, these 'call' aliases are more flexible but require you to remember the specific function names and provide them as args, whereas the ones below are less flexible but more user-friendly bc they have the function name built into the alias itself so you dont have to remember the function names or provide them as args
 alias calldevlandscape="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
 alias calldevl="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
 alias calldland="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
@@ -772,7 +774,26 @@ alias calldl="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js"
 alias calldevland="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
 
 
+#### trying to make an alias for all of the dev-landscape cli functions(using dland as the main/only prefix, for now...)
+  # add-term       Add a term to the taxonomy
+  # remove-term    Remove a term from the taxonomy by ID
+  # update-term    Update any field of a term (except location fields)
+  # move-term      Move a term to a different category or subcategory
+  # add-alias      Append one or more aliases to a term
+  # add-tag        Append one or more tags to a term
+  # print-landscape-overview Print a structural overview of the taxonomy with counts
+  # print-terms    Print a sorted list of all terms with their location
+  # which-are-dups Check a list of names/ids and report duplicates vs new terms
 
+alias dlandaddterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-term"
+alias dlandremoveterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js remove-term"
+alias dlandupdateterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js update-term"
+alias dlandmoveterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js move-term"
+alias dlandaddalias="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dlandaddtag="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dlandprintoverview="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-landscape-overview"
+alias dlandprintterms="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms"
+alias dlandwhicharedups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js which-are-dups"
 
 
 
@@ -1006,6 +1027,14 @@ alias cdscreenshots='cd "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Scre
 
 # SCREENSHOTS FOLDER PATH:
 # "/Users/alexking/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0/"
+
+alias cddevlandscape="cd $NICHE_REPO_DIR/_universal/dev_landscape"
+alias cddevl="cd $NICHE_REPO_DIR/_universal/dev_landscape"
+alias cddevland="cd $NICHE_REPO_DIR/_universal/dev_landscape"
+alias cddl="cd $NICHE_REPO_DIR/_universal/dev_landscape"
+alias cddland="cd $NICHE_REPO_DIR/_universal/dev_landscape"
+alias cddevl="cd $NICHE_REPO_DIR/_universal/dev_landscape"
+
 
 
 
