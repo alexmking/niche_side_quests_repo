@@ -28,9 +28,20 @@ function saveTaxonomy(taxonomy) {
 
 // ── CLI argument parsing ──────────────────────────────────────────────────────
 
+// Flags that take no value — their presence alone sets them to true.
+const BOOLEAN_FLAGS = new Set([
+  'clear-aliases', 'clear-tags', 'clear-notes',
+  'clear-what-is-it', 'clear-description',
+  'clear-used-with', 'clear-built-on', 'clear-built-upon-by',
+  'clear-runs-on', 'clear-alternatives', 'clear-part-of',
+  'clear-includes', 'clear-examples', 'clear-use-cases',
+  'clear-related-concepts',
+]);
+
 // Parses --flag value pairs from an argv slice.
 // Flags that appear more than once are accumulated into an array.
 // Positional arguments (not starting with --) are collected into result._
+// Boolean flags (BOOLEAN_FLAGS) require no value.
 function parseFlags(argv) {
   const result = { _: [] };
 
@@ -45,7 +56,14 @@ function parseFlags(argv) {
       continue;
     }
 
-    const key   = flag.slice(2);
+    const key = flag.slice(2);
+
+    if (BOOLEAN_FLAGS.has(key)) {
+      result[key] = true;
+      i++;
+      continue;
+    }
+
     const value = argv[i + 1];
 
     if (value === undefined || value.startsWith('--')) {
@@ -134,20 +152,60 @@ function resolveTargetArray(taxonomy, { continent, category, subcategory }) {
   process.exit(1);
 }
 
+// ── Term schema ───────────────────────────────────────────────────────────────
+
+// Required fields and their expected types in the universal schema.
+const SCHEMA_STRINGS = ['id', 'name', 'continent', 'category', 'subcategory',
+                        'notes', 'whatIsIt', 'description'];
+const SCHEMA_ARRAYS  = ['aliases', 'tags', 'usedWith', 'builtOn', 'builtUponBy',
+                        'runsOn', 'alternatives', 'partOf', 'includes', 'examples',
+                        'useCases', 'relatedConcepts'];
+
+function validateTermSchema(term) {
+  const bad = [
+    ...SCHEMA_STRINGS.filter(f => typeof term[f] !== 'string'),
+    ...SCHEMA_ARRAYS.filter(f => !Array.isArray(term[f])),
+  ];
+  if (bad.length > 0) {
+    console.error(`Internal error: term "${term.id ?? '?'}" has invalid/missing fields: ${bad.join(', ')}`);
+    process.exit(1);
+  }
+}
+
+// Parse "Continent > Category" or "Continent > Category > Subcategory" into parts.
+function parsePath(pathStr) {
+  const parts = pathStr.split('>').map(s => s.trim()).filter(Boolean);
+  if (parts.length === 2) return { continent: parts[0], category: parts[1], subcategory: '' };
+  if (parts.length === 3) return { continent: parts[0], category: parts[1], subcategory: parts[2] };
+  console.error('Error: --path must have 2 or 3 segments separated by ">", e.g. "Development > Languages > Programming Languages"');
+  process.exit(1);
+}
+
 // ── Commands ──────────────────────────────────────────────────────────────────
 
 function cmdAddTerm(flags) {
-  const missing = ['continent', 'category', 'id', 'name'].filter(k => !flags[k]);
+  // Accept --path as a shorthand for --continent/--category/--subcategory
+  let continent, category, subcategory;
+  if (flags.path) {
+    ({ continent, category, subcategory } = parsePath(flags.path));
+  } else {
+    continent   = flags.continent   ?? '';
+    category    = flags.category    ?? '';
+    subcategory = flags.subcategory ?? '';
+  }
+
+  const missing = [];
+  if (!continent)  missing.push('--continent (or use --path)');
+  if (!category)   missing.push('--category (or use --path)');
+  if (!flags.id)   missing.push('--id');
+  if (!flags.name) missing.push('--name');
+
   if (missing.length > 0) {
-    console.error(`Error: missing required argument(s): ${missing.map(k => `--${k}`).join(', ')}`);
+    console.error(`Error: missing required argument(s): ${missing.join(', ')}`);
     process.exit(1);
   }
 
-  const { continent, category, subcategory, id, name } = flags;
-  const aliases = flags.alias ? [].concat(flags.alias) : [];
-  const notes   = flags.note  ?? '';
-  const tags    = flags.tag   ? [].concat(flags.tag)   : [];
-
+  const { id, name } = flags;
   const taxonomy = loadTaxonomy();
 
   if (collectAllIds(taxonomy).has(id)) {
@@ -156,7 +214,32 @@ function cmdAddTerm(flags) {
   }
 
   const targetArray = resolveTargetArray(taxonomy, { continent, category, subcategory });
-  targetArray.push({ id, name, aliases, notes, tags });
+
+  const term = {
+    id,
+    name,
+    continent,
+    category,
+    subcategory,
+    aliases:         flags.alias               ? [].concat(flags.alias)               : [],
+    notes:           flags.note                ?? '',
+    tags:            flags.tag                 ? [].concat(flags.tag)                 : [],
+    whatIsIt:        flags['what-is-it']        ?? '',
+    description:     flags.description         ?? '',
+    usedWith:        flags['used-with']         ? [].concat(flags['used-with'])         : [],
+    builtOn:         flags['built-on']          ? [].concat(flags['built-on'])          : [],
+    builtUponBy:     flags['built-upon-by']     ? [].concat(flags['built-upon-by'])     : [],
+    runsOn:          flags['runs-on']           ? [].concat(flags['runs-on'])           : [],
+    alternatives:    flags.alternative          ? [].concat(flags.alternative)          : [],
+    partOf:          flags['part-of']           ? [].concat(flags['part-of'])           : [],
+    includes:        flags.include              ? [].concat(flags.include)              : [],
+    examples:        flags.example              ? [].concat(flags.example)              : [],
+    useCases:        flags['use-case']          ? [].concat(flags['use-case'])          : [],
+    relatedConcepts: flags['related-concept']   ? [].concat(flags['related-concept'])   : [],
+  };
+
+  validateTermSchema(term);
+  targetArray.push(term);
   saveTaxonomy(taxonomy);
 
   const location = [continent, category, subcategory].filter(Boolean).join(' → ');
@@ -263,6 +346,11 @@ function cmdMoveTerm(flags) {
   sourceArray.splice(sourceArray.indexOf(term), 1);
   destArray.push(term);
 
+  // Sync the location fields stored on the term itself
+  term.continent   = continent;
+  term.category    = category;
+  term.subcategory = subcategory ?? '';
+
   saveTaxonomy(taxonomy);
   console.log(`Moved "${term.name}" (id: "${id}") from ${sourcePathStr} → ${destPath}.`);
 }
@@ -273,67 +361,85 @@ function cmdUpdateTerm(flags) {
     process.exit(1);
   }
 
-  const updatable = ['name', 'alias', 'note', 'tag'];
-  const provided  = updatable.filter(k => k in flags);
+  const UPDATABLE_FLAGS = [
+    'name',
+    'note', 'what-is-it', 'description',
+    'alias', 'tag', 'used-with', 'built-on', 'built-upon-by', 'runs-on',
+    'alternative', 'part-of', 'include', 'example', 'use-case', 'related-concept',
+  ];
+  const CLEAR_FLAGS = [...BOOLEAN_FLAGS];
 
-  if (provided.length === 0) {
-    console.error('Error: no fields to update. Provide at least one of: --name, --alias, --note, --tag');
+  const hasUpdate = UPDATABLE_FLAGS.some(k => k in flags);
+  const hasClear  = CLEAR_FLAGS.some(k => flags[k] === true);
+
+  if (!hasUpdate && !hasClear) {
+    console.error('Error: no fields to update. Provide at least one update or --clear-* flag.');
     process.exit(1);
   }
 
   const { id } = flags;
   const taxonomy = loadTaxonomy();
-  let term     = null;
-  let termPath = null;
-
-  function walk(node, breadcrumb) {
-    if (term) return;
-
-    if (Array.isArray(node)) {
-      const found = node.find(t => t?.id === id);
-      if (found) {
-        term     = found;
-        termPath = breadcrumb;
-      }
-    } else if (node !== null && typeof node === 'object') {
-      for (const [key, child] of Object.entries(node)) {
-        walk(child, [...breadcrumb, key]);
-      }
-    }
-  }
-
-  walk(taxonomy, []);
-
-  if (!term) {
-    console.error(`Error: term id "${id}" not found in taxonomy.json.`);
-    process.exit(1);
-  }
+  const { term, termPath } = findTermById(taxonomy, id);
 
   const changes = [];
 
+  // ── String fields ─────────────────────────────────────────────
   if ('name' in flags) {
-    const oldVal = term.name;
+    const old = term.name;
     term.name = flags.name;
-    changes.push(`name: "${oldVal}" → "${flags.name}"`);
+    changes.push(`name: "${old}" → "${flags.name}"`);
   }
 
-  if ('alias' in flags) {
-    const newAliases = [].concat(flags.alias);
-    term.aliases = newAliases;
-    changes.push(`aliases: [${newAliases.map(a => `"${a}"`).join(', ')}]`);
+  function updateStr(field, flagKey, clearFlag) {
+    const clearing = flags[clearFlag] === true;
+    const hasVal   = flagKey in flags;
+    if (clearing || hasVal) {
+      const newVal = hasVal ? flags[flagKey] : '';
+      term[field] = newVal;
+      changes.push(clearing && !hasVal
+        ? `${field}: cleared`
+        : `${field}: "${newVal}"`);
+    }
   }
 
-  if ('note' in flags) {
-    term.notes = flags.note;
-    changes.push(`notes: "${flags.note}"`);
+  updateStr('notes',       'note',        'clear-notes');
+  updateStr('whatIsIt',    'what-is-it',  'clear-what-is-it');
+  updateStr('description', 'description', 'clear-description');
+
+  // ── Array fields (append by default; --clear-* empties first) ─
+  function updateArr(field, flagKey, clearFlag) {
+    const clearing  = flags[clearFlag] === true;
+    const newValues = flagKey in flags ? [].concat(flags[flagKey]) : [];
+    if (clearing) {
+      term[field] = [...newValues];
+      changes.push(newValues.length > 0
+        ? `${field}: cleared and set to [${newValues.map(v => `"${v}"`).join(', ')}]`
+        : `${field}: cleared`);
+    } else if (newValues.length > 0) {
+      term[field] = [...(term[field] ?? []), ...newValues];
+      changes.push(`${field}: appended [${newValues.map(v => `"${v}"`).join(', ')}]`);
+    }
   }
 
-  if ('tag' in flags) {
-    const newTags = [].concat(flags.tag);
-    term.tags = newTags;
-    changes.push(`tags: [${newTags.map(t => `"${t}"`).join(', ')}]`);
+  updateArr('aliases',        'alias',           'clear-aliases');
+  updateArr('tags',           'tag',             'clear-tags');
+  updateArr('usedWith',       'used-with',       'clear-used-with');
+  updateArr('builtOn',        'built-on',        'clear-built-on');
+  updateArr('builtUponBy',    'built-upon-by',   'clear-built-upon-by');
+  updateArr('runsOn',         'runs-on',         'clear-runs-on');
+  updateArr('alternatives',   'alternative',     'clear-alternatives');
+  updateArr('partOf',         'part-of',         'clear-part-of');
+  updateArr('includes',       'include',         'clear-includes');
+  updateArr('examples',       'example',         'clear-examples');
+  updateArr('useCases',       'use-case',        'clear-use-cases');
+  updateArr('relatedConcepts','related-concept', 'clear-related-concepts');
+
+  if (changes.length === 0) {
+    console.log(`No changes made to "${term.name}" (id: "${id}").`);
+    return;
   }
 
+  validateTermSchema(term);
   saveTaxonomy(taxonomy);
   console.log(`Updated "${term.name}" (id: "${id}") in ${termPath.join(' → ')}:`);
   for (const change of changes) console.log(`  ${change}`);
@@ -560,16 +666,57 @@ function cmdPrintLandscapeOverview() {
   ].join('\n'));
 }
 
+function cmdPrintTerms() {
+  const taxonomy = loadTaxonomy();
+
+  // Collect terms per continent, then sort each group alphabetically
+  const byContinent = {};
+  for (const [continentName, continentData] of Object.entries(taxonomy)) {
+    const group = [];
+    for (const [catName, catValue] of Object.entries(continentData)) {
+      if (Array.isArray(catValue)) {
+        for (const term of catValue) {
+          group.push(`${term.name}  —  ${continentName} > ${catName}`);
+        }
+      } else if (catValue !== null && typeof catValue === 'object') {
+        for (const [subName, terms] of Object.entries(catValue)) {
+          if (Array.isArray(terms)) {
+            for (const term of terms) {
+              group.push(`${term.name}  —  ${continentName} > ${catName} > ${subName}`);
+            }
+          }
+        }
+      }
+    }
+    group.sort((a, b) => a.localeCompare(b));
+    byContinent[continentName] = group;
+  }
+
+  let total = 0;
+  const continentNames = Object.keys(byContinent);
+  continentNames.forEach((continentName, i) => {
+    const group = byContinent[continentName];
+    const divider = '─'.repeat(50);
+    console.log(`${divider}\n  ${continentName.toUpperCase()}  (${group.length} term${group.length !== 1 ? 's' : ''})\n${divider}`);
+    group.forEach(l => console.log(l));
+    total += group.length;
+    if (i < continentNames.length - 1) console.log('');
+  });
+
+  console.log(`\n${'─'.repeat(50)}\n${total} term${total !== 1 ? 's' : ''} total`);
+}
+
 // ── Command registry ──────────────────────────────────────────────────────────
 
 const COMMANDS = {
   'add-term':    { fn: cmdAddTerm,    desc: 'Add a term to the taxonomy' },
   'remove-term': { fn: cmdRemoveTerm, desc: 'Remove a term from the taxonomy by ID' },
-  'update-term': { fn: cmdUpdateTerm, desc: 'Update the name, aliases, notes, or tags of a term' },
+  'update-term': { fn: cmdUpdateTerm, desc: 'Update any field of a term (except location fields)' },
   'move-term':   { fn: cmdMoveTerm,   desc: 'Move a term to a different category or subcategory' },
   'add-alias':              { fn: cmdAddAlias,              desc: 'Append one or more aliases to a term' },
   'add-tag':                { fn: cmdAddTag,                desc: 'Append one or more tags to a term' },
   'print-landscape-overview': { fn: cmdPrintLandscapeOverview, desc: 'Print a structural overview of the taxonomy with counts' },
+  'print-terms':              { fn: cmdPrintTerms,              desc: 'Print a sorted list of all terms with their location' },
   'which-are-dups':           { fn: cmdWhichAreDups,           desc: 'Check a list of names/ids and report duplicates vs new terms' },
 };
 
@@ -587,45 +734,74 @@ function printUsage() {
     cmdList,
     '',
     'add-term flags:',
-    '  --continent    (required)',
-    '  --category     (required)',
-    '  --subcategory  (optional)',
-    '  --id           (required)',
-    '  --name         (required)',
-    '  --alias        (optional, repeatable)',
-    '  --note         (optional)',
-    '  --tag          (optional, repeatable)',
+    '  --path           "Continent > Category" or "Continent > Category > Subcategory"  (replaces --continent/--category/--subcategory)',
+    '  --continent      (required if --path not used)',
+    '  --category       (required if --path not used)',
+    '  --subcategory    (optional if --path not used)',
+    '  --id             (required)',
+    '  --name           (required)',
+    '  --alias          (optional, repeatable)',
+    '  --note           (optional)',
+    '  --tag            (optional, repeatable)',
+    '  --what-is-it     (optional)',
+    '  --description    (optional)',
+    '  --used-with      (optional, repeatable)',
+    '  --built-on       (optional, repeatable)',
+    '  --built-upon-by  (optional, repeatable)',
+    '  --runs-on        (optional, repeatable)',
+    '  --alternative    (optional, repeatable)',
+    '  --part-of        (optional, repeatable)',
+    '  --include        (optional, repeatable)',
+    '  --example        (optional, repeatable)',
+    '  --use-case       (optional, repeatable)',
+    '  --related-concept(optional, repeatable)',
     '',
     'remove-term flags:',
-    '  --id           (required)',
+    '  --id             (required)',
     '',
     'update-term flags:',
-    '  --id           (required)',
-    '  --name         (optional)',
-    '  --alias        (optional, repeatable — replaces existing aliases)',
-    '  --note         (optional — replaces existing note)',
-    '  --tag          (optional, repeatable — replaces existing tags)',
+    '  --id             (required)',
+    '  --name           (optional)',
+    '  --note           (optional — replaces)',
+    '  --what-is-it     (optional — replaces)',
+    '  --description    (optional — replaces)',
+    '  --alias          (optional, repeatable — appends)',
+    '  --tag            (optional, repeatable — appends)',
+    '  --used-with      (optional, repeatable — appends)',
+    '  --built-on       (optional, repeatable — appends)',
+    '  --built-upon-by  (optional, repeatable — appends)',
+    '  --runs-on        (optional, repeatable — appends)',
+    '  --alternative    (optional, repeatable — appends)',
+    '  --part-of        (optional, repeatable — appends)',
+    '  --include        (optional, repeatable — appends)',
+    '  --example        (optional, repeatable — appends)',
+    '  --use-case       (optional, repeatable — appends)',
+    '  --related-concept(optional, repeatable — appends)',
+    '  --clear-aliases / --clear-tags / --clear-notes / --clear-what-is-it / --clear-description',
+    '  --clear-used-with / --clear-built-on / --clear-built-upon-by / --clear-runs-on',
+    '  --clear-alternatives / --clear-part-of / --clear-includes / --clear-examples',
+    '  --clear-use-cases / --clear-related-concepts',
     '',
     'move-term flags:',
-    '  --id           (required)',
-    '  --continent    (required, destination)',
-    '  --category     (required, destination)',
-    '  --subcategory  (optional, destination)',
+    '  --id             (required)',
+    '  --continent      (required, destination)',
+    '  --category       (required, destination)',
+    '  --subcategory    (optional, destination)',
     '',
     'add-alias flags:',
-    '  --id           (required)',
-    '  --alias        (required, repeatable)',
+    '  --id             (required)',
+    '  --alias          (required, repeatable)',
     '',
     'add-tag flags:',
-    '  --id           (required)',
-    '  --tag          (required, repeatable)',
+    '  --id             (required)',
+    '  --tag            (required, repeatable)',
     '',
     'print-landscape-overview flags:',
     '  (none)',
     '',
     'which-are-dups flags:',
-    '  --name         (required, repeatable — check by display name or alias, case-insensitive)',
-    '  --id           (optional, repeatable — check by term id)',
+    '  --name           (repeatable — check by display name or alias, case-insensitive)',
+    '  --id             (optional, repeatable — check by term id)',
   ].join('\n'));
 }
 

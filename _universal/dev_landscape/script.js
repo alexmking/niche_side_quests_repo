@@ -206,9 +206,26 @@
     chip.textContent = term.name;
 
     // Data attributes for search filtering
-    chip.dataset.id          = term.id;
-    chip.dataset.nameLower   = term.name.toLowerCase();
+    chip.dataset.id           = term.id;
+    chip.dataset.nameLower    = term.name.toLowerCase();
     chip.dataset.aliasesLower = (term.aliases ?? []).join('\n').toLowerCase();
+    // Extended schema fields (joined for substring matching)
+    chip.dataset.tagsLower    = (term.tags    ?? []).join('\n').toLowerCase();
+    chip.dataset.notesLower   = (term.notes   ?? '').toLowerCase();
+    chip.dataset.descLower    = (term.description ?? '').toLowerCase();
+    chip.dataset.relLower     = [
+      term.whatIsIt   ?? '',
+      ...(term.usedWith        ?? []),
+      ...(term.builtOn         ?? []),
+      ...(term.builtUponBy     ?? []),
+      ...(term.runsOn          ?? []),
+      ...(term.alternatives    ?? []),
+      ...(term.partOf          ?? []),
+      ...(term.includes        ?? []),
+      ...(term.examples        ?? []),
+      ...(term.useCases        ?? []),
+      ...(term.relatedConcepts ?? []),
+    ].join('\n').toLowerCase();
 
     // Stash path for detail panel (not rendered to DOM)
     chip._term = term;
@@ -226,6 +243,52 @@
   }
 
   // ── Detail panel ──────────────────────────────────────────────
+
+  // Returns true if a value is considered empty.
+  function isEmpty(v) {
+    if (v === null || v === undefined) return true;
+    if (typeof v === 'string')         return v.trim() === '';
+    if (Array.isArray(v))              return v.length === 0;
+    return false;
+  }
+
+  // Renders a single row (<dt>/<dd>) inside a detail section.
+  // Returns null when the value is empty and the field is optional.
+  function buildDetailRow(label, value, opts = {}) {
+    const { alwaysShow = false, type = 'string', chipClass = 'detail-rel-chip' } = opts;
+    if (!alwaysShow && isEmpty(value)) return null;
+
+    const div = el('div', { className: 'detail-field' });
+    div.appendChild(el('dt', { text: label }));
+    const dd = el('dd');
+
+    if (type === 'id') {
+      dd.appendChild(el('code', { className: 'detail-id', text: value }));
+    } else if (type === 'chips') {
+      const wrap = el('span', { className: 'detail-chips-wrap' });
+      [].concat(value).forEach(item =>
+        wrap.appendChild(el('span', { className: chipClass, text: item })));
+      dd.appendChild(wrap);
+    } else {
+      // plain string
+      dd.appendChild(el('span', { className: 'detail-notes', text: value }));
+    }
+
+    div.appendChild(dd);
+    return div;
+  }
+
+  // Renders a labelled group of rows. Returns null if every row is empty.
+  function buildDetailSection(heading, rows) {
+    const built = rows.map(r => buildDetailRow(...r)).filter(Boolean);
+    if (built.length === 0) return null;
+
+    const section = el('div', { className: 'detail-section' });
+    section.appendChild(el('p', { className: 'detail-section-heading', text: heading }));
+    built.forEach(r => section.appendChild(r));
+    return section;
+  }
+
   function openDetail(term, path) {
     // Highlight selected chip(s)
     document.querySelectorAll('.term-chip.selected')
@@ -236,8 +299,9 @@
     // Breadcrumb
     const bcEl = $('detail-breadcrumb');
     bcEl.innerHTML = '';
-    const parts = [path.continent, path.category];
-    if (path.subcategory) parts.push(path.subcategory);
+    const parts = [path.continent ?? term.continent, path.category ?? term.category];
+    const sub   = path.subcategory ?? term.subcategory;
+    if (sub) parts.push(sub);
     parts.push(term.name);
 
     parts.forEach((part, i) => {
@@ -248,66 +312,60 @@
       }));
     });
 
-    // Name
+    // Name heading
     $('detail-term-name').textContent = term.name;
 
-    // Fields
+    // Build sections
     const fieldsEl = $('detail-fields');
     fieldsEl.innerHTML = '';
 
-    const fieldDefs = [
-      { label: 'ID',      value: term.id,               type: 'id'      },
-      { label: 'Aliases', value: term.aliases ?? [],     type: 'aliases' },
-      { label: 'Notes',   value: term.notes  ?? '',      type: 'notes'   },
-      { label: 'Tags',    value: term.tags   ?? [],      type: 'tags'    },
+    const continent = term.continent || path.continent || '';
+    const category  = term.category  || path.category  || '';
+    const subcategory = term.subcategory || path.subcategory || '';
+
+    const sections = [
+      // Identity — always rendered
+      buildDetailSection('Identity', [
+        ['ID',          term.id,      { alwaysShow: true, type: 'id'     }],
+        ['Continent',   continent,    { alwaysShow: true                  }],
+        ['Category',    category,     { alwaysShow: true                  }],
+        // subcategory only if non-empty (alwaysShow: false is the default)
+        ['Subcategory', subcategory,  {}],
+      ]),
+
+      // Metadata — hidden when all empty
+      buildDetailSection('Metadata', [
+        ['Aliases', term.aliases ?? [], { type: 'chips', chipClass: 'detail-alias' }],
+        ['Tags',    term.tags    ?? [], { type: 'chips', chipClass: 'detail-tag'   }],
+        ['Notes',   term.notes   ?? '', {}],
+      ]),
+
+      // Summary — hidden when all empty
+      buildDetailSection('Summary', [
+        ['What is it',   term.whatIsIt   ?? '', {}],
+        ['Description',  term.description ?? '', {}],
+      ]),
+
+      // Technical Relationships — hidden when all empty
+      buildDetailSection('Technical Relationships', [
+        ['Used with',     term.usedWith     ?? [], { type: 'chips' }],
+        ['Built on',      term.builtOn      ?? [], { type: 'chips' }],
+        ['Built upon by', term.builtUponBy  ?? [], { type: 'chips' }],
+        ['Runs on',       term.runsOn       ?? [], { type: 'chips' }],
+        ['Alternatives',  term.alternatives ?? [], { type: 'chips' }],
+      ]),
+
+      // Conceptual Relationships — hidden when all empty
+      buildDetailSection('Conceptual Relationships', [
+        ['Part of',          term.partOf          ?? [], { type: 'chips' }],
+        ['Includes',         term.includes        ?? [], { type: 'chips' }],
+        ['Examples',         term.examples        ?? [], { type: 'chips' }],
+        ['Use cases',        term.useCases        ?? [], { type: 'chips' }],
+        ['Related concepts', term.relatedConcepts ?? [], { type: 'chips' }],
+      ]),
     ];
 
-    for (const def of fieldDefs) {
-      const div = el('div', { className: 'detail-field' });
-      const dt  = el('dt', { text: def.label });
-      const dd  = el('dd');
-
-      switch (def.type) {
-        case 'id':
-          dd.appendChild(el('code', { className: 'detail-id', text: def.value }));
-          break;
-
-        case 'aliases':
-          if (def.value.length === 0) {
-            dd.appendChild(el('span', { className: 'detail-empty', text: '—' }));
-          } else {
-            const wrap = el('span', { className: 'detail-aliases' });
-            def.value.forEach(alias =>
-              wrap.appendChild(el('span', { className: 'detail-alias', text: alias })));
-            dd.appendChild(wrap);
-          }
-          break;
-
-        case 'tags':
-          if (def.value.length === 0) {
-            dd.appendChild(el('span', { className: 'detail-empty', text: '—' }));
-          } else {
-            const wrap = el('span', { className: 'detail-tags' });
-            def.value.forEach(tag =>
-              wrap.appendChild(el('span', { className: 'detail-tag', text: tag })));
-            dd.appendChild(wrap);
-          }
-          break;
-
-        case 'notes':
-        default:
-          if (!def.value || def.value.trim() === '') {
-            dd.appendChild(el('span', { className: 'detail-empty', text: '—' }));
-          } else {
-            dd.appendChild(el('span', { className: 'detail-notes', text: def.value }));
-          }
-          break;
-      }
-
-      div.appendChild(dt);
-      div.appendChild(dd);
-      fieldsEl.appendChild(div);
-    }
+    sections.forEach(s => { if (s) fieldsEl.appendChild(s); });
 
     // Open panel
     $('detail-panel').classList.add('is-open');
@@ -383,7 +441,11 @@
       const nameMatch  = chip.dataset.nameLower.includes(q);
       const idMatch    = chip.dataset.id.toLowerCase().includes(q);
       const aliasMatch = chip.dataset.aliasesLower.includes(q);
-      const matched    = nameMatch || idMatch || aliasMatch;
+      const tagsMatch  = chip.dataset.tagsLower.includes(q);
+      const notesMatch = chip.dataset.notesLower.includes(q);
+      const descMatch  = chip.dataset.descLower.includes(q);
+      const relMatch   = chip.dataset.relLower.includes(q);
+      const matched    = nameMatch || idMatch || aliasMatch || tagsMatch || notesMatch || descMatch || relMatch;
 
       chip.classList.toggle('search-match',    matched);
       chip.classList.toggle('search-no-match', !matched);
