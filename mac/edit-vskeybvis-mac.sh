@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # @raycast.schemaVersion 1
-# @raycast.title Edit KeybVis
+# @raycast.title Edit VSKeybVis
 # @raycast.mode compact
 # @raycast.description Open keyboard visualization file in VS Code for quick edits
 # @raycast.packageName Developer Utils

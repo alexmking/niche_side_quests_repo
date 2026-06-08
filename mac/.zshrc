@@ -765,6 +765,16 @@ alias standardleet3="$NICHE_REPO_DIR/_universal/scr-leet_morning_random.py easym
 
 
 
+alias calldevlandscape="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
+alias calldevl="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
+alias calldland="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
+alias calldl="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
+alias calldevland="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js" 
+
+
+
+
+
 
 # #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
 # #TODO Find all the other commands that take args and make aliases for them too...[mac-side my not have any special syntax for these commands like windows side does, since the copy alias copy="cp" seems to work fine as is]
