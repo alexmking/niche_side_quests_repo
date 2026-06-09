@@ -32,8 +32,8 @@ def main():
 
     src = html_file.read_text()
 
-    src, n1 = re.subn(r'(?<=id="taxonomy-data">)[^<]*', taxonomy_json, src)
-    src, n2 = re.subn(r'(?<=id="rules-data">)[^<]*',    rules_json,    src)
+    src, n1 = re.subn(r'(?<=id="taxonomy-data">)[^<]*', lambda _: taxonomy_json, src)
+    src, n2 = re.subn(r'(?<=id="rules-data">)[^<]*',    lambda _: rules_json,    src)
 
     if n1 != 1 or n2 != 1:
         print(f"ERROR: Expected 1 match each; got taxonomy={n1}, rules={n2}. "
