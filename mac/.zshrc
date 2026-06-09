@@ -781,19 +781,208 @@ alias calldevland="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js"
   # move-term      Move a term to a different category or subcategory
   # add-alias      Append one or more aliases to a term
   # add-tag        Append one or more tags to a term
+  # add-used-with
+  # add-built-on
+  # add-built-upon-by
+  # add-runs-on
+  # add-alternative
+  # add-part-of
+  # add-include
+  # add-example
+  # add-use-case
+  # add-related-concept
+  # print-ids      Print a list of all term ID, along with their name
+  # print-schema   Print the JSON schema for the taxonomy (for reference or debugging)
   # print-landscape-overview Print a structural overview of the taxonomy with counts
   # print-terms    Print a sorted list of all terms with their location
   # which-are-dups Check a list of names/ids and report duplicates vs new terms
+  # validate-field-duplicates Report (or fix) duplicate values in array fields across all terms
+  # validate-term-duplicates Report (or fix) terms with duplicate id or name; warn on name/alias conflicts
 
+#-----------------------------------------------------------------
+#--- 'dland' alias for each above function...
+#-----------------------------------------------------------------
 alias dlandaddterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-term"
 alias dlandremoveterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js remove-term"
 alias dlandupdateterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js update-term"
 alias dlandmoveterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js move-term"
-alias dlandaddalias="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
-alias dlandaddtag="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+# -
 alias dlandprintoverview="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-landscape-overview"
 alias dlandprintterms="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms"
+alias dlandprintids="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-ids"
+alias dlandprintschema="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-schema"
 alias dlandwhicharedups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js which-are-dups"
+alias dlandvalidatedupfieldvals="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js validate-field-duplicates"
+alias dlandvalidatetermdups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js validate-term-duplicates"
+# - the rest of the add- functions...
+alias dlandaddalias="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dlandaddaliases="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dlandaddtag="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dlandaddtags="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dlandaddusedwith="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-used-with"
+alias dlandaddbuilton="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-built-on"
+alias dlandaddbuiltuponby="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-built-upon-by"
+alias dlandaddrunson="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-runs-on"
+alias dlandaddalternative="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alternative"
+alias dlandaddalternatives="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alternative"
+alias dlandaddpartof="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-part-of"
+alias dlandaddinclude="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-include"
+alias dlandaddexample="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-example"
+alias dlandaddexamples="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-example"
+alias dlandaddusecase="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-use-case"
+alias dlandaddusecases="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-use-case"
+alias dlandaddrelatedconcept="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-related-concept"
+
+#-----------------------------------------------------------------
+#--- 'dl' alias for each above function...
+#-----------------------------------------------------------------
+alias dladdterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-term"
+alias dlremoveterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js remove-term"
+alias dlupdateterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js update-term"
+alias dlmoveterm="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js move-term"
+# -
+alias dlprintoverview="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-landscape-overview"
+alias dlprintterms="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms"
+alias dlprintids="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-ids"
+alias dlprintschema="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-schema"  
+alias dlwhicharedups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js which-are-dups"
+alias dlvalidatedupfieldvals="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js validate-field-duplicates"
+alias dlvalidatetermdups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js validate-term-duplicates"
+# - the rest of the add- functions...
+alias dladdalias="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dladdaliases="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dladdtag="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dladdtags="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dladdusedwith="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-used-with"
+alias dladdbuilton="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-built-on"
+alias dladdbuiltuponby="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-built-upon-by"
+alias dladdrunson="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-runs-on"
+alias dladdalternative="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alternative"
+alias dladdalternatives="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alternative"
+alias dladdpartof="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-part-of"
+alias dladdinclude="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-include"
+alias dladdexample="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-example"
+alias dladdexamples="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-example"
+alias dladdusecase="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-use-case"
+alias dladdusecases="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-use-case"
+alias dladdrelatedconcept="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-related-concept"
+
+#-----------------------------------------------------------------
+#--- swapping 'add' with 'append' for all the above aliases, just for ease of remembering the function names since sometimes i forget if it's 'add' or 'append' but they both do the same thing under the hood, which is append to the existing array of values for that field in the term (as opposed to replacing the existing value(s) with a new value, which is what the 'update' function does)
+#-----------------------------------------------------------------
+#### adding 'append' variations to all the specific add-functions (both the dl and dland groups) (just so i dont have to remember if it's 'add' or 'append', since both calls will be the exact same under the hood)
+alias dlandappendalias="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dlandappendaliases="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dlandappendtag="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dlandappendtags="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dlandappendusedwith="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-used-with"
+alias dlandappendbuilton="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-built-on"
+alias dlandappendbuiltuponby="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-built-upon-by"
+alias dlandappendrunson="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-runs-on"
+alias dlandappendalternative="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alternative"
+alias dlandappendalternatives="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alternative"
+alias dlandappendpartof="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-part-of"
+alias dlandappendinclude="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-include"
+alias dlandappendexample="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-example"
+alias dlandappendexamples="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-example"
+alias dlandappendusecase="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-use-case"
+alias dlandappendusecases="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-use-case"
+alias dlandappendrelatedconcept="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-related-concept"
+
+alias dlappendalias="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dlappendaliases="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alias"
+alias dlappendtag="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dlappendtags="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-tag"
+alias dlappendusedwith="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-used-with"
+alias dlappendbuilton="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-built-on"
+alias dlappendbuiltuponby="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-built-upon-by"
+alias dlappendrunson="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-runs-on"
+alias dlappendalternative="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alternative"
+alias dlappendalternatives="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-alternative"
+alias dlappendpartof="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-part-of"
+alias dlappendinclude="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-include"
+alias dlappendexample="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-example"
+alias dlappendexamples="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-example"
+alias dlappendusecase="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-use-case"
+alias dlappendusecases="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-use-case"
+alias dlappendrelatedconcept="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js add-related-concept"
+
+###### the UNIVERSAL 'append' function that is capable of doing all the above mini fucntions, by accepting the add-function as its first arg
+# (need 1 dland and 1 dl alias for this one)'dl' alias for each above function...#######
+alias dlandappend="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js append" # ❗USEFUL
+alias dlappend="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js append" # ❗USEFUL
+
+
+
+
+
+# node taxonomy.js append --use-case --id python --use-case use-case1 --use-case use-case2 --use-case use-case3 
+# node taxonomy.js append --use-case --id python use-case1 use-case2 use-case3 
+# ## the aliases will absorb the first function arg (in this case '--use-case') so the above two calls should work with the alias as well, and then the rest of the args can be provided as normal (so the --id arg and value, and then the list of use-cases to add)
+# ### SO the acutal calls using the alias would look like this (the first arg '--use-case' is absorbed by the alias and so not needed to be provided in the call when using the alias):
+# dlappendtags --id python --tags tag1 --tags tag2 --tags tag3
+# dlappendusecase --id python use-case1 use-case2 use-case3
+
+# node taxonomy.js append tags --id python --tags tag1 --tags tag2 --tags tag3
+# node taxonomy.js append tags --id python tag1 tag2 tag3 
+
+# node taxonomy.js add-tag python tag1 tag2 tag3 
+# node taxonomy.js add-tag python tag1 tag2 tag3 
+
+
+# ### EXAMPLE CALLS OF THE ABOVE 'universal' alias (adding two items of 1 fields, then 1 item of another field)
+# # dlappend add-tag --id python tag1 tag2 tag3
+# # dlappend add-use-case --id python foo1 foo2 foo3
+
+
+# ### EXAMPLE CALLS OF THE ABOVE ALIASES: (adding 3 items of the respective field) (OBVI these mini functions can only add items for 1 field. Lie obvi I cant do 'add-use-case -id python -foobar1 --tags myTag1, myTag2')
+# # dlandaddtag --id python tag1 tag2 tag3 
+# # dlandaddusecase --id python tag1 tag2 tag3 
+
+
+
+
+
+# node taxonomy.js append --use-case --id python --use-case use-case1 --use-case use-case2 --use-case use-case3
+# node taxonomy.js append --use-case --id python use-case1 use-case2 use-case3
+# node taxonomy.js append  --id python use-case1 use-case2 use-case3
+
+# node taxonomy.js append --tags --id python --tags tag1 --tags tag2 --tags tag3
+# node taxonomy.js append tags python tag1 tag2 tag3
+
+# node taxonomy.js append --use-case --id python use-case1 use-case2 use-case3
+# node taxonomy.js append  --id python use-case1 use-case2 use-case3
+
+
+
+
+
+# ❗TODO❗ ❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗
+# ######################################################################################
+# ######## THESE ARE THE TYPES OF COMMANDS ID LIKE TO HAVE/RUN ON COMMAND LINE:
+# ######################################################################################
+# ❗TODO❗ ❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗❗TODO❗
+# dlappend --tags --id python tag1 tag2 tag3  # using the generic append, and then providing the field as first arg ...
+
+# dlappendtags --id python tag1 tag2 tag3  # using a more specific alias that has the field built into the alias name itself (so its more user-friendly and I dont have to remember the specific field/function names or provide them as args, but less flexible since I would need a different alias for each field/function)
+# dlappendexamples --id python example1 example2 exmaple3  # using a more specific alias that has the field built into the alias name itself (so its more user-friendly and I dont have to remember the specific field/function names or provide them as args, but less flexible since I would need a different alias for each field/function)
+# # (note these aliases can use either the mini functions or the universal 'append' function, since both the mini functions and the universal 'append' function have the field/function as the first arg, so the alias can just absorb that first arg and then pass the rest of the args along as normal to either the mini function or the universal 'append' function, since they both have the same first arg and then the rest of the args are provided in the same way regardless of which underlying function is being called by the alias)
+
+# ######### WISH LIST VARIATIONS TO CONSIDER TRYING TO ADD LATER: ######
+# dlappend tags python tag1 tag2 tag3  # (no --flags at all))  1st arg is always the field, 2nd arg is always the id, and the rest of the args are always the items to add to that field for that id. This is more user-friendly and easier to remember since the syntax is always the same regardless of which field/function we're adding to, but less flexible since it requir
+
+# dlappendtags python tag1 tag2 tag3  # (no --flags at all), 1st arg is always the id, and the rest of the args are always the items to add to that field for that id. This is more user-friendly and easier to remember since the syntax is always the same regardless of which field/function we're adding to, but less flexible since it requires a specific alias for each field/function, and also requires the field name to be included in the alias name itself which could get unwieldy if we have a lot of fields/functions we want to make aliases for. But it would be nice to have at least a few of these more user-friendly aliases for the fields/functions I use most often, even if I still have the more flexible universal 'append' alias for when I want to add items to less common fields or just want the flexibility of providing the field as an arg in the call instead of having it built into the alias name.
+# dlappendexamples python example1 example2 exmaple3  # (no --flags at all), 1st arg is always the id, and the rest of the args are always the items to add to that field for that id. This is more user-friendly and easier to remember since the syntax is always the same regardless of which field/function we're adding to, but less flexible since it requires a specific alias for each field/function, and also requires the field name to be included in the alias name itself which could get unwieldy if we have a lot of fields/functions we want to make aliases for. But it would be nice to have at least a few of these more user-friendly aliases for the fields/functions I use most often, even if I still have the more flexible universal 'append' alias for when I want to add items to less common fields or just want the flexibility of providing the field as an arg in the call instead of having it built into the alias name.
+# # (note these aliases can use either the mini functions or the universal 'append' function, since both the mini functions and the universal 'append' function have the field/function as the first arg, so the alias can just absorb that first arg and then pass the rest of the args along as normal to either the mini function or the universal 'append' function, since they both have the same first arg and then the rest of the args are provided in the same way regardless of which underlying function is being called by the alias)
+
+
+
+
+
+
+
+
+
 
 
 

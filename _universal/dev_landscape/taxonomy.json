@@ -14,9 +14,6 @@
             "programming-language",
             "backend",
             "object-oriented",
-            "programming-language",
-            "backend",
-            "object-oriented",
             "jvm",
             "enterprise"
           ],
@@ -27,30 +24,20 @@
             "Spring Boot",
             "Maven",
             "JVM",
-            "JVM",
-            "Spring",
-            "Spring Boot",
-            "Maven",
             "Gradle"
           ],
           "builtOn": [],
           "builtUponBy": [
             "Spring",
-            "Spring Boot",
-            "Spring",
             "Spring Boot"
           ],
           "runsOn": [
-            "JVM",
             "JVM"
           ],
           "alternatives": [
             "C#",
             "Go",
-            "Kotlin",
-            "C#",
-            "Kotlin",
-            "Go"
+            "Kotlin"
           ],
           "partOf": [],
           "includes": [],
@@ -64,15 +51,11 @@
             "Backend Development",
             "Enterprise Software",
             "Android Development",
-            "Backend Development",
-            "Enterprise Software",
-            "Android Development",
             "Distributed Systems",
             "Web Development"
           ],
           "relatedConcepts": [
             "Object-Oriented Programming (OOP)",
-            "JVM",
             "JVM",
             "Object-Oriented Programming",
             "Bytecode",
@@ -87,7 +70,6 @@
           "category": "Languages",
           "subcategory": "Programming Languages",
           "aliases": [
-            "JS",
             "JS"
           ],
           "notes": "High-level programming language primarily used for web development. Common alternatives: TypeScript, Python.",
@@ -140,7 +122,6 @@
           "relatedConcepts": [
             "DOM",
             "Event Loop",
-            "DOM",
             "Web Development",
             "Asynchronous Programming",
             "JSON"
@@ -153,7 +134,6 @@
           "category": "Languages",
           "subcategory": "Programming Languages",
           "aliases": [
-            "TS",
             "TS"
           ],
           "notes": "Strongly typed superset of JavaScript developed by Microsoft. Common alternatives: JavaScript.",
@@ -546,8 +526,7 @@
           "category": "Languages",
           "subcategory": "Programming Languages",
           "aliases": [
-            "golang",
-            "Golang"
+            "golang"
           ],
           "notes": "Statically typed programming language developed by Google with a focus on simplicity, concurrency, and performance. Common alternatives: C#, Java, Rust.",
           "tags": [
@@ -774,14 +753,19 @@
           "category": "Languages",
           "subcategory": "Programming Languages",
           "aliases": [
-            "Python 3"
+            "Python 3",
+            "test1",
+            "test2",
+            "test3"
           ],
           "notes": "High-level general-purpose programming language known for readability and extensive ecosystem. Common alternatives: JavaScript, Java, C#.",
           "tags": [
             "programming-language",
             "backend",
             "scripting",
-            "data-science"
+            "data-science",
+            "amk222",
+            "amk333"
           ],
           "whatIsIt": "Programming Language",
           "description": "High-level interpreted programming language used for web development, automation, data science, machine learning, scripting, and general software development.",
@@ -792,7 +776,9 @@
             "Jupyter",
             "AWS"
           ],
-          "builtOn": [],
+          "builtOn": [
+            "amk21"
+          ],
           "builtUponBy": [
             "Django"
           ],
@@ -809,7 +795,9 @@
           ],
           "partOf": [
             "testUpdatingField1",
-            "testUpdatingField1"
+            "foobar44",
+            "foobar55",
+            "foobar66"
           ],
           "includes": [
             "testupdate2"
@@ -817,13 +805,18 @@
           "examples": [
             "Web Applications",
             "Automation Scripts",
-            "Machine Learning Applications"
+            "Machine Learning Applications",
+            "example1",
+            "example2"
           ],
           "useCases": [
             "Backend Development",
             "Automation",
             "Data Science",
-            "Machine Learning"
+            "Machine Learning",
+            "foobar44",
+            "foobar55",
+            "foobar66"
           ],
           "relatedConcepts": [
             "Scripting",
@@ -1027,7 +1020,6 @@
             "MacOS"
           ],
           "alternatives": [
-            "C++",
             "C++",
             "C",
             "Go"
@@ -1377,8 +1369,6 @@
           "typescript",
           "web-framework",
           "framework",
-          "frontend",
-          "typescript",
           "javascript",
           "web-development",
           "single-page-application"
@@ -1389,15 +1379,12 @@
           "TypeScript",
           "Node.js",
           "REST API",
-          "TypeScript",
           "JavaScript",
           "HTML",
           "CSS",
-          "RxJS",
-          "Node.js"
+          "RxJS"
         ],
         "builtOn": [
-          "TypeScript",
           "TypeScript"
         ],
         "builtUponBy": [],
@@ -1406,9 +1393,6 @@
           "Web Browser"
         ],
         "alternatives": [
-          "React",
-          "Vue.js",
-          "Svelte",
           "React",
           "Vue.js",
           "Svelte"
@@ -1424,9 +1408,7 @@
           "Single Page Applications (SPA)",
           "Enterprise Web Applications",
           "Frontend Development",
-          "Frontend Development",
           "Single Page Applications",
-          "Enterprise Web Applications",
           "Component-Based Web Development"
         ],
         "relatedConcepts": [
@@ -1434,7 +1416,6 @@
           "Web Development",
           "Component-Based Architecture",
           "TypeScript",
-          "Component-Based Architecture",
           "Dependency Injection",
           "RxJS",
           "AngularJS",
@@ -1617,8 +1598,6 @@
           "backend",
           "web-framework",
           "framework",
-          "backend",
-          "python",
           "web-development"
         ],
         "whatIsIt": "Backend Web Framework",
@@ -1972,8 +1951,7 @@
         "subcategory": "",
         "aliases": [
           "ReactJS",
-          "React.js",
-          "ReactJS"
+          "React.js"
         ],
         "notes": "JavaScript library for building user interfaces using reusable components. Common alternatives: Angular, Vue.js, Svelte.",
         "tags": [
@@ -2409,7 +2387,6 @@
           "Vue",
           "VueTestAlias1",
           "Vue 3",
-          "Vue",
           "VueJS"
         ],
         "notes": "Progressive JavaScript framework for building user interfaces and single-page applications. Common alternatives: React, Angular, Svelte.",
@@ -2418,10 +2395,12 @@
           "newTag1Test",
           "newtag2",
           "framework",
-          "frontend",
           "javascript",
           "typescript",
-          "web-development"
+          "web-development",
+          "t1",
+          "t2",
+          "t3"
         ],
         "whatIsIt": "Frontend JavaScript Framework",
         "description": "Progressive JavaScript framework used to build component-based user interfaces, single-page applications, and interactive web applications.",
@@ -2469,142 +2448,6 @@
       }
     ],
     "Platforms & Runtimes": [
-      {
-        "id": "dotnet",
-        "name": ".NET",
-        "continent": "Development",
-        "category": "Platforms & Runtimes",
-        "subcategory": "",
-        "aliases": [
-          ".NET Framework",
-          ".NET Core",
-          ".NET Framework",
-          ".NET Core",
-          ".NET Framework"
-        ],
-        "notes": "Microsoft development platform and runtime for building desktop, web, cloud, mobile, and enterprise applications. Common alternatives: JVM, Node.js.",
-        "tags": [
-          "platform",
-          "runtime",
-          "backend",
-          "cross-platform",
-          "platform",
-          "runtime",
-          "microsoft",
-          "development-framework",
-          "platform",
-          "runtime",
-          "microsoft",
-          "development-framework"
-        ],
-        "whatIsIt": "Development Platform and Runtime",
-        "description": "Microsoft platform that provides runtimes, libraries, languages, and tools for building and running applications across multiple operating systems.",
-        "usedWith": [
-          "C#",
-          "ASP.NET",
-          ".NET Core",
-          "Microsoft Azure",
-          "C#",
-          "F#",
-          "ASP.NET",
-          "Visual Studio",
-          "Microsoft Azure",
-          "C#",
-          "F#",
-          "ASP.NET",
-          "Visual Studio",
-          "Microsoft Azure"
-        ],
-        "builtOn": [],
-        "builtUponBy": [
-          "ASP.NET",
-          ".NET Core",
-          "ASP.NET",
-          "C#",
-          "F#",
-          "ASP.NET",
-          "C#",
-          "F#"
-        ],
-        "runsOn": [
-          "Windows",
-          "Linux",
-          "MacOS",
-          "Windows",
-          "Linux",
-          "MacOS",
-          "Windows",
-          "Linux",
-          "MacOS"
-        ],
-        "alternatives": [
-          "JVM",
-          "Node.js",
-          "JVM",
-          "Node.js",
-          "JVM",
-          "Node.js"
-        ],
-        "partOf": [],
-        "includes": [],
-        "examples": [
-          "ASP.NET Applications",
-          "Desktop Applications",
-          "Cloud Services",
-          "ASP.NET Applications",
-          "Desktop Applications",
-          "Cloud Services"
-        ],
-        "useCases": [
-          "Web Applications",
-          "Enterprise Software",
-          "Cloud Applications",
-          "Desktop Applications",
-          "Web Development",
-          "Desktop Development",
-          "Cloud Development",
-          "Enterprise Software",
-          "Web Development",
-          "Desktop Development",
-          "Cloud Development",
-          "Enterprise Software"
-        ],
-        "relatedConcepts": [
-          "Runtime",
-          "Cross-Platform Development",
-          "Managed Code",
-          "CLR",
-          "Managed Code",
-          "C#",
-          "Runtime",
-          "CLR",
-          "Managed Code",
-          "C#",
-          "Runtime"
-        ]
-      },
-      {
-        "id": "dotnet-core",
-        "name": ".NET Core",
-        "continent": "Development",
-        "category": "Platforms & Runtimes",
-        "subcategory": "",
-        "aliases": [],
-        "notes": "",
-        "tags": [],
-        "whatIsIt": "",
-        "description": "",
-        "usedWith": [],
-        "builtOn": [],
-        "builtUponBy": [],
-        "runsOn": [],
-        "alternatives": [],
-        "partOf": [],
-        "includes": [],
-        "examples": [],
-        "useCases": [],
-        "relatedConcepts": []
-      },
       {
         "id": "firebase",
         "name": "Firebase",
@@ -2780,6 +2623,197 @@
           "Asynchronous Programming",
           "V8"
         ]
+      },
+      {
+        "id": "dotnet",
+        "name": ".NET",
+        "continent": "Development",
+        "category": "Platforms & Runtimes",
+        "subcategory": "",
+        "aliases": [
+          ".NET Core",
+          ".NET Framework",
+          "DotNet",
+          "Microsoft .NET"
+        ],
+        "notes": "Microsoft development platform and runtime ecosystem used to build applications across web, desktop, cloud, mobile, games, services, and enterprise systems. Modern .NET is cross-platform and is commonly used with C#, F#, ASP.NET, Visual Studio, and Microsoft Azure.",
+        "tags": [
+          "platform",
+          "runtime",
+          "microsoft",
+          "development-framework",
+          "cross-platform",
+          "backend"
+        ],
+        "whatIsIt": "Development Platform and Runtime",
+        "description": "A Microsoft development platform and runtime ecosystem for building and running applications using languages such as C#, F#, and Visual Basic, with libraries, tooling, runtimes, and frameworks for many application types.",
+        "usedWith": [
+          "C#",
+          "F#",
+          "ASP.NET",
+          "Visual Studio",
+          "Microsoft Azure",
+          "Windows",
+          "Linux",
+          "MacOS"
+        ],
+        "builtOn": [
+          "Common Language Runtime",
+          "Base Class Library",
+          "Microsoft Ecosystem"
+        ],
+        "builtUponBy": [
+          "ASP.NET",
+          "Blazor",
+          "MAUI",
+          "Entity Framework",
+          "Windows Presentation Foundation"
+        ],
+        "runsOn": [
+          "Windows",
+          "Linux",
+          "MacOS",
+          "Containers",
+          "Microsoft Azure"
+        ],
+        "alternatives": [
+          "JVM",
+          "Node.js",
+          "Python Runtime",
+          "Ruby Runtime",
+          "Go Runtime"
+        ],
+        "partOf": [
+          "Microsoft Ecosystem",
+          "Software Development",
+          "Backend Development",
+          "Enterprise Software Development"
+        ],
+        "includes": [],
+        "examples": [
+          "ASP.NET Web API",
+          "C# Console Application",
+          "Blazor Web Application",
+          ".NET Worker Service",
+          "Entity Framework Application",
+          "Azure-hosted .NET Service"
+        ],
+        "useCases": [
+          "Building Web APIs",
+          "Building Enterprise Applications",
+          "Building Desktop Applications",
+          "Building Cloud Services",
+          "Building Background Services",
+          "Building Cross-Platform Applications",
+          "Building Backend Services"
+        ],
+        "relatedConcepts": [
+          "C#",
+          "F#",
+          "ASP.NET",
+          ".NET Core",
+          ".NET Framework",
+          "CLR",
+          "NuGet",
+          "Visual Studio",
+          "Microsoft Azure",
+          "JVM",
+          "Node.js"
+        ]
+      },
+      {
+        "id": "dotnet-core",
+        "name": ".NET Core",
+        "continent": "Development",
+        "category": "Platforms & Runtimes",
+        "subcategory": "",
+        "aliases": [
+          "DotNet Core",
+          "Microsoft .NET Core"
+        ],
+        "notes": ".NET Core was the cross-platform, open-source successor to .NET Framework and later became the foundation of modern .NET. In most current taxonomy usage, .NET Core should probably be treated as an alias or historical version of the canonical .NET term rather than as a separate top-level term.",
+        "tags": [
+          "platform",
+          "runtime",
+          "microsoft",
+          "cross-platform",
+          "historical-version",
+          "backend"
+        ],
+        "whatIsIt": "Development Platform and Runtime",
+        "description": "A cross-platform Microsoft development platform and runtime for building and running applications, especially web APIs, backend services, console apps, cloud services, and enterprise applications. It is now effectively part of the modern .NET lineage.",
+        "usedWith": [
+          "C#",
+          "F#",
+          "ASP.NET",
+          "Visual Studio",
+          "Microsoft Azure",
+          "Windows",
+          "Linux",
+          "MacOS"
+        ],
+        "builtOn": [
+          ".NET",
+          "Common Language Runtime",
+          "Base Class Library",
+          "Microsoft Ecosystem"
+        ],
+        "builtUponBy": [
+          "ASP.NET Core",
+          "Entity Framework Core",
+          "Modern .NET"
+        ],
+        "runsOn": [
+          "Windows",
+          "Linux",
+          "MacOS",
+          "Containers",
+          "Microsoft Azure"
+        ],
+        "alternatives": [
+          ".NET Framework",
+          "JVM",
+          "Node.js",
+          "Python Runtime",
+          "Go Runtime"
+        ],
+        "partOf": [
+          ".NET",
+          "Microsoft Ecosystem",
+          "Software Development",
+          "Backend Development",
+          "Enterprise Software Development"
+        ],
+        "includes": [],
+        "examples": [
+          "ASP.NET Core Web API",
+          ".NET Core Console Application",
+          ".NET Core Worker Service",
+          "Entity Framework Core Application",
+          "Containerized .NET Core Service",
+          "Azure-hosted .NET Core Application"
+        ],
+        "useCases": [
+          "Building Cross-Platform Web APIs",
+          "Building Backend Services",
+          "Building Cloud Services",
+          "Building Console Applications",
+          "Building Containerized Applications",
+          "Migrating from .NET Framework",
+          "Building Enterprise Applications"
+        ],
+        "relatedConcepts": [
+          ".NET",
+          ".NET Framework",
+          "ASP.NET Core",
+          "C#",
+          "F#",
+          "CLR",
+          "CoreCLR",
+          "NuGet",
+          "Visual Studio",
+          "Microsoft Azure"
+        ]
       }
     ],
     "Development Tools": {
@@ -2797,10 +2831,6 @@
             "editor",
             "android",
             "mobile-development",
-            "ide",
-            "editor",
-            "android",
-            "mobile-development",
             "google"
           ],
           "whatIsIt": "IDE",
@@ -2809,20 +2839,13 @@
             "Java",
             "Kotlin",
             "Android SDK",
-            "Java",
-            "Kotlin",
-            "Android SDK",
             "Gradle"
           ],
           "builtOn": [
-            "IntelliJ IDEA",
             "IntelliJ IDEA"
           ],
           "builtUponBy": [],
           "runsOn": [
-            "Windows",
-            "Linux",
-            "MacOS",
             "Windows",
             "Linux",
             "MacOS"
@@ -2830,13 +2853,9 @@
           "alternatives": [
             "IntelliJ IDEA",
             "Visual Studio Code",
-            "Xcode",
-            "IntelliJ IDEA",
-            "Visual Studio Code",
             "Xcode"
           ],
           "partOf": [
-            "Android Development",
             "Android Development"
           ],
           "includes": [],
@@ -2848,7 +2867,6 @@
           "useCases": [
             "Android Development",
             "Mobile Application Development",
-            "Android Development",
             "Mobile App Development",
             "UI Layout Design",
             "Android App Debugging"
@@ -2857,10 +2875,8 @@
             "IDE",
             "Android SDK",
             "Mobile Development",
-            "Android SDK",
             "Kotlin",
             "Java",
-            "Mobile Development",
             "Gradle"
           ]
         },
@@ -3447,8 +3463,6 @@
             "version-control",
             "source-control",
             "collaboration",
-            "version-control",
-            "source-control",
             "distributed-version-control",
             "development-tool"
           ],
@@ -3458,23 +3472,15 @@
             "GitHub",
             "GitLab",
             "Visual Studio Code",
-            "GitHub",
-            "GitLab",
-            "Visual Studio Code",
             "Visual Studio",
             "Jenkins"
           ],
           "builtOn": [],
           "builtUponBy": [
             "GitHub",
-            "GitLab",
-            "GitHub",
             "GitLab"
           ],
           "runsOn": [
-            "Windows",
-            "Linux",
-            "MacOS",
             "Windows",
             "Linux",
             "MacOS"
@@ -3482,8 +3488,7 @@
           "alternatives": [
             "SVN",
             "Mercurial",
-            "Subversion",
-            "Mercurial"
+            "Subversion"
           ],
           "partOf": [],
           "includes": [],
@@ -3500,9 +3505,6 @@
             "Source Code Management",
             "Version Tracking",
             "Team Collaboration",
-            "Source Code Management",
-            "Version Tracking",
-            "Team Collaboration",
             "Branching and Merging",
             "Release Management"
           ],
@@ -3511,10 +3513,6 @@
             "Merging",
             "Repository",
             "Version Control",
-            "Version Control",
-            "Repository",
-            "Branching",
-            "Merging",
             "Commit",
             "Source Control"
           ]
@@ -3714,10 +3712,6 @@
             "automation",
             "devops",
             "build-tool",
-            "ci-cd",
-            "automation",
-            "devops",
-            "build-tool",
             "deployment"
           ],
           "whatIsIt": "Automation Server",
@@ -3728,30 +3722,18 @@
             "Kubernetes",
             "GitHub",
             "GitLab",
-            "Git",
-            "GitHub",
-            "GitLab",
-            "Docker",
-            "Kubernetes",
             "Maven"
           ],
           "builtOn": [
-            "Java",
             "Java"
           ],
           "builtUponBy": [],
           "runsOn": [
             "Windows",
             "Linux",
-            "MacOS",
-            "Windows",
-            "Linux",
             "MacOS"
           ],
           "alternatives": [
-            "GitHub Actions",
-            "GitLab CI/CD",
-            "CircleCI",
             "GitHub Actions",
             "GitLab CI/CD",
             "CircleCI",
@@ -3773,17 +3755,9 @@
             "Continuous Deployment",
             "Build Automation",
             "Test Automation",
-            "Continuous Integration",
-            "Continuous Deployment",
-            "Build Automation",
-            "Test Automation",
             "Release Automation"
           ],
           "relatedConcepts": [
-            "CI/CD",
-            "DevOps",
-            "Automation",
-            "Pipeline",
             "CI/CD",
             "DevOps",
             "Automation",
@@ -4735,7 +4709,6 @@
           "subcategory": "Database Models",
           "aliases": [
             "RDBMS",
-            "Relational Database Management System",
             "Relational Database Management System"
           ],
           "notes": "Database management model based on relational tables, rows, columns, schemas, and SQL. Common alternatives: NoSQL, document databases, key-value stores.",
@@ -4743,19 +4716,12 @@
             "database",
             "relational-database",
             "database-model",
-            "database",
-            "database-model",
-            "relational-database",
             "sql",
             "data-storage"
           ],
           "whatIsIt": "Database Model",
           "description": "Database management system model that organizes data into related tables and commonly uses SQL for querying, defining, and manipulating structured data.",
           "usedWith": [
-            "SQL",
-            "PostgreSQL",
-            "MySQL",
-            "Microsoft SQL Server",
             "SQL",
             "PostgreSQL",
             "MySQL",
@@ -4769,14 +4735,10 @@
             "PostgreSQL",
             "MySQL",
             "Microsoft SQL Server",
-            "PostgreSQL",
-            "MySQL",
-            "Microsoft SQL Server",
             "Oracle"
           ],
           "runsOn": [],
           "alternatives": [
-            "NoSQL",
             "NoSQL",
             "Document Database",
             "Key-Value Store",
@@ -4788,9 +4750,6 @@
             "PostgreSQL",
             "MySQL",
             "Microsoft SQL Server",
-            "PostgreSQL",
-            "MySQL",
-            "Microsoft SQL Server",
             "Oracle"
           ],
           "useCases": [
@@ -4798,10 +4757,6 @@
             "Enterprise Applications",
             "Financial Systems",
             "Structured Data Storage",
-            "Structured Data Storage",
-            "Transactional Systems",
-            "Enterprise Applications",
-            "Financial Systems",
             "Reporting",
             "Data Integrity"
           ],
@@ -4810,11 +4765,7 @@
             "Database",
             "Relational Model",
             "ACID",
-            "SQL",
-            "Relational Model",
-            "ACID",
             "Normalization",
-            "Database",
             "Schema"
           ]
         }
@@ -4829,7 +4780,6 @@
           "category": "Cloud",
           "subcategory": "Cloud Platforms",
           "aliases": [
-            "GCP",
             "GCP",
             "Google Cloud"
           ],
@@ -4980,6 +4930,7 @@
           "subcategory": "Cloud Platforms",
           "aliases": [
             "Amazon Web Services",
+            "AWS",
             "Amazon AWS"
           ],
           "notes": "Amazon's cloud computing platform providing infrastructure, platform services, storage, databases, networking, serverless computing, and deployment services. Common alternatives: Microsoft Azure, Google Cloud Platform.",
@@ -5493,9 +5444,6 @@
           "networking",
           "network-emulation",
           "sdn",
-          "networking",
-          "network-emulation",
-          "sdn",
           "simulation",
           "infrastructure"
         ],
@@ -5504,28 +5452,21 @@
         "usedWith": [
           "Linux",
           "Python",
-          "Linux",
-          "Python",
           "OpenFlow",
           "Software-Defined Networking"
         ],
         "builtOn": [
           "Linux",
-          "Linux",
           "Python"
         ],
         "builtUponBy": [],
         "runsOn": [
-          "Linux",
           "Linux"
         ],
         "alternatives": [
           "NetSim",
           "GNS3",
-          "EVE-NG",
-          "GNS3",
-          "EVE-NG",
-          "NetSim"
+          "EVE-NG"
         ],
         "partOf": [],
         "includes": [],
@@ -5542,10 +5483,6 @@
           "Network Research",
           "Software-Defined Networking",
           "Protocol Testing",
-          "Networking Education",
-          "Network Research",
-          "Software-Defined Networking",
-          "Protocol Testing",
           "Network Topology Simulation"
         ],
         "relatedConcepts": [
@@ -5553,11 +5490,8 @@
           "Software-Defined Networking (SDN)",
           "Network Simulation",
           "Network Emulation",
-          "Networking",
           "Software-Defined Networking",
-          "OpenFlow",
-          "Network Simulation",
-          "Network Emulation"
+          "OpenFlow"
         ]
       },
       {
@@ -5981,8 +5915,7 @@
         "category": "Web Servers",
         "subcategory": "",
         "aliases": [
-          "NGINX",
-          "Nginx"
+          "NGINX"
         ],
         "notes": "High-performance web server commonly used for serving static content, reverse proxying, load balancing, API gateways, and TLS termination. Common alternatives: Apache, IIS, Caddy.",
         "tags": [
@@ -7146,7 +7079,6 @@
           "aliases": [
             "SDLC",
             "Software Development Life Cycle",
-            "Software Development Life Cycle",
             "Software Development Lifecycle"
           ],
           "notes": "Structured process for planning, designing, building, testing, deploying, and maintaining software systems. Common models include Waterfall, Agile, Spiral, V-Model, and iterative development.",
@@ -7876,7 +7808,6 @@
         "subcategory": "",
         "aliases": [
           "RESTful API",
-          "RESTful API",
           "Representational State Transfer API"
         ],
         "notes": "API style based on REST principles, commonly using HTTP methods to expose and manipulate resources. Often used for web services, backend APIs, microservices, and client-server communication.",
@@ -8477,8 +8408,7 @@
         "category": "Debugging & Profiling",
         "subcategory": "",
         "aliases": [
-          "GDB",
-          "gdb"
+          "GDB"
         ],
         "notes": "Command-line debugger from the GNU Project commonly used to debug C, C++, and other compiled programs. Common alternatives: LLDB, Visual Studio Debugger, WinDbg.",
         "tags": [
@@ -9293,21 +9223,112 @@
         "continent": "Engineering",
         "category": "Software Engineering Concepts",
         "subcategory": "",
-        "aliases": [],
-        "notes": "",
-        "tags": [],
-        "whatIsIt": "",
-        "description": "",
-        "usedWith": [],
-        "builtOn": [],
-        "builtUponBy": [],
-        "runsOn": [],
-        "alternatives": [],
-        "partOf": [],
+        "aliases": [
+          "Enterprise Application Software",
+          "Enterprise Applications",
+          "Enterprise Systems",
+          "Business Software",
+          "Enterprise Business Software"
+        ],
+        "notes": "Software engineering concept referring to large-scale software used by organizations to support business operations, workflows, data management, reporting, integration, compliance, and cross-department processes. Common examples include ERP, CRM, HR, finance, supply chain, SCADA, and internal business platforms.",
+        "tags": [
+          "software-engineering-concept",
+          "enterprise",
+          "business-software",
+          "large-scale-systems",
+          "application-architecture",
+          "systems-integration",
+          "operations"
+        ],
+        "whatIsIt": "Organization-Scale Business Software",
+        "description": "Software built or used to support the operations of a business or large organization, often involving complex workflows, many users, integrations, permissions, reporting, data storage, reliability requirements, and long-term maintenance.",
+        "usedWith": [
+          "Enterprise Architecture",
+          "Software Architecture",
+          "Integration",
+          "Databases",
+          "Authentication",
+          "Authorization",
+          "Backend",
+          "Web Development",
+          "Cloud Computing",
+          "DevOps"
+        ],
+        "builtOn": [
+          "Software Development",
+          "Software Architecture",
+          "Business Processes",
+          "Databases",
+          "Integration",
+          "Security"
+        ],
+        "builtUponBy": [
+          "ERP Systems",
+          "CRM Systems",
+          "HR Systems",
+          "Finance Systems",
+          "Supply Chain Systems",
+          "SCADA Systems",
+          "Internal Business Platforms"
+        ],
+        "runsOn": [
+          "Servers",
+          "Cloud Computing",
+          "Operating Systems",
+          "Databases",
+          "Containers",
+          "Enterprise Infrastructure"
+        ],
+        "alternatives": [
+          "Consumer Software",
+          "Personal Software",
+          "Small Business Software",
+          "Custom Scripts",
+          "Manual Business Processes"
+        ],
+        "partOf": [
+          "Software Development",
+          "Software Engineering",
+          "Enterprise Architecture",
+          "Business Operations",
+          "Information Systems"
+        ],
         "includes": [],
-        "examples": [],
-        "useCases": [],
-        "relatedConcepts": []
+        "examples": [
+          "ERP System",
+          "CRM System",
+          "HR Management System",
+          "Finance Platform",
+          "Supply Chain Management System",
+          "SCADA System",
+          "Internal Operations Dashboard",
+          "Enterprise Reporting Platform"
+        ],
+        "useCases": [
+          "Managing Business Operations",
+          "Automating Organizational Workflows",
+          "Coordinating Cross-Department Processes",
+          "Managing Enterprise Data",
+          "Supporting Compliance and Auditing",
+          "Integrating Business Systems",
+          "Providing Role-Based Access",
+          "Supporting Mission-Critical Operations"
+        ],
+        "relatedConcepts": [
+          "Enterprise Architecture",
+          "Software Architecture",
+          "Integration",
+          "Databases",
+          "Backend",
+          "Authentication",
+          "Authorization",
+          "Business Logic",
+          "Information Systems",
+          "SCADA",
+          "ERP",
+          "CRM",
+          "Compliance"
+        ]
       },
       {
         "id": "frontend",

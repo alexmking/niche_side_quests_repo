@@ -30,6 +30,8 @@ function saveTaxonomy(taxonomy) {
 
 // Flags that take no value — their presence alone sets them to true.
 const BOOLEAN_FLAGS = new Set([
+  'fix',
+  'sort-by-size',
   'clear-aliases', 'clear-tags', 'clear-notes',
   'clear-what-is-it', 'clear-description',
   'clear-used-with', 'clear-built-on', 'clear-built-upon-by',
@@ -160,6 +162,27 @@ const SCHEMA_STRINGS = ['id', 'name', 'continent', 'category', 'subcategory',
 const SCHEMA_ARRAYS  = ['aliases', 'tags', 'usedWith', 'builtOn', 'builtUponBy',
                         'runsOn', 'alternatives', 'partOf', 'includes', 'examples',
                         'useCases', 'relatedConcepts'];
+
+// Canonical display order for print-schema.
+// Add new fields here when extending the schema so they appear in the right place.
+const SCHEMA_FIELD_ORDER = [
+  'id', 'name',
+  'continent', 'category', 'subcategory',
+  'aliases', 'notes', 'tags',
+  'whatIsIt', 'description',
+  'usedWith', 'builtOn', 'builtUponBy', 'runsOn', 'alternatives',
+  'partOf', 'includes', 'examples', 'useCases', 'relatedConcepts',
+];
+
+// Optional per-field annotations shown next to each entry in print-schema.
+// Only add entries here when you want to convey extra context beyond the type.
+const SCHEMA_FIELD_ANNOTATIONS = {
+  id:          'required · unique · no spaces',
+  name:        'required · display name',
+  continent:   'required',
+  category:    'required',
+  subcategory: 'optional — empty string if none',
+};
 
 function validateTermSchema(term) {
   const bad = [
@@ -472,16 +495,18 @@ function findTermById(taxonomy, id) {
 }
 
 function cmdAddAlias(flags) {
+  // Positional mode: add-alias <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
   if (!flags.id) {
     console.error('Error: missing required argument: --id');
     process.exit(1);
   }
-  if (!flags.alias) {
-    console.error('Error: missing required argument: --alias');
+  if (!flags.alias && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --alias (or provide values as positional arguments)');
     process.exit(1);
   }
 
-  const incoming = [].concat(flags.alias);
+  const incoming = [...[].concat(flags.alias ?? []), ...(flags._ ?? [])];
   const taxonomy = loadTaxonomy();
   const { term, termPath } = findTermById(taxonomy, flags.id);
 
@@ -505,16 +530,18 @@ function cmdAddAlias(flags) {
 }
 
 function cmdAddTag(flags) {
+  // Positional mode: add-tag <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
   if (!flags.id) {
     console.error('Error: missing required argument: --id');
     process.exit(1);
   }
-  if (!flags.tag) {
-    console.error('Error: missing required argument: --tag');
+  if (!flags.tag && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --tag (or provide values as positional arguments)');
     process.exit(1);
   }
 
-  const incoming = [].concat(flags.tag);
+  const incoming = [...[].concat(flags.tag ?? []), ...(flags._ ?? [])];
   const taxonomy = loadTaxonomy();
   const { term, termPath } = findTermById(taxonomy, flags.id);
 
@@ -535,6 +562,356 @@ function cmdAddTag(flags) {
   term.tags.push(...toAdd);
   saveTaxonomy(taxonomy);
   console.log(`Added tag${toAdd.length > 1 ? 's' : ''} [${toAdd.map(t => `"${t}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddUsedWith(flags) {
+  // Positional mode: add-used-with <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags['used-with'] && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --used-with (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags['used-with'] ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.usedWith.includes(v));
+  const toAdd      = incoming.filter(v => !term.usedWith.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: used-with entry "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided used-with entries already exist.');
+    process.exit(1);
+  }
+
+  term.usedWith.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added used-with entr${toAdd.length > 1 ? 'ies' : 'y'} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddBuiltOn(flags) {
+  // Positional mode: add-built-on <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags['built-on'] && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --built-on (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags['built-on'] ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.builtOn.includes(v));
+  const toAdd      = incoming.filter(v => !term.builtOn.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: built-on entry "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided built-on entries already exist.');
+    process.exit(1);
+  }
+
+  term.builtOn.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added built-on entr${toAdd.length > 1 ? 'ies' : 'y'} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddBuiltUponBy(flags) {
+  // Positional mode: add-built-upon-by <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags['built-upon-by'] && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --built-upon-by (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags['built-upon-by'] ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.builtUponBy.includes(v));
+  const toAdd      = incoming.filter(v => !term.builtUponBy.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: built-upon-by entry "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided built-upon-by entries already exist.');
+    process.exit(1);
+  }
+
+  term.builtUponBy.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added built-upon-by entr${toAdd.length > 1 ? 'ies' : 'y'} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddRunsOn(flags) {
+  // Positional mode: add-runs-on <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags['runs-on'] && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --runs-on (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags['runs-on'] ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.runsOn.includes(v));
+  const toAdd      = incoming.filter(v => !term.runsOn.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: runs-on entry "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided runs-on entries already exist.');
+    process.exit(1);
+  }
+
+  term.runsOn.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added runs-on entr${toAdd.length > 1 ? 'ies' : 'y'} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddAlternative(flags) {
+  // Positional mode: add-alternative <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags.alternative && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --alternative (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags.alternative ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.alternatives.includes(v));
+  const toAdd      = incoming.filter(v => !term.alternatives.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: alternative "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided alternatives already exist.');
+    process.exit(1);
+  }
+
+  term.alternatives.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added alternative${toAdd.length > 1 ? 's' : ''} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddPartOf(flags) {
+  // Positional mode: add-part-of <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags['part-of'] && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --part-of (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags['part-of'] ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.partOf.includes(v));
+  const toAdd      = incoming.filter(v => !term.partOf.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: part-of entry "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided part-of entries already exist.');
+    process.exit(1);
+  }
+
+  term.partOf.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added part-of entr${toAdd.length > 1 ? 'ies' : 'y'} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddInclude(flags) {
+  // Positional mode: add-include <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags.include && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --include (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags.include ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.includes.includes(v));
+  const toAdd      = incoming.filter(v => !term.includes.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: include "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided includes already exist.');
+    process.exit(1);
+  }
+
+  term.includes.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added include${toAdd.length > 1 ? 's' : ''} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddExample(flags) {
+  // Positional mode: add-example <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags.example && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --example (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags.example ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.examples.includes(v));
+  const toAdd      = incoming.filter(v => !term.examples.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: example "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided examples already exist.');
+    process.exit(1);
+  }
+
+  term.examples.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added example${toAdd.length > 1 ? 's' : ''} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddUseCase(flags) {
+  // Positional mode: add-use-case <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags['use-case'] && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --use-case (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags['use-case'] ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.useCases.includes(v));
+  const toAdd      = incoming.filter(v => !term.useCases.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: use case "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided use cases already exist.');
+    process.exit(1);
+  }
+
+  term.useCases.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added use case${toAdd.length > 1 ? 's' : ''} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
+}
+
+function cmdAddRelatedConcept(flags) {
+  // Positional mode: add-related-concept <id> val1 val2 ...
+  if (!flags.id && flags._ && flags._.length >= 2) { flags.id = flags._[0]; flags._ = flags._.slice(1); }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+  if (!flags['related-concept'] && !(flags._ && flags._.length > 0)) {
+    console.error('Error: missing required argument: --related-concept (or provide values as positional arguments)');
+    process.exit(1);
+  }
+
+  const incoming = [...[].concat(flags['related-concept'] ?? []), ...(flags._ ?? [])];
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  const duplicates = incoming.filter(v => term.relatedConcepts.includes(v));
+  const toAdd      = incoming.filter(v => !term.relatedConcepts.includes(v));
+
+  if (duplicates.length > 0) {
+    for (const d of duplicates) {
+      console.error(`Skipped: related concept "${d}" already exists on "${term.name}".`);
+    }
+  }
+
+  if (toAdd.length === 0) {
+    console.error('Nothing added — all provided related concepts already exist.');
+    process.exit(1);
+  }
+
+  term.relatedConcepts.push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Added related concept${toAdd.length > 1 ? 's' : ''} [${toAdd.map(v => `"${v}"`).join(', ')}] to "${term.name}" (id: "${flags.id}") in ${termPath.join(' → ')}.`);
 }
 
 function cmdWhichAreDups(flags) {
@@ -666,44 +1043,596 @@ function cmdPrintLandscapeOverview() {
   ].join('\n'));
 }
 
-function cmdPrintTerms() {
+function cmdPrintTerms(flags = {}) {
   const taxonomy = loadTaxonomy();
+  const sortBySize = !!flags['sort-by-size'];
 
-  // Collect terms per continent, then sort each group alphabetically
+  // Helper: sum all array-field lengths for a term
+  function listSize(term) {
+    return ARRAY_FIELDS.reduce((sum, f) =>
+      sum + (Array.isArray(term[f]) ? term[f].length : 0), 0);
+  }
+
+  // Collect term rows per continent: { label, size }
   const byContinent = {};
   for (const [continentName, continentData] of Object.entries(taxonomy)) {
     const group = [];
     for (const [catName, catValue] of Object.entries(continentData)) {
       if (Array.isArray(catValue)) {
         for (const term of catValue) {
-          group.push(`${term.name}  —  ${continentName} > ${catName}`);
+          group.push({ label: `${term.name}  —  ${continentName} > ${catName}`, size: listSize(term) });
         }
       } else if (catValue !== null && typeof catValue === 'object') {
         for (const [subName, terms] of Object.entries(catValue)) {
           if (Array.isArray(terms)) {
             for (const term of terms) {
-              group.push(`${term.name}  —  ${continentName} > ${catName} > ${subName}`);
+              group.push({ label: `${term.name}  —  ${continentName} > ${catName} > ${subName}`, size: listSize(term) });
             }
           }
         }
       }
     }
-    group.sort((a, b) => a.localeCompare(b));
+    if (sortBySize) {
+      group.sort((a, b) => b.size - a.size || a.label.localeCompare(b.label));
+    } else {
+      group.sort((a, b) => a.label.localeCompare(b.label));
+    }
     byContinent[continentName] = group;
   }
 
   let total = 0;
+  let totalListItems = 0;
   const continentNames = Object.keys(byContinent);
   continentNames.forEach((continentName, i) => {
     const group = byContinent[continentName];
     const divider = '─'.repeat(50);
     console.log(`${divider}\n  ${continentName.toUpperCase()}  (${group.length} term${group.length !== 1 ? 's' : ''})\n${divider}`);
-    group.forEach(l => console.log(l));
+    const labelCol = Math.max(...group.map(r => r.label.length)) + 2;
+    group.forEach(r => console.log(`${r.label.padEnd(labelCol)}  ${r.size} list items`));
     total += group.length;
+    totalListItems += group.reduce((sum, r) => sum + r.size, 0);
     if (i < continentNames.length - 1) console.log('');
   });
 
-  console.log(`\n${'─'.repeat(50)}\n${total} term${total !== 1 ? 's' : ''} total`);
+  console.log(`\n${'─'.repeat(50)}\n${total} term${total !== 1 ? 's' : ''} total  |  ${totalListItems} list items total`);
+}
+
+function cmdPrintIds() {
+  const taxonomy = loadTaxonomy();
+
+  const rows = [];
+  for (const [continentName, continentData] of Object.entries(taxonomy)) {
+    for (const [catName, catValue] of Object.entries(continentData)) {
+      if (Array.isArray(catValue)) {
+        for (const term of catValue) {
+          rows.push({ id: term.id, name: term.name });
+        }
+      } else if (catValue !== null && typeof catValue === 'object') {
+        for (const terms of Object.values(catValue)) {
+          if (Array.isArray(terms)) {
+            for (const term of terms) {
+              rows.push({ id: term.id, name: term.name });
+            }
+          }
+        }
+      }
+    }
+  }
+
+  rows.sort((a, b) => a.id.localeCompare(b.id));
+
+  const idCol = Math.max(...rows.map(r => r.id.length)) + 2;
+  for (const { id, name } of rows) {
+    console.log(`${id.padEnd(idCol)}${name}`);
+  }
+
+  console.log(`\n${rows.length} term${rows.length !== 1 ? 's' : ''} total`);
+}
+
+function cmdPrintSchema() {
+  const strSet = new Set(SCHEMA_STRINGS);
+  const arrSet = new Set(SCHEMA_ARRAYS);
+
+  // Start with the canonical order, then append any fields not yet listed there.
+  const ordered = [...SCHEMA_FIELD_ORDER];
+  for (const f of [...SCHEMA_STRINGS, ...SCHEMA_ARRAYS]) {
+    if (!ordered.includes(f)) ordered.push(f);
+  }
+
+  const lines = ['{'];
+  ordered.forEach((field, i) => {
+    const isArr      = arrSet.has(field);
+    const defaultVal = isArr ? '[]' : '""';
+    const typeLabel  = isArr ? 'string[]' : 'string';
+    const extra      = SCHEMA_FIELD_ANNOTATIONS[field];
+    const annotation = extra ? `${typeLabel}  (${extra})` : typeLabel;
+    const comma      = i < ordered.length - 1 ? ',' : '';
+    lines.push(`  "${field}": ${defaultVal}${comma}   // ${annotation}`);
+  });
+  lines.push('}');
+
+  console.log(lines.join('\n'));
+  console.log(`\n${ordered.length} fields  (${SCHEMA_STRINGS.length} string, ${SCHEMA_ARRAYS.length} array)`);
+}
+
+function cmdAppend(rawArgs) {
+  // Maps user-supplied field name (any case/form) → actual JSON array field name.
+  const FIELD_MAP = {
+    'alias': 'aliases',              'aliases': 'aliases',
+    'tag': 'tags',                   'tags': 'tags',
+    'used-with': 'usedWith',         'usedwith': 'usedWith',
+    'built-on': 'builtOn',           'builton': 'builtOn',
+    'built-upon-by': 'builtUponBy',  'builtuponby': 'builtUponBy',
+    'runs-on': 'runsOn',             'runson': 'runsOn',
+    'alternative': 'alternatives',   'alternatives': 'alternatives',
+    'part-of': 'partOf',             'partof': 'partOf',
+    'include': 'includes',           'includes': 'includes',
+    'example': 'examples',           'examples': 'examples',
+    'use-case': 'useCases',          'usecase': 'useCases',
+    'use-cases': 'useCases',         'usecases': 'useCases',
+    'related-concept': 'relatedConcepts',  'relatedconcept': 'relatedConcepts',
+    'related-concepts': 'relatedConcepts', 'relatedconcepts': 'relatedConcepts',
+  };
+
+  const VALID_FIELDS = [
+    'aliases', 'tags', 'used-with', 'built-on', 'built-upon-by', 'runs-on',
+    'alternatives', 'part-of', 'includes', 'examples', 'use-cases', 'related-concepts',
+  ];
+
+  if (rawArgs.length === 0) {
+    console.error('Error: append requires a field name, an id, and at least one value.');
+    console.error(`Valid fields: ${VALID_FIELDS.join(', ')}`);
+    process.exit(1);
+  }
+
+  let fieldKey, id, values;
+
+  if (!rawArgs[0].startsWith('--')) {
+    // Flagless positional mode: append <field> <id> <val1> [val2 ...]
+    fieldKey = rawArgs[0].toLowerCase();
+    id       = rawArgs[1];
+    values   = rawArgs.slice(2);
+    if (!id) {
+      console.error('Error: append <field> requires an id as the second positional argument.');
+      process.exit(1);
+    }
+  } else {
+    // Flag mode:
+    //   append --<field> --id <id> --<field> val1 --<field> val2  (per-value flags)
+    //   append --<field> --id <id> val1 val2                       (positional values)
+    fieldKey = rawArgs[0].slice(2).toLowerCase();
+
+    const idIdx = rawArgs.indexOf('--id');
+    if (idIdx === -1 || !rawArgs[idIdx + 1] || rawArgs[idIdx + 1].startsWith('--')) {
+      console.error('Error: append requires --id <term-id>.');
+      process.exit(1);
+    }
+    id = rawArgs[idIdx + 1];
+
+    values = [];
+    let i = 0;
+    while (i < rawArgs.length) {
+      const arg  = rawArgs[i];
+      const next = rawArgs[i + 1];
+      if (arg === '--id') {
+        i += 2; // skip --id and its value
+      } else if (arg.startsWith('--')) {
+        const key = arg.slice(2).toLowerCase();
+        if (key === fieldKey && next && !next.startsWith('--')) {
+          // --<field> value  pair
+          values.push(next);
+          i += 2;
+        } else {
+          i += 1; // leading field flag (before --id) or unrecognised — skip
+        }
+      } else {
+        values.push(arg); // bare positional value
+        i += 1;
+      }
+    }
+  }
+
+  const field = FIELD_MAP[fieldKey];
+  if (!field) {
+    console.error(`Error: unknown field "${fieldKey}".`);
+    console.error(`Valid fields: ${VALID_FIELDS.join(', ')}`);
+    process.exit(1);
+  }
+
+  if (values.length === 0) {
+    console.error('Error: append requires at least one value.');
+    process.exit(1);
+  }
+
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, id);
+
+  if (!Array.isArray(term[field])) {
+    console.error(`Error: field "${field}" on term "${id}" is not an array.`);
+    process.exit(1);
+  }
+
+  const duplicates = values.filter(v => term[field].includes(v));
+  const toAdd      = values.filter(v => !term[field].includes(v));
+
+  if (duplicates.length > 0) {
+    console.warn(`Warning: already present, skipping: ${duplicates.map(v => `"${v}"`).join(', ')}`);
+  }
+
+  if (toAdd.length === 0) {
+    console.log('Nothing new to add — all values already present.');
+    return;
+  }
+
+  term[field].push(...toAdd);
+  saveTaxonomy(taxonomy);
+  console.log(`Appended ${toAdd.length} value${toAdd.length !== 1 ? 's' : ''} to "${field}" on "${term.name}" (id: "${id}") in ${termPath.join(' → ')}:`);
+  for (const v of toAdd) console.log(`  + ${v}`);
+}
+
+// ── Validators ───────────────────────────────────────────────────────────────
+//
+// Each validator is a function with the signature:
+//   validator(taxonomy, opts) -> { issues: Issue[], fixes: FixFn[] }
+//
+// An Issue is:
+//   { termId, termName, continent, category, subcategory, field, duplicates, pathStr }
+//
+// A FixFn is a zero-argument function that mutates the taxonomy in-place.
+
+const ARRAY_FIELDS = [
+  'aliases', 'tags', 'usedWith', 'builtOn', 'builtUponBy',
+  'runsOn', 'alternatives', 'partOf', 'includes', 'examples',
+  'useCases', 'relatedConcepts',
+];
+
+// Walk every term in the taxonomy, calling cb(term, continent, category, subcategory).
+function walkTerms(taxonomy, cb) {
+  for (const [continentName, continentData] of Object.entries(taxonomy)) {
+    if (continentData === null || typeof continentData !== 'object') continue;
+    for (const [catName, catValue] of Object.entries(continentData)) {
+      if (Array.isArray(catValue)) {
+        for (const term of catValue) {
+          if (term && typeof term === 'object') cb(term, continentName, catName, '');
+        }
+      } else if (catValue !== null && typeof catValue === 'object') {
+        for (const [subName, subValue] of Object.entries(catValue)) {
+          if (Array.isArray(subValue)) {
+            for (const term of subValue) {
+              if (term && typeof term === 'object') cb(term, continentName, catName, subName);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Returns a flat list of { term, parentArray, continent, category, subcategory }
+// for every term in the taxonomy. Useful for validators that need parent refs.
+function collectTermEntries(taxonomy) {
+  const entries = [];
+  for (const [continentName, continentData] of Object.entries(taxonomy)) {
+    if (!continentData || typeof continentData !== 'object') continue;
+    for (const [catName, catValue] of Object.entries(continentData)) {
+      if (Array.isArray(catValue)) {
+        for (const term of catValue) {
+          if (term && typeof term === 'object')
+            entries.push({ term, parentArray: catValue, continent: continentName, category: catName, subcategory: '' });
+        }
+      } else if (catValue && typeof catValue === 'object') {
+        for (const [subName, subValue] of Object.entries(catValue)) {
+          if (Array.isArray(subValue)) {
+            for (const term of subValue) {
+              if (term && typeof term === 'object')
+                entries.push({ term, parentArray: subValue, continent: continentName, category: catName, subcategory: subName });
+            }
+          }
+        }
+      }
+    }
+  }
+  return entries;
+}
+
+/**
+ * Validator: find duplicate values inside each term's array fields.
+ * Comparison is case-insensitive and whitespace-trimmed.
+ * Returns issues and corresponding fix functions (mutate in-place).
+ */
+function validateFieldDuplicates(taxonomy) {
+  const issues = [];
+  const fixes   = [];
+
+  walkTerms(taxonomy, (term, continent, category, subcategory) => {
+    const termId   = term.id   ?? '?';
+    const termName = term.name ?? '?';
+    const pathStr  = subcategory
+      ? `${continent} > ${category} > ${subcategory}`
+      : `${continent} > ${category}`;
+
+    for (const field of ARRAY_FIELDS) {
+      const arr = term[field];
+      if (!Array.isArray(arr) || arr.length < 2) continue;
+
+      const seen    = new Map(); // normalised -> first index
+      const dupVals = [];       // original values that are duplicates
+
+      for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] !== 'string') continue;
+        const norm = arr[i].trim().toLowerCase();
+        if (seen.has(norm)) {
+          dupVals.push(arr[i]);
+        } else {
+          seen.set(norm, i);
+        }
+      }
+
+      if (dupVals.length > 0) {
+        issues.push({ termId, termName, continent, category, subcategory, field, duplicates: dupVals, pathStr });
+
+        // Capture references for the fix closure
+        const capturedField = field;
+        const capturedTerm  = term;
+        fixes.push(() => {
+          const seenNorm = new Set();
+          capturedTerm[capturedField] = capturedTerm[capturedField].filter(v => {
+            if (typeof v !== 'string') return true;
+            const n = v.trim().toLowerCase();
+            if (seenNorm.has(n)) return false;
+            seenNorm.add(n);
+            return true;
+          });
+        });
+      }
+    }
+  });
+
+  return { issues, fixes };
+}
+
+/**
+ * Validator: find terms that share the same id or name (fixable),
+ * and terms whose name matches another term's alias (warn-only, not fixable).
+ */
+function validateTermDuplicates(taxonomy) {
+  const issues = [];
+  const fixes  = [];
+
+  const entries = collectTermEntries(taxonomy);
+
+  // Build first-seen maps keyed on normalised value
+  const byId    = new Map(); // normId    → entry
+  const byName  = new Map(); // normName  → entry
+  const byAlias = new Map(); // normAlias → entry (for name-matches-alias check)
+
+  for (const e of entries) {
+    const normId   = (e.term.id   ?? '').trim().toLowerCase();
+    const normName = (e.term.name ?? '').trim().toLowerCase();
+    if (normId   && !byId.has(normId))     byId.set(normId, e);
+    if (normName && !byName.has(normName)) byName.set(normName, e);
+    if (Array.isArray(e.term.aliases)) {
+      for (const alias of e.term.aliases) {
+        if (typeof alias === 'string') {
+          const n = alias.trim().toLowerCase();
+          if (n && !byAlias.has(n)) byAlias.set(n, e);
+        }
+      }
+    }
+  }
+
+  const pathOf = e => e.subcategory
+    ? `${e.continent} > ${e.category} > ${e.subcategory}`
+    : `${e.continent} > ${e.category}`;
+
+  for (const e of entries) {
+    const { term } = e;
+    const normId   = (term.id   ?? '').trim().toLowerCase();
+    const normName = (term.name ?? '').trim().toLowerCase();
+    const termPath = pathOf(e);
+
+    // Duplicate ID (fixable — remove second occurrence)
+    const firstById = byId.get(normId);
+    if (firstById && firstById.term !== term) {
+      issues.push({
+        type: 'duplicate-id', fixable: true,
+        termA: { id: firstById.term.id, name: firstById.term.name, pathStr: pathOf(firstById) },
+        termB: { id: term.id, name: term.name, pathStr: termPath },
+      });
+      const arr = e.parentArray, t = term;
+      fixes.push(() => { const i = arr.indexOf(t); if (i !== -1) arr.splice(i, 1); });
+    }
+
+    // Duplicate name (fixable — remove second occurrence)
+    const firstByName = byName.get(normName);
+    if (firstByName && firstByName.term !== term) {
+      issues.push({
+        type: 'duplicate-name', fixable: true,
+        termA: { id: firstByName.term.id, name: firstByName.term.name, pathStr: pathOf(firstByName) },
+        termB: { id: term.id, name: term.name, pathStr: termPath },
+      });
+      const arr = e.parentArray, t = term;
+      fixes.push(() => { const i = arr.indexOf(t); if (i !== -1) arr.splice(i, 1); });
+    }
+
+    // Name matches another term's alias (warn-only, not fixable)
+    const aliasEntry = byAlias.get(normName);
+    if (aliasEntry && aliasEntry.term !== term) {
+      issues.push({
+        type: 'name-matches-alias', fixable: false,
+        termA: { id: aliasEntry.term.id, name: aliasEntry.term.name, pathStr: pathOf(aliasEntry) },
+        termB: { id: term.id, name: term.name, pathStr: termPath },
+        aliasValue: term.name,
+      });
+    }
+  }
+
+  return { issues, fixes };
+}
+
+// ── Validate commands ─────────────────────────────────────────────────────────
+
+function cmdValidateFieldDuplicates(flags) {
+  const fixMode  = flags.fix === true;
+  const taxonomy = loadTaxonomy();
+
+  let termsScanned  = 0;
+  let fieldsScanned = 0;
+  let totalListItems = 0;
+  walkTerms(taxonomy, (term) => {
+    termsScanned++;
+    fieldsScanned += ARRAY_FIELDS.length;
+    totalListItems += ARRAY_FIELDS.reduce((sum, f) =>
+      sum + (Array.isArray(term[f]) ? term[f].length : 0), 0);
+  });
+
+  const { issues, fixes } = validateFieldDuplicates(taxonomy);
+
+  if (issues.length === 0) {
+    console.log('No duplicate field values found.');
+  } else {
+    for (const iss of issues) {
+      const sub = iss.subcategory ? ` > ${iss.subcategory}` : '';
+      console.log([
+        '',
+        'Duplicate found:',
+        '',
+        `  Path:       ${iss.pathStr}`,
+        `  Term:       ${iss.termId} (${iss.termName})`,
+        `  Field:      ${iss.field}`,
+        `  Duplicates: ${iss.duplicates.join(', ')}`,
+      ].join('\n'));
+    }
+  }
+
+  const totalDups = issues.reduce((n, iss) => n + iss.duplicates.length, 0);
+  let removed = 0;
+
+  if (fixMode && issues.length > 0) {
+    fixes.forEach(fn => fn());
+    removed = totalDups;
+    saveTaxonomy(taxonomy);
+    console.log('\ntaxonomy.json updated.');
+  }
+
+  console.log([
+    '',
+    '─'.repeat(40),
+    `  Terms scanned:             ${termsScanned}`,
+    `  Fields scanned:            ${fieldsScanned}`,
+    `  Total list items:          ${totalListItems}`,
+    `  Duplicate entries found:   ${totalDups}`,
+    `  Expected entries after:   ${totalListItems - totalDups}`,
+    `  Duplicate entries removed: ${removed}`,
+  ].join('\n'));
+
+  // Per-term duplicate count summary (only terms that have duplicates)
+  if (issues.length > 0) {
+    // Build per-term totals: duplicate count + total list-field item count
+    const byTerm = new Map(); // termId -> { termName, count, totalItems }
+    for (const iss of issues) {
+      if (!byTerm.has(iss.termId)) {
+        byTerm.set(iss.termId, { termName: iss.termName, count: 0, totalItems: 0 });
+      }
+      byTerm.get(iss.termId).count += iss.duplicates.length;
+    }
+
+    // Second pass: sum all list-field lengths for each affected term
+    walkTerms(taxonomy, (term) => {
+      if (!byTerm.has(term.id)) return;
+      const entry = byTerm.get(term.id);
+      entry.totalItems = ARRAY_FIELDS.reduce((sum, f) =>
+        sum + (Array.isArray(term[f]) ? term[f].length : 0), 0);
+    });
+
+    const rows = [...byTerm.entries()]
+      .sort((a, b) => b[1].count - a[1].count || a[0].localeCompare(b[0]));
+
+    const labelCol = Math.max(...rows.map(([id]) => id.length)) + 2;
+    console.log('\n' + '─'.repeat(40));
+    console.log('  Terms with duplicates:\n');
+    for (const [id, { termName, count, totalItems }] of rows) {
+      const label    = `${id} (${termName})`;
+      const dupPart  = `${count} duplicate${count !== 1 ? 's' : ''}`;
+      const outOf    = totalItems > 0 ? ` (out of ${totalItems} list items)` : '';
+      console.log(`  ${label.padEnd(labelCol)}  ${dupPart}${outOf}`);
+    }
+  }
+
+  if (!fixMode && issues.length > 0) {
+    console.log('\nRun with --fix to remove duplicates.');
+  }
+}
+
+function cmdValidateTermDuplicates(flags) {
+  const fixMode  = flags.fix === true;
+  const taxonomy = loadTaxonomy();
+
+  let termsScanned = 0;
+  walkTerms(taxonomy, () => { termsScanned++; });
+
+  const { issues, fixes } = validateTermDuplicates(taxonomy);
+
+  const fixable  = issues.filter(i =>  i.fixable);
+  const warnOnly = issues.filter(i => !i.fixable);
+
+  if (issues.length === 0) {
+    console.log('No term-level duplicates found.');
+  } else {
+    for (const iss of fixable) {
+      const typeLabel = iss.type === 'duplicate-id' ? 'Duplicate ID' : 'Duplicate name';
+      console.log([
+        '',
+        `${typeLabel}:`,
+        '',
+        `  Term A:  ${iss.termA.id} (${iss.termA.name})`,
+        `           ${iss.termA.pathStr}`,
+        `  Term B:  ${iss.termB.id} (${iss.termB.name})`,
+        `           ${iss.termB.pathStr}`,
+      ].join('\n'));
+    }
+
+    if (warnOnly.length > 0) {
+      console.log('\n' + '─'.repeat(40));
+      console.log('  Warnings (manual review — excluded from --fix):\n');
+      for (const iss of warnOnly) {
+        const pad = ' '.repeat(Math.max(0, iss.termA.id.length + iss.termA.name.length + 4));
+        console.log([
+          '',
+          'Name matches alias:',
+          '',
+          `  "${iss.aliasValue}" is the name of:   ${iss.termB.id} (${iss.termB.name})`,
+          `                           ${iss.termB.pathStr}`,
+          `  But is also an alias of: ${iss.termA.id} (${iss.termA.name})`,
+          `                           ${iss.termA.pathStr}`,
+        ].join('\n'));
+      }
+    }
+  }
+
+  let removed = 0;
+  if (fixMode && fixable.length > 0) {
+    fixes.forEach(fn => fn());
+    removed = fixable.length;
+    saveTaxonomy(taxonomy);
+    console.log('\ntaxonomy.json updated.');
+  }
+
+  const dupIds   = fixable.filter(i => i.type === 'duplicate-id').length;
+  const dupNames = fixable.filter(i => i.type === 'duplicate-name').length;
+  console.log([
+    '',
+    '─'.repeat(40),
+    `  Terms scanned:         ${termsScanned}`,
+    `  Duplicate IDs found:   ${dupIds}`,
+    `  Duplicate names found: ${dupNames}`,
+    `  Name/alias conflicts:  ${warnOnly.length}`,
+    `  Terms removed (fix):   ${removed}`,
+  ].join('\n'));
+
+  if (!fixMode && fixable.length > 0) {
+    console.log('\nRun with --fix to remove duplicate terms (keeps first occurrence).');
+  }
 }
 
 // ── Command registry ──────────────────────────────────────────────────────────
@@ -715,9 +1644,24 @@ const COMMANDS = {
   'move-term':   { fn: cmdMoveTerm,   desc: 'Move a term to a different category or subcategory' },
   'add-alias':              { fn: cmdAddAlias,              desc: 'Append one or more aliases to a term' },
   'add-tag':                { fn: cmdAddTag,                desc: 'Append one or more tags to a term' },
+  'add-used-with':          { fn: cmdAddUsedWith,          desc: 'Append one or more used-with entries to a term' },
+  'add-built-on':           { fn: cmdAddBuiltOn,           desc: 'Append one or more built-on entries to a term' },
+  'add-built-upon-by':      { fn: cmdAddBuiltUponBy,       desc: 'Append one or more built-upon-by entries to a term' },
+  'add-runs-on':            { fn: cmdAddRunsOn,            desc: 'Append one or more runs-on entries to a term' },
+  'add-alternative':        { fn: cmdAddAlternative,       desc: 'Append one or more alternatives to a term' },
+  'add-part-of':            { fn: cmdAddPartOf,            desc: 'Append one or more part-of entries to a term' },
+  'add-include':            { fn: cmdAddInclude,           desc: 'Append one or more includes to a term' },
+  'add-example':            { fn: cmdAddExample,           desc: 'Append one or more examples to a term' },
+  'add-use-case':           { fn: cmdAddUseCase,           desc: 'Append one or more use cases to a term' },
+  'add-related-concept':    { fn: cmdAddRelatedConcept,    desc: 'Append one or more related concepts to a term' },
   'print-landscape-overview': { fn: cmdPrintLandscapeOverview, desc: 'Print a structural overview of the taxonomy with counts' },
   'print-terms':              { fn: cmdPrintTerms,              desc: 'Print a sorted list of all terms with their location' },
+  'print-ids':                { fn: cmdPrintIds,                desc: 'Print a sorted list of all term ids and names' },
+  'print-schema':             { fn: cmdPrintSchema,             desc: 'Print the current term JSON schema with field types' },
+  'append':                   { fn: cmdAppend, raw: true,        desc: 'Append values to any array field on a term' },
   'which-are-dups':           { fn: cmdWhichAreDups,           desc: 'Check a list of names/ids and report duplicates vs new terms' },
+  'validate-field-duplicates': { fn: cmdValidateFieldDuplicates, desc: 'Report (or fix) duplicate values in array fields across all terms' },
+  'validate-term-duplicates':  { fn: cmdValidateTermDuplicates,  desc: 'Report (or fix) terms with duplicate id or name; warn on name/alias conflicts' },
 };
 
 // ── Help ──────────────────────────────────────────────────────────────────────
@@ -796,10 +1740,76 @@ function printUsage() {
     '  --id             (required)',
     '  --tag            (required, repeatable)',
     '',
+    'add-used-with flags:',
+    '  --id             (required)',
+    '  --used-with      (required, repeatable)',
+    '',
+    'add-built-on flags:',
+    '  --id             (required)',
+    '  --built-on       (required, repeatable)',
+    '',
+    'add-built-upon-by flags:',
+    '  --id             (required)',
+    '  --built-upon-by  (required, repeatable)',
+    '',
+    'add-runs-on flags:',
+    '  --id             (required)',
+    '  --runs-on        (required, repeatable)',
+    '',
+    'add-alternative flags:',
+    '  --id             (required)',
+    '  --alternative    (required, repeatable)',
+    '',
+    'add-part-of flags:',
+    '  --id             (required)',
+    '  --part-of        (required, repeatable)',
+    '',
+    'add-include flags:',
+    '  --id             (required)',
+    '  --include        (required, repeatable)',
+    '',
+    'add-example flags:',
+    '  --id             (required)',
+    '  --example        (required, repeatable)',
+    '',
+    'add-use-case flags:',
+    '  --id             (required)',
+    '  --use-case       (required, repeatable)',
+    '',
+    'add-related-concept flags:',
+    '  --id             (required)',
+    '  --related-concept(required, repeatable)',
+    '',
     'print-landscape-overview flags:',
     '  (none)',
     '',
+    'print-terms flags:',
+    '  (none)          Default mode — print terms sorted alphabetically within each continent',
+    '  --sort-by-size  Sort terms by total list-field item count (descending) instead of alphabetically',
+    '',
+    'print-ids flags:',
+    '  (none)          Print all term ids and names, sorted alphabetically by id',
+    '',
+    'print-schema flags:',
+    '  (none)          Print the current term JSON schema with field types and annotations',
+    '',
+    'append usage (three equivalent forms):',
+    '  append --<field> --id <id> --<field> val1 --<field> val2',
+    '  append --<field> --id <id> val1 val2',
+    '  append <field> <id> val1 val2',
+    '  Valid fields: aliases, tags, used-with, built-on, built-upon-by, runs-on,',
+    '                alternatives, part-of, includes, examples, use-cases, related-concepts',
+    '',
+    'validate-field-duplicates flags:',
+    '  (none)        Report mode — print all duplicate values found in array fields',
+    '  --fix         Fix mode — remove duplicates and write taxonomy.json',
+    '',
+    'validate-term-duplicates flags:',
+    '  (none)        Report mode — find terms sharing an id or name; warn on name/alias conflicts',
+    '  --fix         Fix mode — remove duplicate terms (second occurrence); name/alias conflicts excluded',
+    '',
     'which-are-dups flags:',
+
     '  --name           (repeatable — check by display name or alias, case-insensitive)',
     '  --id             (optional, repeatable — check by term id)',
   ].join('\n'));
@@ -821,7 +1831,13 @@ function main() {
     process.exit(1);
   }
 
-  COMMANDS[command].fn(parseFlags(rest));
+  // Commands with raw:true receive the unparsed argv slice instead of parsed flags.
+  // This lets them implement their own positional/flagless syntax.
+  if (COMMANDS[command].raw) {
+    COMMANDS[command].fn(rest);
+  } else {
+    COMMANDS[command].fn(parseFlags(rest));
+  }
 }
 
 main();
