@@ -1219,6 +1219,1197 @@
             "Android Studio",
             "Visual Studio Code"
           ]
+        },
+        {
+          "id": "r",
+          "name": "R",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "R Language",
+            "R Programming Language"
+          ],
+          "notes": "Programming language and environment commonly used for statistics, data analysis, data visualization, scientific computing, and academic research. Particularly relevant in data science, analytics, statistical modeling, and research-heavy workflows.",
+          "tags": [
+            "programming-language",
+            "statistics",
+            "data-science",
+            "data-analysis",
+            "visualization",
+            "scientific-computing",
+            "analytics"
+          ],
+          "whatIsIt": "Statistical Programming Language",
+          "description": "A programming language and software environment designed for statistical computing, data analysis, visualization, modeling, and research-oriented data workflows.",
+          "usedWith": [
+            "Statistics",
+            "Data Science",
+            "Data Analysis",
+            "Data Visualization",
+            "Machine Learning",
+            "RStudio",
+            "SQL",
+            "Python"
+          ],
+          "builtOn": [
+            "Statistics",
+            "Statistical Computing",
+            "Functional Programming",
+            "Vectorized Operations",
+            "Data Analysis"
+          ],
+          "builtUponBy": [
+            "Statistical Models",
+            "Data Analysis Workflows",
+            "Data Visualization Dashboards",
+            "Research Reports",
+            "Analytics Pipelines"
+          ],
+          "runsOn": [
+            "R Runtime",
+            "Windows",
+            "Linux",
+            "MacOS",
+            "RStudio"
+          ],
+          "alternatives": [
+            "Python",
+            "Julia",
+            "MATLAB",
+            "SAS",
+            "Stata"
+          ],
+          "partOf": [
+            "Data Science",
+            "Statistical Computing",
+            "Analytics",
+            "Scientific Computing",
+            "Software Development"
+          ],
+          "includes": [],
+          "examples": [
+            "Statistical Analysis Script",
+            "Data Visualization Report",
+            "R Markdown Report",
+            "Predictive Model",
+            "Data Cleaning Script",
+            "Research Analysis Pipeline"
+          ],
+          "useCases": [
+            "Statistical Analysis",
+            "Data Cleaning",
+            "Data Visualization",
+            "Scientific Research",
+            "Exploratory Data Analysis",
+            "Building Statistical Models",
+            "Creating Research Reports",
+            "Analytics Prototyping"
+          ],
+          "relatedConcepts": [
+            "Statistics",
+            "Data Science",
+            "Data Analysis",
+            "Data Visualization",
+            "Machine Learning",
+            "Python",
+            "Julia",
+            "SQL",
+            "RStudio",
+            "Scientific Computing"
+          ]
+        },
+        {
+          "id": "lua",
+          "name": "Lua",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [],
+          "notes": "Lightweight, embeddable scripting language commonly used for game development, application scripting, configuration, plugins, and extending larger software systems. Known for its small runtime, simple syntax, and frequent use as an embedded extension language.",
+          "tags": [
+            "programming-language",
+            "scripting-language",
+            "embedded-scripting",
+            "game-development",
+            "lightweight",
+            "extension-language"
+          ],
+          "whatIsIt": "Lightweight Embeddable Scripting Language",
+          "description": "A lightweight programming language designed for scripting, extension, and embedding inside larger applications, often used in games, tools, plugins, and configurable software systems.",
+          "usedWith": [
+            "C",
+            "C++",
+            "Game Engines",
+            "Embedded Systems",
+            "Plugins",
+            "Configuration",
+            "Scripting"
+          ],
+          "builtOn": [
+            "Scripting",
+            "Procedural Programming",
+            "Dynamic Typing",
+            "Embeddable Runtime"
+          ],
+          "builtUponBy": [
+            "Game Scripts",
+            "Application Plugins",
+            "Embedded Scripting Systems",
+            "Configuration Systems",
+            "Modding Systems"
+          ],
+          "runsOn": [
+            "Lua Runtime",
+            "Embedded Runtime",
+            "Game Engines",
+            "Applications",
+            "Operating Systems"
+          ],
+          "alternatives": [
+            "Python",
+            "JavaScript",
+            "Ruby",
+            "Tcl",
+            "Scheme"
+          ],
+          "partOf": [
+            "Software Development",
+            "Game Development",
+            "Scripting",
+            "Embedded Scripting",
+            "Application Extension"
+          ],
+          "includes": [],
+          "examples": [
+            "Game Scripting",
+            "Application Plugin Script",
+            "Lua Configuration Script",
+            "Modding Script",
+            "Embedded Lua Runtime"
+          ],
+          "useCases": [
+            "Embedding a Scripting Language in an Application",
+            "Writing Game Logic",
+            "Creating Plugins",
+            "Building Modding Systems",
+            "Writing Configuration Scripts",
+            "Extending C or C++ Applications"
+          ],
+          "relatedConcepts": [
+            "Scripting",
+            "C",
+            "C++",
+            "Game Development",
+            "Embedded Systems",
+            "Plugins",
+            "Runtime",
+            "Configuration",
+            "Python",
+            "JavaScript"
+          ]
+        },
+        {
+          "id": "perl",
+          "name": "Perl",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Perl Language",
+            "Practical Extraction and Reporting Language"
+          ],
+          "notes": "General-purpose scripting language historically popular for text processing, system administration, automation, CGI web programming, report generation, and glue code. It is less dominant in new projects today but remains relevant in legacy systems, Unix tooling, automation scripts, and older web/server environments.",
+          "tags": [
+            "programming-language",
+            "scripting-language",
+            "text-processing",
+            "automation",
+            "unix",
+            "legacy",
+            "system-administration"
+          ],
+          "whatIsIt": "General-Purpose Scripting Language",
+          "description": "A flexible scripting language known for strong text-processing capabilities, regular expressions, automation, system administration scripts, and glue code across Unix-like environments and legacy software systems.",
+          "usedWith": [
+            "Regular Expressions",
+            "Unix",
+            "Linux",
+            "Shell Scripting",
+            "System Administration",
+            "Text Processing",
+            "Web Servers",
+            "Databases"
+          ],
+          "builtOn": [
+            "Scripting",
+            "Text Processing",
+            "Regular Expressions",
+            "Unix Tooling"
+          ],
+          "builtUponBy": [
+            "Automation Scripts",
+            "System Administration Tools",
+            "Text Processing Pipelines",
+            "Legacy Web Applications",
+            "CGI Scripts",
+            "Reporting Scripts"
+          ],
+          "runsOn": [
+            "Perl Interpreter",
+            "Linux",
+            "Unix",
+            "MacOS",
+            "Windows"
+          ],
+          "alternatives": [
+            "Python",
+            "Ruby",
+            "Bash",
+            "PHP",
+            "JavaScript"
+          ],
+          "partOf": [
+            "Software Development",
+            "Scripting",
+            "System Administration",
+            "Automation",
+            "Unix Tooling"
+          ],
+          "includes": [],
+          "examples": [
+            "Text Processing Script",
+            "System Administration Script",
+            "CGI Script",
+            "Log Parsing Tool",
+            "Report Generation Script",
+            "Automation Script"
+          ],
+          "useCases": [
+            "Text Processing",
+            "Log Parsing",
+            "System Administration Automation",
+            "Writing Glue Code",
+            "Maintaining Legacy Scripts",
+            "Report Generation",
+            "Regular Expression Heavy Processing",
+            "Unix Automation"
+          ],
+          "relatedConcepts": [
+            "Scripting",
+            "Regular Expressions",
+            "Bash",
+            "Python",
+            "Ruby",
+            "Linux",
+            "Unix",
+            "System Administration",
+            "Automation",
+            "Text Processing"
+          ]
+        },
+        {
+          "id": "matlab",
+          "name": "MATLAB",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Matrix Laboratory",
+            "MATLAB Language"
+          ],
+          "notes": "Programming language and numerical computing environment commonly used for engineering, scientific computing, signal processing, simulations, control systems, data analysis, modeling, and prototyping. It is especially common in academic, research, aerospace, automotive, and engineering-heavy environments.",
+          "tags": [
+            "programming-language",
+            "numerical-computing",
+            "scientific-computing",
+            "engineering",
+            "simulation",
+            "data-analysis",
+            "prototyping"
+          ],
+          "whatIsIt": "Numerical Computing Programming Language and Environment",
+          "description": "A programming language and computing environment designed for matrix-based computation, numerical analysis, visualization, modeling, simulation, and engineering-focused technical computing.",
+          "usedWith": [
+            "Scientific Computing",
+            "Numerical Computing",
+            "Data Analysis",
+            "Simulation",
+            "Signal Processing",
+            "Control Systems",
+            "Machine Learning",
+            "Engineering"
+          ],
+          "builtOn": [
+            "Matrix Mathematics",
+            "Numerical Computing",
+            "Array Programming",
+            "Scientific Computing"
+          ],
+          "builtUponBy": [
+            "Engineering Simulations",
+            "Signal Processing Workflows",
+            "Control System Models",
+            "Numerical Analysis Scripts",
+            "Research Prototypes",
+            "Simulink Models"
+          ],
+          "runsOn": [
+            "MATLAB Runtime",
+            "Windows",
+            "Linux",
+            "MacOS"
+          ],
+          "alternatives": [
+            "Python",
+            "R",
+            "Julia",
+            "Octave",
+            "NumPy",
+            "SciPy"
+          ],
+          "partOf": [
+            "Scientific Computing",
+            "Numerical Computing",
+            "Engineering Software",
+            "Data Analysis",
+            "Software Development"
+          ],
+          "includes": [],
+          "examples": [
+            "Signal Processing Script",
+            "Control System Model",
+            "Numerical Simulation",
+            "Engineering Analysis Script",
+            "Data Visualization",
+            "Simulink Model",
+            "Research Prototype"
+          ],
+          "useCases": [
+            "Numerical Computing",
+            "Engineering Simulation",
+            "Signal Processing",
+            "Control System Design",
+            "Data Analysis",
+            "Scientific Research",
+            "Algorithm Prototyping",
+            "Modeling Physical Systems"
+          ],
+          "relatedConcepts": [
+            "Scientific Computing",
+            "Numerical Computing",
+            "Simulation",
+            "Data Analysis",
+            "Machine Learning",
+            "Python",
+            "R",
+            "Julia",
+            "Octave",
+            "Simulink"
+          ]
+        },
+        {
+          "id": "scala",
+          "name": "Scala",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Scala Language"
+          ],
+          "notes": "General-purpose programming language that runs on the JVM and combines object-oriented and functional programming. Commonly used in backend systems, distributed systems, data engineering, big data processing, and functional programming-heavy codebases.",
+          "tags": [
+            "programming-language",
+            "jvm",
+            "functional-programming",
+            "object-oriented",
+            "backend",
+            "data-engineering",
+            "distributed-systems"
+          ],
+          "whatIsIt": "Object-Oriented and Functional JVM Programming Language",
+          "description": "A statically typed programming language that runs on the JVM and combines object-oriented programming with functional programming, often used for backend services, distributed systems, data engineering, and expressive type-safe applications.",
+          "usedWith": [
+            "Java",
+            "JVM",
+            "Apache Spark",
+            "Akka",
+            "Play Framework",
+            "sbt",
+            "Kafka",
+            "Big Data"
+          ],
+          "builtOn": [
+            "JVM",
+            "Java",
+            "Object-Oriented Programming",
+            "Functional Programming",
+            "Static Typing"
+          ],
+          "builtUponBy": [
+            "Apache Spark Applications",
+            "Akka Systems",
+            "Play Framework Applications",
+            "Backend Services",
+            "Data Engineering Pipelines",
+            "Functional Programming Codebases"
+          ],
+          "runsOn": [
+            "JVM",
+            "Java Runtime",
+            "Windows",
+            "Linux",
+            "MacOS"
+          ],
+          "alternatives": [
+            "Java",
+            "Kotlin",
+            "Groovy",
+            "Clojure",
+            "Haskell",
+            "F#"
+          ],
+          "partOf": [
+            "Java Ecosystem",
+            "JVM Ecosystem",
+            "Software Development",
+            "Backend Development",
+            "Data Engineering",
+            "Functional Programming"
+          ],
+          "includes": [],
+          "examples": [
+            "Apache Spark Job",
+            "Akka Actor System",
+            "Play Framework Web Application",
+            "Scala Backend Service",
+            "Data Engineering Pipeline",
+            "Functional Programming Library"
+          ],
+          "useCases": [
+            "Building Backend Services",
+            "Building Distributed Systems",
+            "Writing Apache Spark Jobs",
+            "Creating Data Engineering Pipelines",
+            "Applying Functional Programming",
+            "Building Type-Safe JVM Applications",
+            "Integrating with Java Codebases"
+          ],
+          "relatedConcepts": [
+            "Java",
+            "JVM",
+            "Functional Programming",
+            "Object Oriented Programming",
+            "Apache Spark",
+            "Akka",
+            "Play Framework",
+            "Big Data",
+            "Data Engineering",
+            "Kotlin"
+          ]
+        },
+        {
+          "id": "groovy",
+          "name": "Groovy",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Apache Groovy",
+            "Groovy Language"
+          ],
+          "notes": "Dynamic programming language for the JVM that is often used for scripting, build automation, testing, DSLs, and Java ecosystem tooling. Commonly associated with Gradle build scripts, Jenkins pipelines, and Groovy-based frameworks such as Grails.",
+          "tags": [
+            "programming-language",
+            "jvm",
+            "scripting-language",
+            "java-ecosystem",
+            "build-automation",
+            "dynamic-language",
+            "automation"
+          ],
+          "whatIsIt": "Dynamic JVM Programming Language",
+          "description": "A dynamic programming language that runs on the JVM and integrates closely with Java, commonly used for scripting, automation, build configuration, domain-specific languages, and Java ecosystem tooling.",
+          "usedWith": [
+            "Java",
+            "JVM",
+            "Gradle",
+            "Jenkins",
+            "Grails",
+            "Spring",
+            "Spock",
+            "Maven"
+          ],
+          "builtOn": [
+            "JVM",
+            "Java",
+            "Object-Oriented Programming",
+            "Scripting",
+            "Dynamic Typing"
+          ],
+          "builtUponBy": [
+            "Gradle Build Scripts",
+            "Jenkins Pipelines",
+            "Grails Applications",
+            "Spock Tests",
+            "Groovy DSLs",
+            "Automation Scripts"
+          ],
+          "runsOn": [
+            "JVM",
+            "Java Runtime",
+            "Windows",
+            "Linux",
+            "MacOS"
+          ],
+          "alternatives": [
+            "Java",
+            "Kotlin",
+            "Scala",
+            "Clojure",
+            "Python",
+            "Ruby"
+          ],
+          "partOf": [
+            "Java Ecosystem",
+            "JVM Ecosystem",
+            "Software Development",
+            "Build Automation",
+            "Scripting"
+          ],
+          "includes": [],
+          "examples": [
+            "Gradle Build Script",
+            "Jenkins Pipeline",
+            "Grails Web Application",
+            "Spock Test Suite",
+            "Groovy Automation Script",
+            "Custom DSL"
+          ],
+          "useCases": [
+            "Writing Gradle Build Scripts",
+            "Writing Jenkins Pipelines",
+            "Creating JVM Automation Scripts",
+            "Building Java-Compatible Applications",
+            "Creating Domain-Specific Languages",
+            "Writing Spock Tests",
+            "Extending Java Applications"
+          ],
+          "relatedConcepts": [
+            "Java",
+            "JVM",
+            "Gradle",
+            "Jenkins",
+            "Grails",
+            "Spock",
+            "Scripting",
+            "Build Automation",
+            "Kotlin",
+            "Scala"
+          ]
+        },
+        {
+          "id": "erlang",
+          "name": "Erlang",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Erlang Language"
+          ],
+          "notes": "Functional programming language and runtime ecosystem designed for highly concurrent, distributed, fault-tolerant, long-running systems. Historically important in telecom systems and still relevant for messaging, real-time systems, distributed infrastructure, and systems built on the BEAM virtual machine.",
+          "tags": [
+            "programming-language",
+            "functional-programming",
+            "concurrency",
+            "distributed-systems",
+            "fault-tolerance",
+            "telecom",
+            "beam"
+          ],
+          "whatIsIt": "Concurrent Functional Programming Language",
+          "description": "A functional programming language designed for building concurrent, distributed, fault-tolerant systems using lightweight processes, message passing, supervision trees, and the BEAM virtual machine.",
+          "usedWith": [
+            "BEAM",
+            "OTP",
+            "Distributed Systems",
+            "Concurrency",
+            "Fault Tolerance",
+            "Message Passing",
+            "Telecom Systems",
+            "Elixir"
+          ],
+          "builtOn": [
+            "Functional Programming",
+            "Actor Model",
+            "Message Passing",
+            "Concurrency",
+            "Fault-Tolerant Design"
+          ],
+          "builtUponBy": [
+            "OTP Applications",
+            "Telecom Systems",
+            "Messaging Systems",
+            "Distributed Applications",
+            "Fault-Tolerant Services",
+            "Elixir"
+          ],
+          "runsOn": [
+            "BEAM",
+            "Erlang VM",
+            "Windows",
+            "Linux",
+            "MacOS"
+          ],
+          "alternatives": [
+            "Elixir",
+            "Scala",
+            "Akka",
+            "Go",
+            "Haskell",
+            "Clojure"
+          ],
+          "partOf": [
+            "Software Development",
+            "Functional Programming",
+            "Distributed Systems",
+            "Concurrent Programming",
+            "Fault-Tolerant Systems",
+            "BEAM Ecosystem"
+          ],
+          "includes": [],
+          "examples": [
+            "Telecom Switching System",
+            "Messaging Platform",
+            "Fault-Tolerant Backend Service",
+            "Distributed Erlang Application",
+            "Real-Time Communication System",
+            "OTP Application"
+          ],
+          "useCases": [
+            "Building Fault-Tolerant Systems",
+            "Building Distributed Systems",
+            "Handling High Concurrency",
+            "Building Messaging Systems",
+            "Building Real-Time Communication Systems",
+            "Creating Long-Running Services",
+            "Telecom Infrastructure"
+          ],
+          "relatedConcepts": [
+            "Functional Programming",
+            "Distributed Systems",
+            "Concurrency",
+            "Fault Tolerance",
+            "Message Passing",
+            "Actor Model",
+            "BEAM",
+            "OTP",
+            "Elixir",
+            "Go"
+          ]
+        },
+        {
+          "id": "haskell",
+          "name": "Haskell",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Haskell Language"
+          ],
+          "notes": "Purely functional programming language known for strong static typing, lazy evaluation, immutability, type inference, and advanced type-system features. Commonly associated with functional programming research, compilers, language design, formal methods, and highly type-safe software systems.",
+          "tags": [
+            "programming-language",
+            "functional-programming",
+            "pure-functional",
+            "static-typing",
+            "type-system",
+            "lazy-evaluation",
+            "academic"
+          ],
+          "whatIsIt": "Pure Functional Programming Language",
+          "description": "A statically typed, purely functional programming language focused on immutability, lazy evaluation, mathematical function composition, type safety, and expressive abstraction through a powerful type system.",
+          "usedWith": [
+            "Functional Programming",
+            "Compilers",
+            "Formal Methods",
+            "Type Systems",
+            "Category Theory",
+            "GHC",
+            "Cabal",
+            "Stack"
+          ],
+          "builtOn": [
+            "Functional Programming",
+            "Lambda Calculus",
+            "Static Typing",
+            "Immutability",
+            "Lazy Evaluation"
+          ],
+          "builtUponBy": [
+            "Functional Programming Libraries",
+            "Compilers",
+            "Domain-Specific Languages",
+            "Type-Safe Applications",
+            "Research Systems",
+            "Formal Verification Tools"
+          ],
+          "runsOn": [
+            "GHC Runtime",
+            "Windows",
+            "Linux",
+            "MacOS"
+          ],
+          "alternatives": [
+            "F#",
+            "OCaml",
+            "Scala",
+            "Clojure",
+            "Erlang",
+            "Elixir"
+          ],
+          "partOf": [
+            "Software Development",
+            "Functional Programming",
+            "Programming Language Theory",
+            "Academic Computing",
+            "Type-Safe Software Development"
+          ],
+          "includes": [],
+          "examples": [
+            "Compiler Written in Haskell",
+            "Functional Programming Library",
+            "Domain-Specific Language",
+            "Type-Safe Backend Service",
+            "Formal Methods Tool",
+            "Research Prototype"
+          ],
+          "useCases": [
+            "Learning Functional Programming",
+            "Building Compilers",
+            "Creating Domain-Specific Languages",
+            "Writing Type-Safe Applications",
+            "Exploring Programming Language Theory",
+            "Modeling Complex Logic",
+            "Researching Formal Methods"
+          ],
+          "relatedConcepts": [
+            "Functional Programming",
+            "Static Typing",
+            "Type Systems",
+            "Lambda Calculus",
+            "Immutability",
+            "Pattern Matching",
+            "F#",
+            "Scala",
+            "OCaml",
+            "Programming Language Theory"
+          ]
+        },
+        {
+          "id": "julia",
+          "name": "Julia",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Julia Language",
+            "Julia Programming Language"
+          ],
+          "notes": "High-level programming language designed for technical computing, numerical computing, scientific computing, data science, machine learning, simulation, and high-performance computing. Often positioned as a language that combines Python-like usability with performance closer to compiled languages.",
+          "tags": [
+            "programming-language",
+            "scientific-computing",
+            "numerical-computing",
+            "data-science",
+            "high-performance-computing",
+            "machine-learning",
+            "technical-computing"
+          ],
+          "whatIsIt": "High-Performance Scientific Programming Language",
+          "description": "A high-level, high-performance programming language designed for numerical computing, scientific computing, data analysis, simulation, machine learning, and technical computing workloads.",
+          "usedWith": [
+            "Scientific Computing",
+            "Numerical Computing",
+            "Data Science",
+            "Machine Learning",
+            "Simulation",
+            "High-Performance Computing",
+            "Statistics",
+            "Data Visualization"
+          ],
+          "builtOn": [
+            "Multiple Dispatch",
+            "Numerical Computing",
+            "Scientific Computing",
+            "Dynamic Typing",
+            "JIT Compilation"
+          ],
+          "builtUponBy": [
+            "Scientific Computing Applications",
+            "Numerical Simulation Tools",
+            "Data Science Workflows",
+            "Machine Learning Models",
+            "High-Performance Computing Applications",
+            "Research Prototypes"
+          ],
+          "runsOn": [
+            "Julia Runtime",
+            "LLVM",
+            "Windows",
+            "Linux",
+            "MacOS"
+          ],
+          "alternatives": [
+            "Python",
+            "R",
+            "MATLAB",
+            "Fortran",
+            "C++",
+            "NumPy"
+          ],
+          "partOf": [
+            "Software Development",
+            "Scientific Computing",
+            "Numerical Computing",
+            "Data Science",
+            "High-Performance Computing",
+            "Technical Computing"
+          ],
+          "includes": [],
+          "examples": [
+            "Numerical Simulation",
+            "Scientific Computing Script",
+            "Machine Learning Model",
+            "Data Analysis Notebook",
+            "Optimization Model",
+            "High-Performance Computing Workflow",
+            "Research Prototype"
+          ],
+          "useCases": [
+            "Numerical Computing",
+            "Scientific Research",
+            "High-Performance Computing",
+            "Machine Learning",
+            "Data Analysis",
+            "Simulation",
+            "Optimization",
+            "Algorithm Prototyping",
+            "Technical Computing"
+          ],
+          "relatedConcepts": [
+            "Scientific Computing",
+            "Numerical Computing",
+            "Data Science",
+            "Machine Learning",
+            "High-Performance Computing",
+            "Python",
+            "R",
+            "MATLAB",
+            "Fortran",
+            "C++"
+          ]
+        },
+        {
+          "id": "elixir",
+          "name": "Elixir",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Elixir Language"
+          ],
+          "notes": "Functional programming language that runs on the BEAM virtual machine and is built on the Erlang ecosystem. Commonly used for scalable web applications, real-time systems, distributed systems, concurrent services, fault-tolerant backends, and Phoenix-based web development.",
+          "tags": [
+            "programming-language",
+            "functional-programming",
+            "beam",
+            "erlang-ecosystem",
+            "concurrency",
+            "distributed-systems",
+            "backend"
+          ],
+          "whatIsIt": "Functional BEAM Programming Language",
+          "description": "A functional programming language built on the Erlang VM that emphasizes concurrency, fault tolerance, scalability, developer productivity, and maintainable backend and real-time systems.",
+          "usedWith": [
+            "BEAM",
+            "Erlang",
+            "OTP",
+            "Phoenix Framework",
+            "Distributed Systems",
+            "Concurrency",
+            "Fault Tolerance",
+            "Backend Development"
+          ],
+          "builtOn": [
+            "Erlang",
+            "BEAM",
+            "OTP",
+            "Functional Programming",
+            "Actor Model",
+            "Message Passing"
+          ],
+          "builtUponBy": [
+            "Phoenix Applications",
+            "Real-Time Web Applications",
+            "Fault-Tolerant Backend Services",
+            "Distributed Applications",
+            "Concurrent Systems",
+            "LiveView Applications"
+          ],
+          "runsOn": [
+            "BEAM",
+            "Erlang VM",
+            "Windows",
+            "Linux",
+            "MacOS"
+          ],
+          "alternatives": [
+            "Erlang",
+            "Ruby",
+            "Go",
+            "Scala",
+            "Node.js",
+            "Clojure"
+          ],
+          "partOf": [
+            "Software Development",
+            "Functional Programming",
+            "BEAM Ecosystem",
+            "Backend Development",
+            "Distributed Systems",
+            "Concurrent Programming"
+          ],
+          "includes": [],
+          "examples": [
+            "Phoenix Web Application",
+            "Real-Time Chat Application",
+            "LiveView Application",
+            "Fault-Tolerant Backend Service",
+            "Distributed Elixir Application",
+            "Concurrent Data Processing Service"
+          ],
+          "useCases": [
+            "Building Scalable Web Applications",
+            "Building Real-Time Applications",
+            "Building Fault-Tolerant Backend Services",
+            "Handling High Concurrency",
+            "Building Distributed Systems",
+            "Creating Phoenix Applications",
+            "Building Long-Running Services"
+          ],
+          "relatedConcepts": [
+            "Erlang",
+            "BEAM",
+            "OTP",
+            "Phoenix Framework",
+            "Functional Programming",
+            "Distributed Systems",
+            "Concurrency",
+            "Fault Tolerance",
+            "Message Passing",
+            "Backend Development"
+          ]
+        },
+        {
+          "id": "cobol",
+          "name": "COBOL",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Common Business-Oriented Language",
+            "COBOL Language"
+          ],
+          "notes": "Legacy business programming language historically used for enterprise, banking, insurance, government, payroll, mainframe, and transaction-processing systems. It is less common in new software projects but remains important because many mission-critical enterprise systems still depend on COBOL codebases.",
+          "tags": [
+            "programming-language",
+            "legacy",
+            "mainframe",
+            "enterprise",
+            "business-software",
+            "transaction-processing",
+            "banking"
+          ],
+          "whatIsIt": "Legacy Business Programming Language",
+          "description": "A programming language designed for business data processing and enterprise transaction systems, especially in legacy mainframe environments used by banks, insurers, governments, and large organizations.",
+          "usedWith": [
+            "Mainframes",
+            "Enterprise Software",
+            "Batch Processing",
+            "Transaction Processing",
+            "Databases",
+            "Legacy Systems",
+            "Banking Systems",
+            "Government Systems"
+          ],
+          "builtOn": [
+            "Business Data Processing",
+            "Procedural Programming",
+            "File Processing",
+            "Mainframe Computing",
+            "Batch Processing"
+          ],
+          "builtUponBy": [
+            "Banking Systems",
+            "Insurance Systems",
+            "Payroll Systems",
+            "Government Systems",
+            "Mainframe Applications",
+            "Legacy Enterprise Applications"
+          ],
+          "runsOn": [
+            "Mainframes",
+            "IBM z/OS",
+            "Unix",
+            "Linux",
+            "Windows",
+            "COBOL Runtime"
+          ],
+          "alternatives": [
+            "Java",
+            "C#",
+            "Python",
+            "PL/I",
+            "RPG"
+          ],
+          "partOf": [
+            "Software Development",
+            "Enterprise Software",
+            "Legacy Systems",
+            "Mainframe Computing",
+            "Business Software"
+          ],
+          "includes": [],
+          "examples": [
+            "Mainframe Banking Application",
+            "Payroll Processing System",
+            "Insurance Claims System",
+            "Government Benefits System",
+            "Batch Processing Job",
+            "Enterprise Transaction System"
+          ],
+          "useCases": [
+            "Maintaining Legacy Mainframe Systems",
+            "Processing Business Transactions",
+            "Running Batch Jobs",
+            "Managing Payroll Systems",
+            "Supporting Banking Systems",
+            "Supporting Insurance Systems",
+            "Modernizing Legacy Enterprise Applications"
+          ],
+          "relatedConcepts": [
+            "Enterprise Software",
+            "Legacy System",
+            "Mainframe",
+            "Batch Processing",
+            "Transaction Processing",
+            "Banking Systems",
+            "Business Software",
+            "Data Processing",
+            "Java",
+            "C#"
+          ]
+        },
+        {
+          "id": "zig",
+          "name": "Zig",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Zig Language",
+            "Zig Programming Language"
+          ],
+          "notes": "General-purpose systems programming language focused on performance, safety, explicit control, simple syntax, manual memory management, and C interoperability. Often discussed as a modern alternative or complement to C for low-level software, tooling, embedded systems, and performance-sensitive applications.",
+          "tags": [
+            "programming-language",
+            "systems-programming",
+            "low-level",
+            "performance",
+            "c-interoperability",
+            "manual-memory-management",
+            "compiled-language"
+          ],
+          "whatIsIt": "Systems Programming Language",
+          "description": "A compiled systems programming language designed for performance, explicit control, predictable behavior, low-level programming, cross-compilation, and strong interoperability with C.",
+          "usedWith": [
+            "C",
+            "C++",
+            "Systems Programming",
+            "Embedded Systems",
+            "Operating Systems",
+            "Compilers",
+            "Build Tools",
+            "Cross-Compilation"
+          ],
+          "builtOn": [
+            "Systems Programming",
+            "Manual Memory Management",
+            "Compiled Languages",
+            "C Interoperability",
+            "Low-Level Programming"
+          ],
+          "builtUponBy": [
+            "Command-Line Tools",
+            "Embedded Applications",
+            "Systems Software",
+            "Compilers",
+            "Game Engines",
+            "Performance-Critical Libraries"
+          ],
+          "runsOn": [
+            "Native Machine Code",
+            "Windows",
+            "Linux",
+            "MacOS",
+            "Embedded Targets"
+          ],
+          "alternatives": [
+            "C",
+            "C++",
+            "Rust",
+            "Go",
+            "D"
+          ],
+          "partOf": [
+            "Software Development",
+            "Systems Programming",
+            "Low-Level Programming",
+            "Performance-Critical Software",
+            "Embedded Software Development"
+          ],
+          "includes": [],
+          "examples": [
+            "Command-Line Tool",
+            "Embedded Application",
+            "Systems Library",
+            "Game Engine Component",
+            "Compiler Tooling",
+            "C Library Replacement",
+            "Performance-Critical Service"
+          ],
+          "useCases": [
+            "Building Systems Software",
+            "Writing Performance-Critical Code",
+            "Creating Command-Line Tools",
+            "Developing Embedded Software",
+            "Replacing or Interoperating with C",
+            "Cross-Compiling Native Applications",
+            "Building Low-Level Libraries"
+          ],
+          "relatedConcepts": [
+            "C",
+            "C++",
+            "Rust",
+            "Systems Programming",
+            "Embedded Systems",
+            "Manual Memory Management",
+            "Compiler",
+            "Native Code",
+            "Performance Optimization",
+            "Cross-Compilation"
+          ]
         }
       ],
       "Markup & Data Languages": [
