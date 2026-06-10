@@ -1045,6 +1045,180 @@
             "Ownership",
             "Zero-Cost Abstractions"
           ]
+        },
+        {
+          "id": "objective-c",
+          "name": "Objective-C",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [
+            "Obj-C",
+            "Objective C"
+          ],
+          "notes": "Object-oriented programming language historically used heavily for macOS and iOS development before Swift became Apple's preferred modern language. Still relevant for maintaining older Apple-platform codebases and understanding legacy iOS/macOS projects.",
+          "tags": [
+            "programming-language",
+            "object-oriented",
+            "apple",
+            "ios",
+            "macos",
+            "legacy",
+            "native-development"
+          ],
+          "whatIsIt": "Object-Oriented Programming Language",
+          "description": "A programming language that adds object-oriented features and dynamic messaging to C, historically used to build applications for Apple platforms such as macOS and iOS.",
+          "usedWith": [
+            "C",
+            "C++",
+            "Swift",
+            "Xcode",
+            "iOS",
+            "MacOS",
+            "Cocoa",
+            "Cocoa Touch"
+          ],
+          "builtOn": [
+            "C",
+            "Object-Oriented Programming"
+          ],
+          "builtUponBy": [
+            "Cocoa Applications",
+            "Cocoa Touch Applications",
+            "Legacy iOS Applications",
+            "Legacy macOS Applications"
+          ],
+          "runsOn": [
+            "MacOS",
+            "iOS",
+            "Apple Platforms"
+          ],
+          "alternatives": [
+            "Swift",
+            "C++",
+            "C#",
+            "Java",
+            "Kotlin"
+          ],
+          "partOf": [
+            "Apple Development",
+            "Native Application Development",
+            "Software Development"
+          ],
+          "includes": [],
+          "examples": [
+            "iOS App Written in Objective-C",
+            "macOS Cocoa Application",
+            "Objective-C Library",
+            "Legacy Apple Application"
+          ],
+          "useCases": [
+            "Maintaining Legacy iOS Applications",
+            "Maintaining Legacy macOS Applications",
+            "Working with Older Apple Frameworks",
+            "Interoperating with Swift",
+            "Native Apple Platform Development"
+          ],
+          "relatedConcepts": [
+            "C",
+            "Swift",
+            "Xcode",
+            "iOS",
+            "MacOS",
+            "Object Oriented Programming",
+            "Cocoa",
+            "Cocoa Touch",
+            "Native Development"
+          ]
+        },
+        {
+          "id": "dart",
+          "name": "Dart",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Programming Languages",
+          "aliases": [],
+          "notes": "General-purpose programming language created by Google and best known as the primary language used with Flutter for cross-platform mobile, web, and desktop application development.",
+          "tags": [
+            "programming-language",
+            "google",
+            "flutter",
+            "cross-platform",
+            "mobile-development",
+            "frontend",
+            "application-development"
+          ],
+          "whatIsIt": "General-Purpose Programming Language",
+          "description": "A client-optimized programming language used to build applications across mobile, web, desktop, and server environments, especially with the Flutter UI framework.",
+          "usedWith": [
+            "Flutter",
+            "Android",
+            "iOS",
+            "Web Development",
+            "Mobile Development",
+            "Visual Studio Code",
+            "Android Studio"
+          ],
+          "builtOn": [
+            "Object-Oriented Programming",
+            "Class-Based Programming",
+            "C-Style Syntax"
+          ],
+          "builtUponBy": [
+            "Flutter Applications",
+            "Cross-Platform Mobile Applications",
+            "Dart Packages",
+            "Client-Side Applications"
+          ],
+          "runsOn": [
+            "Dart VM",
+            "Android",
+            "iOS",
+            "Web Browser",
+            "Desktop Operating Systems"
+          ],
+          "alternatives": [
+            "JavaScript",
+            "TypeScript",
+            "Kotlin",
+            "Swift",
+            "Java",
+            "C#"
+          ],
+          "partOf": [
+            "Flutter Ecosystem",
+            "Google Developer Ecosystem",
+            "Mobile Development",
+            "Cross-Platform Application Development",
+            "Software Development"
+          ],
+          "includes": [],
+          "examples": [
+            "Flutter Mobile App",
+            "Flutter Web App",
+            "Dart Command-Line Tool",
+            "Cross-Platform UI Application",
+            "Dart Package"
+          ],
+          "useCases": [
+            "Building Flutter Applications",
+            "Building Cross-Platform Mobile Apps",
+            "Building Web Applications",
+            "Building Desktop Applications",
+            "Creating UI-Heavy Client Applications",
+            "Writing Dart Packages"
+          ],
+          "relatedConcepts": [
+            "Flutter",
+            "Mobile Development",
+            "Cross-Platform Development",
+            "JavaScript",
+            "TypeScript",
+            "Kotlin",
+            "Swift",
+            "Android Studio",
+            "Visual Studio Code"
+          ]
         }
       ],
       "Markup & Data Languages": [

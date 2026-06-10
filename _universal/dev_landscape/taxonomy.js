@@ -32,6 +32,7 @@ function saveTaxonomy(taxonomy) {
 const BOOLEAN_FLAGS = new Set([
   'fix',
   'sort-by-size',
+  'show-subcategories',
   'clear-aliases', 'clear-tags', 'clear-notes',
   'clear-what-is-it', 'clear-description',
   'clear-used-with', 'clear-built-on', 'clear-built-upon-by',
@@ -1097,6 +1098,69 @@ function cmdPrintTerms(flags = {}) {
   console.log(`\n${'─'.repeat(50)}\n${total} term${total !== 1 ? 's' : ''} total  |  ${totalListItems} list items total`);
 }
 
+function cmdPrintTermsByCategory(flags) {
+  const showSubcategories = !!flags['show-subcategories'];
+  const taxonomy = loadTaxonomy();
+
+  // Collect data: continent → category → (subcategory → term[]) or flat term[]
+  const continents = [];
+  for (const [continentName, continentData] of Object.entries(taxonomy)) {
+    const categories = [];
+    for (const [catName, catValue] of Object.entries(continentData)) {
+      if (Array.isArray(catValue)) {
+        // No subcategories
+        categories.push({ name: catName, subcats: null, terms: catValue });
+      } else if (catValue !== null && typeof catValue === 'object') {
+        // Has subcategories
+        const subcats = [];
+        const allTerms = [];
+        for (const [subName, terms] of Object.entries(catValue)) {
+          if (Array.isArray(terms)) {
+            subcats.push({ name: subName, terms });
+            allTerms.push(...terms);
+          }
+        }
+        categories.push({ name: catName, subcats, terms: allTerms });
+      }
+    }
+    continents.push({ name: continentName, categories });
+  }
+
+  const totalTerms = continents.reduce((s, c) =>
+    s + c.categories.reduce((cs, cat) => cs + cat.terms.length, 0), 0);
+
+  const divH = '═'.repeat(52);
+  const divC = '─'.repeat(52);
+
+  continents.forEach((continent, ci) => {
+    const contTotal = continent.categories.reduce((s, cat) => s + cat.terms.length, 0);
+    console.log(`\n${divH}`);
+    console.log(`  ${continent.name.toUpperCase()}  (${contTotal} term${contTotal !== 1 ? 's' : ''})`);
+    console.log(divH);
+
+    continent.categories.forEach((cat, cati) => {
+      if (cati > 0) console.log('');
+      console.log(`  ${cat.name}  (${cat.terms.length})`);
+
+      if (showSubcategories && cat.subcats && cat.subcats.length > 0) {
+        // Show each subcategory with its terms indented
+        cat.subcats.forEach(sub => {
+          const subNames = sub.terms.map(t => t.name).sort((a, b) => a.localeCompare(b));
+          console.log(`    ┄ ${sub.name}  (${sub.terms.length})`);
+          subNames.forEach(n => console.log(`        ${n}`));
+        });
+      } else {
+        // Flat list — sort all terms together
+        const names = cat.terms.map(t => t.name).sort((a, b) => a.localeCompare(b));
+        names.forEach(n => console.log(`      ${n}`));
+      }
+    });
+  });
+
+  console.log(`\n${divC}`);
+  console.log(`${totalTerms} term${totalTerms !== 1 ? 's' : ''} total`);
+}
+
 function cmdPrintIds() {
   const taxonomy = loadTaxonomy();
 
@@ -1654,9 +1718,10 @@ const COMMANDS = {
   'add-example':            { fn: cmdAddExample,           desc: 'Append one or more examples to a term' },
   'add-use-case':           { fn: cmdAddUseCase,           desc: 'Append one or more use cases to a term' },
   'add-related-concept':    { fn: cmdAddRelatedConcept,    desc: 'Append one or more related concepts to a term' },
-  'print-landscape-overview': { fn: cmdPrintLandscapeOverview, desc: 'Print a structural overview of the taxonomy with counts' },
-  'print-terms':              { fn: cmdPrintTerms,              desc: 'Print a sorted list of all terms with their location' },
-  'print-ids':                { fn: cmdPrintIds,                desc: 'Print a sorted list of all term ids and names' },
+  'print-landscape-overview':  { fn: cmdPrintLandscapeOverview,  desc: 'Print a structural overview of the taxonomy with counts' },
+  'print-terms':               { fn: cmdPrintTerms,               desc: 'Print a sorted list of all terms with their location' },
+  'print-terms-by-category':   { fn: cmdPrintTermsByCategory,     desc: 'Print terms grouped by category; use --subcategory to show subcategory breakdowns' },
+  'print-ids':                 { fn: cmdPrintIds,                 desc: 'Print a sorted list of all term ids and names' },
   'print-schema':             { fn: cmdPrintSchema,             desc: 'Print the current term JSON schema with field types' },
   'append':                   { fn: cmdAppend, raw: true,        desc: 'Append values to any array field on a term' },
   'which-are-dups':           { fn: cmdWhichAreDups,           desc: 'Check a list of names/ids and report duplicates vs new terms' },

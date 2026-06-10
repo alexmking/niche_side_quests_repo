@@ -1,0 +1,809 @@
+PHASE *X* TERMS:
+(this is the largest list of potential new terms, before any weeding out)
+(each phase will further narrow down the 'legit' terms)
+(then once we feel we have a dense enough list of terms, we'll input them 1 by 1 into the SINGLE-TERM gpt BOT 🤖 that we used to populate the iniital 150 ish terms fully
+https://chatgpt.com/c/6a25c043-4da8-83ea-9e42-5c397fcdc0dd
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+IN THIS PHASE ALL WE DID WAS CONSOLIDATE ALL CATEGORY TERMS INTO 1 GIANT LIST OF TERMS (w small --- indicators to help discern between new categories/contininets)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+AFTER ALL CATEGORIES BELOW ARE FILLED: no more phases needed---here we have our master list ...
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+[  ] 1. copy the entire list of terms from all categories so we have 1 giant list of terms
+[  ] 2. paste that list in the gpt i already have prepped: 
+		https://chatgpt.com/c/6a28e113-567c-83ea-93cb-d6cad56ea3b7
+[  ] 3. Now we have a master list to pull from and track progress as we add each one
+[  ] 4. just go straight to the 1-term GPT bot: ❗(this is the BIG-TIME-CONSUMING-PART❗)
+		https://chatgpt.com/c/6a25c043-4da8-83ea-9e42-5c397fcdc0dd
+		and start inputting all these terms 1 by 1, then copy/paste add-term output into terminal 
+		(just like we did for all the 150+ original terms)
+⚠️ THIS PROCESS OF ADDING ALL THESE TERMS 1 by 1 IS A MARATHON, NOT A SPRINT...⚠️
+⚠️ DO NOT try to do them all in 1 day/sitting!!!
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+🔹DEVELOPMENT  4 						===============1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+1 🟦 LANGUAGES
+2 🟦 DEVELOPMENT TOOLS
+3 🟦 FRAMEOWRKS AND LIBS
+4 🟦 PLATOFRMS AND RUNTIMES
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+💚INFRASTRUCTURE 7 						===============2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+5 🟩 OPERATING SYSTEMS
+6 🟩 DATABASES
+7 🟩 CLOUD
+8 🟩 ONTAINERIZATIONS & ORCHESTRATION
+9 🟩 NETWORKIN
+10 🟩 SECURITY
+11 🟩 WEB SERVICES
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+💜 ENGINEERING 6 						===============3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+12 🟪 ARCHITECTURE & DESIGN
+13 🟪 METHODOLOGIES
+14 🟪 API TECHNOLOGIES
+15 🟪 TESTING
+16 🟪 DEBUGGING AND PROFILING
+17 🟪 SOFTWARE ENGINEERING CONCEPTS
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+###############################################################################
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+THE MASTER LIST OF NEW TERMS WE'RE GOING TO ADD TO LANDSCAPE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+###############################################################################
+===============================================================================
+-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+EXPL OF WHAT WERE DOING WITH THIS LIST:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+> this list is all the terms that I vetted and will be adding to the DEV_LANDSCAPE officially (over time, bc it's going to take a while to add all of these considering the process/steps needed for each 1, which I explain below:)
+------ STEPS TO ADD A TERM ------- (follow these steps for EACH of the 650+ terms in our master list)
+1. input the term into our 2-term bot GPT: ==> https://chatgpt.com/c/6a28f0ec-cf88-83ea-a2ed-e6dd171bd61e   		    ❌ https://chatgpt.com/c/6a25c043-4da8-83ea-9e42-5c397fcdc0dd (not using this 1-term bot anymore)
+2. wait for the full output to finish
+3. copy the 'add-term' command of the output
+4. paste the add-term command into your terminal and run it 
+5. (double check you didn't get any 'no-id-found' error which happens every once in a while when the 'id' for a term isn't super obvious)
+6. check off the term you just added in the list below so we keep track of where we last left off (IMP TO DO THIS!!!!)
+6. DONE (now the term is officially added and you can move onto the NEXT term)(use dlandupdate command or the update-and-open raycast command to check that the term was added succesffully)
+
+
+ ❗TODO❗ FOOD-FOR-THOUGHT:
+ ❗TODO❗ MAYBE it's worth updating the GPT bot chat so that i can accept 2 or more terms at once... that way I could def speed up this process 
+ ❗TODO❗ FOOD-FOR-THOUGHT:
+			--> THEN I COULD EVEN CHANGE THE OUTPUT FORMAT SO THAT THE LAST TWO SECTIONS ARE BOTH THE 'add-term' COMMANDS FOR THE two TERMS I PROVIDED...
+
+
+
+
+
+⚠️ UPDATE!!!
+⚠️ UPDATE!!!
+⚠️ UPDATE!!! Use this 'two-at-a-time' GPT chat instead of the 1-term one 
+https://chatgpt.com/c/6a28f0ec-cf88-83ea-a2ed-e6dd171bd61e
+⚠️ UPDATE!!! Use this 'two-at-a-time' GPT chat instead of the 1-term one 
+⚠️ UPDATE!!!
+⚠️ UPDATE!!!
+
+
+###############################################################################
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MASTER-LIST-OF-TERMS:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+###############################################################################
+(11111111111111111111111111111111111111111111111111111111111111111111111)
+(1)
+- ✅Objective-C
+- ✅Dart
+- Lua
+- R
+- MATLAB
+- Perl
+- Groovy
+- Scala
+- Haskell
+- Erlang
+- Elixir
+- Julia
+- Zig
+- COBOL
+- Fortran
+- VB.NET
+- Clojure
+- OCaml
+- VBA
+- YAML
+- TOML
+- Markdown
+- HCL
+- GraphQL
+
+(2)
+- IntelliJ IDEA
+- PyCharm
+- WebStorm
+- CLion
+- Rider
+- NetBeans
+- Sublime Text
+- Atom
+- Cursor
+- Zed
+- Mercurial
+- Perforce
+- Bitbucket
+- Azure DevOps
+- Jira
+- Confluence
+- Trello
+- Gradle
+- Ant
+- CMake
+- Make
+- MSBuild
+- npm
+- Yarn
+- pnpm
+- pip
+- Poetry
+- NuGet
+- Composer
+- Cargo
+- Homebrew
+- GitHub Actions
+- GitLab CI/CD
+- CircleCI
+- Travis CI
+- TeamCity
+- Bamboo
+- Terraform
+- Swagger
+- OpenAPI
+- ESLint
+- Prettier
+- SonarQube
+- NPM Registry
+
+(3)
+- FastAPI
+- NestJS
+- Fastify
+- Koa
+- Nuxt
+- Svelte
+- SvelteKit
+- Astro
+- Remix
+- Ember.js
+- Tailwind CSS
+- Material UI
+- D3.js
+- Three.js
+- PyTorch
+- scikit-learn
+- NumPy
+- pandas
+- OpenCV
+- Hibernate
+- Entity Framework
+- Qt
+- Electron
+- .NET MAUI
+- Vite
+- Webpack
+- Babel
+- Gradle
+- JUnit
+- Jest
+- Cypress
+- Selenium
+- Unity
+- Unreal Engine
+- Terraform
+
+(4)
+- Java Runtime Environment
+- Java Development Kit
+- Android Runtime
+- Common Language Runtime
+- Mono
+- Deno
+- Bun
+- WebAssembly
+- Heroku
+- Vercel
+- Netlify
+- Cloudflare Workers
+- AWS Lambda
+- Azure Functions
+- Google Cloud Functions
+- Google Cloud Run
+- Apache Tomcat
+- Jetty
+- WildFly
+- BEAM
+- CPython
+- PHP-FPM
+- iOS
+- Android
+- Flutter
+- Apache Cordova
+
+(22222222222222222222222222222222222222222222222222222222222222222222222)
+(5)
+- Android
+- iOS
+- iPadOS
+- watchOS
+- tvOS
+- ChromeOS
+- Debian
+- Fedora
+- Red Hat Enterprise Linux
+- Rocky Linux
+- AlmaLinux
+- Arch Linux
+- openSUSE
+- SUSE Linux Enterprise
+- FreeBSD
+- OpenBSD
+- NetBSD
+- Solaris
+- AIX
+- HP-UX
+- z/OS
+- QNX
+- VxWorks
+- FreeRTOS
+- Kali Linux
+- Windows Server
+- Windows Subsystem for Linux
+- Zephyr
+
+(6)
+- SQLite
+- MariaDB
+- Redis
+- Elasticsearch
+- OpenSearch
+- Amazon DynamoDB
+- Apache Cassandra
+- Couchbase
+- CouchDB
+- Neo4j
+- InfluxDB
+- TimescaleDB
+- Snowflake
+- BigQuery
+- Amazon Redshift
+- IBM Db2
+- CockroachDB
+- YugabyteDB
+- HBase
+- Hive
+- PostGIS
+- Firebase Realtime Database
+- Supabase
+- PlanetScale
+- MongoDB Atlas
+- Amazon RDS
+- Azure SQL Database
+- Google Cloud SQL
+- Databricks
+- Apache Spark
+- Kafka
+- RabbitMQ
+
+(7)
+- Oracle Cloud Infrastructure
+- IBM Cloud
+- Alibaba Cloud
+- DigitalOcean
+- Linode
+- Vultr
+- Cloudflare
+- Heroku
+- Vercel
+- Netlify
+- Public Cloud
+- Private Cloud
+- Hybrid Cloud
+- Multi-cloud
+- Serverless Computing
+- Function as a Service
+- Backend as a Service
+- Database as a Service
+- Container as a Service
+- Virtual Private Cloud
+- Content Delivery Network
+- Edge Computing
+- AWS Lambda
+- Azure Functions
+- Google Cloud Run
+- CloudFormation
+- Kubernetes Engine
+- S3
+- EC2
+
+(8)
+- containerd
+- CRI-O
+- runc
+- Podman
+- BuildKit
+- Docker Compose
+- OpenShift
+- Helm
+- Kustomize
+- kubectl
+- Minikube
+- Kind
+- k3s
+- MicroK8s
+- Amazon Elastic Kubernetes Service
+- Azure Kubernetes Service
+- Google Kubernetes Engine
+- Nomad
+- Rancher
+- Harbor
+- Argo CD
+- Flux
+- Istio
+- Linkerd
+- Docker Engine
+- Docker Desktop
+- Docker Hub
+- Open Container Initiative
+- OCI Image Format
+- Container Runtime Interface
+- Container Network Interface
+- container image
+- container registry
+- Dapr
+
+(9)
+- TCP/IP
+- TCP
+- UDP
+- IP
+- IPv4
+- IPv6
+- DNS
+- DHCP
+- NAT
+- VPN
+- VLAN
+- LAN
+- WAN
+- WLAN
+- Router
+- Switch
+- Wireless Access Point
+- Firewall
+- Load Balancer
+- Proxy Server
+- Reverse Proxy
+- Subnet
+- CIDR
+- OSI Model
+- TCP/IP Model
+- HTTP
+- HTTPS
+- TLS
+- SSH
+- FTP
+- SFTP
+- SMTP
+- IMAP
+- SNMP
+- BGP
+- OSPF
+- SDN
+- OpenFlow
+- Network Function Virtualization
+- Nmap
+- tcpdump
+- OpenVPN
+- WireGuard
+- Open vSwitch
+- WebSocket
+- gRPC
+- GraphQL
+- RabbitMQ
+- Kafka
+- CDN
+- VPC
+- OpenSSH
+
+(10)
+- Vulnerability Assessment
+- Vulnerability Management
+- Threat Modeling
+- Risk Assessment
+- Security Audit
+- Security Hardening
+- Attack Surface
+- Attack Vector
+- Exploit
+- Payload
+- Malware
+- Ransomware
+- Phishing
+- Social Engineering
+- Identity and Access Management
+- Authentication
+- Authorization
+- Multi-Factor Authentication
+- Single Sign-On
+- OAuth
+- OpenID Connect
+- SAML
+- LDAP
+- Active Directory
+- Public Key Infrastructure
+- Encryption
+- Hashing
+- Digital Signature
+- Certificate Authority
+- TLS Certificate
+- Zero Trust
+- Principle of Least Privilege
+- Defense in Depth
+- Security Information and Event Management
+- Endpoint Detection and Response
+- Intrusion Detection System
+- Intrusion Prevention System
+- Web Application Firewall
+- Data Loss Prevention
+- Incident Response
+- Digital Forensics
+- Security Operations Center
+- OWASP Top 10
+- OWASP ZAP
+- Burp Suite
+- Nmap
+- Nessus
+- OpenVAS
+- Kali Linux
+- Snort
+- Suricata
+- Splunk
+- Application Security
+- DevSecOps
+- Secure SDLC
+- Compliance
+- SOC 2
+- ISO 27001
+- NIST Cybersecurity Framework
+
+(11)
+- Caddy
+- LiteSpeed Web Server
+- OpenLiteSpeed
+- lighttpd
+- OpenResty
+- Apache Tomcat
+- Jetty
+- WildFly
+- GlassFish
+- WebLogic
+- WebSphere
+- HAProxy
+- Traefik
+- Envoy
+- AWS Application Load Balancer
+- Nginx Proxy Manager
+- Apache Traffic Server
+- Varnish
+- Squid
+- Gunicorn
+- uWSGI
+- Puma
+- Phusion Passenger
+- Kestrel
+
+(33333333333333333333333333333333333333333333333333333333333333333333333)
+(12)
+- Event-Driven Architecture
+- Layered Architecture
+- Hexagonal Architecture
+- Clean Architecture
+- Onion Architecture
+- Monolithic Architecture
+- Modular Monolith
+- Client-Server Architecture
+- Peer-to-Peer Architecture
+- Three-Tier Architecture
+- Domain-Driven Design
+- Bounded Context
+- CQRS
+- Event Sourcing
+- Saga Pattern
+- Backend for Frontend
+- Strangler Fig Pattern
+- Sidecar Pattern
+- Ambassador Pattern
+- Adapter Pattern
+- Facade Pattern
+- Factory Pattern
+- Singleton Pattern
+- Observer Pattern
+- Dependency Injection
+- Inversion of Control
+- SOLID
+- Separation of Concerns
+- Low Coupling
+- High Cohesion
+- Component Diagram
+- Deployment Diagram
+- Use Case Diagram
+- Activity Diagram
+- State Diagram
+- Data Flow Diagram
+- C4 Model
+- Architecture Decision Record
+- gRPC
+- Message Queue
+- Pub/Sub
+- Event Bus
+- Service Mesh
+- API Gateway
+- Technical Debt
+- Refactoring
+- Design System
+- Wireframe
+
+(13)
+- Waterfall
+- Iterative Development
+- Incremental Development
+- Spiral Model
+- Lean Software Development
+- Extreme Programming
+- Feature-Driven Development
+- Dynamic Systems Development Method
+- Rapid Application Development
+- Rational Unified Process
+- V-Model
+- DevSecOps
+- GitOps
+- Site Reliability Engineering
+- Continuous Testing
+- Trunk-Based Development
+- Git Flow
+- Feature Branch Workflow
+- Code Review
+- Pull Request Workflow
+- Mob Programming
+- Refactoring
+- Regression Testing
+- Acceptance Test Driven Development
+- Specification by Example
+- Domain-Driven Design
+- ScrumBan
+- Scaled Agile Framework
+- Large-Scale Scrum
+- Disciplined Agile
+- ITIL
+- Change Management
+- Incident Management
+- Release Management
+- A/B Testing
+- Design Thinking
+
+(14)
+- API
+- SOAP
+- GraphQL
+- gRPC
+- Webhook
+- OpenAPI
+- Swagger
+- WSDL
+- RPC
+- JSON-RPC
+- XML-RPC
+- API Gateway
+- API Endpoint
+- API Contract
+- API Versioning
+- Rate Limiting
+- Pagination
+- Idempotency
+- HATEOAS
+- Server-Sent Events
+- AsyncAPI
+- Protocol Buffers
+- Insomnia
+- curl
+- JWT
+- CORS
+- MQTT
+
+(15)
+- Integration Testing
+- End-to-End Testing
+- Functional Testing
+- Regression Testing
+- Smoke Testing
+- Sanity Testing
+- Acceptance Testing
+- Performance Testing
+- Load Testing
+- Stress Testing
+- Security Testing
+- Accessibility Testing
+- Compatibility Testing
+- Exploratory Testing
+- Manual Testing
+- Automated Testing
+- Test Case
+- Test Plan
+- Test Suite
+- Test Coverage
+- Mocking
+- Stubbing
+- Test Double
+- Snapshot Testing
+- Mutation Testing
+- Property-Based Testing
+- Contract Testing
+- Unit Test Framework
+- JUnit
+- TestNG
+- NUnit
+- xUnit.net
+- MSTest
+- pytest
+- unittest
+- Mocha
+- Jest
+- Vitest
+- Karma
+- Cypress
+- Playwright
+- Selenium
+- Cucumber
+- Gherkin
+- Robot Framework
+- JMeter
+- k6
+- Gatling
+- Locust
+- Pact
+- JaCoCo
+- Istanbul
+- Type Checking
+- Static Analysis
+- Fuzz Testing
+- Chaos Engineering
+
+(16)
+- Linux perf
+- OProfile
+- SystemTap
+- DTrace
+- strace
+- ltrace
+- AddressSanitizer
+- ThreadSanitizer
+- UndefinedBehaviorSanitizer
+- MemorySanitizer
+- LeakSanitizer
+- rr
+- WinDbg
+- Visual Studio Debugger
+- Xcode Instruments
+- Xcode Debugger
+- Firefox Developer Tools
+- Java Debugger
+- Java Flight Recorder
+- Java Mission Control
+- VisualVM
+- YourKit
+- dotTrace
+- dotMemory
+- PerfView
+- dotnet-trace
+- dotnet-dump
+- dotnet-counters
+- Python Debugger
+- cProfile
+- PySpy
+- Node.js Inspector
+- V8 Profiler
+- FlameGraph
+- Callgrind
+- Massif
+- Memcheck
+- Helgrind
+- KCachegrind
+- Debug Adapter Protocol
+- Observability
+- OpenTelemetry
+- Prometheus
+- Grafana
+- Sentry
+- New Relic
+- Datadog
+
+(17)
+- Abstraction
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Composition
+- Coupling
+- Cohesion
+- Modularity
+- Dependency Management
+- Interface
+- Implementation
+- Module
+- Component
+- Service
+- Middleware
+- Library
+- Framework
+- Runtime
+- Compiler
+- Interpreter
+- Build
+- Artifact
+- Release
+- Versioning
+- Semantic Versioning
+- Backward Compatibility
+- Code Smell
+- Maintainability
+- Scalability
+- Reliability
+- Availability
+- Fault Tolerance
+- Resilience
+- Monitoring
+- Logging
+- Metrics
+- Distributed Tracing
+- Rollback
+- Rollout
+- Feature Flag
+- Configuration Management
+- Environment
+- Production
+- Staging
+- Legacy System
+- Greenfield Project
+- Brownfield Project
+- Codebase
+- Repository
+- Monorepo
+- API Integration
+- Data Migration
+- Schema Migration
+- Software Maintenance
+- Requirements Engineering
+- Clean Code
+- Code Quality
+- Linting
+- Cloud Native
+- Platform Engineering
+- Product Management
+- UX Design
