@@ -33,6 +33,7 @@ const BOOLEAN_FLAGS = new Set([
   'fix',
   'sort-by-size',
   'show-subcategories',
+  'compact', 'outline', 'json', 'labeled',
   'clear-aliases', 'clear-tags', 'clear-notes',
   'clear-what-is-it', 'clear-description',
   'clear-used-with', 'clear-built-on', 'clear-built-upon-by',
@@ -271,6 +272,8 @@ function cmdAddTerm(flags) {
 }
 
 function cmdRemoveTerm(flags) {
+  // Positional mode: remove-term <id>
+  if (!flags.id && flags._ && flags._.length >= 1) { flags.id = flags._[0]; }
   if (!flags.id) {
     console.error('Error: missing required argument: --id');
     process.exit(1);
@@ -1219,6 +1222,266 @@ function cmdPrintSchema() {
   console.log(`\n${ordered.length} fields  (${SCHEMA_STRINGS.length} string, ${SCHEMA_ARRAYS.length} array)`);
 }
 
+function cmdPrintTerm(flags) {
+  // Positional mode: print-term <id>
+  if (!flags.id && flags._ && flags._.length >= 1) { flags.id = flags._[0]; }
+  if (!flags.id) {
+    console.error('Error: missing required argument: --id');
+    process.exit(1);
+  }
+
+  const taxonomy = loadTaxonomy();
+  const { term, termPath } = findTermById(taxonomy, flags.id);
+
+  if (flags.json)    { printTermJson(term);                return; }
+  if (flags.compact) { printTermCompact(term, termPath);   return; }
+  if (flags.outline) { printTermOutline(term, termPath);   return; }
+  if (flags.labeled) { printTermLabeled(term, termPath);   return; }
+  printTermDefault(term, termPath);
+}
+
+// ── Format: default (labelled rows with section dividers) ─────────────────────
+function printTermDefault(term, termPath) {
+  const div  = '═'.repeat(54);
+  const divS = '─'.repeat(54);
+
+  function isEmpty(v) {
+    return v === null || v === undefined ||
+      (typeof v === 'string' && v.trim() === '') ||
+      (Array.isArray(v) && v.length === 0);
+  }
+
+  function row(label, value, { force = false } = {}) {
+    if (!force && isEmpty(value)) return;
+    const pad = 18;
+    console.log(`  ${label.padEnd(pad)}${Array.isArray(value) ? value.join(', ') : value}`);
+  }
+
+  function section(title, fields, printRows) {
+    if (fields.every(isEmpty)) return;
+    console.log(`\n  ${divS.slice(0, 40)}`);
+    console.log(`  ${title.toUpperCase()}`);
+    printRows();
+  }
+
+  const location = termPath.join(' › ');
+
+  console.log(`\n${div}`);
+  console.log(`  ${term.name}`);
+  console.log(div);
+  console.log('');
+
+  row('ID',          term.id,          { force: true });
+  row('Location',    location,          { force: true });
+  row('Subcategory', term.subcategory);
+
+  section('Summary', [term.whatIsIt, term.description], () => {
+    row('What is it',  term.whatIsIt);
+    row('Description', term.description);
+  });
+
+  section('Metadata', [term.aliases, term.tags, term.notes], () => {
+    row('Aliases', term.aliases);
+    row('Tags',    term.tags);
+    row('Notes',   term.notes);
+  });
+
+  section('Technical Relationships',
+    [term.usedWith, term.builtOn, term.builtUponBy, term.runsOn, term.alternatives], () => {
+    row('Used with',     term.usedWith);
+    row('Built on',      term.builtOn);
+    row('Built upon by', term.builtUponBy);
+    row('Runs on',       term.runsOn);
+    row('Alternatives',  term.alternatives);
+  });
+
+  section('Conceptual Relationships',
+    [term.partOf, term.includes, term.examples, term.useCases, term.relatedConcepts], () => {
+    row('Part of',          term.partOf);
+    row('Includes',         term.includes);
+    row('Examples',         term.examples);
+    row('Use cases',        term.useCases);
+    row('Related concepts', term.relatedConcepts);
+  });
+
+  console.log(`\n${divS}`);
+}
+
+// ── Format: compact (two-line header + key fields only, no section dividers) ──
+function printTermCompact(term, termPath) {
+  const location = termPath.join(' › ');
+
+  const notEmpty = v => v !== null && v !== undefined &&
+    !(typeof v === 'string' && v.trim() === '') &&
+    !(Array.isArray(v) && v.length === 0);
+
+  console.log(`\n${term.name}  [${term.id}]`);
+  console.log(`  ${location}`);
+  if (notEmpty(term.subcategory)) console.log(`  Subcategory    ${term.subcategory}`);
+  console.log('');
+  if (notEmpty(term.whatIsIt))    console.log(`  What is it     ${term.whatIsIt}`);
+  if (notEmpty(term.description)) console.log(`  Description    ${term.description}`);
+  if (notEmpty(term.aliases))     console.log(`  Aliases        ${term.aliases.join(', ')}`);
+  if (notEmpty(term.tags))        console.log(`  Tags           ${term.tags.join(', ')}`);
+  if (notEmpty(term.notes))       console.log(`  Notes          ${term.notes}`);
+  console.log('');
+}
+
+// ── Format: outline (tree-style bullet lists per section) ─────────────────────
+function printTermOutline(term, termPath) {
+  const location = termPath.join(' › ');
+  const notEmpty = v => v !== null && v !== undefined &&
+    !(typeof v === 'string' && v.trim() === '') &&
+    !(Array.isArray(v) && v.length === 0);
+
+  function bullets(values) {
+    if (!notEmpty(values)) return;
+    if (!Array.isArray(values)) { console.log(`    ${values}`); return; }
+    for (const v of values) console.log(`    · ${v}`);
+  }
+
+  function outlineSection(title, entries) {
+    // entries: [label, value] pairs; only printed if at least one is non-empty
+    if (!entries.some(([, v]) => notEmpty(v))) return;
+    console.log(`\n  ${title}`);
+    for (const [label, value] of entries) {
+      if (!notEmpty(value)) continue;
+      if (Array.isArray(value)) {
+        console.log(`    ${label}:`);
+        for (const v of value) console.log(`      · ${v}`);
+      } else {
+        // Wrap long strings at ~70 chars for readability
+        const words = value.split(' ');
+        const lines = [];
+        let current = '';
+        for (const word of words) {
+          if (current.length + word.length + 1 > 70 && current) {
+            lines.push(current);
+            current = word;
+          } else {
+            current = current ? `${current} ${word}` : word;
+          }
+        }
+        if (current) lines.push(current);
+        const indent = `    ${label}:  `;
+        const cont   = ' '.repeat(indent.length);
+        lines.forEach((l, i) => console.log(`${i === 0 ? indent : cont}${l}`));
+      }
+    }
+  }
+
+  console.log(`\n◆ ${term.name}  (${term.id})`);
+  console.log(`  ${location}`);
+  if (notEmpty(term.subcategory)) console.log(`  subcategory: ${term.subcategory}`);
+
+  outlineSection('Summary', [
+    ['What is it',  term.whatIsIt],
+    ['Description', term.description],
+  ]);
+
+  outlineSection('Metadata', [
+    ['Aliases', term.aliases],
+    ['Tags',    term.tags],
+    ['Notes',   term.notes],
+  ]);
+
+  outlineSection('Technical Relationships', [
+    ['Used with',     term.usedWith],
+    ['Built on',      term.builtOn],
+    ['Built upon by', term.builtUponBy],
+    ['Runs on',       term.runsOn],
+    ['Alternatives',  term.alternatives],
+  ]);
+
+  outlineSection('Conceptual Relationships', [
+    ['Part of',          term.partOf],
+    ['Includes',         term.includes],
+    ['Examples',         term.examples],
+    ['Use cases',        term.useCases],
+    ['Related concepts', term.relatedConcepts],
+  ]);
+
+  console.log('');
+}
+
+// ── Format: json (raw pretty-printed JSON of the term object) ─────────────────
+function printTermJson(term) {
+  console.log(JSON.stringify(term, null, 2));
+}
+
+// ── Format: labeled (TERM: header, colon-aligned rows, dash-divider sections) ──
+function printTermLabeled(term, termPath) {
+  const notEmpty = v => v !== null && v !== undefined &&
+    !(typeof v === 'string' && v.trim() === '') &&
+    !(Array.isArray(v) && v.length === 0);
+
+  const divSec  = '─'.repeat(40);
+  const divFull = '─'.repeat(54);
+
+  // Path = full walk path (continent › category [› subcategory])
+  const path     = termPath.join(' › ');
+  const category = termPath[1] ?? '';
+
+  // Identity rows — label col width 18
+  function idRow(label, value) {
+    if (!notEmpty(value)) return;
+    console.log(`  ${(label + ':').padEnd(18)}${value}`);
+  }
+
+  // Section content rows — label col width 19 (longest label is 'Related-concepts:' = 17+1 colon)
+  function secRow(label, value) {
+    if (!notEmpty(value)) return;
+    const display = Array.isArray(value) ? value.join(', ') : value;
+    console.log(`  ${(label + ':').padEnd(19)}${display}`);
+  }
+
+  // Print a section only when at least one field is non-empty
+  function section(title, entries) {
+    if (!entries.some(([, v]) => notEmpty(v))) return;
+    console.log(`\n  ${divSec}`);
+    console.log(`  ${title}`);
+    for (const [label, value] of entries) secRow(label, value);
+  }
+
+  // ── Header ──────────────────────────────────────────────────────
+  console.log(`\nTERM: ${term.id}`);
+  idRow('ID',          term.id);
+  idRow('Name',        term.name);
+  idRow('Path',        path);
+  idRow('Category',    category);
+  if (notEmpty(term.subcategory)) idRow('Subcategory', term.subcategory);
+
+  // ── Sections ─────────────────────────────────────────────────────
+  section('SUMMARY', [
+    ['What-is-it',  term.whatIsIt],
+    ['Description', term.description],
+  ]);
+
+  section('METADATA', [
+    ['Aliases', term.aliases],
+    ['Tags',    term.tags],
+    ['Notes',   term.notes],
+  ]);
+
+  section('TECHNICAL RELATIONSHIPS', [
+    ['Used with',     term.usedWith],
+    ['Built-on',      term.builtOn],
+    ['Built-upon-by', term.builtUponBy],
+    ['Runs-on',       term.runsOn],
+    ['Alternatives',  term.alternatives],
+  ]);
+
+  section('CONCEPTUAL RELATIONSHIPS', [
+    ['Part-of',          term.partOf],
+    ['Includes',         term.includes],
+    ['Examples',         term.examples],
+    ['Use-cases',        term.useCases],
+    ['Related-concepts', term.relatedConcepts],
+  ]);
+
+  console.log(`\n${divFull}`);
+}
+
 function cmdAppend(rawArgs) {
   // Maps user-supplied field name (any case/form) → actual JSON array field name.
   const FIELD_MAP = {
@@ -1723,6 +1986,7 @@ const COMMANDS = {
   'print-terms-by-category':   { fn: cmdPrintTermsByCategory,     desc: 'Print terms grouped by category; use --subcategory to show subcategory breakdowns' },
   'print-ids':                 { fn: cmdPrintIds,                 desc: 'Print a sorted list of all term ids and names' },
   'print-schema':             { fn: cmdPrintSchema,             desc: 'Print the current term JSON schema with field types' },
+  'print-term':               { fn: cmdPrintTerm,               desc: 'Print all fields of a single term in a readable format' },
   'append':                   { fn: cmdAppend, raw: true,        desc: 'Append values to any array field on a term' },
   'which-are-dups':           { fn: cmdWhichAreDups,           desc: 'Check a list of names/ids and report duplicates vs new terms' },
   'validate-field-duplicates': { fn: cmdValidateFieldDuplicates, desc: 'Report (or fix) duplicate values in array fields across all terms' },
@@ -1858,6 +2122,24 @@ function printUsage() {
     'print-schema flags:',
     '  (none)          Print the current term JSON schema with field types and annotations',
     '',
+    'print-term flags:',
+    '  --id <id>       Term id to display (required)',
+    '  print-term <id> Positional shorthand — no flag needed',
+    '  --compact       Compact: two-line header then key fields only, no section dividers',
+    '  --outline       Outline: tree-style bullet list, all fields shown',
+    '  --json          JSON: raw pretty-printed JSON of the term object',
+    '  --labeled       Labeled: TERM: header, colon-aligned rows, dash-section dividers',
+    '  (default)       Full: labelled rows grouped by section with dividers',
+    '',
+    'print-term examples:',
+    '  node taxonomy.js print-term python',
+    '  node taxonomy.js print-term --id python',
+    '  node taxonomy.js print-term python --compact',
+    '  node taxonomy.js print-term python --outline',
+    '  node taxonomy.js print-term python --json',
+    '',
+    'Other examples:',
+    '',  // keep spacing before which-are-dups
     'append usage (three equivalent forms):',
     '  append --<field> --id <id> --<field> val1 --<field> val2',
     '  append --<field> --id <id> val1 val2',

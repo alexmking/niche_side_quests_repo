@@ -1,0 +1,1819 @@
+
+
+
+❗TODO❗ FOR EACH TERM BELOW:
+1. input the term into both 2-term chat bots
+2. save the add-term output for both, right next to each other (maybe ONENOTE??)
+3. 🆕❓[NEW] paste both of them in my 'compare-two-terms-content' CHAT (❗TODO❗ MAKE THIS CHAT ASAP)
+		--> and we want the chat to make official decision on which one is the 'better' one
+4. put each of them into the TERM CONTENT EVAL bot chat and compare the results of each to see which one was the better one
+5. Save the results of which one was better in some table (or here below)
+6. Onec all below terms are done, look at the table and see if the NEW CHAT is up to the old-chats level
+-----------------------------------------------------------------------------------------------------
+- TMP MINI-LIST OF TERMS TO USE ON BOTH CHAT BOT 2-term prompts (old-faithful vs new one(s))
+-----------------------------------------------------------------------------------------------------
+java
+c++
+
+react
+angular
+
+.net
+JVM
+
+Vim
+github
+jenkins
+
+============
+linux
+
+MongoDB
+NoSQL
+
+AWS
+Paas
+
+Docker
+Kubernetes
+
+PuTTY
+
+System -penetration testing
+
+nginx
+
+===========
+MVC
+UML
+
+agile
+SDLC
+CI/CD
+
+RESTAPI
+SDK
+
+Jasmine
+ChromeDevTools
+
+Valgrind
+
+Full Stack
+System Design
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```bash
+node taxonomy.js add-term \
+  --continent Development \
+  --category "Languages" \
+  --subcategory "Programming Languages" \
+  --id java \
+  --name "Java" \
+  --alias "Java Programming Language" \
+  --alias "JDK Java" \
+  --alias "JVM Language" \
+  --note "General-purpose, object-oriented programming language widely used for enterprise applications, backend services, Android development, distributed systems, web applications, and large-scale software systems. Java runs on the JVM and is strongly associated with portability, static typing, mature tooling, and enterprise ecosystems." \
+  --tag programming-language \
+  --tag object-oriented \
+  --tag statically-typed \
+  --tag jvm \
+  --tag backend \
+  --tag enterprise \
+  --tag cross-platform \
+  --what-is-it "General-Purpose Object-Oriented Programming Language" \
+  --description "A statically typed, general-purpose programming language designed to run on the Java Virtual Machine and commonly used for backend services, enterprise software, Android applications, web applications, and large-scale cross-platform systems." \
+  --used-with "JVM" \
+  --used-with "Spring" \
+  --used-with "Spring Boot" \
+  --used-with "Maven" \
+  --used-with "Gradle" \
+  --used-with "JUnit" \
+  --used-with "Android Studio" \
+  --used-with "IntelliJ IDEA" \
+  --used-with "REST API" \
+  --used-with "SQL" \
+  --built-on "Object Oriented Programming" \
+  --built-on "Static Typing" \
+  --built-on "JVM" \
+  --built-on "Bytecode" \
+  --built-on "Garbage Collection" \
+  --built-on "Class-Based Programming" \
+  --built-upon-by "Enterprise Application Workflows" \
+  --built-upon-by "Backend Service Workflows" \
+  --built-upon-by "Android Development Workflows" \
+  --built-upon-by "Microservices Workflows" \
+  --built-upon-by "Web Application Workflows" \
+  --built-upon-by "Distributed Systems Workflows" \
+  --built-upon-by "Spring Application Workflows" \
+  --runs-on "JVM" \
+  --runs-on "Java Runtime" \
+  --runs-on "Windows" \
+  --runs-on "Linux" \
+  --runs-on "MacOS" \
+  --runs-on "Cloud Platforms" \
+  --runs-on "Containerized Environments" \
+  --alternative "C#" \
+  --alternative "Kotlin" \
+  --alternative "Scala" \
+  --alternative "Go" \
+  --alternative "Python" \
+  --alternative "C++" \
+  --alternative "TypeScript" \
+  --part-of "Software Development" \
+  --part-of "Programming Languages" \
+  --part-of "JVM Ecosystem" \
+  --part-of "Backend Development" \
+  --part-of "Enterprise Software" \
+  --part-of "Android Development" \
+  --part-of "Web Development" \
+  --includes "Classes" \
+  --includes "Interfaces" \
+  --includes "Packages" \
+  --includes "Objects" \
+  --includes "Methods" \
+  --includes "Generics" \
+  --includes "Exceptions" \
+  --includes "Annotations" \
+  --includes "Streams" \
+  --includes "JAR Files" \
+  --example "Spring Boot Application" \
+  --example "Android App" \
+  --example "Java Class" \
+  --example "JAR Library" \
+  --example "Enterprise Web Service" \
+  --example "REST API Backend" \
+  --example "JUnit Test" \
+  --example "Maven Project" \
+  --use-case "Building Backend Services" \
+  --use-case "Building Enterprise Applications" \
+  --use-case "Building Android Applications" \
+  --use-case "Creating REST APIs" \
+  --use-case "Writing Cross-Platform Applications" \
+  --use-case "Building Microservices" \
+  --use-case "Developing Distributed Systems" \
+  --use-case "Writing Large Maintainable Codebases" \
+  --related-concept "JVM" \
+  --related-concept "Spring" \
+  --related-concept "Spring Boot" \
+  --related-concept "Maven" \
+  --related-concept "Gradle" \
+  --related-concept "Kotlin" \
+  --related-concept "Scala" \
+  --related-concept "Object Oriented Programming" \
+  --related-concept "Garbage Collection" \
+  --related-concept "Enterprise Software"
+```
+
+
+
+
+
+
+
+```bash
+node taxonomy.js add-term \
+  --continent Development \
+  --category Languages \
+  --subcategory "Programming Languages" \
+  --id java \
+  --name "Java" \
+  --alias "Java Programming Language" \
+  --alias "JDK Java" \
+  --alias "JVM Language" \
+  --note "General-purpose, object-oriented programming language strongly associated with enterprise software, backend systems, Android development, and the JVM ecosystem." \
+  --tag programming-language \
+  --tag object-oriented \
+  --tag jvm \
+  --tag backend \
+  --tag enterprise \
+  --tag cross-platform \
+  --tag statically-typed \
+  --tag compiled-language \
+  --what-is-it "A general-purpose, statically typed programming language that compiles to bytecode and commonly runs on the Java Virtual Machine." \
+  --description "Java is a widely used programming language designed for portability, object-oriented development, and large-scale application building. It is heavily used in enterprise backend systems, Android development, web services, distributed systems, financial software, build tooling, and long-lived business applications. Java code is usually compiled to bytecode and executed on the JVM, making it closely tied to the Java platform, JDK, and JVM ecosystem." \
+  --used-with "JVM" \
+  --used-with "JDK" \
+  --used-with "Maven" \
+  --used-with "Gradle" \
+  --used-with "Spring" \
+  --used-with "Spring Boot" \
+  --used-with "Android Studio" \
+  --used-with "IntelliJ IDEA" \
+  --used-with "Eclipse" \
+  --used-with "JUnit" \
+  --used-with "SQL" \
+  --used-with "REST API" \
+  --built-on "JVM" \
+  --built-on "Java Bytecode" \
+  --built-on "Object-Oriented Programming" \
+  --built-on "Static Typing" \
+  --built-on "Garbage Collection" \
+  --built-on "Class-Based Inheritance" \
+  --built-upon-by "Enterprise Backend Applications" \
+  --built-upon-by "Android Application Development" \
+  --built-upon-by "Spring Boot Services" \
+  --built-upon-by "Microservice Development Workflows" \
+  --built-upon-by "REST API Development Workflows" \
+  --built-upon-by "Large-Scale Business Applications" \
+  --built-upon-by "JVM-Based Build Tooling" \
+  --built-upon-by "Distributed Systems Development" \
+  --runs-on "JVM" \
+  --runs-on "Windows" \
+  --runs-on "macOS" \
+  --runs-on "Linux" \
+  --runs-on "Android" \
+  --runs-on "Cloud Platforms" \
+  --runs-on "CI/CD Environments" \
+  --alternative "C#" \
+  --alternative "Kotlin" \
+  --alternative "Scala" \
+  --alternative "Go" \
+  --alternative "Python" \
+  --alternative "C++" \
+  --alternative "TypeScript" \
+  --part-of "JVM Ecosystem" \
+  --part-of "Backend Development" \
+  --part-of "Enterprise Software Development" \
+  --part-of "Android Development" \
+  --part-of "Object-Oriented Programming" \
+  --part-of "Cross-Platform Development" \
+  --part-of "Software Development" \
+  --includes "Classes" \
+  --includes "Objects" \
+  --includes "Interfaces" \
+  --includes "Packages" \
+  --includes "Generics" \
+  --includes "Exceptions" \
+  --includes "Annotations" \
+  --includes "Java Standard Library" \
+  --includes "JDK" \
+  --includes "JRE" \
+  --includes "JVM" \
+  --includes "Java Bytecode" \
+  --example "Spring Boot REST service" \
+  --example "Android mobile application" \
+  --example "Java command-line application" \
+  --example "Enterprise web application" \
+  --example "JUnit unit test" \
+  --example "Maven Java project" \
+  --example "Gradle Java project" \
+  --example "Java microservice" \
+  --example "JDBC database integration" \
+  --use-case "Building enterprise backend systems" \
+  --use-case "Creating Android applications" \
+  --use-case "Developing REST APIs" \
+  --use-case "Writing microservices" \
+  --use-case "Building cross-platform applications" \
+  --use-case "Creating large-scale business software" \
+  --use-case "Implementing object-oriented application logic" \
+  --use-case "Writing server-side web applications" \
+  --use-case "Developing JVM-based tools and libraries" \
+  --related-concept "JVM" \
+  --related-concept "JDK" \
+  --related-concept "JRE" \
+  --related-concept "Object-Oriented Programming" \
+  --related-concept "Garbage Collection" \
+  --related-concept "Static Typing" \
+  --related-concept "Bytecode" \
+  --related-concept "Spring Framework" \
+  --related-concept "Dependency Injection" \
+  --related-concept "Build Automation" \
+  --related-concept "Enterprise Architecture" \
+  --related-concept "Backend"
+```
+
+
+
+
+
+```bash
+PUT_CODE_HERE
+```
+
+
+
+
+```bash
+PUT_CODE_HERE
+```
+
+
+
+
+```bash
+PUT_CODE_HERE
+```
+
+
+
+```bash
+PUT_CODE_HERE
+```
+
+
+
+```bash
+PUT_CODE_HERE
+```
+
+
+
+```bash
+PUT_CODE_HERE
+```
+
+
+
+```bash
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+node taxonomy.js add-term \
+
+  --continent Development \
+
+  --category "Languages" \
+
+  --subcategory "Programming Languages" \
+
+  --id cpp \
+
+  --name "C++" \
+
+  --alias "CPP" \
+
+  --alias "C Plus Plus" \
+
+  --alias "C++ Programming Language" \
+
+  --note "General-purpose systems programming language used for performance-critical software, native applications, game engines, embedded systems, operating systems, compilers, real-time systems, graphics, and high-performance computing. C++ extends C-style systems programming with object-oriented, generic, and modern abstraction features." \
+
+  --tag programming-language \
+
+  --tag systems-programming \
+
+  --tag compiled-language \
+
+  --tag performance \
+
+  --tag native-code \
+
+  --tag object-oriented \
+
+node taxonomy.js add-term \
+
+  --continent Development \
+
+  --category Languages \
+
+  --subcategory "Programming Languages" \
+
+  --id cpp \
+
+  --name "C++" \
+
+  --alias "CPP" \
+
+  --alias "C Plus Plus" \
+
+  --alias "C++ Programming Language" \
+
+  --note "General-purpose systems programming language used for performance-critical software, native applications, embedded systems, game engines, operating-system components, and large C/C++ codebases." \
+
+  --tag programming-language \
+
+  --tag systems-programming \
+
+  --tag compiled-language \
+
+  --tag native-code \
+
+  --tag performance \
+
+  --tag object-oriented \
+
+  --tag low-level \
+
+  --tag statically-typed \
+
+  --what-is-it "A general-purpose, compiled programming language used for high-performance systems, applications, libraries, and native software development." \
+
+  --description "C++ is a powerful compiled programming language that extends C with object-oriented programming, templates, stronger abstraction mechanisms, and modern language features while still allowing low-level memory and performance control. Developers use C++ for systems programming, game engines, embedded software, desktop applications, high-performance computing, real-time systems, device-level software, and large native codebases where performance, control, and portability matter." \
+
+  --used-with "C" \
+
+  --used-with "CMake" \
+
+  --used-with "Make" \
+
+  --used-with "GCC" \
+
+  --used-with "Clang" \
+
+  --used-with "MSVC" \
+
+  --used-with "Visual Studio" \
+
+  --used-with "GDB" \
+
+  --used-with "LLDB" \
+
+  --used-with "Valgrind" \
+
+  --used-with "Linux" \
+
+  --used-with "Windows" \
+
+  --built-on "C" \
+
+  --built-on "Compiled Languages" \
+
+  --built-on "Static Typing" \
+
+  --built-on "Manual Memory Management" \
+
+  --built-on "Object-Oriented Programming" \
+
+  --built-on "Templates" \
+
+  --built-on "Native Machine Code" \
+
+  --built-upon-by "Systems Programming Workflows" \
+
+  --built-upon-by "Game Engine Development" \
+
+  --built-upon-by "Embedded Software Development" \
+
+  --built-upon-by "Native Desktop Application Development" \
+
+  --built-upon-by "High-Performance Computing Workflows" \
+
+  --built-upon-by "Real-Time Software Development" \
+
+  --built-upon-by "Compiler and Toolchain Development" \
+
+  --built-upon-by "Performance-Critical Backend Components" \
+
+  --runs-on "Windows" \
+
+  --runs-on "macOS" \
+
+  --runs-on "Linux" \
+
+  --runs-on "Unix-like Systems" \
+
+  --runs-on "Embedded Systems" \
+
+  --runs-on "Real-Time Operating Systems" \
+
+  --runs-on "Game Consoles" \
+
+  --alternative "C" \
+
+  --alternative "Rust" \
+
+  --alternative "Go" \
+
+  --alternative "Zig" \
+
+  --alternative "D" \
+
+  --alternative "C#" \
+
+  --alternative "Java" \
+
+  --part-of "Systems Programming" \
+
+  --part-of "Native Application Development" \
+
+  --part-of "Embedded Development" \
+
+  --part-of "Game Development" \
+
+  --part-of "High-Performance Computing" \
+
+  --part-of "Low-Level Programming" \
+
+  --part-of "Software Development" \
+
+  --includes "Classes" \
+
+  --includes "Objects" \
+
+  --includes "Templates" \
+
+  --includes "Namespaces" \
+
+  --includes "Pointers" \
+
+  --includes "References" \
+
+  --includes "RAII" \
+
+  --includes "STL" \
+
+  --includes "Header Files" \
+
+  --includes "Source Files" \
+
+  --includes "Constructors" \
+
+  --includes "Destructors" \
+
+  --example "C++ desktop application" \
+
+  --example "C++ game engine module" \
+
+  --example "Embedded firmware component" \
+
+  --example "High-performance simulation" \
+
+  --example "Native library" \
+
+  --example "Command-line tool" \
+
+  --example "CMake-based C++ project" \
+
+  --example "Visual Studio C++ project" \
+
+  --example "GDB debugging session" \
+
+  --use-case "Building performance-critical applications" \
+
+  --use-case "Writing systems software" \
+
+  --use-case "Developing game engines" \
+
+  --use-case "Creating embedded software" \
+
+  --use-case "Building native desktop applications" \
+
+  --use-case "Writing reusable native libraries" \
+
+  --use-case "Developing real-time software" \
+
+  --use-case "Implementing low-level infrastructure components" \
+
+  --use-case "Optimizing memory and CPU-intensive code" \
+
+  --related-concept "C" \
+
+  --related-concept "Systems Programming" \
+
+  --related-concept "Object-Oriented Programming" \
+
+  --related-concept "Manual Memory Management" \
+
+  --related-concept "RAII" \
+
+  --related-concept "Pointers" \
+
+  --related-concept "Templates" \
+
+  --related-concept "Compiler" \
+
+  --related-concept "Linker" \
+
+  --related-concept "Build System" \
+
+  --related-concept "Static Analysis" \
+
+  --related-concept "Debugging"
+
+
+
+  --tag low-level \
+
+  --what-is-it "General-Purpose Systems Programming Language" \
+
+  --description "A compiled general-purpose programming language used for high-performance, native, and systems-level software, combining low-level memory control with object-oriented, generic, and modern abstraction features." \
+
+  --used-with "C" \
+
+  --used-with "CMake" \
+
+  --used-with "Make" \
+
+  --used-with "Visual Studio" \
+
+  --used-with "CLion" \
+
+  --used-with "GCC" \
+
+  --used-with "LLVM" \
+
+  --used-with "Operating Systems" \
+
+  --used-with "Game Engines" \
+
+  --used-with "Embedded Systems" \
+
+  --built-on "C" \
+
+  --built-on "Compiled Languages" \
+
+  --built-on "Manual Memory Management" \
+
+  --built-on "Object Oriented Programming" \
+
+  --built-on "Generic Programming" \
+
+  --built-on "Native Code" \
+
+  --built-upon-by "Game Development Workflows" \
+
+  --built-upon-by "Systems Programming Workflows" \
+
+  --built-upon-by "Embedded Development Workflows" \
+
+  --built-upon-by "High-Performance Computing Workflows" \
+
+  --built-upon-by "Native Application Workflows" \
+
+  --built-upon-by "Compiler Development Workflows" \
+
+  --built-upon-by "Real-Time Software Workflows" \
+
+  --runs-on "Windows" \
+
+  --runs-on "Linux" \
+
+  --runs-on "MacOS" \
+
+  --runs-on "Embedded Systems" \
+
+  --runs-on "Native Toolchains" \
+
+  --runs-on "Game Consoles" \
+
+  --runs-on "Real-Time Systems" \
+
+  --alternative "C" \
+
+  --alternative "Rust" \
+
+  --alternative "Go" \
+
+  --alternative "Zig" \
+
+  --alternative "Java" \
+
+  --alternative "C#" \
+
+  --alternative "Swift" \
+
+  --part-of "Software Development" \
+
+  --part-of "Programming Languages" \
+
+  --part-of "Systems Programming" \
+
+  --part-of "Native Development" \
+
+  --part-of "Game Development" \
+
+  --part-of "Embedded Development" \
+
+  --part-of "High-Performance Computing" \
+
+  --includes "Classes" \
+
+  --includes "Templates" \
+
+  --includes "Pointers" \
+
+  --includes "References" \
+
+  --includes "Namespaces" \
+
+  --includes "RAII" \
+
+  --includes "STL" \
+
+  --includes "Header Files" \
+
+  --includes "Source Files" \
+
+  --includes "Compilers" \
+
+  --example "C++ Application" \
+
+  --example "Game Engine" \
+
+  --example "Embedded Firmware Component" \
+
+  --example "Native Library" \
+
+  --example "Command-Line Tool" \
+
+  --example "Operating System Component" \
+
+  --example "Compiler Component" \
+
+  --example "CMake Project" \
+
+  --use-case "Building Performance-Critical Software" \
+
+  --use-case "Building Game Engines" \
+
+  --use-case "Writing Native Applications" \
+
+  --use-case "Developing Embedded Systems" \
+
+  --use-case "Creating System-Level Software" \
+
+  --use-case "Building Compilers and Toolchains" \
+
+  --use-case "Writing High-Performance Libraries" \
+
+  --use-case "Managing Low-Level Memory and Hardware Interaction" \
+
+  --related-concept "C" \
+
+  --related-concept "Rust" \
+
+  --related-concept "Zig" \
+
+  --related-concept "CMake" \
+
+  --related-concept "Make" \
+
+  --related-concept "Compiler" \
+
+  --related-concept "Native Code" \
+
+  --related-concept "Memory Management" \
+
+  --related-concept "Object Oriented Programming" \
+
+  --related-concept "Systems Programming"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+###############################################################################
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+THE MASTER LIST OF NEW TERMS WE'RE GOING TO ADD TO LANDSCAPE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+###############################################################################
+===============================================================================
+-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+EXPL OF WHAT WERE DOING WITH THIS LIST:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+> this list is all the terms that I vetted and will be adding to the DEV_LANDSCAPE officially (over time, bc it's going to take a while to add all of these considering the process/steps needed for each 1, which I explain below:)
+------ STEPS TO ADD A TERM ------- (follow these steps for EACH of the 650+ terms in our master list)
+1. input the term into our 2-term bot GPT: ==> https://chatgpt.com/c/6a28f0ec-cf88-83ea-a2ed-e6dd171bd61e   		    ❌ https://chatgpt.com/c/6a25c043-4da8-83ea-9e42-5c397fcdc0dd (not using this 1-term bot anymore)
+2. wait for the full output to finish
+3. copy the 'add-term' command of the output
+4. paste the add-term command into your terminal and run it 
+5. (double check you didn't get any 'no-id-found' error which happens every once in a while when the 'id' for a term isn't super obvious)
+6. check off the term you just added in the list below so we keep track of where we last left off (IMP TO DO THIS!!!!)
+6. DONE (now the term is officially added and you can move onto the NEXT term)(use dlandupdate command or the update-and-open raycast command to check that the term was added succesffully)
+
+
+ ❗TODO❗ FOOD-FOR-THOUGHT:
+ ❗TODO❗ MAYBE it's worth updating the GPT bot chat so that i can accept 2 or more terms at once... that way I could def speed up this process 
+ ❗TODO❗ FOOD-FOR-THOUGHT:
+			--> THEN I COULD EVEN CHANGE THE OUTPUT FORMAT SO THAT THE LAST TWO SECTIONS ARE BOTH THE 'add-term' COMMANDS FOR THE two TERMS I PROVIDED...
+
+
+
+
+
+⚠️ UPDATE!!!
+⚠️ UPDATE!!!
+⚠️ UPDATE!!! Use this 'two-at-a-time' GPT chat instead of the 1-term one 
+https://chatgpt.com/c/6a28f0ec-cf88-83ea-a2ed-e6dd171bd61e
+⚠️ UPDATE!!! Use this 'two-at-a-time' GPT chat instead of the 1-term one 
+⚠️ UPDATE!!!
+⚠️ UPDATE!!!
+
+
+###############################################################################
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MASTER-LIST-OF-TERMS:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+###############################################################################
+(11111111111111111111111111111111111111111111111111111111111111111111111)
+(1)
+- ✅Objective-C
+- ✅Dart
+- ✅Lua
+- ✅R
+- ✅MATLAB
+- ✅Perl
+- ✅Groovy
+- ✅Scala
+- ✅Haskell
+- ✅Erlang
+- ✅Elixir
+- ✅Julia
+- ✅Zig
+- ✅COBOL
+- ✅Fortran
+- ✅VB.NET
+- ✅Clojure
+- ✅OCaml
+- ✅VBA
+- ✅YAML
+- ✅TOML
+- ✅Markdown
+- ✅HCL
+- ✅GraphQL
+
+(2)
+- IntelliJ IDEA✅
+- PyCharm✅
+- WebStorm✅
+- CLion✅
+- Rider		✅	
+- NetBeans		✅
+- Sublime Text	✅
+- Atom			✅
+- Cursor		✅
+- Zed			✅
+- Mercurial		✅
+- Perforce		✅
+- Bitbucket		✅
+- Azure DevOps	✅
+- Jira			✅
+- Confluence	✅
+- Trello		✅
+- Gradle		✅
+- Ant			✅
+- CMake			✅
+- Make			✅
+- MSBuild		✅
+- npm			
+- Yarn			
+- pnpm			
+- pip
+- Poetry
+- NuGet
+- Composer
+- Cargo
+- Homebrew
+- GitHub Actions
+- GitLab CI/CD
+- CircleCI
+- Travis CI
+- TeamCity
+- Bamboo
+- Terraform
+- Swagger
+- OpenAPI
+- ESLint
+- Prettier
+- SonarQube
+- NPM Registry
+
+(3)
+- FastAPI
+- NestJS
+- Fastify
+- Koa
+- Nuxt
+- Svelte
+- SvelteKit
+- Astro
+- Remix
+- Ember.js
+- Tailwind CSS
+- Material UI
+- D3.js
+- Three.js
+- PyTorch
+- scikit-learn
+- NumPy
+- pandas
+- OpenCV
+- Hibernate
+- Entity Framework
+- Qt
+- Electron
+- .NET MAUI
+- Vite
+- Webpack
+- Babel
+- Gradle
+- JUnit
+- Jest
+- Cypress
+- Selenium
+- Unity
+- Unreal Engine
+- Terraform
+
+(4)
+- Java Runtime Environment
+- Java Development Kit
+- Android Runtime
+- Common Language Runtime
+- Mono
+- Deno
+- Bun
+- WebAssembly
+- Heroku
+- Vercel
+- Netlify
+- Cloudflare Workers
+- AWS Lambda
+- Azure Functions
+- Google Cloud Functions
+- Google Cloud Run
+- Apache Tomcat
+- Jetty
+- WildFly
+- BEAM
+- CPython
+- PHP-FPM
+- iOS
+- Android
+- Flutter
+- Apache Cordova
+
+(22222222222222222222222222222222222222222222222222222222222222222222222)
+(5)
+- Android
+- iOS
+- iPadOS
+- watchOS
+- tvOS
+- ChromeOS
+- Debian
+- Fedora
+- Red Hat Enterprise Linux
+- Rocky Linux
+- AlmaLinux
+- Arch Linux
+- openSUSE
+- SUSE Linux Enterprise
+- FreeBSD
+- OpenBSD
+- NetBSD
+- Solaris
+- AIX
+- HP-UX
+- z/OS
+- QNX
+- VxWorks
+- FreeRTOS
+- Kali Linux
+- Windows Server
+- Windows Subsystem for Linux
+- Zephyr
+
+(6)
+- SQLite
+- MariaDB
+- Redis
+- Elasticsearch
+- OpenSearch
+- Amazon DynamoDB
+- Apache Cassandra
+- Couchbase
+- CouchDB
+- Neo4j
+- InfluxDB
+- TimescaleDB
+- Snowflake
+- BigQuery
+- Amazon Redshift
+- IBM Db2
+- CockroachDB
+- YugabyteDB
+- HBase
+- Hive
+- PostGIS
+- Firebase Realtime Database
+- Supabase
+- PlanetScale
+- MongoDB Atlas
+- Amazon RDS
+- Azure SQL Database
+- Google Cloud SQL
+- Databricks
+- Apache Spark
+- Kafka
+- RabbitMQ
+
+(7)
+- Oracle Cloud Infrastructure
+- IBM Cloud
+- Alibaba Cloud
+- DigitalOcean
+- Linode
+- Vultr
+- Cloudflare
+- Heroku
+- Vercel
+- Netlify
+- Public Cloud
+- Private Cloud
+- Hybrid Cloud
+- Multi-cloud
+- Serverless Computing
+- Function as a Service
+- Backend as a Service
+- Database as a Service
+- Container as a Service
+- Virtual Private Cloud
+- Content Delivery Network
+- Edge Computing
+- AWS Lambda
+- Azure Functions
+- Google Cloud Run
+- CloudFormation
+- Kubernetes Engine
+- S3
+- EC2
+
+(8)
+- containerd
+- CRI-O
+- runc
+- Podman
+- BuildKit
+- Docker Compose
+- OpenShift
+- Helm
+- Kustomize
+- kubectl
+- Minikube
+- Kind
+- k3s
+- MicroK8s
+- Amazon Elastic Kubernetes Service
+- Azure Kubernetes Service
+- Google Kubernetes Engine
+- Nomad
+- Rancher
+- Harbor
+- Argo CD
+- Flux
+- Istio
+- Linkerd
+- Docker Engine
+- Docker Desktop
+- Docker Hub
+- Open Container Initiative
+- OCI Image Format
+- Container Runtime Interface
+- Container Network Interface
+- container image
+- container registry
+- Dapr
+
+(9)
+- TCP/IP
+- TCP
+- UDP
+- IP
+- IPv4
+- IPv6
+- DNS
+- DHCP
+- NAT
+- VPN
+- VLAN
+- LAN
+- WAN
+- WLAN
+- Router
+- Switch
+- Wireless Access Point
+- Firewall
+- Load Balancer
+- Proxy Server
+- Reverse Proxy
+- Subnet
+- CIDR
+- OSI Model
+- TCP/IP Model
+- HTTP
+- HTTPS
+- TLS
+- SSH
+- FTP
+- SFTP
+- SMTP
+- IMAP
+- SNMP
+- BGP
+- OSPF
+- SDN
+- OpenFlow
+- Network Function Virtualization
+- Nmap
+- tcpdump
+- OpenVPN
+- WireGuard
+- Open vSwitch
+- WebSocket
+- gRPC
+- GraphQL
+- RabbitMQ
+- Kafka
+- CDN
+- VPC
+- OpenSSH
+
+(10)
+- Vulnerability Assessment
+- Vulnerability Management
+- Threat Modeling
+- Risk Assessment
+- Security Audit
+- Security Hardening
+- Attack Surface
+- Attack Vector
+- Exploit
+- Payload
+- Malware
+- Ransomware
+- Phishing
+- Social Engineering
+- Identity and Access Management
+- Authentication
+- Authorization
+- Multi-Factor Authentication
+- Single Sign-On
+- OAuth
+- OpenID Connect
+- SAML
+- LDAP
+- Active Directory
+- Public Key Infrastructure
+- Encryption
+- Hashing
+- Digital Signature
+- Certificate Authority
+- TLS Certificate
+- Zero Trust
+- Principle of Least Privilege
+- Defense in Depth
+- Security Information and Event Management
+- Endpoint Detection and Response
+- Intrusion Detection System
+- Intrusion Prevention System
+- Web Application Firewall
+- Data Loss Prevention
+- Incident Response
+- Digital Forensics
+- Security Operations Center
+- OWASP Top 10
+- OWASP ZAP
+- Burp Suite
+- Nmap
+- Nessus
+- OpenVAS
+- Kali Linux
+- Snort
+- Suricata
+- Splunk
+- Application Security
+- DevSecOps
+- Secure SDLC
+- Compliance
+- SOC 2
+- ISO 27001
+- NIST Cybersecurity Framework
+
+(11)
+- Caddy
+- LiteSpeed Web Server
+- OpenLiteSpeed
+- lighttpd
+- OpenResty
+- Apache Tomcat
+- Jetty
+- WildFly
+- GlassFish
+- WebLogic
+- WebSphere
+- HAProxy
+- Traefik
+- Envoy
+- AWS Application Load Balancer
+- Nginx Proxy Manager
+- Apache Traffic Server
+- Varnish
+- Squid
+- Gunicorn
+- uWSGI
+- Puma
+- Phusion Passenger
+- Kestrel
+
+(33333333333333333333333333333333333333333333333333333333333333333333333)
+(12)
+- Event-Driven Architecture
+- Layered Architecture
+- Hexagonal Architecture
+- Clean Architecture
+- Onion Architecture
+- Monolithic Architecture
+- Modular Monolith
+- Client-Server Architecture
+- Peer-to-Peer Architecture
+- Three-Tier Architecture
+- Domain-Driven Design
+- Bounded Context
+- CQRS
+- Event Sourcing
+- Saga Pattern
+- Backend for Frontend
+- Strangler Fig Pattern
+- Sidecar Pattern
+- Ambassador Pattern
+- Adapter Pattern
+- Facade Pattern
+- Factory Pattern
+- Singleton Pattern
+- Observer Pattern
+- Dependency Injection
+- Inversion of Control
+- SOLID
+- Separation of Concerns
+- Low Coupling
+- High Cohesion
+- Component Diagram
+- Deployment Diagram
+- Use Case Diagram
+- Activity Diagram
+- State Diagram
+- Data Flow Diagram
+- C4 Model
+- Architecture Decision Record
+- gRPC
+- Message Queue
+- Pub/Sub
+- Event Bus
+- Service Mesh
+- API Gateway
+- Technical Debt
+- Refactoring
+- Design System
+- Wireframe
+
+(13)
+- Waterfall
+- Iterative Development
+- Incremental Development
+- Spiral Model
+- Lean Software Development
+- Extreme Programming
+- Feature-Driven Development
+- Dynamic Systems Development Method
+- Rapid Application Development
+- Rational Unified Process
+- V-Model
+- DevSecOps
+- GitOps
+- Site Reliability Engineering
+- Continuous Testing
+- Trunk-Based Development
+- Git Flow
+- Feature Branch Workflow
+- Code Review
+- Pull Request Workflow
+- Mob Programming
+- Refactoring
+- Regression Testing
+- Acceptance Test Driven Development
+- Specification by Example
+- Domain-Driven Design
+- ScrumBan
+- Scaled Agile Framework
+- Large-Scale Scrum
+- Disciplined Agile
+- ITIL
+- Change Management
+- Incident Management
+- Release Management
+- A/B Testing
+- Design Thinking
+
+(14)
+- API
+- SOAP
+- GraphQL
+- gRPC
+- Webhook
+- OpenAPI
+- Swagger
+- WSDL
+- RPC
+- JSON-RPC
+- XML-RPC
+- API Gateway
+- API Endpoint
+- API Contract
+- API Versioning
+- Rate Limiting
+- Pagination
+- Idempotency
+- HATEOAS
+- Server-Sent Events
+- AsyncAPI
+- Protocol Buffers
+- Insomnia
+- curl
+- JWT
+- CORS
+- MQTT
+
+(15)
+- Integration Testing
+- End-to-End Testing
+- Functional Testing
+- Regression Testing
+- Smoke Testing
+- Sanity Testing
+- Acceptance Testing
+- Performance Testing
+- Load Testing
+- Stress Testing
+- Security Testing
+- Accessibility Testing
+- Compatibility Testing
+- Exploratory Testing
+- Manual Testing
+- Automated Testing
+- Test Case
+- Test Plan
+- Test Suite
+- Test Coverage
+- Mocking
+- Stubbing
+- Test Double
+- Snapshot Testing
+- Mutation Testing
+- Property-Based Testing
+- Contract Testing
+- Unit Test Framework
+- JUnit
+- TestNG
+- NUnit
+- xUnit.net
+- MSTest
+- pytest
+- unittest
+- Mocha
+- Jest
+- Vitest
+- Karma
+- Cypress
+- Playwright
+- Selenium
+- Cucumber
+- Gherkin
+- Robot Framework
+- JMeter
+- k6
+- Gatling
+- Locust
+- Pact
+- JaCoCo
+- Istanbul
+- Type Checking
+- Static Analysis
+- Fuzz Testing
+- Chaos Engineering
+
+(16)
+- Linux perf
+- OProfile
+- SystemTap
+- DTrace
+- strace
+- ltrace
+- AddressSanitizer
+- ThreadSanitizer
+- UndefinedBehaviorSanitizer
+- MemorySanitizer
+- LeakSanitizer
+- rr
+- WinDbg
+- Visual Studio Debugger
+- Xcode Instruments
+- Xcode Debugger
+- Firefox Developer Tools
+- Java Debugger
+- Java Flight Recorder
+- Java Mission Control
+- VisualVM
+- YourKit
+- dotTrace
+- dotMemory
+- PerfView
+- dotnet-trace
+- dotnet-dump
+- dotnet-counters
+- Python Debugger
+- cProfile
+- PySpy
+- Node.js Inspector
+- V8 Profiler
+- FlameGraph
+- Callgrind
+- Massif
+- Memcheck
+- Helgrind
+- KCachegrind
+- Debug Adapter Protocol
+- Observability
+- OpenTelemetry
+- Prometheus
+- Grafana
+- Sentry
+- New Relic
+- Datadog
+
+(17)
+- Abstraction
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Composition
+- Coupling
+- Cohesion
+- Modularity
+- Dependency Management
+- Interface
+- Implementation
+- Module
+- Component
+- Service
+- Middleware
+- Library
+- Framework
+- Runtime
+- Compiler
+- Interpreter
+- Build
+- Artifact
+- Release
+- Versioning
+- Semantic Versioning
+- Backward Compatibility
+- Code Smell
+- Maintainability
+- Scalability
+- Reliability
+- Availability
+- Fault Tolerance
+- Resilience
+- Monitoring
+- Logging
+- Metrics
+- Distributed Tracing
+- Rollback
+- Rollout
+- Feature Flag
+- Configuration Management
+- Environment
+- Production
+- Staging
+- Legacy System
+- Greenfield Project
+- Brownfield Project
+- Codebase
+- Repository
+- Monorepo
+- API Integration
+- Data Migration
+- Schema Migration
+- Software Maintenance
+- Requirements Engineering
+- Clean Code
+- Code Quality
+- Linting
+- Cloud Native
+- Platform Engineering
+- Product Management
+- UX Design
+
+
+
+
+
+
+
+
+
+node taxonomy.js add-term \
+  --continent Development \
+  --category Languages \
+  --subcategory "Programming Languages" \
+  --id cpp \
+  --name "C++" \
+  --alias "CPP" \
+  --alias "C Plus Plus" \
+  --alias "C++ Programming Language" \
+  --note "General-purpose systems programming language used for performance-critical software, native applications, embedded systems, game engines, operating-system components, and large C/C++ codebases." \
+  --tag programming-language \
+  --tag systems-programming \
+  --tag compiled-language \
+  --tag native-code \
+  --tag performance \
+  --tag object-oriented \
+  --tag low-level \
+  --tag statically-typed \
+  --what-is-it "A general-purpose, compiled programming language used for high-performance systems, applications, libraries, and native software development." \
+  --description "C++ is a powerful compiled programming language that extends C with object-oriented programming, templates, stronger abstraction mechanisms, and modern language features while still allowing low-level memory and performance control. Developers use C++ for systems programming, game engines, embedded software, desktop applications, high-performance computing, real-time systems, device-level software, and large native codebases where performance, control, and portability matter." \
+  --used-with "C" \
+  --used-with "CMake" \
+  --used-with "Make" \
+  --used-with "GCC" \
+  --used-with "Clang" \
+  --used-with "MSVC" \
+  --used-with "Visual Studio" \
+  --used-with "GDB" \
+  --used-with "LLDB" \
+  --used-with "Valgrind" \
+  --used-with "Linux" \
+  --used-with "Windows" \
+  --built-on "C" \
+  --built-on "Compiled Languages" \
+  --built-on "Static Typing" \
+  --built-on "Manual Memory Management" \
+  --built-on "Object-Oriented Programming" \
+  --built-on "Templates" \
+  --built-on "Native Machine Code" \
+  --built-upon-by "Systems Programming Workflows" \
+  --built-upon-by "Game Engine Development" \
+  --built-upon-by "Embedded Software Development" \
+  --built-upon-by "Native Desktop Application Development" \
+  --built-upon-by "High-Performance Computing Workflows" \
+  --built-upon-by "Real-Time Software Development" \
+  --built-upon-by "Compiler and Toolchain Development" \
+  --built-upon-by "Performance-Critical Backend Components" \
+  --runs-on "Windows" \
+  --runs-on "macOS" \
+  --runs-on "Linux" \
+  --runs-on "Unix-like Systems" \
+  --runs-on "Embedded Systems" \
+  --runs-on "Real-Time Operating Systems" \
+  --runs-on "Game Consoles" \
+  --alternative "C" \
+  --alternative "Rust" \
+  --alternative "Go" \
+  --alternative "Zig" \
+  --alternative "D" \
+  --alternative "C#" \
+  --alternative "Java" \
+  --part-of "Systems Programming" \
+  --part-of "Native Application Development" \
+  --part-of "Embedded Development" \
+  --part-of "Game Development" \
+  --part-of "High-Performance Computing" \
+  --part-of "Low-Level Programming" \
+  --part-of "Software Development" \
+  --includes "Classes" \
+  --includes "Objects" \
+  --includes "Templates" \
+  --includes "Namespaces" \
+  --includes "Pointers" \
+  --includes "References" \
+  --includes "RAII" \
+  --includes "STL" \
+  --includes "Header Files" \
+  --includes "Source Files" \
+  --includes "Constructors" \
+  --includes "Destructors" \
+  --example "C++ desktop application" \
+  --example "C++ game engine module" \
+  --example "Embedded firmware component" \
+  --example "High-performance simulation" \
+  --example "Native library" \
+  --example "Command-line tool" \
+  --example "CMake-based C++ project" \
+  --example "Visual Studio C++ project" \
+  --example "GDB debugging session" \
+  --use-case "Building performance-critical applications" \
+  --use-case "Writing systems software" \
+  --use-case "Developing game engines" \
+  --use-case "Creating embedded software" \
+  --use-case "Building native desktop applications" \
+  --use-case "Writing reusable native libraries" \
+  --use-case "Developing real-time software" \
+  --use-case "Implementing low-level infrastructure components" \
+  --use-case "Optimizing memory and CPU-intensive code" \
+  --related-concept "C" \
+  --related-concept "Systems Programming" \
+  --related-concept "Object-Oriented Programming" \
+  --related-concept "Manual Memory Management" \
+  --related-concept "RAII" \
+  --related-concept "Pointers" \
+  --related-concept "Templates" \
+  --related-concept "Compiler" \
+  --related-concept "Linker" \
+  --related-concept "Build System" \
+  --related-concept "Static Analysis" \
+  --related-concept "Debugging"
+
+
+
+
+  node taxonomy.js add-term \
+  --continent Engineering \
+  --category Methodologies \
+  --subcategory "Development Practices" \
+  --id ci-cd \
+  --name "CI/CD" \
+  --alias "Continuous Integration and Continuous Delivery" \
+  --alias "Continuous Integration and Continuous Deployment" \
+  --alias "CI CD" \
+  --alias "CI/CD Pipeline" \
+  --note "Software delivery practice focused on automatically integrating, testing, building, packaging, and delivering code changes through repeatable pipelines." \
+  --tag development-practice \
+  --tag automation \
+  --tag continuous-integration \
+  --tag continuous-delivery \
+  --tag continuous-deployment \
+  --tag devops \
+  --tag testing \
+  --tag release-management \
+  --what-is-it "A software engineering practice that automates integration, testing, building, and delivery or deployment of code changes through repeatable pipelines." \
+  --description "CI/CD is a development practice that helps teams integrate code frequently, verify changes automatically, and deliver software more reliably. Continuous Integration focuses on merging changes often and validating them with automated builds and tests. Continuous Delivery focuses on keeping software in a deployable state, while Continuous Deployment goes further by automatically deploying validated changes to production or target environments. CI/CD commonly involves source control, build automation, test automation, artifact publishing, deployment pipelines, environment promotion, rollback planning, and release visibility." \
+  --used-with "Git" \
+  --used-with "GitHub" \
+  --used-with "GitLab" \
+  --used-with "Jenkins" \
+  --used-with "GitHub Actions" \
+  --used-with "Docker" \
+  --used-with "Kubernetes" \
+  --used-with "Maven" \
+  --used-with "Gradle" \
+  --used-with "npm" \
+  --used-with "Unit Testing" \
+  --used-with "Deployment" \
+  --built-on "Version Control" \
+  --built-on "Build Automation" \
+  --built-on "Automated Testing" \
+  --built-on "Release Automation" \
+  --built-upon-by "DevOps Workflows" \
+  --built-upon-by "Release Management Workflows" \
+  --built-upon-by "Automated Deployment Pipelines" \
+  --built-upon-by "Build Verification Workflows" \
+  --built-upon-by "Quality Gate Workflows" \
+  --built-upon-by "Cloud-Native Delivery Workflows" \
+  --built-upon-by "Microservice Release Workflows" \
+  --built-upon-by "Production Delivery Workflows" \
+  --alternative "Manual Deployment" \
+  --alternative "Manual Release Process" \
+  --alternative "Waterfall Release Process" \
+  --alternative "Big-Bang Release" \
+  --alternative "Ad Hoc Build Process" \
+  --part-of "Development Practices" \
+  --part-of "DevOps" \
+  --part-of "Software Delivery" \
+  --part-of "Release Engineering" \
+  --part-of "Agile Development" \
+  --part-of "Software Quality" \
+  --part-of "Automation" \
+  --includes "Source Control Integration" \
+  --includes "Build Pipeline" \
+  --includes "Automated Tests" \
+  --includes "Static Analysis" \
+  --includes "Artifact Publishing" \
+  --includes "Deployment Pipeline" \
+  --includes "Quality Gates" \
+  --includes "Environment Promotion" \
+  --includes "Rollback Strategy" \
+  --includes "Pipeline Triggers" \
+  --includes "Build Logs" \
+  --includes "Release Approvals" \
+  --example "Jenkins CI pipeline" \
+  --example "GitHub Actions workflow" \
+  --example "GitLab CI/CD pipeline" \
+  --example "Pull request build validation" \
+  --example "Automated unit test stage" \
+  --example "Docker image build and push" \
+  --example "Deployment to staging environment" \
+  --example "Production release pipeline" \
+  --example "Rollback after failed deployment" \
+  --use-case "Automatically testing code changes" \
+  --use-case "Reducing manual release work" \
+  --use-case "Catching integration problems early" \
+  --use-case "Building and packaging applications" \
+  --use-case "Publishing build artifacts" \
+  --use-case "Deploying applications to environments" \
+  --use-case "Standardizing release workflows" \
+  --use-case "Improving deployment reliability" \
+  --use-case "Supporting frequent software releases" \
+  --related-concept "DevOps" \
+  --related-concept "Continuous Integration" \
+  --related-concept "Continuous Delivery" \
+  --related-concept "Continuous Deployment" \
+  --related-concept "Build Automation" \
+  --related-concept "Automated Testing" \
+  --related-concept "Deployment" \
+  --related-concept "Release Management" \
+  --related-concept "Rollback" \
+  --related-concept "Artifact" \
+  --related-concept "Pipeline as Code" \
+  --related-concept "Quality Gate"
+
+  "node taxonomy.js remove-term python"
+

@@ -814,6 +814,15 @@ alias dlandprintids="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js p
 alias dlandprintschema="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-schema"
 alias dlandprinttermsbycategory="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms-by-category"
 alias dlandprinttermsbysubcategory="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms-by-category --subcategory"
+# -
+alias dlandlistoverview="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-landscape-overview"
+alias dlandlistlandscape="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-landscape-overview"
+alias dlandlistterms="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms"
+alias dlandlistids="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-ids"
+alias dlandlistschema="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-schema"
+alias dlandlisttermsbycategory="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms-by-category"
+alias dlandlisttermsbysubcategory="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms-by-category --subcategory"
+
 alias dlandwhicharedups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js which-are-dups"
 alias dlandvalidatedupfieldvals="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js validate-field-duplicates"
 alias dlandvalidatetermdups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js validate-term-duplicates"
@@ -851,6 +860,15 @@ alias dlprintids="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js prin
 alias dlprintschema="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-schema"
 alias dlprinttermsbycategory="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms-by-category"
 alias dlprinttermsbysubcategory="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms-by-category --subcategory"  
+# - 
+alias dllistoverview="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-landscape-overview"
+alias dllistlandscape="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-landscape-overview"
+alias dllistterms="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms"
+alias dllistids="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-ids"
+alias dllistschema="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-schema"
+alias dllisttermsbycategory="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms-by-category"
+alias dllisttermsbysubcategory="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js print-terms-by-category --subcategory"
+# - 
 alias dlwhicharedups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js which-are-dups"
 alias dlvalidatedupfieldvals="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js validate-field-duplicates"
 alias dlvalidatetermdups="node $NICHE_REPO_DIR/_universal/dev_landscape/taxonomy.js validate-term-duplicates"

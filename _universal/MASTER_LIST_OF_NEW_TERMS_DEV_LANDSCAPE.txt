@@ -53,6 +53,185 @@ AFTER ALL CATEGORIES BELOW ARE FILLED: no more phases needed---here we have our 
 16 🟪 DEBUGGING AND PROFILING
 17 🟪 SOFTWARE ENGINEERING CONCEPTS
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+EXPL OF WHAT WERE DOING WITH THIS LIST:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+> this list is all the terms that I vetted and will be adding to the DEV_LANDSCAPE officially (over time, bc it's going to take a while to add all of these considering the process/steps needed for each 1, which I explain below:)
+------ STEPS TO ADD A TERM ------- (follow these steps for EACH of the 650+ terms in our master list)
+1. input the term into our 2-term bot GPT: ==> https://chatgpt.com/c/6a28f0ec-cf88-83ea-a2ed-e6dd171bd61e   		    ❌ https://chatgpt.com/c/6a25c043-4da8-83ea-9e42-5c397fcdc0dd (not using this 1-term bot anymore)
+2. wait for the full output to finish
+3. copy the 'add-term' command of the output
+4. paste the add-term command into your terminal and run it 
+5. (double check you didn't get any 'no-id-found' error which happens every once in a while when the 'id' for a term isn't super obvious)
+6. check off the term you just added in the list below so we keep track of where we last left off (IMP TO DO THIS!!!!)
+6. DONE (now the term is officially added and you can move onto the NEXT term)(use dlandupdate command or the update-and-open raycast command to check that the term was added succesffully)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++
+TRACKING PROGRESS OF MASTER LIST:
+++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[✅]		1 🟦 LANGUAGES
+---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑----
+[]		2 🟦 DEVELOPMENT TOOLS
+[]		3 🟦 FRAMEOWRKS AND LIBS
+[]		4 🟦 PLATOFRMS AND RUNTIMES
+
+[]		5 🟩 OPERATING SYSTEMS
+[]		6 🟩 DATABASES
+[]		7 🟩 CLOUD
+[]		8 🟩 ONTAINERIZATIONS & ORCHESTRATION
+[]		9 🟩 NETWORKIN
+[]		10 🟩 SECURITY
+[]		11 🟩 WEB SERVICES
+
+[]		12 🟪 ARCHITECTURE & DESIGN
+[]		13 🟪 METHODOLOGIES
+[]		14 🟪 API TECHNOLOGIES
+[]		15 🟪 TESTING
+[]		16 🟪 DEBUGGING AND PROFILING
+[]		17 🟪 SOFTWARE ENGINEERING CONCEPTS
+
 
 
 
@@ -71,36 +250,7 @@ THE MASTER LIST OF NEW TERMS WE'RE GOING TO ADD TO LANDSCAPE
 ===============================================================================
 -------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-EXPL OF WHAT WERE DOING WITH THIS LIST:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-> this list is all the terms that I vetted and will be adding to the DEV_LANDSCAPE officially (over time, bc it's going to take a while to add all of these considering the process/steps needed for each 1, which I explain below:)
------- STEPS TO ADD A TERM ------- (follow these steps for EACH of the 650+ terms in our master list)
-1. input the term into our 2-term bot GPT: ==> https://chatgpt.com/c/6a28f0ec-cf88-83ea-a2ed-e6dd171bd61e   		    ❌ https://chatgpt.com/c/6a25c043-4da8-83ea-9e42-5c397fcdc0dd (not using this 1-term bot anymore)
-2. wait for the full output to finish
-3. copy the 'add-term' command of the output
-4. paste the add-term command into your terminal and run it 
-5. (double check you didn't get any 'no-id-found' error which happens every once in a while when the 'id' for a term isn't super obvious)
-6. check off the term you just added in the list below so we keep track of where we last left off (IMP TO DO THIS!!!!)
-6. DONE (now the term is officially added and you can move onto the NEXT term)(use dlandupdate command or the update-and-open raycast command to check that the term was added succesffully)
 
-
- ❗TODO❗ FOOD-FOR-THOUGHT:
- ❗TODO❗ MAYBE it's worth updating the GPT bot chat so that i can accept 2 or more terms at once... that way I could def speed up this process 
- ❗TODO❗ FOOD-FOR-THOUGHT:
-			--> THEN I COULD EVEN CHANGE THE OUTPUT FORMAT SO THAT THE LAST TWO SECTIONS ARE BOTH THE 'add-term' COMMANDS FOR THE two TERMS I PROVIDED...
-
-
-
-
-
-⚠️ UPDATE!!!
-⚠️ UPDATE!!!
-⚠️ UPDATE!!! Use this 'two-at-a-time' GPT chat instead of the 1-term one 
-https://chatgpt.com/c/6a28f0ec-cf88-83ea-a2ed-e6dd171bd61e
-⚠️ UPDATE!!! Use this 'two-at-a-time' GPT chat instead of the 1-term one 
-⚠️ UPDATE!!!
-⚠️ UPDATE!!!
 
 
 ###############################################################################
@@ -124,48 +274,48 @@ MASTER-LIST-OF-TERMS:
 - ✅Julia
 - ✅Zig
 - ✅COBOL
-- Fortran
-- VB.NET
-- Clojure
-- OCaml
-- VBA
-- YAML
-- TOML
-- Markdown
-- HCL
-- GraphQL
+- ✅Fortran
+- ✅VB.NET
+- ✅Clojure
+- ✅OCaml
+- ✅VBA
+- ✅YAML
+- ✅TOML
+- ✅Markdown
+- ✅HCL
+- ✅GraphQL
 
 (2)
-- IntelliJ IDEA
-- PyCharm
-- WebStorm
-- CLion
-- Rider
-- NetBeans
-- Sublime Text
-- Atom
-- Cursor
-- Zed
-- Mercurial
-- Perforce
-- Bitbucket
-- Azure DevOps
-- Jira
-- Confluence
-- Trello
-- Gradle
-- Ant
-- CMake
-- Make
-- MSBuild
-- npm
-- Yarn
-- pnpm
-- pip
-- Poetry
-- NuGet
-- Composer
-- Cargo
+- IntelliJ IDEA✅
+- PyCharm✅
+- WebStorm✅
+- CLion✅
+- Rider		✅	
+- NetBeans		✅
+- Sublime Text	✅
+- Atom			✅
+- Cursor		✅
+- Zed			✅
+- Mercurial		✅
+- Perforce		✅
+- Bitbucket		✅
+- Azure DevOps	✅
+- Jira			✅
+- Confluence	✅
+- Trello		✅
+- Gradle		✅
+- Ant			✅
+- CMake			✅
+- Make			✅
+- MSBuild		✅
+- npm			✅ 
+- Yarn			✅
+- pnpm✅			
+- pip✅
+- Poetry	✅ 
+- NuGet✅
+- Composer✅
+- Cargo✅
 - Homebrew
 - GitHub Actions
 - GitLab CI/CD
