@@ -194,49 +194,52 @@ TRACKING PROGRESS OF MASTER LIST:
 ++++++++++++++++++++++++++++++++++
 
 
+[✅]		1 🟦 LANGUAGES				25
+[✅]		2 🟦 DEVELOPMENT TOOLS		45
+[✅]		3 🟦 FRAMEOWRKS AND LIBS	36
+---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 581 terms-left, (3/17 cats done) ---------
+[]		4 🟦 PLATOFRMS AND RUNTIMES 	 27
+
+[]		5 🟩 OPERATING SYSTEMS    		 28
+[]		6 🟩 DATABASES     				29
+[]		7 🟩 CLOUD						34	
+[]		8 🟩 ONTAINERIZ & ORCH			52
+[]		9 🟩 NETWORKIN					59
+[]		10 🟩 SECURITY					24
+[]		11 🟩 WEB SERVICES				49
+
+[]		12 🟪 ARCHITECTURE & DESIGN		49
+[]		13 🟪 METHODOLOGIES			37
+[]		14 🟪 API TECHNOLOGIES			27
+[]		15 🟪 TESTING   					56
+[]		16 🟪 DEBUGGING AND PROFILING       47
+[]		17 🟪 SOFTWARE ENGINEERING CONCEPTS	63
 
 
+1	25
+2	45
+3	36
+4	27
 
+5	28
+6	29
+7	34
+8	52	[LOTS]
+9	59	[LOTS]
+10	24
+11	49	[LOTS]
 
+12	49
+13 	37
+14 	27
+15 	56	[LOTS]
+16 	47	[LOTS]
+17	63 	[LOTS]
+-----------------
+≃ 687 total
 
-
-
-
-
-
-
-
-
-
-
-
-
-[✅]		1 🟦 LANGUAGES
----------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑----
-[]		2 🟦 DEVELOPMENT TOOLS
-[]		3 🟦 FRAMEOWRKS AND LIBS
-[]		4 🟦 PLATOFRMS AND RUNTIMES
-
-[]		5 🟩 OPERATING SYSTEMS
-[]		6 🟩 DATABASES
-[]		7 🟩 CLOUD
-[]		8 🟩 ONTAINERIZATIONS & ORCHESTRATION
-[]		9 🟩 NETWORKIN
-[]		10 🟩 SECURITY
-[]		11 🟩 WEB SERVICES
-
-[]		12 🟪 ARCHITECTURE & DESIGN
-[]		13 🟪 METHODOLOGIES
-[]		14 🟪 API TECHNOLOGIES
-[]		15 🟪 TESTING
-[]		16 🟪 DEBUGGING AND PROFILING
-[]		17 🟪 SOFTWARE ENGINEERING CONCEPTS
-
-
-
-
-
-
+Could not load taxonomy data
+Unexpected non-whitespace character after JSON at position 599264 (line 1 column 599265)
 
 
 
@@ -316,88 +319,89 @@ MASTER-LIST-OF-TERMS:
 - NuGet✅
 - Composer✅
 - Cargo✅
-- Homebrew
-- GitHub Actions
-- GitLab CI/CD
-- CircleCI
-- Travis CI
-- TeamCity
-- Bamboo
-- Terraform
-- Swagger
-- OpenAPI
-- ESLint
-- Prettier
-- SonarQube
-- NPM Registry
+- Homebrew✅
+- GitHub Actions✅
+- GitLab CI/CD✅
+- CircleCI✅
+- Travis CI✅
+- TeamCity✅
+- Bamboo✅
+- Terraform✅✅
+- Swagger✅
+- OpenAPI✅
+- ESLint✅
+- Prettier✅
+- SonarQube✅ 
+- NPM Registry✅
 
-(3)
-- FastAPI
-- NestJS
-- Fastify
-- Koa
-- Nuxt
-- Svelte
-- SvelteKit
-- Astro
-- Remix
-- Ember.js
-- Tailwind CSS
-- Material UI
-- D3.js
-- Three.js
-- PyTorch
-- scikit-learn
-- NumPy
-- pandas
-- OpenCV
-- Hibernate
-- Entity Framework
-- Qt
-- Electron
-- .NET MAUI
-- Vite
-- Webpack
-- Babel
-- Gradle
-- JUnit
-- Jest
-- Cypress
-- Selenium
-- Unity
-- Unreal Engine
-- Terraform
+(3) 36
+- FastAPI✅
+- NestJS✅
+- Fastify✅
+- Koa✅
+- Nuxt✅
+- Svelte✅
+- SvelteKit✅
+- Astro✅
+- Remix ✅
+- Ember.js✅
+- Tailwind CSS✅
+- Material UI;✅
+- D3.js✅
+- Three.js✅
+- PyTorch✅
+- scikit-learn✅
+- NumPy✅
+- pandas✅
+- OpenCV✅
+- Hibernate✅
+- Entity Framework✅
+- Qt✅
+- Electron✅
+- .NET MAUI✅
+- Vite✅
+- Webpack✅
+- Babel✅
+- Gradle✅
+- JUnit✅
+- Jest✅
+- Cypress✅
+- Selenium✅
+- Unity✅
+- Unreal Engine✅
+- Terraform✅
+- Relational-database (added-myself)
 
-(4)
-- Java Runtime Environment
-- Java Development Kit
-- Android Runtime
-- Common Language Runtime
-- Mono
-- Deno
-- Bun
-- WebAssembly
-- Heroku
-- Vercel
-- Netlify
-- Cloudflare Workers
-- AWS Lambda
-- Azure Functions
-- Google Cloud Functions
-- Google Cloud Run
-- Apache Tomcat
-- Jetty
-- WildFly
-- BEAM
-- CPython
-- PHP-FPM
-- iOS
-- Android
-- Flutter
-- Apache Cordova
+(4) 27
+- Java Runtime Environment✅
+- Java Development Kit✅
+- Android Runtime✅
+- Common Language Runtime✅
+- Mono✅
+- Deno✅
+- Bun✅
+- WebAssembly✅
+- Heroku✅
+- Vercel✅
+- Netlify✅
+- Cloudflare Workers✅
+- AWS Lambda✅
+- Azure Functions✅
+- Google Cloud Functions✅
+- Google Cloud Run✅
+- Apache Tomcat✅
+- Jetty✅
+- WildFly✅
+- BEAM✅
+- CPython✅
+- PHP-FPM✅
+- iOS✅
+- Android✅
+- Flutter✅
+- Apache Cordova✅
 
 (22222222222222222222222222222222222222222222222222222222222222222222222)
-(5)
+(5) 28
 - Android
 - iOS
 - iPadOS
@@ -427,7 +431,7 @@ MASTER-LIST-OF-TERMS:
 - Windows Subsystem for Linux
 - Zephyr
 
-(6)
+(6) 29
 - SQLite
 - MariaDB
 - Redis
@@ -461,7 +465,7 @@ MASTER-LIST-OF-TERMS:
 - Kafka
 - RabbitMQ
 
-(7)
+(7) 34 
 - Oracle Cloud Infrastructure
 - IBM Cloud
 - Alibaba Cloud
@@ -492,7 +496,7 @@ MASTER-LIST-OF-TERMS:
 - S3
 - EC2
 
-(8)
+(8) 52 
 - containerd
 - CRI-O
 - runc
@@ -528,7 +532,7 @@ MASTER-LIST-OF-TERMS:
 - container registry
 - Dapr
 
-(9)
+(9) 59
 - TCP/IP
 - TCP
 - UDP
@@ -582,7 +586,7 @@ MASTER-LIST-OF-TERMS:
 - VPC
 - OpenSSH
 
-(10)
+(10) 24
 - Vulnerability Assessment
 - Vulnerability Management
 - Threat Modeling
@@ -643,7 +647,7 @@ MASTER-LIST-OF-TERMS:
 - ISO 27001
 - NIST Cybersecurity Framework
 
-(11)
+(11) 49
 - Caddy
 - LiteSpeed Web Server
 - OpenLiteSpeed
@@ -670,7 +674,7 @@ MASTER-LIST-OF-TERMS:
 - Kestrel
 
 (33333333333333333333333333333333333333333333333333333333333333333333333)
-(12)
+(12) 49
 - Event-Driven Architecture
 - Layered Architecture
 - Hexagonal Architecture
@@ -720,7 +724,7 @@ MASTER-LIST-OF-TERMS:
 - Design System
 - Wireframe
 
-(13)
+(13) 37
 - Waterfall
 - Iterative Development
 - Incremental Development
@@ -758,7 +762,7 @@ MASTER-LIST-OF-TERMS:
 - A/B Testing
 - Design Thinking
 
-(14)
+(14) 27
 - API
 - SOAP
 - GraphQL
@@ -787,7 +791,7 @@ MASTER-LIST-OF-TERMS:
 - CORS
 - MQTT
 
-(15)
+(15) 56
 - Integration Testing
 - End-to-End Testing
 - Functional Testing
@@ -845,7 +849,7 @@ MASTER-LIST-OF-TERMS:
 - Fuzz Testing
 - Chaos Engineering
 
-(16)
+(16) 47
 - Linux perf
 - OProfile
 - SystemTap
@@ -894,7 +898,7 @@ MASTER-LIST-OF-TERMS:
 - New Relic
 - Datadog
 
-(17)
+(17) 63
 - Abstraction
 - Encapsulation
 - Inheritance

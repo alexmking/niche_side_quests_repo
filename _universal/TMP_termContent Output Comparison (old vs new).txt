@@ -1817,3 +1817,118 @@ node taxonomy.js add-term \
 
   "node taxonomy.js remove-term python"
 
+node taxonomy.js add-term \
+  --continent Development \
+  --category "Frameworks & Libraries" \
+  --id nestjs \
+  --name "NestJS" \
+  --alias "Nest.js" \
+  --alias "Nest JS" \
+  --alias "Nest Framework" \
+  --alias "NestJS Framework" \
+  --note "Node.js backend framework for building scalable server-side applications with TypeScript, dependency injection, controllers, modules, providers, and structured application architecture." \
+  --tag nodejs \
+  --tag typescript \
+  --tag javascript \
+  --tag backend \
+  --tag web-framework \
+  --tag api-framework \
+  --tag server-side \
+  --tag framework \
+  --what-is-it "A TypeScript-first Node.js backend framework used to build structured, scalable server-side applications, APIs, and microservices." \
+  --description "NestJS is a backend framework for Node.js applications, commonly used with TypeScript. It provides a structured architecture based on modules, controllers, providers, services, decorators, and dependency injection. Developers use NestJS to build REST APIs, GraphQL APIs, microservices, WebSocket gateways, enterprise backend services, and server-side applications. NestJS often runs on Express.js by default and can also use Fastify as an underlying HTTP platform. It should be classified as a framework/library, while Node.js is the runtime and TypeScript or JavaScript are the languages used to build applications with it." \
+  --used-with "Node.js" \
+  --used-with "TypeScript" \
+  --used-with "JavaScript" \
+  --used-with "Express.js" \
+  --used-with "Fastify" \
+  --used-with "REST API" \
+  --used-with "GraphQL" \
+  --used-with "WebSockets" \
+  --used-with "TypeORM" \
+  --used-with "Prisma" \
+  --used-with "Docker" \
+  --used-with "npm" \
+  --built-on "Node.js" \
+  --built-on "TypeScript" \
+  --built-on "JavaScript" \
+  --built-on "Express.js" \
+  --built-on "Dependency Injection" \
+  --built-on "Decorators" \
+  --built-on "Modular Architecture" \
+  --built-on "Object-Oriented Programming" \
+  --built-upon-by "Node.js Backend Development" \
+  --built-upon-by "TypeScript Backend Services" \
+  --built-upon-by "REST API Development" \
+  --built-upon-by "GraphQL API Development" \
+  --built-upon-by "Microservice Development" \
+  --built-upon-by "Enterprise Backend Applications" \
+  --built-upon-by "WebSocket Gateway Development" \
+  --built-upon-by "Server-Side Application Architecture" \
+  --built-upon-by "Cloud-Native Backend Services" \
+  --runs-on "Node.js" \
+  --runs-on "Express.js" \
+  --runs-on "Fastify" \
+  --runs-on "Docker Containers" \
+  --runs-on "Linux" \
+  --runs-on "Windows" \
+  --runs-on "macOS" \
+  --runs-on "Cloud Platforms" \
+  --runs-on "CI/CD Environments" \
+  --alternative "Express.js" \
+  --alternative "FastAPI" \
+  --alternative "Django" \
+  --alternative "Flask" \
+  --alternative "Spring Boot" \
+  --alternative "ASP.NET Core" \
+  --alternative "Koa" \
+  --part-of "Node.js Ecosystem" \
+  --part-of "TypeScript Ecosystem" \
+  --part-of "Backend Development" \
+  --part-of "Web Development" \
+  --part-of "API Development" \
+  --part-of "Frameworks & Libraries" \
+  --part-of "Server-Side Development" \
+  --includes "Modules" \
+  --includes "Controllers" \
+  --includes "Providers" \
+  --includes "Services" \
+  --includes "Dependency Injection" \
+  --includes "Decorators" \
+  --includes "Middleware" \
+  --includes "Guards" \
+  --includes "Interceptors" \
+  --includes "Pipes" \
+  --includes "Exception Filters" \
+  --includes "CLI Tooling" \
+  --includes "Microservice Support" \
+  --example "NestJS REST controller" \
+  --example "NestJS module" \
+  --example "Injectable service provider" \
+  --example "DTO validation pipe" \
+  --example "GraphQL resolver in NestJS" \
+  --example "WebSocket gateway" \
+  --example "NestJS microservice" \
+  --example "NestJS app using Prisma" \
+  --example "Dockerized NestJS backend" \
+  --use-case "Building TypeScript backend applications" \
+  --use-case "Creating REST APIs with Node.js" \
+  --use-case "Building GraphQL APIs" \
+  --use-case "Structuring enterprise Node.js applications" \
+  --use-case "Using dependency injection in backend services" \
+  --use-case "Creating microservices" \
+  --use-case "Building WebSocket gateways" \
+  --use-case "Organizing backend code with modules and services" \
+  --use-case "Developing scalable server-side applications" \
+  --related-concept "Node.js" \
+  --related-concept "TypeScript" \
+  --related-concept "JavaScript" \
+  --related-concept "Express.js" \
+  --related-concept "Fastify" \
+  --related-concept "REST API" \
+  --related-concept "GraphQL" \
+  --related-concept "Dependency Injection" \
+  --related-concept "Backend" \
+  --related-concept "Microservices" \
+  --related-concept "OOP" \
+  --related-concept "Server-Side Development"
