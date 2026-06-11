@@ -5,6 +5,8 @@ const fs   = require('fs');
 const path = require('path');
 
 const TAXONOMY_PATH = path.join(__dirname, 'taxonomy.json');
+const HTML_PATH     = path.join(__dirname, 'index.html');
+const RULES_PATH    = path.join(__dirname, 'rules.json');
 
 // ── File I/O ──────────────────────────────────────────────────────────────────
 
@@ -17,12 +19,42 @@ function loadTaxonomy() {
   }
 }
 
+// Serialize obj to JSON safe for embedding inside a <script> tag.
+// Escapes <, >, and & to avoid the browser's HTML parser breaking the JSON.
+function safeEmbedJson(obj) {
+  return JSON.stringify(obj)
+    .replace(/</g, '\\u003C')
+    .replace(/>/g, '\\u003E')
+    .replace(/&/g, '\\u0026');
+}
+
 function saveTaxonomy(taxonomy) {
   try {
     fs.writeFileSync(TAXONOMY_PATH, JSON.stringify(taxonomy, null, 2) + '\n', 'utf8');
   } catch (err) {
     console.error(`Error: could not write taxonomy.json — ${err.message}`);
     process.exit(1);
+  }
+
+  // Keep the embedded copy in index.html in sync.
+  try {
+    let html = fs.readFileSync(HTML_PATH, 'utf8');
+    const taxJson = safeEmbedJson(taxonomy);
+    html = html.replace(
+      /(<script type="application\/json" id="taxonomy-data">)[\s\S]*?(<\/script>)/,
+      `$1${taxJson}$2`
+    );
+    // Also refresh rules-data in case rules.json ever changes.
+    try {
+      const rules = JSON.parse(fs.readFileSync(RULES_PATH, 'utf8'));
+      html = html.replace(
+        /(<script type="application\/json" id="rules-data">)[\s\S]*?(<\/script>)/,
+        `$1${safeEmbedJson(rules)}$2`
+      );
+    } catch (_) { /* rules.json unchanged or unreadable — leave rules-data as-is */ }
+    fs.writeFileSync(HTML_PATH, html, 'utf8');
+  } catch (err) {
+    console.error(`Warning: could not update embedded data in index.html — ${err.message}`);
   }
 }
 
