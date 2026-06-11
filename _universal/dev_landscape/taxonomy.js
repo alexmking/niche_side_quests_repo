@@ -40,16 +40,18 @@ function saveTaxonomy(taxonomy) {
   try {
     let html = fs.readFileSync(HTML_PATH, 'utf8');
     const taxJson = safeEmbedJson(taxonomy);
+    // Use a replacer function to avoid $ special-char substitution in the replacement string.
     html = html.replace(
-      /(<script type="application\/json" id="taxonomy-data">)[\s\S]*?(<\/script>)/,
-      `$1${taxJson}$2`
+      /<script type="application\/json" id="taxonomy-data">[\s\S]*?<\/script>/,
+      () => `<script type="application/json" id="taxonomy-data">${taxJson}</script>`
     );
     // Also refresh rules-data in case rules.json ever changes.
     try {
       const rules = JSON.parse(fs.readFileSync(RULES_PATH, 'utf8'));
+      const rulesJson = safeEmbedJson(rules);
       html = html.replace(
-        /(<script type="application\/json" id="rules-data">)[\s\S]*?(<\/script>)/,
-        `$1${safeEmbedJson(rules)}$2`
+        /<script type="application\/json" id="rules-data">[\s\S]*?<\/script>/,
+        () => `<script type="application/json" id="rules-data">${rulesJson}</script>`
       );
     } catch (_) { /* rules.json unchanged or unreadable — leave rules-data as-is */ }
     fs.writeFileSync(HTML_PATH, html, 'utf8');

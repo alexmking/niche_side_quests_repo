@@ -51,6 +51,9 @@ export PATH="$HOME/amk/tools/alexScripts:$PATH"
 # KIM this line below is APPENDING to our list of PATHS. It's NOT REDEFINING the PATH to just be the path we're giving it on the line (in this case the path to the niche_side_quests_repo/mac dir). So this is good bc it means we can still access all the other PATHS that were already in our PATH variable before, but now we also have the new path to the niche_side_quests_repo/mac dir added to the list of places it will look for executables when we run commands in terminal.
 export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
 
+export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/:$PATH"
+
+
 # /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
 # "$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
 
@@ -537,16 +540,26 @@ alias amk="cd ~/Users/alexking/amk"
 # /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
 # /scr-update_dev_landscape1.py
 
+####### INITIAL DIR FOR THE UPDATE SCRIPT (in niche/mac)
+# alias updatedevlandscape="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+# alias updatelandscape="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+# alias updatedevlandscapetaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+# alias updatedevtaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+# alias updatelandscapetaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
 
-alias updatedevlandscape="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias updatelandscape="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias updatedevlandscapetaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias updatedevtaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias updatelandscapetaxonomy="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+# alias updatedl="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+# alias updatedevl="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+# alias updatedland="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+####### NEW DIR FOR THE UPDATE SCRIPT (in niche/universal/dev_landscape) /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/scr-update_dev_landscape1.py
+alias updatedevlandscape="$NICHE_REPO_DIR/_universal/dev_landscape/scr-update_dev_landscape1.py"
+alias updatelandscape="$NICHE_REPO_DIR/_universal/dev_landscape/scr-update_dev_landscape1.py"
+alias updatedevlandscapetaxonomy="$NICHE_REPO_DIR/_universal/dev_landscape/scr-update_dev_landscape1.py"
+alias updatedevtaxonomy="$NICHE_REPO_DIR/_universal/dev_landscape/scr-update_dev_landscape1.py"
+alias updatelandscapetaxonomy="$NICHE_REPO_DIR/_universal/dev_landscape/scr-update_dev_landscape1.py"
 
-alias updatedl="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias updatedevl="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
-alias updatedland="$NICHE_REPO_DIR/mac/scr-update_dev_landscape1.py"
+alias updatedl="$NICHE_REPO_DIR/_universal/dev_landscape/scr-update_dev_landscape1.py"
+alias updatedevl="$NICHE_REPO_DIR/_universal/dev_landscape/scr-update_dev_landscape1.py"
+alias updatedland="$NICHE_REPO_DIR/_universal/dev_landscape/scr-update_dev_landscape1.py"
 
 
 

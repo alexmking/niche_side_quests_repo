@@ -79,8 +79,25 @@ EXPL OF WHAT WERE DOING WITH THIS LIST:
 
 
 
-
-
+```text
+1 🟦 LANGUAGES
+2 🟦 DEVELOPMENT TOOLS
+3 🟦 FRAMEOWRKS AND LIBS
+4 🟦 PLATOFRMS AND RUNTIMES
+5 🟩 OPERATING SYSTEMS
+6 🟩 DATABASES
+7 🟩 CLOUD
+8 🟩 ONTAINERIZATIONS & ORCHESTRATION
+9 🟩 NETWORKIN
+10 🟩 SECURITY
+11 🟩 WEB SERVICES
+12 🟪 ARCHITECTURE & DESIGN
+13 🟪 METHODOLOGIES
+14 🟪 API TECHNOLOGIES
+15 🟪 TESTING
+16 🟪 DEBUGGING AND PROFILING
+17 🟪 SOFTWARE ENGINEERING CONCEPTS
+```
 
 
 
@@ -197,10 +214,10 @@ TRACKING PROGRESS OF MASTER LIST:
 [✅]		1 🟦 LANGUAGES				25
 [✅]		2 🟦 DEVELOPMENT TOOLS		45
 [✅]		3 🟦 FRAMEOWRKS AND LIBS	36
----------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 581 terms-left, (3/17 cats done) ---------
-[]		4 🟦 PLATOFRMS AND RUNTIMES 	 27
+[✅]		4 🟦 PLATOFRMS AND RUNTIMES 	 27
 
 []		5 🟩 OPERATING SYSTEMS    		 28
+---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 526 terms-left, (4/17 cats done) ---------
 []		6 🟩 DATABASES     				29
 []		7 🟩 CLOUD						34	
 []		8 🟩 ONTAINERIZ & ORCH			52
@@ -256,708 +273,1142 @@ THE MASTER LIST OF NEW TERMS WE'RE GOING TO ADD TO LANDSCAPE
 
 
 
+### QUICK TIP: ###
+-setup 3 tabs of branched-chats at once, and send 6 terms at a time
+-- then wait for all 3 tabs to be done, then copy and paste all 6 at a time (then hyper-v 6 times in terminal to add all 6, quickly
+--- then REPEAT the whole process for another 6 more at a time)
+	📌https://chatgpt.com/c/6a2b2a52-a218-83ea-98f2-3944bc3a7039
+	📌https://chatgpt.com/c/6a2a40e5-a360-83ea-b6b5-fb50146c40c8
+	📌https://chatgpt.com/c/6a2b32c1-7cdc-83ea-a039-d7546b277906
+
 ###############################################################################
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 MASTER-LIST-OF-TERMS:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ###############################################################################
-(11111111111111111111111111111111111111111111111111111111111111111111111)
-(1)
-- ✅Objective-C
-- ✅Dart
-- ✅Lua
-- ✅R
-- ✅MATLAB
-- ✅Perl
-- ✅Groovy
-- ✅Scala
-- ✅Haskell
-- ✅Erlang
-- ✅Elixir
-- ✅Julia
-- ✅Zig
-- ✅COBOL
-- ✅Fortran
-- ✅VB.NET
-- ✅Clojure
-- ✅OCaml
-- ✅VBA
-- ✅YAML
-- ✅TOML
-- ✅Markdown
-- ✅HCL
-- ✅GraphQL
 
-(2)
-- IntelliJ IDEA✅
-- PyCharm✅
-- WebStorm✅
-- CLion✅
-- Rider		✅	
-- NetBeans		✅
-- Sublime Text	✅
-- Atom			✅
-- Cursor		✅
-- Zed			✅
-- Mercurial		✅
-- Perforce		✅
-- Bitbucket		✅
-- Azure DevOps	✅
-- Jira			✅
-- Confluence	✅
-- Trello		✅
-- Gradle		✅
-- Ant			✅
-- CMake			✅
-- Make			✅
-- MSBuild		✅
-- npm			✅ 
-- Yarn			✅
-- pnpm✅			
-- pip✅
-- Poetry	✅ 
-- NuGet✅
-- Composer✅
-- Cargo✅
-- Homebrew✅
-- GitHub Actions✅
-- GitLab CI/CD✅
-- CircleCI✅
-- Travis CI✅
-- TeamCity✅
-- Bamboo✅
-- Terraform✅✅
-- Swagger✅
-- OpenAPI✅
-- ESLint✅
-- Prettier✅
-- SonarQube✅ 
-- NPM Registry✅
+Done — removed the tab spacing while keeping the green checkmarks. ✅
 
-(3) 36
-- FastAPI✅
-- NestJS✅
-- Fastify✅
-- Koa✅
-- Nuxt✅
-- Svelte✅
-- SvelteKit✅
-- Astro✅
-- Remix ✅
-- Ember.js✅
-- Tailwind CSS✅
-- Material UI;✅
-- D3.js✅
-- Three.js✅
-- PyTorch✅
-- scikit-learn✅
-- NumPy✅
-- pandas✅
-- OpenCV✅
-- Hibernate✅
-- Entity Framework✅
-- Qt✅
-- Electron✅
-- .NET MAUI✅
-- Vite✅
-- Webpack✅
-- Babel✅
-- Gradle✅
-- JUnit✅
-- Jest✅
-- Cypress✅
-- Selenium✅
-- Unity✅
-- Unreal Engine✅
-- Terraform✅
-- Relational-database (added-myself)
+(1) 🟦 LANGUAGES
 
-(4) 27
-- Java Runtime Environment✅
-- Java Development Kit✅
-- Android Runtime✅
-- Common Language Runtime✅
-- Mono✅
-- Deno✅
-- Bun✅
-- WebAssembly✅
-- Heroku✅
-- Vercel✅
-- Netlify✅
-- Cloudflare Workers✅
-- AWS Lambda✅
-- Azure Functions✅
-- Google Cloud Functions✅
-- Google Cloud Run✅
-- Apache Tomcat✅
-- Jetty✅
-- WildFly✅
-- BEAM✅
-- CPython✅
-- PHP-FPM✅
-- iOS✅
-- Android✅
-- Flutter✅
-- Apache Cordova✅
+* Objective-C ✅
+* Dart ✅
+* Lua ✅
+* R ✅
+* MATLAB ✅
+* Perl ✅
+* Groovy ✅
+* Scala ✅
+* Haskell ✅
+* Erlang ✅
+* Elixir ✅
+* Julia ✅
+* Zig ✅
+* COBOL ✅
+* Fortran ✅
+* VB.NET ✅
+* Clojure ✅
+* OCaml ✅
+* VBA ✅
+* YAML ✅
+* TOML ✅
+* Markdown ✅
+* HCL ✅
+* GraphQL 🔁 ✅ ❌ [confirmed-already-in-correct-category]
+
+(2) 🟦 DEVELOPMENT TOOLS
+
+* IntelliJ IDEA ✅
+* PyCharm ✅
+* WebStorm ✅
+* CLion ✅
+* Rider ✅
+* NetBeans ✅
+* Sublime Text ✅
+* Atom ✅
+* Cursor ✅
+* Zed ✅
+* Mercurial ✅
+* Perforce ✅
+* Bitbucket ✅
+* Azure DevOps ✅
+* Jira ✅
+* Confluence ✅
+* Trello ✅
+* Gradle 🔁 ✅🌈[confirmed-already-in-correct-category]
+* Ant ✅
+* CMake ✅
+* Make ✅
+* MSBuild ✅
+* npm ✅
+* Yarn ✅
+* pnpm ✅
+* pip ✅
+* Poetry ✅
+* NuGet ✅
+* Composer ✅
+* Cargo ✅
+* Homebrew ✅
+* GitHub Actions ✅
+* GitLab CI/CD ✅
+* CircleCI ✅
+* Travis CI ✅
+* TeamCity ✅
+* Bamboo ✅
+* Terraform 🔁 ✅🌈[confirmed-already-in-correct-category]
+* Swagger 🔁 ✅❌ [confirmed-already-in-correct-category]
+* OpenAPI 🔁 ✅❌[confirmed-already-in-correct-category]
+* ESLint ✅
+* Prettier ✅
+* SonarQube ✅
+* NPM Registry ✅
+
+(3) 36 🟦 FRAMEOWRKS AND LIBS
+
+* FastAPI ✅
+* NestJS ✅
+* Fastify ✅
+* Koa ✅
+* Nuxt ✅
+* Svelte ✅
+* SvelteKit ✅
+* Astro ✅
+* Remix ✅
+* Ember.js ✅
+* Tailwind CSS ✅
+* Material UI; ✅
+* D3.js ✅
+* Three.js ✅
+* PyTorch ✅
+* scikit-learn ✅
+* NumPy ✅
+* pandas ✅
+* OpenCV ✅
+* Hibernate ✅
+* Entity Framework ✅
+* Qt ✅
+* Electron ✅
+* .NET MAUI ✅
+* Vite ✅
+* Webpack ✅
+* Babel ✅
+* Gradle 🔁 ✅❌
+* JUnit 🔁 ✅❌[confirmed-already-in-correct-category]
+* Jest 🔁 ✅❌[confirmed-already-in-correct-category]
+* Cypress 🔁 ✅❌[confirmed-already-in-correct-category]
+* Selenium 🔁 ✅❌[confirmed-already-in-correct-category]
+* Unity ✅
+* Unreal Engine ✅
+* Terraform 🔁 ✅❌[confirmed-already-in-correct-category]
+* Relational-database (added-myself) ✅
+
+(4) 27 🟦 PLATOFRMS AND RUNTIMES
+
+* Java Runtime Environment ✅
+* Java Development Kit ✅
+* Android Runtime ✅
+* Common Language Runtime ✅
+* Mono ✅
+* Deno ✅
+* Bun ✅
+* WebAssembly ✅
+* Heroku 🔁 ✅❌[confirmed-already-in-correct-category]
+* Vercel 🔁 ✅❌[confirmed-already-in-correct-category]
+* Netlify 🔁 ✅❌[confirmed-already-in-correct-category]
+* Cloudflare Workers ✅
+* AWS Lambda 🔁 ✅❌[confirmed-already-in-correct-category]
+* Azure Functions 🔁 ✅❌[confirmed-already-in-correct-category]
+* Google Cloud Functions ✅
+* Google Cloud Run 🔁 ✅❌[confirmed-already-in-correct-category]
+* Apache Tomcat 🔁 ✅🌈[confirmed-already-in-correct-category]
+* Jetty 🔁 ✅🌈[confirmed-already-in-correct-category]
+* WildFly 🔁 ✅🌈[confirmed-already-in-correct-category]
+* BEAM ✅
+* CPython ✅
+* PHP-FPM ✅
+* iOS 🔁 ✅❌[confirmed-already-in-correct-category]
+* Android 🔁 ✅❌[confirmed-already-in-correct-category]
+* Flutter ✅
+* Apache Cordova ✅
+----
+(Variations-of-terms-to-try-adding:) [MAKE SURE NEITHER OF THESE GET PUT IN OPERATING-SYSTEMS category]
+- iOS SDK✅ 			→ 		Platforms & Runtimes or Development Tools❗TODO❗ (LET the prompt decide which cat, just as long as i'ts not in OPERATING SYSTEMS cat)
+- Android SDK ✅	→ 		Development Tools or Platforms & Runtimes LET the prompt decide which cat, just as long as i'ts not in OPERATING SYSTEMS cat)
+----
 
 (22222222222222222222222222222222222222222222222222222222222222222222222)
-(5) 28
-- Android
-- iOS
-- iPadOS
-- watchOS
-- tvOS
-- ChromeOS
-- Debian
-- Fedora
-- Red Hat Enterprise Linux
-- Rocky Linux
-- AlmaLinux
-- Arch Linux
-- openSUSE
-- SUSE Linux Enterprise
-- FreeBSD
-- OpenBSD
-- NetBSD
-- Solaris
-- AIX
-- HP-UX
-- z/OS
-- QNX
-- VxWorks
-- FreeRTOS
-- Kali Linux
-- Windows Server
-- Windows Subsystem for Linux
-- Zephyr
+(5) 28 🟩 OPERATING SYSTEMS
 
-(6) 29
-- SQLite
-- MariaDB
-- Redis
-- Elasticsearch
-- OpenSearch
-- Amazon DynamoDB
-- Apache Cassandra
-- Couchbase
-- CouchDB
-- Neo4j
-- InfluxDB
-- TimescaleDB
-- Snowflake
-- BigQuery
-- Amazon Redshift
-- IBM Db2
-- CockroachDB
-- YugabyteDB
-- HBase
-- Hive
-- PostGIS
-- Firebase Realtime Database
-- Supabase
-- PlanetScale
-- MongoDB Atlas
-- Amazon RDS
-- Azure SQL Database
-- Google Cloud SQL
-- Databricks
-- Apache Spark
-- Kafka
-- RabbitMQ
+* Android 🔁✅🌈[confirmed-already-in-correct-category]
+* iOS 🔁✅🌈[confirmed-already-in-correct-category]
+* iPadOS✅
+* watchOS✅
+* tvOS✅
+* ChromeOS✅
+* Debian✅
+* Fedora✅
+* Red Hat Enterprise Linux✅
+* Rocky Linux✅
+* AlmaLinux✅
+* Arch Linux✅
+* openSUSE✅
+* SUSE Linux Enterprise✅
+* FreeBSD✅
+* OpenBSD✅
+* NetBSD✅
+* Solaris✅
+* AIX✅
+* HP-UX✅
+* z/OS✅
+* QNX✅
+* VxWorks✅
+* FreeRTOS✅
+* Kali Linux ✅🔁🌈[confirmed-already-in-correct-category]
+* Windows Subsystem for Linux✅
+* Windows Server✅
+* Zephyr✅
 
-(7) 34 
-- Oracle Cloud Infrastructure
-- IBM Cloud
-- Alibaba Cloud
-- DigitalOcean
-- Linode
-- Vultr
-- Cloudflare
-- Heroku
-- Vercel
-- Netlify
-- Public Cloud
-- Private Cloud
-- Hybrid Cloud
-- Multi-cloud
-- Serverless Computing
-- Function as a Service
-- Backend as a Service
-- Database as a Service
-- Container as a Service
-- Virtual Private Cloud
-- Content Delivery Network
-- Edge Computing
-- AWS Lambda
-- Azure Functions
-- Google Cloud Run
-- CloudFormation
-- Kubernetes Engine
-- S3
-- EC2
+(6) 29 🟩 DATABASES
 
-(8) 52 
-- containerd
-- CRI-O
-- runc
-- Podman
-- BuildKit
-- Docker Compose
-- OpenShift
-- Helm
-- Kustomize
-- kubectl
-- Minikube
-- Kind
-- k3s
-- MicroK8s
-- Amazon Elastic Kubernetes Service
-- Azure Kubernetes Service
-- Google Kubernetes Engine
-- Nomad
-- Rancher
-- Harbor
-- Argo CD
-- Flux
-- Istio
-- Linkerd
-- Docker Engine
-- Docker Desktop
-- Docker Hub
-- Open Container Initiative
-- OCI Image Format
-- Container Runtime Interface
-- Container Network Interface
-- container image
-- container registry
-- Dapr
+* SQLite✅
+* MariaDB✅
+* Redis✅
+* Elasticsearch✅
+* OpenSearch✅
+* Amazon DynamoDB✅
+* Apache Cassandra✅
+* Couchbase✅
+* CouchDB✅
+* Neo4j✅
+* InfluxDB✅
+* TimescaleDB✅
+* Snowflake✅
+* BigQuery
+* Amazon Redshift
+* IBM Db2
+* CockroachDB
+* YugabyteDB
+* HBase
+* Hive
+* PostGIS
+* Firebase Realtime Database
+* Supabase
+* PlanetScale
+* MongoDB Atlas
+* Amazon RDS
+* Azure SQL Database
+* Google Cloud SQL
+* Databricks
+* Apache Spark
+* Kafka ✅🔁❌[confirmed-already-in-correct-category]
+* RabbitMQ ✅🔁❌[confirmed-already-in-correct-category]
 
-(9) 59
-- TCP/IP
-- TCP
-- UDP
-- IP
-- IPv4
-- IPv6
-- DNS
-- DHCP
-- NAT
-- VPN
-- VLAN
-- LAN
-- WAN
-- WLAN
-- Router
-- Switch
-- Wireless Access Point
-- Firewall
-- Load Balancer
-- Proxy Server
-- Reverse Proxy
-- Subnet
-- CIDR
-- OSI Model
-- TCP/IP Model
-- HTTP
-- HTTPS
-- TLS
-- SSH
-- FTP
-- SFTP
-- SMTP
-- IMAP
-- SNMP
-- BGP
-- OSPF
-- SDN
-- OpenFlow
-- Network Function Virtualization
-- Nmap
-- tcpdump
-- OpenVPN
-- WireGuard
-- Open vSwitch
-- WebSocket
-- gRPC
-- GraphQL
-- RabbitMQ
-- Kafka
-- CDN
-- VPC
-- OpenSSH
+(7) 34 🟩 CLOUD
 
-(10) 24
-- Vulnerability Assessment
-- Vulnerability Management
-- Threat Modeling
-- Risk Assessment
-- Security Audit
-- Security Hardening
-- Attack Surface
-- Attack Vector
-- Exploit
-- Payload
-- Malware
-- Ransomware
-- Phishing
-- Social Engineering
-- Identity and Access Management
-- Authentication
-- Authorization
-- Multi-Factor Authentication
-- Single Sign-On
-- OAuth
-- OpenID Connect
-- SAML
-- LDAP
-- Active Directory
-- Public Key Infrastructure
-- Encryption
-- Hashing
-- Digital Signature
-- Certificate Authority
-- TLS Certificate
-- Zero Trust
-- Principle of Least Privilege
-- Defense in Depth
-- Security Information and Event Management
-- Endpoint Detection and Response
-- Intrusion Detection System
-- Intrusion Prevention System
-- Web Application Firewall
-- Data Loss Prevention
-- Incident Response
-- Digital Forensics
-- Security Operations Center
-- OWASP Top 10
-- OWASP ZAP
-- Burp Suite
-- Nmap
-- Nessus
-- OpenVAS
-- Kali Linux
-- Snort
-- Suricata
-- Splunk
-- Application Security
-- DevSecOps
-- Secure SDLC
-- Compliance
-- SOC 2
-- ISO 27001
-- NIST Cybersecurity Framework
+* Oracle Cloud Infrastructure
+* IBM Cloud
+* Alibaba Cloud
+* DigitalOcean
+* Linode
+* Vultr
+* Cloudflare
+* Heroku ✅🔁🌈[confirmed-already-in-correct-category]
+* Vercel ✅🔁🌈[confirmed-already-in-correct-category]
+* Netlify ✅🔁🌈[confirmed-already-in-correct-category]
+* Public Cloud
+* Private Cloud
+* Hybrid Cloud
+* Multi-cloud
+* Serverless Computing
+* Function as a Service
+* Backend as a Service
+* Database as a Service
+* Container as a Service
+* Virtual Private Cloud
+* Content Delivery Network
+* Edge Computing
+* AWS Lambda ✅🔁🌈[confirmed-already-in-correct-category]
+* Azure Functions ✅🔁🌈[confirmed-already-in-correct-category]
+* Google Cloud Run ✅🔁🌈[confirmed-already-in-correct-category]
+* CloudFormation
+* Kubernetes Engine
+* S3
+* EC2
 
-(11) 49
-- Caddy
-- LiteSpeed Web Server
-- OpenLiteSpeed
-- lighttpd
-- OpenResty
-- Apache Tomcat
-- Jetty
-- WildFly
-- GlassFish
-- WebLogic
-- WebSphere
-- HAProxy
-- Traefik
-- Envoy
-- AWS Application Load Balancer
-- Nginx Proxy Manager
-- Apache Traffic Server
-- Varnish
-- Squid
-- Gunicorn
-- uWSGI
-- Puma
-- Phusion Passenger
-- Kestrel
+(8) 52 🟩 ONTAINERIZATIONS & ORCHESTRATION
+
+* containerd
+* CRI-O
+* runc
+* Podman
+* BuildKit
+* Docker Compose
+* OpenShift
+* Helm
+* Kustomize
+* kubectl
+* Minikube
+* Kind
+* k3s
+* MicroK8s
+* Amazon Elastic Kubernetes Service
+* Azure Kubernetes Service
+* Google Kubernetes Engine
+* Nomad
+* Rancher
+* Harbor
+* Argo CD
+* Flux
+* Istio
+* Linkerd
+* Docker Engine
+* Docker Desktop
+* Docker Hub
+* Open Container Initiative
+* OCI Image Format
+* Container Runtime Interface
+* Container Network Interface
+* container image
+* container registry
+* Dapr
+
+(9) 59 🟩 NETWORKIN
+
+* TCP/IP✅
+* TCP
+* UDP
+* IP
+* IPv4
+* IPv6
+* DNS
+* DHCP
+* NAT
+* VPN
+* VLAN
+* LAN
+* WAN
+* WLAN
+* Router
+* Switch
+* Wireless Access Point
+* Firewall
+* Load Balancer
+* Proxy Server
+* Reverse Proxy
+* Subnet
+* CIDR
+* OSI Model
+* TCP/IP Model
+* HTTP
+* HTTPS
+* TLS
+* SSH
+* FTP
+* SFTP
+* SMTP
+* IMAP
+* SNMP
+* BGP
+* OSPF
+* SDN
+* OpenFlow
+* Network Function Virtualization
+* Nmap ✅🔁❌ 		[FIX_LATER: gpt said this one shoud prob go in "NETWORKING" but well address these small miscategory things after the 700+ terms are at least added]
+* tcpdump
+* OpenVPN
+* WireGuard
+* Open vSwitch
+* WebSocket
+* gRPC ✅🔁❌[confirmed-already-in-correct-category]
+* GraphQL  ✅🔁❌
+* RabbitMQ ✅🔁🌈[confirmed-already-in-correct-category]
+* Kafka ✅🔁🌈[confirmed-already-in-correct-category]
+* CDN
+* VPC
+* OpenSSH
+
+(10) 24 🟩 SECURITY
+
+* Vulnerability Assessment
+* Vulnerability Management
+* Threat Modeling
+* Risk Assessment
+* Security Audit
+* Security Hardening
+* Attack Surface
+* Attack Vector
+* Exploit
+* Payload
+* Malware
+* Ransomware
+* Phishing
+* Social Engineering
+* Identity and Access Management
+* Authentication
+* Authorization
+* Multi-Factor Authentication
+* Single Sign-On
+* OAuth
+* OpenID Connect
+* SAML
+* LDAP
+* Active Directory
+* Public Key Infrastructure
+* Encryption
+* Hashing
+* Digital Signature
+* Certificate Authority
+* TLS Certificate
+* Zero Trust
+* Principle of Least Privilege
+* Defense in Depth
+* Security Information and Event Management
+* Endpoint Detection and Response
+* Intrusion Detection System
+* Intrusion Prevention System
+* Web Application Firewall
+* Data Loss Prevention
+* Incident Response
+* Digital Forensics
+* Security Operations Center
+* OWASP Top 10
+* OWASP ZAP
+* Burp Suite
+* Nmap ✅🔁🌈 		[FIX_LATER: gpt said this one shoud prob go in "NETWORKING" but well address these small miscategory things after the 700+ terms are at least added]
+* Nessus
+* OpenVAS
+* Kali Linux ✅🔁❌[confirmed-already-in-correct-category]
+* Snort
+* Suricata
+* Splunk
+* Application Security
+* DevSecOps✅ 🔁❌[confirmed-already-in-correct-category]
+* Secure SDLC
+* Compliance
+* SOC 2
+* ISO 27001
+* NIST Cybersecurity Framework
+
+(11) 49 🟩 WEB SERVICES
+
+* Caddy
+* LiteSpeed Web Server
+* OpenLiteSpeed
+* lighttpd
+* OpenResty
+* Apache Tomcat✅ 🔁 ❌[confirmed-already-in-correct-category]
+* Jetty ✅🔁❌[confirmed-already-in-correct-category]
+* WildFly ✅🔁❌[confirmed-already-in-correct-category]
+* GlassFish
+* WebLogic
+* WebSphere
+* HAProxy
+* Traefik
+* Envoy
+* AWS Application Load Balancer
+* Nginx Proxy Manager
+* Apache Traffic Server
+* Varnish
+* Squid
+* Gunicorn
+* uWSGI
+* Puma
+* Phusion Passenger
+* Kestrel
 
 (33333333333333333333333333333333333333333333333333333333333333333333333)
-(12) 49
-- Event-Driven Architecture
-- Layered Architecture
-- Hexagonal Architecture
-- Clean Architecture
-- Onion Architecture
-- Monolithic Architecture
-- Modular Monolith
-- Client-Server Architecture
-- Peer-to-Peer Architecture
-- Three-Tier Architecture
-- Domain-Driven Design
-- Bounded Context
-- CQRS
-- Event Sourcing
-- Saga Pattern
-- Backend for Frontend
-- Strangler Fig Pattern
-- Sidecar Pattern
-- Ambassador Pattern
-- Adapter Pattern
-- Facade Pattern
-- Factory Pattern
-- Singleton Pattern
-- Observer Pattern
-- Dependency Injection
-- Inversion of Control
-- SOLID
-- Separation of Concerns
-- Low Coupling
-- High Cohesion
-- Component Diagram
-- Deployment Diagram
-- Use Case Diagram
-- Activity Diagram
-- State Diagram
-- Data Flow Diagram
-- C4 Model
-- Architecture Decision Record
-- gRPC
-- Message Queue
-- Pub/Sub
-- Event Bus
-- Service Mesh
-- API Gateway
-- Technical Debt
-- Refactoring
-- Design System
-- Wireframe
+(12) 49 🟪 ARCHITECTURE & DESIGN
 
-(13) 37
-- Waterfall
-- Iterative Development
-- Incremental Development
-- Spiral Model
-- Lean Software Development
-- Extreme Programming
-- Feature-Driven Development
-- Dynamic Systems Development Method
-- Rapid Application Development
-- Rational Unified Process
-- V-Model
-- DevSecOps
-- GitOps
-- Site Reliability Engineering
-- Continuous Testing
-- Trunk-Based Development
-- Git Flow
-- Feature Branch Workflow
-- Code Review
-- Pull Request Workflow
-- Mob Programming
-- Refactoring
-- Regression Testing
-- Acceptance Test Driven Development
-- Specification by Example
-- Domain-Driven Design
-- ScrumBan
-- Scaled Agile Framework
-- Large-Scale Scrum
-- Disciplined Agile
-- ITIL
-- Change Management
-- Incident Management
-- Release Management
-- A/B Testing
-- Design Thinking
+* Event-Driven Architecture
+* Layered Architecture
+* Hexagonal Architecture
+* Clean Architecture
+* Onion Architecture
+* Monolithic Architecture
+* Modular Monolith
+* Client-Server Architecture
+* Peer-to-Peer Architecture
+* Three-Tier Architecture
+* Domain-Driven Design ✅🔁🌈[confirmed-already-in-correct-category]
+* Bounded Context
+* CQRS
+* Event Sourcing
+* Saga Pattern
+* Backend for Frontend
+* Strangler Fig Pattern
+* Sidecar Pattern
+* Ambassador Pattern
+* Adapter Pattern
+* Facade Pattern
+* Factory Pattern
+* Singleton Pattern
+* Observer Pattern
+* Dependency Injection
+* Inversion of Control
+* SOLID
+* Separation of Concerns
+* Low Coupling
+* High Cohesion
+* Component Diagram
+* Deployment Diagram
+* Use Case Diagram
+* Activity Diagram
+* State Diagram
+* Data Flow Diagram
+* C4 Model
+* Architecture Decision Record
+* gRPC ✅🔁❌[confirmed-already-in-correct-category]
+* Message Queue
+* Pub/Sub
+* Event Bus
+* Service Mesh
+* API Gateway ✅🔁❌[confirmed-already-in-correct-category]
+* Technical Debt
+* Refactoring ✅🔁❌[confirmed-already-in-correct-category]
+* Design System
+* Wireframe
 
-(14) 27
-- API
-- SOAP
-- GraphQL
-- gRPC
-- Webhook
-- OpenAPI
-- Swagger
-- WSDL
-- RPC
-- JSON-RPC
-- XML-RPC
-- API Gateway
-- API Endpoint
-- API Contract
-- API Versioning
-- Rate Limiting
-- Pagination
-- Idempotency
-- HATEOAS
-- Server-Sent Events
-- AsyncAPI
-- Protocol Buffers
-- Insomnia
-- curl
-- JWT
-- CORS
-- MQTT
+(13) 37 🟪 METHODOLOGIES
 
-(15) 56
-- Integration Testing
-- End-to-End Testing
-- Functional Testing
-- Regression Testing
-- Smoke Testing
-- Sanity Testing
-- Acceptance Testing
-- Performance Testing
-- Load Testing
-- Stress Testing
-- Security Testing
-- Accessibility Testing
-- Compatibility Testing
-- Exploratory Testing
-- Manual Testing
-- Automated Testing
-- Test Case
-- Test Plan
-- Test Suite
-- Test Coverage
-- Mocking
-- Stubbing
-- Test Double
-- Snapshot Testing
-- Mutation Testing
-- Property-Based Testing
-- Contract Testing
-- Unit Test Framework
-- JUnit
-- TestNG
-- NUnit
-- xUnit.net
-- MSTest
-- pytest
-- unittest
-- Mocha
-- Jest
-- Vitest
-- Karma
-- Cypress
-- Playwright
-- Selenium
-- Cucumber
-- Gherkin
-- Robot Framework
-- JMeter
-- k6
-- Gatling
-- Locust
-- Pact
-- JaCoCo
-- Istanbul
-- Type Checking
-- Static Analysis
-- Fuzz Testing
-- Chaos Engineering
+* Waterfall
+* Iterative Development
+* Incremental Development
+* Spiral Model
+* Lean Software Development
+* Extreme Programming
+* Feature-Driven Development
+* Dynamic Systems Development Method
+* Rapid Application Development
+* Rational Unified Process
+* V-Model
+* DevSecOps ✅🔁🌈[confirmed-already-in-correct-category]
+* GitOps
+* Site Reliability Engineering
+* Continuous Testing
+* Trunk-Based Development
+* Git Flow
+* Feature Branch Workflow
+* Code Review
+* Pull Request Workflow
+* Mob Programming
+* Refactoring ✅🔁🌈[confirmed-already-in-correct-category]
+* Regression Testing ✅🔁❌[confirmed-already-in-correct-category]
+* Acceptance Test Driven Development
+* Specification by Example
+* Domain-Driven Design ✅🔁❌[confirmed-already-in-correct-category]
+* ScrumBan
+* Scaled Agile Framework
+* Large-Scale Scrum
+* Disciplined Agile
+* ITIL
+* Change Management
+* Incident Management
+* Release Management
+* A/B Testing
+* Design Thinking
 
-(16) 47
-- Linux perf
-- OProfile
-- SystemTap
-- DTrace
-- strace
-- ltrace
-- AddressSanitizer
-- ThreadSanitizer
-- UndefinedBehaviorSanitizer
-- MemorySanitizer
-- LeakSanitizer
-- rr
-- WinDbg
-- Visual Studio Debugger
-- Xcode Instruments
-- Xcode Debugger
-- Firefox Developer Tools
-- Java Debugger
-- Java Flight Recorder
-- Java Mission Control
-- VisualVM
-- YourKit
-- dotTrace
-- dotMemory
-- PerfView
-- dotnet-trace
-- dotnet-dump
-- dotnet-counters
-- Python Debugger
-- cProfile
-- PySpy
-- Node.js Inspector
-- V8 Profiler
-- FlameGraph
-- Callgrind
-- Massif
-- Memcheck
-- Helgrind
-- KCachegrind
-- Debug Adapter Protocol
-- Observability
-- OpenTelemetry
-- Prometheus
-- Grafana
-- Sentry
-- New Relic
-- Datadog
+(14) 27 🟪 API TECHNOLOGIES
 
-(17) 63
-- Abstraction
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Composition
-- Coupling
-- Cohesion
-- Modularity
-- Dependency Management
-- Interface
-- Implementation
-- Module
-- Component
-- Service
-- Middleware
-- Library
-- Framework
-- Runtime
-- Compiler
-- Interpreter
-- Build
-- Artifact
-- Release
-- Versioning
-- Semantic Versioning
-- Backward Compatibility
-- Code Smell
-- Maintainability
-- Scalability
-- Reliability
-- Availability
-- Fault Tolerance
-- Resilience
-- Monitoring
-- Logging
-- Metrics
-- Distributed Tracing
-- Rollback
-- Rollout
-- Feature Flag
-- Configuration Management
-- Environment
-- Production
-- Staging
-- Legacy System
-- Greenfield Project
-- Brownfield Project
-- Codebase
-- Repository
-- Monorepo
-- API Integration
-- Data Migration
-- Schema Migration
-- Software Maintenance
-- Requirements Engineering
-- Clean Code
-- Code Quality
-- Linting
-- Cloud Native
-- Platform Engineering
-- Product Management
-- UX Design
+* API
+* SOAP
+* GraphQL ✅🔁 🌈	[confirmed-already-in-correct-category]
+* gRPC ✅🔁🌈[confirmed-already-in-correct-category]
+* Webhook
+* OpenAPI ✅🔁 🌈[confirmed-already-in-correct-category]
+* Swagger ✅🔁 🌈[confirmed-already-in-correct-category]
+* WSDL
+* RPC
+* JSON-RPC
+* XML-RPC
+* API Gateway ✅🔁🌈[confirmed-already-in-correct-category]
+* API Endpoint
+* API Contract
+* API Versioning
+* Rate Limiting
+* Pagination
+* Idempotency
+* HATEOAS
+* Server-Sent Events
+* AsyncAPI
+* Protocol Buffers
+* Insomnia
+* curl
+* JWT
+* CORS
+* MQTT
+
+(15) 56 🟪 TESTING
+
+* Integration Testing
+* End-to-End Testing
+* Functional Testing
+* Regression Testing ✅🔁🌈[confirmed-already-in-correct-category]
+* Smoke Testing
+* Sanity Testing
+* Acceptance Testing
+* Performance Testing
+* Load Testing
+* Stress Testing
+* Security Testing
+* Accessibility Testing
+* Compatibility Testing
+* Exploratory Testing
+* Manual Testing
+* Automated Testing
+* Test Case
+* Test Plan
+* Test Suite
+* Test Coverage
+* Mocking
+* Stubbing
+* Test Double
+* Snapshot Testing
+* Mutation Testing
+* Property-Based Testing
+* Contract Testing
+* Unit Test Framework
+* JUnit ✅🔁🌈[confirmed-already-in-correct-category]
+* TestNG
+* NUnit
+* xUnit.net
+* MSTest
+* pytest
+* unittest
+* Mocha
+* Jest ✅🔁🌈[confirmed-already-in-correct-category]
+* Vitest
+* Karma
+* Cypress ✅🔁🌈[confirmed-already-in-correct-category]
+* Playwright
+* Selenium ✅🔁🌈[confirmed-already-in-correct-category]
+* Cucumber
+* Gherkin
+* Robot Framework
+* JMeter
+* k6
+* Gatling
+* Locust
+* Pact
+* JaCoCo
+* Istanbul
+* Type Checking
+* Static Analysis
+* Fuzz Testing
+* Chaos Engineering
+
+(16) 47 🟪 DEBUGGING AND PROFILING
+
+* Linux perf
+* OProfile
+* SystemTap
+* DTrace
+* strace
+* ltrace
+* AddressSanitizer
+* ThreadSanitizer
+* UndefinedBehaviorSanitizer
+* MemorySanitizer
+* LeakSanitizer
+* rr
+* WinDbg
+* Visual Studio Debugger
+* Xcode Instruments
+* Xcode Debugger
+* Firefox Developer Tools
+* Java Debugger
+* Java Flight Recorder
+* Java Mission Control
+* VisualVM
+* YourKit
+* dotTrace
+* dotMemory
+* PerfView
+* dotnet-trace
+* dotnet-dump
+* dotnet-counters
+* Python Debugger
+* cProfile
+* PySpy
+* Node.js Inspector
+* V8 Profiler
+* FlameGraph
+* Callgrind
+* Massif
+* Memcheck
+* Helgrind
+* KCachegrind
+* Debug Adapter Protocol
+* Observability
+* OpenTelemetry
+* Prometheus
+* Grafana
+* Sentry
+* New Relic
+* Datadog
+
+(17) 63 🟪 SOFTWARE ENGINEERING CONCEPTS
+
+* Abstraction
+* Encapsulation
+* Inheritance
+* Polymorphism
+* Composition
+* Coupling
+* Cohesion
+* Modularity
+* Dependency Management
+* Interface
+* Implementation
+* Module
+* Component
+* Service
+* Middleware
+* Library
+* Framework
+* Runtime
+* Compiler
+* Interpreter
+* Build
+* Artifact
+* Release
+* Versioning
+* Semantic Versioning
+* Backward Compatibility
+* Code Smell
+* Maintainability
+* Scalability
+* Reliability
+* Availability
+* Fault Tolerance
+* Resilience
+* Monitoring
+* Logging
+* Metrics
+* Distributed Tracing
+* Rollback
+* Rollout
+* Feature Flag
+* Configuration Management
+* Environment
+* Production
+* Staging
+* Legacy System
+* Greenfield Project
+* Brownfield Project
+* Codebase
+* Repository
+* Monorepo
+* API Integration
+* Data Migration
+* Schema Migration
+* Software Maintenance
+* Requirements Engineering
+* Clean Code
+* Code Quality
+* Linting
+* Cloud Native
+* Platform Engineering
+* Product Management
+* UX Design
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

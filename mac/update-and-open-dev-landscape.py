@@ -26,7 +26,7 @@ import os
 # os.system("open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html")
 
 #### RUN THE UPDATE SCRIPT FIRST, THEN OPEN THE DEV LANDSCAPE
-os.system("/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py")
+os.system("/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/scr-update_dev_landscape1.py")
 os.system("open file:///Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/index.html")
 
 

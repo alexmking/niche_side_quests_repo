@@ -8,6 +8,12 @@ inside index.html in-place.
 
 Usage (from any directory):
     scr-update_dev_landscape1.py
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+- MAY NEED A WINDOWS-SPECIFIC VERSION OF THIS SCRIPT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 """
 
 import json
@@ -27,8 +33,14 @@ def main():
             print(f"ERROR: File not found: {f}", file=sys.stderr)
             sys.exit(1)
 
-    taxonomy_json = json.dumps(json.loads(taxonomy_file.read_text()), separators=(",", ":"))
-    rules_json    = json.dumps(json.loads(rules_file.read_text()),    separators=(",", ":"))
+    def safe_embed_json(obj):
+        """Serialize obj to JSON safe for embedding in an HTML <script> block.
+        Escapes <, >, and & so the browser's HTML parser cannot misread the block."""
+        raw = json.dumps(obj, separators=(",", ":"))
+        return raw.replace("<", r"\u003C").replace(">", r"\u003E").replace("&", r"\u0026")
+
+    taxonomy_json = safe_embed_json(json.loads(taxonomy_file.read_text()))
+    rules_json    = safe_embed_json(json.loads(rules_file.read_text()))
 
     src = html_file.read_text()
 
