@@ -81,3 +81,91 @@ Updated: 2026-06-12
 
 great GPT tips for .txt files here:📌
 https://chatgpt.com/c/6a2b8713-3c58-83ea-acb1-f4ceeac862f6 📌
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================
+                JAVASCRIPT BASICS
+==================================================
+
+► Variables
+  • var (old)
+  • let (block scope)
+  • const (immutable)
+
+----------------------------------------
+
+► Functions
+  • Function Declaration
+  • Function Expression
+    → Arrow functions
+
+----------------------------------------
+
+[ IMPORTANT ]
+Hoisting affects var, not let/const
+
+========================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
