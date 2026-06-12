@@ -218,9 +218,9 @@ TRACKING PROGRESS OF MASTER LIST:
 
 []		5 🟩 OPERATING SYSTEMS    		 28
 []		6 🟩 DATABASES     				29
----------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 500 terms-left, (6/17 cats done) ---------
 []		7 🟩 CLOUD						34	
-[]		8 🟩 ONTAINERIZ & ORCH			52
+---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 476 terms-left, (6/17 cats done) ---------
+[]		8 🟩 CONTAINERIZ & ORCH			52
 []		9 🟩 NETWORKIN					59
 []		10 🟩 SECURITY					24
 []		11 🟩 WEB SERVICES				49
@@ -530,34 +530,35 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * DigitalOcean✅
 * Linode✅
 * Vultr✅
-* Cloudflare
 * Heroku ✅🔁🌈[confirmed-already-in-correct-category]
 * Vercel ✅🔁🌈[confirmed-already-in-correct-category]
 * Netlify ✅🔁🌈[confirmed-already-in-correct-category]
-* Public Cloud
-* Private Cloud
-* Hybrid Cloud
-* Multi-cloud
-* Serverless Computing
-* Function as a Service
-* Backend as a Service
-* Database as a Service
-* Container as a Service
-* Virtual Private Cloud
-* Content Delivery Network
-* Edge Computing
+* Cloudflare✅
+* Public Cloud✅
+* Private Cloud ☠️⭕⭕⭕						🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)
+* Hybrid Cloud	☠️⭕⭕⭕					🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)
+* Multi-cloud✅
+* Serverless Computing✅
+* Function as a Service✅
+* Backend as a Service✅
+* Database as a Service✅
+* Container as a Service✅
+* Virtual Private Cloud✅
+* Content Delivery Network✅
 * AWS Lambda ✅🔁🌈[confirmed-already-in-correct-category]
 * Azure Functions ✅🔁🌈[confirmed-already-in-correct-category]
 * Google Cloud Run ✅🔁🌈[confirmed-already-in-correct-category]
-* CloudFormation
-* Kubernetes Engine
-* S3
-* EC2
+* Edge Computing';✅
+* CloudFormation✅
+* Kubernetes Engine❗⭕⭕⭕	 🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVICES subcat)
+* EC2⭕⭕⭕				🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVICES subcat)
+* S3	✅
+
 
 (8) 52 🟩 ONTAINERIZATIONS & ORCHESTRATION
 
-* containerd
-* CRI-O
+* containerd✅
+* CRI-O✅
 * runc
 * Podman
 * BuildKit
@@ -594,8 +595,12 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 
-(9) 59 🟩 NETWORKIN
+----IPAD GPT ONLY FOR THIS SECTION!!!----
+----IPAD GPT ONLY FOR THIS SECTION!!!----
+----IPAD GPT ONLY FOR THIS SECTION!!!----
+----IPAD GPT ONLY FOR THIS SECTION!!!----
 
+(9) 59 🟩 NETWORKIN
 * TCP/IP✅
 * TCP
 * UDP
@@ -618,19 +623,20 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Proxy Server
 * Reverse Proxy
 * Subnet
-* CIDR
+* CIDR				
 * OSI Model
 * TCP/IP Model
 * HTTP
 * HTTPS
 * TLS
 * SSH
-* FTP
-* SFTP
-* SMTP
-* IMAP
-* SNMP
-* BGP
+* FTP✅      %%%%%%%%%% 😈😈😈😈😈😈😈😈😈😈 THIS IS WHERE WE LEFT OFF ON THE ACTUAL 'ADDING-TO-LANDSCAPE-via_TERMINAL copy/paste add-term (were starting from below and working our way up to the first NETOWRKIN term...)
+* SFTP✅
+* SMTP;✅
+* IMAP✅
+* SNMP✅
+* BGP✅
+-------------------❗;imp ❗ IPAD IS CURRENTLY UP TO HERE FOR THIS CATEGORY....------------------❗------------------❗
 * OSPF
 * SDN
 * OpenFlow

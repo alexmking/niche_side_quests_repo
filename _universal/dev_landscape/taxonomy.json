@@ -16741,6 +16741,132 @@
             "Mobile Development",
             "SDK"
           ]
+        },
+        {
+          "id": "cloudformation",
+          "name": "CloudFormation",
+          "continent": "Development",
+          "category": "Development Tools",
+          "subcategory": "Build & Dependency Tools",
+          "aliases": [
+            "AWS CloudFormation",
+            "CloudFormation IaC",
+            "CloudFormation Templates",
+            "AWS Infrastructure as Code"
+          ],
+          "notes": "AWS Infrastructure as Code service used to define, provision, update, and manage AWS resources through declarative templates and stacks.",
+          "tags": [
+            "aws",
+            "infrastructure-as-code",
+            "iac",
+            "cloud",
+            "deployment",
+            "provisioning",
+            "automation",
+            "developer-tool"
+          ],
+          "whatIsIt": "An AWS Infrastructure as Code service for defining and managing AWS infrastructure resources using declarative templates and stack-based deployments.",
+          "description": "CloudFormation is AWS's Infrastructure as Code service for defining, provisioning, updating, and managing AWS resources through templates. Developers and infrastructure teams use CloudFormation templates to describe resources such as EC2 instances, S3 buckets, IAM roles, Lambda functions, VPCs, load balancers, databases, queues, and other AWS services. CloudFormation organizes deployed infrastructure into stacks, supports change sets for previewing updates, and helps make cloud infrastructure repeatable and version-controlled. It overlaps strongly with Terraform, but CloudFormation is AWS-native, while Terraform is a multi-cloud Infrastructure as Code tool. Under the current taxonomy, it fits beside Terraform as developer infrastructure automation tooling, though a future Infrastructure as Code subcategory would be cleaner.",
+          "usedWith": [
+            "AWS",
+            "Amazon EC2",
+            "Amazon S3",
+            "AWS Lambda",
+            "IAM",
+            "VPC",
+            "YAML",
+            "JSON",
+            "CI/CD",
+            "Terraform",
+            "Cloud Computing",
+            "Infrastructure as Code"
+          ],
+          "builtOn": [
+            "AWS",
+            "Infrastructure as Code",
+            "Declarative Templates",
+            "Cloud APIs",
+            "YAML",
+            "JSON",
+            "Resource Dependency Management",
+            "Stack-Based Deployment"
+          ],
+          "builtUponBy": [
+            "AWS Infrastructure Provisioning Workflows",
+            "Cloud Deployment Workflows",
+            "CI/CD Infrastructure Pipelines",
+            "Serverless Deployment Workflows",
+            "Environment Provisioning Workflows",
+            "Disaster Recovery Infrastructure Workflows",
+            "Repeatable AWS Deployment Workflows",
+            "DevOps Automation Workflows",
+            "Platform Engineering Workflows"
+          ],
+          "runsOn": [
+            "AWS",
+            "AWS Management Console",
+            "AWS CLI",
+            "CI/CD Environments",
+            "Developer Workstations",
+            "CloudFormation Service",
+            "Public Cloud Environments"
+          ],
+          "alternatives": [
+            "Terraform",
+            "Pulumi",
+            "AWS CDK",
+            "AWS SAM",
+            "Azure Resource Manager",
+            "Google Cloud Deployment Manager",
+            "OpenTofu"
+          ],
+          "partOf": [
+            "Development Tools",
+            "Infrastructure as Code",
+            "AWS Ecosystem",
+            "Cloud Infrastructure",
+            "Deployment Automation",
+            "DevOps Tooling",
+            "Cloud Provisioning",
+            "Platform Engineering"
+          ],
+          "includes": [],
+          "examples": [
+            "CloudFormation YAML template",
+            "CloudFormation JSON template",
+            "AWS stack deployment",
+            "Change set preview",
+            "CloudFormation stack rollback",
+            "Template defining an S3 bucket",
+            "Template defining a Lambda function",
+            "VPC infrastructure template",
+            "CI/CD pipeline deploying a CloudFormation stack"
+          ],
+          "useCases": [
+            "Provisioning AWS infrastructure",
+            "Managing AWS resources as code",
+            "Creating repeatable cloud environments",
+            "Versioning infrastructure templates",
+            "Previewing infrastructure changes",
+            "Deploying serverless AWS applications",
+            "Automating cloud environment setup",
+            "Managing resource dependencies",
+            "Supporting AWS-focused DevOps workflows"
+          ],
+          "relatedConcepts": [
+            "AWS",
+            "Infrastructure as Code",
+            "Terraform",
+            "Pulumi",
+            "AWS CDK",
+            "AWS SAM",
+            "YAML",
+            "JSON",
+            "Public Cloud",
+            "DevOps",
+            "CI/CD",
+            "Cloud Computing"
+          ]
         }
       ]
     }
@@ -26898,6 +27024,259 @@
             "Bare Metal",
             "Linode"
           ]
+        },
+        {
+          "id": "cloudflare",
+          "name": "Cloudflare",
+          "continent": "Infrastructure",
+          "category": "Cloud",
+          "subcategory": "Cloud Platforms",
+          "aliases": [
+            "CloudFlare",
+            "Cloudflare Platform",
+            "Cloudflare CDN",
+            "Cloudflare Edge Network",
+            "Cloudflare Workers Platform"
+          ],
+          "notes": "Cloud and edge platform used for CDN, DNS, DDoS protection, web application security, edge compute, traffic routing, and performance optimization.",
+          "tags": [
+            "cloud-platform",
+            "edge-computing",
+            "cdn",
+            "dns",
+            "security",
+            "networking",
+            "serverless",
+            "infrastructure"
+          ],
+          "whatIsIt": "A cloud and edge infrastructure platform that provides CDN, DNS, security, traffic routing, edge compute, and performance services for websites, APIs, and applications.",
+          "description": "Cloudflare is a cloud and edge infrastructure platform commonly used to protect, accelerate, route, and deploy web applications and APIs. Developers and infrastructure teams use Cloudflare for DNS hosting, CDN caching, DDoS protection, web application firewall rules, TLS termination, bot protection, access controls, reverse proxying, traffic routing, and edge/serverless compute through Cloudflare Workers. It overlaps with cloud platforms, networking, security, and web infrastructure, but it is best modeled as a cloud platform because it provides a broad platform of managed infrastructure services rather than just one networking or security tool.",
+          "usedWith": [
+            "DNS",
+            "CDN",
+            "HTTP",
+            "HTTPS",
+            "TLS",
+            "Web Servers",
+            "REST API",
+            "nginx",
+            "Cloudflare Workers",
+            "GitHub",
+            "CI/CD",
+            "Public Cloud"
+          ],
+          "builtOn": [
+            "Edge Networks",
+            "DNS",
+            "HTTP",
+            "TLS",
+            "Reverse Proxy Concepts",
+            "Content Delivery Networks",
+            "Web Security",
+            "Serverless Computing"
+          ],
+          "builtUponBy": [
+            "Web Application Delivery Workflows",
+            "API Protection Workflows",
+            "DNS Management Workflows",
+            "Edge Compute Workflows",
+            "DDoS Protection Workflows",
+            "CDN Caching Workflows",
+            "Zero Trust Access Workflows",
+            "Frontend Deployment Workflows",
+            "Cloud-Native Security Workflows"
+          ],
+          "runsOn": [
+            "Cloudflare Global Network",
+            "Edge Locations",
+            "Web Browsers",
+            "Cloudflare Workers Runtime",
+            "Public Cloud Environments",
+            "CI/CD Environments"
+          ],
+          "alternatives": [
+            "AWS CloudFront",
+            "Akamai",
+            "Fastly",
+            "Azure Front Door",
+            "Google Cloud CDN",
+            "Vercel Edge Network",
+            "Netlify Edge"
+          ],
+          "partOf": [
+            "Cloud Platforms",
+            "Edge Computing",
+            "Web Infrastructure",
+            "CDN Infrastructure",
+            "Network Security",
+            "Cloud Security",
+            "Serverless Platforms",
+            "Internet Infrastructure"
+          ],
+          "includes": [],
+          "examples": [
+            "Cloudflare DNS zone",
+            "Cloudflare-proxied website",
+            "Cloudflare Workers edge function",
+            "Cloudflare Pages static site deployment",
+            "WAF rule blocking malicious traffic",
+            "DDoS protection for a public website",
+            "CDN caching for static assets",
+            "TLS certificate managed by Cloudflare",
+            "Cloudflare Access protecting an internal app"
+          ],
+          "useCases": [
+            "Managing DNS for web applications",
+            "Accelerating websites with CDN caching",
+            "Protecting applications from DDoS attacks",
+            "Adding web application firewall rules",
+            "Running edge/serverless functions",
+            "Deploying static frontend sites",
+            "Terminating HTTPS at the edge",
+            "Routing and load balancing web traffic",
+            "Securing internal applications with access controls"
+          ],
+          "relatedConcepts": [
+            "CDN",
+            "DNS",
+            "Edge Computing",
+            "DDoS Protection",
+            "Web Application Firewall",
+            "Reverse Proxy",
+            "TLS",
+            "Serverless",
+            "Cloudflare Workers",
+            "Cloudflare Pages",
+            "Public Cloud",
+            "Web Servers"
+          ]
+        },
+        {
+          "id": "amazon-s3",
+          "name": "Amazon S3",
+          "continent": "Infrastructure",
+          "category": "Cloud",
+          "subcategory": "Cloud Platforms",
+          "aliases": [
+            "S3",
+            "AWS S3",
+            "Amazon Simple Storage Service",
+            "Simple Storage Service",
+            "S3 Object Storage"
+          ],
+          "notes": "AWS object storage service used to store, retrieve, version, secure, and serve files, backups, logs, datasets, static assets, artifacts, and application data at cloud scale.",
+          "tags": [
+            "aws",
+            "cloud-storage",
+            "object-storage",
+            "infrastructure",
+            "public-cloud",
+            "storage",
+            "managed-service",
+            "cloud-platform"
+          ],
+          "whatIsIt": "A managed AWS object storage service used to store and retrieve files, objects, backups, logs, datasets, artifacts, and static assets in cloud-hosted buckets.",
+          "description": "Amazon S3 is AWS's managed object storage service. Developers and infrastructure teams use S3 to store files, static website assets, application uploads, backups, logs, data lake objects, build artifacts, deployment packages, analytics data, and other object-based data. S3 organizes data into buckets and objects, supports access policies, encryption, versioning, lifecycle rules, replication, event notifications, and integration with many AWS services. S3 is not itself a full cloud platform like AWS, but in the current taxonomy the closest available placement is Cloud Platforms because it is a major managed cloud infrastructure service. A future subcategory such as Cloud Services or Cloud Storage would be a cleaner home.",
+          "usedWith": [
+            "AWS",
+            "Public Cloud",
+            "IAM",
+            "CloudFront",
+            "AWS Lambda",
+            "CloudFormation",
+            "Terraform",
+            "CI/CD",
+            "Static Websites",
+            "Data Lakes",
+            "Backup Workflows",
+            "Application Uploads"
+          ],
+          "builtOn": [
+            "Object Storage",
+            "AWS Infrastructure",
+            "Cloud Computing",
+            "Buckets",
+            "Objects",
+            "HTTP APIs",
+            "Access Policies",
+            "Managed Storage"
+          ],
+          "builtUponBy": [
+            "Static Website Hosting Workflows",
+            "Backup and Archive Workflows",
+            "Data Lake Workflows",
+            "Application File Upload Workflows",
+            "Build Artifact Storage Workflows",
+            "Log Storage Workflows",
+            "Serverless Application Workflows",
+            "CloudFront CDN Delivery Workflows",
+            "Analytics Data Pipeline Workflows"
+          ],
+          "runsOn": [
+            "AWS",
+            "Public Cloud Environments",
+            "AWS Management Console",
+            "AWS CLI",
+            "AWS SDKs",
+            "CI/CD Environments",
+            "Infrastructure as Code Workflows"
+          ],
+          "alternatives": [
+            "Google Cloud Storage",
+            "Azure Blob Storage",
+            "Cloudflare R2",
+            "MinIO",
+            "Backblaze B2",
+            "DigitalOcean Spaces",
+            "Wasabi"
+          ],
+          "partOf": [
+            "AWS Ecosystem",
+            "Cloud Storage",
+            "Object Storage",
+            "Cloud Infrastructure",
+            "Public Cloud",
+            "Managed Services",
+            "Application Infrastructure",
+            "Data Infrastructure"
+          ],
+          "includes": [],
+          "examples": [
+            "S3 bucket for application uploads",
+            "Static website hosted from S3",
+            "S3 bucket used for build artifacts",
+            "CloudFront distribution backed by S3",
+            "S3 lifecycle rule moving objects to archive storage",
+            "S3 event notification triggering Lambda",
+            "Terraform-managed S3 bucket",
+            "CloudFormation template defining an S3 bucket",
+            "Data lake objects stored in S3"
+          ],
+          "useCases": [
+            "Storing user-uploaded files",
+            "Hosting static website assets",
+            "Backing up application data",
+            "Storing logs and audit data",
+            "Building data lakes",
+            "Saving CI/CD build artifacts",
+            "Serving files through a CDN",
+            "Triggering serverless workflows from object events",
+            "Archiving rarely accessed data"
+          ],
+          "relatedConcepts": [
+            "AWS",
+            "Object Storage",
+            "Cloud Storage",
+            "Public Cloud",
+            "IAM",
+            "CloudFront",
+            "AWS Lambda",
+            "CloudFormation",
+            "Terraform",
+            "Data Lake",
+            "Static Website Hosting",
+            "Bucket Policy"
+          ]
         }
       ],
       "Cloud Service Models": [
@@ -27141,6 +27520,750 @@
             "Cloud-Native",
             "Autoscaling",
             "Infrastructure Abstraction"
+          ]
+        },
+        {
+          "id": "serverless-computing",
+          "name": "Serverless Computing",
+          "continent": "Infrastructure",
+          "category": "Cloud",
+          "subcategory": "Cloud Service Models",
+          "aliases": [
+            "Serverless",
+            "Serverless Cloud Computing",
+            "Function as a Service",
+            "FaaS",
+            "Backend as a Service"
+          ],
+          "notes": "Cloud computing model where developers build and run applications using managed compute and platform services without directly provisioning or managing servers.",
+          "tags": [
+            "cloud-computing",
+            "serverless",
+            "faas",
+            "cloud-service-model",
+            "managed-services",
+            "event-driven",
+            "scalability",
+            "infrastructure"
+          ],
+          "whatIsIt": "A cloud computing model where applications run on managed infrastructure and developers focus on code, events, functions, and services instead of managing servers directly.",
+          "description": "Serverless Computing is a cloud computing model where developers build and run applications using managed cloud services without directly provisioning, patching, scaling, or operating servers. The most common form is Function as a Service, where small pieces of code run in response to events such as HTTP requests, queue messages, file uploads, timers, or database changes. Serverless also includes managed backend services such as authentication, databases, queues, storage, APIs, and event buses. It should be distinguished from Serverless Architecture: Serverless Computing is the cloud service/execution model, while Serverless Architecture is the architectural pattern of designing systems around serverless services.",
+          "usedWith": [
+            "AWS Lambda",
+            "Azure Functions",
+            "Google Cloud Functions",
+            "Google Cloud Run",
+            "Cloudflare Workers",
+            "REST API",
+            "API Gateway",
+            "Event-Driven Architecture",
+            "CI/CD",
+            "Terraform",
+            "Docker",
+            "Cloud Computing"
+          ],
+          "builtOn": [
+            "Cloud Computing",
+            "Managed Infrastructure",
+            "Event-Driven Execution",
+            "Function as a Service",
+            "Autoscaling",
+            "API Gateways",
+            "Managed Backend Services"
+          ],
+          "builtUponBy": [
+            "Serverless Architecture",
+            "Event-Driven Application Workflows",
+            "API Backend Workflows",
+            "Cloud-Native Application Development",
+            "Microservice Deployment Workflows",
+            "Automation and Scheduled Job Workflows",
+            "Data Processing Pipelines",
+            "Webhook Processing Workflows",
+            "Backend Modernization Workflows"
+          ],
+          "runsOn": [
+            "AWS",
+            "Azure",
+            "Google Cloud Platform",
+            "Cloudflare",
+            "Oracle Cloud Infrastructure",
+            "IBM Cloud",
+            "Serverless Platforms"
+          ],
+          "alternatives": [
+            "Virtual Machines",
+            "Containers",
+            "Kubernetes",
+            "PaaS",
+            "Traditional Servers",
+            "Dedicated Hosting",
+            "Bare Metal Servers"
+          ],
+          "partOf": [
+            "Cloud Service Models",
+            "Cloud Computing",
+            "Cloud-Native Infrastructure",
+            "Serverless Architecture",
+            "Managed Cloud Services",
+            "Event-Driven Systems",
+            "Backend Development",
+            "Infrastructure"
+          ],
+          "includes": [],
+          "examples": [
+            "AWS Lambda function",
+            "Azure Functions app",
+            "Google Cloud Functions function",
+            "Cloudflare Worker",
+            "API Gateway calling a serverless function",
+            "Scheduled serverless job",
+            "File upload triggering a function",
+            "Queue message processed by a function",
+            "Serverless backend for a web app"
+          ],
+          "useCases": [
+            "Running event-driven functions",
+            "Building lightweight API backends",
+            "Processing queue messages",
+            "Running scheduled jobs",
+            "Handling webhooks",
+            "Processing uploaded files",
+            "Reducing server management overhead",
+            "Scaling workloads automatically",
+            "Building cloud-native backend services"
+          ],
+          "relatedConcepts": [
+            "Serverless Architecture",
+            "Cloud Computing",
+            "Function as a Service",
+            "Backend as a Service",
+            "Event-Driven Architecture",
+            "API Gateway",
+            "AWS Lambda",
+            "Azure Functions",
+            "Google Cloud Functions",
+            "Cloud Run",
+            "Cloudflare Workers",
+            "PaaS"
+          ]
+        },
+        {
+          "id": "public-cloud",
+          "name": "Public Cloud",
+          "continent": "Infrastructure",
+          "category": "Cloud",
+          "subcategory": "Cloud Service Models",
+          "aliases": [
+            "Public Cloud Computing",
+            "Public Cloud Model",
+            "Public Cloud Environment",
+            "Public Cloud Infrastructure"
+          ],
+          "notes": "Cloud deployment model where computing resources are provided by third-party cloud providers over shared provider-managed infrastructure and accessed over the internet or private connectivity.",
+          "tags": [
+            "cloud",
+            "cloud-service-model",
+            "deployment-model",
+            "infrastructure",
+            "iaas",
+            "paas",
+            "saas",
+            "managed-services"
+          ],
+          "whatIsIt": "A cloud deployment model where third-party providers offer shared, provider-managed infrastructure and services to many customers over the internet or private network connections.",
+          "description": "Public Cloud describes a cloud computing model where infrastructure and managed services are owned and operated by external cloud providers and made available to many organizations or users. Public cloud platforms provide services such as virtual machines, storage, databases, networking, serverless functions, Kubernetes, analytics, identity, monitoring, and managed application platforms. Developers and infrastructure teams use public cloud to avoid managing physical data centers, provision resources on demand, scale applications, deploy globally, and consume IaaS, PaaS, and SaaS offerings. It is slightly different from IaaS/PaaS/SaaS: those are service models, while Public Cloud is more accurately a cloud deployment model. In the current taxonomy, Cloud Service Models is the closest available subcategory.",
+          "usedWith": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "Cloudflare",
+            "IaaS",
+            "PaaS",
+            "SaaS",
+            "Kubernetes",
+            "Docker",
+            "Terraform",
+            "CI/CD",
+            "Cloud Computing"
+          ],
+          "builtOn": [
+            "Cloud Computing",
+            "Virtualization",
+            "Managed Infrastructure",
+            "Multi-Tenant Platforms",
+            "Data Centers",
+            "Networking",
+            "Automation",
+            "Self-Service Provisioning"
+          ],
+          "builtUponBy": [
+            "Cloud-Native Application Workflows",
+            "Scalable Web Application Deployment",
+            "Managed Database Workflows",
+            "Serverless Application Workflows",
+            "Kubernetes Deployment Workflows",
+            "Disaster Recovery Workflows",
+            "Global Application Hosting",
+            "DevOps Infrastructure Workflows",
+            "Platform Engineering Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Private Cloud",
+            "Hybrid Cloud",
+            "On-Premises Infrastructure",
+            "Colocation",
+            "Bare-Metal Hosting",
+            "Community Cloud"
+          ],
+          "partOf": [
+            "Cloud Computing",
+            "Cloud Infrastructure",
+            "Cloud Service Models",
+            "Infrastructure",
+            "Managed Infrastructure",
+            "DevOps",
+            "Platform Engineering",
+            "Enterprise IT"
+          ],
+          "includes": [],
+          "examples": [
+            "AWS public cloud environment",
+            "Azure public cloud subscription",
+            "Google Cloud project",
+            "Public cloud virtual machine",
+            "Managed cloud database",
+            "Serverless function on a public cloud provider",
+            "Kubernetes cluster in a public cloud",
+            "Terraform-managed public cloud infrastructure",
+            "Static site deployed to public cloud hosting"
+          ],
+          "useCases": [
+            "Hosting web applications",
+            "Deploying backend services",
+            "Provisioning infrastructure on demand",
+            "Scaling applications globally",
+            "Using managed databases and storage",
+            "Running Kubernetes clusters",
+            "Building serverless applications",
+            "Supporting disaster recovery",
+            "Reducing physical data center management"
+          ],
+          "relatedConcepts": [
+            "Cloud Computing",
+            "AWS",
+            "Azure",
+            "GCP",
+            "IaaS",
+            "PaaS",
+            "SaaS",
+            "Private Cloud",
+            "Hybrid Cloud",
+            "Virtualization",
+            "Managed Services",
+            "Infrastructure as Code"
+          ]
+        },
+        {
+          "id": "database-as-a-service",
+          "name": "Database as a Service",
+          "continent": "Infrastructure",
+          "category": "Cloud",
+          "subcategory": "Cloud Service Models",
+          "aliases": [
+            "DBaaS",
+            "Managed Database Service",
+            "Cloud Database Service",
+            "Database-as-a-Service"
+          ],
+          "notes": "Cloud service model where a provider manages database provisioning, patching, backups, scaling, monitoring, availability, and infrastructure operations for database workloads.",
+          "tags": [
+            "cloud-service-model",
+            "dbaas",
+            "database",
+            "managed-service",
+            "cloud-computing",
+            "infrastructure",
+            "paas",
+            "data-management"
+          ],
+          "whatIsIt": "A cloud service model where databases are provided as managed services, reducing the need for teams to operate database servers directly.",
+          "description": "Database as a Service is a cloud service model where a cloud provider offers managed database capabilities instead of requiring teams to install, patch, scale, back up, monitor, and operate database servers themselves. Developers and infrastructure teams use DBaaS offerings to create relational databases, NoSQL databases, document databases, key-value stores, time-series databases, and analytics databases with managed availability, backups, replication, security controls, and scaling options. DBaaS is not a specific database system; it is a delivery model for managed database services. It should be separate from database systems such as PostgreSQL, MySQL, MongoDB, Oracle Database, SQL Server, and Cloud Firestore.",
+          "usedWith": [
+            "AWS",
+            "Azure",
+            "Google Cloud Platform",
+            "Oracle Cloud Infrastructure",
+            "IBM Cloud",
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "SQL Server",
+            "Cloud Firestore",
+            "Terraform",
+            "CI/CD"
+          ],
+          "builtOn": [
+            "Cloud Computing",
+            "Managed Services",
+            "Database Systems",
+            "Storage Infrastructure",
+            "Backup and Recovery",
+            "Replication",
+            "Identity and Access Management"
+          ],
+          "builtUponBy": [
+            "Cloud Application Development",
+            "Backend Service Development",
+            "Data-Driven Application Workflows",
+            "Enterprise Data Platform Workflows",
+            "Disaster Recovery Workflows",
+            "Cloud Migration Strategies",
+            "Infrastructure as Code Workflows",
+            "Analytics Platform Workflows",
+            "SaaS Application Development"
+          ],
+          "runsOn": [
+            "AWS",
+            "Azure",
+            "Google Cloud Platform",
+            "Oracle Cloud Infrastructure",
+            "IBM Cloud",
+            "Cloud Database Platforms"
+          ],
+          "alternatives": [
+            "Self-Managed Database",
+            "Database on Virtual Machines",
+            "On-Premises Database",
+            "Bare Metal Database Server",
+            "Managed Kubernetes Database",
+            "Embedded Database"
+          ],
+          "partOf": [
+            "Cloud Service Models",
+            "Cloud Computing",
+            "Infrastructure",
+            "Managed Cloud Services",
+            "Database Infrastructure",
+            "PaaS",
+            "Data Management",
+            "Backend Infrastructure"
+          ],
+          "includes": [],
+          "examples": [
+            "Amazon RDS database",
+            "Azure SQL Database",
+            "Google Cloud SQL instance",
+            "Oracle Autonomous Database",
+            "MongoDB Atlas cluster",
+            "Cloud Firestore database",
+            "Managed PostgreSQL instance",
+            "Managed MySQL instance",
+            "Terraform-provisioned managed database"
+          ],
+          "useCases": [
+            "Running databases without managing database servers",
+            "Creating managed relational databases",
+            "Creating managed NoSQL databases",
+            "Automating backups and recovery",
+            "Scaling database capacity",
+            "Supporting cloud-native backend services",
+            "Migrating databases to the cloud",
+            "Reducing database administration overhead",
+            "Improving database availability and operational consistency"
+          ],
+          "relatedConcepts": [
+            "Cloud Computing",
+            "PaaS",
+            "Managed Services",
+            "Database Systems",
+            "RDBMS",
+            "NoSQL",
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "Cloud Firestore",
+            "Backup and Recovery",
+            "High Availability"
+          ]
+        },
+        {
+          "id": "container-as-a-service",
+          "name": "Container as a Service",
+          "continent": "Infrastructure",
+          "category": "Cloud",
+          "subcategory": "Cloud Service Models",
+          "aliases": [
+            "CaaS",
+            "Containers as a Service",
+            "Container-as-a-Service",
+            "Managed Container Service"
+          ],
+          "notes": "Cloud service model where a provider supplies managed container deployment, scheduling, orchestration, scaling, networking, and infrastructure operations for containerized applications.",
+          "tags": [
+            "cloud-service-model",
+            "caas",
+            "containers",
+            "containerization",
+            "orchestration",
+            "kubernetes",
+            "cloud-computing",
+            "infrastructure"
+          ],
+          "whatIsIt": "A cloud service model for running and managing containerized applications using provider-managed container infrastructure, orchestration, networking, and scaling capabilities.",
+          "description": "Container as a Service is a cloud service model where a provider offers managed container infrastructure and orchestration capabilities for running containerized applications. Developers and platform teams use CaaS to deploy Docker containers, manage container clusters, run Kubernetes workloads, configure networking, scale services, manage container images, and operate cloud-native applications without managing every infrastructure layer manually. CaaS sits between lower-level IaaS and higher-level PaaS: teams still work directly with containers and orchestration concepts, but the cloud provider manages much of the underlying compute, networking, cluster infrastructure, and operational platform. It should be separate from Docker and Kubernetes, which are containerization/orchestration technologies rather than the cloud service model itself.",
+          "usedWith": [
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "Azure",
+            "Google Cloud Platform",
+            "Oracle Cloud Infrastructure",
+            "IBM Cloud",
+            "Container Registry",
+            "CI/CD",
+            "Terraform",
+            "Linux",
+            "Microservices"
+          ],
+          "builtOn": [
+            "Cloud Computing",
+            "Containerization",
+            "Container Orchestration",
+            "Docker Images",
+            "Kubernetes",
+            "Virtualization",
+            "Cloud Networking"
+          ],
+          "builtUponBy": [
+            "Cloud-Native Application Deployment",
+            "Microservice Deployment Workflows",
+            "Kubernetes Platform Workflows",
+            "Containerized Backend Service Workflows",
+            "CI/CD Deployment Pipelines",
+            "Platform Engineering Workflows",
+            "DevOps Infrastructure Workflows",
+            "Hybrid Cloud Container Workloads",
+            "Scalable Application Hosting"
+          ],
+          "runsOn": [
+            "AWS",
+            "Azure",
+            "Google Cloud Platform",
+            "Oracle Cloud Infrastructure",
+            "IBM Cloud",
+            "Kubernetes Platforms",
+            "Cloud Container Platforms"
+          ],
+          "alternatives": [
+            "IaaS",
+            "PaaS",
+            "Serverless Computing",
+            "Virtual Machines",
+            "Self-Managed Kubernetes",
+            "Bare Metal Servers",
+            "Traditional Application Servers"
+          ],
+          "partOf": [
+            "Cloud Service Models",
+            "Cloud Computing",
+            "Infrastructure",
+            "Containerization",
+            "Container Orchestration",
+            "Cloud-Native Infrastructure",
+            "DevOps",
+            "Platform Engineering"
+          ],
+          "includes": [],
+          "examples": [
+            "Managed Kubernetes service",
+            "AWS ECS workload",
+            "Amazon EKS cluster",
+            "Azure Kubernetes Service cluster",
+            "Google Kubernetes Engine cluster",
+            "Oracle Kubernetes Engine cluster",
+            "IBM Cloud Kubernetes Service cluster",
+            "Container image deployed from a registry",
+            "CI/CD pipeline deploying containers to a managed cluster"
+          ],
+          "useCases": [
+            "Running containerized applications in the cloud",
+            "Deploying microservices",
+            "Managing Kubernetes-based workloads",
+            "Scaling containerized backend services",
+            "Standardizing container deployment workflows",
+            "Reducing cluster infrastructure management overhead",
+            "Supporting cloud-native application platforms",
+            "Deploying applications through CI/CD pipelines",
+            "Running portable workloads across cloud environments"
+          ],
+          "relatedConcepts": [
+            "Containerization",
+            "Orchestration",
+            "Docker",
+            "Kubernetes",
+            "Container Registry",
+            "Microservices",
+            "Cloud Computing",
+            "IaaS",
+            "PaaS",
+            "Serverless Computing",
+            "DevOps",
+            "Platform Engineering"
+          ]
+        },
+        {
+          "id": "function-as-a-service",
+          "name": "Function as a Service",
+          "continent": "Infrastructure",
+          "category": "Cloud",
+          "subcategory": "Cloud Service Models",
+          "aliases": [
+            "FaaS",
+            "Functions as a Service",
+            "Serverless Functions",
+            "Cloud Functions",
+            "Event-Driven Serverless Functions"
+          ],
+          "notes": "Cloud service model where developers deploy individual functions that run in response to events, HTTP requests, messages, schedules, or other triggers without managing servers directly.",
+          "tags": [
+            "cloud",
+            "cloud-service-model",
+            "faas",
+            "serverless",
+            "event-driven",
+            "backend",
+            "deployment",
+            "infrastructure"
+          ],
+          "whatIsIt": "A cloud service model for deploying small units of backend code as event-triggered functions without directly managing servers, operating systems, or long-running application hosts.",
+          "description": "Function as a Service is a cloud service model where developers write and deploy individual functions that execute in response to events such as HTTP requests, message queue events, file uploads, database changes, scheduled jobs, or cloud infrastructure events. The cloud provider manages the underlying servers, scaling, runtime execution, availability, and much of the operational infrastructure. FaaS is closely associated with serverless computing, event-driven architecture, microservices, backend APIs, automation tasks, and cloud-native workflows. It should be classified as a cloud service model because it describes a way cloud providers offer compute execution, while Serverless Architecture is the broader architectural pattern and AWS Lambda, Azure Functions, Google Cloud Functions, and Cloudflare Workers are concrete platform offerings.",
+          "usedWith": [
+            "Serverless Architecture",
+            "AWS Lambda",
+            "Azure Functions",
+            "Google Cloud Functions",
+            "Cloudflare Workers",
+            "REST API",
+            "API Gateway",
+            "Event-Driven Architecture",
+            "Message Queues",
+            "CI/CD",
+            "Public Cloud",
+            "Backend"
+          ],
+          "builtOn": [
+            "Cloud Computing",
+            "Serverless Computing",
+            "Event-Driven Architecture",
+            "Managed Runtimes",
+            "Cloud Provider Infrastructure",
+            "Autoscaling",
+            "Function Invocation"
+          ],
+          "builtUponBy": [
+            "Serverless Backend Workflows",
+            "Event-Driven Application Workflows",
+            "API Backend Workflows",
+            "Scheduled Automation Workflows",
+            "Cloud-Native Integration Workflows",
+            "Data Processing Pipelines",
+            "Webhook Processing Workflows",
+            "Microservice Deployment Workflows",
+            "Infrastructure Automation Workflows"
+          ],
+          "runsOn": [
+            "Public Cloud Platforms",
+            "AWS Lambda",
+            "Azure Functions",
+            "Google Cloud Functions",
+            "Cloudflare Workers",
+            "Serverless Runtimes",
+            "Edge Compute Platforms"
+          ],
+          "alternatives": [
+            "Platform as a Service",
+            "Container as a Service",
+            "Kubernetes",
+            "Virtual Machines",
+            "Backend as a Service",
+            "Traditional Server Hosting",
+            "Long-Running Backend Services"
+          ],
+          "partOf": [
+            "Cloud Service Models",
+            "Serverless Computing",
+            "Cloud Computing",
+            "Public Cloud",
+            "Backend Infrastructure",
+            "Event-Driven Architecture",
+            "Cloud-Native Development",
+            "Managed Compute"
+          ],
+          "includes": [],
+          "examples": [
+            "AWS Lambda function",
+            "Azure Functions HTTP trigger",
+            "Google Cloud Function",
+            "Cloudflare Worker",
+            "Scheduled serverless function",
+            "Webhook handler function",
+            "Image processing function after file upload",
+            "Queue-triggered background processor",
+            "API route backed by a serverless function"
+          ],
+          "useCases": [
+            "Building serverless APIs",
+            "Running event-driven backend code",
+            "Processing webhooks",
+            "Running scheduled jobs",
+            "Handling background tasks",
+            "Processing files after upload",
+            "Reacting to database or storage events",
+            "Building lightweight cloud automation",
+            "Scaling bursty workloads without managing servers"
+          ],
+          "relatedConcepts": [
+            "Serverless Architecture",
+            "Cloud Computing",
+            "Public Cloud",
+            "PaaS",
+            "Backend as a Service",
+            "AWS Lambda",
+            "Azure Functions",
+            "Google Cloud Functions",
+            "Cloudflare Workers",
+            "API Gateway",
+            "Event-Driven Architecture",
+            "Microservices"
+          ]
+        },
+        {
+          "id": "backend-as-a-service",
+          "name": "Backend as a Service",
+          "continent": "Infrastructure",
+          "category": "Cloud",
+          "subcategory": "Cloud Service Models",
+          "aliases": [
+            "BaaS",
+            "Mobile Backend as a Service",
+            "MBaaS",
+            "Managed Backend Platform",
+            "Backend Platform as a Service"
+          ],
+          "notes": "Cloud service model that provides managed backend capabilities such as authentication, databases, storage, serverless functions, APIs, push notifications, hosting, and real-time synchronization.",
+          "tags": [
+            "cloud",
+            "cloud-service-model",
+            "baas",
+            "backend",
+            "managed-services",
+            "serverless",
+            "database",
+            "authentication"
+          ],
+          "whatIsIt": "A cloud service model that provides ready-made managed backend services so developers can build applications without implementing or operating much of the backend infrastructure themselves.",
+          "description": "Backend as a Service is a cloud service model where a provider supplies managed backend capabilities such as authentication, user management, databases, storage, serverless functions, APIs, push notifications, hosting, real-time synchronization, analytics, and security rules. Developers use BaaS platforms to speed up web and mobile application development by relying on managed backend services instead of building every backend component from scratch. BaaS overlaps with PaaS, SaaS, serverless, and managed databases, but it is distinct because it packages common application backend needs into a developer-facing backend platform. Firebase, Supabase, Appwrite, AWS Amplify, and Parse are common examples or related platforms.",
+          "usedWith": [
+            "Firebase",
+            "Supabase",
+            "Appwrite",
+            "AWS Amplify",
+            "Cloud Firestore",
+            "Authentication",
+            "REST API",
+            "GraphQL",
+            "Frontend",
+            "Mobile Apps",
+            "Serverless Functions",
+            "Public Cloud"
+          ],
+          "builtOn": [
+            "Cloud Computing",
+            "Managed Services",
+            "Databases",
+            "Authentication Systems",
+            "Object Storage",
+            "Serverless Computing",
+            "APIs",
+            "Public Cloud Infrastructure"
+          ],
+          "builtUponBy": [
+            "Mobile App Development Workflows",
+            "Frontend-Heavy Application Workflows",
+            "MVP Development Workflows",
+            "Serverless Backend Workflows",
+            "Real-Time Application Workflows",
+            "User Authentication Workflows",
+            "Managed Database Workflows",
+            "Rapid Prototyping Workflows",
+            "Full-Stack Application Workflows"
+          ],
+          "runsOn": [
+            "Public Cloud Platforms",
+            "Managed Backend Platforms",
+            "Firebase",
+            "Supabase",
+            "Appwrite Cloud",
+            "AWS Amplify",
+            "Cloud Provider Infrastructure"
+          ],
+          "alternatives": [
+            "Platform as a Service",
+            "Function as a Service",
+            "Custom Backend Services",
+            "Self-Hosted Backend",
+            "Kubernetes-Based Backend",
+            "Virtual Machine Hosting",
+            "Traditional Server-Side Backend"
+          ],
+          "partOf": [
+            "Cloud Service Models",
+            "Cloud Computing",
+            "Backend Infrastructure",
+            "Managed Services",
+            "Serverless Platforms",
+            "Application Development Platforms",
+            "Full-Stack Development",
+            "Public Cloud"
+          ],
+          "includes": [],
+          "examples": [
+            "Firebase Authentication",
+            "Cloud Firestore-backed mobile app",
+            "Supabase project with Postgres and Auth",
+            "AWS Amplify app backend",
+            "Appwrite managed backend",
+            "BaaS-backed React application",
+            "Mobile app using push notifications",
+            "Real-time chat app using managed backend services",
+            "Prototype app built without a custom backend server"
+          ],
+          "useCases": [
+            "Building mobile app backends quickly",
+            "Adding authentication to applications",
+            "Using managed databases without operating servers",
+            "Storing user-uploaded files",
+            "Building real-time applications",
+            "Creating MVPs and prototypes quickly",
+            "Reducing backend infrastructure management",
+            "Connecting frontend applications to managed backend services",
+            "Adding push notifications and user management"
+          ],
+          "relatedConcepts": [
+            "Cloud Computing",
+            "Public Cloud",
+            "PaaS",
+            "SaaS",
+            "Function as a Service",
+            "Serverless",
+            "Firebase",
+            "Supabase",
+            "Cloud Firestore",
+            "Authentication",
+            "Managed Database",
+            "Backend"
           ]
         }
       ]
@@ -27473,6 +28596,255 @@
           "Ingress",
           "Helm",
           "Infrastructure as Code"
+        ]
+      },
+      {
+        "id": "containerd",
+        "name": "containerd",
+        "continent": "Infrastructure",
+        "category": "Containerization & Orchestration",
+        "subcategory": "",
+        "aliases": [
+          "Containerd",
+          "containerd Runtime",
+          "containerd Container Runtime",
+          "CNCF containerd"
+        ],
+        "notes": "Industry-standard container runtime used to manage container images, container lifecycle, snapshots, storage, networking hooks, and low-level container execution for Docker, Kubernetes, and other container platforms.",
+        "tags": [
+          "containerization",
+          "container-runtime",
+          "containers",
+          "docker",
+          "kubernetes",
+          "oci",
+          "infrastructure",
+          "runtime"
+        ],
+        "whatIsIt": "A container runtime that manages container images, container execution, lifecycle operations, snapshots, and runtime integration for container platforms such as Docker and Kubernetes.",
+        "description": "containerd is a low-level container runtime used to manage the core lifecycle of containers. It handles pulling and storing container images, creating containers, managing snapshots, starting and stopping containers, supervising tasks, and integrating with lower-level runtimes such as runc. containerd is commonly used underneath Docker and Kubernetes: Docker uses containerd as part of its container execution stack, and Kubernetes clusters commonly use containerd through the Container Runtime Interface. It should be classified under Containerization & Orchestration because it is infrastructure-level container runtime technology, while Docker is a higher-level container platform/tool and Kubernetes is a container orchestration platform.",
+        "usedWith": [
+          "Docker",
+          "Kubernetes",
+          "runc",
+          "OCI Runtime Specification",
+          "OCI Image Specification",
+          "Container Runtime Interface",
+          "Linux",
+          "Windows",
+          "nerdctl",
+          "Container Images",
+          "Kubelet",
+          "Container Registries"
+        ],
+        "builtOn": [
+          "Containerization",
+          "Linux Kernel Features",
+          "Namespaces",
+          "cgroups",
+          "OCI Specifications",
+          "Container Images",
+          "Low-Level Runtime Execution"
+        ],
+        "builtUponBy": [
+          "Docker Container Workflows",
+          "Kubernetes Container Execution",
+          "Container Platform Workflows",
+          "Cloud-Native Infrastructure",
+          "Managed Kubernetes Services",
+          "Container Image Pull Workflows",
+          "Container Lifecycle Management",
+          "DevOps Infrastructure Workflows",
+          "Platform Engineering Workflows"
+        ],
+        "runsOn": [
+          "Linux",
+          "Windows",
+          "Kubernetes Nodes",
+          "Docker Hosts",
+          "Cloud VM Instances",
+          "Bare Metal Servers",
+          "Container Infrastructure"
+        ],
+        "alternatives": [
+          "CRI-O",
+          "Docker Engine",
+          "Podman",
+          "LXC",
+          "rkt",
+          "Mirantis Container Runtime"
+        ],
+        "partOf": [
+          "Containerization & Orchestration",
+          "Container Runtime Stack",
+          "Docker Ecosystem",
+          "Kubernetes Ecosystem",
+          "Cloud-Native Infrastructure",
+          "CNCF Ecosystem",
+          "Infrastructure",
+          "Platform Engineering"
+        ],
+        "includes": [],
+        "examples": [
+          "containerd running on a Kubernetes node",
+          "Docker using containerd underneath",
+          "Kubelet communicating with containerd through CRI",
+          "Pulling a container image through containerd",
+          "Starting a container task with containerd",
+          "nerdctl using containerd",
+          "containerd with runc as the low-level runtime",
+          "Managed Kubernetes nodes using containerd",
+          "Container image stored in containerd content store"
+        ],
+        "useCases": [
+          "Running containers on Kubernetes nodes",
+          "Providing container runtime functionality for Docker",
+          "Pulling and managing container images",
+          "Managing container lifecycle operations",
+          "Supporting cloud-native infrastructure",
+          "Running containers without the full Docker Engine stack",
+          "Integrating container execution with Kubernetes",
+          "Supporting container platform internals",
+          "Building low-level container infrastructure"
+        ],
+        "relatedConcepts": [
+          "Docker",
+          "Kubernetes",
+          "Containerization",
+          "Orchestration",
+          "Container Runtime",
+          "runc",
+          "OCI",
+          "Container Runtime Interface",
+          "Kubelet",
+          "Container Image",
+          "Linux Namespaces",
+          "cgroups"
+        ]
+      },
+      {
+        "id": "cri-o",
+        "name": "CRI-O",
+        "continent": "Infrastructure",
+        "category": "Containerization & Orchestration",
+        "subcategory": "",
+        "aliases": [
+          "CRI-O Container Runtime",
+          "Kubernetes CRI-O",
+          "Open Container Initiative Runtime Integration",
+          "CRI-O Runtime"
+        ],
+        "notes": "Kubernetes-focused container runtime that implements the Kubernetes Container Runtime Interface and runs OCI-compatible containers using lower-level runtime components.",
+        "tags": [
+          "container-runtime",
+          "kubernetes",
+          "containerization",
+          "orchestration",
+          "oci",
+          "infrastructure",
+          "linux",
+          "runtime"
+        ],
+        "whatIsIt": "A lightweight Kubernetes container runtime that implements the Container Runtime Interface and runs OCI-compatible containers for Kubernetes nodes.",
+        "description": "CRI-O is a container runtime designed specifically for Kubernetes. It implements the Kubernetes Container Runtime Interface, allowing Kubernetes nodes to run containers without relying on Docker Engine. CRI-O pulls container images, manages container lifecycle operations, integrates with OCI-compatible runtimes, and works with Kubernetes components such as kubelet. It is closely related to containerd, Docker, runc, OCI images, Kubernetes nodes, and Linux container infrastructure. CRI-O should be classified under Containerization & Orchestration because it is an infrastructure runtime used in Kubernetes container execution workflows.",
+        "usedWith": [
+          "Kubernetes",
+          "kubelet",
+          "Linux",
+          "OCI Images",
+          "runc",
+          "Podman",
+          "Container Images",
+          "Container Registries",
+          "Red Hat OpenShift",
+          "containerd",
+          "Docker",
+          "Cgroups"
+        ],
+        "builtOn": [
+          "Kubernetes Container Runtime Interface",
+          "Open Container Initiative Standards",
+          "Linux Containers",
+          "Container Images",
+          "runc",
+          "Cgroups",
+          "Namespaces",
+          "Container Networking"
+        ],
+        "builtUponBy": [
+          "Kubernetes Node Runtime Workflows",
+          "Container Orchestration Workflows",
+          "OpenShift Cluster Workflows",
+          "Linux Container Infrastructure",
+          "Pod Scheduling and Execution Workflows",
+          "Cloud-Native Platform Workflows",
+          "Containerized Application Deployment",
+          "Cluster Runtime Management Workflows"
+        ],
+        "runsOn": [
+          "Linux",
+          "Kubernetes Nodes",
+          "Red Hat OpenShift",
+          "Cloud-Native Linux Distributions",
+          "Container-Optimized Hosts",
+          "Bare-Metal Kubernetes Clusters",
+          "Virtual Machine-Based Kubernetes Clusters"
+        ],
+        "alternatives": [
+          "containerd",
+          "Docker Engine",
+          "Mirantis Container Runtime",
+          "Podman",
+          "rkt",
+          "Kata Containers",
+          "gVisor"
+        ],
+        "partOf": [
+          "Containerization & Orchestration",
+          "Kubernetes Ecosystem",
+          "Container Runtime Infrastructure",
+          "Cloud-Native Infrastructure",
+          "Linux Container Stack",
+          "Open Container Initiative Ecosystem",
+          "Platform Engineering",
+          "Cluster Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "Kubernetes node using CRI-O",
+          "OpenShift cluster using CRI-O",
+          "kubelet communicating with CRI-O",
+          "CRI-O running OCI containers",
+          "Container image pulled by CRI-O",
+          "Pod sandbox created through CRI-O",
+          "Linux host configured with CRI-O",
+          "Kubernetes workload executed through CRI-O",
+          "CRI-O and runc running containers"
+        ],
+        "useCases": [
+          "Running containers on Kubernetes nodes",
+          "Replacing Docker Engine as a Kubernetes runtime",
+          "Supporting Kubernetes-native container execution",
+          "Running OCI-compatible container images",
+          "Powering OpenShift container workloads",
+          "Managing container lifecycle operations",
+          "Integrating kubelet with container runtime infrastructure",
+          "Supporting cloud-native Linux clusters",
+          "Providing a lightweight runtime focused on Kubernetes"
+        ],
+        "relatedConcepts": [
+          "Kubernetes",
+          "Container Runtime Interface",
+          "Containerization",
+          "Orchestration",
+          "containerd",
+          "Docker",
+          "Podman",
+          "runc",
+          "OCI",
+          "Linux Containers",
+          "kubelet",
+          "OpenShift"
         ]
       }
     ],
@@ -28275,6 +29647,876 @@
           "UDP",
           "Wireshark"
         ]
+      },
+      {
+        "id": "virtual-private-cloud",
+        "name": "Virtual Private Cloud",
+        "continent": "Infrastructure",
+        "category": "Networking",
+        "subcategory": "",
+        "aliases": [
+          "VPC",
+          "Cloud VPC",
+          "Virtual Network",
+          "Private Cloud Network",
+          "Cloud Private Network"
+        ],
+        "notes": "Logically isolated virtual network inside a cloud platform, used to define private address spaces, subnets, routing, firewall rules, gateways, and network boundaries for cloud resources.",
+        "tags": [
+          "networking",
+          "cloud-networking",
+          "vpc",
+          "infrastructure",
+          "private-network",
+          "subnetting",
+          "routing",
+          "security"
+        ],
+        "whatIsIt": "A logically isolated private network within a cloud platform where cloud resources can be placed, segmented, routed, and protected.",
+        "description": "A Virtual Private Cloud is a logically isolated networking environment inside a cloud provider. Developers, DevOps engineers, and infrastructure teams use VPCs to define private IP address ranges, subnets, route tables, gateways, firewall rules, NAT behavior, peering connections, VPN connections, and network boundaries for cloud resources. VPCs are commonly used with virtual machines, Kubernetes clusters, managed databases, load balancers, serverless resources, and private services. Although the term includes 'cloud,' it fits best under Networking because it represents cloud network architecture rather than a cloud platform or cloud deployment model.",
+        "usedWith": [
+          "AWS",
+          "Microsoft Azure",
+          "Google Cloud Platform",
+          "Alibaba Cloud",
+          "DigitalOcean",
+          "Kubernetes",
+          "Virtual Machines",
+          "Subnets",
+          "Firewalls",
+          "Load Balancers",
+          "VPN",
+          "Terraform"
+        ],
+        "builtOn": [
+          "Cloud Networking",
+          "Private IP Addressing",
+          "Subnets",
+          "Routing",
+          "Network Isolation",
+          "Firewall Rules",
+          "Software-Defined Networking"
+        ],
+        "builtUponBy": [
+          "Cloud Network Architecture",
+          "Secure Cloud Deployment Workflows",
+          "Kubernetes Networking Workflows",
+          "Private Application Hosting",
+          "Hybrid Cloud Connectivity",
+          "Multi-Tier Application Deployment",
+          "Database Isolation Workflows",
+          "Infrastructure as Code Network Provisioning"
+        ],
+        "runsOn": [
+          "Cloud Platforms",
+          "AWS VPC",
+          "Azure Virtual Network",
+          "Google Cloud VPC",
+          "Alibaba Cloud VPC",
+          "DigitalOcean VPC",
+          "Cloud Data Center Networks"
+        ],
+        "alternatives": [
+          "Physical Private Network",
+          "On-Premises VLAN",
+          "Flat Public Cloud Network",
+          "Private Data Center Network",
+          "Software-Defined WAN",
+          "Zero Trust Network Architecture"
+        ],
+        "partOf": [
+          "Networking",
+          "Cloud Networking",
+          "Infrastructure",
+          "Cloud Architecture",
+          "Network Security",
+          "Private Network Design",
+          "Cloud Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "AWS VPC with public and private subnets",
+          "Azure Virtual Network for backend services",
+          "Google Cloud VPC network",
+          "Alibaba Cloud VPC with ECS instances",
+          "DigitalOcean VPC for Droplets",
+          "Private subnet for managed databases",
+          "Public subnet with a load balancer",
+          "NAT gateway for outbound internet access",
+          "Terraform-created VPC infrastructure"
+        ],
+        "useCases": [
+          "Isolating cloud resources",
+          "Designing private cloud networks",
+          "Separating public and private subnets",
+          "Protecting databases from public internet access",
+          "Connecting cloud networks to on-premises systems",
+          "Building multi-tier application networks",
+          "Managing cloud routing and firewall rules",
+          "Supporting secure Kubernetes cluster networking",
+          "Provisioning network infrastructure with Terraform"
+        ],
+        "relatedConcepts": [
+          "Networking",
+          "Cloud Networking",
+          "Subnet",
+          "CIDR",
+          "Firewall",
+          "NAT",
+          "VPN",
+          "Load Balancer",
+          "Private Cloud",
+          "Hybrid Cloud",
+          "Terraform",
+          "Security Groups"
+        ]
+      },
+      {
+        "id": "content-delivery-network",
+        "name": "Content Delivery Network",
+        "continent": "Infrastructure",
+        "category": "Networking",
+        "subcategory": "",
+        "aliases": [
+          "CDN",
+          "Content Distribution Network",
+          "Edge CDN",
+          "Web CDN",
+          "Static Asset CDN"
+        ],
+        "notes": "Distributed network of edge servers used to cache, deliver, accelerate, and protect web content such as static assets, media, APIs, downloads, and websites closer to users.",
+        "tags": [
+          "networking",
+          "cdn",
+          "edge-networking",
+          "web-performance",
+          "caching",
+          "content-delivery",
+          "infrastructure",
+          "security"
+        ],
+        "whatIsIt": "A distributed network of edge servers that caches and delivers web content closer to users to improve performance, reliability, scalability, and availability.",
+        "description": "A Content Delivery Network is a distributed network of servers that deliver web content from locations closer to users. Developers and infrastructure teams use CDNs to cache static assets, accelerate websites, serve images and videos, reduce origin-server load, improve global latency, protect against traffic spikes, and add edge-layer security features. CDNs are commonly used with web servers, object storage, DNS, TLS certificates, reverse proxies, cloud platforms, frontend applications, APIs, and media delivery workflows. CDN belongs under Networking because it is primarily an edge network and content routing/delivery system, even though it is often provided as a cloud service.",
+        "usedWith": [
+          "DNS",
+          "HTTP",
+          "HTTPS",
+          "TLS",
+          "Web Servers",
+          "nginx",
+          "Object Storage",
+          "Cloud Platforms",
+          "Static Websites",
+          "Frontend Applications",
+          "Reverse Proxy",
+          "Load Balancers"
+        ],
+        "builtOn": [
+          "Edge Networking",
+          "Caching",
+          "DNS Routing",
+          "HTTP",
+          "TLS",
+          "Reverse Proxying",
+          "Distributed Systems"
+        ],
+        "builtUponBy": [
+          "Website Acceleration Workflows",
+          "Static Asset Delivery",
+          "Media Streaming Workflows",
+          "Global Web Application Delivery",
+          "API Acceleration Workflows",
+          "DDoS Mitigation Workflows",
+          "Edge Security Workflows",
+          "High-Traffic Web Hosting"
+        ],
+        "runsOn": [
+          "Edge Servers",
+          "Global Points of Presence",
+          "Cloud CDN Platforms",
+          "Provider Edge Networks",
+          "Reverse Proxy Infrastructure",
+          "Distributed Cache Nodes"
+        ],
+        "alternatives": [
+          "Origin-Only Hosting",
+          "Reverse Proxy Cache",
+          "Self-Hosted Caching Proxy",
+          "Regional Load Balancing",
+          "Cloudflare",
+          "Amazon CloudFront",
+          "Akamai",
+          "Fastly"
+        ],
+        "partOf": [
+          "Networking",
+          "Web Infrastructure",
+          "Edge Networking",
+          "Cloud Infrastructure",
+          "Performance Optimization",
+          "Content Delivery",
+          "Web Security"
+        ],
+        "includes": [],
+        "examples": [
+          "Cloudflare CDN in front of a website",
+          "Amazon CloudFront serving static assets",
+          "Fastly CDN caching API responses",
+          "Akamai delivering video content",
+          "CDN-backed image delivery",
+          "CDN cache purge after deployment",
+          "Static site served through a CDN",
+          "Object storage bucket behind a CDN",
+          "TLS certificate managed at the CDN edge"
+        ],
+        "useCases": [
+          "Accelerating website load times",
+          "Serving static assets globally",
+          "Reducing origin server load",
+          "Caching images, CSS, JavaScript, and downloads",
+          "Improving reliability during traffic spikes",
+          "Delivering media content",
+          "Adding edge security and DDoS protection",
+          "Supporting static site hosting",
+          "Improving global application latency"
+        ],
+        "relatedConcepts": [
+          "DNS",
+          "HTTP",
+          "HTTPS",
+          "Caching",
+          "Edge Computing",
+          "Reverse Proxy",
+          "Load Balancer",
+          "Object Storage",
+          "Web Servers",
+          "Cloudflare",
+          "CloudFront",
+          "DDoS Protection"
+        ]
+      },
+      {
+        "id": "smtp",
+        "name": "SMTP",
+        "continent": "Infrastructure",
+        "category": "Networking",
+        "subcategory": "",
+        "aliases": [
+          "Simple Mail Transfer Protocol",
+          "SMTP Protocol",
+          "Email Sending Protocol",
+          "Mail Transfer Protocol"
+        ],
+        "notes": "Application-layer protocol used to send, relay, and transfer email messages between mail clients, mail servers, and mail transfer agents.",
+        "tags": [
+          "networking",
+          "protocol",
+          "email",
+          "mail-server",
+          "application-layer",
+          "infrastructure",
+          "smtp",
+          "message-delivery"
+        ],
+        "whatIsIt": "An application-layer protocol used for sending and relaying email messages between clients and mail servers or between mail servers.",
+        "description": "SMTP, or Simple Mail Transfer Protocol, is the standard protocol used to send and relay email messages. It is commonly used when an email client submits outgoing mail to a mail server and when mail servers transfer messages to other mail servers. Developers and infrastructure teams encounter SMTP when configuring application email notifications, transactional email, password reset emails, contact forms, mail servers, DNS mail records, authentication, TLS encryption, spam prevention, and production alerting. SMTP belongs under Networking because it is a core application-layer network protocol for email transmission, though it also overlaps with security and infrastructure operations.",
+        "usedWith": [
+          "IMAP",
+          "POP3",
+          "DNS",
+          "MX Records",
+          "TLS",
+          "SMTP Server",
+          "Mail Transfer Agent",
+          "Email Client",
+          "Authentication",
+          "SPF",
+          "DKIM",
+          "DMARC"
+        ],
+        "builtOn": [
+          "TCP",
+          "IP",
+          "Client-Server Communication",
+          "Application-Layer Protocols",
+          "Email Message Format",
+          "DNS Mail Routing",
+          "Mail Transfer Agents",
+          "Authentication"
+        ],
+        "builtUponBy": [
+          "Application Email Notification Workflows",
+          "Transactional Email Delivery",
+          "Password Reset Email Workflows",
+          "Contact Form Email Workflows",
+          "Production Alerting Workflows",
+          "Mail Server Relay Workflows",
+          "System Notification Delivery",
+          "CI/CD Notification Workflows",
+          "Enterprise Email Infrastructure"
+        ],
+        "runsOn": [
+          "Mail Servers",
+          "SMTP Servers",
+          "Linux Servers",
+          "Windows Servers",
+          "Cloud Email Services",
+          "Containerized Environments",
+          "Application Servers"
+        ],
+        "alternatives": [
+          "Email API",
+          "Webhooks",
+          "Message Queue",
+          "Push Notifications",
+          "SMS Gateway",
+          "Direct Mail Provider API"
+        ],
+        "partOf": [
+          "Networking",
+          "Email Infrastructure",
+          "Application-Layer Protocols",
+          "Internet Infrastructure",
+          "Messaging Infrastructure",
+          "Production Infrastructure",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "Application sending password reset email through SMTP",
+          "Mail server relaying email to another mail server",
+          "SMTP submission on port 587",
+          "SMTP over TLS on port 465",
+          "Postfix SMTP server",
+          "Sendmail mail transfer agent",
+          "Node.js app sending email through an SMTP provider",
+          "CI/CD pipeline sending build failure email",
+          "Contact form sending notification email"
+        ],
+        "useCases": [
+          "Sending outgoing email",
+          "Relaying mail between servers",
+          "Delivering transactional emails",
+          "Sending password reset links",
+          "Sending application notifications",
+          "Configuring production alert emails",
+          "Connecting applications to email providers",
+          "Operating mail server infrastructure",
+          "Troubleshooting email delivery failures"
+        ],
+        "relatedConcepts": [
+          "IMAP",
+          "POP3",
+          "Email",
+          "Mail Server",
+          "MX Record",
+          "DNS",
+          "TLS",
+          "SPF",
+          "DKIM",
+          "DMARC",
+          "Mail Transfer Agent",
+          "Transactional Email"
+        ]
+      },
+      {
+        "id": "imap",
+        "name": "IMAP",
+        "continent": "Infrastructure",
+        "category": "Networking",
+        "subcategory": "",
+        "aliases": [
+          "Internet Message Access Protocol",
+          "IMAP Protocol",
+          "Email Retrieval Protocol",
+          "Mailbox Access Protocol"
+        ],
+        "notes": "Application-layer protocol used by email clients to access, read, organize, and synchronize email messages stored on a mail server.",
+        "tags": [
+          "networking",
+          "protocol",
+          "email",
+          "mailbox",
+          "mail-server",
+          "application-layer",
+          "infrastructure",
+          "message-sync"
+        ],
+        "whatIsIt": "An application-layer protocol used by email clients to access and synchronize mailbox messages stored on a mail server.",
+        "description": "IMAP, or Internet Message Access Protocol, is an email protocol used by clients to access and synchronize messages stored on a mail server. Unlike SMTP, which sends and relays email, IMAP is used for reading, searching, organizing, and syncing mailbox contents across devices. Developers and infrastructure teams encounter IMAP when configuring mail clients, integrating with mailbox data, troubleshooting email access, managing folders, syncing read/unread state, handling mail server authentication, and supporting enterprise email systems. IMAP belongs under Networking because it is a core application-layer protocol for email access and mailbox synchronization.",
+        "usedWith": [
+          "SMTP",
+          "POP3",
+          "TLS",
+          "Mail Server",
+          "Email Client",
+          "Authentication",
+          "DNS",
+          "Mailbox Folders",
+          "Message Flags",
+          "Email Hosting",
+          "Mobile Mail Clients",
+          "Desktop Mail Clients"
+        ],
+        "builtOn": [
+          "TCP",
+          "IP",
+          "Client-Server Communication",
+          "Application-Layer Protocols",
+          "Mailboxes",
+          "Message Storage",
+          "Authentication",
+          "Folder Synchronization"
+        ],
+        "builtUponBy": [
+          "Email Client Synchronization",
+          "Mailbox Access Workflows",
+          "Mobile Email Access",
+          "Desktop Email Access",
+          "Enterprise Email Workflows",
+          "Email Search Workflows",
+          "Folder Organization Workflows",
+          "Read and Unread State Synchronization",
+          "Mailbox Integration Workflows"
+        ],
+        "runsOn": [
+          "Mail Servers",
+          "IMAP Servers",
+          "Linux Servers",
+          "Windows Servers",
+          "Cloud Email Services",
+          "Mobile Devices",
+          "Desktop Email Clients"
+        ],
+        "alternatives": [
+          "POP3",
+          "Webmail",
+          "Email Provider API",
+          "Microsoft Graph Mail API",
+          "Gmail API",
+          "Exchange ActiveSync"
+        ],
+        "partOf": [
+          "Networking",
+          "Email Infrastructure",
+          "Application-Layer Protocols",
+          "Mailbox Access",
+          "Internet Infrastructure",
+          "Messaging Infrastructure",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "Email client syncing inbox over IMAP",
+          "IMAP over TLS on port 993",
+          "Mail app reading messages from a server",
+          "Desktop email client showing folders from IMAP",
+          "Phone syncing read/unread state through IMAP",
+          "Server-side search of mailbox messages",
+          "Dovecot IMAP server",
+          "Application reading a support mailbox through IMAP",
+          "Email archive workflow using IMAP"
+        ],
+        "useCases": [
+          "Reading mailbox messages",
+          "Synchronizing email across devices",
+          "Managing server-side email folders",
+          "Searching mailbox contents",
+          "Tracking read and unread state",
+          "Supporting desktop and mobile mail clients",
+          "Accessing shared or support mailboxes",
+          "Troubleshooting email client connectivity",
+          "Integrating applications with mailbox data"
+        ],
+        "relatedConcepts": [
+          "SMTP",
+          "POP3",
+          "Email",
+          "Mail Server",
+          "Mailbox",
+          "Email Client",
+          "TLS",
+          "Authentication",
+          "Webmail",
+          "Message Flags",
+          "Folder Synchronization",
+          "Email Hosting"
+        ]
+      },
+      {
+        "id": "snmp",
+        "name": "SNMP",
+        "continent": "Infrastructure",
+        "category": "Networking",
+        "subcategory": "",
+        "aliases": [
+          "Simple Network Management Protocol",
+          "SNMP Protocol",
+          "Network Management Protocol",
+          "SNMP Monitoring"
+        ],
+        "notes": "Application-layer network management protocol used to monitor, query, and manage network devices, servers, printers, routers, switches, firewalls, and infrastructure appliances.",
+        "tags": [
+          "networking",
+          "protocol",
+          "monitoring",
+          "network-management",
+          "infrastructure",
+          "observability",
+          "devices",
+          "operations"
+        ],
+        "whatIsIt": "A network management protocol used to monitor and manage devices by querying metrics, status values, and configuration data.",
+        "description": "SNMP, or Simple Network Management Protocol, is a protocol used to monitor and manage networked devices such as routers, switches, firewalls, wireless access points, servers, printers, UPS units, and other infrastructure appliances. SNMP allows management systems to query device metrics, receive alerts, inspect operational state, and collect information through managed objects identified by OIDs. Developers and infrastructure teams encounter SNMP in network monitoring, infrastructure observability, NOC dashboards, device health checks, capacity planning, alerting, and troubleshooting. SNMP belongs under Networking because it is a core network management protocol used to observe and operate infrastructure devices.",
+        "usedWith": [
+          "Routers",
+          "Switches",
+          "Firewalls",
+          "Wireless Access Points",
+          "Network Monitoring",
+          "Observability",
+          "NMS",
+          "Prometheus",
+          "Grafana",
+          "Linux Servers",
+          "Network Appliances",
+          "UDP"
+        ],
+        "builtOn": [
+          "UDP",
+          "IP Networking",
+          "Managed Objects",
+          "Object Identifiers",
+          "Management Information Base",
+          "Agent-Manager Architecture",
+          "Network Monitoring",
+          "Device Telemetry"
+        ],
+        "builtUponBy": [
+          "Network Monitoring Workflows",
+          "Infrastructure Observability Workflows",
+          "Device Health Alerting",
+          "Capacity Planning Workflows",
+          "NOC Dashboard Workflows",
+          "Network Troubleshooting Workflows",
+          "Router and Switch Monitoring",
+          "Firewall Monitoring",
+          "Enterprise Infrastructure Operations"
+        ],
+        "runsOn": [
+          "Network Devices",
+          "Routers",
+          "Switches",
+          "Firewalls",
+          "Wireless Access Points",
+          "Linux Servers",
+          "Windows Servers",
+          "Monitoring Servers"
+        ],
+        "alternatives": [
+          "NetFlow",
+          "sFlow",
+          "Syslog",
+          "Prometheus Exporters",
+          "OpenTelemetry",
+          "Vendor APIs",
+          "Streaming Telemetry"
+        ],
+        "partOf": [
+          "Networking",
+          "Network Management",
+          "Infrastructure Monitoring",
+          "Observability",
+          "Enterprise Networking",
+          "Infrastructure Operations",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "Monitoring switch port status with SNMP",
+          "Router CPU and memory polling",
+          "Firewall interface traffic counters",
+          "SNMP trap for device failure",
+          "Network printer status monitoring",
+          "UPS battery status through SNMP",
+          "Grafana dashboard using SNMP metrics",
+          "Prometheus SNMP exporter",
+          "Polling interface bandwidth counters"
+        ],
+        "useCases": [
+          "Monitoring network device health",
+          "Collecting interface traffic metrics",
+          "Receiving device failure alerts",
+          "Tracking router and switch performance",
+          "Managing infrastructure observability",
+          "Building network operations dashboards",
+          "Troubleshooting device connectivity",
+          "Planning capacity from bandwidth metrics",
+          "Auditing network device status"
+        ],
+        "relatedConcepts": [
+          "Network Monitoring",
+          "Observability",
+          "Router",
+          "Switch",
+          "Firewall",
+          "UDP",
+          "Syslog",
+          "NetFlow",
+          "Prometheus",
+          "Grafana",
+          "OID",
+          "MIB"
+        ]
+      },
+      {
+        "id": "bgp",
+        "name": "BGP",
+        "continent": "Infrastructure",
+        "category": "Networking",
+        "subcategory": "",
+        "aliases": [
+          "Border Gateway Protocol",
+          "BGP Routing",
+          "External Gateway Protocol",
+          "Interdomain Routing Protocol"
+        ],
+        "notes": "Routing protocol used to exchange routing information between autonomous systems, forming a core part of internet-scale routing and multi-network connectivity.",
+        "tags": [
+          "networking",
+          "routing",
+          "protocol",
+          "internet",
+          "infrastructure",
+          "autonomous-system",
+          "wan",
+          "cloud-networking"
+        ],
+        "whatIsIt": "A routing protocol used to exchange reachability information between networks and autonomous systems on the internet.",
+        "description": "BGP, or Border Gateway Protocol, is the routing protocol used to exchange routing information between autonomous systems such as internet service providers, cloud providers, enterprises, and large networks. It is central to how internet routes are advertised, selected, and propagated across organizations and network boundaries. Infrastructure teams encounter BGP when working with ISPs, WAN connectivity, cloud interconnects, edge networks, multi-homing, route advertisements, autonomous system numbers, peering, VPN connectivity, Kubernetes networking in some environments, and large-scale network reliability. BGP belongs under Networking because it is a foundational routing protocol for interdomain routing and internet-scale connectivity.",
+        "usedWith": [
+          "IP",
+          "IPv4",
+          "IPv6",
+          "Routers",
+          "WAN",
+          "Cloud Interconnect",
+          "VPN",
+          "ISPs",
+          "Autonomous Systems",
+          "Route Tables",
+          "Firewalls",
+          "Data Centers"
+        ],
+        "builtOn": [
+          "IP Routing",
+          "Autonomous Systems",
+          "Route Advertisement",
+          "Path Vector Routing",
+          "Network Prefixes",
+          "TCP",
+          "Routing Policies",
+          "Internet Infrastructure"
+        ],
+        "builtUponBy": [
+          "Internet Routing Workflows",
+          "ISP Peering Workflows",
+          "Cloud Interconnect Routing",
+          "Enterprise WAN Connectivity",
+          "Multi-Homed Network Design",
+          "Data Center Edge Routing",
+          "Anycast Routing Workflows",
+          "Hybrid Cloud Networking",
+          "Large-Scale Network Reliability"
+        ],
+        "runsOn": [
+          "Routers",
+          "Edge Routers",
+          "Cloud Routers",
+          "Firewalls",
+          "Network Appliances",
+          "Data Center Networks",
+          "ISP Infrastructure"
+        ],
+        "alternatives": [
+          "OSPF",
+          "EIGRP",
+          "RIP",
+          "Static Routing",
+          "IS-IS",
+          "Cloud Route Tables",
+          "SD-WAN Routing"
+        ],
+        "partOf": [
+          "Networking",
+          "Internet Routing",
+          "WAN Infrastructure",
+          "Cloud Networking",
+          "Enterprise Networking",
+          "Data Center Networking",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "ISP advertising a customer route with BGP",
+          "Cloud router exchanging BGP routes with on-prem network",
+          "BGP peering between autonomous systems",
+          "Anycast IP advertised from multiple locations",
+          "Enterprise network using BGP for multi-homing",
+          "Data center edge router running BGP",
+          "Route filtering to prevent unwanted prefix advertisement",
+          "BGP session between two routers",
+          "Hybrid cloud connection using dynamic routing"
+        ],
+        "useCases": [
+          "Exchanging routes between networks",
+          "Connecting enterprise networks to ISPs",
+          "Supporting internet-scale routing",
+          "Building multi-homed network connectivity",
+          "Routing hybrid cloud connections",
+          "Advertising public IP prefixes",
+          "Implementing anycast routing",
+          "Managing WAN and data center edge routing",
+          "Improving network redundancy and failover"
+        ],
+        "relatedConcepts": [
+          "Routing",
+          "Router",
+          "IP",
+          "CIDR",
+          "Subnet",
+          "WAN",
+          "Autonomous System",
+          "Route Table",
+          "Cloud Interconnect",
+          "VPN",
+          "Anycast",
+          "OSPF"
+        ]
+      },
+      {
+        "id": "ftp",
+        "name": "FTP",
+        "continent": "Infrastructure",
+        "category": "Networking",
+        "subcategory": "",
+        "aliases": [
+          "File Transfer Protocol",
+          "FTP Protocol",
+          "FTP Server",
+          "FTP Client"
+        ],
+        "notes": "Network protocol used to transfer files between clients and servers, historically common for website publishing, server file management, batch transfers, and legacy integration workflows.",
+        "tags": [
+          "networking",
+          "protocol",
+          "file-transfer",
+          "client-server",
+          "legacy",
+          "infrastructure",
+          "ftp",
+          "server-management"
+        ],
+        "whatIsIt": "A client-server network protocol used to transfer files between systems over a network.",
+        "description": "FTP, or File Transfer Protocol, is a network protocol used to upload, download, list, rename, and manage files between a client and a server. It is historically common in web hosting, server administration, batch file exchange, legacy integrations, and internal infrastructure workflows. FTP typically uses separate control and data connections and does not encrypt traffic by default, which makes it less secure than SFTP or FTPS for modern internet-facing use. Developers and infrastructure teams still encounter FTP when maintaining legacy systems, hosting environments, vendor file exchanges, automation scripts, and older deployment workflows. FTP belongs under Networking because it is primarily a file-transfer protocol rather than a security technology or development tool.",
+        "usedWith": [
+          "TCP",
+          "IP",
+          "FTP Server",
+          "FTP Client",
+          "Web Hosting",
+          "File Servers",
+          "Firewalls",
+          "NAT",
+          "Command Line",
+          "Automation Scripts",
+          "Legacy Systems",
+          "Batch File Transfer"
+        ],
+        "builtOn": [
+          "TCP",
+          "Client-Server Communication",
+          "File Transfer",
+          "Control Connections",
+          "Data Connections",
+          "User Authentication",
+          "Directory Listing",
+          "Network Ports"
+        ],
+        "builtUponBy": [
+          "Legacy File Transfer Workflows",
+          "Website Upload Workflows",
+          "Batch Data Exchange",
+          "Vendor File Exchange Workflows",
+          "Server File Management",
+          "Automated File Publishing",
+          "Internal File Distribution",
+          "Hosting Provider Workflows"
+        ],
+        "runsOn": [
+          "FTP Servers",
+          "Linux Servers",
+          "Windows Servers",
+          "Unix Servers",
+          "Network Appliances",
+          "Cloud Instances",
+          "Developer Workstations"
+        ],
+        "alternatives": [
+          "SFTP",
+          "FTPS",
+          "SCP",
+          "rsync",
+          "HTTP File Upload",
+          "Object Storage",
+          "Managed File Transfer"
+        ],
+        "partOf": [
+          "Networking",
+          "File Transfer",
+          "Client-Server Communication",
+          "Legacy Infrastructure",
+          "Server Administration",
+          "Web Hosting",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "ftp example.com",
+          "Uploading website files to a hosting server",
+          "Downloading logs from an FTP server",
+          "Legacy vendor file exchange over FTP",
+          "Automated nightly file transfer",
+          "Anonymous FTP download server",
+          "FTP passive mode through a firewall",
+          "FileZilla connecting to an FTP server",
+          "Batch script uploading files by FTP"
+        ],
+        "useCases": [
+          "Uploading files to servers",
+          "Downloading files from remote systems",
+          "Maintaining legacy file-transfer workflows",
+          "Publishing files to older web hosts",
+          "Exchanging files with vendors",
+          "Automating batch file transfers",
+          "Managing files on remote servers",
+          "Supporting compatibility with older infrastructure",
+          "Troubleshooting legacy network file transfer"
+        ],
+        "relatedConcepts": [
+          "SFTP",
+          "FTPS",
+          "SCP",
+          "SSH",
+          "TCP",
+          "File Transfer",
+          "FTP Server",
+          "FTP Client",
+          "Firewall",
+          "NAT",
+          "Passive Mode",
+          "Web Hosting"
+        ]
       }
     ],
     "Security": [
@@ -28462,6 +30704,386 @@
           "Incident Response",
           "Risk Management",
           "Secure Configuration"
+        ]
+      },
+      {
+        "id": "tls",
+        "name": "TLS",
+        "continent": "Infrastructure",
+        "category": "Security",
+        "subcategory": "",
+        "aliases": [
+          "Transport Layer Security",
+          "TLS Protocol",
+          "SSL/TLS",
+          "Encrypted Transport",
+          "Secure Transport Protocol"
+        ],
+        "notes": "Cryptographic protocol used to secure network communication by providing encryption, authentication, and integrity protection for traffic such as HTTPS, APIs, email, databases, and service-to-service communication.",
+        "tags": [
+          "security",
+          "networking",
+          "encryption",
+          "protocol",
+          "transport-security",
+          "certificates",
+          "https",
+          "infrastructure"
+        ],
+        "whatIsIt": "A cryptographic protocol that secures network communication by encrypting traffic, authenticating endpoints, and protecting data integrity.",
+        "description": "TLS, or Transport Layer Security, is the cryptographic protocol used to secure communication across networks. It is best known as the security layer behind HTTPS, but it is also used for APIs, email protocols, database connections, message brokers, service-to-service communication, load balancers, reverse proxies, and cloud infrastructure. TLS uses certificates, public key cryptography, symmetric encryption, handshakes, cipher suites, and certificate chains to protect data in transit. TLS belongs under Security because its primary purpose is confidentiality, authentication, and integrity, even though developers commonly encounter it while configuring networking and web infrastructure.",
+        "usedWith": [
+          "HTTPS",
+          "HTTP",
+          "TCP",
+          "Certificates",
+          "PKI",
+          "Web Servers",
+          "nginx",
+          "Apache",
+          "Reverse Proxy",
+          "Load Balancer",
+          "REST API",
+          "mTLS"
+        ],
+        "builtOn": [
+          "Public Key Cryptography",
+          "Symmetric Encryption",
+          "Digital Certificates",
+          "Certificate Authorities",
+          "Key Exchange",
+          "Cryptographic Hashing",
+          "Authentication",
+          "Network Security"
+        ],
+        "builtUponBy": [
+          "HTTPS Communication Workflows",
+          "Secure API Communication",
+          "TLS Termination Workflows",
+          "Certificate Renewal Workflows",
+          "Browser Security Workflows",
+          "Secure Service-to-Service Communication",
+          "mTLS Authentication Workflows",
+          "Database Connection Security",
+          "Production Web Application Security"
+        ],
+        "runsOn": [
+          "Web Servers",
+          "Reverse Proxies",
+          "Load Balancers",
+          "Browsers",
+          "Operating System Network Stacks",
+          "Cloud Platforms",
+          "Containerized Environments",
+          "Kubernetes Clusters"
+        ],
+        "alternatives": [
+          "SSL",
+          "SSH",
+          "VPN",
+          "IPsec",
+          "WireGuard",
+          "mTLS",
+          "Plaintext TCP"
+        ],
+        "partOf": [
+          "Security",
+          "Network Security",
+          "Web Security",
+          "Transport Security",
+          "Public Key Infrastructure",
+          "Secure Communication",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "HTTPS connection using TLS",
+          "TLS certificate from Let's Encrypt",
+          "nginx configured with TLS certificates",
+          "Load balancer terminating TLS",
+          "API endpoint served over HTTPS",
+          "PostgreSQL connection using TLS",
+          "mTLS between microservices",
+          "Browser validating a server certificate",
+          "TLS handshake before encrypted communication"
+        ],
+        "useCases": [
+          "Encrypting data in transit",
+          "Securing HTTPS websites",
+          "Protecting API communication",
+          "Authenticating web servers",
+          "Terminating TLS at load balancers or reverse proxies",
+          "Securing database connections",
+          "Enabling mTLS between services",
+          "Meeting production security requirements",
+          "Preventing passive network eavesdropping"
+        ],
+        "relatedConcepts": [
+          "HTTPS",
+          "HTTP",
+          "SSL",
+          "Certificate",
+          "Certificate Authority",
+          "PKI",
+          "mTLS",
+          "Encryption",
+          "Public Key Cryptography",
+          "Reverse Proxy",
+          "Load Balancer",
+          "Web Security"
+        ]
+      },
+      {
+        "id": "ssh",
+        "name": "SSH",
+        "continent": "Infrastructure",
+        "category": "Security",
+        "subcategory": "",
+        "aliases": [
+          "Secure Shell",
+          "SSH Protocol",
+          "SSH Remote Login",
+          "Secure Remote Shell",
+          "SSH Client"
+        ],
+        "notes": "Cryptographic network protocol used for secure remote login, command execution, tunneling, file transfer, server administration, Git access, and infrastructure management.",
+        "tags": [
+          "security",
+          "networking",
+          "remote-access",
+          "protocol",
+          "encryption",
+          "server-administration",
+          "linux",
+          "infrastructure"
+        ],
+        "whatIsIt": "A secure network protocol used to remotely access, administer, and transfer data to systems over encrypted connections.",
+        "description": "SSH, or Secure Shell, is a cryptographic network protocol used to securely access and manage remote systems. Developers and infrastructure teams use SSH to log into Linux servers, run remote commands, copy files, create tunnels, forward ports, access Git repositories, administer cloud instances, troubleshoot production systems, and manage infrastructure. SSH uses encryption, host keys, user authentication, key pairs, known_hosts files, and secure channels to protect remote access. SSH belongs under Security because its primary purpose is secure remote access and encrypted administration, though it is also a core networking and infrastructure operations tool.",
+        "usedWith": [
+          "Linux",
+          "Unix",
+          "Cloud VMs",
+          "Git",
+          "GitHub",
+          "GitLab",
+          "PuTTY",
+          "Terminal",
+          "Firewalls",
+          "VPN",
+          "Bastion Hosts",
+          "SCP"
+        ],
+        "builtOn": [
+          "TCP",
+          "Encryption",
+          "Public Key Cryptography",
+          "Authentication",
+          "Key Pairs",
+          "Host Keys",
+          "Client-Server Communication",
+          "Remote Shell Access"
+        ],
+        "builtUponBy": [
+          "Remote Server Administration",
+          "Cloud VM Management Workflows",
+          "Production Troubleshooting Workflows",
+          "Git SSH Authentication",
+          "Secure File Transfer Workflows",
+          "Port Forwarding Workflows",
+          "Bastion Host Access",
+          "Infrastructure Automation Workflows",
+          "Remote Development Workflows"
+        ],
+        "runsOn": [
+          "Linux Servers",
+          "Unix Servers",
+          "macOS",
+          "Windows",
+          "Cloud Instances",
+          "Network Appliances",
+          "Containers",
+          "Developer Workstations"
+        ],
+        "alternatives": [
+          "RDP",
+          "Telnet",
+          "VPN",
+          "Session Manager",
+          "Web Console",
+          "Serial Console",
+          "Remote Shell over HTTPS"
+        ],
+        "partOf": [
+          "Security",
+          "Remote Access",
+          "Infrastructure Administration",
+          "Server Management",
+          "Network Security",
+          "Developer Tooling",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "ssh user@example.com",
+          "ssh -i key.pem ubuntu@server",
+          "SSH key authentication for GitHub",
+          "SCP file transfer to a server",
+          "SFTP session to a remote host",
+          "SSH tunnel forwarding a database port",
+          "Bastion host SSH access",
+          "PuTTY connecting to a Linux server",
+          "Cloud VM administration over SSH"
+        ],
+        "useCases": [
+          "Logging into remote servers securely",
+          "Administering Linux and Unix systems",
+          "Managing cloud virtual machines",
+          "Running remote commands",
+          "Authenticating Git operations",
+          "Copying files securely",
+          "Creating encrypted tunnels",
+          "Forwarding ports to private services",
+          "Troubleshooting production infrastructure"
+        ],
+        "relatedConcepts": [
+          "TLS",
+          "Encryption",
+          "Public Key Cryptography",
+          "SSH Key",
+          "Remote Access",
+          "Linux Server",
+          "Bastion Host",
+          "SCP",
+          "SFTP",
+          "Port Forwarding",
+          "VPN",
+          "PuTTY"
+        ]
+      },
+      {
+        "id": "sftp",
+        "name": "SFTP",
+        "continent": "Infrastructure",
+        "category": "Security",
+        "subcategory": "",
+        "aliases": [
+          "SSH File Transfer Protocol",
+          "Secure File Transfer Protocol",
+          "SFTP Protocol",
+          "Secure FTP"
+        ],
+        "notes": "Secure file-transfer protocol that runs over SSH, commonly used for encrypted file upload, download, remote file management, automation, server administration, and vendor data exchange.",
+        "tags": [
+          "security",
+          "networking",
+          "file-transfer",
+          "ssh",
+          "encryption",
+          "remote-access",
+          "infrastructure",
+          "server-management"
+        ],
+        "whatIsIt": "A secure file-transfer protocol that uses SSH to transfer and manage files over encrypted connections.",
+        "description": "SFTP, commonly expanded as SSH File Transfer Protocol, is a secure file-transfer protocol that runs over SSH. It is used to upload, download, list, rename, delete, and manage files on remote systems over encrypted connections. Unlike traditional FTP, SFTP does not use separate FTP control and data channels and does not rely on plaintext authentication. Developers and infrastructure teams encounter SFTP when administering Linux servers, exchanging files with vendors, automating secure file transfers, managing cloud instances, using SSH keys, connecting through bastion hosts, and replacing legacy FTP workflows. SFTP belongs under Security because its main value is secure encrypted file transfer over SSH, though it also belongs closely to networking and infrastructure operations.",
+        "usedWith": [
+          "SSH",
+          "Linux",
+          "Unix",
+          "Cloud VMs",
+          "SSH Keys",
+          "Bastion Hosts",
+          "Firewalls",
+          "Command Line",
+          "Automation Scripts",
+          "File Servers",
+          "CI/CD",
+          "Vendor Integrations"
+        ],
+        "builtOn": [
+          "SSH",
+          "TCP",
+          "Encryption",
+          "Public Key Cryptography",
+          "Authentication",
+          "Remote File Management",
+          "Client-Server Communication",
+          "Secure Channels"
+        ],
+        "builtUponBy": [
+          "Secure File Transfer Workflows",
+          "Vendor Data Exchange",
+          "Automated File Upload Workflows",
+          "Server Administration Workflows",
+          "Cloud VM File Management",
+          "Batch Data Transfer",
+          "Secure Backup Workflows",
+          "Remote Development Workflows",
+          "Legacy FTP Replacement Workflows"
+        ],
+        "runsOn": [
+          "SSH Servers",
+          "Linux Servers",
+          "Unix Servers",
+          "Windows Servers",
+          "Cloud Instances",
+          "Bastion Hosts",
+          "Developer Workstations",
+          "CI/CD Runners"
+        ],
+        "alternatives": [
+          "FTP",
+          "FTPS",
+          "SCP",
+          "rsync over SSH",
+          "HTTPS File Upload",
+          "Object Storage",
+          "Managed File Transfer"
+        ],
+        "partOf": [
+          "Security",
+          "Secure File Transfer",
+          "SSH Ecosystem",
+          "Remote Access",
+          "Infrastructure Administration",
+          "Server Management",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "sftp user@example.com",
+          "sftp -i key.pem ubuntu@server",
+          "Uploading files to a Linux server over SFTP",
+          "Downloading logs through SFTP",
+          "Vendor file exchange over SFTP",
+          "SFTP through a bastion host",
+          "FileZilla connecting with SFTP",
+          "Automated SFTP batch upload",
+          "CI/CD job uploading artifacts over SFTP"
+        ],
+        "useCases": [
+          "Securely uploading files to servers",
+          "Securely downloading remote files",
+          "Replacing plaintext FTP workflows",
+          "Automating encrypted file transfers",
+          "Exchanging files with vendors",
+          "Managing files on Linux or Unix servers",
+          "Using SSH keys for file-transfer authentication",
+          "Transferring files through bastion hosts",
+          "Supporting secure operational file workflows"
+        ],
+        "relatedConcepts": [
+          "SSH",
+          "FTP",
+          "FTPS",
+          "SCP",
+          "rsync",
+          "SSH Key",
+          "Encryption",
+          "Public Key Cryptography",
+          "Bastion Host",
+          "Remote Access",
+          "File Transfer",
+          "Server Administration"
         ]
       }
     ],
@@ -35835,6 +38457,246 @@
           "System Design",
           "Deployment",
           "Full Stack Developer"
+        ]
+      },
+      {
+        "id": "multi-cloud",
+        "name": "Multi-cloud",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Multicloud",
+          "Multi-Cloud Architecture",
+          "Multi-Cloud Strategy",
+          "Multiple Cloud Providers"
+        ],
+        "notes": "Cloud strategy and architecture approach where an organization uses services from more than one cloud provider, such as AWS, Azure, GCP, OCI, or IBM Cloud.",
+        "tags": [
+          "cloud-computing",
+          "architecture",
+          "cloud-strategy",
+          "infrastructure",
+          "enterprise-architecture",
+          "availability",
+          "vendor-diversity",
+          "software-engineering-concept"
+        ],
+        "whatIsIt": "A cloud strategy where systems, workloads, data, or services use more than one cloud provider instead of relying on a single cloud platform.",
+        "description": "Multi-cloud is a software engineering and infrastructure strategy where an organization uses multiple cloud providers for applications, workloads, data, services, or deployment environments. A multi-cloud architecture might combine AWS for compute, Azure for identity integration, Google Cloud for analytics, Oracle Cloud Infrastructure for database workloads, or IBM Cloud for enterprise and hybrid-cloud services. Multi-cloud can improve provider flexibility, reduce vendor lock-in, support redundancy, satisfy regulatory or business requirements, and allow teams to choose specialized services from different providers. It also increases complexity because teams must manage networking, identity, monitoring, security, CI/CD, cost governance, data movement, and operational consistency across multiple cloud platforms.",
+        "usedWith": [
+          "AWS",
+          "Azure",
+          "Google Cloud Platform",
+          "Oracle Cloud Infrastructure",
+          "IBM Cloud",
+          "Kubernetes",
+          "Terraform",
+          "CI/CD",
+          "Cloud Computing",
+          "Hybrid Cloud",
+          "DevOps",
+          "Enterprise Architecture"
+        ],
+        "builtOn": [
+          "Cloud Computing",
+          "Distributed Systems",
+          "Networking",
+          "Identity and Access Management",
+          "Infrastructure as Code",
+          "Cloud Governance",
+          "Vendor Abstraction"
+        ],
+        "builtUponBy": [
+          "Enterprise Cloud Architecture",
+          "Cross-Cloud Deployment Workflows",
+          "Disaster Recovery Workflows",
+          "Cloud Migration Strategies",
+          "Platform Engineering Workflows",
+          "Regulatory Compliance Workflows",
+          "Cloud Cost Optimization Workflows",
+          "Vendor Risk Management"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Single-Cloud Architecture",
+          "Hybrid Cloud",
+          "On-Premises Infrastructure",
+          "Private Cloud",
+          "Colocation",
+          "Edge Computing"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Cloud Computing",
+          "Enterprise Architecture",
+          "Infrastructure Architecture",
+          "Platform Engineering",
+          "DevOps",
+          "Cloud Strategy",
+          "Distributed Systems"
+        ],
+        "includes": [],
+        "examples": [
+          "Using AWS and Azure in the same enterprise",
+          "Running Kubernetes clusters across multiple cloud providers",
+          "Using Terraform to provision resources across AWS and GCP",
+          "Using Oracle Cloud Infrastructure for Oracle Database workloads and AWS for application services",
+          "Disaster recovery environment hosted on a second cloud provider",
+          "Analytics workload on Google Cloud with application hosting on Azure",
+          "Cross-cloud CI/CD deployment pipeline",
+          "Centralized monitoring for workloads across multiple clouds"
+        ],
+        "useCases": [
+          "Reducing dependence on one cloud vendor",
+          "Choosing best-fit cloud services from different providers",
+          "Supporting disaster recovery across providers",
+          "Meeting enterprise or regulatory requirements",
+          "Migrating gradually between cloud providers",
+          "Running workloads closer to specific customers or regions",
+          "Supporting acquisitions with different cloud environments",
+          "Improving cloud resilience and availability",
+          "Avoiding single-provider operational risk"
+        ],
+        "relatedConcepts": [
+          "Cloud Computing",
+          "Hybrid Cloud",
+          "Vendor Lock-In",
+          "Disaster Recovery",
+          "Kubernetes",
+          "Terraform",
+          "Infrastructure as Code",
+          "Cloud Governance",
+          "Cloud Cost Management",
+          "Identity Federation",
+          "Distributed Systems",
+          "Enterprise Architecture"
+        ]
+      },
+      {
+        "id": "edge-computing",
+        "name": "Edge Computing",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Edge Compute",
+          "Edge Infrastructure",
+          "Edge Cloud",
+          "Distributed Edge Computing",
+          "Edge Processing"
+        ],
+        "notes": "Computing model where processing, storage, networking, or application logic is moved closer to users, devices, sensors, or data sources to reduce latency, improve performance, support local processing, and reduce centralized data-transfer costs.",
+        "tags": [
+          "edge-computing",
+          "distributed-systems",
+          "cloud",
+          "infrastructure",
+          "latency",
+          "networking",
+          "serverless",
+          "architecture"
+        ],
+        "whatIsIt": "A distributed computing approach that runs compute workloads closer to users, devices, or data sources instead of relying only on centralized cloud data centers.",
+        "description": "Edge Computing is a software and infrastructure concept where computation, storage, and application logic are placed closer to users, devices, sensors, or data sources. Developers and infrastructure teams use edge computing to reduce latency, improve responsiveness, process data locally, support geographically distributed applications, reduce bandwidth costs, and improve resilience for certain workloads. Edge computing is common in CDN platforms, IoT systems, real-time applications, content delivery, industrial systems, streaming, edge/serverless functions, and globally distributed web applications. It should be modeled as a software engineering concept because it describes a computing approach or deployment strategy, while Cloudflare, AWS, Azure, and GCP are platforms that can provide edge services.",
+        "usedWith": [
+          "Cloudflare",
+          "Cloudflare Workers",
+          "CDN",
+          "Serverless Architecture",
+          "Public Cloud",
+          "Distributed Systems",
+          "IoT",
+          "DNS",
+          "HTTP",
+          "API Gateway",
+          "Kubernetes",
+          "Microservices"
+        ],
+        "builtOn": [
+          "Distributed Systems",
+          "Networking",
+          "Cloud Computing",
+          "Content Delivery Networks",
+          "Geographic Distribution",
+          "Caching",
+          "Serverless Computing",
+          "Low-Latency Architecture"
+        ],
+        "builtUponBy": [
+          "Low-Latency Application Workflows",
+          "Content Delivery Workflows",
+          "IoT Data Processing Workflows",
+          "Real-Time Application Workflows",
+          "Edge Serverless Workflows",
+          "Global Web Application Delivery",
+          "Traffic Routing Workflows",
+          "Industrial Monitoring Workflows",
+          "Performance Optimization Workflows"
+        ],
+        "runsOn": [
+          "Edge Locations",
+          "CDN Networks",
+          "Cloudflare Global Network",
+          "Public Cloud Edge Services",
+          "IoT Gateways",
+          "Regional Data Centers",
+          "Edge Serverless Runtimes"
+        ],
+        "alternatives": [
+          "Centralized Cloud Computing",
+          "Traditional Data Center Computing",
+          "On-Premises Processing",
+          "Regional Cloud Processing",
+          "Client-Side Processing",
+          "Hybrid Cloud"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Distributed Systems",
+          "Cloud Computing",
+          "Web Infrastructure",
+          "Network Architecture",
+          "Cloud-Native Architecture",
+          "Performance Engineering",
+          "Internet Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "Cloudflare Worker running near a user",
+          "CDN edge cache serving static assets",
+          "IoT gateway processing sensor data locally",
+          "Edge function handling request personalization",
+          "Video streaming content served from edge nodes",
+          "Regional API routing to reduce latency",
+          "Industrial device processing data before sending to cloud",
+          "DDoS filtering at the network edge",
+          "Edge authentication check before reaching origin server"
+        ],
+        "useCases": [
+          "Reducing application latency",
+          "Serving static content closer to users",
+          "Running serverless logic at the edge",
+          "Processing IoT data near devices",
+          "Filtering traffic before it reaches origin servers",
+          "Supporting globally distributed applications",
+          "Reducing bandwidth sent to centralized cloud systems",
+          "Improving web performance",
+          "Handling real-time or near-real-time workloads"
+        ],
+        "relatedConcepts": [
+          "Cloud Computing",
+          "Distributed Systems",
+          "CDN",
+          "Serverless",
+          "Cloudflare Workers",
+          "Cloudflare",
+          "Public Cloud",
+          "Latency",
+          "Caching",
+          "IoT",
+          "Reverse Proxy",
+          "Traffic Routing"
         ]
       }
     ]
