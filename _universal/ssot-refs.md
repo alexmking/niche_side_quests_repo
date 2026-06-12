@@ -1,3 +1,49 @@
+
+
+'''
+============================================================
+@@TCP
+TCP
+============================================================
+
+[DEF]
+Transmission Control Protocol. A reliable, ordered, connection-oriented
+transport protocol used to send data between systems.
+
+[WHY IT MATTERS]
+TCP is used when correctness and delivery matter more than raw speed.
+
+[USED WITH]
+- HTTP / HTTPS
+- SSH
+- FTP
+- SMTP
+
+[COMPARE]
+TCP vs UDP:
+- TCP: reliable, ordered, connection-oriented
+- UDP: faster, no guaranteed delivery, connectionless
+
+[COMMANDS]
+- netstat -ano
+- ss -tulnp
+- tcpdump
+
+[GOTCHAS]
+- TCP is not “secure” by itself.
+- TLS is commonly layered on top of TCP for encryption.
+
+[RELATED]
+- UDP
+- IP
+- TLS
+- Socket
+
+'''
+
+
+
+
 # ssot-refs 
    - **LEGEND: topics/sections in this ref doc**
       - (use -zz- and -xx- to jump to each header and then sub-header quickly ( ❗TODO❗all my large configs should have these added for easier navigation))

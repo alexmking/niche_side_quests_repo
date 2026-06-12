@@ -1,0 +1,83 @@
+================================================================================
+SSOT REFERENCE FILE
+Updated: 2026-06-12
+================================================================================
+
+================================================================================
+=== CONVENTIONS ===
+================================================================================
+
+  This file is the single source of truth for notes, commands, how-tos, and
+  definitions. The rules below keep it consistent and grep-friendly.
+
+  SECTION HEADERS
+    Top-level section  →  === SECTION NAME ===         (one blank line above/below)
+    Subsection         →  --- Subsection Name ---      (one blank line above/below)
+
+  ENTRY TYPES  (prefix every standalone entry with one label)
+    [CMD]   Shell command or CLI invocation
+    [HOW]   Step-by-step instructions / procedure
+    [DEF]   Definition or explanation of a term or concept
+    [NOTE]  Personal note, observation, reminder, or opinion
+
+  INLINE TAGS  (append @tagname anywhere on a line to enable cross-section grep)
+    Example:  [NOTE] Prefer rebasing over merging for feature branches  @git @workflow
+
+  CODE / COMMANDS
+    Indent with 2 spaces.
+    Prefix shell commands with $, output lines with >.
+    Example:
+      $ git log --oneline -10
+      > abc1234 fix: typo in readme
+
+  DATE STAMPS  (for time-sensitive or versioned entries)
+    Format: [YYYY-MM-DD]
+    Example:  [CMD] [2026-06-12] Upgrade Homebrew after macOS 15 migration  @brew
+
+  SEPARATORS
+    Blank line between individual entries.
+    --- subsection header --- between groups within a section.
+    === section header === between top-level topics.
+
+  GREP CHEATSHEET
+    All section headers:    grep "^=== " ssot-ref.txt
+    All subsections:        grep "^--- " ssot-ref.txt
+    All commands:           grep "\[CMD\]" ssot-ref.txt
+    All how-tos:            grep "\[HOW\]" ssot-ref.txt
+    All definitions:        grep "\[DEF\]" ssot-ref.txt
+    All notes:              grep "\[NOTE\]" ssot-ref.txt
+    By tag:                 grep "@git" ssot-ref.txt
+    Entries with a date:    grep "\[20[0-9][0-9]-" ssot-ref.txt
+
+================================================================================
+=== TABLE OF CONTENTS ===
+================================================================================
+
+  (Add section names here as you create them, matching === headers exactly)
+
+  CONVENTIONS ............... (this section)
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+great GPT tips for .txt files here:📌
+https://chatgpt.com/c/6a2b8713-3c58-83ea-acb1-f4ceeac862f6 📌
