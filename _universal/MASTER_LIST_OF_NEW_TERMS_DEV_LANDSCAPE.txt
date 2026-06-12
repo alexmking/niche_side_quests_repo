@@ -217,8 +217,8 @@ TRACKING PROGRESS OF MASTER LIST:
 [✅]		4 🟦 PLATOFRMS AND RUNTIMES 	 27
 
 []		5 🟩 OPERATING SYSTEMS    		 28
----------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 526 terms-left, (4/17 cats done) ---------
 []		6 🟩 DATABASES     				29
+---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 500 terms-left, (6/17 cats done) ---------
 []		7 🟩 CLOUD						34	
 []		8 🟩 ONTAINERIZ & ORCH			52
 []		9 🟩 NETWORKIN					59
@@ -483,34 +483,53 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * InfluxDB✅
 * TimescaleDB✅
 * Snowflake✅
-* BigQuery
-* Amazon Redshift
-* IBM Db2
-* CockroachDB
-* YugabyteDB
-* HBase
-* Hive
-* PostGIS
-* Firebase Realtime Database
-* Supabase
-* PlanetScale
-* MongoDB Atlas
-* Amazon RDS
-* Azure SQL Database
-* Google Cloud SQL
-* Databricks
-* Apache Spark
+* BigQuery ✅
+* Amazon Redshift✅
+* IBM Db2✅
+* CockroachDB✅
+* YugabyteDB✅
+* HBase✅
+* Hive✅
+* PostGIS✅
+* Supabase✅
+* PlanetScale✅
+* MongoDB Atlas✅
+* Firebase Realtime Database✅
+* Amazon RDS✅
+* Azure SQL Database✅
+* Google Cloud SQL✅
+* Databricks✅
+* Apache Spark✅
 * Kafka ✅🔁❌[confirmed-already-in-correct-category]
 * RabbitMQ ✅🔁❌[confirmed-already-in-correct-category]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+⚠️BRANCH OFF 3 NEW CHATS NOW 1.7, 8, 9
+⚠️BRANCH OFF 3 NEW CHATS NOW 
 (7) 34 🟩 CLOUD
 
-* Oracle Cloud Infrastructure
-* IBM Cloud
-* Alibaba Cloud
-* DigitalOcean
-* Linode
-* Vultr
+* Oracle Cloud Infrastructure✅
+* IBM Cloud✅
+* Alibaba Cloud✅
+* DigitalOcean✅
+* Linode✅
+* Vultr✅
 * Cloudflare
 * Heroku ✅🔁🌈[confirmed-already-in-correct-category]
 * Vercel ✅🔁🌈[confirmed-already-in-correct-category]
@@ -572,6 +591,9 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * container registry
 * Dapr
 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+
 (9) 59 🟩 NETWORKIN
 
 * TCP/IP✅
@@ -627,6 +649,8 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * VPC
 * OpenSSH
 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
 (10) 24 🟩 SECURITY
 
 * Vulnerability Assessment
@@ -689,6 +713,9 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * ISO 27001
 * NIST Cybersecurity Framework
 
+
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
 (11) 49 🟩 WEB SERVICES
 
 * Caddy
@@ -768,6 +795,8 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Design System
 * Wireframe
 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
 (13) 37 🟪 METHODOLOGIES
 
 * Waterfall
@@ -837,6 +866,9 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * CORS
 * MQTT
 
+
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
 (15) 56 🟪 TESTING
 
 * Integration Testing
@@ -896,6 +928,9 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Fuzz Testing
 * Chaos Engineering
 
+
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
 (16) 47 🟪 DEBUGGING AND PROFILING
 
 * Linux perf
@@ -946,6 +981,9 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * New Relic
 * Datadog
 
+
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+⚠️BRANCH OFF 3 NEW CHATS NOW 
 (17) 63 🟪 SOFTWARE ENGINEERING CONCEPTS
 
 * Abstraction
