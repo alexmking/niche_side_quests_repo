@@ -1,0 +1,823 @@
+======================================================================
+PERSONAL TECH REFERENCE NOTES
+=============================
+
+@@file: personal-tech-reference.txt
+@@purpose: searchable plaintext reference system
+@@owner: Alex
+@@created: 2026-06-12
+@@updated: 2026-06-12
+@@format-version: 1.0
+
+---
+
+## NAVIGATION LEGEND
+
+Search markers:
+@@id:              Unique topic ID
+@@title:           Human-readable topic title
+@@path:            Category path
+@@tags:            Search tags
+@@aliases:         Alternate names and search synonyms
+@@status:          draft / active / needs-review / deprecated
+@@created:         Date created
+@@updated:         Date last updated
+@@review-after:    Date when note should be reviewed
+@@source:          Where the note came from
+
+Block labels:
+[SUMMARY]          Short explanation
+[DEFINITION]       Precise meaning
+[WHEN TO USE]      Practical use case
+[WHEN NOT TO USE]  Avoidance guidance
+[EXAMPLES]         Examples
+[COMMANDS]         CLI commands
+[GOTCHAS]          Common mistakes
+[RELATED]          Related topic IDs
+[SEARCH BAIT]      Keywords, aliases, acronyms, fuzzy search terms
+
+Topic boundaries:
+<<< START_TOPIC: topic.id >>>
+<<< END_TOPIC: topic.id >>>
+
+Useful searches:
+@@status: needs-review
+@@tags: networking
+@@path: Infrastructure
+[COMMANDS]
+[GOTCHAS]
+[SEARCH BAIT]
+<<< START_TOPIC:
+
+======================================================================
+TABLE OF CONTENTS
+=================
+
+[DEVELOPMENT]
+
+* @@id: lang.sprocketscript          SprocketScript
+* @@id: tool.raycast-notes           Raycast Notes Workflow
+
+[INFRASTRUCTURE]
+
+* @@id: net.cloudgate                CloudGate
+* @@id: db.riverdb                   RiverDB
+
+[ENGINEERING]
+
+* @@id: arch.message-fanout          Message Fanout Pattern
+* @@id: practice.note-linting        Plaintext Note Linting
+
+[TROUBLESHOOTING]
+
+* @@id: problem.port-in-use          Find Process Using Port
+* @@id: problem.bad-search-results   Notes Search Returning Bad Results
+
+======================================================================
+AUTO-GENERATED INDEX
+====================
+
+@@id: arch.message-fanout        Message Fanout Pattern
+@@id: db.riverdb                 RiverDB
+@@id: lang.sprocketscript        SprocketScript
+@@id: net.cloudgate              CloudGate
+@@id: practice.note-linting      Plaintext Note Linting
+@@id: problem.bad-search-results Notes Search Returning Bad Results
+@@id: problem.port-in-use        Find Process Using Port
+@@id: tool.raycast-notes         Raycast Notes Workflow
+
+======================================================================
+TAG DICTIONARY
+==============
+
+development      Programming languages, frameworks, libraries, dev tools
+infrastructure   Cloud, networking, databases, systems, deployment
+engineering      Architecture, processes, design, testing, maintenance
+raycast           Raycast snippets, AI commands, scripts, quicklinks
+plaintext         .txt workflows, formatting, search, indexing
+search            Search optimization, aliases, tags, metadata
+commands          CLI commands or repeatable terminal operations
+troubleshooting   Problem/solution notes
+needs-review      Notes requiring cleanup, verification, or expansion
+
+======================================================================
+RECENTLY UPDATED
+================
+
+2026-06-12  @@id: tool.raycast-notes
+2026-06-12  @@id: lang.sprocketscript
+2026-06-11  @@id: problem.bad-search-results
+2026-06-10  @@id: practice.note-linting
+
+======================================================================
+RAYCAST SNIPPET CHEAT SHEET
+===========================
+
+;topic      Insert full topic-card template
+;meta       Insert metadata block
+;h1         Insert major divider
+;h2         Insert section divider
+;def        Insert [DEFINITION] block
+;sum        Insert [SUMMARY] block
+;cmd        Insert [COMMANDS] block
+;gotcha     Insert [GOTCHAS] block
+;rel        Insert [RELATED] block
+;bait       Insert [SEARCH BAIT] block
+;src        Insert [SOURCE] block
+;prob       Insert [PROBLEM] / [SOLUTION] block
+;inbox      Insert inbox capture block
+
+Suggested Raycast AI commands:
+
+* Make ASCII Box
+* Fix Fixed-Width Table
+* Clean Plaintext Note
+* Turn Rough Notes Into Topic Card
+* Generate Search Bait
+* Extract Tags and Aliases
+* Clean OCR Text
+* Convert Bullets to Problem/Solution
+
+======================================================================
+INBOX / PARKING LOT
+===================
+
+Use this section for messy capture before moving items into real topic cards.
+
+---
+
+## INBOX CAPTURE — 2026-06-12
+
+* Research whether topic cards should be split by file or kept in one master file.
+* Add better examples for database notes.
+* Create Raycast script to rebuild AUTO-GENERATED INDEX.
+* Create validation script for duplicate @@id fields.
+
+======================================================================
+DEVELOPMENT
+===========
+
+# <<< START_TOPIC: lang.sprocketscript >>>
+
+@@id: lang.sprocketscript
+@@title: SprocketScript
+@@path: Development > Languages > Programming Languages
+@@tags: development, language, scripting, fictitious
+@@aliases: sprocket script, sprocket-lang, ss
+@@status: active
+@@created: 2026-06-12
+@@updated: 2026-06-12
+@@review-after: 2026-09-12
+@@source: fictitious-example
+============================
+
+# SprocketScript
+
+[SUMMARY]
+SprocketScript is a fictional scripting language used in this sample note system to demonstrate plaintext formatting, metadata, aliases, and search-bait lines.
+
+[DEFINITION]
+SprocketScript is a lightweight automation language designed for small scripts, configuration tasks, and local workflow automation.
+
+[WHEN TO USE]
+
+* Quick local automation
+* Small text-processing tasks
+* Simple workflow glue between tools
+* Learning examples where a fake language is useful
+
+[WHEN NOT TO USE]
+
+* High-performance systems programming
+* Large production services
+* Security-critical tooling without review
+
+[EXAMPLES]
+print("Hello from SprocketScript")
+
+task "clean-notes" {
+input: "notes.txt"
+output: "notes.cleaned.txt"
+}
+
+[GOTCHAS]
+
+* This is a fictional technology.
+* Do not treat any commands here as real.
+* Use this note only as a structure example.
+
+[RELATED]
+
+* @@id: tool.raycast-notes
+* @@id: practice.note-linting
+
+[SEARCH BAIT]
+SprocketScript, sprocket script, sprocket-lang, ss, fake programming language, sample language, scripting, automation, local scripts
+
+<<< END_TOPIC: lang.sprocketscript >>>
+
+# <<< START_TOPIC: tool.raycast-notes >>>
+
+@@id: tool.raycast-notes
+@@title: Raycast Notes Workflow
+@@path: Development > Tools > Personal Workflow
+@@tags: raycast, plaintext, snippets, ai-commands, scripts, search
+@@aliases: raycast snippets, raycast ai commands, raycast script commands, notes automation
+@@status: active
+@@created: 2026-06-12
+@@updated: 2026-06-12
+@@review-after: 2026-08-01
+@@source: personal-workflow
+===========================
+
+# Raycast Notes Workflow
+
+[SUMMARY]
+Raycast can act as a command center for maintaining a plaintext knowledge base. Snippets insert structure, AI commands transform selected text, and script commands perform exact file operations.
+
+[CORE IDEA]
+Use each Raycast feature for the thing it is best at:
+
++-------------------+-----------------------------------------------+
+| Raycast Feature   | Best Use                                      |
++-------------------+-----------------------------------------------+
+| Snippets          | Paste repeatable templates                    |
+| AI Commands       | Clean, rewrite, summarize, format text        |
+| Chat Presets      | Reusable assistant behavior                   |
+| Script Commands   | Search, validate, append, extract, rebuild    |
+| Quicklinks        | Jump to docs, folders, searches, URLs         |
++-------------------+-----------------------------------------------+
+
+[SNIPPET IDEAS]
+;topic      Full topic card
+;meta       Metadata block
+;cmd        Command block
+;gotcha     Gotcha block
+;bait       Search bait line
+;prob       Problem / solution block
+
+[AI COMMAND IDEAS]
+
+* Make ASCII Box
+* Fix Fixed-Width Table
+* Generate Search Bait
+* Extract Tags and Aliases
+* Turn Rough Notes Into Topic Card
+* Clean OCR Text
+* Normalize Plaintext Formatting
+
+[SCRIPT COMMAND IDEAS]
+
+* Search Notes
+* Open Topic by ID
+* Append Clipboard to Inbox
+* Validate Notes
+* Rebuild Index
+* Find Duplicate IDs
+* List Stale Notes
+
+[GOTCHAS]
+
+* Do not use AI for exact IDs, validation, or file operations.
+* Use scripts for deterministic tasks.
+* Use AI for fuzzy language tasks like aliases, summaries, and formatting cleanup.
+* Keep snippet triggers short but not easy to type accidentally.
+
+[RELATED]
+
+* @@id: practice.note-linting
+* @@id: problem.bad-search-results
+
+[SEARCH BAIT]
+Raycast, snippets, snippet expansion, AI command, chat preset, agent, script command, quicklink, plaintext notes, notes automation, searchable notes, rg, ripgrep, workflow
+¥¥
+<<< END_TOPIC: tool.raycast-notes >>>
+
+======================================================================
+INFRASTRUCTURE
+==============
+
+# <<< START_TOPIC: net.cloudgate >>>
+
+@@id: net.cloudgate
+@@title: CloudGate
+@@path: Infrastructure > Networking > Gateways
+@@tags: infrastructure, networking, gateway, routing, fictitious
+@@aliases: cloud gateway, edge gateway, gateway service
+@@status: draft
+@@created: 2026-06-12
+@@updated: 2026-06-12
+@@review-after: 2026-07-12
+@@source: fictitious-example
+============================
+
+# CloudGate
+
+[SUMMARY]
+CloudGate is a fictional gateway service used here as an example of a networking topic card.
+
+[DEFINITION]
+CloudGate represents a managed entry point that routes traffic, like explained in @@id-keybvis between external clients and internal services.
+
+[WHEN TO USE]
+
+* Centralized ingress routing
+* Traffic inspection
+* Service boundary control
+* Example notes about gateways and routing
+
+[EXAMPLES]
+Client request -> CloudGate -> Internal service
+
+[GOTCHAS]
+
+* A gateway is not always the same thing as a load balancer.
+* A gateway may handle routing, auth checks, rate limiting, or protocol translation depending on the system.
+
+[RELATED]
+
+* @@id: arch.message-fanout
+* @@id: problem.bad-search-results
+
+[SEARCH BAIT]
+CloudGate, gateway, cloud gateway, edge gateway, ingress, routing, reverse proxy, load balancer, API gateway, network boundary, service entrypoint
+
+<<< END_TOPIC: net.cloudgate >>>
+
+# <<< START_TOPIC: db.riverdb >>>
+
+@@id: db.riverdb
+@@title: RiverDB
+@@path: Infrastructure > Databases > Database Systems
+@@tags: infrastructure, database, storage, fictitious
+@@aliases: river database, stream database, river-db
+@@status: needs-review
+@@created: 2026-06-12
+@@updated: 2026-06-12
+@@review-after: 2026-06-30
+@@source: fictitious-example
+============================
+
+# RiverDB
+
+[SUMMARY]
+RiverDB is a fictional database used as a sample entry for showing database-related note formatting.
+
+[DEFINITION]
+RiverDB is imagined as a database optimized for append-heavy event streams and timeline-style data.
+
+[WHEN TO USE]
+
+* Event logs
+* Append-only records
+* Timeline data
+* Demo examples for database notes
+
+[WHEN NOT TO USE]
+
+* Complex relational joins
+* Strongly relational domain modeling
+* Real production systems, because this is fictional
+
+[FIXED-WIDTH TABLE EXAMPLE]
++----------------+----------------------+-------------------------+
+| Feature        | RiverDB Example      | Real-World Analogy      |
++----------------+----------------------+-------------------------+
+| Append writes  | Event stream insert  | Kafka-like event logs   |
+| Query pattern  | Time-range lookup    | Time-series databases   |
+| Storage style  | Ordered segments     | Log-structured storage  |
++----------------+----------------------+-------------------------+
+
+[GOTCHAS]
+
+* This is not a real database.
+* Do not compare it directly to a real product without labeling it as fictional.
+
+[RELATED]
+
+* @@id: lang.sprocketscript
+* @@id: practice.note-linting
+
+[SEARCH BAIT]
+RiverDB, river database, stream database, append-only database, event log, event stream, time-range query, fictional database, database example
+
+<<< END_TOPIC: db.riverdb >>>
+
+======================================================================
+ENGINEERING
+===========
+
+# <<< START_TOPIC: arch.message-fanout >>>
+
+@@id: arch.message-fanout
+@@title: Message Fanout Pattern
+@@path: Engineering > Architecture & Design > Architecture Patterns
+@@tags: engineering, architecture, messaging, distributed-systems
+@@aliases: fanout, broadcast messaging, publish fanout, event fanout
+@@status: active
+@@created: 2026-06-12
+@@updated: 2026-06-12
+@@review-after: 2026-09-01
+@@source: fictitious-example
+============================
+
+# Message Fanout Pattern
+
+[SUMMARY]
+Message fanout is an architectural pattern where one event or message is distributed to multiple consumers.
+
+[DEFINITION]
+Fanout occurs when a single published message is copied, routed, or delivered to multiple downstream subscribers.
+
+[WHEN TO USE]3
+
+* Multiple services need to react to the same event
+* Notifications must go to several channels
+* Audit, analytics, and processing systems all need the same source event
+
+[EXAMPLES]
+OrderCreated event:
+
+* Billing service receives it
+* Inventory service receives it
+* Email service receives it
+* Analytics service receives it
+
+[ASCII DIAGRAM]
++-------------+
+| Publisher   |
++-------------+
+|
+v
++-------------+
+| Event Bus   |
++-------------+
+|     |     |
+v     v     v
+Billing Inv.  Email
+
+[GOTCHAS]
+
+* Fanout can make debugging harder.
+* Consumers may process messages at different speeds.
+* Duplicate delivery may need to be handled.
+* Ordering guarantees may vary by system.
+
+[RELATED]
+
+* @@id: net.cloudgate
+* @@id: db.riverdb
+
+[SEARCH BAIT]
+message fanout, event fanout, publish subscribe, pubsub, event bus, message bus, distributed systems, subscribers, consumers, broadcast event, async messaging
+
+<<< END_TOPIC: arch.message-fanout >>>
+
+# <<< START_TOPIC: practice.note-linting >>>
+
+@@id: practice.note-linting
+@@title: Plaintext Note Linting
+@@path: Engineering > Development Practices > Documentation
+@@tags: engineering, plaintext, search, validation, documentation
+@@aliases: notes validation, note lint, text linting, plaintext validator
+@@status: active
+@@created: 2026-06-12
+@@updated: 2026-06-12
+@@review-after: 2026-08-12
+@@source: personal-workflow
+===========================
+
+# Plaintext Note Linting
+
+[SUMMARY]
+Plaintext note linting means checking a `.txt` knowledge base for structural problems like duplicate IDs, missing tags, broken topic markers, and stale notes.
+
+[WHY IT MATTERS]
+A large `.txt` file can become messy unless the structure is enforced. A small validation script can catch issues before search quality gets worse.
+
+[VALIDATION CHECKS]
+
+* Duplicate @@id values
+* Missing @@title
+* Missing @@tags
+* Missing <<< END_TOPIC marker
+* Bad date format
+* Deprecated notes without @@replaced-by
+* Topic cards missing [SEARCH BAIT]
+* Notes with @@status: needs-review older than 30 days
+
+[COMMANDS]
+Example pseudo-command:
+
+notes-lint personal-tech-reference.txt
+
+Expected output:
+
++----------+---------------------------------------------+
+| Status   | Message                                     |
++----------+---------------------------------------------+
+| PASS     | No duplicate IDs found                      |
+| WARNING  | 2 notes missing [SEARCH BAIT]               |
+| WARNING  | 1 note is past @@review-after date          |
++----------+---------------------------------------------+
+
+[GOTCHAS]
+
+* Linting should not rewrite notes automatically unless explicitly requested.
+* Validation scripts should be deterministic.
+* AI can suggest improvements, but scripts should enforce structure.
+
+[RELATED]
+
+* @@id: tool.raycast-notes
+* @@id: problem.bad-search-results
+
+[SEARCH BAIT]
+plaintext note linting, note validation, duplicate IDs, missing tags, notes script, notes maintenance, searchable notes, text database, metadata validation
+
+<<< END_TOPIC: practice.note-linting >>>
+
+======================================================================
+TROUBLESHOOTING
+===============
+
+# <<< START_TOPIC: problem.port-in-use >>>
+
+@@id: problem.port-in-use
+@@title: Find Process Using Port
+@@path: Troubleshooting > Local Development > Networking
+@@tags: troubleshooting, commands, networking, ports, local-dev
+@@aliases: port already in use, address already in use, kill process on port
+@@status: active
+@@created: 2026-06-12
+@@updated: 2026-06-12
+@@review-after: 2026-10-01
+@@source: personal-reference
+============================
+
+# Find Process Using Port
+
+[PROBLEM]
+A local development server fails because a port is already in use.
+
+[COMMON ERROR TEXT]
+address already in use
+port already in use
+EADDRINUSE
+listen EADDRINUSE
+cannot bind to port
+
+[SOLUTION]
+Find the process using the port, then stop or kill it.
+
+[COMMANDS]
+macOS / Linux:
+
+lsof -i :3000
+
+Kill by PID:
+
+kill -9 <PID>
+
+Alternative:
+
+npx kill-port 3000
+
+[EXAMPLES]
+lsof -i :5173
+kill -9 12345
+
+[GOTCHAS]
+
+* Do not kill random processes without checking what they are.
+* The process may be a dev server, Docker container, database, or background service.
+* Try a normal shutdown before force-killing when possible.
+
+[RELATED]
+
+* @@id: tool.raycast-notes
+* @@id: net.cloudgate
+
+[SEARCH BAIT]
+port in use, address already in use, EADDRINUSE, kill port, process using port, lsof, localhost, dev server, node server, vite port, react port
+
+<<< END_TOPIC: problem.port-in-use >>>
+
+# <<< START_TOPIC: problem.bad-search-results >>>
+
+@@id: problem.bad-search-results
+@@title: Notes Search Returning Bad Results
+@@path: Troubleshooting > Notes System > Search
+@@tags: troubleshooting, plaintext, search, notes, organization
+@@aliases: bad note search, search not finding notes, poor search results, messy notes
+@@status: active
+@@created: 2026-06-11
+@@updated: 2026-06-12
+@@review-after: 2026-08-01
+@@source: personal-workflow
+===========================
+
+# Notes Search Returning Bad Results
+
+[PROBLEM]
+Searching the `.txt` notes file returns too many irrelevant matches or misses the note that should have appeared.
+
+[CAUSES]
+
+* Missing aliases
+* Inconsistent tags
+* No standardized topic IDs
+* Too much freeform wording
+* Important screenshots or images not represented in searchable text
+* Similar concepts not cross-referenced
+
+[SOLUTION]
+Improve the note structure with predictable metadata and search-oriented fields.
+
+[CHECKLIST]
+
+* Add @@id
+* Add @@title
+* Add @@path
+* Add @@tags
+* Add @@aliases
+* Add [RELATED]
+* Add [SEARCH BAIT]
+* Use consistent section labels
+* Move messy notes into structured topic cards
+
+[BEFORE]
+Docker stuff
+containers
+some command about images
+also kubernetes maybe
+
+[AFTER]
+@@id: container.docker
+@@title: Docker
+@@tags: containers, devops, deployment
+@@aliases: docker engine, container platform
+[SEARCH BAIT]
+docker, containers, container images, Dockerfile, Docker Compose, registry, Kubernetes
+
+[GOTCHAS]
+
+* Tags should use controlled vocabulary.
+* Avoid having both "frontend", "front-end", and "front end" as separate tags.
+* Add natural-language search bait for terms you might forget later.
+
+[RELATED]
+
+* @@id: practice.note-linting
+* @@id: tool.raycast-notes
+
+[SEARCH BAIT]
+bad search results, note search, plaintext search, aliases, tags, metadata, search bait, searchable notes, notes organization, search optimization
+
+<<< END_TOPIC: problem.bad-search-results >>>
+
+======================================================================
+COMMAND INDEX
+=============
+
+[Search notes with ripgrep]
+rg "search term" ~/Notes
+rg -n --context 2 "search term" personal-tech-reference.txt
+
+[Find all topic IDs]
+rg "^@@id:" personal-tech-reference.txt
+
+[Find notes needing review]
+rg "@@status: needs-review" personal-tech-reference.txt
+
+[Find gotchas]
+rg "[GOTCHAS]" personal-tech-reference.txt
+
+[Find search bait sections]
+rg "[SEARCH BAIT]" personal-tech-reference.txt
+
+[Find topic boundaries]
+rg "<<< START_TOPIC:" personal-tech-reference.txt
+
+[Find missing-ish metadata manually]
+rg "^^@@title:\s*$" personal-tech-reference.txt
+rg "^^@@tags:\s*$" personal-tech-reference.txt
+
+======================================================================
+SOURCE INDEX
+============
+
+@@source: personal-workflow
+
+* @@id: tool.raycast-notes
+* @@id: practice.note-linting
+* @@id: problem.bad-search-results
+
+@@source: personal-reference
+
+* @@id: problem.port-in-use
+
+@@source: fictitious-example
+
+* @@id: lang.sprocketscript
+* @@id: net.cloudgate
+* @@id: db.riverdb
+* @@id: arch.message-fanout
+
+======================================================================
+STATUS INDEX
+============
+
+@@status: active
+
+* @@id: lang.sprocketscript
+* @@id: tool.raycast-notes
+* @@id: arch.message-fanout
+* @@id: practice.note-linting
+* @@id: problem.port-in-use
+* @@id: problem.bad-search-results
+
+@@status: draft
+
+* @@id: net.cloudgate
+
+@@status: needs-review
+
+* @@id: db.riverdb
+
+@@status: deprecated
+
+* none
+
+======================================================================
+DEPRECATED NOTES
+================
+
+Use this section for old notes that should remain searchable but should not be treated as current.
+
+# <<< START_TOPIC: deprecated.old-notes-format >>>
+
+@@id: deprecated.old-notes-format
+@@title: Old Notes Format
+@@path: Deprecated > Notes System
+@@tags: deprecated, plaintext, notes
+@@aliases: old note template, previous notes format
+@@status: deprecated
+@@created: 2026-05-01
+@@updated: 2026-06-12
+@@replaced-by: @@id: practice.note-linting
+@@source: personal-workflow
+===========================
+
+# Old Notes Format
+
+[DEPRECATED]
+This older format used loose headings without metadata, topic IDs, aliases, or search bait.
+
+[WHY REPLACED]
+It became harder to search, script, validate, and cross-reference.
+
+[RELATED]
+
+* @@id: practice.note-linting
+* @@id: tool.raycast-notes
+
+[SEARCH BAIT]
+old notes format, deprecated note template, unstructured notes, replaced notes system
+
+<<< END_TOPIC: deprecated.old-notes-format >>>
+
+======================================================================
+MAINTENANCE CHECKLIST
+=====================
+
+Weekly:
+
+* Search @@status: needs-review
+* Search @@review-after dates from current month
+* Run duplicate ID check
+* Rebuild AUTO-GENERATED INDEX
+* Move INBOX items into topic cards
+* Add [SEARCH BAIT] to important notes
+
+Monthly:
+
+* Review tag dictionary
+* Merge duplicate topics
+* Mark outdated notes as deprecated
+* Split file if it becomes too large
+* Check whether Raycast snippets still match the current template
+
+Before adding a new topic:
+
+* Pick stable @@id
+* Add aliases
+* Add broad tags
+* Add path
+* Add related topic IDs
+* Add search bait
+* Add created/updated dates
+
+======================================================================
+END OF FILE
+===========

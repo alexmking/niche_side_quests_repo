@@ -144,16 +144,19 @@ function collectAllIds(taxonomy) {
 // Resolves and returns the term array for the given continent/category/subcategory.
 // Exits with an error message if anything along the path does not exist or
 // the subcategory presence mismatches the category structure.
-function resolveTargetArray(taxonomy, { continent, category, subcategory }) {
+// Optional termRef ({ id, name }) is included in error messages when provided.
+function resolveTargetArray(taxonomy, { continent, category, subcategory }, termRef = null) {
+  const termHint = termRef ? ` [term: "${termRef.name}", id: "${termRef.id}"]` : '';
+
   if (!Object.prototype.hasOwnProperty.call(taxonomy, continent)) {
-    console.error(`Error: continent "${continent}" not found.`);
+    console.error(`Error: continent "${continent}" not found.${termHint}`);
     console.error(`Available continents: ${Object.keys(taxonomy).join(', ')}`);
     process.exit(1);
   }
   const continentNode = taxonomy[continent];
 
   if (!Object.prototype.hasOwnProperty.call(continentNode, category)) {
-    console.error(`Error: category "${category}" not found in continent "${continent}".`);
+    console.error(`Error: category "${category}" not found in continent "${continent}".${termHint}`);
     console.error(`Available categories: ${Object.keys(continentNode).join(', ')}`);
     process.exit(1);
   }
@@ -161,7 +164,7 @@ function resolveTargetArray(taxonomy, { continent, category, subcategory }) {
 
   if (Array.isArray(categoryNode)) {
     if (subcategory) {
-      console.error(`Error: category "${category}" has no subcategories. Remove --subcategory.`);
+      console.error(`Error: category "${category}" has no subcategories. Remove --subcategory.${termHint}`);
       process.exit(1);
     }
     return categoryNode;
@@ -169,24 +172,24 @@ function resolveTargetArray(taxonomy, { continent, category, subcategory }) {
 
   if (categoryNode !== null && typeof categoryNode === 'object') {
     if (!subcategory) {
-      console.error(`Error: category "${category}" has subcategories. You must provide --subcategory.`);
+      console.error(`Error: category "${category}" has subcategories. You must provide --subcategory.${termHint}`);
       console.error(`Available subcategories: ${Object.keys(categoryNode).join(', ')}`);
       process.exit(1);
     }
     if (!Object.prototype.hasOwnProperty.call(categoryNode, subcategory)) {
-      console.error(`Error: subcategory "${subcategory}" not found in category "${category}".`);
+      console.error(`Error: subcategory "${subcategory}" not found in category "${category}".${termHint}`);
       console.error(`Available subcategories: ${Object.keys(categoryNode).join(', ')}`);
       process.exit(1);
     }
     const sub = categoryNode[subcategory];
     if (!Array.isArray(sub)) {
-      console.error(`Error: subcategory "${subcategory}" is not a term array.`);
+      console.error(`Error: subcategory "${subcategory}" is not a term array.${termHint}`);
       process.exit(1);
     }
     return sub;
   }
 
-  console.error(`Error: unexpected structure at category "${category}".`);
+  console.error(`Error: unexpected structure at category "${category}".${termHint}`);
   process.exit(1);
 }
 
@@ -272,7 +275,7 @@ function cmdAddTerm(flags) {
     process.exit(1);
   }
 
-  const targetArray = resolveTargetArray(taxonomy, { continent, category, subcategory });
+  const targetArray = resolveTargetArray(taxonomy, { continent, category, subcategory }, { id, name });
 
   const term = {
     id,
@@ -386,7 +389,7 @@ function cmdMoveTerm(flags) {
   }
 
   // Resolve destination — resolveTargetArray handles existence/subcategory checks
-  const destArray = resolveTargetArray(taxonomy, { continent, category, subcategory });
+  const destArray = resolveTargetArray(taxonomy, { continent, category, subcategory }, { id: term.id, name: term.name });
 
   // Check: already in the destination
   const destPath = [continent, category, subcategory].filter(Boolean).join(' → ');

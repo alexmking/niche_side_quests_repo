@@ -219,12 +219,12 @@ TRACKING PROGRESS OF MASTER LIST:
 []		5 🟩 OPERATING SYSTEMS    		 28
 []		6 🟩 DATABASES     				29
 []		7 🟩 CLOUD						34	
----------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 476 terms-left, (6/17 cats done) ---------
 []		8 🟩 CONTAINERIZ & ORCH			52
 []		9 🟩 NETWORKIN					59
 []		10 🟩 SECURITY					24
 []		11 🟩 WEB SERVICES				49
 
+---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 292 terms-left, (11/17 cats done) ---------
 []		12 🟪 ARCHITECTURE & DESIGN		49
 []		13 🟪 METHODOLOGIES			37
 []		14 🟪 API TECHNOLOGIES			27
@@ -503,23 +503,6 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Kafka ✅🔁❌[confirmed-already-in-correct-category]
 * RabbitMQ ✅🔁❌[confirmed-already-in-correct-category]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ⚠️BRANCH OFF 3 NEW CHATS NOW 1.7, 8, 9
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (7) 34 🟩 CLOUD
@@ -554,205 +537,229 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * EC2⭕⭕⭕				🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVICES subcat)
 * S3	✅
 
-
 (8) 52 🟩 ONTAINERIZATIONS & ORCHESTRATION
 
 * containerd✅
 * CRI-O✅
-* runc
-* Podman
-* BuildKit
-* Docker Compose
-* OpenShift
-* Helm
-* Kustomize
-* kubectl
-* Minikube
-* Kind
-* k3s
-* MicroK8s
-* Amazon Elastic Kubernetes Service
-* Azure Kubernetes Service
-* Google Kubernetes Engine
-* Nomad
-* Rancher
-* Harbor
-* Argo CD
-* Flux
-* Istio
-* Linkerd
-* Docker Engine
-* Docker Desktop
-* Docker Hub
-* Open Container Initiative
-* OCI Image Format
-* Container Runtime Interface
-* Container Network Interface
-* container image
-* container registry
-* Dapr
+* runc✅
+* Podman✅
+* BuildKit✅
+* Docker Compose✅
+* OpenShift✅
+* Helm✅
+* Kustomize✅
+* kubectl✅
+* Minikube✅
+* Kind✅
+* k3s✅
+* MicroK8s✅
+* Amazon Elastic Kubernetes Service	⭕⭕⭕	🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVICES subcat)
+* Azure Kubernetes Service	⭕⭕⭕			🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVICES subcat)
+* Google Kubernetes Engine		⭕⭕⭕	 🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVI
+* Nomad✅
+* Rancher ✅
+* Harbor		⭕⭕⭕	 🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVI
+* Argo CD✅
+* Flux✅
+* Istio✅
+* Linkerd✅
+* Docker Engine✅
+* Docker Desktop✅
+* Docker Hub✅
+* Open Container Initiative✅
+* OCI Image Format;✅
+* Container Runtime Interface✅
+* Container Network Interface✅
+* container image✅
+* container registry✅
+* Dapr✅
 
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
-
-----IPAD GPT ONLY FOR THIS SECTION!!!----
-----IPAD GPT ONLY FOR THIS SECTION!!!----
-----IPAD GPT ONLY FOR THIS SECTION!!!----
-----IPAD GPT ONLY FOR THIS SECTION!!!----
 
 (9) 59 🟩 NETWORKIN
-* TCP/IP✅
+* TCP/IP
 * TCP
-* UDP
-* IP
-* IPv4
-* IPv6
-* DNS
-* DHCP
-* NAT
-* VPN
-* VLAN
-* LAN
-* WAN
-* WLAN
-* Router
-* Switch
-* Wireless Access Point
-* Firewall
-* Load Balancer
-* Proxy Server
-* Reverse Proxy
-* Subnet
-* CIDR				
-* OSI Model
-* TCP/IP Model
-* HTTP
-* HTTPS
-* TLS
-* SSH
-* FTP✅      %%%%%%%%%% 😈😈😈😈😈😈😈😈😈😈 THIS IS WHERE WE LEFT OFF ON THE ACTUAL 'ADDING-TO-LANDSCAPE-via_TERMINAL copy/paste add-term (were starting from below and working our way up to the first NETOWRKIN term...)
+* UDP✅
+* IP✅
+* IPv4✅
+* IPv6✅
+* DNS✅
+* DHCP✅
+* NAT✅
+* VPN✅
+* VLAN✅
+* LAN✅
+* WAN✅
+* WLAN✅
+* Router✅
+* Switch✅
+* Wireless Access Point✅
+* Firewallv
+* Load Balancer✅
+* Proxy Server✅
+* Reverse Proxy✅
+* Subnet✅
+* CIDR		✅		
+* OSI Model✅
+* TCP/IP Model✅
+* HTTP✅
+* HTT✅;l
+* TLS;l✅
+* SSH✅
+* FTP✅      
 * SFTP✅
 * SMTP;✅
 * IMAP✅
 * SNMP✅
 * BGP✅
--------------------❗;imp ❗ IPAD IS CURRENTLY UP TO HERE FOR THIS CATEGORY....------------------❗------------------❗
-* OSPF
-* SDN
-* OpenFlow
-* Network Function Virtualization
 * Nmap ✅🔁❌ 		[FIX_LATER: gpt said this one shoud prob go in "NETWORKING" but well address these small miscategory things after the 700+ terms are at least added]
-* tcpdump
-* OpenVPN
-* WireGuard
-* Open vSwitch
-* WebSocket
+* tcpdump✅
+* OpenVPN✅
+* WireGuard✅
+* Open vSwitch✅
 * gRPC ✅🔁❌[confirmed-already-in-correct-category]
 * GraphQL  ✅🔁❌
 * RabbitMQ ✅🔁🌈[confirmed-already-in-correct-category]
 * Kafka ✅🔁🌈[confirmed-already-in-correct-category]
-* CDN
-* VPC
-* OpenSSH
+* OSPF✅
+* SDN✅
+* OpenFlow✅
+* Network Function Virtualization✅
+* WebSocket✅
+* CDN	⭕⭕⭕							🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVICES subcat)
+* VPC✅
+* OpenSSH✅
+
 
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (10) 24 🟩 SECURITY
 
-* Vulnerability Assessment
-* Vulnerability Management
-* Threat Modeling
-* Risk Assessment
-* Security Audit
-* Security Hardening
-* Attack Surface
-* Attack Vector
-* Exploit
+* Vulnerability Assessment✅
+* Vulnerability Management✅
+* Threat Modeling✅
+* Risk Assessment✅
+* Security Audit✅
+* Security Hardening✅
+* Attack Surface✅
+* Attack Vector✅
+* Exploit✅✅
 * Payload
-* Malware
-* Ransomware
-* Phishing
-* Social Engineering
-* Identity and Access Management
-* Authentication
-* Authorization
-* Multi-Factor Authentication
-* Single Sign-On
-* OAuth
-* OpenID Connect
-* SAML
-* LDAP
-* Active Directory
-* Public Key Infrastructure
-* Encryption
-* Hashing
-* Digital Signature
-* Certificate Authority
-* TLS Certificate
-* Zero Trust
-* Principle of Least Privilege
-* Defense in Depth
-* Security Information and Event Management
-* Endpoint Detection and Response
-* Intrusion Detection System
-* Intrusion Prevention System
-* Web Application Firewall
-* Data Loss Prevention
-* Incident Response
-* Digital Forensics
-* Security Operations Center
-* OWASP Top 10
-* OWASP ZAP
-* Burp Suite
+* Malware✅
+* Ransomware✅
+* Phishing✅
+* Social Engineeri✅;l
+* Identity and Access Management;l✅
+* Authentication✅
+* Authorization✅
+* Multi-Factor Authentication✅
+* Single Sign-On✅
+* OAuth✅
+* OpenID Connect✅
+* SAML✅
+* LDAP✅
+* Active Directory✅
+* Public Key Infrastructure✅
+* Encryption✅
+* Hashing✅
+* Digital Signature✅
+* Certificate Authority✅
+* TLS Certificate✅
+* Zero Trust✅
+* Principle of Least Privile✅;l
+* Defense in Depth;l
+* Security Information and Event Management✅
+* Endpoint Detection and Response✅
+* Intrusion Detection System✅
+* Intrusion Prevention System✅
+* Web Application Firewall✅
+* Data Loss Prevention✅
+* Incident Response✅
+* Digital Forensics✅
+* Security Operations Center✅
 * Nmap ✅🔁🌈 		[FIX_LATER: gpt said this one shoud prob go in "NETWORKING" but well address these small miscategory things after the 700+ terms are at least added]
-* Nessus
-* OpenVAS
 * Kali Linux ✅🔁❌[confirmed-already-in-correct-category]
-* Snort
-* Suricata
-* Splunk
-* Application Security
 * DevSecOps✅ 🔁❌[confirmed-already-in-correct-category]
-* Secure SDLC
-* Compliance
-* SOC 2
-* ISO 27001
-* NIST Cybersecurity Framework
+* OWASP Top 10✅
+* OWASP ZAP✅
+* Burp Suite✅
+* Nessus✅
+* OpenVAS✅
+* Snort✅
+* Suricata✅
+* Splunk✅
+* Application Security✅
+* Secure SDLC✅
+* Compliance✅
+* SOC 2✅
+* ISO 27001✅
+* NIST Cybersecurity Framework✅
 
 
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (11) 49 🟩 WEB SERVICES
 
-* Caddy
-* LiteSpeed Web Server
-* OpenLiteSpeed
-* lighttpd
-* OpenResty
+* Caddy✅
+* LiteSpeed Web Server✅
+* OpenLiteSpeed✅
+* lighttpd✅
 * Apache Tomcat✅ 🔁 ❌[confirmed-already-in-correct-category]
 * Jetty ✅🔁❌[confirmed-already-in-correct-category]
 * WildFly ✅🔁❌[confirmed-already-in-correct-category]
-* GlassFish
-* WebLogic
-* WebSphere
-* HAProxy
-* Traefik
-* Envoy
-* AWS Application Load Balancer
-* Nginx Proxy Manager
-* Apache Traffic Server
-* Varnish
-* Squid
-* Gunicorn
-* uWSGI
-* Puma
-* Phusion Passenger
-* Kestrel
+* OpenResty✅
+* GlassFish✅
+* WebLogic✅
+* WebSphere✅
+* HAProxy✅
+* Traefik✅
+* Envoy✅
+* AWS Application Load Balancer		⭕⭕⭕			🚧⚠️⚠️⚠️⚠️⚠️ WAITING ON NEW SUB CATEGORY FOR CLOUD (which i detailed in trello list/card)(CLOUD-SERVICES subcat)
+* Nginx Proxy Manager✅
+* Apache Traffic Server✅
+* Varnish✅
+* Squid✅
+* Gunicorn✅
+* uWSGI✅
+* Puma✅
+* Phusion Passenger✅
+* Kestrel✅
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 (33333333333333333333333333333333333333333333333333333333333333333333333)
 (12) 49 🟪 ARCHITECTURE & DESIGN
 
-* Event-Driven Architecture
+* Event-Driven Architecture✅
 * Layered Architecture
 * Hexagonal Architecture
 * Clean Architecture
@@ -1055,8 +1062,35 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Product Management
 * UX Design
 
+(18) 1000 🟪 LAST-STEP-TO-DO...
+>> gather all the terms ⭕⭕⭕ that couldnt be added bc they need their own new subcategory and make a master list of them here
+>> (to make this easier, just paste this list into GPT and ask to outpout all the lines that have these EMOJIS on it )
 
-
+---------------------------------------------------------------------------------------
+MASTER-LIST-OF-TERMS THAT WE COULDNT ADD YET BC THEY NEEED THEIR OWN SUBCAT:
+---------------------------------------------------------------------------------------
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 
 
 
