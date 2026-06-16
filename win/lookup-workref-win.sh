@@ -24,7 +24,9 @@
 # FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 # FILE="D:\git\niche_side_quests_repo\_universal\ssot-refs.md"
 # FILE="D:\git\niche_side_quests_repo\win\ALL_PATHS.txt"
-FILE="D:\git\niche_side_quests_repo\win\workRef-ssot.txt"
+# FILE="D:\git\niche_side_quests_repo\win\workRef-ssot.txt"
+FILE="D:\git\niche_side_quests_repo\win\ssot-workref.txt"
+
 
 QUERY="$1"
 
