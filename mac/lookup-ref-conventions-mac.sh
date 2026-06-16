@@ -1,17 +1,15 @@
 #!/bin/bash
 
 # @raycast.schemaVersion 1
-# @raycast.title Lookup-Ref
+# @raycast.title Lookup-Ref-Conventions
 # @raycast.mode fullOutput
 # @raycast.argument1 { "type": "text", "placeholder": "Lookup-Ref..." }
-# @raycast.description lookup ssot-ref doc
+# @raycast.description lookup ref-official-conventions-&-guidelines.txt doc
 # @raycast.packageName Developer Utils
 # @raycast.icon 👀
 
 # FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
-FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-ref.txt"
-
-
+FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ref-official-conventions-&-guidelines.txt"
 QUERY="$1"
 
 if [ -z "$QUERY" ]; then

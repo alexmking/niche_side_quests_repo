@@ -1,15 +1,16 @@
 #!/bin/bash
 
 # @raycast.schemaVersion 1
-# @raycast.title Lookup-Ref
+# @raycast.title Lookup-WorkRef
 # @raycast.mode fullOutput
-# @raycast.argument1 { "type": "text", "placeholder": "Lookup-Ref..." }
-# @raycast.description lookup ssot-ref doc
+# @raycast.argument1 { "type": "text", "placeholder": "Lookup-WorkRef..." }
+# @raycast.description lookup ssot-workref doc
 # @raycast.packageName Developer Utils
 # @raycast.icon 👀
 
 # FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
-FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-ref.txt"
+# FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ref-official-conventions-&-guidelines.txt"
+FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/win/ssot-workref.txt"
 
 
 QUERY="$1"
