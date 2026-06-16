@@ -1,0 +1,301 @@
+#!/usr/bin/env python3
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title Template Picker
+# @raycast.mode silent
+
+# @raycast.description A dropdown of all the templates I commonly use for writing my ref.txt elements, so I can quickly copy the template string to clipboard and paste it wherever I want. Similar to Advanced-Finder but for templates instead of paths/snippets.
+# Optional parameters:
+# @raycast.icon 🤖
+# @raycast.packageName Developer Utils
+
+### other icon options: 🧠 ⚡ 
+
+###### NEW TEMPLATE_PICKER ARGS #####
+# @raycast.argument1 { "type": "dropdown", "placeholder": "ref.txt element templates", "required": true, "data": [{"title": "ref_template1_FIXME", "value": "1"}, {"title": "ref_template2_FIXME", "value": "2"}, {"title": "ref_template3_FIXME", "value": "3"}, {"title": "ref_template4_FIXME", "value": "4"}, {"title": "ref_template5_FIXME", "value": "5"}, {"title": "ref_template6_FIXME", "value": "6"}, {"title": "ref_template7_FIXME", "value": "7"}, {"title": "ref_template8_FIXME", "value": "8"}, {"title": "ref_template9_FIXME", "value": "9"}, {"title": "ref_template10_FIXME", "value": "10"}, ] }
+
+#### ORIG ONE ####
+#####@raycast.argument1 { "type": "dropdown", "placeholder": "Select a path", "required": true, "data": [{"title": "refs", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"}, {"title": "zshrc aliases", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"}, {"title": "keyb shortcuts vis", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"}, {"title": "aerospace", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"}, {"title": "zzmadden", "value": "/Users/alexking/Desktop/DESKTOP_SHELF/2024_and_prior/TEMPORARY_FOLDER_TO_CLEAR_DESKTOP_UNTIL_INTERNSHIP_SEARCHDONE/zzmadden06playbook_21.txt"}, {"title": "zzshortcuts", "value": "/Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm"}, {"title": "p10k", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh"}, {"title": "zprofile", "value": "/Users/alexking/.zprofile"}, {"title": "oh-my-zsh", "value": "/Users/alexking/.oh-my-zsh/"}, {"title": "fzf key-bindings", "value": "/usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"}, {"title": "screenshot dir", "value": "/Users/alexking/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0"}, {"title": "quick-ref dir", "value": "/Users/alexking/amk/notes/quick_ref"}, {"title": "niche dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo"}, {"title": "niche-mac dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac"}, {"title": "niche-universal dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal"}, {"title": "amk dir", "value": "/Users/alexking/amk/"}, {"title": "leet script", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/scr-leet_morning_random.py"}] }
+
+
+### BACKUP version of args ######
+##@raycast.argument1 { "type": "dropdown", "placeholder": "Select a path", "required": true, "data": [{"title": "refs", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"}, {"title": "zshrc aliases", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"}, {"title": "keyb shortcuts vis", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"}, {"title": "aerospace", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"}, {"title": "zzmadden", "value": "/Users/alexking/Desktop/DESKTOP_SHELF/2024_and_prior/TEMPORARY_FOLDER_TO_CLEAR_DESKTOP_UNTIL_INTERNSHIP_SEARCHDONE/zzmadden06playbook_21.txt"}, {"title": "zzshortcuts", "value": "/Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm"}, {"title": "p10k", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh"}, {"title": "zprofile", "value": "/Users/alexking/.zprofile"}, {"title": "oh-my-zsh", "value": "/Users/alexking/.oh-my-zsh/"}, {"title": "fzf key-bindings", "value": "/usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"}, {"title": "screenshot dir", "value": "/Users/alexking/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0"}, {"title": "quick-ref dir", "value": "/Users/alexking/amk/notes/quick_ref"}, {"title": "niche dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo"}, {"title": "niche-mac dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac"}, {"title": "niche-universal dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal"}, {"title": "amk dir", "value": "/Users/alexking/amk/"}, {"title": "leet script", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/scr-leet_morning_random.py"}] }
+###@raycast.argument1 { "type": "dropdown", "placeholder": "sel path", "optional": true, "data": [{"title": "aliases", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"}, {"title": "aerospace", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"}, {"title": "flexprompt", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh"}, {"title": "fzf", "value": "/usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"}, {"title": "keybVis", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"}, {"title": "ssot-refs", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"}] }
+
+
+# @raycast.author alexmking921
+# @raycast.authorURL https://raycast.com/alexmking921
+
+
+
+
+import os
+import sys
+
+
+# take the users selection from the dropdown and copy the path to clipboard
+import subprocess
+selection = sys.argv[1]
+template_to_paste = ""
+if selection == "1":
+    template_to_paste = "TEMPLATE STRING 1"
+elif selection == "2":
+    template_to_paste = "TEMPLATE STRING 2"
+elif selection == "3":
+    template_to_paste = "TEMPLATE STRING 3"
+elif selection == "4":
+    template_to_paste = "TEMPLATE STRING 4"
+elif selection == "5":
+    template_to_paste = "TEMPLATE STRING 5"
+elif selection == "6":
+    template_to_paste = "TEMPLATE STRING 6"
+elif selection == "7":
+    template_to_paste = "TEMPLATE STRING 7"
+elif selection == "8":
+    template_to_paste = "TEMPLATE STRING 8"
+elif selection == "9":
+    template_to_paste = "TEMPLATE STRING 9"
+elif selection == "10":
+    template_to_paste = "TEMPLATE STRING 10"
+
+# ... add more elifs for each option in the dropdown ...
+else: 
+        print(f"ERROR: Unrecognized selection: {selection}", file=sys.stderr)
+        sys.exit(1)
+
+#### EVENTUALLY CHANGE THIS LINE TO 'PASTE' immediately instead of just copy to clip...
+subprocess.run(["pbcopy"], input=template_to_paste.encode())
+
+
+
+
+
+
+
+
+
+############# TODO LIST FOR TEMPLATE-PICKER #############
+### 1. replace all the URL values in the args list of the raycast command with simple numbers...
+### 2. then can use a string of IF()s on each of those numbers
+### 3. then within each IF() is where I can hardcode the TEMPLATES STRING that well want to copy
+
+
+
+
+
+
+##### BELOW TEMPLATE IS SETUP FOR 10 TEMPALTE-STRINGS ...
+#########@raycast.argument1 { "type": "dropdown", "placeholder": "difficulty", "required": true, "data": [
+# {"title": "ref_template1_FIXME", "value": "1"}, 
+# {"title": "ref_template2_FIXME", "value": "2"}, 
+# {"title": "ref_template3_FIXME", "value": "3"}, 
+# {"title": "ref_template4_FIXME", "value": "4"}, 
+# {"title": "ref_template5_FIXME", "value": "5"}, 
+# {"title": "ref_template6_FIXME", "value": "6"}, 
+# {"title": "ref_template7_FIXME", "value": "7"}, 
+# {"title": "ref_template8_FIXME", "value": "8"}, 
+# {"title": "ref_template9_FIXME", "value": "9"}, 
+# {"title": "ref_template10_FIXME", "value": "10"}, 
+# ] }
+
+
+
+
+#####@raycast.argument1 { "type": "dropdown", "placeholder": "difficulty", "required": true, "data": [
+# {"title": "ref_template1_FIXME", "value": "1"}, 
+# {"title": "ref_template2_FIXME", "value": "2"}, 
+# {"title": "ref_template3_FIXME", "value": "3"}, 
+# {"title": "ref_template4_FIXME", "value": "4"}, 
+# {"title": "ref_template5_FIXME", "value": "5"}, 
+# {"title": "two pointers", "value": "6"}, 
+# {"title": "sliding window", "value": "7"}, 
+# {"title": "binary search", "value": "8"}, 
+# {"title": "linked list", "value": "9"}, 
+# {"title": "trees", "value": "10"}, 
+# {"title": "tries", "value": "8"}, 
+# {"title": "heaps", "value": "9"}, 
+# {"title": "intervals", "value": "10"}, 
+# {"title": "greedy", "value": "11"}, 
+# {"title": "backtracking", "value": "12"}, 
+# {"title": "1D dyn prog", "value": "13"}, 
+# {"title": "graph", "value": "14"}, 
+# {"title": "2D dyn prog", "value": "15"}, 
+# {"title": "any", "value": "a"}
+# ] }
+
+
+
+
+#### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### 
+#### USE THIS BELOW TEMPLATE FROM OTHER SCRIPT TO HELP define the giant dropdown mess carefully...
+#### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### 
+#### @raycast.argument1 { "type": "dropdown", "placeholder": "difficulty", "required": true, "data": [
+# {"title": "group1", "value": "g1"}, 
+# {"title": "group2", "value": "g2"}, 
+# {"title": "group3", "value": "g3"}, 
+# {"title": "arrays", "value": "1"}, 
+# {"title": "stacks", "value": "2"}, 
+# {"title": "two pointers", "value": "3"}, 
+# {"title": "sliding window", "value": "4"}, 
+# {"title": "binary search", "value": "5"}, 
+# {"title": "linked list", "value": "6"}, 
+# {"title": "trees", "value": "7"}, 
+# {"title": "tries", "value": "8"}, 
+# {"title": "heaps", "value": "9"}, 
+# {"title": "intervals", "value": "10"}, 
+# {"title": "greedy", "value": "11"}, 
+# {"title": "backtracking", "value": "12"}, 
+# {"title": "1D dyn prog", "value": "13"}, 
+# {"title": "graph", "value": "14"}, 
+# {"title": "2D dyn prog", "value": "15"}, 
+# {"title": "any", "value": "a"}
+# ] }
+
+
+
+
+
+
+
+
+# - ⭐😮 PATH SEARCH SYSTEM: Expanding on my idea of mirroring the same pre-pend word/char in alias stuff that I have for my terminal (such as cd, edit, list, get ...), I just realized we can actually capture THIS and all the OTHER alias/char-triggers/etc everything else at the same time:
+#    - EXPL:
+#          - 1️⃣ p == signle char alias for 'search-my-main-paths' command in raycast (maybe needs to be a script-command)
+#          - 2️⃣ HOTKEY == for the above 'search-my-main-paths' command in raycast (so both p and the HOTKEY would be on the same command) 
+#          - 3️⃣ pzzshortcuts == raycast-alias for the individual snippet/quicklink with zzshortcuts PATH (so every path would have 1 of these created just for it within raycast)
+#             - 🤩 we CAN have all these setup and active AT THE SAME TIME (so 3 diff routes to get to same thing)
+#          - *TODO:* set this up IMMEDIATELY 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# TODO: replace the "value" fields in each of the dropdown options with the the following list of paths (in the commented-out @raycast.argument1 below) that I want to have in my quick-search system (so when I select the option with the name of the path, it automatically copies the path to clipboard for me to paste wherever I want...and maybe even auto-paste it for me too?):
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.zshrc
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/key-bindings.zsh
+# /Users/alexking/Desktop/DESKTOP_SHELF/2024_and_prior/TEMPORARY_FOLDER_TO_CLEAR_DESKTOP_UNTIL_INTERNSHIP_SEARCHDONE/zzmadden06playbook_21.txt
+# /Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh
+# /Users/alexking.zprofile
+# /Users/alexking.oh-my-zsh/
+# /usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh
+
+# /Users/alexking/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0
+# /Users/alexking/amk/notes/quick_ref
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo
+
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal
+# /Users/alexking/amk/
+# /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/scr-leet_morning_random.py
+
+
+# =========================================================
+# official setup for each of the top paths...spread out into the ONE LINE format we need...
+# ========================================================= 
+##@raycast.argument1 { "type": "dropdown", "placeholder": "difficulty", "required": true, "data": [{"title": "refs", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"}, {"title": "zshrc aliases", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"}, {"title": "keyb shortcuts vis", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"}, {"title": "aerospace", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"}, {"title": "zzmadden", "value": "/Users/alexking/Desktop/DESKTOP_SHELF/2024_and_prior/TEMPORARY_FOLDER_TO_CLEAR_DESKTOP_UNTIL_INTERNSHIP_SEARCHDONE/zzmadden06playbook_21.txt"}, {"title": "zzshortcuts", "value": "/Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm"}, {"title": "p10k", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh"}, {"title": "zprofile", "value": "/Users/alexking/.zprofile"}, {"title": "oh-my-zsh", "value": "/Users/alexking/.oh-my-zsh/"}, {"title": "fzf key-bindings", "value": "/usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"}, {"title": "screenshot dir", "value": "/Users/alexking/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0"}, {"title": "quick ref", "value": "/Users/alexking/amk/notes/quick_ref"}, {"title": "niche dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo"}, {"title": "niche-mac dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac"}, {"title": "niche-universal dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal"}, {"title": "amk dir", "value": "/Users/alexking/amk/"}, {"title": "leet script", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/scr-leet_morning_random.py"}] }
+
+
+# =========================================================
+# official setup for each of the top paths...
+# ========================================================= 
+##@raycast.argument1 { "type": "dropdown", "placeholder": "difficulty", "required": true, "data": [
+# {"title": "refs", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"}, 
+# {"title": "zshrc aliases", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"}, 
+# {"title": "keyb shortcuts vis", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"}, 
+# {"title": "aerospace", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/aerospace.toml"}, 
+# {"title": "zzmadden", "value": "/Users/alexking/Desktop/DESKTOP_SHELF/2024_and_prior/TEMPORARY_FOLDER_TO_CLEAR_DESKTOP_UNTIL_INTERNSHIP_SEARCHDONE/zzmadden06playbook_21.txt"}, 
+# {"title": "zzshortcuts", "value": "/Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm"}, 
+# {"title": "p10k", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/.p10k.zsh"}, 
+# {"title": "zprofile", "value": "/Users/alexking/.zprofile"}, 
+# {"title": "oh-my-zsh", "value": "/Users/alexking/.oh-my-zsh/"}, 
+# {"title": "fzf key-bindings", "value": "/usr/local/Cellar/fzf/0.67.0/shell/key-bindings.zsh"}, 
+# {"title": "screenshot dir", "value": "/Users/alexking/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0"}, 
+# {"title": "quick ref dir", "value": "/Users/alexking/amk/notes/quick_ref"}, 
+# {"title": "niche dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo"}, 
+# {"title": "niche-mac dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac"}, 
+# {"title": "niche-universal dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal"}, 
+# {"title": "amk dir", "value": "/Users/alexking/amk/"}, 
+# {"title": "leet script", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/scr-leet_morning_random.py"}
+# ] }
+
+
+
+
+
+# {"title": "screenshot dir", "value": "/Users/alexking/Library/Mobile Documents/com~apple~CloudDocs/Screenshot Sorter 2.0"}, 
+# {"title": "quick ref", "value": "/Users/alexking/amk/notes/quick_ref"}, 
+# {"title": "niche dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo"}, 
+# {"title": "niche-mac dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac"}, 
+# {"title": "niche-universal dir", "value": "/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal"}, 
+# {"title": "amk dir", "value": "/Users/alexking/amk/"}, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
+# REMINDER THIS SCRIPT IS 1 OF 3 PARTS TO MY PATH SEARCH SYSTEM: (outlined in ssot-ref OR... I copy-pasted it at bottom of this file as well for easy access)
+#          - 1️⃣ p == signle char alias for 'search-my-main-paths' command in raycast (maybe needs to be a script-command)
+#          - 2️⃣ HOTKEY == for the above 'search-my-main-paths' command in raycast (so both p and the HOTKEY would be on the same command) 
+#          - 3️⃣ pzzshortcuts == raycast-alias for the individual snippet/quicklink with zzshortcuts PATH (so every path would have 1 of these created just for it within raycast)
+#               ! TODO: outside of this script we still have to create INDIVIDUAL QUICKLINKS/or SNIPPETS (whatever works best) for EACH path we want in our quick-search system, and THEN set the ALIAS of each of them to have the pre-pend 'p' char, like example below:
+#                       pzzshortcuts    == raycast-alias for the individual snippet/quicklink
+#                       pkeybvis        == raycast-alias for keybvis 
+#                       pssot-ref       == 
+#                       pmadden         == 
+#                       ... etc ... etc ...
+#                       👀 SNIPPET-KEYWORD EXAMPLES 👀 (should be shorter than the p-aliases)
+#                       zzshortcuts     ==  pzz     ⭐
+#                       pkeybvis        ==  pkey    ⭐
+#                       pssot-ref       ==  pref    ⭐
+#                       pmadden         ==  pmad    ⭐
+
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
+##########################################################################################################
+#                       ! CAUTION: Remember these quicklinks/snippets with the leading 'p' only copy/grab the PATH of the file (hence the 'p' for path)....so DONT CONFUSE these with the other normal quicklinks that actually OPEN the said file...rather these 'p' based quicklinks ONLY COPY/GRAB the PATH for that file...
+
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# ! GOAL ==> we want to assign this SCRIPT-COMMAND to have an ALIAS and HOTKEY of the following:
+# !     p == signle char alias for 'search-my-main-paths' command in raycast (maybe needs to be a script-command)
+# !     HOTKEY == for the above 'search-my-main-paths' command in ray (HOTKEY will prob be something like HYPER-P or smthn)
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        #  - 4️⃣ FOUND ANOTHER LAYER w SNIPPETS-KEYWORDS...snippet-keywords are diff from ALIASES in that they automatically paste hte entire sniipet once you type out the ykeyword, ANYWHERE
+        #     - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
+        #     - so if i set 'pzz' as keyword for zzshorts path, then i type pzz and instantly it will be replaced by /Users/alexking/amk/notes/quick_ref/zzshortcuts.xlsm
+        #     - 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
+

@@ -1,0 +1,96 @@
+[ONLY THE OFFICIAL DECIDED-UPON stuff SHOULD GO IN THIS FILE]
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.GLOBAL_HEADER (this one is tbd, doesnt matter much)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+======================================================================
+,.LANGUAGES                    (the current section i always on first line and ALL_CAPS, while the full path is always )    
+,.development,.languages       (the full path is always line two and in all-lowercase)
+======================================================================
+
+
+----------------------------------------------------------------------
+,.MYTOPIC
+;;development,.languages,.mytopic
+----------------------------------------------------------------------
+
+[SUMMARY]
+SprocketScript is a fictional scripting language used as an example.
+
+[DEFINITION]
+A lightweight automation language for small scripts and local workflow automation.
+
+[WHEN TO USE]
+- Quick local automation
+- Small text-processing tasks
+- Simple workflow glue between tools
+
+[EXAMPLES]
+print("hello")
+,.
+[GOTCHAS]
+- Fictional example only.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------
+raycast snippets 
+------------------------------------------------------------
+r-global        |   ;h1       ;rh1        ;refh1
+r-section       |   ;h2       ;rh2        ;refh2
+r-subsection    |   ;h3       ;rh3        ;refh3
+r-topic         |   ;rtopic   ;reftopic   ;ref-topic
+
+r-sum           |
+r-def           |
+r-use           |
+r-ex            |
+r-gotcha        |
+r-cmd           |
+r-prob          |
+
+r-sep           |
+r-sep2 (minisep)|
+r-break         |
+r-box           |
+r-warn          |
+r-table         |
+
+- - - - - - - - - 
+variations to add for each of the snippets:
+- - - - - - - - - 
+;r-table 
+;rtable
+;ref-table
+;reftable

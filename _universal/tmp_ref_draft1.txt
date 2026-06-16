@@ -1,0 +1,545 @@
+======================================================================
+TABLE OF CONTENTS
+=================
+
+[DEVELOPMENT]
+
+* @@id: lang.sprocketscript          SprocketScript
+* @@id: tool.raycast-notes           Raycast Notes Workflow
+
+[INFRASTRUCTURE]
+
+* @@id: net.cloudgate                CloudGate
+* @@id: db.riverdb                   RiverDB
+
+[ENGINEERING]
+
+* @@id: arch.message-fanout          Message Fanout Pattern
+* @@id: practice.note-linting        Plaintext Note Linting
+
+[TROUBLESHOOTING]
+
+* @@id: problem.port-in-use          Find Process Using Port
+* @@id: problem.bad-search-results   Notes Search Returning Bad Results
+
+
+
+
+
+GLOBAL HEADER     ||  (only a few in the entire file, and separated by GIANT tons of whitespace) (looking at the miniMap in vscode, these global headers will represent all the blocks that are separated by tons a empty space))
+  SECTION HEADER  ||  (this is the default, standard header)
+    SUB-HEADER    ||  (optional, just like subcats in devland)
+      TOPIC CARD  ||
+        [LABELS]  ||
+
+
+
+
+
+
+
+GLOBAL HEADER:
+-look/style foesnt matter as much since they'll be separated by the giant white spaces anyway   
+
+SECTION HEADER:
+
+
+    SUB-HEADER    ||  (optional, just like subcats in devland)
+      TOPIC CARD  ||
+        [LABELS]  ||
+
+
+Questions that still need concrete answers for this header hiearchy stuff:
+- should topic-cards replace sub-headers altogether?
+- should topic-cards
+
+
+
+
+
+======================================================================
+======================================================================
+GLOBAL HEADER (dont worry about the style of this one for now, doesnt matter atm)
+======================================================================
+======================================================================
+
+
+======================================================================
+SECTION header
+======================================================================
+
+
+----------------------------------------------------------------------
+SUB SECTION header 
+----------------------------------------------------------------------
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+????
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+======================================================================
+<<< TOPIC: SprocketScript | ID: lang.sprocketscript >>>
+======================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GLOBAL-HEADER
+????????????????????????????????????????????
+GLOBAL HEADER:
+????????????????????????????????????????????
+
+
+
+SECTION HEADER:
+======================================================================
+SECTION header
+======================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+OPTION 2 of 2 BEST OPTIONS LEFT...
+>> the prefix ;; for the headers is only a PLACEHOLDER, as well prob be adding a more sophisticated one 
+that can also do partial-prefix stuff to help with being able to search for HEADER and still match enough 
+to iter through all that headers TOPIC-cards
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+GLOBAL_HEADER (this one is tbd, doesnt matter much)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+======================================================================
+;;development/languages
+Languages
+======================================================================
+
+
+----------------------------------------------------------------------
+;;development/languages/sprocketscript
+SprocketScript
+----------------------------------------------------------------------
+
+[SUMMARY]
+SprocketScript is a fictional scripting language used as an example.
+
+[DEFINITION]
+A lightweight automation language for small scripts and local workflow automation.
+
+[WHEN TO USE]
+- Quick local automation
+- Small text-processing tasks
+- Simple workflow glue between tools
+
+[EXAMPLES]
+print("hello")
+,.
+[GOTCHAS]
+- Fictional example only.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+,.
+,.dev?
+========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.{cursor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+----------------------------------------------------------------------
+,.{cursor}
+,.dev?,.
+----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+OPTION 2 of 2 BEST OPTIONS LEFT...(only diff is simplified prefix pathing )
+>> the prefix ;; for the headers is only a PLACEHOLDER, as well prob be adding a more sophisticated one 
+that can also do partial-prefix stuff to help with being able to search for HEADER and still match enough 
+to iter through all that headers TOPIC-cards
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+GLOBAL_HEADER (this one is tbd, doesnt matter much)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+======================================================================
+;;Languages                                                   
+======================================================================
+
+
+----------------------------------------------------------------------
+;;development/languages/sprocketscript
+SprocketScript
+----------------------------------------------------------------------
+
+[SUMMARY]
+SprocketScript is a fictional scripting language used as an example.
+
+[DEFINITION]
+A lightweight automation language for small scripts and local workflow automation.
+
+[WHEN TO USE]
+- Quick local automation
+- Small text-processing tasks
+- Simple workflow glue between tools
+
+[EXAMPLES]
+print("hello")
+
+[GOTCHAS]
+- Fictional example only.
+
+
+
+
+
+
+
+
+
+
+
+
+,.DEVELOPMENT,.SECTION1,.
+
+..DEVELOPMENT..SECTION
+
+
+2-char-preixes:
+
+
+
+
+
+------------------------------------------------------------
+2-char-prefixes
+------------------------------------------------------------
+~@
+
+,.
+
+`1
+
+~!
+
+------------------------------------------------------------
+3-char-prefixes (only consider if no 2-char ones pan out)
+------------------------------------------------------------
+~@@
+
+,..
+
+.//
+
+,./
+
+`12
+
+~!@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+GLOBAL_HEADER (this one is tbd, doesnt matter much)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+======================================================================
+(prefix)SECTION-HEADER
+======================================================================
+
+
+@@nav:development/languages/sprocketscript
+----------------------------------------------------------------------
+(prefix)TOPIC-HEADER
+----------------------------------------------------------------------
+@@id: lang.sprocketscript
+@@tags: development, language, scripting, fictitious
+
+[SUMMARY]
+
+
+[DEFINITION]
+
+
+[WHEN TO USE]
+
+
+[EXAMPLES]
+
+
+[GOTCHAS]
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+(another style option)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

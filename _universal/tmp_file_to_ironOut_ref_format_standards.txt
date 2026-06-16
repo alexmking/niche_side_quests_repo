@@ -10,6 +10,75 @@ this is dropzone to put noteworthy stuff I come across while reading through GPT
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TRACKING GPT PROMPTS I NEED TO READ-THROUGH:
+1 ✅
+2 ✅
+3     (leveraging raycast snips/ai-commands/script-commands)
+4
+5
+6
+7
+8   (more impactful way to express the 'topic' line within topic cards)
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================
+
+============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 BRAINSTORMING diff pattern compositions for our prefix + partialPrefix concept:
 
 @term@

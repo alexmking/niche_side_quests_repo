@@ -89,6 +89,68 @@ Updated: 2026-06-12
 
 
 
+======================================================================
+RAYCAST SNIPPET CHEAT SHEET
+===========================
+
+;topic      Insert full topic-card template
+;meta       Insert metadata block
+;h1         Insert major divider
+;h2         Insert section divider
+;def        Insert [DEFINITION] block
+;sum        Insert [SUMMARY] block
+;cmd        Insert [COMMANDS] block
+;gotcha     Insert [GOTCHAS] block
+;rel        Insert [RELATED] block
+;bait       Insert [SEARCH BAIT] block
+;src        Insert [SOURCE] block
+;prob       Insert [PROBLEM] / [SOLUTION] block
+;inbox      Insert inbox capture block
+
+Suggested Raycast AI commands:
+
+* Make ASCII Box
+* Fix Fixed-Width Table
+* Clean Plaintext Note
+* Turn Rough Notes Into Topic Card
+* Generate Search Bait
+* Extract Tags and Aliases
+* Clean OCR Text
+* Convert Bullets to Problem/Solution
+
+======================================================================
+INBOX / PARKING LOT
+===================
+
+Use this section for messy capture before moving items into real topic cards.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -112,10 +174,6 @@ I'm thinking of leveraging some of raycasts features to help make things easier/
     > so instead of ;abc it would be something diff like .,abc or ;;abc or @@abc etc
 
 
-
-
-
-
 ### Leverage BOTH raycasts AI-Commands & raycasts AI-chat-presets to help instantly-accomplish the more time-consuming/nit-picky stuff with this formatting
 ----> ❗EXAMPLES --> like the tab/spacing fixing/adjusting for the below ACII boxes
       +----------------------------------------------------------+
@@ -133,25 +191,8 @@ I'm thinking of leveraging some of raycasts features to help make things easier/
       DNS         App          Name resolution
 
 
-
-
-
-
-
 > maybe even consider giving these snippets their OWN dedicated prefix key/pattern to help reduce conflicts
     > so instead of ;abc it would be something diff like .,abc or ;;abc or @@abc etc
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 great GPT tips for .txt files here:📌
@@ -225,6 +266,89 @@ Hoisting affects var, not let/const
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+BELOW THIS POINT IS EVERYTHING I LIKE FROM THE SAMPLE.TXT stuff...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+======================================================================
+RAYCAST SNIPPET CHEAT SHEET
+===========================
+
+;topic      Insert full topic-card template
+;meta       Insert metadata block
+;h1         Insert major divider
+;h2         Insert section divider
+;def        Insert [DEFINITION] block
+;sum        Insert [SUMMARY] block
+;cmd        Insert [COMMANDS] block
+;gotcha     Insert [GOTCHAS] block
+;rel        Insert [RELATED] block
+;bait       Insert [SEARCH BAIT] block
+;src        Insert [SOURCE] block
+;prob       Insert [PROBLEM] / [SOLUTION] block
+;inbox      Insert inbox capture block
+
+Suggested Raycast AI commands:
+
+* Make ASCII Box
+* Fix Fixed-Width Table
+* Clean Plaintext Note
+* Turn Rough Notes Into Topic Card
+* Generate Search Bait
+* Extract Tags and Aliases
+* Clean OCR Text
+* Convert Bullets to Problem/Solution
+
+======================================================================
+INBOX / PARKING LOT
+===================
+
+Use this section for messy capture before moving items into real topic cards.
+
+---
 
 
 

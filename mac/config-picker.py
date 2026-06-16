@@ -5,6 +5,7 @@
 # @raycast.title Config Picker
 # @raycast.mode compact
 
+# @raycast.description A dropdown of all config files we commonly need to access/edit, so we can quickly open them in our editor of choice (currently set to VSCode but can be changed in the os.system line below). Similar to Advanced-Finder but for config files. Also useful just to have a single place to see all the config files we commonly use instead of having them scattered across different directories.
 # Optional parameters:
 # @raycast.icon 🤖
 # @raycast.packageName Developer Utils
