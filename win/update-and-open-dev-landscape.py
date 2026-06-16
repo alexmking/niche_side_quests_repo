@@ -26,8 +26,8 @@ import os
 # os.system("open file:///$NICHE_REPO_DIR/_universal/dev_landscape/index.html")
 
 #### RUN THE UPDATE SCRIPT FIRST, THEN OPEN THE DEV LANDSCAPE
-os.system("/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/scr-update_dev_landscape1.py")
-os.system("open file:///Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/index.html")
+os.system("D:\git\niche_side_quests_repo\_universal\dev_landscape\scr-update_dev_landscape1.py")  ### WINDOWS-VERSION
+os.system("open file:///D:\git\niche_side_quests_repo\_universal\dev_landscape\index.html")
 
 
 #### TRYING TO USE MY ENV-VAR for the PATH DEFINTION, but kept hitting brick walls so abandoned it...
