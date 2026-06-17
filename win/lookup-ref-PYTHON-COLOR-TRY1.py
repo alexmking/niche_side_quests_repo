@@ -6,7 +6,7 @@
 # @raycast.mode fullOutput
 
 # Optional parameters:
-# @raycast.icon 🤖
+# @raycast.icon ❌
 # @raycast.packageName Developer Utils
 # @raycast.description trying to get colored output with my lookref script by changing to PYTHON instead of sh
 

@@ -368,3 +368,317 @@ Use this section for messy capture before moving items into real topic cards.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,. THE BELOW BLOCK OF NOTES IS TMP PASTED FROM OLD NOTES TO TEST OUT OUR LOOKUP-script-commands... 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ### TRELLO prefixes (upon-creation and search/filter prefixes) keywords:
+      - atm trellos prefix is a PERIOD . (bc of phone keyboard has much easier access to period than ';' or some other symbol)
+      - trello needs a couple 'upon-creation' prefixes to enable some functionality when creating cards via my phones cquick-add shortcut (like add label or move-this-card to spec list) and we do this via pairing a rule or two with the prefixes 'starting-with' 
+      - .qk    ==    adds a PINK quick label to the card [upon-creation prefix] ✅DONE✅(as in, I created tge rule for this, at least on DW board)
+      - .pink    ==    adds a PINK quick label to the card [upon-creation prefix] ✅DONE✅
+      - .pp    ==    adds a PINK quick label to the card [upon-creation prefix] ✅DONE✅
+
+      - .id    ==    move the card to the IDEA list (and/or add IDEA label) (also could be .idea .lab etc )✅DONE✅(as in, I created tge rule for this, at least on DW board)
+      - .idea  ==    same as .id above, just an additional more-verbose version in case I forget what the official prefix of .id ✅DONE✅(as in, I created tge rule for this, at least on DW board)
+      - .ii     ==   same as idea above ✅DONE✅(as in, I created tge rule for this, at least on DW board)
+
+      - .buy     ==    moves card to the BUY_BACKLOG list ✅DONE✅
+      - .bb     ==    same as above ❗TODO❗
+
+      - .quote ==    move this card to the ssot-QUOTES list [upon-creation prefix] ✅DONE✅(as in, I created tge rule for this, at least on DW board)
+      - .qq     ==   same as above (move this card etc)✅DONE✅(as in, I created tge rule for this, at least on DW board)
+
+      - NOTE the 'triple-repeating-letter' is prob pointless, since double-repeating is unique enough (so no .bbb or .iii, instead just have .bb and .ii) 
+      
+      - 💥 THE SEARCH prefixes (for trello-search/filter) ❗TODO❗ BRAINSTORM MORE OF THESE! ❗TODO❗
+      - EXPL: these are all the cards that would be nice to be able to quickly find/pull up (anything else are just cards that we should be fine with leaving as is(aka not-searchable-optimzied))
+      - -ssot     ==    should pull up all the ssot cards on the board/board(s)
+      - _ssot     ==       ??
+      - .ssot     ==       ??
+      - .bookm ==          add the BOOKMARK label to this card (no need to MOVE to any list since bookmark cards are kinda meant to not have a home list and rather be accessible via search)
+      - .bb     ==         same as above
+      - .bm or bmark? ==   same as above
+         - 👀 EXPL WHY BOOKMARK is a good prefix AND label as well: it signifies this is an imp card that will likely be around for a bit and interatively added-to/edited/referenced. And this may sound like a pretty niche type of card but actually it's pretty common use case im running into.
+         - So whenver I see an imp card or create a card that i know ill be needing to augment later, I can just quickly add the BOOKM label/prefix and then do filter/search for it to pull up ALL the bookmark cards, where I then can just scroll through to the one I want
+
+
+
+   ### TRELLO LABELS and their corresp actions/rules etc 
+      - 1 GREEN ($$$)  ❗TODO❗MAY CHANGE THIS TO 'BOOKMARK' label
+      - 2 YELLOW (waiting_for_event...) [✅DONE✅set in stone as 'waiting']
+      - 3 ORANGE   jSearch
+      - 4 RED [set in stone as 'imp'] ✅DONE✅
+      - 5 PURPLE  IDEAS 
+      - 6 BLUE  QUOTES
+      - 7 TEAL-ish  BUY
+      - 8 lightGREEN (LATER) (8s for later)[prob set in stone?]
+      - 9 PINK quick pink [set in stone] ✅DONE✅
+      - 0 GREY (keep in mind)
+
+      - CUTTING ROOM FLOOR:
+      - WIP (aka WORK IN PROGRESS  ⭐⭐⭐⭐⭐⭐ THIS ONE COULD ACTUALLY BE 'USEFUL' AS A LABEL, more so than some other curr labels I have active above)
+      
+
+      - I NEED 1 label for the IDEA stuff, and 1 label for the QUOTE stuff(i tihnk, unless i could get away w not having label?)
+
+
+
+
+   ### SNIPPET KEYWORDS(kinda): list of the basic snippets I want active on both sides (mac/wind):
+      - *(replace all the '!' with ';' obviously)*
+      - ## FYI ALL THESE (except maybe some of the new/bottom ones) ARE ALREADY SETUP ON MAC SIDE, JUST NEED TO DO SAME ON ❗❗❗WIN❗❗❗ SIDE...
+      - !todo     ❗TODO❗
+      - !done     ✅DONE✅
+      - !pink     🎟️ (pink emoji)
+      - !quick    🎟️ (pink emoji)
+      - !qk       🎟️ (pink emoji)
+      - !alert 🚨
+      - !siren 🚨
+      - !done ✅DONE✅
+      - !excl ❗
+      - !peek 👀
+      - !look 👀
+      - !eyes 👀
+      - !x        ❌
+      - !no       ❌
+      - !redx    ❌
+      - !star ⭐
+      - !caut ⚠️
+      - !diam 💎
+      - !bluediam 🔷
+      - !bluecirc 🔵
+      - !greencirc 🟢
+      - !circle 🔵
+      - !square 🟦
+      - !bluesqu 🟦
+      - !cherry   🍒
+      - !quest    ❓
+      - !recyc    ♻️
+      - !cycle    🔄
+      - !new      🆕  
+      - !brick    🧱
+      - !rainb    🌈
+      - !idk      🤷‍♂️
+      - !shrug     🤷‍♂️
+      - !mdpython    (python codeblock markdown) ;todo ❗TODO❗ MANY OTHER 'md' based snippets to create, such as !mdtable1, etc etc
+      - !mdcpp       (c/c++ code block markdown)
+      - !mdcs        (csharp markdwon)
+      - !rem      ;= rem (the annoying comment syntax for windows-alias doc )
+      - !explode    💥💣🧨🤯 (one of these)
+      - !collision       💥💣🧨🤯 (one of these)
+      - !boom      💥💣🧨🤯 (one of these)
+      - !bomb      💥💣🧨🤯 (one of these)
+      - !idea     💡
+      - !bulb     💡
+      - !
+
+      - LASTLY: confirm all of these are active on both sides... [NOT DONE!]
+ 
+
+
+   ### RAYCAST's single-char triggers:
+   - f or ff for file-search
+   - p for path-search (wip) 
+   - s for search-Snippets (may repl w something more deserving since snippets ill rarely need to search for tbh)
+   - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+   - n for search RaycastNotes (changed since hyper-n was better suited for 'open a specific raycast-note' instead of 'search my raycast notes' since we dont want a bunch of sep raycastNotes bc that's what this ref doc/trello is for...rather RaycastNOTES should ONLY be for a quick spot/window to jot down misc stuff on the fly which we can do without leaving context of curr window etc etc)
+   - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+   - ? 📌 TODO!! think-of/add-more here (LOOK AT RAYC-notes in ref-board/reddit for other suggestions I'm forgetting atm)
+   - ?
+   ### SNIPPETS prefix approach:
+   - semicolon ; is the designated leading-char for most/all SNIPPETs, like so:  ;zzshorts  ||  ;keybvis
+   - the semicolon is *ONLY* for SNIPPETS. So you cant use it with any quicklink or raycast-alias defintions.
+      - this way, we don't have to worry about triggering snippets on accident while in middle of raycast-search while at the same time still being able to use very short snippet triggers like 'pzz'
+      - since 'pzz' can be the raycast alias, and ';pzz' can be the snippet
+   - HOWEVER, the above prefixes like 'p' or 'path' or 'edit' etc CAN be used for quicklink/aliases.
+   - We should have multiple snippets for the same shortcut/action so it's easier to trigger on the fly w/o needing to remember the exact single one (as long as the mult snippets dont interfere with the quickLink/alias equiv)
+      - the STANDARD snippet is the one with the leading ';', such as   ;zzshort    .... or ... ';pzpz' 
+         - Note because the context of SNIPPETS are already known, you dont really need the prefix like quicklink-names and aliases kinda do (like typing zzshorts in rayc-search, it's not clear what you want to do with zzshorts, which is why a prefix like 'p' or 'edit' is needed)
+            - However, with Snippets, you alraedy know you're trying to paste some string, so there's no need to define the snippet like ;pathzzshorts or ;pzshorts since the filename alone is enough to remove any ambiguity 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
