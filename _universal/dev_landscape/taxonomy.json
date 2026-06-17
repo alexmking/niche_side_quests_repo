@@ -48074,6 +48074,878 @@
             "Eventual Consistency",
             "System Design"
           ]
+        },
+        {
+          "id": "layered-architecture",
+          "name": "Layered Architecture",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "N-Tier Architecture",
+            "N-Layer Architecture",
+            "Layered Application Architecture",
+            "Traditional Layered Architecture"
+          ],
+          "notes": "Architecture pattern that organizes a system into horizontal layers, commonly separating presentation, business logic, application services, and data access responsibilities.",
+          "tags": [
+            "architecture-pattern",
+            "software-architecture",
+            "system-design",
+            "separation-of-concerns",
+            "backend",
+            "enterprise-architecture",
+            "application-design",
+            "maintainability"
+          ],
+          "whatIsIt": "A software architecture pattern that divides an application into distinct layers, where each layer has a focused responsibility and usually depends on the layer beneath it.",
+          "description": "Layered Architecture is a common software architecture pattern that organizes application code into horizontal layers such as presentation, application, domain or business logic, data access, and infrastructure. Each layer provides services to the layer above it and hides implementation details from higher layers. Developers use layered architecture to improve separation of concerns, maintainability, testability, and team understanding. It is common in enterprise applications, web applications, backend services, and systems with clear boundaries between UI, business rules, and persistence.",
+          "usedWith": [
+            "MVC",
+            "Domain-Driven Design",
+            "REST API",
+            "Relational Databases",
+            "Object-Oriented Programming",
+            "Dependency Injection",
+            "Service Layer",
+            "Repository Pattern",
+            "Unit Testing",
+            "Enterprise Applications",
+            "Backend",
+            "System Design"
+          ],
+          "builtOn": [
+            "Separation of Concerns",
+            "Abstraction",
+            "Modularity",
+            "Dependency Management",
+            "Encapsulation",
+            "Application Layers",
+            "Interface Boundaries"
+          ],
+          "builtUponBy": [
+            "Enterprise Application Development",
+            "Backend Service Design",
+            "Web Application Architecture",
+            "Service-Oriented Application Design",
+            "Maintainable Codebase Organization",
+            "Testable Application Design",
+            "Database-Backed Application Workflows",
+            "Team-Based Software Development"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Hexagonal Architecture",
+            "Clean Architecture",
+            "Onion Architecture",
+            "Microservices Architecture",
+            "Event-Driven Architecture",
+            "Monolithic Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "Application Architecture",
+            "Enterprise Architecture",
+            "Backend Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Controller layer calling a service layer",
+            "Service layer using a repository layer",
+            "Presentation layer separated from business logic",
+            "Data access layer wrapping database queries",
+            "Enterprise Java application with service and DAO layers",
+            "ASP.NET application organized into UI, business, and data layers",
+            "Backend API with controller, service, and repository layers"
+          ],
+          "useCases": [
+            "Organizing application code into clear responsibilities",
+            "Separating UI, business logic, and persistence concerns",
+            "Improving maintainability in enterprise applications",
+            "Making backend services easier to understand and test",
+            "Supporting team ownership of different application layers",
+            "Structuring monolithic applications",
+            "Reducing direct coupling between presentation and data access code",
+            "Creating conventional architecture for database-backed applications"
+          ],
+          "relatedConcepts": [
+            "Software Architecture",
+            "System Design",
+            "Separation of Concerns",
+            "MVC",
+            "Service Layer",
+            "Repository Pattern",
+            "Dependency Injection",
+            "Hexagonal Architecture",
+            "Clean Architecture",
+            "Onion Architecture",
+            "Monolithic Architecture",
+            "Enterprise Architecture"
+          ]
+        },
+        {
+          "id": "hexagonal-architecture",
+          "name": "Hexagonal Architecture",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Ports and Adapters Architecture",
+            "Ports & Adapters",
+            "Hexagonal Design",
+            "Alistair Cockburn Hexagonal Architecture"
+          ],
+          "notes": "Architecture pattern that keeps core business logic independent from external systems by connecting the application through ports and adapters.",
+          "tags": [
+            "architecture-pattern",
+            "software-architecture",
+            "system-design",
+            "ports-and-adapters",
+            "domain-driven-design",
+            "testability",
+            "decoupling",
+            "application-design"
+          ],
+          "whatIsIt": "A software architecture pattern that isolates core application and domain logic from external technologies by using ports as interfaces and adapters as implementations.",
+          "description": "Hexagonal Architecture, also called Ports and Adapters, is a software architecture pattern that places core business logic at the center of the system and connects it to the outside world through explicit ports and adapters. External concerns such as databases, web frameworks, message brokers, APIs, user interfaces, and third-party services are treated as replaceable adapters. This helps keep domain logic independent from infrastructure details, improves testability, reduces coupling, and supports long-term maintainability.",
+          "usedWith": [
+            "Domain-Driven Design",
+            "Dependency Injection",
+            "Interfaces",
+            "REST API",
+            "Message Queues",
+            "Databases",
+            "Unit Testing",
+            "Integration Testing",
+            "Clean Architecture",
+            "Onion Architecture",
+            "Backend",
+            "Microservices"
+          ],
+          "builtOn": [
+            "Separation of Concerns",
+            "Dependency Inversion",
+            "Ports",
+            "Adapters",
+            "Domain Model",
+            "Interface Boundaries",
+            "Infrastructure Decoupling"
+          ],
+          "builtUponBy": [
+            "Domain-Centric Application Design",
+            "Testable Backend Architecture",
+            "Microservice Design Workflows",
+            "Clean Architecture Workflows",
+            "Adapter-Based Integration Workflows",
+            "Infrastructure-Independent Business Logic",
+            "API and Persistence Decoupling",
+            "Maintainable Application Architecture"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Layered Architecture",
+            "Clean Architecture",
+            "Onion Architecture",
+            "Traditional N-Tier Architecture",
+            "Transaction Script",
+            "Microservices Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "Application Architecture",
+            "Domain-Driven Design",
+            "Backend Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "REST controller as an inbound adapter",
+            "Database repository implementation as an outbound adapter",
+            "Domain service independent from web framework code",
+            "Unit tests calling application ports without a database",
+            "Message queue consumer adapter triggering application logic",
+            "Swapping a PostgreSQL adapter for a different persistence adapter",
+            "Payment gateway integration hidden behind an outbound port"
+          ],
+          "useCases": [
+            "Keeping business logic independent from infrastructure",
+            "Making domain logic easier to unit test",
+            "Decoupling applications from databases and frameworks",
+            "Supporting replaceable external integrations",
+            "Designing maintainable backend services",
+            "Structuring domain-driven applications",
+            "Reducing coupling between core logic and delivery mechanisms",
+            "Improving long-term architecture flexibility"
+          ],
+          "relatedConcepts": [
+            "Software Architecture",
+            "System Design",
+            "Domain-Driven Design",
+            "Dependency Inversion",
+            "Dependency Injection",
+            "Interface",
+            "Adapter Pattern",
+            "Layered Architecture",
+            "Clean Architecture",
+            "Onion Architecture",
+            "Repository Pattern",
+            "Application Service"
+          ]
+        },
+        {
+          "id": "client-server-architecture",
+          "name": "Client-Server Architecture",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Client Server Architecture",
+            "Client-Server Model",
+            "Client Server Model",
+            "Client-Server Pattern"
+          ],
+          "notes": "Architecture pattern where client applications request services, data, or resources from centralized server systems over a network.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "client-server",
+            "system-design",
+            "distributed-systems",
+            "networking",
+            "web-development",
+            "backend"
+          ],
+          "whatIsIt": "A software architecture pattern where clients send requests to servers, and servers process those requests, manage shared resources, and return responses.",
+          "description": "Client-Server Architecture is a foundational software architecture pattern where client applications communicate with server systems over a network. Clients usually handle user interaction, presentation, or request initiation, while servers provide centralized services such as business logic, authentication, data storage, APIs, file access, or computation. This pattern is common in web applications, mobile apps, enterprise systems, REST APIs, databases, email systems, multiplayer services, and cloud-hosted applications. It is distinct from peer-to-peer architecture because client-server systems rely on dedicated server roles, while peer-to-peer systems distribute responsibilities across participating nodes.",
+          "usedWith": [
+            "Web Development",
+            "Frontend",
+            "Backend",
+            "REST API",
+            "HTTP",
+            "Databases",
+            "Authentication",
+            "Load Balancers",
+            "Cloud Computing",
+            "Microservices",
+            "Mobile Applications",
+            "Enterprise Software"
+          ],
+          "builtOn": [
+            "Networking",
+            "Request-Response Communication",
+            "Servers",
+            "Clients",
+            "APIs",
+            "Centralized Resource Management",
+            "Distributed Systems"
+          ],
+          "builtUponBy": [
+            "Web Application Architecture",
+            "Mobile App Backend Workflows",
+            "Enterprise Application Architecture",
+            "API-Based Integration Workflows",
+            "Cloud Application Deployment Workflows",
+            "Database-Backed Application Workflows",
+            "Multi-Tier Architecture Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Peer-to-Peer Architecture",
+            "Event-Driven Architecture",
+            "Serverless Architecture",
+            "Microservices Architecture",
+            "Monolithic Architecture",
+            "Distributed Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Architecture & Design",
+            "System Design",
+            "Distributed Systems",
+            "Web Application Architecture",
+            "Networked Application Design"
+          ],
+          "includes": [],
+          "examples": [
+            "Browser requesting a web page from a web server",
+            "Mobile app calling a backend REST API",
+            "Frontend application communicating with an API server",
+            "Database client connecting to a database server",
+            "Email client connecting to a mail server",
+            "Desktop app syncing data with a cloud service",
+            "Load-balanced web app with multiple backend servers",
+            "Enterprise application using centralized authentication server"
+          ],
+          "useCases": [
+            "Building web applications",
+            "Designing API-backed frontend applications",
+            "Centralizing shared data and business logic",
+            "Supporting many clients from one server platform",
+            "Managing authentication and access control centrally",
+            "Scaling server-side workloads behind load balancers",
+            "Building database-backed applications",
+            "Separating presentation logic from backend services"
+          ],
+          "relatedConcepts": [
+            "Peer-to-Peer Architecture",
+            "Frontend",
+            "Backend",
+            "Server",
+            "Client",
+            "REST API",
+            "HTTP",
+            "Distributed Systems",
+            "Load Balancer",
+            "Database",
+            "System Design",
+            "Web Development"
+          ]
+        },
+        {
+          "id": "peer-to-peer-architecture",
+          "name": "Peer-to-Peer Architecture",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "P2P Architecture",
+            "Peer to Peer Architecture",
+            "Peer-to-Peer Model",
+            "P2P Network Architecture",
+            "Decentralized Peer Architecture"
+          ],
+          "notes": "Architecture pattern where participating nodes communicate directly and can act as both clients and servers, sharing resources without relying on a single centralized server.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "peer-to-peer",
+            "p2p",
+            "distributed-systems",
+            "decentralized",
+            "networking",
+            "system-design"
+          ],
+          "whatIsIt": "A distributed architecture pattern where nodes communicate directly with one another and may both request and provide resources or services.",
+          "description": "Peer-to-Peer Architecture is a distributed architecture pattern where each participating node can act as both a client and a server. Instead of depending on a central server for all coordination and resource access, peers communicate directly to share data, compute, messages, files, or network services. This pattern is used in file sharing systems, blockchain networks, distributed storage, collaboration tools, messaging systems, content distribution, and resilient decentralized systems. Peer-to-peer architecture can improve resilience, resource sharing, and decentralization, but it also introduces challenges around discovery, consistency, security, trust, NAT traversal, coordination, and abuse prevention.",
+          "usedWith": [
+            "Distributed Systems",
+            "Networking",
+            "Blockchain",
+            "Distributed Hash Tables",
+            "File Sharing",
+            "Decentralized Applications",
+            "Content Distribution",
+            "Cryptography",
+            "Consensus Algorithms",
+            "NAT Traversal",
+            "WebRTC",
+            "Message Passing"
+          ],
+          "builtOn": [
+            "Distributed Systems",
+            "Peer Nodes",
+            "Direct Node Communication",
+            "Resource Sharing",
+            "Decentralization",
+            "Network Discovery",
+            "Fault Tolerance"
+          ],
+          "builtUponBy": [
+            "Decentralized Application Workflows",
+            "Blockchain Network Architectures",
+            "Distributed File Sharing Workflows",
+            "Distributed Storage Workflows",
+            "Resilient Network Design",
+            "Peer Messaging Workflows",
+            "Content Distribution Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Client-Server Architecture",
+            "Centralized Architecture",
+            "Microservices Architecture",
+            "Event-Driven Architecture",
+            "Service-Oriented Architecture",
+            "Federated Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Architecture & Design",
+            "System Design",
+            "Distributed Systems",
+            "Networked Application Design",
+            "Decentralized Systems"
+          ],
+          "includes": [],
+          "examples": [
+            "File sharing network where users download from multiple peers",
+            "Blockchain nodes validating and sharing transactions",
+            "Distributed storage system spreading data across peers",
+            "WebRTC peers communicating directly in a browser app",
+            "P2P messaging system routing messages between nodes",
+            "Decentralized application running across independent peers",
+            "Content distribution system using peer bandwidth",
+            "Distributed hash table used for peer discovery"
+          ],
+          "useCases": [
+            "Building decentralized systems",
+            "Sharing resources directly between nodes",
+            "Reducing dependence on a central server",
+            "Improving resilience through distributed participation",
+            "Supporting blockchain and distributed ledger networks",
+            "Building distributed file sharing systems",
+            "Supporting direct peer communication",
+            "Designing systems with decentralized ownership or control"
+          ],
+          "relatedConcepts": [
+            "Client-Server Architecture",
+            "Distributed Systems",
+            "Decentralization",
+            "Blockchain",
+            "Distributed Hash Table",
+            "Consensus",
+            "Fault Tolerance",
+            "Replication",
+            "Network Protocol",
+            "WebRTC",
+            "System Design",
+            "Networking"
+          ]
+        },
+        {
+          "id": "monolithic-architecture",
+          "name": "Monolithic Architecture",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Monolith",
+            "Monolithic Application",
+            "Monolithic System",
+            "Monolithic Software Architecture"
+          ],
+          "notes": "Software architecture pattern where an application is built, packaged, deployed, and scaled as a single unified unit rather than as independently deployable services.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "monolith",
+            "software-architecture",
+            "backend",
+            "deployment",
+            "system-design",
+            "application-design"
+          ],
+          "whatIsIt": "An architecture pattern where most or all application functionality is contained in one deployable application or codebase.",
+          "description": "Monolithic Architecture is a software architecture pattern where an application is built and deployed as one unified unit. Core capabilities such as user interfaces, business logic, data access, background jobs, integrations, and configuration often live in the same codebase or deployable artifact. Monoliths can be simple to develop, test, deploy, and reason about early in a product's lifecycle, but they can become harder to scale, modularize, and change as the system grows. Monolithic Architecture is commonly compared with Microservices and Modular Monolith, where the key distinction is whether the system is deployed as one unit or split into independently deployable services.",
+          "usedWith": [
+            "Software Architecture",
+            "System Design",
+            "Backend",
+            "Frontend",
+            "Databases",
+            "Deployment",
+            "CI/CD",
+            "MVC",
+            "Layered Architecture",
+            "Ruby on Rails",
+            "Django",
+            "ASP.NET Core"
+          ],
+          "builtOn": [
+            "Single Deployable Unit",
+            "Shared Codebase",
+            "Shared Runtime",
+            "Centralized Data Access",
+            "Application Layers",
+            "In-Process Communication"
+          ],
+          "builtUponBy": [
+            "Traditional Web Application Development",
+            "Small Team Application Development",
+            "Early-Stage Product Development",
+            "Internal Business Application Workflows",
+            "Single-Application Deployment Workflows",
+            "Legacy System Modernization Planning"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Microservices",
+            "Modular Monolith",
+            "Service-Oriented Architecture",
+            "Serverless Architecture",
+            "Event-Driven Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "Application Architecture",
+            "Backend Architecture",
+            "Deployment Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Rails application deployed as one app",
+            "Django application with all business logic in one deployable service",
+            "ASP.NET Core web application deployed as a single backend",
+            "Enterprise application with UI, business logic, and data access in one system",
+            "Legacy business system deployed as one large application",
+            "Single backend serving multiple application features"
+          ],
+          "useCases": [
+            "Building small to medium applications quickly",
+            "Keeping deployment simple",
+            "Developing early-stage products",
+            "Reducing distributed system complexity",
+            "Maintaining internal business applications",
+            "Starting with a simpler architecture before scaling out",
+            "Avoiding premature microservice complexity"
+          ],
+          "relatedConcepts": [
+            "Microservices",
+            "Modular Monolith",
+            "Software Architecture",
+            "System Design",
+            "Layered Architecture",
+            "MVC",
+            "Deployment",
+            "Coupling",
+            "Cohesion",
+            "Technical Debt",
+            "Scalability",
+            "Legacy System"
+          ]
+        },
+        {
+          "id": "modular-monolith",
+          "name": "Modular Monolith",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Modular Monolithic Architecture",
+            "Modular Monolith Architecture",
+            "Well-Structured Monolith",
+            "Module-Based Monolith"
+          ],
+          "notes": "Architecture pattern where an application is deployed as a single unit but internally organized into clear modules with strong boundaries and controlled dependencies.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "modularity",
+            "monolith",
+            "software-architecture",
+            "system-design",
+            "domain-boundaries",
+            "application-design"
+          ],
+          "whatIsIt": "An architecture pattern that keeps a system as one deployable application while organizing it into well-defined internal modules.",
+          "description": "A Modular Monolith is an architecture pattern that combines the operational simplicity of a monolith with stronger internal modular boundaries. The application is still built and deployed as one unit, but its business capabilities are separated into modules with clear ownership, explicit interfaces, controlled dependencies, and minimal cross-module coupling. Modular Monoliths are often used as a middle ground between a traditional monolith and microservices because they can improve maintainability without introducing distributed system complexity. They can also provide a migration path toward microservices if certain modules later need to become independent services.",
+          "usedWith": [
+            "Monolithic Architecture",
+            "Microservices",
+            "Domain-Driven Design",
+            "Bounded Context",
+            "Modularity",
+            "Clean Architecture",
+            "Layered Architecture",
+            "Dependency Management",
+            "Software Architecture",
+            "System Design",
+            "CI/CD",
+            "Databases"
+          ],
+          "builtOn": [
+            "Monolithic Architecture",
+            "Modularity",
+            "Encapsulation",
+            "Separation of Concerns",
+            "Explicit Module Boundaries",
+            "Controlled Dependencies",
+            "Domain Boundaries"
+          ],
+          "builtUponBy": [
+            "Maintainable Application Architecture",
+            "Domain-Driven Design Workflows",
+            "Microservice Migration Planning",
+            "Large Codebase Organization",
+            "Team-Based Module Ownership",
+            "Incremental Architecture Modernization",
+            "Single-Deployment Application Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Monolithic Architecture",
+            "Microservices",
+            "Service-Oriented Architecture",
+            "Layered Architecture",
+            "Clean Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "Application Architecture",
+            "Domain-Driven Design",
+            "Large-Scale Application Design"
+          ],
+          "includes": [],
+          "examples": [
+            "E-commerce application split into catalog, orders, payments, and shipping modules",
+            "Single deployable backend with strict domain module boundaries",
+            "Modular Rails or Django application organized by business capability",
+            "Enterprise application using modules instead of separate microservices",
+            "Modular monolith later split into services where needed",
+            "Backend codebase with enforced dependency rules between modules"
+          ],
+          "useCases": [
+            "Improving maintainability in a large monolith",
+            "Avoiding premature microservices",
+            "Organizing code by business capability",
+            "Reducing coupling inside a single application",
+            "Preparing for possible microservice extraction",
+            "Keeping deployment simple while improving architecture",
+            "Supporting team ownership of application modules",
+            "Modernizing legacy monolithic systems incrementally"
+          ],
+          "relatedConcepts": [
+            "Monolithic Architecture",
+            "Microservices",
+            "Modularity",
+            "Encapsulation",
+            "Separation of Concerns",
+            "Coupling",
+            "Cohesion",
+            "Domain-Driven Design",
+            "Bounded Context",
+            "Clean Architecture",
+            "Software Architecture",
+            "System Design"
+          ]
+        },
+        {
+          "id": "clean-architecture",
+          "name": "Clean Architecture",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Clean Architecture Pattern",
+            "Robert C. Martin Clean Architecture",
+            "Uncle Bob Clean Architecture",
+            "Dependency Rule Architecture"
+          ],
+          "notes": "Architecture pattern that organizes software around independent business rules and inward-pointing dependencies so core domain logic remains separate from frameworks, databases, UI, and external systems.",
+          "tags": [
+            "architecture-pattern",
+            "software-architecture",
+            "system-design",
+            "dependency-inversion",
+            "domain-driven-design",
+            "separation-of-concerns",
+            "maintainability",
+            "testability"
+          ],
+          "whatIsIt": "A software architecture pattern that keeps business rules and application logic independent from frameworks, databases, user interfaces, and external infrastructure by enforcing inward-pointing dependencies.",
+          "description": "Clean Architecture is a software architecture pattern focused on separating core business rules from external details such as frameworks, databases, UI, web APIs, and infrastructure. It typically organizes systems into layers such as entities, use cases, interface adapters, and frameworks/drivers, with dependencies pointing inward toward the core domain and application logic. Developers use Clean Architecture to improve maintainability, testability, framework independence, database independence, and long-term flexibility in complex applications.",
+          "usedWith": [
+            "Domain-Driven Design",
+            "Dependency Inversion",
+            "Dependency Injection",
+            "Interfaces",
+            "Use Cases",
+            "Repository Pattern",
+            "Unit Testing",
+            "Integration Testing",
+            "REST API",
+            "Databases",
+            "Backend",
+            "Microservices"
+          ],
+          "builtOn": [
+            "Separation of Concerns",
+            "Dependency Inversion",
+            "Abstraction",
+            "Interface Boundaries",
+            "Domain Model",
+            "Use Case Layer",
+            "Framework Independence"
+          ],
+          "builtUponBy": [
+            "Domain-Centric Application Design",
+            "Testable Backend Architecture",
+            "Enterprise Application Architecture",
+            "Maintainable Application Design",
+            "Microservice Design Workflows",
+            "Framework-Independent Business Logic",
+            "API and Persistence Decoupling",
+            "Long-Term Software Maintenance"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Hexagonal Architecture",
+            "Onion Architecture",
+            "Layered Architecture",
+            "Traditional N-Tier Architecture",
+            "Transaction Script",
+            "Microservices Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "Application Architecture",
+            "Domain-Driven Design",
+            "Backend Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Use case layer independent from database implementation",
+            "Controller mapping HTTP requests to application use cases",
+            "Repository interface defined inside the application core",
+            "Database adapter implementing a persistence gateway",
+            "Domain entity tested without web framework dependencies",
+            "Application service orchestrating business rules",
+            "UI and database treated as replaceable outer-layer details"
+          ],
+          "useCases": [
+            "Separating business logic from frameworks",
+            "Making core application logic easier to unit test",
+            "Reducing coupling to databases and UI frameworks",
+            "Structuring complex backend applications",
+            "Supporting long-term maintainability",
+            "Keeping domain rules independent from infrastructure",
+            "Designing enterprise applications with clear boundaries",
+            "Improving flexibility when external tools change"
+          ],
+          "relatedConcepts": [
+            "Software Architecture",
+            "System Design",
+            "Dependency Inversion",
+            "Dependency Injection",
+            "Domain-Driven Design",
+            "Hexagonal Architecture",
+            "Onion Architecture",
+            "Layered Architecture",
+            "Repository Pattern",
+            "Use Case",
+            "Application Service",
+            "Separation of Concerns"
+          ]
+        },
+        {
+          "id": "onion-architecture",
+          "name": "Onion Architecture",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Onion Architecture Pattern",
+            "Onion Application Architecture",
+            "Domain-Centric Onion Architecture",
+            "Onion Layered Architecture"
+          ],
+          "notes": "Architecture pattern that places the domain model at the center and organizes application, infrastructure, and presentation concerns into outer layers that depend inward.",
+          "tags": [
+            "architecture-pattern",
+            "software-architecture",
+            "system-design",
+            "domain-driven-design",
+            "dependency-inversion",
+            "separation-of-concerns",
+            "maintainability",
+            "testability"
+          ],
+          "whatIsIt": "A domain-centered architecture pattern that organizes software into concentric layers where dependencies point inward toward the domain model.",
+          "description": "Onion Architecture is a software architecture pattern that places the domain model at the center of the application and surrounds it with layers for application services, interfaces, infrastructure, persistence, and presentation. Like Clean Architecture and Hexagonal Architecture, Onion Architecture emphasizes dependency inversion and inward-pointing dependencies so core business logic does not depend on databases, frameworks, user interfaces, or external services. Developers use it to improve testability, maintainability, domain clarity, and separation between business rules and infrastructure details.",
+          "usedWith": [
+            "Domain-Driven Design",
+            "Dependency Inversion",
+            "Dependency Injection",
+            "Interfaces",
+            "Repository Pattern",
+            "Unit Testing",
+            "Integration Testing",
+            "REST API",
+            "Databases",
+            "Backend",
+            "Clean Architecture",
+            "Hexagonal Architecture"
+          ],
+          "builtOn": [
+            "Domain Model",
+            "Dependency Inversion",
+            "Separation of Concerns",
+            "Layered Boundaries",
+            "Interface Abstractions",
+            "Infrastructure Decoupling",
+            "Domain-Driven Design Concepts"
+          ],
+          "builtUponBy": [
+            "Domain-Centric Application Design",
+            "Testable Backend Architecture",
+            "Enterprise Application Architecture",
+            "Maintainable Application Design",
+            "Persistence-Decoupled Application Workflows",
+            "Domain-Driven Design Implementations",
+            "Application Service Layer Workflows",
+            "Infrastructure-Independent Business Logic"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Clean Architecture",
+            "Hexagonal Architecture",
+            "Layered Architecture",
+            "Traditional N-Tier Architecture",
+            "Transaction Script",
+            "Microservices Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "Application Architecture",
+            "Domain-Driven Design",
+            "Backend Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Domain model independent from database code",
+            "Repository interface defined near the domain layer",
+            "Infrastructure layer implementing persistence details",
+            "Application service coordinating domain operations",
+            "Web controller depending on application services",
+            "Unit tests exercising domain logic without infrastructure",
+            "Outer database adapter depending inward on domain abstractions"
+          ],
+          "useCases": [
+            "Keeping domain logic at the center of the application",
+            "Decoupling business rules from infrastructure",
+            "Improving testability of domain and application logic",
+            "Structuring backend applications around the domain model",
+            "Reducing coupling to persistence frameworks",
+            "Supporting domain-driven design implementations",
+            "Making infrastructure details replaceable",
+            "Improving maintainability in enterprise applications"
+          ],
+          "relatedConcepts": [
+            "Software Architecture",
+            "System Design",
+            "Domain-Driven Design",
+            "Domain Model",
+            "Dependency Inversion",
+            "Dependency Injection",
+            "Repository Pattern",
+            "Application Service",
+            "Clean Architecture",
+            "Hexagonal Architecture",
+            "Layered Architecture",
+            "Separation of Concerns"
+          ]
         }
       ],
       "Design & Modeling": [
