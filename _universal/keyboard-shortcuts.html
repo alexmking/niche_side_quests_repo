@@ -514,6 +514,10 @@
       overflow-y: auto;
     }
 
+    .future-enhancements {
+      min-width: 260px;
+    }
+
     .shortcut-list::-webkit-scrollbar { width: 6px; }
     .shortcut-list::-webkit-scrollbar-track { background: transparent; }
     .shortcut-list::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
@@ -591,7 +595,7 @@
 </head>
 <body>
 
-<h1>Keyboard Shortcuts Visualizer</h1>
+<h1>Global Keyboard Shortcuts Visualizer</h1>
 <p class="subtitle">Select a modifier group · Hover highlighted keys for details</p>
 
 <div class="tabs">
@@ -651,6 +655,12 @@
     <h3 id="shortlist-title">Shortlist to Consider</h3>
     <p class="shortlist-subtitle">may try adding</p>
     <div id="shortlist-items"></div>
+  </div>
+
+  <div class="shortcut-list future-enhancements" id="future-enhancements-panel">
+    <h3 id="future-enhancements-title">Future Enhancements</h3>
+    <p class="shortlist-subtitle">shared across all mod groups</p>
+    <div id="future-enhancements-items"></div>
   </div>
 
   <div class="shortcut-list">
@@ -1161,15 +1171,6 @@
         'IN PRACTICE Id have 3-5 hotkeys that OPEN-FINDER-WINDOW-AT-HARDCODED-DIR',
         'obviously the hardcoded-directories would be strategically chosen to make navigation efficient and to satify the following constraint:',
         'constraint: no matter where I WANT TO GO WITHIN MY FILE SYSTEM...I have a hotkey that can get me within a few directories of it (aka close-enough)',
-        '------------------------------------------------------------------',
-        'TODOs / FUTURE ENHANCEMENTS for this keybvis as a whole (not just alt+option):',
-        '------------------------------------------------------------------',
-        '1. add a hover or clickable expansion to see the full text of a key (as many of them are cutoff in the visualizer due to space constraints) (maybe also add a way to show the full text of all the shortcuts in a separate view or something like that)',
-        '2. ',
-        '3. ',
-
-
-
       ],
       'alt': [
         'Placeholder shortcut idea 1',
@@ -1203,6 +1204,15 @@
         'hyper-R may be too val for quick-ref-DIR, when it could be lookup-ref which is way more imp/useful',
       ],
     };
+
+    const futureEnhancements = [
+      '1. add a hover or clickable expansion to see the full text of a key (as many of them are cutoff in the visualizer due to space constraints) (maybe also add a way to show the full text of all the shortcuts in a separate view or something like that)',
+      'Remember collapsed or expanded card states per mod group',
+      'Add filters for bound, unbound, and color-coded keys',
+      'Add a detail drawer for shortcuts whose text is too long for the keycap',
+      'Support icon badges for shortcut categories',
+      'Import and export the shortcut map from a text file',
+    ];
 
 // ── QWERTY keyboard layout definition ────────────────────────────────────────
 // Format: [displayLabel, lookupKey, ?extraCssClass]
@@ -1422,6 +1432,29 @@ function renderShortlist() {
   });
 }
 
+// ── Render future enhancements ─────────────────────────────────────────────
+function renderFutureEnhancements() {
+  const container = document.getElementById('future-enhancements-items');
+  container.innerHTML = '';
+
+  if (futureEnhancements.length === 0) {
+    container.innerHTML = '<div class="no-shortcuts">No ideas listed</div>';
+    return;
+  }
+
+  futureEnhancements.forEach(text => {
+    const item = document.createElement('div');
+    item.className = 'shortlist-item';
+    const bullet = document.createElement('span');
+    bullet.className = 'shortlist-bullet';
+    const desc = document.createElement('span');
+    desc.textContent = text;
+    item.appendChild(bullet);
+    item.appendChild(desc);
+    container.appendChild(item);
+  });
+}
+
 // ── Render shortcut list ──────────────────────────────────────────────────────
 function renderList() {
   const map = shortcuts[currentTab] || {};
@@ -1504,6 +1537,7 @@ function renderList() {
 renderKeyboard();
 renderList();
 renderShortlist();
+renderFutureEnhancements();
 
 // ── Keyboard navigation (← → to cycle tabs) ──────────────────────────────────
 const tabOrder = ['alt-option', 'alt', 'alt-shift', 'hyper'];
