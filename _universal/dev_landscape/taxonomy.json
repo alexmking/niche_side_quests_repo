@@ -48946,6 +48946,880 @@
             "Layered Architecture",
             "Separation of Concerns"
           ]
+        },
+        {
+          "id": "three-tier-architecture",
+          "name": "Three-Tier Architecture",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "3-Tier Architecture",
+            "Three Layer Architecture",
+            "3-Tier Application Architecture",
+            "Presentation Business Data Architecture"
+          ],
+          "notes": "Architecture pattern that separates an application into presentation, application/business logic, and data layers to improve organization, maintainability, scalability, and separation of concerns.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "system-design",
+            "layered-architecture",
+            "web-development",
+            "enterprise-software",
+            "backend",
+            "separation-of-concerns"
+          ],
+          "whatIsIt": "An architecture pattern that organizes applications into three main tiers: presentation, business/application logic, and data storage.",
+          "description": "Three-Tier Architecture is a common software architecture pattern that separates an application into a presentation tier, an application or business logic tier, and a data tier. The presentation tier handles user interaction, the application tier processes business rules and workflows, and the data tier manages persistence through databases or storage systems. This pattern is widely used in web applications, enterprise systems, API-backed frontends, database-backed applications, and traditional business software. It is related to layered architecture and client-server architecture, but it specifically emphasizes the separation of UI, logic, and data responsibilities into three tiers.",
+          "usedWith": [
+            "Client-Server Architecture",
+            "Layered Architecture",
+            "Web Development",
+            "Frontend",
+            "Backend",
+            "REST API",
+            "Databases",
+            "MVC",
+            "Enterprise Software",
+            "Load Balancers",
+            "Cloud Computing",
+            "Microservices"
+          ],
+          "builtOn": [
+            "Separation of Concerns",
+            "Layered Architecture",
+            "Client-Server Architecture",
+            "Presentation Layer",
+            "Business Logic Layer",
+            "Data Access Layer",
+            "Database-Backed Applications"
+          ],
+          "builtUponBy": [
+            "Enterprise Application Architecture",
+            "Web Application Architecture",
+            "API-Backed Frontend Workflows",
+            "Database-Backed Application Workflows",
+            "Multi-Tier Deployment Workflows",
+            "Cloud Application Deployment Workflows",
+            "Backend Service Design Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Two-Tier Architecture",
+            "Microservices Architecture",
+            "Monolithic Architecture",
+            "Serverless Architecture",
+            "Event-Driven Architecture",
+            "Peer-to-Peer Architecture"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Architecture & Design",
+            "System Design",
+            "Enterprise Architecture",
+            "Web Application Architecture",
+            "Layered Application Design"
+          ],
+          "includes": [],
+          "examples": [
+            "Web frontend calling a backend API that reads from a database",
+            "Browser presentation tier, application server tier, and database tier",
+            "Enterprise application separating UI, business rules, and persistence",
+            "REST API service sitting between a frontend and database",
+            "Load-balanced application tier connected to a database cluster",
+            "MVC application deployed with separate database infrastructure",
+            "Cloud-hosted three-tier web application"
+          ],
+          "useCases": [
+            "Separating user interface, business logic, and data storage",
+            "Building maintainable web applications",
+            "Designing enterprise software systems",
+            "Scaling application and database tiers independently",
+            "Organizing backend services around business logic",
+            "Improving separation of concerns",
+            "Supporting database-backed application design",
+            "Teaching foundational system design structure"
+          ],
+          "relatedConcepts": [
+            "Layered Architecture",
+            "Client-Server Architecture",
+            "Separation of Concerns",
+            "Frontend",
+            "Backend",
+            "Database",
+            "REST API",
+            "MVC",
+            "Enterprise Software",
+            "System Design",
+            "Load Balancer",
+            "Scalability"
+          ]
+        },
+        {
+          "id": "cqrs",
+          "name": "CQRS",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Command Query Responsibility Segregation",
+            "Command Query Responsibility Segregation Pattern",
+            "CQRS Pattern",
+            "Command Query Separation"
+          ],
+          "notes": "Architecture pattern that separates write operations that change state from read operations that query state, often using different models, handlers, or data stores for commands and queries.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "cqrs",
+            "system-design",
+            "distributed-systems",
+            "event-driven",
+            "domain-driven-design",
+            "backend"
+          ],
+          "whatIsIt": "An architecture pattern that separates commands that modify state from queries that read state.",
+          "description": "CQRS, or Command Query Responsibility Segregation, is an architecture pattern that separates write-side operations from read-side operations. Commands represent intent to change system state, while queries retrieve data without changing state. In simple systems, CQRS may mean separate handlers or service methods; in more complex systems, it may involve separate read and write models, projections, databases, message queues, and event-driven workflows. CQRS is commonly used with Domain-Driven Design, Event Sourcing, microservices, distributed systems, and systems where read and write workloads have different scaling, consistency, or modeling needs.",
+          "usedWith": [
+            "Event Sourcing",
+            "Domain-Driven Design",
+            "Microservices",
+            "Event-Driven Architecture",
+            "Message Queues",
+            "Command Handlers",
+            "Query Handlers",
+            "Read Models",
+            "Write Models",
+            "Projections",
+            "Eventual Consistency",
+            "Backend"
+          ],
+          "builtOn": [
+            "Command-Query Separation",
+            "Separate Read and Write Models",
+            "Domain Modeling",
+            "Application Layer Handlers",
+            "State Change Commands",
+            "Read-Only Queries",
+            "Eventual Consistency"
+          ],
+          "builtUponBy": [
+            "Event-Driven System Workflows",
+            "Domain-Driven Design Workflows",
+            "Scalable Read Model Workflows",
+            "Microservice Architecture Workflows",
+            "Event Sourcing Workflows",
+            "Complex Business Application Design",
+            "Distributed Application Architecture"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "CRUD Architecture",
+            "Layered Architecture",
+            "Traditional Service Layer",
+            "Transaction Script",
+            "Active Record Pattern"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "Domain-Driven Design",
+            "Event-Driven Architecture",
+            "Backend Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Separate command handler for creating an order",
+            "Separate query handler for reading order history",
+            "Write model optimized for business rules",
+            "Read model optimized for dashboards",
+            "CQRS with projections built from events",
+            "Microservice using separate read and write databases",
+            "Command bus dispatching state-changing requests"
+          ],
+          "useCases": [
+            "Separating read and write responsibilities",
+            "Scaling read-heavy systems",
+            "Modeling complex business workflows",
+            "Supporting event-driven architectures",
+            "Building optimized read models",
+            "Reducing complexity in domain write logic",
+            "Pairing with Event Sourcing",
+            "Handling different consistency needs for reads and writes"
+          ],
+          "relatedConcepts": [
+            "Event Sourcing",
+            "Domain-Driven Design",
+            "Command Handler",
+            "Query Handler",
+            "Read Model",
+            "Write Model",
+            "Projection",
+            "Event-Driven Architecture",
+            "Microservices",
+            "Eventual Consistency",
+            "CRUD",
+            "System Design"
+          ]
+        },
+        {
+          "id": "event-sourcing",
+          "name": "Event Sourcing",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Event Sourcing Pattern",
+            "Event-Sourced Architecture",
+            "Event-Sourced System",
+            "Event Store Pattern"
+          ],
+          "notes": "Architecture pattern where application state is derived from an append-only history of domain events rather than storing only the latest current state.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "event-sourcing",
+            "event-driven",
+            "distributed-systems",
+            "domain-driven-design",
+            "auditability",
+            "backend"
+          ],
+          "whatIsIt": "An architecture pattern where state changes are stored as a sequence of immutable events and current state is rebuilt from those events.",
+          "description": "Event Sourcing is an architecture pattern where every meaningful state change is recorded as an immutable event. Instead of only storing the current state of an entity, the system stores an append-only event history that can be replayed to reconstruct current state, build projections, support audit trails, debug past behavior, and publish changes to other parts of the system. Event Sourcing is commonly used with CQRS, Domain-Driven Design, event-driven architecture, message brokers, projections, and systems that need strong traceability or historical reconstruction. It adds complexity, so it is most useful when auditability, temporal history, integration events, or complex business workflows justify it.",
+          "usedWith": [
+            "CQRS",
+            "Domain-Driven Design",
+            "Event-Driven Architecture",
+            "Message Queues",
+            "Event Store",
+            "Projections",
+            "Read Models",
+            "Eventual Consistency",
+            "Microservices",
+            "Kafka",
+            "RabbitMQ",
+            "Backend"
+          ],
+          "builtOn": [
+            "Immutable Events",
+            "Append-Only Logs",
+            "Domain Events",
+            "Event Stores",
+            "State Reconstruction",
+            "Projections",
+            "Eventual Consistency"
+          ],
+          "builtUponBy": [
+            "Event-Driven System Workflows",
+            "CQRS Workflows",
+            "Audit Trail Workflows",
+            "Domain-Driven Design Workflows",
+            "Historical State Reconstruction",
+            "Distributed Integration Workflows",
+            "Complex Business Process Modeling"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "CRUD State Persistence",
+            "Traditional Relational Persistence",
+            "Change Data Capture",
+            "Audit Logging",
+            "Snapshot-Based Persistence"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "Event-Driven Architecture",
+            "Domain-Driven Design",
+            "Backend Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Storing OrderCreated and OrderPaid events instead of only an order row",
+            "Rebuilding account balance from transaction events",
+            "Creating projections for reporting dashboards",
+            "Replaying events to debug a production issue",
+            "Using an event store as the source of truth",
+            "Publishing domain events to other services",
+            "Using snapshots to speed up aggregate reconstruction"
+          ],
+          "useCases": [
+            "Maintaining a complete audit history",
+            "Reconstructing past application state",
+            "Supporting event-driven integration",
+            "Building projections for read models",
+            "Debugging how state changed over time",
+            "Modeling complex business workflows",
+            "Supporting CQRS architectures",
+            "Preserving immutable domain event history"
+          ],
+          "relatedConcepts": [
+            "CQRS",
+            "Domain Event",
+            "Event Store",
+            "Projection",
+            "Read Model",
+            "Event Replay",
+            "Event-Driven Architecture",
+            "Domain-Driven Design",
+            "Microservices",
+            "Eventual Consistency",
+            "Message Queue",
+            "Audit Trail"
+          ]
+        },
+        {
+          "id": "saga-pattern",
+          "name": "Saga Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Saga",
+            "Distributed Saga",
+            "Saga Transaction Pattern",
+            "Microservices Saga Pattern"
+          ],
+          "notes": "Architecture pattern for managing distributed transactions across services using a sequence of local transactions and compensating actions instead of a single global transaction.",
+          "tags": [
+            "architecture-pattern",
+            "microservices",
+            "distributed-systems",
+            "distributed-transactions",
+            "eventual-consistency",
+            "compensation",
+            "system-design",
+            "reliability"
+          ],
+          "whatIsIt": "A distributed transaction pattern that coordinates multi-step business workflows across services using local transactions and compensating actions.",
+          "description": "Saga Pattern is an architecture pattern used in distributed systems and microservices to manage business transactions that span multiple services without requiring a single global database transaction. A saga breaks a larger workflow into a sequence of local transactions, where each step updates one service and publishes or triggers the next step. If a later step fails, compensating actions undo or logically reverse earlier completed steps. Saga Pattern is commonly used when services own separate databases, eventual consistency is acceptable, and teams need reliable coordination across payment, inventory, order, shipping, account, or workflow services.",
+          "usedWith": [
+            "Microservices",
+            "Distributed Systems",
+            "Event-Driven Architecture",
+            "Message Queues",
+            "Event Bus",
+            "Domain-Driven Design",
+            "CQRS",
+            "Event Sourcing",
+            "REST API",
+            "Workflow Orchestration",
+            "Eventually Consistent Databases",
+            "Outbox Pattern"
+          ],
+          "builtOn": [
+            "Distributed Transactions",
+            "Local Transactions",
+            "Compensating Actions",
+            "Eventual Consistency",
+            "Service Autonomy",
+            "Message-Based Coordination",
+            "Business Workflow Modeling"
+          ],
+          "builtUponBy": [
+            "Distributed Business Workflow Design",
+            "Microservice Transaction Management",
+            "Order Processing Workflows",
+            "Payment and Inventory Coordination",
+            "Cloud-Native Application Design",
+            "Resilient Service Coordination",
+            "Event-Driven Workflow Management",
+            "Eventually Consistent System Design"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Two-Phase Commit",
+            "Distributed Transaction Coordinator",
+            "Monolithic Database Transaction",
+            "Process Manager Pattern",
+            "Workflow Engine",
+            "Choreography Pattern",
+            "Orchestration Pattern"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Microservices Architecture",
+            "Distributed Systems",
+            "System Design",
+            "Event-Driven Architecture",
+            "Cloud-Native Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Order service reserving inventory, charging payment, and scheduling shipment",
+            "Compensating payment refund after shipping reservation failure",
+            "Choreographed saga using domain events between services",
+            "Orchestrated saga managed by a workflow coordinator",
+            "Microservice checkout workflow with rollback-like compensation",
+            "Saga state stored for retry and recovery after failure",
+            "Outbox pattern used to reliably publish saga events"
+          ],
+          "useCases": [
+            "Coordinating distributed transactions across microservices",
+            "Managing multi-step business workflows",
+            "Avoiding global transactions in distributed systems",
+            "Handling failures with compensating actions",
+            "Supporting eventual consistency between services",
+            "Designing reliable order, payment, and inventory flows",
+            "Improving resilience in service-oriented workflows",
+            "Modeling long-running business processes"
+          ],
+          "relatedConcepts": [
+            "Microservices",
+            "Distributed Systems",
+            "Event-Driven Architecture",
+            "Eventual Consistency",
+            "Compensating Transaction",
+            "Two-Phase Commit",
+            "Outbox Pattern",
+            "Idempotency",
+            "Message Queue",
+            "Workflow Orchestration",
+            "CQRS",
+            "Event Sourcing"
+          ]
+        },
+        {
+          "id": "backend-for-frontend",
+          "name": "Backend for Frontend",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "BFF",
+            "Backend-for-Frontend",
+            "BFF Pattern",
+            "Frontend-Specific Backend",
+            "Client-Specific Backend"
+          ],
+          "notes": "Architecture pattern where separate backend services are tailored to the needs of specific frontend clients such as web apps, mobile apps, admin portals, or partner interfaces.",
+          "tags": [
+            "architecture-pattern",
+            "backend",
+            "frontend",
+            "api-design",
+            "microservices",
+            "client-specific-api",
+            "system-design",
+            "integration"
+          ],
+          "whatIsIt": "An architecture pattern that creates frontend-specific backend services to shape APIs, aggregate data, and adapt backend capabilities for particular client experiences.",
+          "description": "Backend for Frontend is an architecture pattern where each major frontend or client type gets a dedicated backend layer tailored to its needs. A BFF may aggregate data from multiple services, simplify API responses, handle client-specific authentication flows, translate protocols, reduce over-fetching or under-fetching, and isolate frontend teams from backend service complexity. It is commonly used when web, mobile, admin, partner, or device clients need different API shapes, release cycles, performance tradeoffs, or user-experience-specific backend logic.",
+          "usedWith": [
+            "Frontend",
+            "Backend",
+            "REST API",
+            "GraphQL",
+            "API Gateway",
+            "Microservices",
+            "Mobile Applications",
+            "Web Applications",
+            "Authentication",
+            "Authorization",
+            "Service Aggregation",
+            "System Design"
+          ],
+          "builtOn": [
+            "API Design",
+            "Client-Specific Interfaces",
+            "Service Aggregation",
+            "Separation of Concerns",
+            "Microservices Architecture",
+            "Backend Service Composition",
+            "Frontend Experience Requirements"
+          ],
+          "builtUponBy": [
+            "Client-Specific API Workflows",
+            "Web Application Backend Integration",
+            "Mobile Backend Integration",
+            "Microservice Aggregation Workflows",
+            "Frontend Platform Architecture",
+            "API Composition Workflows",
+            "User Experience Optimized APIs",
+            "Cross-Platform Product Development"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "API Gateway",
+            "Generic Backend API",
+            "GraphQL API",
+            "Direct Service Access",
+            "Single Shared Backend",
+            "Aggregator Service"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "System Design",
+            "API Architecture",
+            "Microservices Architecture",
+            "Full Stack Development"
+          ],
+          "includes": [],
+          "examples": [
+            "Separate BFF for web and mobile clients",
+            "Mobile BFF returning smaller payloads than the web API",
+            "Admin portal BFF aggregating data from multiple services",
+            "BFF translating frontend requests into backend microservice calls",
+            "React application calling a dedicated Node.js BFF",
+            "GraphQL BFF composing data for a frontend screen",
+            "BFF handling authentication session details for a web app"
+          ],
+          "useCases": [
+            "Tailoring APIs to specific frontend clients",
+            "Reducing over-fetching and under-fetching",
+            "Aggregating data from multiple backend services",
+            "Separating frontend experience logic from core services",
+            "Supporting different web and mobile release cycles",
+            "Simplifying frontend integration with microservices",
+            "Improving client performance with optimized payloads",
+            "Providing a stable API boundary for frontend teams"
+          ],
+          "relatedConcepts": [
+            "Frontend",
+            "Backend",
+            "API Gateway",
+            "REST API",
+            "GraphQL",
+            "Microservices",
+            "Service Aggregation",
+            "API Composition",
+            "Full Stack",
+            "System Design",
+            "User Experience",
+            "Client-Server Architecture"
+          ]
+        },
+        {
+          "id": "strangler-fig-pattern",
+          "name": "Strangler Fig Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Strangler Pattern",
+            "Strangler Fig Application Pattern",
+            "Strangler Application Pattern",
+            "Strangler Migration Pattern",
+            "Incremental Legacy Replacement Pattern"
+          ],
+          "notes": "Architecture pattern for gradually replacing a legacy system by routing new functionality to a new system while old functionality continues running until it can be retired.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "legacy-modernization",
+            "migration",
+            "refactoring",
+            "system-design",
+            "incremental-delivery",
+            "software-architecture"
+          ],
+          "whatIsIt": "An incremental modernization pattern where a new system gradually grows around and replaces parts of an existing legacy system.",
+          "description": "The Strangler Fig Pattern is a software architecture pattern used to modernize or replace a legacy system incrementally. Instead of rewriting the entire system at once, teams introduce a new system alongside the existing one, route selected features or requests to the new implementation, and gradually migrate functionality until the old system can be reduced or retired. It is commonly used with APIs, reverse proxies, feature flags, anti-corruption layers, microservices, modularization, domain decomposition, and legacy system modernization. The pattern reduces big-bang rewrite risk but requires careful routing, data migration, compatibility handling, observability, and rollback planning.",
+          "usedWith": [
+            "Legacy System",
+            "Microservices",
+            "API Gateway",
+            "Reverse Proxy",
+            "Feature Flags",
+            "Anti-Corruption Layer",
+            "Domain-Driven Design",
+            "Bounded Context",
+            "Refactoring",
+            "CI/CD",
+            "Database Migration",
+            "Event-Driven Architecture"
+          ],
+          "builtOn": [
+            "Incremental Migration",
+            "Legacy Modernization",
+            "Routing and Redirection",
+            "Coexistence Strategy",
+            "Feature-by-Feature Replacement",
+            "Separation of Concerns",
+            "Risk Reduction"
+          ],
+          "builtUponBy": [
+            "Legacy Modernization Workflows",
+            "Monolith-to-Microservices Migration",
+            "Incremental Refactoring Programs",
+            "Application Modernization Roadmaps",
+            "Cloud Migration Workflows",
+            "Domain Decomposition Workflows",
+            "Enterprise System Replacement Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Big Bang Rewrite",
+            "Lift and Shift Migration",
+            "Parallel Run Migration",
+            "Full System Replacement",
+            "In-Place Refactoring",
+            "Modular Monolith Refactoring"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Architecture & Design",
+            "Software Architecture",
+            "System Design",
+            "Legacy Modernization",
+            "Migration Patterns",
+            "Evolutionary Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Routing new checkout functionality to a new service while old checkout remains available",
+            "Replacing one legacy module at a time behind an API gateway",
+            "Using a reverse proxy to send migrated routes to a new application",
+            "Gradually decomposing a monolith into services by business capability",
+            "Moving one bounded context out of a legacy system",
+            "Migrating users to a new frontend feature by feature",
+            "Retiring legacy endpoints after new implementations reach parity"
+          ],
+          "useCases": [
+            "Modernizing legacy applications incrementally",
+            "Reducing risk compared with a big-bang rewrite",
+            "Migrating a monolith toward services",
+            "Replacing old functionality one domain area at a time",
+            "Supporting gradual cloud or platform migration",
+            "Maintaining production continuity during modernization",
+            "Introducing new architecture without stopping the old system",
+            "Decommissioning legacy systems safely over time"
+          ],
+          "relatedConcepts": [
+            "Legacy System",
+            "Microservices",
+            "Refactoring",
+            "Anti-Corruption Layer",
+            "Domain-Driven Design",
+            "Bounded Context",
+            "API Gateway",
+            "Reverse Proxy",
+            "Feature Flag",
+            "Database Migration",
+            "Technical Debt",
+            "Software Architecture"
+          ]
+        },
+        {
+          "id": "sidecar-pattern",
+          "name": "Sidecar Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Sidecar Architecture Pattern",
+            "Sidecar Container Pattern",
+            "Sidecar Proxy Pattern",
+            "Sidecar Deployment Pattern"
+          ],
+          "notes": "Architecture pattern where a helper process or container is deployed alongside a primary application to provide supporting capabilities such as proxying, logging, monitoring, configuration, or security.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "containers",
+            "kubernetes",
+            "microservices",
+            "service-mesh",
+            "observability",
+            "cloud-native"
+          ],
+          "whatIsIt": "An architecture pattern where a supporting component runs beside a main application component and shares its lifecycle, environment, or deployment context.",
+          "description": "The Sidecar Pattern is an architecture pattern where a helper service, process, or container is deployed alongside a primary application to provide supporting functionality without embedding that functionality directly into the application code. In cloud-native systems, sidecars are commonly placed in the same Kubernetes pod as the main container and can provide logging, monitoring, proxying, service mesh communication, security, configuration, policy enforcement, and traffic management. The pattern is common in service meshes such as Istio and Linkerd, where sidecar proxies intercept service-to-service traffic. It improves separation of concerns and reuse, but it can add operational overhead, resource usage, debugging complexity, and deployment complexity.",
+          "usedWith": [
+            "Kubernetes",
+            "Docker",
+            "Pods",
+            "Microservices",
+            "Service Mesh",
+            "Istio",
+            "Linkerd",
+            "Envoy",
+            "Logging",
+            "Monitoring",
+            "OpenTelemetry",
+            "Configuration Management"
+          ],
+          "builtOn": [
+            "Process Isolation",
+            "Co-Located Deployment",
+            "Shared Lifecycle",
+            "Containerization",
+            "Separation of Concerns",
+            "Inter-Process Communication",
+            "Proxy Architecture"
+          ],
+          "builtUponBy": [
+            "Service Mesh Workflows",
+            "Kubernetes Application Deployment Workflows",
+            "Microservice Observability Workflows",
+            "Traffic Interception Workflows",
+            "Cloud-Native Security Workflows",
+            "Configuration Injection Workflows",
+            "Containerized Application Operations"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Library-Based Integration",
+            "Host Agent Pattern",
+            "Centralized Gateway Pattern",
+            "Ambassador Pattern",
+            "Adapter Pattern",
+            "Service Mesh Ambient Mode"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Architecture & Design",
+            "Cloud-Native Architecture",
+            "Microservices Architecture",
+            "Containerized Application Design",
+            "Kubernetes Patterns",
+            "Service Mesh Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Envoy sidecar proxy running next to an application container",
+            "Logging sidecar collecting application logs from a shared volume",
+            "Monitoring sidecar exporting metrics for a service",
+            "Service mesh sidecar handling mTLS between microservices",
+            "Configuration sidecar refreshing files used by the main app",
+            "Kubernetes pod with app container and helper sidecar container",
+            "Sidecar container performing request authentication before traffic reaches the app"
+          ],
+          "useCases": [
+            "Adding proxy behavior without changing application code",
+            "Collecting logs and metrics from application containers",
+            "Supporting service mesh traffic management",
+            "Adding mTLS or security policies to service communication",
+            "Separating operational concerns from business logic",
+            "Reusing infrastructure helpers across multiple services",
+            "Injecting configuration or secrets into runtime environments",
+            "Extending application behavior in Kubernetes deployments"
+          ],
+          "relatedConcepts": [
+            "Kubernetes",
+            "Pod",
+            "Docker",
+            "Service Mesh",
+            "Istio",
+            "Linkerd",
+            "Envoy",
+            "Microservices",
+            "Observability",
+            "mTLS",
+            "Proxy",
+            "Containerization"
+          ]
+        },
+        {
+          "id": "ambassador-pattern",
+          "name": "Ambassador Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Ambassador Design Pattern",
+            "Ambassador Architecture Pattern",
+            "Service Ambassador Pattern",
+            "Ambassador Sidecar Pattern"
+          ],
+          "notes": "Architecture pattern where a helper service or sidecar acts as an ambassador for an application by handling network communication concerns such as retries, routing, discovery, security, and observability.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "microservices",
+            "cloud-native",
+            "distributed-systems",
+            "sidecar",
+            "networking",
+            "resilience"
+          ],
+          "whatIsIt": "An architecture pattern where a companion process or service handles outbound communication responsibilities on behalf of an application.",
+          "description": "The Ambassador Pattern is a distributed systems and cloud-native architecture pattern where a helper component acts as an intermediary between an application and external services. The ambassador can handle cross-cutting communication concerns such as retries, circuit breaking, service discovery, routing, load balancing, authentication, telemetry, logging, and protocol translation. It is closely related to sidecar-based architectures and service mesh concepts because the communication logic can be moved out of application code and into infrastructure-adjacent components.",
+          "usedWith": [
+            "Microservices",
+            "Sidecar Pattern",
+            "Service Mesh",
+            "Kubernetes",
+            "Dapr",
+            "Envoy",
+            "Istio",
+            "Linkerd",
+            "API Gateway",
+            "Distributed Systems",
+            "Cloud Native"
+          ],
+          "builtOn": [
+            "Proxying",
+            "Sidecar Architecture",
+            "Service Communication",
+            "Network Abstraction",
+            "Resilience Patterns",
+            "Cross-Cutting Concerns",
+            "Distributed System Communication"
+          ],
+          "builtUponBy": [
+            "Microservice Communication Workflows",
+            "Cloud-Native Application Architecture",
+            "Service Mesh Workflows",
+            "Sidecar-Based Infrastructure",
+            "Resilient Service Integration Workflows",
+            "Platform Engineering Workflows",
+            "Distributed Application Networking"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Sidecar Pattern",
+            "Proxy Pattern",
+            "API Gateway Pattern",
+            "Service Mesh",
+            "Client Library Integration",
+            "Backend for Frontend"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Software Architecture",
+            "Distributed Systems",
+            "Microservices Architecture",
+            "Cloud-Native Architecture",
+            "Application Networking"
+          ],
+          "includes": [],
+          "examples": [
+            "A sidecar proxy handling retries for a microservice",
+            "Envoy proxy acting as an ambassador for service traffic",
+            "Dapr sidecar handling service invocation",
+            "A helper container managing outbound API calls",
+            "A service ambassador adding telemetry to network calls",
+            "A proxy component translating protocols for an application"
+          ],
+          "useCases": [
+            "Moving communication logic out of application code",
+            "Standardizing service-to-service communication",
+            "Adding retries and circuit breaking to service calls",
+            "Improving observability for distributed systems",
+            "Handling protocol translation between services",
+            "Supporting service mesh or sidecar-based architectures",
+            "Reducing duplicated networking logic across microservices"
+          ],
+          "relatedConcepts": [
+            "Sidecar Pattern",
+            "Service Mesh",
+            "Microservices",
+            "Distributed Systems",
+            "Proxy",
+            "API Gateway",
+            "Dapr",
+            "Envoy",
+            "Istio",
+            "Circuit Breaker Pattern",
+            "Service Discovery",
+            "Observability"
+          ]
         }
       ],
       "Design & Modeling": [
@@ -49485,6 +50359,422 @@
             "Event-Driven Architecture",
             "CQRS",
             "Clean Architecture"
+          ]
+        },
+        {
+          "id": "bounded-context",
+          "name": "Bounded Context",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "DDD Bounded Context",
+            "Domain-Driven Design Bounded Context",
+            "Bounded Context Pattern",
+            "Domain Boundary"
+          ],
+          "notes": "Domain-driven design concept that defines a clear boundary where a domain model, terminology, rules, and meanings are consistent and intentionally scoped.",
+          "tags": [
+            "architecture",
+            "design-modeling",
+            "domain-driven-design",
+            "ddd",
+            "domain-modeling",
+            "software-design",
+            "microservices",
+            "system-design"
+          ],
+          "whatIsIt": "A domain-driven design boundary within which a specific model, language, rules, and meaning are consistent.",
+          "description": "A Bounded Context is a Domain-Driven Design concept used to define the boundary around a specific domain model. Inside a bounded context, terms, entities, rules, workflows, and concepts have consistent meaning. Outside that boundary, the same words may mean different things or follow different rules. Bounded contexts help teams model complex domains, reduce ambiguity, divide large systems, design service boundaries, organize microservices, and map relationships between domains. It is not a runtime or framework; it is a design and modeling concept used to reason about domain boundaries and software architecture.",
+          "usedWith": [
+            "Domain-Driven Design",
+            "Domain Model",
+            "Ubiquitous Language",
+            "Context Mapping",
+            "Microservices",
+            "Modular Monolith",
+            "Event-Driven Architecture",
+            "System Design",
+            "Software Architecture",
+            "Business Logic",
+            "API Design",
+            "Enterprise Software"
+          ],
+          "builtOn": [
+            "Domain-Driven Design",
+            "Domain Modeling",
+            "Ubiquitous Language",
+            "Separation of Concerns",
+            "Business Domain Boundaries",
+            "Model Consistency",
+            "Context Mapping"
+          ],
+          "builtUponBy": [
+            "Domain Modeling Workflows",
+            "Microservice Boundary Design",
+            "Modular Monolith Design Workflows",
+            "Enterprise Application Architecture",
+            "Context Mapping Workshops",
+            "Business Capability Modeling",
+            "Domain-Driven Architecture Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Shared Global Model",
+            "Anemic Domain Model",
+            "Technical Layer Boundary",
+            "Database-Centric Design",
+            "Feature-Based Module Boundary"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Architecture & Design",
+            "Domain-Driven Design",
+            "Software Architecture",
+            "System Design",
+            "Enterprise Application Design",
+            "Domain Modeling"
+          ],
+          "includes": [],
+          "examples": [
+            "Billing context and shipping context using different meanings for Customer",
+            "Order Management bounded context separated from Inventory",
+            "Microservice boundary aligned to a business capability",
+            "Context map showing relationships between bounded contexts",
+            "Shared kernel between two closely related domain contexts",
+            "Anti-corruption layer protecting one model from another",
+            "Modular monolith organized around bounded contexts"
+          ],
+          "useCases": [
+            "Defining domain model boundaries",
+            "Reducing ambiguity in complex business domains",
+            "Designing microservice boundaries",
+            "Organizing modular monoliths",
+            "Separating business capabilities",
+            "Improving communication between developers and domain experts",
+            "Mapping integration relationships between domains",
+            "Preventing one model from leaking into another context"
+          ],
+          "relatedConcepts": [
+            "Domain-Driven Design",
+            "Domain Model",
+            "Ubiquitous Language",
+            "Context Map",
+            "Aggregate",
+            "Entity",
+            "Value Object",
+            "Microservices",
+            "Modular Monolith",
+            "Anti-Corruption Layer",
+            "Software Architecture",
+            "System Design"
+          ]
+        },
+        {
+          "id": "adapter-pattern",
+          "name": "Adapter Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "Adapter Design Pattern",
+            "Wrapper Pattern",
+            "Object Adapter Pattern",
+            "Class Adapter Pattern"
+          ],
+          "notes": "Structural design pattern that allows incompatible interfaces to work together by wrapping one interface with another expected interface.",
+          "tags": [
+            "design-pattern",
+            "structural-pattern",
+            "object-oriented-programming",
+            "interface",
+            "abstraction",
+            "software-design",
+            "refactoring",
+            "integration"
+          ],
+          "whatIsIt": "A structural design pattern that converts one interface into another interface expected by client code.",
+          "description": "The Adapter Pattern is a structural design pattern used when existing code, libraries, services, or classes expose an interface that does not match what client code expects. An adapter wraps the incompatible object or system and exposes a compatible interface, allowing the two parts to work together without changing their original implementations. The pattern is common in object-oriented programming, legacy integration, third-party API wrapping, testing, and codebase refactoring.",
+          "usedWith": [
+            "Object-Oriented Programming",
+            "Interfaces",
+            "Abstraction",
+            "Dependency Injection",
+            "Legacy Systems",
+            "API Integration",
+            "Refactoring",
+            "Unit Testing",
+            "Design Patterns",
+            "Clean Architecture"
+          ],
+          "builtOn": [
+            "Interfaces",
+            "Composition",
+            "Encapsulation",
+            "Polymorphism",
+            "Abstraction",
+            "Structural Design Patterns"
+          ],
+          "builtUponBy": [
+            "Legacy Integration Workflows",
+            "API Wrapper Design",
+            "Refactoring Workflows",
+            "Testability Improvement Workflows",
+            "Clean Architecture Boundary Design",
+            "Third-Party Library Integration"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Facade Pattern",
+            "Proxy Pattern",
+            "Decorator Pattern",
+            "Bridge Pattern",
+            "Wrapper Function"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Design Patterns",
+            "Structural Design Patterns",
+            "Object-Oriented Design",
+            "Software Architecture",
+            "Code Refactoring"
+          ],
+          "includes": [],
+          "examples": [
+            "Wrapping a third-party payment API behind an internal interface",
+            "Adapting legacy service methods to a new application interface",
+            "Creating a test adapter around an external dependency",
+            "Converting one logging library interface to another",
+            "Using an adapter to integrate incompatible class APIs",
+            "Wrapping a vendor SDK with a cleaner domain-specific interface"
+          ],
+          "useCases": [
+            "Integrating incompatible interfaces",
+            "Wrapping third-party libraries",
+            "Isolating legacy code behind a modern interface",
+            "Improving testability by abstracting external dependencies",
+            "Reducing coupling to vendor-specific APIs",
+            "Refactoring code without changing client-facing interfaces",
+            "Creating compatibility layers between systems"
+          ],
+          "relatedConcepts": [
+            "Design Pattern",
+            "Structural Design Pattern",
+            "Interface",
+            "Abstraction",
+            "Encapsulation",
+            "Composition",
+            "Facade Pattern",
+            "Proxy Pattern",
+            "Decorator Pattern",
+            "Bridge Pattern",
+            "Dependency Injection",
+            "Legacy System"
+          ]
+        },
+        {
+          "id": "facade-pattern",
+          "name": "Facade Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "Facade Design Pattern",
+            "Facade",
+            "Structural Facade Pattern",
+            "Subsystem Facade"
+          ],
+          "notes": "Structural design pattern that provides a simplified interface over a complex subsystem, library, framework, or group of collaborating classes.",
+          "tags": [
+            "design-pattern",
+            "structural-pattern",
+            "software-design",
+            "abstraction",
+            "encapsulation",
+            "object-oriented-programming",
+            "architecture-design",
+            "maintainability"
+          ],
+          "whatIsIt": "A structural design pattern that wraps a complex subsystem behind a simpler, higher-level interface.",
+          "description": "Facade Pattern is a structural software design pattern used to provide a simplified interface to a more complex subsystem. A facade hides internal complexity, coordinates calls across multiple components, and gives client code a cleaner entry point. Developers use facades to reduce coupling, simplify APIs, isolate external libraries, organize subsystem access, and make complex workflows easier to use. It is common in object-oriented design, service layers, SDKs, adapters, and application architecture.",
+          "usedWith": [
+            "Object-Oriented Programming",
+            "Design Pattern",
+            "Layered Architecture",
+            "Service Layer",
+            "Adapter Pattern",
+            "Dependency Injection",
+            "SDK",
+            "API Design",
+            "Backend",
+            "Software Architecture"
+          ],
+          "builtOn": [
+            "Abstraction",
+            "Encapsulation",
+            "Separation of Concerns",
+            "Interface Simplification",
+            "Loose Coupling",
+            "Subsystem Coordination"
+          ],
+          "builtUponBy": [
+            "Simplified API Design Workflows",
+            "Subsystem Integration Workflows",
+            "Service Layer Design",
+            "SDK Design Workflows",
+            "Enterprise Application Architecture",
+            "Maintainable Codebase Organization"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Adapter Pattern",
+            "Proxy Pattern",
+            "Mediator Pattern",
+            "Direct Subsystem Access",
+            "Service Layer"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Design Patterns",
+            "Structural Design Patterns",
+            "Software Design",
+            "Object-Oriented Design",
+            "Application Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "PaymentFacade coordinating payment gateway, fraud checks, and receipt generation",
+            "FileSystemFacade wrapping file read, write, validation, and logging operations",
+            "SDK facade hiding multiple internal API calls",
+            "Service facade simplifying access to several backend services",
+            "UI code calling one facade instead of many subsystem classes",
+            "Facade wrapping a third-party library with a cleaner internal interface"
+          ],
+          "useCases": [
+            "Simplifying access to complex subsystems",
+            "Reducing coupling between client code and internal components",
+            "Creating cleaner APIs for common workflows",
+            "Hiding third-party library complexity",
+            "Coordinating multiple subsystem calls behind one interface",
+            "Improving maintainability of application boundaries",
+            "Making complex features easier for other developers to use"
+          ],
+          "relatedConcepts": [
+            "Design Pattern",
+            "Object-Oriented Programming",
+            "Abstraction",
+            "Encapsulation",
+            "Adapter Pattern",
+            "Proxy Pattern",
+            "Mediator Pattern",
+            "Service Layer",
+            "Interface",
+            "Separation of Concerns",
+            "Software Architecture",
+            "API Design"
+          ]
+        },
+        {
+          "id": "factory-pattern",
+          "name": "Factory Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "Factory Design Pattern",
+            "Object Factory Pattern",
+            "Creational Factory Pattern",
+            "Factory Method Pattern",
+            "Abstract Factory Pattern"
+          ],
+          "notes": "Creational design pattern family focused on centralizing object creation so client code can request objects without depending directly on concrete construction logic.",
+          "tags": [
+            "design-pattern",
+            "creational-pattern",
+            "software-design",
+            "object-creation",
+            "abstraction",
+            "object-oriented-programming",
+            "dependency-management",
+            "maintainability"
+          ],
+          "whatIsIt": "A creational design pattern that encapsulates object creation logic behind a method, class, or interface instead of requiring client code to instantiate concrete classes directly.",
+          "description": "Factory Pattern is a creational design pattern used to centralize and abstract object creation. Instead of client code directly constructing concrete classes, it asks a factory method, factory object, or abstract factory to create the appropriate object. This helps reduce coupling, hide construction complexity, support dependency inversion, choose implementations dynamically, and make object creation easier to change. The term often refers broadly to factory-style creational patterns, including simple factories, Factory Method, and Abstract Factory.",
+          "usedWith": [
+            "Object-Oriented Programming",
+            "Design Pattern",
+            "Dependency Injection",
+            "Interface",
+            "Polymorphism",
+            "Dependency Inversion",
+            "Clean Architecture",
+            "Layered Architecture",
+            "Backend",
+            "Unit Testing"
+          ],
+          "builtOn": [
+            "Abstraction",
+            "Encapsulation",
+            "Polymorphism",
+            "Object Creation",
+            "Interface-Based Design",
+            "Dependency Inversion"
+          ],
+          "builtUponBy": [
+            "Flexible Object Creation Workflows",
+            "Plugin-Based Architecture",
+            "Testable Application Design",
+            "Dependency Injection Workflows",
+            "Framework Object Instantiation",
+            "Configuration-Driven Implementation Selection"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Direct Constructor Calls",
+            "Builder Pattern",
+            "Prototype Pattern",
+            "Dependency Injection Container",
+            "Service Locator Pattern"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Design Patterns",
+            "Creational Design Patterns",
+            "Software Design",
+            "Object-Oriented Design",
+            "Application Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "ShapeFactory creating Circle or Rectangle objects",
+            "DatabaseConnectionFactory returning different database clients",
+            "PaymentProcessorFactory selecting a payment provider implementation",
+            "Factory Method creating subclasses without exposing constructors",
+            "Abstract Factory creating related UI components for different platforms",
+            "Test factory creating mock objects for unit tests"
+          ],
+          "useCases": [
+            "Centralizing object creation logic",
+            "Reducing coupling to concrete classes",
+            "Selecting implementations at runtime",
+            "Hiding complex construction details",
+            "Supporting interface-based design",
+            "Improving testability with replaceable implementations",
+            "Creating related families of objects consistently"
+          ],
+          "relatedConcepts": [
+            "Design Pattern",
+            "Object-Oriented Programming",
+            "Abstraction",
+            "Encapsulation",
+            "Polymorphism",
+            "Dependency Inversion",
+            "Dependency Injection",
+            "Builder Pattern",
+            "Prototype Pattern",
+            "Interface",
+            "Constructor",
+            "Creational Design Patterns"
           ]
         }
       ]
