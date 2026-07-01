@@ -38079,6 +38079,122 @@
           "Public IP Address",
           "Software-Defined Networking"
         ]
+      },
+      {
+        "id": "service-mesh",
+        "name": "Service Mesh",
+        "continent": "Infrastructure",
+        "category": "Networking",
+        "subcategory": "",
+        "aliases": [
+          "Service Mesh Architecture",
+          "Microservices Service Mesh",
+          "Service-to-Service Mesh",
+          "Mesh Networking Layer"
+        ],
+        "notes": "Infrastructure layer for managing service-to-service communication, commonly providing traffic routing, mTLS, retries, observability, policy enforcement, and resilience for microservices.",
+        "tags": [
+          "networking",
+          "microservices",
+          "cloud-native",
+          "infrastructure",
+          "service-to-service",
+          "kubernetes",
+          "observability",
+          "security"
+        ],
+        "whatIsIt": "An infrastructure layer that manages communication, security, routing, and observability between services.",
+        "description": "A Service Mesh is an infrastructure layer used to manage service-to-service communication in microservice and cloud-native environments. It commonly uses sidecar proxies or node-level proxies to handle traffic routing, retries, timeouts, circuit breaking, mutual TLS, service identity, access policies, telemetry, and observability without requiring every application to implement those concerns directly. Service meshes are often deployed with Kubernetes and tools such as Istio, Linkerd, Consul, and Envoy. They are powerful for complex distributed systems, but they also add operational complexity and are usually most valuable when service communication, security, and observability needs are significant.",
+        "usedWith": [
+          "Microservices",
+          "Kubernetes",
+          "Envoy",
+          "Istio",
+          "Linkerd",
+          "Consul",
+          "Sidecar Pattern",
+          "Ambassador Pattern",
+          "mTLS",
+          "Observability",
+          "Distributed Systems",
+          "Cloud Native"
+        ],
+        "builtOn": [
+          "Proxying",
+          "Service Discovery",
+          "Traffic Routing",
+          "Mutual TLS",
+          "Sidecar Architecture",
+          "Policy Enforcement",
+          "Telemetry Collection"
+        ],
+        "builtUponBy": [
+          "Microservice Networking Workflows",
+          "Zero-Trust Service Communication",
+          "Cloud-Native Platform Engineering",
+          "Kubernetes Traffic Management",
+          "Distributed System Observability",
+          "Service-to-Service Security Workflows",
+          "Progressive Delivery Workflows"
+        ],
+        "runsOn": [
+          "Kubernetes Clusters",
+          "Cloud Infrastructure",
+          "Linux",
+          "Containerized Environments",
+          "Microservice Platforms",
+          "Hybrid Cloud Environments"
+        ],
+        "alternatives": [
+          "API Gateway",
+          "Ingress Controller",
+          "Client Library-Based Networking",
+          "Sidecar Proxy Pattern",
+          "Direct Service-to-Service Calls",
+          "Load Balancer"
+        ],
+        "partOf": [
+          "Networking",
+          "Cloud-Native Infrastructure",
+          "Microservices Infrastructure",
+          "Kubernetes Ecosystem",
+          "Service Communication",
+          "Infrastructure"
+        ],
+        "includes": [],
+        "examples": [
+          "Using Istio to manage Kubernetes service traffic",
+          "Envoy sidecars handling service-to-service communication",
+          "Linkerd adding mTLS between microservices",
+          "Routing a small percentage of traffic to a canary service",
+          "Collecting service latency and error metrics from proxy telemetry",
+          "Applying access policies between internal services",
+          "Using Consul service mesh across hybrid infrastructure"
+        ],
+        "useCases": [
+          "Managing service-to-service communication",
+          "Securing internal service traffic with mTLS",
+          "Adding observability to microservices",
+          "Applying traffic routing policies",
+          "Supporting retries, timeouts, and circuit breaking",
+          "Enforcing service access policies",
+          "Supporting canary releases and progressive delivery",
+          "Reducing duplicated networking logic in application code"
+        ],
+        "relatedConcepts": [
+          "Microservices",
+          "Kubernetes",
+          "Sidecar Pattern",
+          "Ambassador Pattern",
+          "Envoy",
+          "Istio",
+          "Linkerd",
+          "mTLS",
+          "Service Discovery",
+          "API Gateway",
+          "Observability",
+          "Zero Trust"
+        ]
       }
     ],
     "Security": [
@@ -49820,6 +49936,224 @@
             "Service Discovery",
             "Observability"
           ]
+        },
+        {
+          "id": "publish-subscribe-pattern",
+          "name": "Publish-Subscribe Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Pub/Sub",
+            "Publish Subscribe",
+            "Pub Sub",
+            "Pub-Sub Pattern",
+            "Publish/Subscribe Pattern"
+          ],
+          "notes": "Messaging pattern where publishers send messages to topics or channels and subscribers receive messages without the publishers needing to know who the subscribers are.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "messaging",
+            "pub-sub",
+            "event-driven",
+            "distributed-systems",
+            "asynchronous-communication",
+            "system-design"
+          ],
+          "whatIsIt": "A messaging pattern where producers publish messages to a topic or channel and interested subscribers receive those messages asynchronously.",
+          "description": "The Publish-Subscribe Pattern is an asynchronous messaging pattern where publishers emit messages to a topic, channel, or event stream, and subscribers receive messages for the topics they are interested in. Publishers and subscribers are decoupled because publishers do not need direct knowledge of subscribers. Pub/sub is widely used in event-driven architecture, distributed systems, notification systems, real-time updates, microservices integration, streaming platforms, and cloud messaging services. It differs from a message queue because pub/sub often broadcasts a message to multiple subscribers, while a queue often delivers each message to one consumer or worker group.",
+          "usedWith": [
+            "Event-Driven Architecture",
+            "Message Queue",
+            "Microservices",
+            "Distributed Systems",
+            "Apache Kafka",
+            "RabbitMQ",
+            "Google Cloud Pub/Sub",
+            "Amazon SNS",
+            "Redis Pub/Sub",
+            "WebSocket",
+            "Event Sourcing",
+            "CQRS"
+          ],
+          "builtOn": [
+            "Asynchronous Communication",
+            "Message Passing",
+            "Topics",
+            "Subscriptions",
+            "Loose Coupling",
+            "Event Notifications",
+            "Distributed Systems"
+          ],
+          "builtUponBy": [
+            "Event-Driven Architecture Workflows",
+            "Microservice Event Distribution",
+            "Notification System Workflows",
+            "Real-Time Messaging Workflows",
+            "Streaming Data Workflows",
+            "Cloud Messaging Architectures",
+            "Reactive Application Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Message Queue",
+            "Request-Response Architecture",
+            "Direct Service Call",
+            "Webhook",
+            "Polling",
+            "Event Bus"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Architecture & Design",
+            "Event-Driven Architecture",
+            "Distributed Systems",
+            "Messaging",
+            "System Design"
+          ],
+          "includes": [],
+          "examples": [
+            "Order service publishing an OrderCreated event to a topic",
+            "Email, inventory, and analytics services subscribing to the same event",
+            "Amazon SNS topic broadcasting messages to multiple subscribers",
+            "Google Cloud Pub/Sub delivering events to subscriber services",
+            "Redis Pub/Sub channel sending real-time updates",
+            "Kafka topic consumed by multiple consumer groups",
+            "Notification system broadcasting updates to interested services"
+          ],
+          "useCases": [
+            "Broadcasting events to multiple subscribers",
+            "Decoupling event producers from event consumers",
+            "Building event-driven systems",
+            "Sending notifications across services",
+            "Supporting real-time application updates",
+            "Distributing domain events between microservices",
+            "Creating fan-out messaging workflows",
+            "Integrating systems through asynchronous events"
+          ],
+          "relatedConcepts": [
+            "Event-Driven Architecture",
+            "Message Queue",
+            "Message Broker",
+            "Event Bus",
+            "Apache Kafka",
+            "RabbitMQ",
+            "Google Cloud Pub/Sub",
+            "Amazon SNS",
+            "Redis Pub/Sub",
+            "Observer Pattern",
+            "Asynchronous Processing",
+            "Distributed Systems"
+          ]
+        },
+        {
+          "id": "event-bus",
+          "name": "Event Bus",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Architecture Patterns",
+          "aliases": [
+            "Event Bus Pattern",
+            "Application Event Bus",
+            "Message Bus",
+            "Event Messaging Bus"
+          ],
+          "notes": "Architecture pattern and communication mechanism where components publish and subscribe to events through a shared bus instead of calling each other directly.",
+          "tags": [
+            "architecture",
+            "architecture-pattern",
+            "event-driven",
+            "messaging",
+            "decoupling",
+            "distributed-systems",
+            "backend",
+            "integration"
+          ],
+          "whatIsIt": "A messaging mechanism that lets components publish events and subscribe to events without being directly coupled to each other.",
+          "description": "An Event Bus is an architecture pattern and communication mechanism used to route events between producers and consumers. Instead of one component directly calling another, producers publish events to the bus and interested consumers subscribe to those events. Event buses are commonly used in event-driven architecture, microservices, modular monoliths, frontend state systems, integration workflows, domain events, and distributed systems. They help reduce direct coupling, but they can also make system behavior harder to trace if event ownership, ordering, contracts, and observability are not managed carefully.",
+          "usedWith": [
+            "Event-Driven Architecture",
+            "Microservices",
+            "Message Queues",
+            "Publish-Subscribe Pattern",
+            "Domain Events",
+            "Kafka",
+            "RabbitMQ",
+            "Event Sourcing",
+            "CQRS",
+            "Dapr",
+            "Modular Monolith"
+          ],
+          "builtOn": [
+            "Publish-Subscribe Pattern",
+            "Asynchronous Messaging",
+            "Event-Driven Architecture",
+            "Message Routing",
+            "Loose Coupling",
+            "Domain Events",
+            "Event Consumers"
+          ],
+          "builtUponBy": [
+            "Event-Driven System Workflows",
+            "Microservice Integration Workflows",
+            "Domain Event Publishing",
+            "Application Integration Workflows",
+            "CQRS Workflows",
+            "Event Sourcing Workflows",
+            "Modular Application Communication"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Direct Service Calls",
+            "Request-Response APIs",
+            "Message Queue",
+            "Event Stream",
+            "Webhook-Based Integration",
+            "Service Broker"
+          ],
+          "partOf": [
+            "Architecture Patterns",
+            "Event-Driven Architecture",
+            "Software Architecture",
+            "System Design",
+            "Integration Architecture",
+            "Distributed Systems"
+          ],
+          "includes": [],
+          "examples": [
+            "Order service publishing an OrderCreated event",
+            "Inventory service subscribing to order events",
+            "Frontend components communicating through an application event bus",
+            "Microservices exchanging domain events through Kafka",
+            "Using RabbitMQ as an event bus between backend services",
+            "Publishing events from a modular monolith module",
+            "Triggering notification workflows from user signup events"
+          ],
+          "useCases": [
+            "Decoupling event producers from consumers",
+            "Building event-driven systems",
+            "Integrating microservices asynchronously",
+            "Publishing domain events",
+            "Triggering downstream workflows",
+            "Reducing direct service dependencies",
+            "Supporting CQRS and Event Sourcing patterns",
+            "Connecting modules inside a modular application"
+          ],
+          "relatedConcepts": [
+            "Event-Driven Architecture",
+            "Publish-Subscribe Pattern",
+            "Message Queue",
+            "Event Stream",
+            "Domain Event",
+            "Kafka",
+            "RabbitMQ",
+            "CQRS",
+            "Event Sourcing",
+            "Microservices",
+            "Loose Coupling",
+            "Asynchronous Messaging"
+          ]
         }
       ],
       "Design & Modeling": [
@@ -50776,6 +51110,1887 @@
             "Constructor",
             "Creational Design Patterns"
           ]
+        },
+        {
+          "id": "singleton-pattern",
+          "name": "Singleton Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "Singleton",
+            "Singleton Design Pattern",
+            "Single Instance Pattern",
+            "GoF Singleton Pattern"
+          ],
+          "notes": "Creational design pattern that restricts a class to a single shared instance and provides a global access point to that instance.",
+          "tags": [
+            "design-pattern",
+            "creational-pattern",
+            "object-oriented-programming",
+            "software-design",
+            "architecture-design",
+            "global-state",
+            "gof-pattern",
+            "system-design"
+          ],
+          "whatIsIt": "A creational design pattern that ensures only one instance of a class exists and gives the rest of the application a controlled way to access it.",
+          "description": "The Singleton Pattern is a creational object-oriented design pattern used when a system should have exactly one shared instance of a class. It is commonly used for shared configuration, logging, application state, service registries, connection managers, and other centralized resources. Singleton can simplify access to shared infrastructure, but it can also introduce hidden dependencies, global state, testing difficulty, tight coupling, and concurrency issues if overused. In modern software design, dependency injection is often preferred when testability and explicit dependencies matter.",
+          "usedWith": [
+            "Object-Oriented Programming",
+            "Design Pattern",
+            "Dependency Injection",
+            "Factory Pattern",
+            "Service Locator",
+            "Configuration Management",
+            "Logging",
+            "Thread Safety",
+            "Application State",
+            "Unit Testing"
+          ],
+          "builtOn": [
+            "Class",
+            "Object Instance",
+            "Encapsulation",
+            "Static Access",
+            "Object-Oriented Design",
+            "Controlled Instantiation"
+          ],
+          "builtUponBy": [
+            "Shared Configuration Workflows",
+            "Application Service Registry Workflows",
+            "Logging Infrastructure Workflows",
+            "Global Resource Management Workflows",
+            "Creational Design Pattern Examples"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Dependency Injection",
+            "Factory Pattern",
+            "Service Locator Pattern",
+            "Static Class",
+            "Module-Level Instance",
+            "Application Context"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Architecture & Design",
+            "Design Patterns",
+            "Creational Design Patterns",
+            "Object-Oriented Design",
+            "Software Engineering Concepts"
+          ],
+          "includes": [],
+          "examples": [
+            "Application-wide configuration object exposed as a singleton",
+            "Logger instance shared across an application",
+            "Database connection manager implemented as a singleton",
+            "Singleton service registry used by application components",
+            "Thread-safe singleton using lazy initialization",
+            "Singleton replaced with dependency injection for easier testing"
+          ],
+          "useCases": [
+            "Ensuring only one instance of a shared service exists",
+            "Providing controlled access to global application resources",
+            "Managing shared configuration or logging infrastructure",
+            "Preventing duplicate instances of expensive objects",
+            "Teaching creational object-oriented design patterns",
+            "Discussing tradeoffs of global state and testability"
+          ],
+          "relatedConcepts": [
+            "Design Pattern",
+            "Object-Oriented Programming",
+            "Factory Pattern",
+            "Dependency Injection",
+            "Service Locator",
+            "Global State",
+            "Static Class",
+            "Thread Safety",
+            "Unit Testing",
+            "Encapsulation",
+            "Coupling",
+            "Software Design"
+          ]
+        },
+        {
+          "id": "observer-pattern",
+          "name": "Observer Pattern",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "Observer",
+            "Observer Design Pattern",
+            "Publish-Subscribe Observer Pattern",
+            "Subject Observer Pattern",
+            "GoF Observer Pattern"
+          ],
+          "notes": "Behavioral design pattern where dependent objects subscribe to a subject and are notified automatically when the subject changes.",
+          "tags": [
+            "design-pattern",
+            "behavioral-pattern",
+            "object-oriented-programming",
+            "software-design",
+            "event-driven",
+            "publish-subscribe",
+            "gof-pattern",
+            "architecture-design"
+          ],
+          "whatIsIt": "A behavioral design pattern where one object notifies subscribed observers when its state changes.",
+          "description": "The Observer Pattern is a behavioral object-oriented design pattern used to define a one-to-many dependency between a subject and its observers. When the subject changes, it notifies its subscribed observers so they can react without the subject needing to know the details of each dependent object. The pattern is common in UI event handling, model-view updates, event systems, reactive programming, notifications, listeners, and publish-subscribe style workflows. It improves decoupling between event producers and consumers, but it can also make control flow harder to trace when many observers are involved.",
+          "usedWith": [
+            "Object-Oriented Programming",
+            "Design Pattern",
+            "Event-Driven Architecture",
+            "Publish-Subscribe Pattern",
+            "Model-View-Controller",
+            "Reactive Programming",
+            "Event Listeners",
+            "User Interface Programming",
+            "Message Passing",
+            "Dependency Injection"
+          ],
+          "builtOn": [
+            "Objects",
+            "Interfaces",
+            "Callbacks",
+            "Events",
+            "Subscriptions",
+            "Loose Coupling",
+            "Behavioral Design Patterns"
+          ],
+          "builtUponBy": [
+            "UI Event Handling Workflows",
+            "Notification Systems",
+            "Reactive Programming Workflows",
+            "Model-View Synchronization Workflows",
+            "Event-Driven Application Workflows",
+            "Listener-Based API Designs"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Publish-Subscribe Pattern",
+            "Event Bus",
+            "Callback Pattern",
+            "Mediator Pattern",
+            "Reactive Streams",
+            "Message Queue"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Architecture & Design",
+            "Design Patterns",
+            "Behavioral Design Patterns",
+            "Object-Oriented Design",
+            "Event-Driven Design"
+          ],
+          "includes": [],
+          "examples": [
+            "Button click listener reacting to a UI event",
+            "View updating when a model changes",
+            "Observers subscribing to application state changes",
+            "Notification system alerting subscribers when an event occurs",
+            "Event listener pattern in frontend development",
+            "Reactive stream subscribers responding to emitted values"
+          ],
+          "useCases": [
+            "Notifying dependent objects when state changes",
+            "Decoupling event producers from event consumers",
+            "Building listener-based APIs",
+            "Implementing UI event handling",
+            "Keeping views synchronized with model changes",
+            "Supporting event-driven application behavior",
+            "Teaching behavioral object-oriented design patterns"
+          ],
+          "relatedConcepts": [
+            "Design Pattern",
+            "Object-Oriented Programming",
+            "Event-Driven Architecture",
+            "Publish-Subscribe",
+            "Event Listener",
+            "Callback",
+            "Reactive Programming",
+            "Model-View-Controller",
+            "Mediator Pattern",
+            "Loose Coupling",
+            "Message Queue",
+            "Software Design"
+          ]
+        },
+        {
+          "id": "dependency-injection",
+          "name": "Dependency Injection",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "DI",
+            "Dependency Injection Pattern",
+            "Constructor Injection",
+            "Setter Injection",
+            "Method Injection"
+          ],
+          "notes": "Software design pattern where an object's dependencies are provided from the outside rather than created internally, improving decoupling, testability, and configurability.",
+          "tags": [
+            "design-pattern",
+            "dependency-management",
+            "inversion-of-control",
+            "software-design",
+            "testability",
+            "decoupling",
+            "object-oriented-programming",
+            "architecture"
+          ],
+          "whatIsIt": "A design pattern where dependencies are supplied to a class or component from the outside instead of being constructed inside it.",
+          "description": "Dependency Injection is a software design pattern that provides a class, component, or service with the dependencies it needs from an external source. Instead of directly instantiating concrete dependencies, code depends on abstractions, interfaces, constructor parameters, providers, or containers. Dependency Injection is commonly used to reduce coupling, improve unit testing, support configuration, manage object lifetimes, and implement Inversion of Control in frameworks such as Spring, .NET, Angular, and NestJS.",
+          "usedWith": [
+            "Inversion of Control",
+            "Interfaces",
+            "Object-Oriented Programming",
+            "Unit Testing",
+            ".NET",
+            "Spring",
+            "Angular",
+            "NestJS",
+            "Java",
+            "C#",
+            "TypeScript",
+            "Clean Architecture"
+          ],
+          "builtOn": [
+            "Inversion of Control",
+            "Abstraction",
+            "Interfaces",
+            "Composition",
+            "Loose Coupling",
+            "Object Lifetimes",
+            "Dependency Graphs"
+          ],
+          "builtUponBy": [
+            "Testable Application Design",
+            "Framework-Based Application Architecture",
+            "Clean Architecture Workflows",
+            "Service Layer Design",
+            "Mocking and Unit Testing Workflows",
+            "Configurable Application Composition",
+            "Enterprise Application Development"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Service Locator Pattern",
+            "Manual Object Construction",
+            "Factory Pattern",
+            "Static Dependencies",
+            "Global Singleton Access"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Design Patterns",
+            "Software Design",
+            "Object-Oriented Design",
+            "Application Architecture",
+            "Dependency Management"
+          ],
+          "includes": [],
+          "examples": [
+            "Injecting a repository into a service constructor",
+            "Registering services in a .NET dependency injection container",
+            "Using Spring to inject a service bean",
+            "Injecting Angular services into components",
+            "Injecting a mock dependency during unit tests",
+            "Passing a logger dependency into a class",
+            "Using NestJS providers for dependency injection"
+          ],
+          "useCases": [
+            "Reducing coupling between classes",
+            "Improving unit testability",
+            "Replacing concrete dependencies with mocks",
+            "Managing object lifetimes",
+            "Configuring application services centrally",
+            "Supporting clean architecture boundaries",
+            "Separating construction logic from business logic",
+            "Making code easier to refactor and extend"
+          ],
+          "relatedConcepts": [
+            "Inversion of Control",
+            "Interface",
+            "Abstraction",
+            "Loose Coupling",
+            "Service Locator Pattern",
+            "Factory Pattern",
+            "Unit Testing",
+            "Mocking",
+            "Clean Architecture",
+            "Object-Oriented Programming",
+            "Composition",
+            "Dependency Container"
+          ]
+        },
+        {
+          "id": "inversion-of-control",
+          "name": "Inversion of Control",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "IoC",
+            "Inversion of Control Principle",
+            "IoC Principle",
+            "Control Inversion"
+          ],
+          "notes": "Software design principle where control over object creation, dependency resolution, or application flow is delegated to a framework, container, or external mechanism instead of being handled directly by application code.",
+          "tags": [
+            "design-principle",
+            "software-design",
+            "dependency-injection",
+            "framework-design",
+            "decoupling",
+            "object-oriented-programming",
+            "architecture",
+            "control-flow"
+          ],
+          "whatIsIt": "A design principle where control that would normally be handled by application code is delegated to an external framework, container, or runtime mechanism.",
+          "description": "Inversion of Control is a software design principle where the control of object creation, dependency management, event flow, lifecycle management, or framework callbacks is inverted away from application code and handled by an external framework, container, runtime, or coordinating mechanism. Dependency Injection is one common way to implement Inversion of Control, but IoC is broader. It also appears in frameworks that call user-defined code, event-driven programming, plugin systems, lifecycle hooks, and containers that manage application components.",
+          "usedWith": [
+            "Dependency Injection",
+            "Frameworks",
+            "Dependency Containers",
+            "Spring",
+            ".NET",
+            "Angular",
+            "NestJS",
+            "Event-Driven Architecture",
+            "Plugin Systems",
+            "Lifecycle Hooks",
+            "Object-Oriented Programming"
+          ],
+          "builtOn": [
+            "Abstraction",
+            "Delegated Control Flow",
+            "Framework Callbacks",
+            "Component Lifecycles",
+            "Dependency Resolution",
+            "Loose Coupling"
+          ],
+          "builtUponBy": [
+            "Dependency Injection Workflows",
+            "Framework-Based Application Design",
+            "Plugin Architecture Workflows",
+            "Event-Driven Programming Workflows",
+            "Lifecycle-Managed Application Components",
+            "Testable Software Design",
+            "Enterprise Application Frameworks"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Direct Control Flow",
+            "Manual Dependency Construction",
+            "Service Locator Pattern",
+            "Procedural Control Flow",
+            "Hard-Coded Object Creation"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Software Design",
+            "Design Principles",
+            "Object-Oriented Design",
+            "Framework Architecture",
+            "Application Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "A framework calling application code through lifecycle hooks",
+            "A DI container constructing services instead of classes constructing dependencies directly",
+            "Spring managing bean creation and injection",
+            ".NET resolving services through an IoC container",
+            "Angular creating components and injecting services",
+            "A plugin system invoking registered plugin callbacks",
+            "An event loop calling registered event handlers"
+          ],
+          "useCases": [
+            "Reducing direct control-flow coupling",
+            "Letting frameworks manage object lifecycles",
+            "Supporting dependency injection",
+            "Improving testability and configurability",
+            "Building extensible plugin architectures",
+            "Separating framework infrastructure from business logic",
+            "Managing component creation centrally",
+            "Supporting event-driven or callback-based systems"
+          ],
+          "relatedConcepts": [
+            "Dependency Injection",
+            "Dependency Container",
+            "Framework",
+            "Callback",
+            "Lifecycle Hook",
+            "Plugin Architecture",
+            "Event-Driven Programming",
+            "Loose Coupling",
+            "Abstraction",
+            "Service Locator Pattern",
+            "Object-Oriented Programming",
+            "Design Principle"
+          ]
+        },
+        {
+          "id": "solid",
+          "name": "SOLID",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "SOLID Principles",
+            "SOLID Design Principles",
+            "Object-Oriented Design Principles",
+            "SOLID Object-Oriented Design"
+          ],
+          "notes": "Set of five object-oriented design principles focused on making software easier to understand, extend, test, and maintain.",
+          "tags": [
+            "design-principles",
+            "object-oriented-programming",
+            "software-design",
+            "maintainability",
+            "extensibility",
+            "testability",
+            "clean-code",
+            "architecture-design"
+          ],
+          "whatIsIt": "A set of five software design principles for creating maintainable, extensible, and loosely coupled object-oriented code.",
+          "description": "SOLID is a group of five object-oriented design principles: Single Responsibility Principle, Open/Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, and Dependency Inversion Principle. These principles help developers organize classes, interfaces, dependencies, and responsibilities so code is easier to modify, test, extend, and reason about. SOLID is commonly used in object-oriented programming, clean code practices, backend design, enterprise applications, and architecture discussions.",
+          "usedWith": [
+            "Object-Oriented Programming",
+            "Clean Code",
+            "Design Patterns",
+            "Dependency Injection",
+            "Dependency Inversion",
+            "Interfaces",
+            "Unit Testing",
+            "Refactoring",
+            "Layered Architecture",
+            "Clean Architecture",
+            "Domain-Driven Design",
+            "Backend"
+          ],
+          "builtOn": [
+            "Abstraction",
+            "Encapsulation",
+            "Polymorphism",
+            "Separation of Concerns",
+            "Loose Coupling",
+            "Cohesion",
+            "Interface-Based Design"
+          ],
+          "builtUponBy": [
+            "Maintainable Application Design",
+            "Testable Codebase Design",
+            "Clean Architecture Workflows",
+            "Object-Oriented Design Workflows",
+            "Refactoring Workflows",
+            "Enterprise Application Development",
+            "Dependency Injection Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Procedural Design",
+            "Anemic Design Guidelines",
+            "Ad Hoc Object Design",
+            "Functional Programming Principles",
+            "GRASP Principles"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Software Design",
+            "Object-Oriented Design",
+            "Clean Code",
+            "Software Engineering Concepts",
+            "Architecture and Design Principles"
+          ],
+          "includes": [],
+          "examples": [
+            "Splitting a large service class into smaller responsibility-focused classes",
+            "Depending on interfaces instead of concrete implementations",
+            "Adding new behavior through extension instead of modifying existing code",
+            "Creating smaller client-specific interfaces",
+            "Refactoring inheritance so subclasses remain substitutable",
+            "Using dependency injection to invert control over dependencies"
+          ],
+          "useCases": [
+            "Improving object-oriented code maintainability",
+            "Reducing coupling between classes",
+            "Making code easier to test",
+            "Guiding refactoring decisions",
+            "Designing extensible class structures",
+            "Improving clean code practices",
+            "Supporting architecture patterns with clear dependency boundaries"
+          ],
+          "relatedConcepts": [
+            "Object-Oriented Programming",
+            "Clean Code",
+            "Design Pattern",
+            "Separation of Concerns",
+            "Dependency Inversion",
+            "Dependency Injection",
+            "Interface",
+            "Refactoring",
+            "Abstraction",
+            "Encapsulation",
+            "Cohesion",
+            "Loose Coupling"
+          ]
+        },
+        {
+          "id": "separation-of-concerns",
+          "name": "Separation of Concerns",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "SoC",
+            "Separation-of-Concerns",
+            "Concern Separation",
+            "Separated Responsibilities"
+          ],
+          "notes": "Software design principle that separates a system into distinct parts so each part focuses on a specific responsibility or concern.",
+          "tags": [
+            "design-principle",
+            "software-design",
+            "architecture-design",
+            "modularity",
+            "maintainability",
+            "cohesion",
+            "decoupling",
+            "clean-code"
+          ],
+          "whatIsIt": "A software design principle that organizes code so different responsibilities, behaviors, or problem areas are separated into distinct modules, layers, components, or classes.",
+          "description": "Separation of Concerns is a foundational software design principle that encourages dividing a system into distinct parts, where each part addresses a specific responsibility or area of the problem. It helps reduce complexity by keeping unrelated logic apart, such as separating user interface code from business logic, business rules from persistence, or application orchestration from infrastructure details. Separation of Concerns supports maintainability, testability, modularity, reuse, clearer architecture boundaries, and easier reasoning about code.",
+          "usedWith": [
+            "SOLID",
+            "Layered Architecture",
+            "MVC",
+            "Clean Architecture",
+            "Hexagonal Architecture",
+            "Onion Architecture",
+            "Domain-Driven Design",
+            "Modular Architecture",
+            "Object-Oriented Programming",
+            "Functional Programming",
+            "Refactoring",
+            "Unit Testing"
+          ],
+          "builtOn": [
+            "Modularity",
+            "Abstraction",
+            "Encapsulation",
+            "Cohesion",
+            "Loose Coupling",
+            "Responsibility Assignment",
+            "Boundary Definition"
+          ],
+          "builtUponBy": [
+            "Layered Architecture",
+            "MVC Architecture",
+            "Clean Architecture",
+            "Hexagonal Architecture",
+            "Onion Architecture",
+            "Domain-Driven Design",
+            "Modular Application Design",
+            "Maintainable Codebase Organization"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Tightly Coupled Design",
+            "Big Ball of Mud",
+            "Monolithic Responsibility Design",
+            "Ad Hoc Code Organization"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Software Design",
+            "Software Architecture",
+            "Clean Code",
+            "Software Engineering Concepts",
+            "Architecture and Design Principles"
+          ],
+          "includes": [],
+          "examples": [
+            "Separating UI logic from business logic",
+            "Separating business rules from database access code",
+            "Keeping authentication concerns separate from domain logic",
+            "Using service classes to separate orchestration from controllers",
+            "Separating persistence adapters from application use cases",
+            "Organizing code into presentation, domain, and infrastructure layers"
+          ],
+          "useCases": [
+            "Reducing code complexity",
+            "Improving maintainability",
+            "Making code easier to test",
+            "Creating clearer architecture boundaries",
+            "Reducing coupling between unrelated parts of a system",
+            "Supporting modular application design",
+            "Making systems easier to reason about and refactor"
+          ],
+          "relatedConcepts": [
+            "SOLID",
+            "Modularity",
+            "Cohesion",
+            "Loose Coupling",
+            "Abstraction",
+            "Encapsulation",
+            "Layered Architecture",
+            "MVC",
+            "Clean Architecture",
+            "Hexagonal Architecture",
+            "Domain-Driven Design",
+            "Refactoring"
+          ]
+        },
+        {
+          "id": "low-coupling",
+          "name": "Low Coupling",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "Loose Coupling",
+            "Reduced Coupling",
+            "Low-Coupling Design",
+            "Loosely Coupled Design"
+          ],
+          "notes": "Software design principle where modules, classes, services, or components depend on each other as little as practical, making systems easier to change, test, maintain, and replace.",
+          "tags": [
+            "software-design",
+            "design-principle",
+            "architecture",
+            "maintainability",
+            "modularity",
+            "testability",
+            "dependency-management",
+            "system-design"
+          ],
+          "whatIsIt": "A software design quality where components have minimal unnecessary dependencies on each other.",
+          "description": "Low Coupling is a software design principle focused on reducing unnecessary dependencies between modules, classes, components, services, or subsystems. A low-coupling design keeps implementation details isolated, communicates through stable interfaces, avoids excessive shared state, and limits ripple effects when code changes. Low coupling is commonly paired with High Cohesion: low coupling means components are not overly dependent on each other, while high cohesion means each component has a clear and focused responsibility.",
+          "usedWith": [
+            "High Cohesion",
+            "Modularity",
+            "Encapsulation",
+            "Abstraction",
+            "Interfaces",
+            "Dependency Injection",
+            "Inversion of Control",
+            "Clean Architecture",
+            "Domain-Driven Design",
+            "Microservices",
+            "Modular Monolith",
+            "Refactoring"
+          ],
+          "builtOn": [
+            "Abstraction",
+            "Encapsulation",
+            "Information Hiding",
+            "Stable Interfaces",
+            "Separation of Concerns",
+            "Dependency Direction",
+            "Module Boundaries"
+          ],
+          "builtUponBy": [
+            "Maintainable Software Design",
+            "Testable Application Architecture",
+            "Modular Application Design",
+            "Clean Architecture Workflows",
+            "Microservice Boundary Design",
+            "Large Codebase Refactoring",
+            "Legacy System Modernization"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "High Coupling",
+            "Tight Coupling",
+            "Big Ball of Mud",
+            "Spaghetti Code"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Software Design",
+            "Software Architecture",
+            "System Design",
+            "Object-Oriented Design",
+            "Modular Design"
+          ],
+          "includes": [],
+          "examples": [
+            "A service depending on an interface instead of a concrete repository class",
+            "A module exposing a small public API instead of sharing internal implementation details",
+            "Replacing one payment provider without changing core order logic",
+            "Using dependency injection to avoid hard-coded dependencies",
+            "Separating business logic from database access details",
+            "A microservice communicating through an API contract rather than direct database access",
+            "A modular monolith enforcing dependency rules between modules"
+          ],
+          "useCases": [
+            "Making code easier to change",
+            "Reducing ripple effects from changes",
+            "Improving unit testability",
+            "Supporting modular architecture",
+            "Making components easier to replace",
+            "Reducing dependency complexity",
+            "Improving maintainability in large codebases",
+            "Supporting clearer service or module boundaries"
+          ],
+          "relatedConcepts": [
+            "High Cohesion",
+            "Coupling",
+            "Cohesion",
+            "Encapsulation",
+            "Abstraction",
+            "Interface",
+            "Dependency Injection",
+            "Inversion of Control",
+            "Separation of Concerns",
+            "Modularity",
+            "Clean Architecture",
+            "System Design"
+          ]
+        },
+        {
+          "id": "high-cohesion",
+          "name": "High Cohesion",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "Strong Cohesion",
+            "High-Cohesion Design",
+            "Cohesive Design",
+            "Functional Cohesion"
+          ],
+          "notes": "Software design principle where the responsibilities inside a module, class, service, or component are closely related and focused around a clear purpose.",
+          "tags": [
+            "software-design",
+            "design-principle",
+            "architecture",
+            "maintainability",
+            "modularity",
+            "responsibility",
+            "cohesion",
+            "system-design"
+          ],
+          "whatIsIt": "A software design quality where the elements inside a component belong together because they serve one focused purpose.",
+          "description": "High Cohesion is a software design principle focused on keeping related responsibilities together and unrelated responsibilities apart. A highly cohesive class, module, service, or component has a clear purpose, contains behavior and data that naturally belong together, and avoids mixing unrelated concerns. High cohesion makes code easier to understand, test, reuse, and change. It is commonly paired with Low Coupling: high cohesion improves internal focus, while low coupling reduces unnecessary dependencies between components.",
+          "usedWith": [
+            "Low Coupling",
+            "Single Responsibility Principle",
+            "Modularity",
+            "Encapsulation",
+            "Separation of Concerns",
+            "Domain-Driven Design",
+            "Bounded Context",
+            "Clean Architecture",
+            "Refactoring",
+            "Object-Oriented Programming",
+            "Modular Monolith",
+            "System Design"
+          ],
+          "builtOn": [
+            "Single Responsibility Principle",
+            "Separation of Concerns",
+            "Encapsulation",
+            "Domain Boundaries",
+            "Focused Responsibilities",
+            "Module Boundaries",
+            "Related Behavior and Data"
+          ],
+          "builtUponBy": [
+            "Maintainable Software Design",
+            "Modular Application Design",
+            "Domain-Driven Design Workflows",
+            "Large Codebase Organization",
+            "Refactoring Workflows",
+            "Clean Architecture Workflows",
+            "Readable Application Architecture"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Low Cohesion",
+            "God Object",
+            "Blob Class",
+            "Big Ball of Mud",
+            "Mixed Responsibility Design"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Software Design",
+            "Software Architecture",
+            "System Design",
+            "Object-Oriented Design",
+            "Modular Design"
+          ],
+          "includes": [],
+          "examples": [
+            "An OrderService containing order-specific business behavior instead of unrelated payment and email logic",
+            "A Customer module grouping customer profile behavior and data together",
+            "A class with one clear responsibility and one main reason to change",
+            "Moving unrelated helper functions out of a bloated service",
+            "Organizing a modular monolith around cohesive business capabilities",
+            "Keeping validation logic near the domain model it belongs to",
+            "Refactoring a god object into smaller focused components"
+          ],
+          "useCases": [
+            "Making code easier to understand",
+            "Improving maintainability",
+            "Organizing code by responsibility",
+            "Reducing mixed-purpose classes and modules",
+            "Supporting clearer domain boundaries",
+            "Improving testability of focused components",
+            "Guiding refactoring decisions",
+            "Improving modular architecture"
+          ],
+          "relatedConcepts": [
+            "Low Coupling",
+            "Cohesion",
+            "Coupling",
+            "Single Responsibility Principle",
+            "Separation of Concerns",
+            "Encapsulation",
+            "Modularity",
+            "Domain-Driven Design",
+            "Bounded Context",
+            "Clean Architecture",
+            "Refactoring",
+            "System Design"
+          ]
+        },
+        {
+          "id": "component-diagram",
+          "name": "Component Diagram",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "UML Component Diagram",
+            "Software Component Diagram",
+            "Component Model Diagram"
+          ],
+          "notes": "UML diagram type used to show software components, their interfaces, dependencies, and how major parts of a system are organized.",
+          "tags": [
+            "uml",
+            "diagram",
+            "software-design",
+            "architecture-design",
+            "system-design",
+            "components",
+            "modeling",
+            "documentation"
+          ],
+          "whatIsIt": "A UML structural diagram that models software components, provided and required interfaces, dependencies, and high-level system organization.",
+          "description": "A Component Diagram is a UML diagram used to represent the major software components in a system and the relationships between them. It can show modules, services, packages, libraries, APIs, interfaces, dependencies, and how pieces of a system fit together. Component diagrams are useful for architecture documentation, system design discussions, dependency analysis, service boundary planning, and explaining how application parts interact at a higher level than class-level design.",
+          "usedWith": [
+            "UML",
+            "Software Architecture",
+            "System Design",
+            "Service-Oriented Architecture",
+            "Microservices",
+            "API Design",
+            "Module Design",
+            "Dependency Management",
+            "Architecture Documentation",
+            "Design Reviews"
+          ],
+          "builtOn": [
+            "UML",
+            "Software Components",
+            "Interfaces",
+            "Dependencies",
+            "Modularity",
+            "Abstraction",
+            "System Modeling"
+          ],
+          "builtUponBy": [
+            "Architecture Documentation Workflows",
+            "System Design Reviews",
+            "Service Boundary Planning",
+            "Dependency Analysis Workflows",
+            "Enterprise Application Design",
+            "Microservice Architecture Planning"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Class Diagram",
+            "Package Diagram",
+            "Deployment Diagram",
+            "C4 Component Diagram",
+            "Architecture Diagram"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "UML",
+            "Software Architecture",
+            "System Design",
+            "Architecture Documentation"
+          ],
+          "includes": [],
+          "examples": [
+            "Component diagram showing frontend, backend, and database access modules",
+            "UML component diagram showing service dependencies",
+            "Diagram showing a payment component requiring a payment gateway interface",
+            "Component diagram documenting modules inside a backend application",
+            "Architecture review diagram showing APIs and dependent components"
+          ],
+          "useCases": [
+            "Documenting software architecture",
+            "Showing component dependencies",
+            "Planning service or module boundaries",
+            "Explaining system structure to developers",
+            "Supporting architecture and design reviews",
+            "Modeling interfaces between major system parts",
+            "Analyzing coupling between components"
+          ],
+          "relatedConcepts": [
+            "UML",
+            "Software Architecture",
+            "System Design",
+            "Component",
+            "Interface",
+            "Dependency",
+            "Class Diagram",
+            "Deployment Diagram",
+            "Package Diagram",
+            "C4 Model",
+            "Modularity",
+            "Separation of Concerns"
+          ]
+        },
+        {
+          "id": "deployment-diagram",
+          "name": "Deployment Diagram",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "UML Deployment Diagram",
+            "Infrastructure Deployment Diagram",
+            "System Deployment Diagram",
+            "Runtime Deployment Diagram"
+          ],
+          "notes": "UML diagram type used to show how software artifacts are deployed onto physical or virtual nodes such as servers, devices, containers, and cloud infrastructure.",
+          "tags": [
+            "uml",
+            "diagram",
+            "deployment",
+            "infrastructure",
+            "system-design",
+            "architecture-design",
+            "modeling",
+            "documentation"
+          ],
+          "whatIsIt": "A UML structural diagram that models where software artifacts run and how they are deployed across hardware, servers, devices, containers, or cloud infrastructure.",
+          "description": "A Deployment Diagram is a UML diagram used to show the physical or runtime deployment structure of a system. It represents nodes such as servers, virtual machines, devices, containers, execution environments, and cloud infrastructure, along with the software artifacts deployed to them. Deployment diagrams help teams reason about runtime topology, infrastructure layout, network connections, scaling, hosting environments, operational boundaries, and how application components map onto real execution environments.",
+          "usedWith": [
+            "UML",
+            "Software Architecture",
+            "System Design",
+            "Deployment",
+            "Cloud Infrastructure",
+            "Containers",
+            "Virtual Machines",
+            "Servers",
+            "Networking",
+            "Architecture Documentation"
+          ],
+          "builtOn": [
+            "UML",
+            "Deployment Modeling",
+            "Nodes",
+            "Artifacts",
+            "Execution Environments",
+            "Infrastructure Topology",
+            "Runtime Architecture"
+          ],
+          "builtUponBy": [
+            "Deployment Planning Workflows",
+            "Infrastructure Architecture Reviews",
+            "Cloud Architecture Documentation",
+            "Runtime Topology Design",
+            "System Operations Planning",
+            "Production Environment Documentation"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Component Diagram",
+            "Network Diagram",
+            "Infrastructure Diagram",
+            "C4 Deployment Diagram",
+            "Architecture Diagram"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "UML",
+            "Software Architecture",
+            "System Design",
+            "Deployment Planning",
+            "Architecture Documentation"
+          ],
+          "includes": [],
+          "examples": [
+            "Deployment diagram showing a web app running on cloud servers",
+            "UML deployment diagram mapping services to virtual machines",
+            "Diagram showing containers deployed across Kubernetes nodes",
+            "Deployment diagram showing client devices, API servers, and database servers",
+            "Runtime topology diagram for a production environment"
+          ],
+          "useCases": [
+            "Documenting runtime deployment structure",
+            "Showing where software artifacts run",
+            "Planning infrastructure and hosting topology",
+            "Explaining production architecture",
+            "Mapping application components to servers or containers",
+            "Supporting deployment and operations discussions",
+            "Identifying infrastructure boundaries and dependencies"
+          ],
+          "relatedConcepts": [
+            "UML",
+            "Software Architecture",
+            "System Design",
+            "Deployment",
+            "Cloud Infrastructure",
+            "Containerization",
+            "Virtual Machine",
+            "Server",
+            "Network Diagram",
+            "Component Diagram",
+            "Infrastructure",
+            "Runtime Environment"
+          ]
+        },
+        {
+          "id": "use-case-diagram",
+          "name": "Use Case Diagram",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "UML Use Case Diagram",
+            "Use-Case Diagram",
+            "Use Case Model",
+            "System Use Case Diagram"
+          ],
+          "notes": "UML diagram used to show actors, system boundaries, and the high-level goals or interactions users have with a system.",
+          "tags": [
+            "uml",
+            "diagram",
+            "design-modeling",
+            "requirements",
+            "system-design",
+            "software-design",
+            "architecture-design",
+            "use-cases"
+          ],
+          "whatIsIt": "A UML behavioral diagram that models how external actors interact with a system to achieve specific goals.",
+          "description": "A Use Case Diagram is a UML diagram used to capture high-level system functionality from the perspective of external actors. It shows actors, use cases, relationships, and the system boundary so teams can understand who uses a system and what goals the system supports. Use case diagrams are commonly used during requirements analysis, stakeholder communication, system scoping, business analysis, and early architecture discussions. They are less detailed than activity diagrams or sequence diagrams because they focus on goals and interactions rather than step-by-step flow or object communication.",
+          "usedWith": [
+            "UML",
+            "Requirements Analysis",
+            "System Design",
+            "Business Analysis",
+            "User Stories",
+            "Activity Diagram",
+            "Sequence Diagram",
+            "Class Diagram",
+            "Software Architecture",
+            "Stakeholder Communication"
+          ],
+          "builtOn": [
+            "UML",
+            "Actors",
+            "Use Cases",
+            "System Boundary",
+            "Requirements Modeling",
+            "Behavioral Modeling",
+            "User Goals"
+          ],
+          "builtUponBy": [
+            "Requirements Documentation Workflows",
+            "System Scope Modeling",
+            "Business Analysis Workflows",
+            "Software Design Discussions",
+            "Stakeholder Review Workflows",
+            "User Story Discovery Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "User Story Map",
+            "Activity Diagram",
+            "Sequence Diagram",
+            "Business Process Model",
+            "Requirements Specification",
+            "Context Diagram"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Architecture & Design",
+            "UML",
+            "Requirements Modeling",
+            "Software Design",
+            "System Design"
+          ],
+          "includes": [],
+          "examples": [
+            "Customer actor placing an order in an e-commerce system",
+            "Admin actor managing users in an internal application",
+            "Bank customer withdrawing cash from an ATM system",
+            "External payment provider interacting with a checkout system",
+            "Support agent actor creating a ticket in a service desk system",
+            "Use case diagram showing system scope before detailed design"
+          ],
+          "useCases": [
+            "Capturing high-level functional requirements",
+            "Showing who interacts with a system",
+            "Defining system boundaries",
+            "Communicating system scope to stakeholders",
+            "Identifying major user goals",
+            "Supporting early-stage software design",
+            "Organizing requirements before detailed modeling"
+          ],
+          "relatedConcepts": [
+            "UML",
+            "Activity Diagram",
+            "Sequence Diagram",
+            "Class Diagram",
+            "Requirements Analysis",
+            "User Story",
+            "Actor",
+            "System Boundary",
+            "Software Design",
+            "System Design"
+          ]
+        },
+        {
+          "id": "activity-diagram",
+          "name": "Activity Diagram",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "UML Activity Diagram",
+            "Activity Model",
+            "Workflow Diagram",
+            "Process Flow Diagram"
+          ],
+          "notes": "UML behavioral diagram used to model workflows, control flow, decisions, branching, parallel steps, and process behavior.",
+          "tags": [
+            "uml",
+            "diagram",
+            "design-modeling",
+            "workflow",
+            "process-modeling",
+            "software-design",
+            "system-design",
+            "behavioral-modeling"
+          ],
+          "whatIsIt": "A UML behavioral diagram that shows the flow of activities, decisions, and actions in a process or system workflow.",
+          "description": "An Activity Diagram is a UML behavioral diagram used to model workflows and process logic. It shows activities, actions, control flow, decision points, branches, merges, parallel paths, start nodes, end nodes, and sometimes swimlanes for responsible actors or components. Activity diagrams are useful for modeling business processes, application workflows, algorithms, user flows, approval processes, backend flows, and system behavior. They are more flow-oriented than use case diagrams and less interaction-specific than sequence diagrams.",
+          "usedWith": [
+            "UML",
+            "Use Case Diagram",
+            "Sequence Diagram",
+            "Requirements Analysis",
+            "Business Process Modeling",
+            "System Design",
+            "Software Design",
+            "User Flows",
+            "Workflow Modeling",
+            "Business Analysis"
+          ],
+          "builtOn": [
+            "UML",
+            "Behavioral Modeling",
+            "Control Flow",
+            "Workflow Modeling",
+            "Decision Points",
+            "Process Logic",
+            "State and Action Concepts"
+          ],
+          "builtUponBy": [
+            "Workflow Design Workflows",
+            "Business Process Documentation",
+            "Application Flow Modeling",
+            "Requirements Clarification Workflows",
+            "System Behavior Modeling",
+            "Process Automation Design"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Flowchart",
+            "Business Process Model",
+            "Sequence Diagram",
+            "State Machine Diagram",
+            "Use Case Diagram",
+            "User Flow Diagram"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Architecture & Design",
+            "UML",
+            "Behavioral Modeling",
+            "Workflow Modeling",
+            "Software Design"
+          ],
+          "includes": [],
+          "examples": [
+            "Activity diagram showing an order checkout workflow",
+            "Approval process with decision branches and swimlanes",
+            "Login flow with success and failure paths",
+            "Backend workflow for processing a submitted form",
+            "Parallel tasks modeled with fork and join nodes",
+            "Business process modeled before implementation"
+          ],
+          "useCases": [
+            "Modeling workflows and business processes",
+            "Showing decision branches in system behavior",
+            "Documenting user or backend process flows",
+            "Clarifying requirements with stakeholders",
+            "Designing process automation logic",
+            "Visualizing parallel or conditional activities",
+            "Supporting software design before implementation"
+          ],
+          "relatedConcepts": [
+            "UML",
+            "Use Case Diagram",
+            "Sequence Diagram",
+            "State Machine Diagram",
+            "Flowchart",
+            "Workflow",
+            "Business Process Modeling",
+            "Control Flow",
+            "Decision Node",
+            "Software Design"
+          ]
+        },
+        {
+          "id": "state-diagram",
+          "name": "State Diagram",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "State Machine Diagram",
+            "Statechart Diagram",
+            "UML State Diagram",
+            "State Transition Diagram"
+          ],
+          "notes": "Design and modeling diagram used to show states, transitions, events, and behavior changes for an object, component, workflow, or system over time.",
+          "tags": [
+            "design-modeling",
+            "uml",
+            "state-machine",
+            "software-design",
+            "system-design",
+            "behavior-modeling",
+            "architecture",
+            "workflow"
+          ],
+          "whatIsIt": "A behavioral diagram that models how something moves between states in response to events or conditions.",
+          "description": "A State Diagram is a software design and modeling diagram used to represent the possible states of an object, component, workflow, or system and the transitions between those states. It is especially useful when behavior depends on lifecycle, status, events, conditions, or valid state changes. Developers use state diagrams to model order lifecycles, authentication flows, UI states, embedded systems, protocol behavior, workflow engines, and state machines. State Diagrams are commonly associated with UML, but the same concept is also used more generally as a state transition model.",
+          "usedWith": [
+            "UML",
+            "State Machine",
+            "Software Architecture",
+            "System Design",
+            "Workflow Modeling",
+            "Domain-Driven Design",
+            "Sequence Diagram",
+            "Class Diagram",
+            "Business Process Modeling",
+            "Finite State Machine"
+          ],
+          "builtOn": [
+            "States",
+            "Transitions",
+            "Events",
+            "Guards",
+            "Actions",
+            "State Machines",
+            "Behavior Modeling"
+          ],
+          "builtUponBy": [
+            "Workflow Design",
+            "Domain Behavior Modeling",
+            "UI State Modeling",
+            "Protocol Design Workflows",
+            "Embedded System Design",
+            "Business Process Modeling",
+            "State Machine Implementation Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Flowchart",
+            "Activity Diagram",
+            "Sequence Diagram",
+            "Business Process Model",
+            "Decision Table"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "UML",
+            "Software Design",
+            "System Design",
+            "Behavior Modeling",
+            "Architecture Documentation"
+          ],
+          "includes": [],
+          "examples": [
+            "Order moving from Created to Paid to Shipped to Delivered",
+            "User account moving from Pending to Active to Suspended",
+            "Authentication flow with Logged Out, Authenticating, and Logged In states",
+            "UI component switching between Loading, Empty, Error, and Success states",
+            "Protocol connection moving through Open, Closing, and Closed states",
+            "State machine diagram for a workflow engine",
+            "Embedded device mode transitions"
+          ],
+          "useCases": [
+            "Modeling lifecycle behavior",
+            "Designing state machines",
+            "Clarifying valid state transitions",
+            "Documenting workflow behavior",
+            "Preventing invalid status changes",
+            "Designing UI state behavior",
+            "Modeling event-driven behavior",
+            "Communicating complex conditional behavior"
+          ],
+          "relatedConcepts": [
+            "UML",
+            "State Machine",
+            "Finite State Machine",
+            "Activity Diagram",
+            "Sequence Diagram",
+            "Flowchart",
+            "Workflow",
+            "Event-Driven Architecture",
+            "Domain-Driven Design",
+            "System Design",
+            "Behavior Modeling",
+            "Software Architecture"
+          ]
+        },
+        {
+          "id": "data-flow-diagram",
+          "name": "Data Flow Diagram",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "DFD",
+            "Data-Flow Diagram",
+            "Data Flow Model",
+            "Process Flow Diagram"
+          ],
+          "notes": "Design and analysis diagram used to show how data moves between external entities, processes, data stores, and system boundaries.",
+          "tags": [
+            "design-modeling",
+            "system-design",
+            "data-flow",
+            "software-design",
+            "architecture",
+            "analysis",
+            "process-modeling",
+            "documentation"
+          ],
+          "whatIsIt": "A diagram that models how data enters, moves through, is transformed by, and exits a system.",
+          "description": "A Data Flow Diagram is a design and analysis diagram used to show how data moves through a system. It represents external entities, processes, data stores, data flows, and system boundaries. Developers, analysts, and architects use DFDs to understand system inputs and outputs, document business processes, analyze integrations, identify data dependencies, clarify system scope, and communicate how information moves across components. A DFD focuses on data movement and transformation rather than class structure, deployment topology, or exact execution order.",
+          "usedWith": [
+            "System Design",
+            "Software Architecture",
+            "Business Analysis",
+            "Requirements Analysis",
+            "Data Modeling",
+            "Entity Relationship Diagram",
+            "Sequence Diagram",
+            "API Design",
+            "Integration",
+            "Threat Modeling"
+          ],
+          "builtOn": [
+            "External Entities",
+            "Processes",
+            "Data Stores",
+            "Data Flows",
+            "System Boundaries",
+            "Process Decomposition",
+            "Information Flow Modeling"
+          ],
+          "builtUponBy": [
+            "Requirements Analysis Workflows",
+            "System Analysis Workflows",
+            "Integration Design Workflows",
+            "Data Architecture Planning",
+            "Business Process Documentation",
+            "Threat Modeling Workflows",
+            "Legacy System Understanding"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Sequence Diagram",
+            "Activity Diagram",
+            "Flowchart",
+            "Entity Relationship Diagram",
+            "Context Diagram"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Software Design",
+            "System Design",
+            "Business Analysis",
+            "Architecture Documentation",
+            "Data Modeling"
+          ],
+          "includes": [],
+          "examples": [
+            "Customer submitting order data to an order processing system",
+            "Payment information flowing from checkout to payment processor",
+            "User profile data moving between an API and database",
+            "Data flow between an external system, application service, and data store",
+            "Context diagram showing system inputs and outputs",
+            "DFD for a legacy business process",
+            "Data flow model for an integration between systems"
+          ],
+          "useCases": [
+            "Understanding how data moves through a system",
+            "Documenting system inputs and outputs",
+            "Clarifying system boundaries",
+            "Analyzing integrations between systems",
+            "Supporting requirements analysis",
+            "Identifying data stores and transformations",
+            "Documenting legacy system behavior",
+            "Supporting threat modeling around data movement"
+          ],
+          "relatedConcepts": [
+            "System Design",
+            "Software Architecture",
+            "Entity Relationship Diagram",
+            "Sequence Diagram",
+            "Activity Diagram",
+            "Flowchart",
+            "Context Diagram",
+            "Data Modeling",
+            "Integration",
+            "API Design",
+            "Threat Modeling",
+            "Business Analysis"
+          ]
+        },
+        {
+          "id": "c4-model",
+          "name": "C4 Model",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "C4",
+            "C4 Architecture Model",
+            "C4 Software Architecture Model",
+            "Context Container Component Code Model"
+          ],
+          "notes": "Software architecture diagramming model that describes systems through four levels of abstraction: Context, Container, Component, and Code.",
+          "tags": [
+            "architecture-design",
+            "software-architecture",
+            "diagram",
+            "system-design",
+            "documentation",
+            "modeling",
+            "visualization",
+            "technical-communication"
+          ],
+          "whatIsIt": "A software architecture visualization model that uses four diagram levels to explain a system from high-level context down to code-level structure.",
+          "description": "The C4 Model is a software architecture diagramming approach that organizes architecture views into four levels: Context, Container, Component, and Code. It helps teams communicate architecture at different levels of detail, starting with how a system fits into its environment, then showing deployable applications and data stores, then internal components, and optionally code-level structures. C4 is useful because it gives architecture diagrams a consistent structure without requiring every diagram to use full UML notation.",
+          "usedWith": [
+            "Software Architecture",
+            "System Design",
+            "Architecture Documentation",
+            "Component Diagram",
+            "Deployment Diagram",
+            "UML",
+            "Microservices",
+            "Cloud Architecture",
+            "Architecture Decision Record",
+            "Design Reviews"
+          ],
+          "builtOn": [
+            "Abstraction",
+            "Architecture Views",
+            "Diagramming",
+            "System Context Modeling",
+            "Container Modeling",
+            "Component Modeling",
+            "Software Documentation"
+          ],
+          "builtUponBy": [
+            "Architecture Documentation Workflows",
+            "System Design Reviews",
+            "Technical Onboarding Materials",
+            "Microservice Architecture Planning",
+            "Cloud Architecture Communication",
+            "Architecture Governance Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "UML",
+            "Component Diagram",
+            "Deployment Diagram",
+            "Architecture Diagram",
+            "Informal Whiteboard Diagram",
+            "ArchiMate"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Software Architecture",
+            "System Design",
+            "Architecture Documentation",
+            "Technical Communication"
+          ],
+          "includes": [],
+          "examples": [
+            "System Context diagram showing users and external systems",
+            "Container diagram showing web app, API, database, and message broker",
+            "Component diagram showing internal backend service structure",
+            "Code diagram showing classes inside a component",
+            "C4 diagrams used during architecture review",
+            "Architecture documentation generated from C4-style diagrams"
+          ],
+          "useCases": [
+            "Explaining software architecture at multiple levels of detail",
+            "Documenting system boundaries and external dependencies",
+            "Showing containers, services, applications, and data stores",
+            "Communicating architecture to technical and non-technical audiences",
+            "Supporting onboarding and architecture reviews",
+            "Creating consistent architecture diagrams",
+            "Visualizing component relationships inside a system"
+          ],
+          "relatedConcepts": [
+            "Software Architecture",
+            "System Design",
+            "Architecture Diagram",
+            "Component Diagram",
+            "Deployment Diagram",
+            "UML",
+            "Architecture Documentation",
+            "Microservices",
+            "Container",
+            "Component",
+            "Technical Documentation",
+            "Architecture Decision Record"
+          ]
+        },
+        {
+          "id": "architecture-decision-record",
+          "name": "Architecture Decision Record",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "ADR",
+            "Architectural Decision Record",
+            "Architecture Decision Log",
+            "Architectural Decision Log",
+            "Decision Record"
+          ],
+          "notes": "Lightweight architecture documentation format used to record important design decisions, the context behind them, alternatives considered, and their consequences.",
+          "tags": [
+            "architecture-design",
+            "software-architecture",
+            "documentation",
+            "decision-record",
+            "technical-writing",
+            "system-design",
+            "governance",
+            "maintainability"
+          ],
+          "whatIsIt": "A concise document that captures an important architecture decision, why it was made, what alternatives were considered, and what consequences it creates.",
+          "description": "An Architecture Decision Record is a lightweight documentation artifact used to preserve significant technical and architectural decisions. An ADR usually records the decision context, problem, constraints, chosen option, alternatives, status, and consequences. ADRs help teams remember why a system was designed a certain way, communicate tradeoffs to future maintainers, reduce repeated debates, and create an audit trail for architecture evolution.",
+          "usedWith": [
+            "Software Architecture",
+            "System Design",
+            "Architecture Documentation",
+            "Design Reviews",
+            "C4 Model",
+            "Domain-Driven Design",
+            "Technical Documentation",
+            "Software Project Management",
+            "DevOps",
+            "Engineering Governance"
+          ],
+          "builtOn": [
+            "Technical Decision Making",
+            "Software Documentation",
+            "Tradeoff Analysis",
+            "Architecture Governance",
+            "Design Rationale",
+            "Context Documentation",
+            "Decision Traceability"
+          ],
+          "builtUponBy": [
+            "Architecture Governance Workflows",
+            "Architecture Review Processes",
+            "Technical Onboarding Materials",
+            "System Evolution Documentation",
+            "Engineering Knowledge Management",
+            "Long-Term Maintenance Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Design Document",
+            "RFC",
+            "Technical Specification",
+            "Architecture Document",
+            "Informal Team Notes",
+            "Wiki Documentation"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Software Architecture",
+            "Architecture Documentation",
+            "System Design",
+            "Engineering Governance",
+            "Technical Documentation"
+          ],
+          "includes": [],
+          "examples": [
+            "ADR documenting the choice of PostgreSQL over MongoDB",
+            "ADR explaining why a service uses event-driven messaging",
+            "ADR recording the decision to adopt microservices",
+            "ADR marking a previous decision as superseded",
+            "ADR describing tradeoffs between REST and GraphQL",
+            "ADR stored in a repository alongside application code"
+          ],
+          "useCases": [
+            "Recording important architecture decisions",
+            "Preserving design rationale for future maintainers",
+            "Documenting tradeoffs and alternatives",
+            "Reducing repeated architecture debates",
+            "Supporting architecture review and governance",
+            "Improving technical onboarding",
+            "Tracking how system architecture evolves over time"
+          ],
+          "relatedConcepts": [
+            "Software Architecture",
+            "System Design",
+            "Architecture Documentation",
+            "Design Review",
+            "C4 Model",
+            "Technical Specification",
+            "RFC",
+            "Tradeoff Analysis",
+            "Technical Debt",
+            "Engineering Governance",
+            "Decision Log",
+            "Documentation"
+          ]
+        },
+        {
+          "id": "design-system",
+          "name": "Design System",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "UI Design System",
+            "Product Design System",
+            "Frontend Design System",
+            "Component Design System"
+          ],
+          "notes": "Reusable collection of design principles, UI components, patterns, tokens, documentation, and standards used to create consistent product experiences.",
+          "tags": [
+            "design-system",
+            "ui-design",
+            "frontend",
+            "components",
+            "documentation",
+            "accessibility",
+            "product-design",
+            "consistency"
+          ],
+          "whatIsIt": "A shared system of reusable UI components, design tokens, patterns, guidelines, and documentation used to build consistent digital products.",
+          "description": "A Design System is a structured collection of reusable design and frontend assets that help teams build consistent user interfaces. It commonly includes design tokens, typography, color rules, spacing, icons, UI components, interaction patterns, accessibility guidance, documentation, code examples, and governance practices. Design systems connect product design and frontend engineering by turning visual and interaction standards into reusable components and shared implementation rules.",
+          "usedWith": [
+            "Frontend",
+            "React",
+            "Angular",
+            "Vue.js",
+            "Storybook",
+            "Figma",
+            "Component Libraries",
+            "CSS",
+            "Design Tokens",
+            "Accessibility",
+            "User Experience",
+            "Product Design"
+          ],
+          "builtOn": [
+            "Reusable Components",
+            "Design Tokens",
+            "Style Guidelines",
+            "Component Documentation",
+            "Accessibility Standards",
+            "UI Patterns",
+            "Frontend Architecture"
+          ],
+          "builtUponBy": [
+            "Consistent Product UI Development",
+            "Component Library Workflows",
+            "Frontend Platform Development",
+            "Product Design Workflows",
+            "UI Standardization Programs",
+            "Accessible Interface Development",
+            "Cross-Team Frontend Delivery"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Component Library",
+            "Style Guide",
+            "Pattern Library",
+            "UI Kit",
+            "CSS Framework",
+            "Ad Hoc UI Components"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Frontend Architecture",
+            "Product Design",
+            "User Interface Design",
+            "Design Documentation",
+            "Software Architecture"
+          ],
+          "includes": [],
+          "examples": [
+            "Button, modal, form, and table components shared across multiple apps",
+            "Design tokens defining colors, spacing, typography, and elevation",
+            "Storybook documentation for reusable React components",
+            "Figma library synced with frontend component implementations",
+            "Accessibility guidelines for form controls and keyboard navigation",
+            "Product teams using shared UI patterns instead of one-off designs"
+          ],
+          "useCases": [
+            "Creating consistent user interfaces across products",
+            "Speeding up frontend development",
+            "Reducing duplicated UI component work",
+            "Aligning design and engineering teams",
+            "Improving accessibility and usability consistency",
+            "Documenting approved UI patterns",
+            "Supporting scalable product design across teams"
+          ],
+          "relatedConcepts": [
+            "Frontend",
+            "Component Library",
+            "Design Tokens",
+            "User Interface",
+            "User Experience",
+            "Accessibility",
+            "Storybook",
+            "CSS",
+            "React",
+            "Figma",
+            "Software Architecture",
+            "Separation of Concerns"
+          ]
+        },
+        {
+          "id": "wireframe",
+          "name": "Wireframe",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "UI Wireframe",
+            "UX Wireframe",
+            "Website Wireframe",
+            "Application Wireframe",
+            "Low-Fidelity Mockup"
+          ],
+          "notes": "Low-fidelity visual model used to plan the structure, layout, navigation, and content placement of a user interface before detailed design or implementation.",
+          "tags": [
+            "design-modeling",
+            "ui-design",
+            "ux-design",
+            "wireframing",
+            "prototyping",
+            "software-design",
+            "frontend",
+            "requirements"
+          ],
+          "whatIsIt": "A simplified visual layout that shows the structure and behavior of a user interface without final visual styling.",
+          "description": "A Wireframe is a low-fidelity design artifact used to model the layout, structure, navigation, and content hierarchy of a user interface. Wireframes help teams explore how screens should be organized before investing in detailed visual design or implementation. They are commonly used in web development, mobile app design, UX design, product planning, requirements discovery, stakeholder review, and frontend development. A wireframe is less polished than a mockup and usually less interactive than a prototype, but it is useful for quickly validating structure and user flow.",
+          "usedWith": [
+            "User Interface Design",
+            "User Experience Design",
+            "Frontend",
+            "Web Development",
+            "Mobile Applications",
+            "Figma",
+            "Requirements Analysis",
+            "User Stories",
+            "User Flow Diagram",
+            "Prototype"
+          ],
+          "builtOn": [
+            "Visual Design",
+            "Information Architecture",
+            "User Flows",
+            "Layout Design",
+            "Interaction Design",
+            "Requirements Modeling"
+          ],
+          "builtUponBy": [
+            "UI Design Workflows",
+            "UX Design Workflows",
+            "Frontend Development Workflows",
+            "Product Design Workflows",
+            "Prototype Design Workflows",
+            "Stakeholder Review Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Mockup",
+            "Prototype",
+            "User Flow Diagram",
+            "Design Mockup",
+            "Storyboard",
+            "High-Fidelity Design"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Architecture & Design",
+            "UI Design",
+            "UX Design",
+            "Frontend Planning",
+            "Product Design"
+          ],
+          "includes": [],
+          "examples": [
+            "Homepage wireframe showing header, navigation, hero section, and content blocks",
+            "Mobile app wireframe showing login and onboarding screens",
+            "Dashboard wireframe showing cards, filters, charts, and navigation",
+            "Checkout page wireframe showing form fields and payment steps",
+            "Stakeholder review of a low-fidelity screen layout before UI design"
+          ],
+          "useCases": [
+            "Planning user interface layouts",
+            "Exploring screen structure before implementation",
+            "Communicating UI ideas to stakeholders",
+            "Clarifying requirements for frontend development",
+            "Mapping navigation and content hierarchy",
+            "Validating product flow before high-fidelity design"
+          ],
+          "relatedConcepts": [
+            "User Interface Design",
+            "User Experience Design",
+            "Frontend",
+            "Prototype",
+            "Mockup",
+            "Figma",
+            "User Flow",
+            "Information Architecture",
+            "Requirements Analysis",
+            "Web Development"
+          ]
         }
       ]
     },
@@ -51445,6 +53660,539 @@
             "Release Management",
             "Software Maintenance",
             "Quality Assurance"
+          ]
+        },
+        {
+          "id": "waterfall",
+          "name": "Waterfall",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Project Methodologies",
+          "aliases": [
+            "Waterfall Model",
+            "Waterfall Methodology",
+            "Waterfall Software Development",
+            "Linear Sequential Model"
+          ],
+          "notes": "Sequential project methodology where software work flows through ordered phases such as requirements, design, implementation, testing, deployment, and maintenance.",
+          "tags": [
+            "methodology",
+            "project-methodology",
+            "software-development",
+            "project-management",
+            "sdlc",
+            "sequential-development",
+            "requirements",
+            "planning"
+          ],
+          "whatIsIt": "A sequential software development methodology where each major phase is generally completed before moving to the next.",
+          "description": "Waterfall is a traditional software development methodology that organizes work into a mostly linear sequence of phases, typically requirements, analysis, design, implementation, testing, deployment, and maintenance. It emphasizes upfront planning, documentation, defined scope, phase gates, and predictable delivery milestones. Waterfall can work well when requirements are stable, compliance documentation is important, or change is expensive, but it is less flexible when requirements are uncertain or expected to evolve. It is commonly contrasted with Agile, Scrum, Kanban, and iterative development approaches.",
+          "usedWith": [
+            "SDLC",
+            "Requirements Analysis",
+            "Software Project Management",
+            "Project Planning",
+            "Documentation",
+            "Testing",
+            "Change Control",
+            "Compliance",
+            "Software Architecture",
+            "System Design"
+          ],
+          "builtOn": [
+            "Sequential Development",
+            "Phase-Based Planning",
+            "Requirements Documentation",
+            "Design Before Implementation",
+            "Project Milestones",
+            "Change Control"
+          ],
+          "builtUponBy": [
+            "Traditional Software Project Workflows",
+            "Compliance-Heavy Development Processes",
+            "Fixed-Scope Delivery Plans",
+            "Documentation-Driven Development Workflows",
+            "Contract-Based Software Projects"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Agile",
+            "Scrum",
+            "Kanban",
+            "Iterative Development",
+            "Incremental Development",
+            "Spiral Model"
+          ],
+          "partOf": [
+            "Project Methodologies",
+            "Methodologies",
+            "Software Development Life Cycle",
+            "Software Project Management",
+            "Engineering Process"
+          ],
+          "includes": [],
+          "examples": [
+            "Completing requirements documentation before system design begins",
+            "Finishing design approval before implementation starts",
+            "Formal testing phase after development is complete",
+            "Fixed-scope software project with phase-based delivery milestones",
+            "Compliance-focused project requiring detailed documentation at each stage"
+          ],
+          "useCases": [
+            "Managing projects with stable requirements",
+            "Planning fixed-scope software delivery",
+            "Supporting documentation-heavy development environments",
+            "Coordinating sequential project phases",
+            "Working in regulated or contract-driven projects",
+            "Teaching traditional SDLC models"
+          ],
+          "relatedConcepts": [
+            "Agile",
+            "Scrum",
+            "Kanban",
+            "SDLC",
+            "Requirements Analysis",
+            "Software Project Management",
+            "Project Planning",
+            "Change Control",
+            "Testing",
+            "Documentation"
+          ]
+        },
+        {
+          "id": "spiral-model",
+          "name": "Spiral Model",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Project Methodologies",
+          "aliases": [
+            "Spiral Development Model",
+            "Boehm Spiral Model",
+            "Spiral SDLC Model",
+            "Risk-Driven Development Model"
+          ],
+          "notes": "Risk-driven software development lifecycle model that combines iterative development with structured planning, prototyping, risk analysis, engineering, and evaluation cycles.",
+          "tags": [
+            "project-methodology",
+            "software-development",
+            "sdlc",
+            "iterative-development",
+            "risk-management",
+            "prototyping",
+            "requirements",
+            "engineering-process"
+          ],
+          "whatIsIt": "A software development lifecycle model that organizes work into repeated cycles of planning, risk analysis, engineering, and evaluation.",
+          "description": "The Spiral Model is a software development methodology that combines iterative development with explicit risk analysis. Each spiral cycle typically involves identifying objectives, analyzing risks, building or refining a solution, and evaluating the results before continuing. It is useful for large, complex, high-risk, or uncertain projects where requirements may evolve and early risk reduction is important. It sits near SDLC, Waterfall, Agile, and prototyping models, but its main distinguishing feature is that risk assessment is built directly into each iteration.",
+          "usedWith": [
+            "SDLC",
+            "Risk Assessment",
+            "Requirements Engineering",
+            "Prototyping",
+            "Software Architecture",
+            "System Design",
+            "Project Planning",
+            "Stakeholder Review",
+            "Testing",
+            "Software Project Management"
+          ],
+          "builtOn": [
+            "Software Development Life Cycle",
+            "Iterative Development",
+            "Risk Management",
+            "Prototyping",
+            "Requirements Analysis",
+            "Engineering Evaluation"
+          ],
+          "builtUponBy": [
+            "Risk-Driven Development Workflows",
+            "Large Software Project Planning",
+            "High-Risk System Development",
+            "Iterative Requirements Refinement",
+            "Prototype-Based Validation Workflows",
+            "Complex System Delivery Workflows",
+            "Architecture Risk Reduction Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Agile",
+            "Waterfall",
+            "V-Model",
+            "Incremental Model",
+            "Prototype Model",
+            "Lean Software Development"
+          ],
+          "partOf": [
+            "Project Methodologies",
+            "Software Development",
+            "SDLC Models",
+            "Software Project Management",
+            "Engineering Process",
+            "Risk Management"
+          ],
+          "includes": [],
+          "examples": [
+            "Risk analysis before implementation",
+            "Prototype built to reduce technical uncertainty",
+            "Stakeholder evaluation after each spiral cycle",
+            "Architecture validation before full development",
+            "Large system developed through repeated risk-focused iterations",
+            "Requirements refined after prototype feedback",
+            "High-risk project planned through spiral cycles"
+          ],
+          "useCases": [
+            "Managing high-risk software projects",
+            "Reducing technical uncertainty early",
+            "Validating requirements through prototypes",
+            "Planning large complex systems",
+            "Combining structured lifecycle planning with iteration",
+            "Evaluating risks before major implementation work",
+            "Supporting projects with evolving requirements",
+            "Improving stakeholder feedback during development"
+          ],
+          "relatedConcepts": [
+            "SDLC",
+            "Risk Assessment",
+            "Risk Management",
+            "Prototyping",
+            "Waterfall",
+            "Agile",
+            "Requirements Engineering",
+            "Software Project Management",
+            "System Design",
+            "Software Architecture",
+            "Iterative Development",
+            "V-Model"
+          ]
+        },
+        {
+          "id": "lean-software-development",
+          "name": "Lean Software Development",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Project Methodologies",
+          "aliases": [
+            "Lean Development",
+            "Lean Software",
+            "Lean Software Methodology",
+            "Lean Development Methodology"
+          ],
+          "notes": "Software development methodology adapted from lean thinking, focused on reducing waste, improving flow, delivering value, building quality in, and continuously improving development processes.",
+          "tags": [
+            "project-methodology",
+            "software-development",
+            "lean",
+            "continuous-improvement",
+            "waste-reduction",
+            "value-delivery",
+            "flow",
+            "engineering-process"
+          ],
+          "whatIsIt": "A software development methodology focused on maximizing customer value, reducing waste, improving flow, and continuously improving how software is delivered.",
+          "description": "Lean Software Development applies lean principles to software engineering. It emphasizes eliminating waste, amplifying learning, delivering value quickly, building quality into the process, empowering teams, delaying irreversible decisions until enough information is available, and optimizing the whole system rather than isolated parts. It is related to Agile and Kanban, but Lean is broader than a specific board or sprint process. It is especially useful for improving delivery flow, reducing unnecessary work, shortening feedback loops, and focusing teams on value rather than activity.",
+          "usedWith": [
+            "Agile",
+            "Kanban",
+            "Scrum",
+            "DevOps",
+            "CI/CD",
+            "Value Stream Mapping",
+            "Continuous Improvement",
+            "Software Project Management",
+            "Product Management",
+            "Quality Assurance"
+          ],
+          "builtOn": [
+            "Lean Thinking",
+            "Toyota Production System",
+            "Waste Reduction",
+            "Continuous Improvement",
+            "Value Delivery",
+            "Flow Optimization",
+            "Systems Thinking"
+          ],
+          "builtUponBy": [
+            "Lean Delivery Workflows",
+            "Agile Process Improvement",
+            "Kanban Workflow Optimization",
+            "Value Stream Improvement Workflows",
+            "Continuous Improvement Programs",
+            "Product Delivery Optimization",
+            "Engineering Efficiency Initiatives"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Agile",
+            "Scrum",
+            "Waterfall",
+            "Spiral Model",
+            "V-Model",
+            "Six Sigma"
+          ],
+          "partOf": [
+            "Project Methodologies",
+            "Software Development",
+            "Software Project Management",
+            "Engineering Process",
+            "Agile Methodologies",
+            "Continuous Improvement"
+          ],
+          "includes": [],
+          "examples": [
+            "Removing unnecessary approval steps from a release process",
+            "Using value stream mapping to find delivery bottlenecks",
+            "Reducing work in progress to improve flow",
+            "Shortening feedback loops with automated testing",
+            "Prioritizing features by customer value",
+            "Improving build and release flow through CI/CD",
+            "Eliminating unused features or low-value work"
+          ],
+          "useCases": [
+            "Reducing waste in software delivery",
+            "Improving development flow",
+            "Shortening feedback loops",
+            "Prioritizing customer value",
+            "Improving team autonomy",
+            "Building quality into engineering processes",
+            "Optimizing end-to-end delivery systems",
+            "Supporting continuous process improvement"
+          ],
+          "relatedConcepts": [
+            "Agile",
+            "Kanban",
+            "Scrum",
+            "Continuous Improvement",
+            "Waste Reduction",
+            "Value Stream Mapping",
+            "DevOps",
+            "CI/CD",
+            "Software Project Management",
+            "Flow",
+            "Quality Assurance",
+            "Six Sigma"
+          ]
+        },
+        {
+          "id": "extreme-programming",
+          "name": "Extreme Programming",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Project Methodologies",
+          "aliases": [
+            "XP",
+            "XP Methodology",
+            "Extreme Programming Methodology",
+            "Extreme Programming Agile"
+          ],
+          "notes": "Agile software development methodology focused on frequent feedback, technical excellence, small releases, close customer collaboration, and disciplined engineering practices.",
+          "tags": [
+            "agile",
+            "project-methodology",
+            "software-development",
+            "engineering-practices",
+            "iterative-development",
+            "feedback",
+            "testing",
+            "collaboration"
+          ],
+          "whatIsIt": "An Agile software development methodology that emphasizes rapid feedback, customer involvement, small releases, continuous testing, refactoring, pair programming, and high-quality engineering discipline.",
+          "description": "Extreme Programming is an Agile software development methodology designed for teams working in changing or uncertain requirements environments. It emphasizes short development cycles, frequent releases, close customer collaboration, continuous feedback, test-driven development, pair programming, refactoring, simple design, collective code ownership, continuous integration, and sustainable pace. XP is especially important because it connects Agile project methodology with concrete technical practices that improve software quality and adaptability.",
+          "usedWith": [
+            "Agile",
+            "TDD",
+            "Pair Programming",
+            "Refactoring",
+            "CI/CD",
+            "Unit Testing",
+            "User Stories",
+            "Continuous Integration",
+            "Small Releases",
+            "Customer Feedback",
+            "Simple Design",
+            "Collective Code Ownership"
+          ],
+          "builtOn": [
+            "Agile Software Development",
+            "Iterative Development",
+            "Incremental Delivery",
+            "Customer Collaboration",
+            "Continuous Feedback",
+            "Technical Excellence",
+            "Automated Testing"
+          ],
+          "builtUponBy": [
+            "Agile Delivery Workflows",
+            "Test-Driven Development Workflows",
+            "Continuous Integration Workflows",
+            "Collaborative Programming Workflows",
+            "Refactoring-Heavy Development Workflows",
+            "Rapid Feedback Development Workflows",
+            "Small-Team Agile Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Scrum",
+            "Kanban",
+            "Feature-Driven Development",
+            "Lean Software Development",
+            "Crystal",
+            "Waterfall",
+            "Spiral Model"
+          ],
+          "partOf": [
+            "Agile Methodologies",
+            "Project Methodologies",
+            "Software Development Methodologies",
+            "Engineering Process",
+            "Iterative Development",
+            "Software Project Management",
+            "Development Practices"
+          ],
+          "includes": [],
+          "examples": [
+            "Pair programming session",
+            "Test-first development cycle",
+            "Small release delivered frequently",
+            "Continuous integration after code changes",
+            "Refactoring code after tests pass",
+            "Customer feedback shaping user stories",
+            "Collective ownership of the codebase",
+            "Simple design chosen before adding complexity"
+          ],
+          "useCases": [
+            "Managing changing software requirements",
+            "Improving code quality through disciplined engineering practices",
+            "Delivering small increments frequently",
+            "Using automated tests to guide development",
+            "Reducing defects through pair programming and review",
+            "Improving adaptability through refactoring",
+            "Getting frequent customer feedback",
+            "Supporting high-collaboration Agile teams"
+          ],
+          "relatedConcepts": [
+            "Agile",
+            "TDD",
+            "Pair Programming",
+            "Refactoring",
+            "CI/CD",
+            "Unit Testing",
+            "User Story",
+            "Scrum",
+            "Kanban",
+            "Software Project Management",
+            "Continuous Integration",
+            "Technical Excellence"
+          ]
+        },
+        {
+          "id": "feature-driven-development",
+          "name": "Feature-Driven Development",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Project Methodologies",
+          "aliases": [
+            "FDD",
+            "Feature Driven Development",
+            "FDD Methodology",
+            "Feature-Driven Development Methodology"
+          ],
+          "notes": "Agile software development methodology organized around designing, planning, and building client-valued features in short, structured iterations.",
+          "tags": [
+            "agile",
+            "project-methodology",
+            "software-development",
+            "feature-based-development",
+            "iterative-development",
+            "planning",
+            "modeling",
+            "delivery"
+          ],
+          "whatIsIt": "An Agile software development methodology that organizes work around designing and building small, client-valued features through a structured, iterative process.",
+          "description": "Feature-Driven Development is an Agile software development methodology focused on delivering client-valued features through a structured process. FDD typically emphasizes developing an overall model, building a feature list, planning by feature, designing by feature, and building by feature. It is more structured and model-driven than some Agile approaches, making it useful for larger teams or projects that need visible progress tracking around concrete features. FDD should be treated as a project methodology, while individual practices such as feature planning, domain modeling, and iterative delivery can be related concepts.",
+          "usedWith": [
+            "Agile",
+            "Domain Modeling",
+            "Feature Lists",
+            "User Stories",
+            "Software Project Management",
+            "Iterative Development",
+            "Incremental Development",
+            "Design Modeling",
+            "Class Diagrams",
+            "Code Reviews",
+            "Build Planning",
+            "Release Planning"
+          ],
+          "builtOn": [
+            "Agile Software Development",
+            "Feature-Based Planning",
+            "Iterative Development",
+            "Incremental Delivery",
+            "Domain Modeling",
+            "Object-Oriented Design",
+            "Client-Valued Features"
+          ],
+          "builtUponBy": [
+            "Feature-Based Delivery Workflows",
+            "Agile Project Planning Workflows",
+            "Domain Modeling Workflows",
+            "Incremental Feature Delivery",
+            "Large-Team Agile Workflows",
+            "Release Planning Workflows",
+            "Feature Progress Tracking Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Scrum",
+            "Kanban",
+            "Extreme Programming",
+            "Lean Software Development",
+            "Crystal",
+            "Waterfall",
+            "Spiral Model"
+          ],
+          "partOf": [
+            "Agile Methodologies",
+            "Project Methodologies",
+            "Software Development Methodologies",
+            "Engineering Process",
+            "Iterative Development",
+            "Software Project Management"
+          ],
+          "includes": [],
+          "examples": [
+            "Feature list for a business domain",
+            "Planning development by feature",
+            "Designing a feature before implementation",
+            "Building a small client-valued feature",
+            "Tracking feature completion across a release",
+            "Domain model used to guide feature planning",
+            "Feature team implementing a scoped capability",
+            "Incremental delivery of feature groups"
+          ],
+          "useCases": [
+            "Organizing software work around features",
+            "Planning feature-based releases",
+            "Tracking visible progress by completed features",
+            "Managing larger Agile development efforts",
+            "Connecting domain modeling to implementation work",
+            "Delivering client-valued functionality incrementally",
+            "Structuring design and build work by feature",
+            "Improving project visibility through feature lists"
+          ],
+          "relatedConcepts": [
+            "Agile",
+            "Feature",
+            "User Story",
+            "Domain Modeling",
+            "Object-Oriented Design",
+            "Class Diagram",
+            "Iterative Development",
+            "Incremental Development",
+            "Scrum",
+            "Extreme Programming",
+            "Software Project Management",
+            "Release Planning"
           ]
         }
       ],
@@ -52190,6 +54938,216 @@
             "Software Maintenance",
             "Modularity",
             "Separation of Concerns"
+          ]
+        },
+        {
+          "id": "iterative-development",
+          "name": "Iterative Development",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Development Practices",
+          "aliases": [
+            "Iterative Software Development",
+            "Iterative Model",
+            "Iterative Approach",
+            "Iteration-Based Development"
+          ],
+          "notes": "Development practice where software is built, evaluated, and improved through repeated cycles rather than completed all at once.",
+          "tags": [
+            "development-practice",
+            "iterative-development",
+            "software-development",
+            "agile",
+            "feedback-loops",
+            "continuous-improvement",
+            "requirements",
+            "engineering-process"
+          ],
+          "whatIsIt": "A software development practice where teams repeatedly build, test, review, and refine software through cycles of improvement.",
+          "description": "Iterative Development is a software development practice based on repeated cycles of design, implementation, testing, feedback, and refinement. Instead of trying to get the entire system perfect in one pass, teams build an initial version, evaluate it, learn from feedback, and improve the software over multiple iterations. It is closely related to Agile, Scrum, prototyping, feedback loops, and incremental delivery, but the core emphasis is refinement over repeated cycles. Iterative Development is especially useful when requirements are uncertain, feedback is important, and teams expect the solution to evolve over time.",
+          "usedWith": [
+            "Agile",
+            "Scrum",
+            "Kanban",
+            "SDLC",
+            "Prototyping",
+            "User Feedback",
+            "Sprint Planning",
+            "Backlog Refinement",
+            "Testing",
+            "CI/CD",
+            "Incremental Development"
+          ],
+          "builtOn": [
+            "Feedback Loops",
+            "Continuous Improvement",
+            "Adaptive Planning",
+            "Testing and Review",
+            "Requirements Refinement",
+            "Evolutionary Design"
+          ],
+          "builtUponBy": [
+            "Agile Development Workflows",
+            "Sprint-Based Development",
+            "Prototype Refinement Workflows",
+            "Product Discovery Workflows",
+            "Incremental Delivery Workflows",
+            "Continuous Improvement Workflows",
+            "Feedback-Driven Product Development"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Waterfall",
+            "Big Design Up Front",
+            "Linear Development",
+            "Sequential Development",
+            "V-Model"
+          ],
+          "partOf": [
+            "Development Practices",
+            "Software Development",
+            "Engineering Process",
+            "Agile Development",
+            "Product Development",
+            "Software Project Management"
+          ],
+          "includes": [],
+          "examples": [
+            "Building a prototype, testing it, then improving it",
+            "Refining a feature across multiple sprints",
+            "Reworking a user flow after stakeholder feedback",
+            "Improving architecture after early implementation feedback",
+            "Testing an MVP and revising the design",
+            "Iterating on UI behavior based on usability testing",
+            "Repeatedly improving a backend API design"
+          ],
+          "useCases": [
+            "Handling uncertain or changing requirements",
+            "Improving software through repeated feedback",
+            "Reducing risk by learning during development",
+            "Refining prototypes into production features",
+            "Improving usability through repeated review",
+            "Adapting design based on implementation discoveries",
+            "Supporting Agile development cycles",
+            "Evolving a system over multiple releases"
+          ],
+          "relatedConcepts": [
+            "Agile",
+            "Incremental Development",
+            "Scrum",
+            "Sprint",
+            "Prototype",
+            "Feedback Loop",
+            "Continuous Improvement",
+            "SDLC",
+            "MVP",
+            "Waterfall",
+            "Adaptive Planning"
+          ]
+        },
+        {
+          "id": "incremental-development",
+          "name": "Incremental Development",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Development Practices",
+          "aliases": [
+            "Incremental Software Development",
+            "Incremental Model",
+            "Incremental Delivery",
+            "Feature Increment Development"
+          ],
+          "notes": "Development practice where software is built and delivered in smaller usable pieces rather than as one large final release.",
+          "tags": [
+            "development-practice",
+            "incremental-development",
+            "software-development",
+            "agile",
+            "incremental-delivery",
+            "release-planning",
+            "product-development",
+            "engineering-process"
+          ],
+          "whatIsIt": "A software development practice where teams build and deliver a system in smaller functional increments over time.",
+          "description": "Incremental Development is a software development practice where a system is built in smaller, useful pieces rather than delivered only after the entire system is complete. Each increment adds functionality, expands capability, or delivers another usable slice of the product. It is closely related to Agile, iterative development, MVPs, release planning, and incremental delivery, but the core emphasis is adding working pieces over time. Incremental Development is useful when teams want earlier value delivery, shorter feedback cycles, reduced release risk, and a clearer path from partial functionality to a complete system.",
+          "usedWith": [
+            "Agile",
+            "Scrum",
+            "Kanban",
+            "SDLC",
+            "MVP",
+            "User Stories",
+            "Backlog",
+            "Release Planning",
+            "CI/CD",
+            "Iterative Development",
+            "Feature Flags"
+          ],
+          "builtOn": [
+            "Incremental Delivery",
+            "Prioritization",
+            "User Stories",
+            "Release Planning",
+            "Modular Feature Development",
+            "Working Software"
+          ],
+          "builtUponBy": [
+            "Agile Delivery Workflows",
+            "Feature-Based Development",
+            "MVP Development Workflows",
+            "Release Planning Workflows",
+            "Continuous Delivery Workflows",
+            "Product Roadmap Execution",
+            "Iterative and Incremental Development Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Waterfall",
+            "Big-Bang Release",
+            "Big Design Up Front",
+            "Single Final Delivery",
+            "Sequential Development"
+          ],
+          "partOf": [
+            "Development Practices",
+            "Software Development",
+            "Engineering Process",
+            "Agile Development",
+            "Product Development",
+            "Software Project Management"
+          ],
+          "includes": [],
+          "examples": [
+            "Delivering login first, then profile management later",
+            "Building an MVP before adding advanced features",
+            "Shipping one user story at a time",
+            "Adding reporting features across multiple releases",
+            "Releasing a basic API before expanding endpoints",
+            "Delivering a read-only dashboard before adding edit features",
+            "Rolling out product capabilities in phases"
+          ],
+          "useCases": [
+            "Delivering value earlier",
+            "Breaking large projects into smaller releases",
+            "Reducing risk from big-bang delivery",
+            "Building MVPs before full products",
+            "Prioritizing high-value features first",
+            "Supporting frequent releases",
+            "Making progress visible to stakeholders",
+            "Scaling a product from partial functionality to complete capability"
+          ],
+          "relatedConcepts": [
+            "Agile",
+            "Iterative Development",
+            "Incremental Delivery",
+            "MVP",
+            "User Story",
+            "Backlog",
+            "Release Planning",
+            "CI/CD",
+            "Continuous Delivery",
+            "Feature Flag",
+            "SDLC"
           ]
         }
       ]
@@ -57160,6 +60118,224 @@
           "IoT",
           "Reverse Proxy",
           "Traffic Routing"
+        ]
+      },
+      {
+        "id": "message-queue",
+        "name": "Message Queue",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Queue",
+          "Message Queuing",
+          "Messaging Queue",
+          "Asynchronous Queue",
+          "Task Queue"
+        ],
+        "notes": "Messaging mechanism where producers place messages onto a queue and consumers process them asynchronously, often to decouple services and smooth workload spikes.",
+        "tags": [
+          "messaging",
+          "asynchronous-processing",
+          "distributed-systems",
+          "event-driven",
+          "system-design",
+          "backend",
+          "integration",
+          "architecture"
+        ],
+        "whatIsIt": "A communication mechanism that stores messages until consumers retrieve and process them, enabling asynchronous work between components or services.",
+        "description": "A Message Queue is a software communication concept where producers send messages to a queue and consumers process those messages later. It is commonly used to decouple services, run background jobs, buffer workload spikes, retry failed operations, distribute work across workers, and improve reliability in distributed systems. Message queues are often used with event-driven architecture, microservices, task processing, integration systems, and cloud messaging services. They differ from publish-subscribe systems because a queue usually distributes each message to one consumer or worker group, while pub/sub usually broadcasts events to multiple subscribers.",
+        "usedWith": [
+          "Event-Driven Architecture",
+          "Publish-Subscribe Pattern",
+          "Microservices",
+          "Distributed Systems",
+          "RabbitMQ",
+          "Apache Kafka",
+          "Amazon SQS",
+          "Azure Service Bus",
+          "Background Jobs",
+          "Worker Processes",
+          "Retry Handling",
+          "Dead-Letter Queue"
+        ],
+        "builtOn": [
+          "Asynchronous Communication",
+          "Producer-Consumer Pattern",
+          "Message Passing",
+          "Queues",
+          "Decoupling",
+          "Backpressure",
+          "Distributed Systems"
+        ],
+        "builtUponBy": [
+          "Background Job Processing Workflows",
+          "Microservice Integration Workflows",
+          "Event-Driven Workflows",
+          "Task Processing Systems",
+          "Retry and Failure Handling Workflows",
+          "Cloud Messaging Architectures",
+          "Data Pipeline Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Publish-Subscribe Pattern",
+          "Synchronous API Call",
+          "Event Stream",
+          "Webhook",
+          "Shared Database Integration",
+          "Remote Procedure Call"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "System Design",
+          "Distributed Systems",
+          "Messaging",
+          "Event-Driven Architecture",
+          "Backend Architecture"
+        ],
+        "includes": [],
+        "examples": [
+          "Order service placing a payment task onto a queue",
+          "Worker process consuming jobs from a background task queue",
+          "Email service processing queued notification messages",
+          "Retrying failed messages after temporary downstream errors",
+          "Dead-letter queue storing messages that failed too many times",
+          "Amazon SQS queue buffering work between services",
+          "RabbitMQ queue distributing jobs across consumers"
+        ],
+        "useCases": [
+          "Running background jobs asynchronously",
+          "Decoupling services in distributed systems",
+          "Buffering traffic spikes",
+          "Retrying failed work safely",
+          "Distributing tasks across workers",
+          "Improving reliability between services",
+          "Handling long-running work outside request-response flows",
+          "Supporting event-driven and asynchronous system design"
+        ],
+        "relatedConcepts": [
+          "Event-Driven Architecture",
+          "Publish-Subscribe Pattern",
+          "Producer-Consumer Pattern",
+          "Asynchronous Processing",
+          "Message Broker",
+          "RabbitMQ",
+          "Apache Kafka",
+          "Amazon SQS",
+          "Dead-Letter Queue",
+          "Microservices",
+          "Distributed Systems",
+          "System Design"
+        ]
+      },
+      {
+        "id": "technical-debt",
+        "name": "Technical Debt",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Tech Debt",
+          "Code Debt",
+          "Engineering Debt",
+          "Software Debt"
+        ],
+        "notes": "Accumulated cost of shortcuts, outdated design decisions, deferred cleanup, missing tests, weak abstractions, or aging dependencies that make software harder to maintain or evolve.",
+        "tags": [
+          "software-engineering",
+          "maintainability",
+          "code-quality",
+          "refactoring",
+          "architecture",
+          "risk-management",
+          "engineering-practices",
+          "long-term-maintenance"
+        ],
+        "whatIsIt": "A software engineering concept describing the future cost created when teams choose faster or easier solutions that later make the system harder to change, test, scale, or maintain.",
+        "description": "Technical Debt refers to the accumulated maintenance burden caused by shortcuts, rushed implementation, poor abstractions, duplicated logic, weak tests, outdated dependencies, legacy architecture, unclear ownership, or deferred cleanup. Some technical debt is intentional and acceptable when teams make tradeoffs knowingly, but unmanaged debt slows delivery, increases defects, raises onboarding cost, and makes future changes riskier. It is a core software engineering concept because it affects code quality, architecture, delivery speed, maintainability, and long-term product health.",
+        "usedWith": [
+          "Refactoring",
+          "Code Review",
+          "Software Architecture",
+          "Technical Leadership",
+          "Software Project Management",
+          "Agile",
+          "Backlog Management",
+          "Risk Assessment",
+          "Testing",
+          "CI/CD",
+          "Static Analysis",
+          "Architecture Decision Record"
+        ],
+        "builtOn": [
+          "Software Maintainability",
+          "Design Tradeoffs",
+          "Code Quality",
+          "Change Cost",
+          "Refactoring",
+          "Risk Management",
+          "Long-Term Software Evolution"
+        ],
+        "builtUponBy": [
+          "Refactoring Workflows",
+          "Architecture Modernization",
+          "Legacy System Maintenance",
+          "Engineering Roadmap Planning",
+          "Code Quality Improvement Programs",
+          "Technical Risk Management",
+          "Platform Modernization Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Clean Code",
+          "Refactoring",
+          "Architecture Modernization",
+          "Rewrite",
+          "Incremental Improvement",
+          "Code Quality Gates"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Maintenance",
+          "Software Architecture",
+          "Engineering Management",
+          "Code Quality",
+          "Technical Risk Management"
+        ],
+        "includes": [],
+        "examples": [
+          "Duplicated business logic that should be refactored into a shared module",
+          "Old framework version that blocks security and feature upgrades",
+          "Missing automated tests around critical behavior",
+          "Temporary workaround that became permanent production code",
+          "Large service class that has accumulated unrelated responsibilities",
+          "Architecture decision that no longer fits current scale or product needs",
+          "Hard-coded configuration that makes deployments fragile"
+        ],
+        "useCases": [
+          "Tracking maintainability risks",
+          "Prioritizing refactoring work",
+          "Explaining why feature delivery has slowed",
+          "Planning modernization efforts",
+          "Balancing short-term delivery with long-term system health",
+          "Identifying code areas that increase defect risk",
+          "Communicating engineering tradeoffs to stakeholders"
+        ],
+        "relatedConcepts": [
+          "Refactoring",
+          "Code Quality",
+          "Maintainability",
+          "Software Architecture",
+          "Legacy System",
+          "Clean Code",
+          "Architecture Decision Record",
+          "Technical Leadership",
+          "Risk Assessment",
+          "Software Project Management",
+          "Testing",
+          "Static Analysis"
         ]
       }
     ]

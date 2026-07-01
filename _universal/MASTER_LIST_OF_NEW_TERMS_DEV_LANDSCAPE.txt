@@ -216,13 +216,13 @@ TRACKING PROGRESS OF MASTER LIST:
 [✅]		3 🟦 FRAMEOWRKS AND LIBS	36
 [✅]		4 🟦 PLATOFRMS AND RUNTIMES 	 27
 
-[]		5 🟩 OPERATING SYSTEMS    		 28
-[]		6 🟩 DATABASES     				29
-[]		7 🟩 CLOUD						34	
-[]		8 🟩 CONTAINERIZ & ORCH			52
-[]		9 🟩 NETWORKIN					59
-[]		10 🟩 SECURITY					24
-[]		11 🟩 WEB SERVICES				49
+[✅]		5 🟩 OPERATING SYSTEMS    		 28
+[✅]		6 🟩 DATABASES     				29
+[✅]		7 🟩 CLOUD						34	
+[✅]		8 🟩 CONTAINERIZ & ORCH			52
+[✅]		9 🟩 NETWORKIN					59
+[✅]		10 🟩 SECURITY					24
+[✅]		11 🟩 WEB SERVICES				49
 
 ---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 292 terms-left, (11/17 cats done) ---------
 []		12 🟪 ARCHITECTURE & DESIGN		49
@@ -726,36 +726,6 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Phusion Passenger✅
 * Kestrel✅
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (33333333333333333333333333333333333333333333333333333333333333333333333)
 (12) 49 🟪 ARCHITECTURE & DESIGN
 
@@ -781,44 +751,105 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Adapter Pattern✅
 * Facade Pattern✅
 * Factory Pattern✅
-* Singleton Pattern
-* Observer Pattern
-* Dependency Injection
-* Inversion of Control
-* SOLID
-* Separation of Concerns
-* Low Coupling
-* High Cohesion
-* Component Diagram
-* Deployment Diagram
-* Use Case Diagram
-* Activity Diagram
-* State Diagram
-* Data Flow Diagram
-* C4 Model
-* Architecture Decision Record
+* Singleton Pattern✅
+* Observer Pattern✅
+* Dependency Injection✅
+* Inversion of Control✅
+* SOLID✅
+* Separation of Concerns✅
+* Low Coupling✅
+* High Cohesion✅
+* Component Diagram✅
+* Deployment Diagram✅
+* Use Case Diagram✅
+* Activity Diagram✅
+* State Diagram✅
+* Data Flow Diagram✅
+* C4 Model✅
+* Architecture Decision Record✅
+* Message Queue✅
+* Pub/Sub✅
+* Event Bus✅
+* Service Mesh✅
+* Technical Debt✅
+* Design System ✅	🚨 --> IS THIS REALLY A TERM?? ⭕⭕⭕			🚧⚠️⚠️⚠️⚠️⚠️ S THIS REALLY A TERM?? 
+* Wireframe✅
 * gRPC ✅🔁❌[confirmed-already-in-correct-category]
-* Message Queue
-* Pub/Sub
-* Event Bus
-* Service Mesh
 * API Gateway ✅🔁❌[confirmed-already-in-correct-category]
-* Technical Debt
 * Refactoring ✅🔁❌[confirmed-already-in-correct-category]
-* Design System
-* Wireframe
 
-⚠️BRANCH OFF 3 NEW CHATS NOW 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+⚠️BRANCH OFF 3 NEW CHATS NOW (which will be .4,5,6 (since curr using .1,2,3))
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (13) 37 🟪 METHODOLOGIES
 
-* Waterfall
-* Iterative Development
-* Incremental Development
-* Spiral Model
-* Lean Software Development
-* Extreme Programming
-* Feature-Driven Development
+* Waterfall✅
+* Iterative Development✅
+* Incremental Development✅
+* Spiral Model✅
+* Lean Software Development✅
+* Extreme Programming✅
+* Feature-Driven Development✅
 * Dynamic Systems Development Method
 * Rapid Application Development
 * Rational Unified Process
