@@ -224,10 +224,10 @@ TRACKING PROGRESS OF MASTER LIST:
 [✅]		10 🟩 SECURITY					24
 [✅]		11 🟩 WEB SERVICES				49
 
+[✅]		12 🟪 ARCHITECTURE & DESIGN		49
+[✅]		13 🟪 METHODOLOGIES			37
+[✅]		14 🟪 API TECHNOLOGIES			27
 ---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 292 terms-left, (11/17 cats done) ---------
-[]		12 🟪 ARCHITECTURE & DESIGN		49
-[]		13 🟪 METHODOLOGIES			37
-[]		14 🟪 API TECHNOLOGIES			27
 []		15 🟪 TESTING   					56
 []		16 🟪 DEBUGGING AND PROFILING       47
 []		17 🟪 SOFTWARE ENGINEERING CONCEPTS	63
@@ -778,67 +778,6 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * API Gateway ✅🔁❌[confirmed-already-in-correct-category]
 * Refactoring ✅🔁❌[confirmed-already-in-correct-category]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ⚠️BRANCH OFF 3 NEW CHATS NOW (which will be .4,5,6 (since curr using .1,2,3))
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (13) 37 🟪 METHODOLOGIES
@@ -850,85 +789,136 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Lean Software Development✅
 * Extreme Programming✅
 * Feature-Driven Development✅
-* Dynamic Systems Development Method
-* Rapid Application Development
-* Rational Unified Process
-* V-Model
+* Dynamic Systems Development Method✅
+* Rapid Application Development✅
+* Rational Unified Process✅
+* V-Model✅
+* GitOps✅
+* Site Reliability Engineering✅
+* Continuous Testing✅
+* Trunk-Based Development✅
+* Git Flow✅
+* Feature Branch Workflow✅
+* Code Review✅
+* Pull Request Workflow✅
+* Mob Programming✅
+* Acceptance Test Driven Development✅
+* Specification by Example✅
+* ScrumBan✅
+* Scaled Agile Framework✅
+* Large-Scale Scrum✅
+* Disciplined Agile✅
+* ITIL✅
+* Change Management✅
+* Incident Management✅
+* Release Management✅
+* A/B Testing✅
+* Design Thinking✅
 * DevSecOps ✅🔁🌈[confirmed-already-in-correct-category]
-* GitOps
-* Site Reliability Engineering
-* Continuous Testing
-* Trunk-Based Development
-* Git Flow
-* Feature Branch Workflow
-* Code Review
-* Pull Request Workflow
-* Mob Programming
 * Refactoring ✅🔁🌈[confirmed-already-in-correct-category]
 * Regression Testing ✅🔁❌[confirmed-already-in-correct-category]
-* Acceptance Test Driven Development
-* Specification by Example
 * Domain-Driven Design ✅🔁❌[confirmed-already-in-correct-category]
-* ScrumBan
-* Scaled Agile Framework
-* Large-Scale Scrum
-* Disciplined Agile
-* ITIL
-* Change Management
-* Incident Management
-* Release Management
-* A/B Testing
-* Design Thinking
 
 (14) 27 🟪 API TECHNOLOGIES
 
-* API
-* SOAP
+* API✅
+* Webhook✅
+* WSDL✅
+* RPC✅
+* JSON-RPC✅
+* SOAP✅
+* XML-RPC✅
+* API Endpoint✅
+* API Contract✅
+* API Versioning✅
+* Rate Limiting✅
+* Pagination✅
+* Idempotency✅
+* HATEOAS✅
+* Server-Sent Events✅
+* AsyncAPI✅
+* Protocol Buffers✅
+* Insomnia✅
+* curl✅
+* JWT✅
+* CORS✅
+* MQTT✅
 * GraphQL ✅🔁 🌈	[confirmed-already-in-correct-category]
 * gRPC ✅🔁🌈[confirmed-already-in-correct-category]
-* Webhook
 * OpenAPI ✅🔁 🌈[confirmed-already-in-correct-category]
 * Swagger ✅🔁 🌈[confirmed-already-in-correct-category]
-* WSDL
-* RPC
-* JSON-RPC
-* XML-RPC
 * API Gateway ✅🔁🌈[confirmed-already-in-correct-category]
-* API Endpoint
-* API Contract
-* API Versioning
-* Rate Limiting
-* Pagination
-* Idempotency
-* HATEOAS
-* Server-Sent Events
-* AsyncAPI
-* Protocol Buffers
-* Insomnia
-* curl
-* JWT
-* CORS
-* MQTT
 
 
-⚠️BRANCH OFF 3 NEW CHATS NOW 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+⚠️BRANCH OFF 3 NEW CHATS NOW (should be .7,8,9 since prev was .4,5,6)
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (15) 56 🟪 TESTING
 
-* Integration Testing
-* End-to-End Testing
-* Functional Testing
-* Regression Testing ✅🔁🌈[confirmed-already-in-correct-category]
-* Smoke Testing
-* Sanity Testing
-* Acceptance Testing
-* Performance Testing
-* Load Testing
-* Stress Testing
-* Security Testing
-* Accessibility Testing
-* Compatibility Testing
-* Exploratory Testing
+* Integration Testing✅
+* End-to-End Testing✅
+* Functional Testing✅
+* Smoke Testing✅
+* Sanity Testing✅
+* Acceptance Testing✅
+* Performance Testing✅
+* Load Testing✅
+* Stress Testing✅
+* Security Testing✅
+* Accessibility Testing✅
+* Compatibility Testing✅
+* Exploratory Testing✅
 * Manual Testing
 * Automated Testing
 * Test Case
@@ -943,7 +933,6 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Property-Based Testing
 * Contract Testing
 * Unit Test Framework
-* JUnit ✅🔁🌈[confirmed-already-in-correct-category]
 * TestNG
 * NUnit
 * xUnit.net
@@ -951,12 +940,9 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * pytest
 * unittest
 * Mocha
-* Jest ✅🔁🌈[confirmed-already-in-correct-category]
 * Vitest
 * Karma
-* Cypress ✅🔁🌈[confirmed-already-in-correct-category]
 * Playwright
-* Selenium ✅🔁🌈[confirmed-already-in-correct-category]
 * Cucumber
 * Gherkin
 * Robot Framework
@@ -971,6 +957,11 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Static Analysis
 * Fuzz Testing
 * Chaos Engineering
+* Regression Testing ✅🔁🌈[confirmed-already-in-correct-category]
+* JUnit ✅🔁🌈[confirmed-already-in-correct-category]
+* Jest ✅🔁🌈[confirmed-already-in-correct-category]
+* Cypress ✅🔁🌈[confirmed-already-in-correct-category]
+* Selenium ✅🔁🌈[confirmed-already-in-correct-category]
 
 
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
