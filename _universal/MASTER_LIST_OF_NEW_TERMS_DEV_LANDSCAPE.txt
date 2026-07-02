@@ -227,9 +227,9 @@ TRACKING PROGRESS OF MASTER LIST:
 [✅]		12 🟪 ARCHITECTURE & DESIGN		49
 [✅]		13 🟪 METHODOLOGIES			37
 [✅]		14 🟪 API TECHNOLOGIES			27
+[✅]		15 🟪 TESTING   					56
+[✅]		16 🟪 DEBUGGING AND PROFILING       47
 ---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 292 terms-left, (11/17 cats done) ---------
-[]		15 🟪 TESTING   					56
-[]		16 🟪 DEBUGGING AND PROFILING       47
 []		17 🟪 SOFTWARE ENGINEERING CONCEPTS	63
 
 
@@ -850,58 +850,6 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * API Gateway ✅🔁🌈[confirmed-already-in-correct-category]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ⚠️BRANCH OFF 3 NEW CHATS NOW (should be .7,8,9 since prev was .4,5,6)
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (15) 56 🟪 TESTING
@@ -964,60 +912,116 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Selenium ✅🔁🌈[confirmed-already-in-correct-category]
 
 
+
+
 ⚠️BRANCH OFF 3 NEW CHATS NOW (should be .10, 11, 12 since prev was .7, 8, 9)
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (16) 47 🟪 DEBUGGING AND PROFILING
 
-* Linux perf
-* OProfile
-* SystemTap
-* DTrace
-* strace
-* ltrace
-* AddressSanitizer
-* ThreadSanitizer
-* UndefinedBehaviorSanitizer
-* MemorySanitizer
-* LeakSanitizer
-* rr
-* WinDbg
-* Visual Studio Debugger
-* Xcode Instruments
-* Xcode Debugger
-* Firefox Developer Tools
-* Java Debugger
-* Java Flight Recorder
-* Java Mission Control
-* VisualVM
-* YourKit
-* dotTrace
-* dotMemory
-* PerfView
-* dotnet-trace
-* dotnet-dump
-* dotnet-counters
-* Python Debugger
-* cProfile
-* PySpy
-* Node.js Inspector
-* V8 Profiler
-* FlameGraph
-* Callgrind
-* Massif
-* Memcheck
-* Helgrind
-* KCachegrind
-* Debug Adapter Protocol
-* Observability
-* OpenTelemetry
-* Prometheus
-* Grafana
-* Sentry
-* New Relic
-* Datadog
+* Linux perf✅
+* OProfile✅
+* SystemTap✅
+* DTrace✅
+* strace✅
+* ltrace✅
+* AddressSanitizer✅
+* ThreadSanitizer✅
+* UndefinedBehaviorSanitizer✅
+* MemorySanitizer✅
+* LeakSanitizer✅
+* rr✅
+* WinDbg✅
+* Visual Studio Debugger✅
+* Xcode Instruments✅
+* Xcode Debugger✅
+* Firefox Developer Tools✅
+* Java Debugger✅
+* Java Flight Recorder✅
+* Java Mission Control✅
+* VisualVM✅
+* YourKit✅
+* dotTrace✅
+* dotMemory✅
+* PerfView✅
+* dotnet-trace✅
+* dotnet-dump✅
+* dotnet-counters✅
+* Python Debugger✅
+* cProfile✅
+* PySpy✅
+* Node.js Inspector✅
+* V8 Profiler✅
+* FlameGraph✅
+* Callgrind✅
+* Massif✅
+* Memcheck✅
+* Helgrind✅
+* KCachegri✅;l
+* Debug Adapter Protocol✅
+* Observability✅
+* OpenTelemetry✅
+* Prometheus✅
+* Grafana✅
+* Sentry✅
+* New Relic✅
+* Datadog✅
 
 
-⚠️BRANCH OFF 3 NEW CHATS NOW 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+⚠️BRANCH OFF 3 NEW CHATS NOW **ALREADY CREATED THESE LAST 3 CHATS 13,14,15...🚨(should be .13, 14, 15  bc prev was .10, 11, 12
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (17) 63 🟪 SOFTWARE ENGINEERING CONCEPTS
 
@@ -1113,12 +1117,6 @@ MASTER-LIST-OF-TERMS THAT WE COULDNT ADD YET BC THEY NEEED THEIR OWN SUBCAT:
 -
 -
 -
-
-
-
-
-
-
 
 
 
