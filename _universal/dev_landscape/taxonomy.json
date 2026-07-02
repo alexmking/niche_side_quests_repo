@@ -3756,6 +3756,114 @@
             "YAML",
             "JSON"
           ]
+        },
+        {
+          "id": "gherkin",
+          "name": "Gherkin",
+          "continent": "Development",
+          "category": "Languages",
+          "subcategory": "Markup & Data Languages",
+          "aliases": [
+            "Gherkin Syntax",
+            "Gherkin Language",
+            "Given-When-Then Syntax",
+            "Cucumber Feature File Language"
+          ],
+          "notes": "Plain-text domain-specific language used to describe software behavior, acceptance criteria, and BDD scenarios in a structured Given-When-Then format.",
+          "tags": [
+            "markup-data-language",
+            "domain-specific-language",
+            "bdd",
+            "acceptance-testing",
+            "gherkin",
+            "executable-specifications",
+            "test-documentation",
+            "qa"
+          ],
+          "whatIsIt": "A plain-text domain-specific language for writing behavior-driven scenarios and acceptance criteria using structured keywords such as Feature, Scenario, Given, When, and Then.",
+          "description": "Gherkin is a plain-text domain-specific language used to describe expected software behavior in a structured, business-readable format. It is best known for its Given-When-Then syntax and is commonly used with Cucumber and other BDD tools. Gherkin feature files describe features, scenarios, preconditions, actions, expected outcomes, examples, and tags. These files can act as documentation, acceptance criteria, and executable specifications when connected to automated step definitions. Gherkin belongs with markup and data languages because it is a structured specification language rather than a testing tool itself.",
+          "usedWith": [
+            "Cucumber",
+            "Behavior-Driven Development",
+            "Acceptance Testing",
+            "Automated Testing",
+            "Executable Specifications",
+            "Step Definitions",
+            "Feature Files",
+            "SpecFlow",
+            "Behave",
+            "CI/CD",
+            "Selenium",
+            "Playwright"
+          ],
+          "builtOn": [
+            "Plain Text",
+            "Domain-Specific Language Concepts",
+            "Given-When-Then Structure",
+            "Acceptance Criteria",
+            "Behavior-Driven Development",
+            "Structured Natural Language"
+          ],
+          "builtUponBy": [
+            "Behavior-Driven Development Workflows",
+            "Executable Specification Workflows",
+            "Acceptance Testing Workflows",
+            "Cucumber Test Automation",
+            "Business-Readable Test Documentation",
+            "Regression Testing Workflows",
+            "Cross-Functional Requirement Validation"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Robot Framework Syntax",
+            "Gauge Markdown Specifications",
+            "FitNesse Tables",
+            "Plain Acceptance Criteria",
+            "Custom Test Specification Formats"
+          ],
+          "partOf": [
+            "Markup & Data Languages",
+            "Behavior-Driven Development",
+            "Acceptance Testing",
+            "Executable Specifications",
+            "Test Documentation",
+            "Quality Assurance"
+          ],
+          "includes": [],
+          "examples": [
+            "Feature: User login",
+            "Scenario: Successful login",
+            "Given the user is on the login page",
+            "When the user submits valid credentials",
+            "Then the dashboard is displayed",
+            "Scenario Outline with an Examples table",
+            "Feature file used by Cucumber",
+            "Tagged smoke test scenario in a .feature file"
+          ],
+          "useCases": [
+            "Writing acceptance criteria in a structured format",
+            "Describing expected software behavior",
+            "Creating executable specifications",
+            "Documenting business-readable test scenarios",
+            "Connecting requirements to automated tests",
+            "Supporting behavior-driven development",
+            "Sharing test intent across technical and non-technical stakeholders",
+            "Organizing Cucumber test scenarios"
+          ],
+          "relatedConcepts": [
+            "Cucumber",
+            "Behavior-Driven Development",
+            "Given-When-Then",
+            "Acceptance Testing",
+            "Executable Specifications",
+            "Feature File",
+            "Step Definitions",
+            "Test Scenario",
+            "Test Case",
+            "Requirements",
+            "QA",
+            "Automated Testing"
+          ]
         }
       ]
     },
@@ -57881,6 +57989,118 @@
             "Production Readiness",
             "Incident Response"
           ]
+        },
+        {
+          "id": "chaos-engineering",
+          "name": "Chaos Engineering",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Development Practices",
+          "aliases": [
+            "Chaos Testing",
+            "Resilience Engineering",
+            "Failure Injection",
+            "Fault Injection Practice"
+          ],
+          "notes": "Engineering practice that intentionally introduces controlled failures into systems to validate reliability, resilience, observability, recovery behavior, and operational readiness.",
+          "tags": [
+            "reliability",
+            "resilience",
+            "sre",
+            "testing",
+            "fault-injection",
+            "distributed-systems",
+            "observability",
+            "production-readiness"
+          ],
+          "whatIsIt": "An engineering practice where teams run controlled failure experiments to learn how systems behave under stress and improve reliability before real incidents occur.",
+          "description": "Chaos Engineering is a reliability-focused engineering practice that intentionally injects controlled failures into systems to test assumptions about resilience, recovery, monitoring, alerting, and operational readiness. Teams use chaos experiments to validate that distributed systems can tolerate infrastructure failures, network latency, service outages, dependency failures, resource exhaustion, and other production-like disruptions. Chaos Engineering is closely related to Site Reliability Engineering, observability, incident response, disaster recovery, and production readiness. It differs from normal functional testing because it focuses on how the whole system behaves when real-world failures occur.",
+          "usedWith": [
+            "Site Reliability Engineering",
+            "Observability",
+            "Monitoring",
+            "Incident Response",
+            "Kubernetes",
+            "Cloud Infrastructure",
+            "Microservices",
+            "Distributed Systems",
+            "Load Testing",
+            "Disaster Recovery",
+            "Runbooks",
+            "SLO"
+          ],
+          "builtOn": [
+            "Reliability Engineering",
+            "Fault Injection",
+            "Hypothesis-Driven Experimentation",
+            "Distributed Systems",
+            "Observability",
+            "Incident Response",
+            "Production Readiness"
+          ],
+          "builtUponBy": [
+            "Resilience Testing Workflows",
+            "Production Readiness Workflows",
+            "SRE Reliability Workflows",
+            "Incident Preparedness Workflows",
+            "Disaster Recovery Validation Workflows",
+            "Microservice Resilience Workflows",
+            "Cloud Infrastructure Hardening Workflows",
+            "Operational Readiness Review Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Disaster Recovery Testing",
+            "Load Testing",
+            "Stress Testing",
+            "Fault Injection Testing",
+            "GameDay Exercises",
+            "Resilience Testing"
+          ],
+          "partOf": [
+            "Development Practices",
+            "Site Reliability Engineering",
+            "Reliability Engineering",
+            "Production Readiness",
+            "Cloud-Native Operations",
+            "Distributed Systems Engineering",
+            "Operational Excellence"
+          ],
+          "includes": [],
+          "examples": [
+            "Terminating a Kubernetes pod to test service recovery",
+            "Injecting network latency between microservices",
+            "Simulating a database outage in staging",
+            "Testing whether alerts fire during service degradation",
+            "Running a GameDay exercise for an incident scenario",
+            "Validating failover during a region outage",
+            "Introducing CPU pressure to observe autoscaling behavior",
+            "Disabling a dependency to test graceful degradation"
+          ],
+          "useCases": [
+            "Validating system resilience before real incidents",
+            "Testing recovery behavior under controlled failures",
+            "Improving observability and alerting",
+            "Practicing incident response",
+            "Finding hidden dependencies and weak failure modes",
+            "Reducing production outage risk",
+            "Testing failover and disaster recovery assumptions",
+            "Improving confidence in distributed systems"
+          ],
+          "relatedConcepts": [
+            "Site Reliability Engineering",
+            "Observability",
+            "Monitoring",
+            "Incident Response",
+            "SLO",
+            "Error Budget",
+            "Distributed Systems",
+            "Microservices",
+            "Fault Injection",
+            "Disaster Recovery",
+            "High Availability",
+            "Production Readiness"
+          ]
         }
       ]
     },
@@ -62929,6 +63149,1553 @@
             "Usability Testing",
             "Test Coverage"
           ]
+        },
+        {
+          "id": "manual-testing",
+          "name": "Manual Testing",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Manual Test",
+            "Human Testing",
+            "Manual QA Testing",
+            "Manual Software Testing"
+          ],
+          "notes": "Testing methodology where a person manually evaluates software behavior, follows test cases, explores workflows, verifies requirements, and reports defects without relying primarily on automated test scripts.",
+          "tags": [
+            "testing-methodology",
+            "qa",
+            "manual-testing",
+            "functional-testing",
+            "exploratory-testing",
+            "regression-testing",
+            "acceptance-testing",
+            "defect-reporting"
+          ],
+          "whatIsIt": "A software testing methodology where humans manually execute tests, inspect behavior, validate requirements, and report issues.",
+          "description": "Manual Testing is a testing methodology where a tester or developer manually checks software behavior rather than relying primarily on automated scripts. It is useful for exploratory testing, usability review, acceptance testing, visual inspection, edge-case discovery, early feature validation, and workflows where human judgment matters. Manual testing can follow structured test cases or be exploratory and investigative. It is different from automated testing because manual testing depends on human execution and observation, while automated testing depends on repeatable scripts and tools.",
+          "usedWith": [
+            "Test Cases",
+            "Test Plans",
+            "Exploratory Testing",
+            "Functional Testing",
+            "Regression Testing",
+            "Acceptance Testing",
+            "User Acceptance Testing",
+            "Bug Reports",
+            "Jira",
+            "TestRail",
+            "QA Workflows",
+            "Release Validation"
+          ],
+          "builtOn": [
+            "Human Judgment",
+            "Test Design",
+            "Requirements Validation",
+            "Test Cases",
+            "Expected Results",
+            "Application Behavior Observation"
+          ],
+          "builtUponBy": [
+            "QA Validation Workflows",
+            "Exploratory Testing Workflows",
+            "User Acceptance Testing Workflows",
+            "Regression Testing Cycles",
+            "Release Readiness Reviews",
+            "Defect Triage Workflows",
+            "Feature Validation Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Automated Testing",
+            "Unit Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Scripted Test Automation"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Software Quality",
+            "Quality Assurance",
+            "Release Validation",
+            "Functional Testing",
+            "Defect Management"
+          ],
+          "includes": [],
+          "examples": [
+            "Tester manually verifies a login workflow",
+            "QA follows a test case before release",
+            "Manual regression testing after a bug fix",
+            "Exploratory testing of a new feature",
+            "User acceptance testing with business stakeholders",
+            "Visual inspection of a UI layout",
+            "Manually reproducing a reported defect",
+            "Checking an edge case that is not yet automated"
+          ],
+          "useCases": [
+            "Validating new features before release",
+            "Finding defects through exploratory testing",
+            "Checking workflows that require human judgment",
+            "Verifying user-facing behavior",
+            "Performing acceptance testing",
+            "Reproducing and documenting bugs",
+            "Testing early prototypes before automation exists",
+            "Supplementing automated test coverage"
+          ],
+          "relatedConcepts": [
+            "Automated Testing",
+            "Exploratory Testing",
+            "Functional Testing",
+            "Regression Testing",
+            "Acceptance Testing",
+            "User Acceptance Testing",
+            "Test Case",
+            "Test Plan",
+            "Quality Assurance",
+            "Bug Report",
+            "Defect Triage",
+            "Release Testing"
+          ]
+        },
+        {
+          "id": "automated-testing",
+          "name": "Automated Testing",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Test Automation",
+            "Automated Software Testing",
+            "Automated QA Testing",
+            "Scripted Testing"
+          ],
+          "notes": "Testing methodology where tests are executed by scripts, frameworks, or tools to repeatedly verify software behavior with minimal manual effort.",
+          "tags": [
+            "testing-methodology",
+            "test-automation",
+            "automated-testing",
+            "qa",
+            "ci-cd",
+            "regression-testing",
+            "unit-testing",
+            "test-runner"
+          ],
+          "whatIsIt": "A testing methodology where software tests are written as executable scripts and run automatically by tools, test runners, or CI/CD pipelines.",
+          "description": "Automated Testing is a testing methodology where test cases are implemented as executable scripts and run by tools or frameworks. It is commonly used for unit tests, integration tests, end-to-end tests, regression testing, API testing, smoke tests, and CI/CD validation. Automated testing helps teams run repeatable checks quickly, detect regressions earlier, reduce manual effort, and enforce quality gates before code is merged or released. It is different from manual testing because automated testing relies on code and tooling, while manual testing relies on human execution and observation.",
+          "usedWith": [
+            "CI/CD",
+            "Unit Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Regression Testing",
+            "Smoke Testing",
+            "Selenium",
+            "Playwright",
+            "Cypress",
+            "Jest",
+            "pytest",
+            "JUnit"
+          ],
+          "builtOn": [
+            "Test Scripts",
+            "Assertions",
+            "Test Automation Frameworks",
+            "Test Runners",
+            "Version Control",
+            "CI/CD Pipelines",
+            "Repeatable Test Data"
+          ],
+          "builtUponBy": [
+            "CI/CD Quality Gates",
+            "Regression Testing Workflows",
+            "Continuous Testing Workflows",
+            "Release Validation Workflows",
+            "Pull Request Validation",
+            "Automated QA Workflows",
+            "Test-Driven Development Workflows"
+          ],
+          "runsOn": [
+            "Developer Workstations",
+            "CI/CD Environments",
+            "Test Environments",
+            "Build Servers",
+            "Web Browsers",
+            "Docker Containers"
+          ],
+          "alternatives": [
+            "Manual Testing",
+            "Exploratory Testing",
+            "Ad Hoc Testing",
+            "Manual Regression Testing"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Software Quality",
+            "Quality Assurance",
+            "Continuous Testing",
+            "CI/CD",
+            "Release Validation"
+          ],
+          "includes": [],
+          "examples": [
+            "Unit tests running after every commit",
+            "Playwright end-to-end test suite",
+            "Jest tests for JavaScript code",
+            "pytest tests for a Python API",
+            "JUnit tests in a Java project",
+            "Automated regression suite in CI",
+            "Cypress browser tests for a checkout flow",
+            "API tests running before deployment"
+          ],
+          "useCases": [
+            "Detecting regressions automatically",
+            "Running repeatable tests in CI/CD",
+            "Validating code changes before merge",
+            "Reducing manual testing effort",
+            "Testing core business logic quickly",
+            "Automating browser workflow validation",
+            "Enforcing release quality gates",
+            "Supporting continuous testing practices"
+          ],
+          "relatedConcepts": [
+            "Manual Testing",
+            "Unit Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Regression Testing",
+            "Continuous Testing",
+            "Test Runner",
+            "Test Automation Framework",
+            "Assertions",
+            "Mocks",
+            "CI/CD",
+            "Quality Gate"
+          ]
+        },
+        {
+          "id": "test-suite",
+          "name": "Test Suite",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Automated Test Suite",
+            "Regression Test Suite",
+            "Test Collection",
+            "Suite of Tests"
+          ],
+          "notes": "Organized collection of test cases or automated tests used to validate software behavior, catch regressions, and support repeatable verification.",
+          "tags": [
+            "testing",
+            "test-suite",
+            "automated-testing",
+            "regression-testing",
+            "test-organization",
+            "qa",
+            "software-quality",
+            "validation"
+          ],
+          "whatIsIt": "A grouped collection of tests that are executed together to verify specific software behavior, features, components, or release readiness.",
+          "description": "A Test Suite is an organized collection of test cases, test scripts, or automated tests that are grouped together for a specific testing purpose. Test suites may cover unit tests, integration tests, end-to-end tests, regression tests, smoke tests, acceptance tests, or feature-specific validation. Developers and QA teams use test suites to run repeatable checks, catch regressions, validate changes, organize coverage by feature or layer, and support CI/CD quality gates. A test suite is not itself a testing methodology, but in this taxonomy it fits best under Testing Methodologies because it represents a structured testing artifact/workflow rather than a testing tool.",
+          "usedWith": [
+            "Unit Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Regression Testing",
+            "Smoke Testing",
+            "Acceptance Testing",
+            "CI/CD",
+            "Test Runner",
+            "Test Coverage",
+            "Jasmine",
+            "Jest",
+            "pytest"
+          ],
+          "builtOn": [
+            "Software Testing",
+            "Test Cases",
+            "Test Automation",
+            "Assertions",
+            "Test Fixtures",
+            "Expected Results"
+          ],
+          "builtUponBy": [
+            "Regression Testing Workflows",
+            "CI/CD Validation Workflows",
+            "Release Readiness Checks",
+            "Automated Quality Gates",
+            "Continuous Testing Workflows",
+            "Feature Validation Workflows",
+            "Test Reporting Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Ad Hoc Testing",
+            "Exploratory Testing",
+            "Manual Test Checklist"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Software Quality",
+            "Quality Assurance",
+            "Automated Testing",
+            "Regression Testing",
+            "CI/CD Quality Workflows",
+            "Release Validation"
+          ],
+          "includes": [],
+          "examples": [
+            "Unit test suite for a service layer",
+            "Regression test suite run before release",
+            "End-to-end test suite for a checkout workflow",
+            "Smoke test suite run after deployment",
+            "Jasmine test suite for frontend components",
+            "pytest suite for backend API behavior",
+            "CI pipeline running the full automated test suite",
+            "Feature-specific test suite for authentication"
+          ],
+          "useCases": [
+            "Organizing related tests",
+            "Running repeatable validation checks",
+            "Catching regressions before release",
+            "Supporting CI/CD quality gates",
+            "Grouping tests by feature or layer",
+            "Validating release candidates",
+            "Tracking pass and fail results",
+            "Improving test maintainability"
+          ],
+          "relatedConcepts": [
+            "Software Testing",
+            "Test Case",
+            "Test Runner",
+            "Test Coverage",
+            "Regression Testing",
+            "Unit Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Smoke Testing",
+            "CI/CD",
+            "Quality Assurance",
+            "Automated Testing"
+          ]
+        },
+        {
+          "id": "test-coverage",
+          "name": "Test Coverage",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Code Coverage",
+            "Coverage Metrics",
+            "Automated Test Coverage",
+            "Coverage Percentage"
+          ],
+          "notes": "Testing metric and quality signal that measures how much code, logic, branches, paths, or requirements are exercised by tests.",
+          "tags": [
+            "testing",
+            "test-coverage",
+            "code-coverage",
+            "quality-metric",
+            "automated-testing",
+            "qa",
+            "software-quality",
+            "validation"
+          ],
+          "whatIsIt": "A testing metric that shows how much of a codebase, logic path, branch, feature, or requirement set is exercised by tests.",
+          "description": "Test Coverage is a software testing metric used to understand how much of a system is exercised by tests. It often refers to code coverage, such as line coverage, branch coverage, function coverage, or statement coverage, but it can also describe feature coverage, requirement coverage, path coverage, or risk coverage. Developers use test coverage to identify untested areas, guide test improvements, monitor quality trends, and support CI/CD quality gates. High test coverage does not guarantee correctness, but low coverage often reveals risk areas where bugs may go undetected. In this taxonomy it fits best under Testing Methodologies because it is a testing practice/metric rather than a standalone tool.",
+          "usedWith": [
+            "Unit Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Test Suite",
+            "CI/CD",
+            "Code Quality",
+            "SonarQube",
+            "Jest",
+            "pytest",
+            "Istanbul",
+            "Coverage Reports",
+            "Quality Gates"
+          ],
+          "builtOn": [
+            "Software Testing",
+            "Test Execution",
+            "Code Instrumentation",
+            "Coverage Metrics",
+            "Assertions",
+            "Source Code Analysis"
+          ],
+          "builtUponBy": [
+            "Code Quality Workflows",
+            "CI/CD Quality Gates",
+            "Regression Risk Analysis",
+            "Test Improvement Workflows",
+            "Release Readiness Validation",
+            "Technical Debt Tracking",
+            "Quality Reporting Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Mutation Testing",
+            "Manual Test Review",
+            "Exploratory Testing",
+            "Risk-Based Testing"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Software Quality",
+            "Quality Assurance",
+            "Automated Testing",
+            "Code Quality",
+            "CI/CD Quality Workflows",
+            "Release Validation"
+          ],
+          "includes": [],
+          "examples": [
+            "80 percent line coverage requirement",
+            "Branch coverage report for conditional logic",
+            "Jest coverage report for a frontend project",
+            "pytest coverage report for a Python backend",
+            "SonarQube quality gate requiring minimum coverage",
+            "CI pipeline failing because coverage dropped",
+            "Identifying untested code paths in a service",
+            "Coverage trend tracked across releases"
+          ],
+          "useCases": [
+            "Finding untested code",
+            "Measuring automated test reach",
+            "Guiding test improvement efforts",
+            "Enforcing quality gates in CI/CD",
+            "Reducing regression risk",
+            "Tracking quality trends over time",
+            "Identifying risky code areas",
+            "Supporting release readiness decisions"
+          ],
+          "relatedConcepts": [
+            "Software Testing",
+            "Test Suite",
+            "Unit Testing",
+            "Integration Testing",
+            "Regression Testing",
+            "Code Quality",
+            "Quality Gate",
+            "SonarQube",
+            "Mutation Testing",
+            "Technical Debt",
+            "CI/CD",
+            "Quality Assurance"
+          ]
+        },
+        {
+          "id": "test-case",
+          "name": "Test Case",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Test Scenario",
+            "Test Script",
+            "QA Test Case",
+            "Software Test Case"
+          ],
+          "notes": "Testing artifact that defines a specific condition, input, action, expected result, and pass/fail criteria used to verify software behavior.",
+          "tags": [
+            "testing",
+            "qa",
+            "test-artifact",
+            "verification",
+            "validation",
+            "test-design",
+            "requirements",
+            "quality-assurance"
+          ],
+          "whatIsIt": "A specific testing artifact that describes how to verify one behavior, requirement, scenario, or condition in a software system.",
+          "description": "A Test Case is a structured testing artifact that defines a specific scenario or condition to verify in software. It usually includes a title, objective, preconditions, test data, steps to execute, expected results, actual results, and pass/fail status. Test cases are used by QA engineers, developers, product teams, and automated test suites to confirm that features behave as expected, requirements are satisfied, regressions are caught, and defects can be reproduced. A test case is more granular than a test plan: the test plan defines the overall testing strategy and scope, while individual test cases define the specific checks that will be executed.",
+          "usedWith": [
+            "Test Plan",
+            "Unit Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Functional Testing",
+            "Regression Testing",
+            "Acceptance Testing",
+            "Bug Reports",
+            "Requirements",
+            "User Stories",
+            "Test Automation",
+            "QA Workflows"
+          ],
+          "builtOn": [
+            "Software Testing",
+            "Requirements",
+            "Expected Behavior",
+            "Test Design",
+            "Pass/Fail Criteria",
+            "Verification and Validation"
+          ],
+          "builtUponBy": [
+            "Manual Testing Workflows",
+            "Automated Testing Workflows",
+            "Regression Testing Workflows",
+            "Acceptance Testing Workflows",
+            "QA Execution Workflows",
+            "Bug Reproduction Workflows",
+            "Release Validation Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Checklist Item",
+            "Acceptance Criteria",
+            "Test Scenario",
+            "Exploratory Test Charter",
+            "Automated Test Script"
+          ],
+          "partOf": [
+            "Testing",
+            "Testing Methodologies",
+            "Software Testing",
+            "Quality Assurance",
+            "Test Plan",
+            "Test Suite",
+            "Verification and Validation",
+            "Release Readiness"
+          ],
+          "includes": [],
+          "examples": [
+            "Verify login succeeds with valid credentials",
+            "Verify password reset email is sent",
+            "Verify API returns 404 for missing resource",
+            "Verify form validation blocks invalid input",
+            "Verify checkout calculates tax correctly",
+            "Verify user without permission cannot access admin page",
+            "Verify regression test for a fixed bug",
+            "Verify keyboard navigation works in a modal"
+          ],
+          "useCases": [
+            "Verifying a specific requirement",
+            "Documenting expected software behavior",
+            "Guiding manual QA execution",
+            "Designing automated tests",
+            "Reproducing bugs consistently",
+            "Preventing regressions",
+            "Tracking pass/fail results",
+            "Supporting release validation",
+            "Connecting requirements to test coverage"
+          ],
+          "relatedConcepts": [
+            "Test Plan",
+            "Test Suite",
+            "Test Scenario",
+            "Acceptance Criteria",
+            "Requirements Traceability",
+            "Regression Testing",
+            "Functional Testing",
+            "Manual Testing",
+            "Automated Testing",
+            "Bug Report",
+            "Quality Assurance",
+            "Verification and Validation"
+          ]
+        },
+        {
+          "id": "test-plan",
+          "name": "Test Plan",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "QA Test Plan",
+            "Software Test Plan",
+            "Testing Plan",
+            "Test Strategy Document"
+          ],
+          "notes": "Testing artifact that defines the overall scope, objectives, approach, resources, schedule, risks, environments, and deliverables for testing a software product or feature.",
+          "tags": [
+            "testing",
+            "qa",
+            "test-artifact",
+            "test-strategy",
+            "planning",
+            "quality-assurance",
+            "release-readiness",
+            "verification"
+          ],
+          "whatIsIt": "A testing document or artifact that describes the overall strategy, scope, resources, schedule, risks, and deliverables for testing software.",
+          "description": "A Test Plan is a testing artifact that defines how testing will be organized and executed for a software project, release, feature, or system. It typically describes the testing scope, objectives, assumptions, test levels, test types, environments, tools, responsibilities, schedule, risks, entry criteria, exit criteria, deliverables, and reporting expectations. Test plans help teams align on what will be tested, what will not be tested, how quality will be evaluated, and when testing is complete. A test plan is broader than a test case: the test plan defines the testing strategy and coverage approach, while test cases define the individual checks used to verify behavior.",
+          "usedWith": [
+            "Test Case",
+            "Test Suite",
+            "Requirements",
+            "User Stories",
+            "Acceptance Criteria",
+            "Manual Testing",
+            "Automated Testing",
+            "Regression Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Release Management",
+            "QA Workflows"
+          ],
+          "builtOn": [
+            "Software Testing",
+            "Quality Assurance",
+            "Requirements Analysis",
+            "Risk Assessment",
+            "Test Strategy",
+            "Verification and Validation",
+            "Release Planning"
+          ],
+          "builtUponBy": [
+            "QA Planning Workflows",
+            "Release Readiness Workflows",
+            "Regression Testing Workflows",
+            "Acceptance Testing Workflows",
+            "Project Testing Workflows",
+            "Compliance Validation Workflows",
+            "Test Execution Reporting Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Test Strategy",
+            "QA Plan",
+            "Test Approach Document",
+            "Release Test Plan",
+            "Validation Plan"
+          ],
+          "partOf": [
+            "Testing",
+            "Testing Methodologies",
+            "Software Testing",
+            "Quality Assurance",
+            "Release Management",
+            "Software Project Management",
+            "Verification and Validation",
+            "SDLC"
+          ],
+          "includes": [],
+          "examples": [
+            "Release test plan for a new feature",
+            "Regression test plan before production deployment",
+            "Integration test plan for a new API",
+            "End-to-end test plan for checkout workflow",
+            "Accessibility test plan for a web application",
+            "Security test plan for authentication changes",
+            "UAT test plan for business stakeholders",
+            "Test plan defining environments, owners, and exit criteria"
+          ],
+          "useCases": [
+            "Planning software testing work",
+            "Defining test scope and objectives",
+            "Coordinating QA responsibilities",
+            "Aligning testing with release readiness",
+            "Documenting testing risks and assumptions",
+            "Defining entry and exit criteria",
+            "Organizing test cases and test suites",
+            "Communicating testing strategy to stakeholders",
+            "Supporting compliance or audit expectations"
+          ],
+          "relatedConcepts": [
+            "Test Case",
+            "Test Suite",
+            "Test Strategy",
+            "QA",
+            "Requirements",
+            "Acceptance Criteria",
+            "Regression Testing",
+            "Release Management",
+            "Risk Assessment",
+            "SDLC",
+            "Verification and Validation",
+            "Quality Assurance"
+          ]
+        },
+        {
+          "id": "mocking",
+          "name": "Mocking",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Mock Objects",
+            "Mocking in Tests",
+            "Test Mocking",
+            "Mock-Based Testing"
+          ],
+          "notes": "Testing technique where fake replacement objects or functions simulate dependencies and often verify how the system under test interacts with them.",
+          "tags": [
+            "testing-methodology",
+            "test-double",
+            "unit-testing",
+            "automated-testing",
+            "dependency-isolation",
+            "behavior-verification",
+            "qa",
+            "tdd"
+          ],
+          "whatIsIt": "A testing technique that replaces real dependencies with mock objects or functions so tests can isolate behavior and verify interactions.",
+          "description": "Mocking is a testing technique where real dependencies are replaced with mock objects, mock functions, or mock services. Mocks are commonly used in unit tests and automated tests to isolate the system under test, avoid expensive or unreliable dependencies, control dependency behavior, and verify interactions such as whether a method was called, how many times it was called, and what arguments were passed. Mocking is closely related to stubbing, but mocking usually emphasizes interaction verification, while stubbing usually emphasizes returning controlled responses.",
+          "usedWith": [
+            "Unit Testing",
+            "Automated Testing",
+            "Test-Driven Development",
+            "Dependency Injection",
+            "Interfaces",
+            "Jest",
+            "Mockito",
+            "Moq",
+            "Sinon",
+            "pytest",
+            "unittest.mock",
+            "CI/CD"
+          ],
+          "builtOn": [
+            "Test Doubles",
+            "Dependency Isolation",
+            "Behavior Verification",
+            "Assertions",
+            "Interfaces",
+            "Dependency Injection"
+          ],
+          "builtUponBy": [
+            "Unit Testing Workflows",
+            "Automated Testing Workflows",
+            "Test-Driven Development Workflows",
+            "Regression Testing Workflows",
+            "Service Layer Testing",
+            "Controller Testing Workflows",
+            "Pull Request Validation"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Stubbing",
+            "Faking",
+            "Spying",
+            "In-Memory Test Implementations",
+            "Service Virtualization"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Automated Testing",
+            "Unit Testing",
+            "Test Double Techniques",
+            "Quality Assurance",
+            "Test-Driven Development"
+          ],
+          "includes": [],
+          "examples": [
+            "Mocking a database repository in a unit test",
+            "Verifying that an email service was called once",
+            "Using Jest mock functions",
+            "Using Mockito to mock a Java dependency",
+            "Using Moq to mock a C# interface",
+            "Mocking an HTTP client in a service test",
+            "Replacing a payment gateway with a mock object",
+            "Verifying method arguments passed to a dependency"
+          ],
+          "useCases": [
+            "Isolating code under test",
+            "Verifying interactions with dependencies",
+            "Avoiding real network or database calls in unit tests",
+            "Testing error-handling paths",
+            "Controlling dependency behavior during tests",
+            "Supporting test-driven development",
+            "Making automated tests faster and more deterministic",
+            "Testing code that depends on external services"
+          ],
+          "relatedConcepts": [
+            "Stubbing",
+            "Test Double",
+            "Fakes",
+            "Spies",
+            "Unit Testing",
+            "Automated Testing",
+            "Dependency Injection",
+            "Assertions",
+            "Behavior Verification",
+            "Test Isolation",
+            "TDD",
+            "Mock Framework"
+          ]
+        },
+        {
+          "id": "stubbing",
+          "name": "Stubbing",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Stub Objects",
+            "Test Stubs",
+            "Stubbing in Tests",
+            "Stub-Based Testing"
+          ],
+          "notes": "Testing technique where simplified replacement dependencies return controlled responses or behavior so the system under test can be evaluated predictably.",
+          "tags": [
+            "testing-methodology",
+            "test-double",
+            "unit-testing",
+            "automated-testing",
+            "dependency-isolation",
+            "controlled-responses",
+            "qa",
+            "deterministic-testing"
+          ],
+          "whatIsIt": "A testing technique that replaces real dependencies with simplified stubs that return predefined data, responses, or behavior.",
+          "description": "Stubbing is a testing technique where a dependency is replaced with a simplified implementation that returns controlled data or predictable behavior. Stubs are commonly used in unit tests and automated tests to isolate the code under test, avoid real databases or external services, control edge cases, and make tests deterministic. Stubbing is closely related to mocking, but stubbing usually focuses on providing predefined responses, while mocking usually focuses on verifying interactions such as calls, arguments, and call counts.",
+          "usedWith": [
+            "Unit Testing",
+            "Automated Testing",
+            "Test-Driven Development",
+            "Dependency Injection",
+            "Interfaces",
+            "Jest",
+            "Mockito",
+            "Sinon",
+            "pytest",
+            "WireMock",
+            "API Testing",
+            "CI/CD"
+          ],
+          "builtOn": [
+            "Test Doubles",
+            "Dependency Isolation",
+            "Controlled Responses",
+            "Deterministic Test Data",
+            "Interfaces",
+            "Dependency Replacement"
+          ],
+          "builtUponBy": [
+            "Unit Testing Workflows",
+            "Automated Testing Workflows",
+            "Test-Driven Development Workflows",
+            "Regression Testing Workflows",
+            "API Testing Workflows",
+            "Service Layer Testing",
+            "Pull Request Validation"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Mocking",
+            "Faking",
+            "Spying",
+            "In-Memory Test Implementations",
+            "Service Virtualization"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Automated Testing",
+            "Unit Testing",
+            "Test Double Techniques",
+            "Quality Assurance",
+            "Test-Driven Development"
+          ],
+          "includes": [],
+          "examples": [
+            "Stubbing a repository to return a fixed user record",
+            "Stubbing an API client to return a sample response",
+            "Using WireMock to stub an external HTTP service",
+            "Returning a canned error response from a stub",
+            "Stubbing a database lookup in a unit test",
+            "Using Sinon stubs in JavaScript tests",
+            "Using Mockito stubs in Java tests",
+            "Stubbing a payment gateway during checkout tests"
+          ],
+          "useCases": [
+            "Providing predictable dependency responses",
+            "Avoiding real database or network calls",
+            "Testing edge cases with controlled data",
+            "Simulating external service behavior",
+            "Making tests deterministic",
+            "Testing error-handling paths",
+            "Isolating the system under test",
+            "Supporting faster automated tests"
+          ],
+          "relatedConcepts": [
+            "Mocking",
+            "Test Double",
+            "Fakes",
+            "Spies",
+            "Unit Testing",
+            "Automated Testing",
+            "Dependency Injection",
+            "Test Isolation",
+            "Controlled Test Data",
+            "Service Virtualization",
+            "WireMock",
+            "TDD"
+          ]
+        },
+        {
+          "id": "test-double",
+          "name": "Test Double",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Mock Object",
+            "Mock",
+            "Stub",
+            "Fake",
+            "Dummy"
+          ],
+          "notes": "Testing technique that replaces a real dependency with a controlled substitute such as a mock, stub, fake, spy, or dummy during automated tests.",
+          "tags": [
+            "testing",
+            "testing-methodology",
+            "unit-testing",
+            "test-automation",
+            "mocking",
+            "isolation",
+            "qa",
+            "dependency-control"
+          ],
+          "whatIsIt": "A substitute object, function, service, or component used in tests to replace a real dependency and make behavior easier to isolate, control, or verify.",
+          "description": "A Test Double is a testing technique and test artifact used to replace a real dependency with a controlled substitute during testing. Developers use test doubles to isolate the unit under test, avoid slow or unreliable external systems, simulate specific responses, verify interactions, and make automated tests more deterministic. Common forms include mocks, stubs, fakes, spies, and dummies. Test doubles are especially common in unit testing, integration-style component tests, service-layer tests, and dependency-injected codebases.",
+          "usedWith": [
+            "Unit Testing",
+            "Integration Testing",
+            "Test Automation",
+            "Dependency Injection",
+            "Mocking Frameworks",
+            "Jest",
+            "pytest",
+            "JUnit",
+            "NUnit",
+            "Mockito",
+            "Sinon",
+            "Test Case"
+          ],
+          "builtOn": [
+            "Software Testing",
+            "Test Isolation",
+            "Dependency Substitution",
+            "Controlled Test Data",
+            "Behavior Verification",
+            "Dependency Injection"
+          ],
+          "builtUponBy": [
+            "Unit Testing Workflows",
+            "Automated Testing Workflows",
+            "Service Layer Testing Workflows",
+            "API Client Testing Workflows",
+            "Regression Testing Workflows",
+            "Continuous Integration Test Workflows",
+            "Test-Driven Development Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Real Dependency",
+            "In-Memory Test Implementation",
+            "Contract Test",
+            "Test Container",
+            "Local Emulator",
+            "Sandbox Service"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Software Testing",
+            "Unit Testing",
+            "Test Automation",
+            "Quality Assurance",
+            "Test Design",
+            "Verification and Validation"
+          ],
+          "includes": [],
+          "examples": [
+            "Mocking an email service during a unit test",
+            "Stubbing an API client response",
+            "Using a fake in-memory repository",
+            "Using a spy to verify a method was called",
+            "Replacing a payment gateway with a mock",
+            "Simulating a database error with a stub",
+            "Mocking time or random number generation",
+            "Using Mockito to create a mock dependency",
+            "Using Jest mock functions in JavaScript tests"
+          ],
+          "useCases": [
+            "Isolating the unit under test",
+            "Avoiding real network calls in tests",
+            "Simulating dependency behavior",
+            "Testing error handling paths",
+            "Verifying interactions with dependencies",
+            "Making automated tests faster and more deterministic",
+            "Replacing slow or unavailable external systems",
+            "Supporting test-driven development",
+            "Reducing flaky tests caused by external dependencies"
+          ],
+          "relatedConcepts": [
+            "Unit Testing",
+            "Mocking",
+            "Stubbing",
+            "Test Isolation",
+            "Dependency Injection",
+            "Test Automation",
+            "Test Case",
+            "Regression Testing",
+            "TDD",
+            "Behavior Verification",
+            "Fixture",
+            "Mocking Framework"
+          ]
+        },
+        {
+          "id": "snapshot-testing",
+          "name": "Snapshot Testing",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Snapshot Test",
+            "UI Snapshot Testing",
+            "Golden Master Testing",
+            "Approval Testing"
+          ],
+          "notes": "Testing methodology that compares current output against a previously saved snapshot or golden baseline to detect unintended changes.",
+          "tags": [
+            "testing",
+            "testing-methodology",
+            "regression-testing",
+            "ui-testing",
+            "test-automation",
+            "frontend",
+            "baseline-comparison",
+            "qa"
+          ],
+          "whatIsIt": "A testing approach that saves expected output as a snapshot and compares future test runs against that stored baseline.",
+          "description": "Snapshot Testing is a testing methodology where the output of a component, function, rendered UI, API response, serialized object, or generated artifact is saved as a baseline snapshot and compared against future results. If the output changes, the test fails until the change is reviewed and either fixed or accepted by updating the snapshot. Snapshot testing is common in frontend testing, component testing, regression testing, generated-output testing, and approval-style workflows. It is useful for catching unexpected output changes, but snapshots can become noisy or weak if they are too large, updated carelessly, or treated as a replacement for clear behavioral assertions.",
+          "usedWith": [
+            "Regression Testing",
+            "Unit Testing",
+            "Component Testing",
+            "UI Testing",
+            "Jest",
+            "React Testing Library",
+            "Storybook",
+            "Vitest",
+            "Playwright",
+            "Frontend Development",
+            "Test Automation",
+            "CI/CD"
+          ],
+          "builtOn": [
+            "Software Testing",
+            "Baseline Comparison",
+            "Expected Output",
+            "Regression Detection",
+            "Automated Test Execution",
+            "Version-Controlled Test Artifacts"
+          ],
+          "builtUponBy": [
+            "Frontend Regression Testing Workflows",
+            "Component Testing Workflows",
+            "UI Change Detection Workflows",
+            "Automated Testing Workflows",
+            "CI/CD Test Workflows",
+            "Approval Testing Workflows",
+            "Generated Output Validation Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Explicit Assertion Testing",
+            "Visual Regression Testing",
+            "Golden Master Testing",
+            "Approval Testing",
+            "Contract Testing",
+            "Manual UI Review"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Software Testing",
+            "Regression Testing",
+            "Test Automation",
+            "Frontend Testing",
+            "Quality Assurance",
+            "Verification and Validation"
+          ],
+          "includes": [],
+          "examples": [
+            "Jest snapshot test for a React component",
+            "Comparing rendered component output to a stored snapshot",
+            "Updating snapshots after an intentional UI change",
+            "Reviewing a snapshot diff in a pull request",
+            "Snapshot testing generated HTML",
+            "Snapshot testing serialized JSON output",
+            "Snapshot testing Storybook component states",
+            "Detecting unexpected changes in generated code output"
+          ],
+          "useCases": [
+            "Catching unintended UI output changes",
+            "Detecting regressions in rendered components",
+            "Testing generated or serialized output",
+            "Reviewing output changes in pull requests",
+            "Creating baseline comparisons for complex output",
+            "Supporting frontend regression testing",
+            "Validating component rendering behavior",
+            "Protecting against accidental output changes",
+            "Supporting approval-style testing workflows"
+          ],
+          "relatedConcepts": [
+            "Regression Testing",
+            "Visual Regression Testing",
+            "Component Testing",
+            "UI Testing",
+            "Jest",
+            "React Testing Library",
+            "Storybook",
+            "Golden Master",
+            "Approval Testing",
+            "Baseline",
+            "Test Automation",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "mutation-testing",
+          "name": "Mutation Testing",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Mutation Analysis",
+            "Mutation-Based Testing",
+            "Mutant Testing",
+            "Fault-Based Testing"
+          ],
+          "notes": "Testing methodology that intentionally introduces small code changes called mutants to evaluate whether an existing test suite can detect defects.",
+          "tags": [
+            "testing-methodology",
+            "mutation-testing",
+            "test-quality",
+            "automated-testing",
+            "test-suite",
+            "code-quality",
+            "software-quality",
+            "qa"
+          ],
+          "whatIsIt": "A testing methodology that modifies code in small ways to create mutants, then checks whether the test suite catches those changes.",
+          "description": "Mutation Testing evaluates the strength of a test suite by intentionally changing small pieces of source code and running the tests to see whether those changes are detected. Each changed version is called a mutant. If the tests fail, the mutant is considered killed; if the tests still pass, the mutant survived and may reveal weak assertions, missing edge cases, or untested behavior. Mutation testing is more focused on test effectiveness than simple test coverage because it asks whether tests can actually detect meaningful defects, not just whether code was executed.",
+          "usedWith": [
+            "Unit Testing",
+            "Test Suite",
+            "Test Coverage",
+            "CI/CD",
+            "Jest",
+            "pytest",
+            "JUnit",
+            "Stryker",
+            "PIT",
+            "Code Quality",
+            "Regression Testing",
+            "Quality Gates"
+          ],
+          "builtOn": [
+            "Software Testing",
+            "Test Automation",
+            "Fault Injection",
+            "Assertions",
+            "Test Oracles",
+            "Code Instrumentation",
+            "Source Code Transformation"
+          ],
+          "builtUponBy": [
+            "Test Suite Quality Assessment",
+            "Regression Test Improvement Workflows",
+            "CI/CD Quality Gate Workflows",
+            "Code Quality Improvement Workflows",
+            "Test Gap Discovery Workflows",
+            "Automated Testing Maturity Reviews",
+            "Release Confidence Validation"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Test Coverage",
+            "Property-Based Testing",
+            "Fuzz Testing",
+            "Static Analysis",
+            "Manual Test Review",
+            "Exploratory Testing"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Software Quality",
+            "Quality Assurance",
+            "Automated Testing",
+            "Test Effectiveness Analysis",
+            "Code Quality",
+            "Regression Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "Changing a greater-than comparison to greater-than-or-equal and checking whether tests fail",
+            "Replacing an arithmetic operator to create a mutant",
+            "Running Stryker mutation tests for a JavaScript project",
+            "Running PIT mutation tests for a Java project",
+            "Finding survived mutants that reveal missing assertions",
+            "Using mutation score as a test quality signal",
+            "Improving unit tests after mutation testing exposes weak coverage",
+            "CI pipeline reporting mutation testing results"
+          ],
+          "useCases": [
+            "Measuring test suite effectiveness",
+            "Finding weak assertions",
+            "Identifying untested edge cases",
+            "Improving regression test quality",
+            "Validating whether tests catch real defects",
+            "Finding gaps hidden by high code coverage",
+            "Strengthening automated tests before release",
+            "Improving confidence in critical code paths"
+          ],
+          "relatedConcepts": [
+            "Software Testing",
+            "Test Suite",
+            "Test Coverage",
+            "Unit Testing",
+            "Regression Testing",
+            "Fault Injection",
+            "Quality Gate",
+            "Code Quality",
+            "Property-Based Testing",
+            "Fuzz Testing",
+            "Assertions",
+            "Quality Assurance"
+          ]
+        },
+        {
+          "id": "property-based-testing",
+          "name": "Property-Based Testing",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "PBT",
+            "Property Testing",
+            "Generative Testing",
+            "QuickCheck-Style Testing"
+          ],
+          "notes": "Testing methodology where developers define general properties or invariants and a test framework generates many inputs to verify those properties across a wide range of cases.",
+          "tags": [
+            "testing-methodology",
+            "property-based-testing",
+            "generative-testing",
+            "automated-testing",
+            "edge-cases",
+            "invariants",
+            "qa",
+            "software-quality"
+          ],
+          "whatIsIt": "A testing methodology that checks whether general properties or invariants hold across many generated inputs instead of only testing hand-picked examples.",
+          "description": "Property-Based Testing is a testing methodology where developers define properties that should always hold true, then a framework generates many random or structured inputs to test those properties. Instead of writing only example-based tests with specific inputs and expected outputs, property-based tests describe broader rules such as reversibility, ordering, idempotency, invariants, serialization round trips, or consistency between implementations. When a failure is found, many property-based testing tools shrink the failing input to a smaller case that is easier to understand and debug.",
+          "usedWith": [
+            "Unit Testing",
+            "Automated Testing",
+            "Test Suite",
+            "CI/CD",
+            "QuickCheck",
+            "Hypothesis",
+            "fast-check",
+            "jqwik",
+            "FsCheck",
+            "ScalaCheck",
+            "pytest",
+            "Jest"
+          ],
+          "builtOn": [
+            "Software Testing",
+            "Invariants",
+            "Random Input Generation",
+            "Generated Test Data",
+            "Assertions",
+            "Test Oracles",
+            "Shrinking"
+          ],
+          "builtUponBy": [
+            "Edge Case Discovery Workflows",
+            "Automated Test Generation Workflows",
+            "Data Validation Testing Workflows",
+            "Parser and Serializer Testing",
+            "Algorithm Validation Workflows",
+            "Regression Test Strengthening",
+            "High-Reliability Testing Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Example-Based Testing",
+            "Mutation Testing",
+            "Fuzz Testing",
+            "Exploratory Testing",
+            "Table-Driven Testing",
+            "Manual Testing"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Software Quality",
+            "Quality Assurance",
+            "Automated Testing",
+            "Generative Testing",
+            "Unit Testing",
+            "Regression Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "Testing that sorting always returns ordered output",
+            "Testing that encode and decode operations round-trip correctly",
+            "Generating random strings to test parser behavior",
+            "Using Hypothesis to test Python functions with generated inputs",
+            "Using fast-check to test JavaScript properties",
+            "Finding a minimal failing input through shrinking",
+            "Testing that an operation is idempotent",
+            "Comparing two implementations against the same generated inputs"
+          ],
+          "useCases": [
+            "Finding edge cases missed by example-based tests",
+            "Testing broad behavioral rules",
+            "Validating algorithms across many inputs",
+            "Testing parsers and serializers",
+            "Checking invariants in business logic",
+            "Generating many test cases automatically",
+            "Improving confidence in complex input handling",
+            "Discovering minimal failing examples"
+          ],
+          "relatedConcepts": [
+            "Software Testing",
+            "Unit Testing",
+            "Automated Testing",
+            "Test Suite",
+            "Assertions",
+            "Invariants",
+            "Fuzz Testing",
+            "Mutation Testing",
+            "Regression Testing",
+            "Edge Case",
+            "Test Data Generation",
+            "Quality Assurance"
+          ]
+        },
+        {
+          "id": "contract-testing",
+          "name": "Contract Testing",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Consumer-Driven Contract Testing",
+            "CDC Testing",
+            "API Contract Testing",
+            "Service Contract Testing"
+          ],
+          "notes": "Testing methodology used to verify that services, APIs, producers, and consumers agree on expected request and response contracts.",
+          "tags": [
+            "testing-methodology",
+            "api-testing",
+            "contract-testing",
+            "microservices",
+            "integration-testing",
+            "consumer-driven-contracts",
+            "service-compatibility",
+            "automated-testing"
+          ],
+          "whatIsIt": "A testing methodology that verifies whether an API or service provider satisfies the expectations agreed upon by its consumers.",
+          "description": "Contract Testing is a testing methodology used to verify that services communicate according to agreed contracts. It is especially useful in API-driven systems, microservices, distributed systems, and producer-consumer relationships where one service depends on another service response shape, status code, headers, schema, or behavior. Contract testing helps catch breaking API changes earlier than full end-to-end testing by checking whether the provider still satisfies the expectations of its consumers. Consumer-driven contract testing is a common style where consumers define expected interactions and providers verify that they can honor those contracts.",
+          "usedWith": [
+            "REST API",
+            "GraphQL",
+            "Microservices",
+            "API Contract",
+            "OpenAPI",
+            "Pact",
+            "Integration Testing",
+            "CI/CD",
+            "Automated Testing",
+            "Schema Validation",
+            "Consumer Services",
+            "Provider Services"
+          ],
+          "builtOn": [
+            "API Contracts",
+            "Producer-Consumer Relationships",
+            "Request and Response Expectations",
+            "Schema Validation",
+            "Service Compatibility",
+            "Automated Verification",
+            "Distributed System Boundaries"
+          ],
+          "builtUponBy": [
+            "Microservice Compatibility Workflows",
+            "API Change Validation Workflows",
+            "Consumer-Driven Contract Workflows",
+            "Provider Verification Workflows",
+            "CI/CD API Validation",
+            "Distributed System Testing Workflows",
+            "Backward Compatibility Testing"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Integration Testing",
+            "End-to-End Testing",
+            "API Testing",
+            "Schema Validation Testing",
+            "Service Virtualization"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "API Testing",
+            "Automated Testing",
+            "Microservice Testing",
+            "Distributed System Testing",
+            "Service Compatibility Testing",
+            "Software Quality"
+          ],
+          "includes": [],
+          "examples": [
+            "Pact consumer-driven contract test",
+            "Provider verifying consumer expectations in CI",
+            "API response schema checked against a contract",
+            "Microservice provider validating expected interactions",
+            "Contract test catching a breaking field rename",
+            "Consumer service publishing a contract to a broker",
+            "Provider pipeline failing because a contract is no longer satisfied",
+            "OpenAPI-based API contract validation"
+          ],
+          "useCases": [
+            "Catching breaking API changes early",
+            "Verifying provider compatibility with consumers",
+            "Testing microservice boundaries",
+            "Reducing reliance on brittle end-to-end tests",
+            "Validating service interactions in CI/CD",
+            "Supporting independent service deployment",
+            "Documenting expected API behavior through tests",
+            "Maintaining backward compatibility between services"
+          ],
+          "relatedConcepts": [
+            "API Contract",
+            "API Testing",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Microservices",
+            "Pact",
+            "OpenAPI",
+            "Schema Validation",
+            "Consumer-Driven Contracts",
+            "Backward Compatibility",
+            "Service Boundary",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "fuzz-testing",
+          "name": "Fuzz Testing",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Methodologies",
+          "aliases": [
+            "Fuzzing",
+            "Fuzz Test",
+            "Fuzz Testing Methodology",
+            "Randomized Input Testing",
+            "Mutation-Based Testing"
+          ],
+          "notes": "Testing methodology that feeds randomized, malformed, unexpected, or mutated inputs into software to discover crashes, vulnerabilities, parsing bugs, memory errors, and edge-case failures.",
+          "tags": [
+            "testing",
+            "testing-methodology",
+            "fuzzing",
+            "security-testing",
+            "automated-testing",
+            "randomized-testing",
+            "vulnerability-detection",
+            "edge-cases"
+          ],
+          "whatIsIt": "A testing methodology that automatically generates or mutates inputs to find crashes, vulnerabilities, unexpected behavior, and edge-case failures.",
+          "description": "Fuzz Testing is a software testing methodology that sends large volumes of random, malformed, unexpected, or mutated inputs into a program to discover defects that normal test cases may miss. It is especially useful for parsers, compilers, protocol handlers, file format readers, APIs, command-line tools, operating system components, browsers, and security-sensitive code. Fuzz Testing often works with instrumentation, code coverage feedback, sanitizers, crash detection, corpus management, and automated minimization of failing inputs. It overlaps with security testing and property-based testing, but fuzz testing is especially focused on finding unexpected failures through generated or mutated input data.",
+          "usedWith": [
+            "Security Testing",
+            "Automated Testing",
+            "Property-Based Testing",
+            "Unit Testing",
+            "CI/CD",
+            "Sanitizers",
+            "AFL",
+            "libFuzzer",
+            "Honggfuzz",
+            "OSS-Fuzz",
+            "Static Analysis",
+            "Crash Reporting"
+          ],
+          "builtOn": [
+            "Random Input Generation",
+            "Input Mutation",
+            "Coverage-Guided Testing",
+            "Crash Detection",
+            "Corpus Management",
+            "Automated Test Execution",
+            "Edge Case Exploration"
+          ],
+          "builtUponBy": [
+            "Security Testing Workflows",
+            "Vulnerability Discovery Workflows",
+            "Parser Testing Workflows",
+            "Protocol Robustness Testing Workflows",
+            "Compiler Testing Workflows",
+            "CI Fuzzing Workflows",
+            "Memory Safety Testing Workflows",
+            "Reliability Hardening Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Property-Based Testing",
+            "Mutation Testing",
+            "Unit Testing",
+            "Integration Testing",
+            "Static Analysis",
+            "Manual Security Testing",
+            "Penetration Testing"
+          ],
+          "partOf": [
+            "Testing Methodologies",
+            "Security Testing",
+            "Automated Testing",
+            "Software Quality Assurance",
+            "Vulnerability Research",
+            "Robustness Testing",
+            "Secure SDLC"
+          ],
+          "includes": [],
+          "examples": [
+            "Fuzzing a JSON parser with malformed documents",
+            "Using AFL to fuzz a command-line program",
+            "Running libFuzzer against a C++ parser",
+            "Finding a crash from a mutated image file",
+            "Fuzzing an HTTP protocol parser",
+            "Using sanitizers to detect memory errors during fuzzing",
+            "Adding fuzz tests to a CI pipeline",
+            "Minimizing a crashing input into a small reproduction case"
+          ],
+          "useCases": [
+            "Finding crashes caused by unexpected inputs",
+            "Discovering security vulnerabilities",
+            "Testing parsers and file format readers",
+            "Hardening protocol implementations",
+            "Exposing memory safety bugs",
+            "Improving software robustness",
+            "Testing edge cases automatically",
+            "Validating input handling behavior"
+          ],
+          "relatedConcepts": [
+            "Security Testing",
+            "Property-Based Testing",
+            "Mutation Testing",
+            "Automated Testing",
+            "Sanitizer",
+            "AFL",
+            "libFuzzer",
+            "Vulnerability",
+            "Crash",
+            "Input Validation",
+            "Memory Safety",
+            "Secure SDLC"
+          ]
         }
       ],
       "Testing Tools": [
@@ -64019,6 +65786,2392 @@
             "Web Services",
             "Status Code",
             "Authentication"
+          ]
+        },
+        {
+          "id": "unit-test-framework",
+          "name": "Unit Test Framework",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Unit Testing Framework",
+            "Unit Test Library",
+            "Unit Test Runner",
+            "Test Framework"
+          ],
+          "notes": "Testing tool or framework used to write, organize, execute, and report unit tests for isolated pieces of application code.",
+          "tags": [
+            "testing-tool",
+            "unit-testing",
+            "automated-testing",
+            "test-runner",
+            "assertions",
+            "test-fixtures",
+            "qa",
+            "tdd"
+          ],
+          "whatIsIt": "A testing framework that provides the structure, assertions, test runner, fixtures, and reporting needed to write and execute unit tests.",
+          "description": "A Unit Test Framework is a testing tool used to write and run automated unit tests against small isolated pieces of code such as functions, classes, methods, modules, or components. Unit test frameworks usually provide assertions, test discovery, setup and teardown hooks, fixtures, test runners, result reporting, mocking or extension support, and integration with build tools or CI/CD pipelines. Examples include JUnit, NUnit, xUnit, pytest, Jest, Mocha, Jasmine, and MSTest. The term belongs under testing tools because it refers to the framework/tooling used to implement the unit testing methodology.",
+          "usedWith": [
+            "Unit Testing",
+            "Automated Testing",
+            "Test-Driven Development",
+            "Assertions",
+            "Mocking",
+            "Stubbing",
+            "CI/CD",
+            "Code Coverage",
+            "Build Tools",
+            "Version Control",
+            "IDE Test Runners",
+            "Regression Testing"
+          ],
+          "builtOn": [
+            "Assertions",
+            "Test Discovery",
+            "Test Runners",
+            "Test Fixtures",
+            "Setup and Teardown Hooks",
+            "Automated Test Execution",
+            "Result Reporting"
+          ],
+          "builtUponBy": [
+            "Unit Testing Workflows",
+            "Test-Driven Development Workflows",
+            "Regression Testing Workflows",
+            "CI/CD Quality Gates",
+            "Pull Request Validation",
+            "Automated QA Workflows",
+            "Code Coverage Workflows"
+          ],
+          "runsOn": [
+            "Developer Workstations",
+            "CI/CD Environments",
+            "Build Servers",
+            "Language Runtimes",
+            "IDE Test Runners",
+            "Docker Containers"
+          ],
+          "alternatives": [
+            "Manual Testing",
+            "Custom Test Scripts",
+            "Integration Test Framework",
+            "End-to-End Test Framework",
+            "Ad Hoc Testing"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Unit Testing",
+            "Automated Testing",
+            "Quality Assurance",
+            "Continuous Testing",
+            "Test-Driven Development",
+            "Software Quality"
+          ],
+          "includes": [],
+          "examples": [
+            "JUnit for Java unit tests",
+            "pytest for Python unit tests",
+            "Jest for JavaScript unit tests",
+            "NUnit for .NET unit tests",
+            "xUnit for .NET unit tests",
+            "Mocha test suite",
+            "Jasmine test spec",
+            "MSTest test class",
+            "CI pipeline running unit tests after every commit"
+          ],
+          "useCases": [
+            "Writing automated unit tests",
+            "Running tests after code changes",
+            "Validating isolated functions and classes",
+            "Supporting test-driven development",
+            "Catching regressions quickly",
+            "Generating test reports",
+            "Enforcing CI/CD quality gates",
+            "Measuring unit-level code coverage"
+          ],
+          "relatedConcepts": [
+            "Unit Testing",
+            "Automated Testing",
+            "Test Runner",
+            "Assertions",
+            "Test Case",
+            "Test Suite",
+            "Mocking",
+            "Stubbing",
+            "Code Coverage",
+            "TDD",
+            "Regression Testing",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "testng",
+          "name": "TestNG",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "TestNG Framework",
+            "Test Next Generation",
+            "Java TestNG",
+            "TestNG Testing Framework"
+          ],
+          "notes": "Java testing framework inspired by JUnit and NUnit, commonly used for unit, integration, functional, and end-to-end test automation with annotations, test suites, groups, and parallel execution.",
+          "tags": [
+            "testing",
+            "testing-tool",
+            "java",
+            "test-automation",
+            "unit-testing",
+            "integration-testing",
+            "qa",
+            "test-framework"
+          ],
+          "whatIsIt": "A Java testing framework used to write, organize, run, and report automated tests with annotations, suites, groups, dependencies, and parallel execution.",
+          "description": "TestNG is a Java testing framework designed for flexible automated testing across unit tests, integration tests, functional tests, and end-to-end test suites. It uses annotations to define test methods, setup and teardown behavior, dependencies, groups, parameters, data providers, and suite execution rules. TestNG is commonly used with Java projects, Maven, Gradle, Selenium, CI/CD pipelines, and IDE test runners. It belongs under Testing Tools because it is a concrete framework/tool used to create and execute automated tests, while Unit Testing, Integration Testing, and End-to-End Testing are testing methodologies it can support.",
+          "usedWith": [
+            "Java",
+            "Maven",
+            "Gradle",
+            "Selenium",
+            "JUnit",
+            "Mockito",
+            "Jenkins",
+            "CI/CD",
+            "IntelliJ IDEA",
+            "Eclipse",
+            "Test Automation",
+            "XML Test Suites"
+          ],
+          "builtOn": [
+            "Java",
+            "Annotations",
+            "Automated Test Execution",
+            "Test Suites",
+            "Assertion-Based Testing",
+            "Test Lifecycle Hooks",
+            "Parameterized Testing"
+          ],
+          "builtUponBy": [
+            "Java Test Automation Workflows",
+            "Selenium Automation Workflows",
+            "CI/CD Test Execution Workflows",
+            "Regression Testing Workflows",
+            "Integration Testing Workflows",
+            "Functional Testing Workflows",
+            "Enterprise Java QA Workflows"
+          ],
+          "runsOn": [
+            "JVM",
+            "Java Runtime Environment",
+            "Windows",
+            "macOS",
+            "Linux",
+            "CI/CD Environments",
+            "IDE Test Runners"
+          ],
+          "alternatives": [
+            "JUnit",
+            "NUnit",
+            "Spock",
+            "Cucumber",
+            "pytest",
+            "Jasmine"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Java Ecosystem",
+            "Test Automation",
+            "Software Testing",
+            "Quality Assurance",
+            "Regression Testing Workflows",
+            "CI/CD Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "@Test annotation in TestNG",
+            "testng.xml suite file",
+            "Parameterized TestNG test",
+            "TestNG data provider",
+            "Running TestNG tests with Maven",
+            "Running Selenium tests with TestNG",
+            "Grouping smoke tests in TestNG",
+            "Parallel test execution in TestNG"
+          ],
+          "useCases": [
+            "Writing automated Java tests",
+            "Running unit tests",
+            "Running integration tests",
+            "Organizing test suites",
+            "Grouping tests by category or priority",
+            "Running Selenium automation tests",
+            "Executing tests in CI/CD pipelines",
+            "Running parameterized tests",
+            "Supporting regression testing workflows"
+          ],
+          "relatedConcepts": [
+            "JUnit",
+            "NUnit",
+            "Java",
+            "Unit Testing",
+            "Integration Testing",
+            "Functional Testing",
+            "Regression Testing",
+            "Selenium",
+            "Test Suite",
+            "Test Case",
+            "Assertions",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "nunit",
+          "name": "NUnit",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "NUnit Framework",
+            ".NET NUnit",
+            "NUnit Testing Framework",
+            "NUnit Test Runner"
+          ],
+          "notes": ".NET testing framework used to write, organize, run, and report automated tests for C#, F#, and other .NET languages.",
+          "tags": [
+            "testing",
+            "testing-tool",
+            "dotnet",
+            "csharp",
+            "test-automation",
+            "unit-testing",
+            "qa",
+            "test-framework"
+          ],
+          "whatIsIt": "A .NET testing framework used to create and run automated tests for C#, F#, and other .NET applications.",
+          "description": "NUnit is a testing framework for the .NET ecosystem, commonly used to write and run unit tests, integration tests, and automated regression tests for C#, F#, and other .NET languages. It provides attributes for test methods, setup and teardown logic, test fixtures, parameterized tests, assertions, test cases, categories, and test runners. NUnit is commonly used with Visual Studio, Rider, the .NET CLI, CI/CD pipelines, mocking frameworks, and .NET application projects. It belongs under Testing Tools because it is a concrete testing framework, while Unit Testing and Integration Testing are methodologies it helps implement.",
+          "usedWith": [
+            ".NET",
+            "C#",
+            "F#",
+            "Visual Studio",
+            "JetBrains Rider",
+            ".NET CLI",
+            "Moq",
+            "NSubstitute",
+            "Selenium",
+            "Azure DevOps",
+            "GitHub Actions",
+            "CI/CD"
+          ],
+          "builtOn": [
+            ".NET",
+            "C#",
+            "Attributes",
+            "Automated Test Execution",
+            "Test Fixtures",
+            "Assertion-Based Testing",
+            "Parameterized Testing"
+          ],
+          "builtUponBy": [
+            ".NET Test Automation Workflows",
+            "C# Unit Testing Workflows",
+            "Integration Testing Workflows",
+            "Regression Testing Workflows",
+            "CI/CD Test Execution Workflows",
+            "Enterprise .NET QA Workflows",
+            "Selenium Automation Workflows"
+          ],
+          "runsOn": [
+            ".NET Runtime",
+            ".NET SDK",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Visual Studio",
+            "CI/CD Environments"
+          ],
+          "alternatives": [
+            "xUnit.net",
+            "MSTest",
+            "TestNG",
+            "JUnit",
+            "pytest",
+            "Jasmine"
+          ],
+          "partOf": [
+            "Testing Tools",
+            ".NET Ecosystem",
+            "C# Development",
+            "Test Automation",
+            "Software Testing",
+            "Quality Assurance",
+            "CI/CD Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "[Test] attribute in NUnit",
+            "NUnit test fixture",
+            "Parameterized NUnit test case",
+            "Running NUnit tests with dotnet test",
+            "NUnit tests in Visual Studio Test Explorer",
+            "NUnit integration test for a service class",
+            "NUnit test using Moq",
+            "CI pipeline running NUnit tests"
+          ],
+          "useCases": [
+            "Writing automated .NET tests",
+            "Running C# unit tests",
+            "Testing service-layer behavior",
+            "Running integration tests",
+            "Creating parameterized tests",
+            "Organizing tests with fixtures and categories",
+            "Executing tests in CI/CD pipelines",
+            "Supporting regression testing workflows",
+            "Validating .NET application behavior before release"
+          ],
+          "relatedConcepts": [
+            "xUnit.net",
+            "MSTest",
+            "TestNG",
+            ".NET",
+            "C#",
+            "Unit Testing",
+            "Integration Testing",
+            "Regression Testing",
+            "Test Case",
+            "Test Suite",
+            "Assertions",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "xunit-net",
+          "name": "xUnit.net",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "xUnit",
+            "xunit.net",
+            "xUnit.net Framework",
+            "xUnit Testing Framework",
+            ".NET xUnit"
+          ],
+          "notes": "Open-source .NET testing framework commonly used for unit testing C#, F#, and .NET applications with facts, theories, assertions, fixtures, and test runners.",
+          "tags": [
+            "testing-tool",
+            "dotnet",
+            "csharp",
+            "unit-testing",
+            "automated-testing",
+            "test-framework",
+            "qa",
+            "software-quality"
+          ],
+          "whatIsIt": "A .NET testing framework used to write and run automated unit tests and related test suites for C#, F#, and other .NET codebases.",
+          "description": "xUnit.net is an open-source testing framework for .NET applications. Developers use it to write automated unit tests, integration tests, and regression tests for C#, F#, ASP.NET Core, library, service, and backend codebases. xUnit.net uses concepts such as facts, theories, assertions, fixtures, test collections, test discovery, and test runners. It is a common alternative to MSTest and NUnit and is frequently used with the .NET CLI, Visual Studio Test Explorer, NuGet packages, CI/CD pipelines, mocking libraries, assertion libraries, and code coverage tools.",
+          "usedWith": [
+            ".NET",
+            "C#",
+            "F#",
+            "ASP.NET Core",
+            "Visual Studio",
+            ".NET CLI",
+            "NuGet",
+            "CI/CD",
+            "Test Explorer",
+            "Moq",
+            "FluentAssertions",
+            "Coverlet"
+          ],
+          "builtOn": [
+            ".NET",
+            "Unit Testing",
+            "Assertions",
+            "Test Discovery",
+            "Test Runners",
+            "Attribute-Based Test Metadata"
+          ],
+          "builtUponBy": [
+            ".NET Unit Testing Workflows",
+            "C# Test Automation Workflows",
+            "ASP.NET Core Testing Workflows",
+            "Regression Testing Workflows",
+            "CI/CD Test Validation",
+            "Code Coverage Reporting Workflows",
+            "Test-Driven Development Workflows"
+          ],
+          "runsOn": [
+            ".NET SDK",
+            ".NET Runtime",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Visual Studio",
+            "CI/CD Environments"
+          ],
+          "alternatives": [
+            "MSTest",
+            "NUnit",
+            "JUnit",
+            "pytest",
+            "Jest"
+          ],
+          "partOf": [
+            "Testing Tools",
+            ".NET Ecosystem",
+            "C# Development",
+            "Unit Testing",
+            "Automated Testing",
+            "Quality Assurance",
+            "Software Quality"
+          ],
+          "includes": [],
+          "examples": [
+            "[Fact] test method",
+            "[Theory] test with InlineData",
+            "dotnet test running xUnit.net tests",
+            "xUnit.net tests shown in Visual Studio Test Explorer",
+            "ASP.NET Core controller unit tests using xUnit.net",
+            "Mocked dependency tests using xUnit.net and Moq",
+            "CI pipeline running xUnit.net test suites",
+            "Code coverage report generated from xUnit.net tests"
+          ],
+          "useCases": [
+            "Writing .NET unit tests",
+            "Testing C# business logic",
+            "Running automated test suites with dotnet test",
+            "Testing ASP.NET Core applications",
+            "Supporting test-driven development",
+            "Validating regressions in CI/CD",
+            "Organizing parameterized tests",
+            "Pairing tests with mocking and assertion libraries"
+          ],
+          "relatedConcepts": [
+            "Unit Testing",
+            "Automated Testing",
+            "Test Suite",
+            "Test Case",
+            "Test Runner",
+            ".NET",
+            "C#",
+            "MSTest",
+            "NUnit",
+            "Mocking",
+            "Test Coverage",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "mstest",
+          "name": "MSTest",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Microsoft Test Framework",
+            "MSTest Framework",
+            "Visual Studio Unit Testing Framework",
+            "Microsoft Unit Testing Framework",
+            ".NET MSTest"
+          ],
+          "notes": "Microsoft testing framework for .NET used to write and run automated tests with Visual Studio, the .NET CLI, Test Explorer, and CI/CD pipelines.",
+          "tags": [
+            "testing-tool",
+            "dotnet",
+            "csharp",
+            "unit-testing",
+            "automated-testing",
+            "visual-studio",
+            "microsoft",
+            "software-quality"
+          ],
+          "whatIsIt": "A Microsoft .NET testing framework used to create and run automated tests for C#, F#, and other .NET applications.",
+          "description": "MSTest is Microsoft's testing framework for .NET applications. Developers use it to write automated unit tests, integration tests, and regression tests for C#, F#, ASP.NET Core, desktop, library, service, and enterprise .NET codebases. MSTest integrates closely with Visual Studio, Test Explorer, the .NET CLI, Azure DevOps, NuGet packages, and CI/CD workflows. It uses attributes such as TestClass, TestMethod, TestInitialize, TestCleanup, DataTestMethod, and DataRow to define test classes, test methods, setup logic, cleanup logic, and data-driven tests. MSTest is commonly compared with xUnit.net and NUnit.",
+          "usedWith": [
+            ".NET",
+            "C#",
+            "F#",
+            "ASP.NET Core",
+            "Visual Studio",
+            ".NET CLI",
+            "Test Explorer",
+            "Azure DevOps",
+            "CI/CD",
+            "NuGet",
+            "Moq",
+            "Coverlet"
+          ],
+          "builtOn": [
+            ".NET",
+            "Unit Testing",
+            "Assertions",
+            "Test Discovery",
+            "Test Runners",
+            "Attribute-Based Test Metadata"
+          ],
+          "builtUponBy": [
+            ".NET Unit Testing Workflows",
+            "Visual Studio Testing Workflows",
+            "C# Test Automation Workflows",
+            "Enterprise .NET QA Workflows",
+            "Regression Testing Workflows",
+            "Azure DevOps Test Validation",
+            "CI/CD Quality Gate Workflows"
+          ],
+          "runsOn": [
+            ".NET SDK",
+            ".NET Runtime",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Visual Studio",
+            "CI/CD Environments"
+          ],
+          "alternatives": [
+            "xUnit.net",
+            "NUnit",
+            "JUnit",
+            "pytest",
+            "Jest"
+          ],
+          "partOf": [
+            "Testing Tools",
+            ".NET Ecosystem",
+            "Microsoft Developer Tooling",
+            "C# Development",
+            "Unit Testing",
+            "Automated Testing",
+            "Quality Assurance"
+          ],
+          "includes": [],
+          "examples": [
+            "[TestClass] test class",
+            "[TestMethod] unit test",
+            "[DataTestMethod] with DataRow inputs",
+            "dotnet test running MSTest tests",
+            "MSTest tests shown in Visual Studio Test Explorer",
+            "Azure DevOps pipeline running MSTest test suites",
+            "ASP.NET Core service tests using MSTest",
+            "MSTest assertions validating C# business logic"
+          ],
+          "useCases": [
+            "Writing .NET unit tests",
+            "Testing C# applications in Visual Studio",
+            "Running automated tests with dotnet test",
+            "Supporting enterprise .NET testing workflows",
+            "Creating data-driven tests",
+            "Validating regressions in CI/CD",
+            "Testing ASP.NET Core services",
+            "Integrating tests with Azure DevOps pipelines"
+          ],
+          "relatedConcepts": [
+            "Unit Testing",
+            "Automated Testing",
+            "Test Suite",
+            "Test Case",
+            "Test Runner",
+            ".NET",
+            "C#",
+            "xUnit.net",
+            "NUnit",
+            "Visual Studio",
+            "Test Coverage",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "pytest",
+          "name": "pytest",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Pytest",
+            "pytest Framework",
+            "pytest Test Runner",
+            "Python pytest"
+          ],
+          "notes": "Python testing framework and test runner used to write, discover, execute, and report automated tests with fixtures, assertions, plugins, and parameterization.",
+          "tags": [
+            "testing-tool",
+            "python",
+            "unit-testing",
+            "automated-testing",
+            "test-runner",
+            "fixtures",
+            "assertions",
+            "qa"
+          ],
+          "whatIsIt": "A Python testing framework and test runner used to write and run automated tests, especially unit tests, integration tests, and regression tests.",
+          "description": "pytest is a popular Python testing framework used to write, organize, discover, execute, and report automated tests. It supports simple assert-based tests, powerful fixtures, parameterized tests, plugins, test discovery, setup and teardown patterns, mocking integration, coverage reporting, and CI/CD workflows. pytest is commonly used for Python unit tests, API tests, integration tests, package tests, and regression test suites. It is often preferred over unittest for its concise syntax, fixture system, plugin ecosystem, and flexible test organization.",
+          "usedWith": [
+            "Python",
+            "Unit Testing",
+            "Automated Testing",
+            "Integration Testing",
+            "Regression Testing",
+            "Mocking",
+            "Stubbing",
+            "coverage.py",
+            "tox",
+            "nox",
+            "CI/CD",
+            "unittest"
+          ],
+          "builtOn": [
+            "Python",
+            "Assertions",
+            "Test Discovery",
+            "Fixtures",
+            "Parameterized Tests",
+            "Plugin Architecture",
+            "Automated Test Execution"
+          ],
+          "builtUponBy": [
+            "Python Unit Testing Workflows",
+            "Python Integration Testing Workflows",
+            "Regression Testing Workflows",
+            "CI/CD Quality Gates",
+            "Pull Request Validation",
+            "Package Testing Workflows",
+            "Test-Driven Development Workflows"
+          ],
+          "runsOn": [
+            "Python",
+            "Developer Workstations",
+            "CI/CD Environments",
+            "Build Servers",
+            "Docker Containers",
+            "Virtual Environments"
+          ],
+          "alternatives": [
+            "unittest",
+            "nose2",
+            "doctest",
+            "Robot Framework",
+            "Behave"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Python Ecosystem",
+            "Automated Testing",
+            "Unit Testing",
+            "Quality Assurance",
+            "Continuous Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "pytest",
+            "pytest tests/",
+            "pytest -k test_login",
+            "pytest -m smoke",
+            "pytest fixture for database setup",
+            "Parameterized pytest test case",
+            "conftest.py shared fixtures",
+            "pytest running in a CI pipeline"
+          ],
+          "useCases": [
+            "Writing Python unit tests",
+            "Running automated Python test suites",
+            "Creating reusable test fixtures",
+            "Parameterizing test cases",
+            "Testing APIs and backend services",
+            "Running regression tests in CI/CD",
+            "Validating Python packages before release",
+            "Supporting test-driven development in Python"
+          ],
+          "relatedConcepts": [
+            "Python",
+            "unittest",
+            "Unit Testing",
+            "Automated Testing",
+            "Test Runner",
+            "Assertions",
+            "Fixtures",
+            "Mocking",
+            "Code Coverage",
+            "CI/CD",
+            "TDD",
+            "Regression Testing"
+          ]
+        },
+        {
+          "id": "unittest",
+          "name": "unittest",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Python unittest",
+            "unittest Framework",
+            "Python Unit Test Framework",
+            "PyUnit"
+          ],
+          "notes": "Python standard library unit testing framework used to write and run automated tests using xUnit-style test cases, assertions, fixtures, and test suites.",
+          "tags": [
+            "testing-tool",
+            "python",
+            "unit-testing",
+            "automated-testing",
+            "test-runner",
+            "standard-library",
+            "assertions",
+            "xunit"
+          ],
+          "whatIsIt": "Python's built-in unit testing framework for writing and running automated tests using TestCase classes, assertions, fixtures, and test suites.",
+          "description": "unittest is Python's standard library testing framework for writing and running automated unit tests. It follows an xUnit-style structure with TestCase classes, assertion methods, setup and teardown hooks, test suites, test discovery, and command-line execution. unittest is commonly used when teams want a built-in testing framework without adding external dependencies, or when working with legacy Python codebases that already use class-based unit tests. It is different from pytest because unittest is built into Python and uses a more explicit xUnit-style class structure, while pytest offers a more concise syntax, fixtures, and a larger plugin ecosystem.",
+          "usedWith": [
+            "Python",
+            "Unit Testing",
+            "Automated Testing",
+            "Test-Driven Development",
+            "unittest.mock",
+            "Mocking",
+            "Stubbing",
+            "coverage.py",
+            "tox",
+            "CI/CD",
+            "IDE Test Runners",
+            "pytest"
+          ],
+          "builtOn": [
+            "Python Standard Library",
+            "xUnit Testing Pattern",
+            "TestCase Classes",
+            "Assertions",
+            "Test Fixtures",
+            "Test Discovery",
+            "Automated Test Execution"
+          ],
+          "builtUponBy": [
+            "Python Unit Testing Workflows",
+            "Legacy Python Testing Workflows",
+            "Regression Testing Workflows",
+            "CI/CD Quality Gates",
+            "Pull Request Validation",
+            "Test-Driven Development Workflows"
+          ],
+          "runsOn": [
+            "Python",
+            "Developer Workstations",
+            "CI/CD Environments",
+            "Build Servers",
+            "Docker Containers",
+            "Virtual Environments"
+          ],
+          "alternatives": [
+            "pytest",
+            "nose2",
+            "doctest",
+            "Robot Framework",
+            "Custom Test Scripts"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Python Standard Library",
+            "Python Ecosystem",
+            "Automated Testing",
+            "Unit Testing",
+            "Quality Assurance"
+          ],
+          "includes": [],
+          "examples": [
+            "python -m unittest",
+            "python -m unittest discover",
+            "class TestUserService(unittest.TestCase)",
+            "self.assertEqual(actual, expected)",
+            "setUp method creating test data",
+            "tearDown method cleaning test resources",
+            "unittest.mock patching a dependency",
+            "CI pipeline running unittest test discovery"
+          ],
+          "useCases": [
+            "Writing Python unit tests without external dependencies",
+            "Testing isolated Python classes and functions",
+            "Running standard library test suites",
+            "Maintaining legacy Python test suites",
+            "Using xUnit-style test organization",
+            "Mocking Python dependencies with unittest.mock",
+            "Running automated regression tests",
+            "Supporting test-driven development in Python"
+          ],
+          "relatedConcepts": [
+            "Python",
+            "pytest",
+            "Unit Testing",
+            "Automated Testing",
+            "TestCase",
+            "Assertions",
+            "Test Suite",
+            "Mocking",
+            "unittest.mock",
+            "xUnit",
+            "CI/CD",
+            "TDD"
+          ]
+        },
+        {
+          "id": "mocha",
+          "name": "Mocha",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Mocha.js",
+            "Mocha Test Framework",
+            "Mocha Test Runner",
+            "JavaScript Mocha"
+          ],
+          "notes": "JavaScript testing framework and test runner commonly used for Node.js and browser-based automated tests, often paired with assertion and mocking libraries such as Chai and Sinon.",
+          "tags": [
+            "testing",
+            "testing-tool",
+            "javascript",
+            "nodejs",
+            "test-automation",
+            "unit-testing",
+            "integration-testing",
+            "test-framework"
+          ],
+          "whatIsIt": "A JavaScript test framework and test runner used to define, organize, execute, and report automated tests for Node.js and browser-based code.",
+          "description": "Mocha is a JavaScript testing framework and test runner commonly used for Node.js applications, browser-based JavaScript, libraries, APIs, and backend services. It provides a flexible structure for writing test suites and test cases using functions such as describe and it, supports asynchronous tests, lifecycle hooks, custom reporters, and multiple assertion styles through external assertion libraries. Mocha is often paired with Chai for assertions, Sinon for spies/stubs/mocks, nyc or Istanbul for coverage, and npm scripts or CI/CD pipelines for automated execution. It belongs under Testing Tools because it is a concrete framework used to write and run tests, while Unit Testing, Integration Testing, and Regression Testing are methodologies it can support.",
+          "usedWith": [
+            "JavaScript",
+            "TypeScript",
+            "Node.js",
+            "Chai",
+            "Sinon",
+            "nyc",
+            "Istanbul",
+            "npm",
+            "Yarn",
+            "pnpm",
+            "CI/CD",
+            "jsdom"
+          ],
+          "builtOn": [
+            "JavaScript",
+            "Node.js",
+            "Automated Test Execution",
+            "Test Suites",
+            "Assertion-Based Testing",
+            "Asynchronous Testing",
+            "Test Lifecycle Hooks"
+          ],
+          "builtUponBy": [
+            "JavaScript Test Automation Workflows",
+            "Node.js Unit Testing Workflows",
+            "Integration Testing Workflows",
+            "Regression Testing Workflows",
+            "CI/CD Test Execution Workflows",
+            "Library Testing Workflows",
+            "Backend Service Testing Workflows"
+          ],
+          "runsOn": [
+            "Node.js",
+            "Web Browsers",
+            "Windows",
+            "macOS",
+            "Linux",
+            "CI/CD Environments",
+            "Developer Workstations"
+          ],
+          "alternatives": [
+            "Jest",
+            "Vitest",
+            "Jasmine",
+            "AVA",
+            "Tape",
+            "QUnit",
+            "Node.js Test Runner"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "JavaScript Ecosystem",
+            "Node.js Ecosystem",
+            "Test Automation",
+            "Software Testing",
+            "Quality Assurance",
+            "CI/CD Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "describe and it test suite in Mocha",
+            "Mocha test using Chai assertions",
+            "Mocha test using Sinon stubs",
+            "Running mocha from an npm script",
+            "Async Mocha test with promises",
+            "Mocha integration test for a Node.js API",
+            "Mocha tests running in CI",
+            "Mocha test coverage with nyc"
+          ],
+          "useCases": [
+            "Writing JavaScript unit tests",
+            "Running Node.js automated tests",
+            "Testing asynchronous JavaScript behavior",
+            "Organizing test suites and test cases",
+            "Running integration tests for backend services",
+            "Pairing tests with assertion libraries",
+            "Executing tests in CI/CD pipelines",
+            "Supporting regression testing workflows",
+            "Testing JavaScript libraries and packages"
+          ],
+          "relatedConcepts": [
+            "Jest",
+            "Vitest",
+            "Jasmine",
+            "Chai",
+            "Sinon",
+            "JavaScript",
+            "Node.js",
+            "Unit Testing",
+            "Integration Testing",
+            "Test Runner",
+            "Assertions",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "vitest",
+          "name": "Vitest",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Vite Test",
+            "Vitest Test Runner",
+            "Vitest Framework",
+            "Vite-Native Test Framework"
+          ],
+          "notes": "Vite-native JavaScript and TypeScript testing framework used for fast unit, component, and integration tests with Jest-like APIs, snapshots, mocks, coverage, and watch mode.",
+          "tags": [
+            "testing",
+            "testing-tool",
+            "vite",
+            "javascript",
+            "typescript",
+            "test-automation",
+            "unit-testing",
+            "frontend-testing"
+          ],
+          "whatIsIt": "A Vite-native JavaScript and TypeScript testing framework for running fast unit, component, and integration tests with a Jest-like developer experience.",
+          "description": "Vitest is a modern JavaScript and TypeScript testing framework designed to work closely with Vite-based projects. It provides a fast test runner, Jest-compatible style APIs, built-in assertions, mocking and spying utilities, snapshot testing, coverage support, watch mode, and strong integration with modern frontend tooling. Vitest is commonly used with Vue, React, Svelte, SvelteKit, Nuxt, Vite libraries, Testing Library, jsdom, happy-dom, and CI/CD pipelines. It belongs under Testing Tools because it is a concrete framework used to write and execute automated tests, while Snapshot Testing, Unit Testing, and Component Testing are methodologies or testing styles it can support.",
+          "usedWith": [
+            "Vite",
+            "JavaScript",
+            "TypeScript",
+            "Vue.js",
+            "React",
+            "Svelte",
+            "SvelteKit",
+            "Nuxt",
+            "Testing Library",
+            "jsdom",
+            "happy-dom",
+            "CI/CD"
+          ],
+          "builtOn": [
+            "Vite",
+            "JavaScript",
+            "TypeScript",
+            "Node.js",
+            "ES Modules",
+            "Automated Test Execution",
+            "Snapshot Testing"
+          ],
+          "builtUponBy": [
+            "Vite-Based Test Automation Workflows",
+            "Frontend Unit Testing Workflows",
+            "Component Testing Workflows",
+            "JavaScript Library Testing Workflows",
+            "TypeScript Test Workflows",
+            "CI/CD Test Execution Workflows",
+            "Regression Testing Workflows"
+          ],
+          "runsOn": [
+            "Node.js",
+            "Vite Projects",
+            "Windows",
+            "macOS",
+            "Linux",
+            "CI/CD Environments",
+            "Developer Workstations"
+          ],
+          "alternatives": [
+            "Jest",
+            "Mocha",
+            "Jasmine",
+            "AVA",
+            "Node.js Test Runner",
+            "Karma",
+            "QUnit"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Vite Ecosystem",
+            "JavaScript Ecosystem",
+            "TypeScript Ecosystem",
+            "Frontend Testing",
+            "Test Automation",
+            "CI/CD Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "Vitest unit test with test and expect",
+            "Vitest component test with Testing Library",
+            "Vitest snapshot test",
+            "Mocking a module with vi.mock",
+            "Running vitest in watch mode",
+            "Running vitest --coverage",
+            "Testing a Vue component in a Vite project",
+            "Testing a Svelte component with Vitest",
+            "Vitest tests running in CI"
+          ],
+          "useCases": [
+            "Testing Vite-based applications",
+            "Writing JavaScript and TypeScript unit tests",
+            "Running frontend component tests",
+            "Replacing Jest in Vite projects",
+            "Running snapshot tests",
+            "Mocking modules and functions",
+            "Generating test coverage reports",
+            "Executing tests quickly during development",
+            "Running automated tests in CI/CD pipelines"
+          ],
+          "relatedConcepts": [
+            "Vite",
+            "Jest",
+            "Mocha",
+            "Testing Library",
+            "Snapshot Testing",
+            "Unit Testing",
+            "Component Testing",
+            "JavaScript",
+            "TypeScript",
+            "jsdom",
+            "Mocking",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "karma",
+          "name": "Karma",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Karma Test Runner",
+            "Karma JS",
+            "Karma JavaScript Test Runner",
+            "Angular Karma Test Runner"
+          ],
+          "notes": "JavaScript test runner commonly used to run browser-based unit tests by launching real browsers and executing tests against frontend code.",
+          "tags": [
+            "testing-tool",
+            "javascript",
+            "frontend-testing",
+            "browser-testing",
+            "unit-testing",
+            "test-runner",
+            "automated-testing",
+            "qa"
+          ],
+          "whatIsIt": "A JavaScript test runner used to execute frontend tests in real browsers and report test results.",
+          "description": "Karma is a JavaScript test runner commonly used for frontend unit testing, especially in older Angular and browser-based JavaScript projects. It launches browsers, runs test files, watches source changes, captures results, and integrates with testing frameworks such as Jasmine, Mocha, and QUnit. Karma is not itself an assertion library or testing methodology; it is a tool that coordinates browser-based test execution. It is useful for validating JavaScript code in real browser environments, though many newer projects now use alternatives such as Jest, Vitest, Cypress, or Playwright depending on the testing layer.",
+          "usedWith": [
+            "JavaScript",
+            "TypeScript",
+            "Angular",
+            "Jasmine",
+            "Mocha",
+            "QUnit",
+            "Chrome",
+            "Firefox",
+            "Headless Browsers",
+            "npm",
+            "CI/CD",
+            "Istanbul"
+          ],
+          "builtOn": [
+            "JavaScript",
+            "Browser-Based Testing",
+            "Test Runners",
+            "Frontend Unit Testing",
+            "Browser Launchers",
+            "Test Framework Integration"
+          ],
+          "builtUponBy": [
+            "Frontend Unit Testing Workflows",
+            "Angular Testing Workflows",
+            "Browser-Based Test Automation",
+            "CI/CD Test Validation",
+            "JavaScript Regression Testing",
+            "Code Coverage Reporting Workflows",
+            "Legacy Frontend Test Suites"
+          ],
+          "runsOn": [
+            "Node.js",
+            "Web Browsers",
+            "Chrome",
+            "Firefox",
+            "Headless Browser Environments",
+            "Linux",
+            "macOS",
+            "Windows",
+            "CI/CD Environments"
+          ],
+          "alternatives": [
+            "Jest",
+            "Vitest",
+            "Playwright",
+            "Cypress",
+            "Web Test Runner",
+            "Mocha"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "JavaScript Testing",
+            "Frontend Testing",
+            "Browser Testing",
+            "Automated Testing",
+            "Quality Assurance",
+            "Angular Testing Ecosystem"
+          ],
+          "includes": [],
+          "examples": [
+            "karma start",
+            "karma.conf.js configuration file",
+            "Running Jasmine tests through Karma",
+            "Angular project using Karma for unit tests",
+            "Karma launching Chrome Headless in CI",
+            "Karma coverage report with Istanbul",
+            "Browser-based JavaScript unit test suite",
+            "File watch mode rerunning tests after source changes"
+          ],
+          "useCases": [
+            "Running frontend unit tests in real browsers",
+            "Testing browser-specific JavaScript behavior",
+            "Executing Angular unit tests",
+            "Running automated tests in headless browsers",
+            "Integrating frontend tests into CI/CD",
+            "Watching files and rerunning tests during development",
+            "Generating browser-based test reports",
+            "Collecting frontend test coverage"
+          ],
+          "relatedConcepts": [
+            "JavaScript",
+            "TypeScript",
+            "Angular",
+            "Jasmine",
+            "Mocha",
+            "Test Runner",
+            "Unit Testing",
+            "Browser Testing",
+            "Headless Browser",
+            "Test Coverage",
+            "CI/CD",
+            "Playwright"
+          ]
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Microsoft Playwright",
+            "Playwright Test",
+            "Playwright Browser Automation",
+            "Playwright E2E Testing"
+          ],
+          "notes": "Browser automation and testing tool used for end-to-end testing, UI testing, cross-browser testing, and automated interaction with web applications.",
+          "tags": [
+            "testing-tool",
+            "end-to-end-testing",
+            "browser-automation",
+            "ui-testing",
+            "cross-browser-testing",
+            "javascript",
+            "typescript",
+            "automated-testing"
+          ],
+          "whatIsIt": "A browser automation and testing framework used to automate web browsers and run end-to-end tests for web applications.",
+          "description": "Playwright is a browser automation and testing tool commonly used for end-to-end testing, UI testing, cross-browser testing, visual checks, API-assisted test setup, and automated browser workflows. Developers and QA teams use Playwright to script user interactions, validate web application behavior, test across Chromium, Firefox, and WebKit, capture traces, take screenshots, record videos, and run tests in CI/CD pipelines. Playwright is especially useful for modern web applications because it supports reliable auto-waiting, browser contexts, parallel test execution, test fixtures, and debugging tools.",
+          "usedWith": [
+            "JavaScript",
+            "TypeScript",
+            "Node.js",
+            "Web Applications",
+            "Chromium",
+            "Firefox",
+            "WebKit",
+            "CI/CD",
+            "GitHub Actions",
+            "Jest",
+            "Test Coverage",
+            "Docker"
+          ],
+          "builtOn": [
+            "Browser Automation",
+            "End-to-End Testing",
+            "Web Browser Protocols",
+            "Test Runners",
+            "Assertions",
+            "Auto-Waiting",
+            "Browser Context Isolation"
+          ],
+          "builtUponBy": [
+            "End-to-End Testing Workflows",
+            "Cross-Browser Validation Workflows",
+            "UI Regression Testing Workflows",
+            "CI/CD Quality Gate Workflows",
+            "Frontend Release Validation",
+            "Automated Browser Testing Workflows",
+            "Web Application QA Workflows"
+          ],
+          "runsOn": [
+            "Node.js",
+            "Chromium",
+            "Firefox",
+            "WebKit",
+            "Linux",
+            "macOS",
+            "Windows",
+            "Docker Containers",
+            "CI/CD Environments"
+          ],
+          "alternatives": [
+            "Cypress",
+            "Selenium",
+            "Puppeteer",
+            "WebdriverIO",
+            "TestCafe",
+            "Karma"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "End-to-End Testing",
+            "Browser Automation",
+            "Frontend Testing",
+            "Web Application Testing",
+            "Cross-Browser Testing",
+            "Quality Assurance"
+          ],
+          "includes": [],
+          "examples": [
+            "npx playwright test",
+            "Playwright test clicking a login button",
+            "Cross-browser test running in Chromium, Firefox, and WebKit",
+            "Playwright trace viewer debugging a failed test",
+            "Screenshot captured during UI test failure",
+            "GitHub Actions workflow running Playwright tests",
+            "End-to-end checkout flow test",
+            "Browser context isolating test sessions"
+          ],
+          "useCases": [
+            "Testing end-to-end user workflows",
+            "Automating browser interactions",
+            "Validating web UI behavior",
+            "Running cross-browser tests",
+            "Debugging failed UI tests with traces",
+            "Capturing screenshots and videos during tests",
+            "Running frontend release validation in CI/CD",
+            "Testing authentication and session behavior",
+            "Reducing manual regression testing for web apps"
+          ],
+          "relatedConcepts": [
+            "End-to-End Testing",
+            "UI Testing",
+            "Browser Automation",
+            "Cross-Browser Testing",
+            "Selenium",
+            "Cypress",
+            "Puppeteer",
+            "JavaScript",
+            "TypeScript",
+            "CI/CD",
+            "Test Suite",
+            "Quality Assurance"
+          ]
+        },
+        {
+          "id": "cucumber",
+          "name": "Cucumber",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Cucumber Framework",
+            "Cucumber BDD",
+            "Cucumber Test Framework",
+            "Cucumber Testing Tool"
+          ],
+          "notes": "Behavior-driven development testing tool used to run executable specifications written in Gherkin feature files.",
+          "tags": [
+            "testing-tool",
+            "bdd",
+            "acceptance-testing",
+            "automated-testing",
+            "gherkin",
+            "executable-specifications",
+            "test-runner",
+            "qa"
+          ],
+          "whatIsIt": "A BDD testing tool that executes Gherkin feature files by mapping human-readable scenarios to automated step definitions.",
+          "description": "Cucumber is a behavior-driven development testing tool used to write and execute executable specifications. Teams use Cucumber to describe application behavior in Gherkin feature files using Given-When-Then scenarios, then connect those scenarios to automated step definitions written in languages such as JavaScript, Java, Ruby, Kotlin, or C#. Cucumber is commonly used for acceptance testing, collaboration between developers and non-developers, API workflow testing, end-to-end testing, and business-readable test documentation. Cucumber is the tool/framework, while Gherkin is the language used to write the scenarios it executes.",
+          "usedWith": [
+            "Gherkin",
+            "Behavior-Driven Development",
+            "Acceptance Testing",
+            "Automated Testing",
+            "End-to-End Testing",
+            "Selenium",
+            "Playwright",
+            "JUnit",
+            "JavaScript",
+            "Java",
+            "Ruby",
+            "CI/CD"
+          ],
+          "builtOn": [
+            "Gherkin Feature Files",
+            "Given-When-Then Syntax",
+            "Step Definitions",
+            "Behavior-Driven Development",
+            "Executable Specifications",
+            "Acceptance Criteria",
+            "Test Automation"
+          ],
+          "builtUponBy": [
+            "Behavior-Driven Development Workflows",
+            "Acceptance Testing Workflows",
+            "Executable Specification Workflows",
+            "End-to-End Testing Workflows",
+            "Business-Readable Test Documentation",
+            "CI/CD Regression Testing",
+            "Cross-Functional QA Collaboration"
+          ],
+          "runsOn": [
+            "Developer Workstations",
+            "CI/CD Environments",
+            "JVM",
+            "Node.js",
+            ".NET",
+            "Ruby Runtime",
+            "Docker Containers"
+          ],
+          "alternatives": [
+            "SpecFlow",
+            "Behave",
+            "Robot Framework",
+            "Gauge",
+            "FitNesse",
+            "Playwright Test",
+            "Selenium Test Suites"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Behavior-Driven Development",
+            "Acceptance Testing",
+            "Automated Testing",
+            "Quality Assurance",
+            "Executable Specification Tooling"
+          ],
+          "includes": [],
+          "examples": [
+            "Cucumber feature file for login behavior",
+            "Given-When-Then scenario executed by Cucumber",
+            "Java step definitions for Cucumber tests",
+            "Cucumber.js running BDD tests in CI",
+            "Cucumber scenario outline with examples table",
+            "Cucumber acceptance test for checkout workflow",
+            "Cucumber test suite paired with Selenium",
+            "Business-readable feature file used as test documentation"
+          ],
+          "useCases": [
+            "Running behavior-driven tests",
+            "Automating acceptance criteria",
+            "Creating executable specifications",
+            "Improving collaboration between business and engineering teams",
+            "Testing user-facing workflows",
+            "Documenting expected application behavior",
+            "Running regression tests in CI/CD",
+            "Connecting Gherkin scenarios to automated test code"
+          ],
+          "relatedConcepts": [
+            "Gherkin",
+            "Behavior-Driven Development",
+            "Acceptance Testing",
+            "Automated Testing",
+            "End-to-End Testing",
+            "Executable Specifications",
+            "Given-When-Then",
+            "Step Definitions",
+            "Test Runner",
+            "Selenium",
+            "Playwright",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "robot-framework",
+          "name": "Robot Framework",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Robot",
+            "RobotFramework",
+            "Robot Framework Test Automation",
+            "Keyword-Driven Test Framework"
+          ],
+          "notes": "Open-source test automation framework commonly used for acceptance testing, acceptance test-driven development, end-to-end testing, and keyword-driven automation.",
+          "tags": [
+            "testing",
+            "testing-tool",
+            "test-automation",
+            "acceptance-testing",
+            "keyword-driven-testing",
+            "end-to-end-testing",
+            "python",
+            "qa"
+          ],
+          "whatIsIt": "A keyword-driven test automation framework used to create readable automated tests for acceptance, end-to-end, API, UI, and integration testing workflows.",
+          "description": "Robot Framework is an open-source test automation framework that uses a keyword-driven syntax to create readable automated tests. It is commonly used for acceptance testing, acceptance test-driven development, end-to-end testing, UI testing, API testing, integration testing, and robotic process automation-style workflows. Robot Framework is extensible through libraries and can integrate with Selenium, Browser Library, Appium, REST/API libraries, databases, custom Python libraries, and CI/CD systems. It belongs under Testing Tools because it is a concrete framework used to write, organize, execute, and report automated tests, while Acceptance Testing, End-to-End Testing, and ATDD are testing methodologies it can support.",
+          "usedWith": [
+            "Python",
+            "Selenium",
+            "Browser Library",
+            "Appium",
+            "REST API",
+            "Jenkins",
+            "GitHub Actions",
+            "CI/CD",
+            "Test Case",
+            "Test Suite",
+            "Acceptance Testing",
+            "End-to-End Testing"
+          ],
+          "builtOn": [
+            "Python",
+            "Keyword-Driven Testing",
+            "Acceptance Testing",
+            "Test Automation",
+            "Reusable Test Libraries",
+            "Plain-Text Test Syntax",
+            "Test Reports and Logs"
+          ],
+          "builtUponBy": [
+            "Acceptance Testing Workflows",
+            "Acceptance Test-Driven Development Workflows",
+            "End-to-End Test Automation Workflows",
+            "UI Test Automation Workflows",
+            "API Test Automation Workflows",
+            "Regression Testing Workflows",
+            "CI/CD Test Execution Workflows"
+          ],
+          "runsOn": [
+            "Python",
+            "Windows",
+            "macOS",
+            "Linux",
+            "CI/CD Environments",
+            "Developer Workstations",
+            "Test Automation Servers"
+          ],
+          "alternatives": [
+            "Cucumber",
+            "pytest",
+            "Selenium",
+            "Playwright",
+            "Cypress",
+            "TestComplete",
+            "Gauge"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Test Automation",
+            "Acceptance Testing",
+            "End-to-End Testing",
+            "Quality Assurance",
+            "Regression Testing Workflows",
+            "CI/CD Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "Robot Framework test suite file",
+            "Keyword-driven login test",
+            "SeleniumLibrary UI automation test",
+            "API test using RequestsLibrary",
+            "Robot test case with setup and teardown",
+            "Robot Framework report.html output",
+            "Robot tests running in Jenkins",
+            "Acceptance test written in readable keyword syntax"
+          ],
+          "useCases": [
+            "Writing readable automated acceptance tests",
+            "Automating end-to-end test workflows",
+            "Testing web UIs through Selenium or Browser Library",
+            "Testing APIs with keyword-driven syntax",
+            "Creating reusable test keywords",
+            "Running regression tests in CI/CD",
+            "Supporting acceptance test-driven development",
+            "Generating readable test reports and logs",
+            "Coordinating QA automation across technical and non-technical stakeholders"
+          ],
+          "relatedConcepts": [
+            "Acceptance Testing",
+            "End-to-End Testing",
+            "Test Automation",
+            "Keyword-Driven Testing",
+            "ATDD",
+            "Selenium",
+            "Cucumber",
+            "Regression Testing",
+            "Test Case",
+            "Test Suite",
+            "CI/CD",
+            "Quality Assurance"
+          ]
+        },
+        {
+          "id": "jmeter",
+          "name": "JMeter",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Apache JMeter",
+            "JMeter Load Testing",
+            "JMeter Performance Testing",
+            "JMeter Test Tool"
+          ],
+          "notes": "Apache performance testing and load testing tool used to simulate traffic, measure response times, analyze throughput, and validate system behavior under load.",
+          "tags": [
+            "testing",
+            "testing-tool",
+            "performance-testing",
+            "load-testing",
+            "stress-testing",
+            "apache",
+            "java",
+            "qa"
+          ],
+          "whatIsIt": "A Java-based performance and load testing tool used to simulate users, generate traffic, measure response times, and analyze system behavior under load.",
+          "description": "JMeter is an Apache performance testing and load testing tool used to test how applications, APIs, databases, and services behave under simulated traffic. It can create test plans with thread groups, samplers, assertions, timers, listeners, controllers, and reports to measure response time, throughput, latency, error rates, and scalability characteristics. JMeter is commonly used for HTTP and REST API load testing, web application performance testing, database testing, stress testing, endurance testing, and CI/CD performance checks. It belongs under Testing Tools because it is a concrete tool used to design and execute performance tests, while Performance Testing, Load Testing, Stress Testing, and Endurance Testing are testing methodologies it can support.",
+          "usedWith": [
+            "Performance Testing",
+            "Load Testing",
+            "Stress Testing",
+            "REST API",
+            "HTTP",
+            "HTTPS",
+            "JDBC",
+            "Jenkins",
+            "CI/CD",
+            "Grafana",
+            "InfluxDB",
+            "Java"
+          ],
+          "builtOn": [
+            "Java",
+            "JVM",
+            "Load Generation",
+            "Thread Groups",
+            "Samplers",
+            "Assertions",
+            "Performance Metrics"
+          ],
+          "builtUponBy": [
+            "Performance Testing Workflows",
+            "Load Testing Workflows",
+            "Stress Testing Workflows",
+            "API Performance Validation Workflows",
+            "Scalability Testing Workflows",
+            "CI/CD Performance Gate Workflows",
+            "Capacity Planning Workflows"
+          ],
+          "runsOn": [
+            "JVM",
+            "Java Runtime Environment",
+            "Windows",
+            "macOS",
+            "Linux",
+            "CI/CD Environments",
+            "Load Generator Machines"
+          ],
+          "alternatives": [
+            "k6",
+            "Gatling",
+            "Locust",
+            "LoadRunner",
+            "Artillery",
+            "BlazeMeter",
+            "ApacheBench"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Performance Testing",
+            "Load Testing",
+            "Software Testing",
+            "Quality Assurance",
+            "Scalability Testing",
+            "CI/CD Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "JMeter HTTP load test",
+            "JMeter test plan file",
+            "Thread group simulating concurrent users",
+            "REST API performance test",
+            "JMeter assertion checking response status",
+            "JMeter HTML performance report",
+            "JMeter test running in Jenkins",
+            "Distributed JMeter load test across multiple machines"
+          ],
+          "useCases": [
+            "Load testing web applications",
+            "Performance testing REST APIs",
+            "Simulating concurrent users",
+            "Measuring response time and throughput",
+            "Finding performance bottlenecks",
+            "Running stress tests before release",
+            "Validating scalability under traffic",
+            "Automating performance checks in CI/CD",
+            "Supporting capacity planning"
+          ],
+          "relatedConcepts": [
+            "Performance Testing",
+            "Load Testing",
+            "Stress Testing",
+            "Endurance Testing",
+            "Scalability Testing",
+            "REST API",
+            "HTTP",
+            "Throughput",
+            "Latency",
+            "Response Time",
+            "CI/CD",
+            "Quality Assurance"
+          ]
+        },
+        {
+          "id": "k6",
+          "name": "k6",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Grafana k6",
+            "k6 Load Testing",
+            "k6 Performance Testing",
+            "k6 Cloud"
+          ],
+          "notes": "Developer-focused performance and load testing tool used to script, run, and analyze tests for APIs, web services, microservices, and backend systems.",
+          "tags": [
+            "testing-tool",
+            "performance-testing",
+            "load-testing",
+            "api-testing",
+            "javascript",
+            "observability",
+            "automated-testing",
+            "qa"
+          ],
+          "whatIsIt": "A performance testing and load testing tool that lets developers write test scripts, simulate traffic, validate thresholds, and collect metrics for APIs and web systems.",
+          "description": "k6 is a developer-focused performance testing tool commonly used to test APIs, web services, microservices, and backend systems under load. Test scripts are written using JavaScript-style syntax and can define virtual users, scenarios, checks, thresholds, request flows, and performance expectations. Teams use k6 locally, in CI/CD pipelines, in Docker containers, and with Grafana-based observability workflows to catch performance regressions, validate service capacity, and monitor latency, throughput, and error rates. k6 is best categorized as a Testing Tool because it is a concrete tool used to execute performance, load, stress, and reliability tests.",
+          "usedWith": [
+            "JavaScript",
+            "HTTP APIs",
+            "REST API",
+            "GraphQL",
+            "Microservices",
+            "CI/CD",
+            "Docker",
+            "Kubernetes",
+            "Grafana",
+            "Prometheus",
+            "Cloud Platforms",
+            "Performance Testing"
+          ],
+          "builtOn": [
+            "Performance Testing",
+            "Load Testing",
+            "Virtual Users",
+            "HTTP Requests",
+            "Metrics Collection",
+            "Thresholds",
+            "Scripted Test Scenarios"
+          ],
+          "builtUponBy": [
+            "API Performance Testing Workflows",
+            "Load Testing Workflows",
+            "Stress Testing Workflows",
+            "CI/CD Performance Regression Checks",
+            "Microservice Reliability Testing",
+            "Capacity Planning Workflows",
+            "Observability-Driven Testing Workflows"
+          ],
+          "runsOn": [
+            "Linux",
+            "macOS",
+            "Windows",
+            "Docker Containers",
+            "Kubernetes",
+            "CI/CD Environments",
+            "Grafana Cloud"
+          ],
+          "alternatives": [
+            "Gatling",
+            "Apache JMeter",
+            "Locust",
+            "Artillery",
+            "wrk",
+            "Siege"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Performance Testing",
+            "Load Testing",
+            "API Testing",
+            "Automated Testing",
+            "Quality Assurance",
+            "Observability Workflows"
+          ],
+          "includes": [],
+          "examples": [
+            "k6 run script.js",
+            "k6 script simulating virtual users",
+            "HTTP API load test with thresholds",
+            "CI pipeline running k6 performance tests",
+            "Dockerized k6 load test",
+            "Grafana dashboard showing k6 test metrics",
+            "Stress test for a microservice endpoint",
+            "Performance regression check before release"
+          ],
+          "useCases": [
+            "Running API load tests",
+            "Testing backend performance under traffic",
+            "Detecting performance regressions in CI/CD",
+            "Validating latency and error-rate thresholds",
+            "Stress testing microservices",
+            "Supporting capacity planning",
+            "Collecting performance metrics",
+            "Testing service reliability before release"
+          ],
+          "relatedConcepts": [
+            "Performance Testing",
+            "Load Testing",
+            "Stress Testing",
+            "API Testing",
+            "Virtual Users",
+            "Latency",
+            "Throughput",
+            "Error Rate",
+            "CI/CD",
+            "Grafana",
+            "Observability",
+            "Gatling"
+          ]
+        },
+        {
+          "id": "gatling",
+          "name": "Gatling",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Gatling Load Testing",
+            "Gatling Performance Testing",
+            "Gatling Enterprise",
+            "Gatling Simulation"
+          ],
+          "notes": "Performance and load testing tool used to define simulations, generate traffic, measure response behavior, and validate system performance under load.",
+          "tags": [
+            "testing-tool",
+            "performance-testing",
+            "load-testing",
+            "api-testing",
+            "jvm",
+            "scala",
+            "automated-testing",
+            "qa"
+          ],
+          "whatIsIt": "A performance testing and load testing tool used to create simulations, run high-volume traffic tests, and analyze system behavior under load.",
+          "description": "Gatling is a performance testing and load testing tool used to simulate users, execute request scenarios, and measure how APIs, web applications, and backend systems behave under traffic. It is commonly associated with JVM-based workflows and supports simulation code written with Scala, Java, or Kotlin DSLs depending on the project setup. Teams use Gatling to validate response times, throughput, error rates, capacity limits, and performance regressions. Gatling is commonly run locally, through build tools such as Maven or Gradle, in CI/CD pipelines, in Docker containers, and through managed enterprise test execution workflows.",
+          "usedWith": [
+            "Scala",
+            "Java",
+            "Kotlin",
+            "JVM",
+            "Maven",
+            "Gradle",
+            "HTTP APIs",
+            "REST API",
+            "Web Applications",
+            "CI/CD",
+            "Docker",
+            "Performance Testing"
+          ],
+          "builtOn": [
+            "Performance Testing",
+            "Load Testing",
+            "JVM",
+            "Simulation Scripts",
+            "Virtual Users",
+            "HTTP Protocol Testing",
+            "Metrics Reporting"
+          ],
+          "builtUponBy": [
+            "API Performance Testing Workflows",
+            "Load Testing Workflows",
+            "Stress Testing Workflows",
+            "Release Performance Validation",
+            "CI/CD Performance Regression Checks",
+            "Capacity Planning Workflows",
+            "Enterprise Performance Testing Workflows"
+          ],
+          "runsOn": [
+            "JVM",
+            "Linux",
+            "macOS",
+            "Windows",
+            "Docker Containers",
+            "CI/CD Environments",
+            "Cloud Platforms"
+          ],
+          "alternatives": [
+            "k6",
+            "Apache JMeter",
+            "Locust",
+            "Artillery",
+            "wrk",
+            "Siege"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Performance Testing",
+            "Load Testing",
+            "API Testing",
+            "Automated Testing",
+            "JVM Ecosystem",
+            "Quality Assurance"
+          ],
+          "includes": [],
+          "examples": [
+            "Gatling simulation for an HTTP API",
+            "Maven build running Gatling performance tests",
+            "Gradle task executing Gatling simulations",
+            "Scala-based Gatling load test",
+            "CI pipeline running Gatling before release",
+            "Gatling report showing response time percentiles",
+            "Stress test against a backend service",
+            "Load simulation with ramping virtual users"
+          ],
+          "useCases": [
+            "Running load tests for APIs",
+            "Simulating user traffic against backend systems",
+            "Measuring response time under load",
+            "Detecting performance regressions",
+            "Validating release performance",
+            "Supporting capacity planning",
+            "Testing service behavior under stress",
+            "Generating performance reports for QA and engineering teams"
+          ],
+          "relatedConcepts": [
+            "Performance Testing",
+            "Load Testing",
+            "Stress Testing",
+            "API Testing",
+            "Virtual Users",
+            "JVM",
+            "Scala",
+            "Latency",
+            "Throughput",
+            "CI/CD",
+            "Apache JMeter",
+            "k6"
+          ]
+        },
+        {
+          "id": "locust",
+          "name": "Locust",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Locust Load Testing",
+            "Locust Testing Tool",
+            "Locust Performance Testing",
+            "Python Load Testing Tool"
+          ],
+          "notes": "Python-based load testing and performance testing tool used to simulate users, generate traffic, and measure application behavior under load.",
+          "tags": [
+            "testing-tool",
+            "load-testing",
+            "performance-testing",
+            "python",
+            "scalability",
+            "api-testing",
+            "web-testing",
+            "traffic-simulation"
+          ],
+          "whatIsIt": "A Python-based load testing tool used to define user behavior in code and simulate concurrent traffic against applications, APIs, and services.",
+          "description": "Locust is a performance testing and load testing tool that lets developers define user behavior using Python code. Teams use Locust to simulate concurrent users, generate HTTP traffic, test APIs and web applications, measure response times, evaluate throughput, identify bottlenecks, and validate scalability before production releases or major traffic events. Locust is especially useful when test scenarios need flexible custom logic because load behavior is written as Python code instead of only being configured through a graphical interface.",
+          "usedWith": [
+            "Python",
+            "Load Testing",
+            "Performance Testing",
+            "Stress Testing",
+            "REST API",
+            "Web Applications",
+            "Microservices",
+            "CI/CD",
+            "Docker",
+            "Kubernetes",
+            "Prometheus",
+            "Grafana"
+          ],
+          "builtOn": [
+            "Python",
+            "HTTP Load Generation",
+            "Concurrent User Simulation",
+            "Task-Based User Behavior",
+            "Distributed Load Testing",
+            "Performance Metrics",
+            "Traffic Simulation"
+          ],
+          "builtUponBy": [
+            "Load Testing Workflows",
+            "Performance Validation Workflows",
+            "API Performance Testing",
+            "Scalability Testing Workflows",
+            "Release Readiness Testing",
+            "Capacity Planning Workflows",
+            "CI/CD Performance Gates"
+          ],
+          "runsOn": [
+            "Python",
+            "Developer Workstations",
+            "CI/CD Environments",
+            "Docker Containers",
+            "Kubernetes Clusters",
+            "Cloud Infrastructure"
+          ],
+          "alternatives": [
+            "JMeter",
+            "k6",
+            "Gatling",
+            "Artillery",
+            "LoadRunner",
+            "wrk"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Performance Testing",
+            "Load Testing",
+            "API Testing",
+            "Scalability Testing",
+            "Quality Assurance"
+          ],
+          "includes": [],
+          "examples": [
+            "locust -f locustfile.py",
+            "Python task simulating a user login flow",
+            "Distributed Locust workers generating API traffic",
+            "Locust test measuring checkout response time",
+            "Load testing a REST API before release",
+            "Locust running in a CI pipeline",
+            "Kubernetes-based Locust load test",
+            "Locust dashboard showing request latency and failures"
+          ],
+          "useCases": [
+            "Simulating concurrent users",
+            "Load testing APIs and web applications",
+            "Measuring response time under traffic",
+            "Finding performance bottlenecks",
+            "Testing scalability before deployment",
+            "Creating custom traffic behavior with Python",
+            "Running distributed performance tests",
+            "Supporting capacity planning decisions"
+          ],
+          "relatedConcepts": [
+            "Load Testing",
+            "Stress Testing",
+            "Performance Testing",
+            "Scalability Testing",
+            "Python",
+            "JMeter",
+            "k6",
+            "Gatling",
+            "Throughput",
+            "Latency",
+            "Concurrent Users",
+            "Capacity Planning"
+          ]
+        },
+        {
+          "id": "pact",
+          "name": "Pact",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Pact Contract Testing",
+            "Pact Framework",
+            "Pact Testing Tool",
+            "Pact CDC",
+            "Pact Broker"
+          ],
+          "notes": "Contract testing tool used to verify that service providers and consumers remain compatible through consumer-driven contracts.",
+          "tags": [
+            "testing-tool",
+            "contract-testing",
+            "consumer-driven-contracts",
+            "api-testing",
+            "microservices",
+            "automated-testing",
+            "provider-verification",
+            "service-compatibility"
+          ],
+          "whatIsIt": "A contract testing tool used to define, share, and verify consumer-provider expectations for APIs and services.",
+          "description": "Pact is a contract testing tool used to verify compatibility between service consumers and service providers. It is commonly used in microservice architectures and API-driven systems where independent teams need confidence that provider changes will not break consumers. Pact lets consumers define expected interactions, produces pact contract files, and allows providers to verify that they satisfy those contracts. Pact is closely associated with consumer-driven contract testing, CI/CD provider verification, Pact Broker workflows, and independent service deployment.",
+          "usedWith": [
+            "Contract Testing",
+            "Consumer-Driven Contract Testing",
+            "REST API",
+            "Microservices",
+            "API Contract",
+            "Consumer Services",
+            "Provider Services",
+            "CI/CD",
+            "Pact Broker",
+            "JUnit",
+            "Jest",
+            "Docker"
+          ],
+          "builtOn": [
+            "API Contracts",
+            "Consumer Expectations",
+            "Provider Verification",
+            "Pact Files",
+            "Request and Response Matching",
+            "Provider States",
+            "Automated Contract Verification"
+          ],
+          "builtUponBy": [
+            "Consumer-Driven Contract Testing Workflows",
+            "Microservice Compatibility Workflows",
+            "Provider Verification Pipelines",
+            "API Change Validation Workflows",
+            "Backward Compatibility Testing",
+            "Independent Service Deployment Workflows",
+            "CI/CD API Quality Gates"
+          ],
+          "runsOn": [
+            "Developer Workstations",
+            "CI/CD Environments",
+            "JVM",
+            "Node.js",
+            ".NET",
+            "Ruby Runtime",
+            "Docker Containers"
+          ],
+          "alternatives": [
+            "Spring Cloud Contract",
+            "WireMock",
+            "Dredd",
+            "Schemathesis",
+            "Postman Contract Tests",
+            "OpenAPI Contract Testing Tools"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Contract Testing",
+            "API Testing",
+            "Microservice Testing",
+            "Automated Testing",
+            "Service Compatibility Testing",
+            "Quality Assurance"
+          ],
+          "includes": [],
+          "examples": [
+            "Consumer test generating a pact file",
+            "Provider pipeline verifying published pacts",
+            "Pact Broker storing service contracts",
+            "can-i-deploy check before release",
+            "Contract test catching a breaking API response change",
+            "Pact test for a consumer-provider REST interaction",
+            "JUnit provider verification using Pact",
+            "JavaScript consumer contract test with Pact"
+          ],
+          "useCases": [
+            "Verifying API compatibility between services",
+            "Catching breaking changes before deployment",
+            "Supporting consumer-driven contract testing",
+            "Testing microservice boundaries",
+            "Reducing dependence on fragile end-to-end tests",
+            "Validating provider behavior in CI/CD",
+            "Enabling independent service releases",
+            "Maintaining backward compatibility across teams"
+          ],
+          "relatedConcepts": [
+            "Contract Testing",
+            "API Contract",
+            "Consumer-Driven Contracts",
+            "Microservices",
+            "Integration Testing",
+            "End-to-End Testing",
+            "Provider Verification",
+            "Backward Compatibility",
+            "Pact Broker",
+            "REST API",
+            "CI/CD",
+            "Service Boundary"
+          ]
+        },
+        {
+          "id": "jacoco",
+          "name": "JaCoCo",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Java Code Coverage",
+            "JaCoCo Code Coverage",
+            "JaCoCo Maven Plugin",
+            "JaCoCo Agent"
+          ],
+          "notes": "Java code coverage tool used to measure which classes, methods, branches, and lines are executed by automated tests.",
+          "tags": [
+            "testing",
+            "testing-tool",
+            "java",
+            "code-coverage",
+            "test-coverage",
+            "unit-testing",
+            "ci-cd",
+            "qa"
+          ],
+          "whatIsIt": "A Java code coverage tool that instruments JVM bytecode and reports how much of a Java codebase is exercised by tests.",
+          "description": "JaCoCo is a Java code coverage tool used to measure test coverage for JVM applications. It instruments bytecode to track which lines, branches, methods, and classes are executed during automated tests, then generates coverage reports that help developers understand which parts of the codebase are tested. JaCoCo is commonly used with JUnit, TestNG, Maven, Gradle, Jenkins, SonarQube, and CI/CD pipelines. It belongs under Testing Tools because it is a concrete tool used to collect and report coverage data, while Test Coverage is the broader concept or metric it supports.",
+          "usedWith": [
+            "Java",
+            "JVM",
+            "JUnit",
+            "TestNG",
+            "Maven",
+            "Gradle",
+            "Jenkins",
+            "SonarQube",
+            "CI/CD",
+            "Unit Testing",
+            "Integration Testing",
+            "Test Coverage"
+          ],
+          "builtOn": [
+            "Java",
+            "JVM Bytecode",
+            "Bytecode Instrumentation",
+            "Automated Test Execution",
+            "Coverage Metrics",
+            "Build Tool Integration"
+          ],
+          "builtUponBy": [
+            "Java Test Coverage Workflows",
+            "CI/CD Quality Gate Workflows",
+            "Unit Test Reporting Workflows",
+            "Integration Test Reporting Workflows",
+            "SonarQube Code Quality Workflows",
+            "Release Readiness Testing Workflows",
+            "Regression Testing Coverage Workflows"
+          ],
+          "runsOn": [
+            "JVM",
+            "Java Runtime Environment",
+            "Maven Builds",
+            "Gradle Builds",
+            "Windows",
+            "macOS",
+            "Linux",
+            "CI/CD Environments"
+          ],
+          "alternatives": [
+            "Cobertura",
+            "OpenClover",
+            "Emma",
+            "IntelliJ IDEA Coverage Runner",
+            "SonarQube Coverage Import",
+            "Coverage.py"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "Java Ecosystem",
+            "Test Automation",
+            "Code Coverage Tooling",
+            "Software Testing",
+            "Quality Assurance",
+            "CI/CD Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "JaCoCo report generated after JUnit tests",
+            "jacoco-maven-plugin in a Maven build",
+            "Gradle jacocoTestReport task",
+            "JaCoCo coverage imported into SonarQube",
+            "CI build failing because coverage threshold was not met",
+            "HTML coverage report showing uncovered Java lines",
+            "Branch coverage report for service-layer code",
+            "Integration test coverage collected with JaCoCo"
+          ],
+          "useCases": [
+            "Measuring Java test coverage",
+            "Finding untested Java code paths",
+            "Tracking line and branch coverage",
+            "Generating coverage reports in CI/CD",
+            "Enforcing minimum coverage thresholds",
+            "Feeding coverage data into SonarQube",
+            "Evaluating unit and integration test effectiveness",
+            "Supporting regression testing confidence",
+            "Improving visibility into JVM test coverage"
+          ],
+          "relatedConcepts": [
+            "Test Coverage",
+            "Code Coverage",
+            "JUnit",
+            "TestNG",
+            "Maven",
+            "Gradle",
+            "SonarQube",
+            "Unit Testing",
+            "Integration Testing",
+            "CI/CD",
+            "Quality Gate",
+            "Regression Testing"
+          ]
+        },
+        {
+          "id": "istanbul",
+          "name": "Istanbul",
+          "continent": "Engineering",
+          "category": "Testing",
+          "subcategory": "Testing Tools",
+          "aliases": [
+            "Istanbul.js",
+            "Istanbul Code Coverage",
+            "nyc",
+            "JavaScript Code Coverage"
+          ],
+          "notes": "JavaScript code coverage tooling used to instrument code, collect coverage data, and report line, branch, function, and statement coverage for automated tests.",
+          "tags": [
+            "testing",
+            "testing-tool",
+            "javascript",
+            "typescript",
+            "code-coverage",
+            "test-coverage",
+            "nodejs",
+            "qa"
+          ],
+          "whatIsIt": "A JavaScript code coverage toolchain used to measure how much JavaScript or TypeScript code is exercised by automated tests.",
+          "description": "Istanbul is a JavaScript code coverage toolchain used to instrument source code, collect coverage data, and generate reports showing which statements, branches, functions, and lines were executed during tests. It is commonly used through the nyc command-line tool and integrates with JavaScript testing frameworks such as Mocha, Jest, Jasmine, and other Node.js test workflows. Istanbul is useful for understanding test coverage, finding untested paths, producing HTML and LCOV reports, and feeding coverage data into CI/CD or code quality tools. It belongs under Testing Tools because it is a concrete coverage toolchain, while Test Coverage and Code Coverage are the broader testing concepts it supports.",
+          "usedWith": [
+            "JavaScript",
+            "TypeScript",
+            "Node.js",
+            "Mocha",
+            "Jest",
+            "Jasmine",
+            "Vitest",
+            "npm",
+            "nyc",
+            "CI/CD",
+            "SonarQube",
+            "Test Coverage"
+          ],
+          "builtOn": [
+            "JavaScript",
+            "Node.js",
+            "Source Code Instrumentation",
+            "AST-Based Code Transformation",
+            "Coverage Metrics",
+            "Automated Test Execution",
+            "Source Maps"
+          ],
+          "builtUponBy": [
+            "JavaScript Test Coverage Workflows",
+            "Node.js Test Automation Workflows",
+            "Frontend Test Coverage Workflows",
+            "CI/CD Quality Gate Workflows",
+            "Mocha Coverage Workflows",
+            "Jest Coverage Reporting Workflows",
+            "Code Quality Reporting Workflows"
+          ],
+          "runsOn": [
+            "Node.js",
+            "npm Scripts",
+            "Windows",
+            "macOS",
+            "Linux",
+            "CI/CD Environments",
+            "Developer Workstations"
+          ],
+          "alternatives": [
+            "c8",
+            "Jest Coverage",
+            "Vitest Coverage",
+            "V8 Coverage",
+            "Blanket.js",
+            "JaCoCo"
+          ],
+          "partOf": [
+            "Testing Tools",
+            "JavaScript Ecosystem",
+            "Node.js Ecosystem",
+            "Code Coverage Tooling",
+            "Test Automation",
+            "Software Testing",
+            "CI/CD Testing"
+          ],
+          "includes": [],
+          "examples": [
+            "nyc mocha",
+            "Istanbul coverage report for a Node.js project",
+            "HTML report showing uncovered JavaScript lines",
+            "LCOV report uploaded to a code quality tool",
+            "CI build failing because coverage threshold was not met",
+            "Mocha tests running with nyc coverage",
+            "Coverage report showing uncovered branches",
+            "TypeScript coverage generated with source maps"
+          ],
+          "useCases": [
+            "Measuring JavaScript test coverage",
+            "Finding untested frontend or Node.js code paths",
+            "Tracking line, branch, function, and statement coverage",
+            "Generating coverage reports for pull requests",
+            "Enforcing coverage thresholds in CI/CD",
+            "Supporting regression testing confidence",
+            "Producing LCOV data for code quality tools",
+            "Evaluating test effectiveness in JavaScript projects",
+            "Adding coverage reporting to Mocha-based test suites"
+          ],
+          "relatedConcepts": [
+            "Test Coverage",
+            "Code Coverage",
+            "Mocha",
+            "Jest",
+            "Vitest",
+            "JavaScript",
+            "TypeScript",
+            "Node.js",
+            "nyc",
+            "CI/CD",
+            "Quality Gate",
+            "SonarQube"
           ]
         }
       ]
@@ -66922,6 +71075,227 @@
           "Software Project Management",
           "Testing",
           "Static Analysis"
+        ]
+      },
+      {
+        "id": "type-checking",
+        "name": "Type Checking",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Type Validation",
+          "Compile-Time Type Checking",
+          "Static Type Checking",
+          "Runtime Type Checking",
+          "Type Safety Checking"
+        ],
+        "notes": "Software engineering concept focused on verifying that values, variables, expressions, function calls, and program operations use compatible data types.",
+        "tags": [
+          "software-engineering-concept",
+          "type-systems",
+          "type-safety",
+          "programming-languages",
+          "compiler",
+          "static-analysis",
+          "code-quality",
+          "validation"
+        ],
+        "whatIsIt": "A process that verifies whether program values and operations conform to expected type rules, either before execution, during execution, or both.",
+        "description": "Type Checking is the process of verifying that a program uses data types correctly. It checks whether variables, expressions, function parameters, return values, object properties, assignments, and operations are compatible according to a language's type rules. In statically typed languages, type checking usually happens before execution during compilation or analysis. In dynamically typed languages, type-related errors may be detected at runtime. Type checking helps catch bugs early, improve refactoring safety, support better editor tooling, enforce API contracts, and make code easier to reason about. It is closely related to type systems, static analysis, compilers, type inference, generics, and type safety.",
+        "usedWith": [
+          "Programming Languages",
+          "Compilers",
+          "Interpreters",
+          "TypeScript",
+          "Java",
+          "C#",
+          "C++",
+          "Python Type Hints",
+          "IDEs",
+          "Static Analysis",
+          "Build Tools",
+          "CI/CD"
+        ],
+        "builtOn": [
+          "Type Systems",
+          "Data Types",
+          "Compiler Analysis",
+          "Abstract Syntax Trees",
+          "Type Rules",
+          "Type Inference",
+          "Type Annotations"
+        ],
+        "builtUponBy": [
+          "Compile-Time Validation Workflows",
+          "IDE Error Detection Workflows",
+          "Refactoring Safety Workflows",
+          "Static Analysis Workflows",
+          "API Contract Validation",
+          "Code Quality Workflows",
+          "CI/CD Validation Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Dynamic Typing",
+          "Runtime Validation",
+          "Linting",
+          "Manual Code Review",
+          "Unit Testing"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Programming Language Theory",
+          "Compiler Design",
+          "Static Analysis",
+          "Code Quality",
+          "Type Systems",
+          "Software Correctness"
+        ],
+        "includes": [],
+        "examples": [
+          "TypeScript reporting a type error before runtime",
+          "Java compiler rejecting an incompatible method argument",
+          "C# checking return types during compilation",
+          "Python mypy checking type hints",
+          "IDE highlighting an invalid property access",
+          "Generic type constraint validation",
+          "Nullability warning for a possibly null value",
+          "Build failing because of a type mismatch"
+        ],
+        "useCases": [
+          "Catching type-related bugs before runtime",
+          "Improving code safety",
+          "Supporting safer refactoring",
+          "Enforcing function and API contracts",
+          "Improving editor autocomplete and diagnostics",
+          "Reducing runtime type errors",
+          "Validating generics and type constraints",
+          "Documenting expected data shapes through types"
+        ],
+        "relatedConcepts": [
+          "Type System",
+          "Static Analysis",
+          "Compiler",
+          "Interpreter",
+          "Type Inference",
+          "Type Safety",
+          "Generics",
+          "Nullability",
+          "Linting",
+          "Code Quality",
+          "Programming Languages",
+          "Runtime Validation"
+        ]
+      },
+      {
+        "id": "static-analysis",
+        "name": "Static Analysis",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Static Code Analysis",
+          "Static Program Analysis",
+          "Code Static Analysis",
+          "Source Code Analysis"
+        ],
+        "notes": "Software engineering concept focused on analyzing source code, bytecode, or program structure without executing the program.",
+        "tags": [
+          "software-engineering-concept",
+          "static-analysis",
+          "code-quality",
+          "linting",
+          "security-analysis",
+          "type-checking",
+          "qa",
+          "software-quality"
+        ],
+        "whatIsIt": "A technique for examining code or program artifacts without running them to find issues, enforce rules, detect risks, and improve quality.",
+        "description": "Static Analysis is the practice of analyzing source code, bytecode, configuration, or program structure without executing the program. It can detect bugs, type errors, unreachable code, security vulnerabilities, code smells, style violations, dependency issues, nullability problems, complexity concerns, and maintainability risks. Static analysis may be performed by compilers, type checkers, linters, security scanners, IDEs, code quality platforms, and CI/CD pipelines. It complements testing because it can catch certain issues before runtime, but it does not prove that the software behaves correctly in all real execution scenarios.",
+        "usedWith": [
+          "Compilers",
+          "Type Checking",
+          "Linters",
+          "ESLint",
+          "SonarQube",
+          "CodeQL",
+          "Semgrep",
+          "IDEs",
+          "CI/CD",
+          "Code Review",
+          "Security Scanning",
+          "Test Coverage"
+        ],
+        "builtOn": [
+          "Source Code Analysis",
+          "Abstract Syntax Trees",
+          "Control Flow Analysis",
+          "Data Flow Analysis",
+          "Type Systems",
+          "Rule Engines",
+          "Pattern Matching"
+        ],
+        "builtUponBy": [
+          "Code Quality Workflows",
+          "Security Scanning Workflows",
+          "CI/CD Quality Gate Workflows",
+          "IDE Diagnostics Workflows",
+          "Automated Code Review Workflows",
+          "Technical Debt Management",
+          "Secure SDLC Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Dynamic Analysis",
+          "Runtime Testing",
+          "Manual Code Review",
+          "Unit Testing",
+          "Exploratory Testing"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Code Quality",
+          "Software Quality",
+          "Secure SDLC",
+          "Compiler Design",
+          "Quality Assurance",
+          "Automated Code Review"
+        ],
+        "includes": [],
+        "examples": [
+          "ESLint detecting problematic JavaScript patterns",
+          "SonarQube reporting code smells and vulnerabilities",
+          "TypeScript checking types before code runs",
+          "CodeQL detecting a security vulnerability pattern",
+          "Compiler warning about unreachable code",
+          "IDE showing static diagnostics while editing",
+          "CI pipeline failing on static analysis quality gates",
+          "Semgrep rule detecting risky API usage"
+        ],
+        "useCases": [
+          "Finding bugs before runtime",
+          "Detecting security vulnerabilities",
+          "Enforcing coding standards",
+          "Improving maintainability",
+          "Catching type errors and nullability issues",
+          "Supporting automated code review",
+          "Blocking risky code in CI/CD",
+          "Tracking code quality and technical debt"
+        ],
+        "relatedConcepts": [
+          "Type Checking",
+          "Linting",
+          "Code Quality",
+          "Compiler",
+          "Control Flow",
+          "Data Flow",
+          "Security Scanning",
+          "SonarQube",
+          "ESLint",
+          "CodeQL",
+          "Technical Debt",
+          "CI/CD"
         ]
       }
     ]
