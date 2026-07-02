@@ -157,6 +157,28 @@ Use this section for messy capture before moving items into real topic cards.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ❗ PROMPTS TO REASK, on the HIGH-SETTING new chat:  https://chatgpt.com/c/6a2c5d0c-c3b8-83ea-bb8c-dc922b401161
 https://chatgpt.com/c/6a2c5d0c-c3b8-83ea-bb8c-dc922b401161
 Can you give me more ideas/enhancements to optimize the file for searching and navigating?
@@ -398,9 +420,17 @@ Use this section for messy capture before moving items into real topic cards.
 
 
 
-
-
-
+========================================================================
+,.tmp overview laying out all the diff lookup/search stuff so can get eagles eye POV on things now 
+now that we have quite alot of diff subtle varations of search / lookups, fzf, terminal vs raycast output etc)
+,.dev?
+========================================================================
+> GREP over .txt file   (these are 'lookups' script commands from rayc pov)(singular input -> output)
+> FZF over .txt file    (ONLY possible in terminal atm...not Raycast)
+>   > we can have an FZF-equiv for all the GREP/LOOKUPS (usually just via aliases and piping | fzf)
+>
+>
+>
 
 
 

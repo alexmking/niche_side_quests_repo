@@ -4587,57 +4587,255 @@ securesync      rel/1_trunk
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.BELOW section is backup of all the potential paths to add to quickCompare, by prod, After STEP 2 
+(so all sections are grouped and sroted fro largest to smallest group)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+-----------------------------
+TAGGING
+-----------------------------
+- 📌results for TAGGING
+src\tagging_subsystem\test\Makefile
+src\tagging_subsystem\test\calc_lib_test\Makefile
+src\tagging_subsystem\test\mock_nats_lib\Makefile
+src\tagging_subsystem\test\mock_osidb\Makefile
+src\tagging_subsystem\test\network_payload_testers\Makefile
+src\tagging_subsystem\test\network_payload_testers\tagging_test_payload_receiver\Makefile
+src\tagging_subsystem\test\network_payload_testers\tagging_test_payload_sender\Makefile
+src\tagging_subsystem\test\osii_tagging_supported_features\Makefile
+src\tagging_subsystem\test\sync_client_tester\Makefile
+src\tagging_subsystem\test\tagging_google_test_and_mock\Makefile
+src\tagging_subsystem\test\tag_api_tester\Makefile
+src\tagging_subsystem\test\unit_test\Makefile
+src\tagging_subsystem\test\unit_test\tagging_adaptor_unit_test\Makefile
+src\tagging_subsystem\test\unit_test\tagging_common\Makefile
+src\tagging_subsystem\test\unit_test\tag_client_c_wrapper_unit_test\Makefile
+src\tagging_subsystem\test\unit_test\tag_client_library_unit_test\Makefile
+src\tagging_subsystem\test\unit_test\tag_provider_library_unit_test\Makefile
+
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\Makefile
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\realtime\Makefile
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\shared\Makefile
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\study\Makefile
+src\tagging_subsystem\adaptor\osii_tagging_adaptor_lib\Makefile
+
+src\tagging_subsystem\validate\Makefile
+src\tagging_subsystem\validate\osii_tagging_validate\Makefile
+src\tagging_subsystem\validate\osii_tag_validate_lib\Makefile
+
+src\tagging_subsystem\tagging_web_component_server\Makefile
+src\tagging_subsystem\tagging_web_component_server\core\Makefile
+
+src\tagging_subsystem\tagging_ws_adaptor\Makefile
+src\tagging_subsystem\tagging_ws_adaptor\unit_tests\Makefile
+
+src\tagging_subsystem\utilities\Makefile
+src\tagging_subsystem\utilities\osii_tagging_db_deserialize_tool\Makefile
+
+src\tagging_subsystem\adaptor\Makefile
+
+src\tagging_subsystem\osi_tagging_api_calc_safe\Makefile
+
+src\tagging_subsystem\tagging_common\Makefile
+
+src\tagging_subsystem\tagging_configuration_manager\Makefile
+
+src\tagging_subsystem\tag_client_library\Makefile
+
+src\tagging_subsystem\tag_provider_library\Makefile
+
+
+
+
+
+
+-----------------------------
+SCADA SDK
+-----------------------------
+- 📌results for SCAD SDK 
+src\scada_sdk\utilities\Makefile
+src\scada_sdk\utilities\api_testers\Makefile
+src\scada_sdk\utilities\api_testers\generic_api_tester\Makefile
+src\scada_sdk\utilities\api_testers\generic_batch_api_tester\Makefile
+src\scada_sdk\utilities\api_testers\measurements_api_tester\Makefile
+src\scada_sdk\utilities\api_testers\scadapl_api_tester\Makefile
+src\scada_sdk\utilities\api_testers\scada_api_tester\Makefile
+src\scada_sdk\utilities\asx_mock\Makefile
+src\scada_sdk\utilities\configuration_tools\Makefile
+src\scada_sdk\utilities\configuration_tools\configure_ratings_point\Makefile
+src\scada_sdk\utilities\control_tester\Makefile
+src\scada_sdk\utilities\eitk_api_mock\Makefile
+src\scada_sdk\utilities\gserver_cpp_mock\Makefile
+src\scada_sdk\utilities\osidb_mock\Makefile
+src\scada_sdk\utilities\permission_manipulation\Makefile
+src\scada_sdk\utilities\rc_tester\Makefile
+src\scada_sdk\utilities\scada_check_lic\Makefile
+src\scada_sdk\utilities\tagging_stress_tester\Makefile
+src\scada_sdk\utilities\tag_provider_client_mock\Makefile
+src\scada_sdk\utilities\thin_client_mock_lib\Makefile
+src\scada_sdk\utilities\unit_testers\Makefile
+src\scada_sdk\utilities\unit_testers\scada_api_unit_tests\Makefile
+src\scada_sdk\utilities\unit_testers\scada_api_unit_tests\mocks\Makefile
 
+src\scada_sdk\scada_tag_provider\Makefile
+src\scada_sdk\scada_tag_provider\gserver_components\Makefile
+src\scada_sdk\scada_tag_provider\scada_study_tag_provider_service\Makefile
+src\scada_sdk\scada_tag_provider\scada_tag_provider_service\Makefile
+src\scada_sdk\scada_tag_provider\scada_tag_provider_service_lib\Makefile
+src\scada_sdk\scada_tag_provider\test\Makefile
+src\scada_sdk\scada_tag_provider\test\scada_emap_test_client\Makefile
+src\scada_sdk\scada_tag_provider\test\scada_tag_provider_self_contained_integration_test\Makefile
+src\scada_sdk\scada_tag_provider\test\scada_tag_provider_unit_test\Makefile
 
+src\scada_sdk\scada_tag_proxy\Makefile
+src\scada_sdk\scada_tag_proxy\scada_tag_proxy\Makefile
+src\scada_sdk\scada_tag_proxy\scada_tag_proxy_lib\Makefile
+src\scada_sdk\scada_tag_proxy\scada_tag_proxy_serialization_lib\Makefile
+src\scada_sdk\scada_tag_proxy\scada_tag_proxy_test\Makefile
+src\scada_sdk\scada_tag_proxy\study_scada_tag_proxy\Makefile
+src\scada_sdk\scada_tag_proxy\test\Makefile
 
+src\scada_sdk\scada_common_lib\Makefile
+src\scada_sdk\scada_common_lib\lib\Makefile
+src\scada_sdk\scada_common_lib\license\Makefile
+src\scada_sdk\scada_common_lib\rc\Makefile
+src\scada_sdk\scada_common_lib\states\Makefile
+src\scada_sdk\scada_common_lib\tag_effect\Makefile
+src\scada_sdk\scada_common_lib\uri_parsing\Makefile
 
+src\scada_sdk\scada_tagsubsystem_migration\Makefile
+src\scada_sdk\scada_tagsubsystem_migration\tag_subsystem_migration\Makefile
+src\scada_sdk\scada_tagsubsystem_migration\tag_subsystem_migration_lib\Makefile
+src\scada_sdk\scada_tagsubsystem_migration\test\scada_tagsubsystem_migration_unit_test\Makefile
 
+src\scada_sdk\scada_change_data_adaptor_client_lib\Makefile
+src\scada_sdk\scada_change_data_adaptor_client_lib\client_tester\Makefile
+src\scada_sdk\scada_change_data_adaptor_client_lib\unit_tests\Makefile
 
+src\scada_sdk\measurements_api\Makefile
+src\scada_sdk\measurements_api\unit_tests\Makefile
 
+src\scada_sdk\operational_sync_lib\Makefile
+src\scada_sdk\operational_sync_lib\unit_tests_c\Makefile
 
+src\scada_sdk\osii_scadaapi\Makefile
+src\scada_sdk\osii_scadaapi\unit_tests_c\Makefile
 
+src\scada_sdk\osii_shared_area_api\Makefile
+src\scada_sdk\osii_shared_area_api\unit_tests\Makefile
 
+src\scada_sdk\rtlib\Makefile
+src\scada_sdk\rtlib\unit_tests_c\Makefile
 
+src\scada_sdk\scadapllib\Makefile
+src\scada_sdk\scadapllib\unit_tests_c\Makefile
 
+src\scada_sdk\scada_change_data_adaptor\Makefile
+src\scada_sdk\scada_change_data_adaptor\unit_test\Makefile
 
+src\scada_sdk\scada_config_updater\Makefile
+src\scada_sdk\scada_config_updater\unit_tests\Makefile
 
+src\scada_sdk\scada_maintenance_api\Makefile
+src\scada_sdk\scada_maintenance_api\unit_tests\Makefile
 
+src\scada_sdk\scada_db_migration\Makefile
+src\scada_sdk\scada_db_migration\unit_tests\Makefile
 
+src\scada_sdk\cpp_main\Makefile
 
+src\scada_sdk\hierarchy\Makefile
 
+src\scada_sdk\main\Makefile
 
+src\scada_sdk\osii_measurements_api\Makefile
 
+src\scada_sdk\scadaapi\Makefile
 
+src\scada_sdk\scadaapi_internal\Makefile
 
+src\scada_sdk\scadapllib_internal\Makefile
 
+src\scada_sdk\scada_cpp_common_lib\Makefile
 
+src\scada_sdk\scada_emap_tag_interface_lib\Makefile
 
+src\scada_sdk\scada_objserver\Makefile
 
+src\scada_sdk\scada_server\Makefile
 
+src\scada_sdk\scada_telemetry_simulator\Makefile
 
+src\scada_sdk\shared_area_api\Makefile
 
 
 
 
 
 
+-----------------------------
+OPENSCADA [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+- 📌results for OPENSCADA
+src\openscada\unit_tests_c\Makefile
+src\openscada\unit_tests_c\alarm_action_sync_tests\Makefile
+src\openscada\unit_tests_c\openscada_db_migration_tests\Makefile
+src\openscada\unit_tests_c\ratings_comparison_sync_tests\Makefile
+src\openscada\unit_tests_c\source_selection_tests\Makefile
 
+src\openscada\source_selection\Makefile
+src\openscada\source_selection\api\Makefile
+src\openscada\source_selection\process\Makefile
+src\openscada\source_selection\util\Makefile
+src\openscada\source_selection\util\configure_source_selection\Makefile
 
+src\openscada\limits\Makefile
+src\openscada\limits\scada_limit_calculator\Makefile
+src\openscada\limits\scada_limit_calculator_lib\Makefile
+src\openscada\limits\scada_limit_calculator_unit_tests\Makefile
 
+src\openscada\utilities\db_conv\Makefile
+src\openscada\utilities\scada_command\Makefile
+src\openscada\utilities\scada_command\unit_tests\Makefile
 
+src\openscada\ads_scan\Makefile
+src\openscada\ads_scan\unit_tests\Makefile
 
+src\openscada\osii_scada_roles_populater\Makefile
+src\openscada\osii_scada_roles_populater\unit_tests\Makefile
 
+src\openscada\psc\Makefile
+src\openscada\psc\unit_tests\Makefile
 
+src\openscada\scada_abnormal_indicator_manager\Makefile
+src\openscada\scada_abnormal_indicator_manager\unit_tests\Makefile
 
+src\openscada\scada_scan\Makefile
+src\openscada\scada_scan\unit_tests\Makefile
 
+src\openscada\tlq\Makefile
+src\openscada\tlq\unit_tests\Makefile
 
+src\openscada\validate\Makefile
+src\openscada\validate\unit_tests\Makefile
 
+src\openscada\adc_scan\Makefile
 
+src\openscada\logs\Makefile
 
+src\openscada\openscada_db_migration\Makefile
 
+src\openscada\peak_archiver\Makefile
 
+src\openscada\ratings_comparison_sync\Makefile
 
+src\openscada\scadalibs\Makefile
 
+src\openscada\scada_measurements_scan\Makefile
 
 
 
@@ -4647,16 +4845,1155 @@ securesync      rel/1_trunk
 
 
 
+- 📌results for SCADA INTERFACE
+-----------------------------
+SCADA INTERFACE  [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\scada_interface\unit_tests\Makefile
+src\scada_interface\unit_tests\control_adaptor\Makefile
+src\scada_interface\unit_tests\hierarchy_override_sync\Makefile
+src\scada_interface\unit_tests\libs\ca_mock_lib\Makefile
+src\scada_interface\unit_tests\rate_of_change\Makefile
+src\scada_interface\unit_tests\si_study_adaptor\Makefile
+src\scada_interface\unit_tests\snap_module_tester\Makefile
+src\scada_interface\unit_tests\snap_module_tester\generic_tester\Makefile
+src\scada_interface\unit_tests\snap_module_tester\measurements_data\Makefile
+src\scada_interface\unit_tests\snap_module_tester\scada_data\Makefile
+src\scada_interface\unit_tests\source_selection_override\Makefile
+src\scada_interface\unit_tests\sss_module_tester\Makefile
+src\scada_interface\unit_tests\sss_module_tester\dpop\Makefile
+src\scada_interface\unit_tests\sss_module_tester\generic_tester\Makefile
+src\scada_interface\unit_tests\sss_module_tester\hierarchy_override\Makefile
+src\scada_interface\unit_tests\sss_module_tester\limits\Makefile
+src\scada_interface\unit_tests\sss_module_tester\measurements_data\Makefile
+src\scada_interface\unit_tests\sss_module_tester\ratings_override\Makefile
+src\scada_interface\unit_tests\sss_module_tester\scada_data\Makefile
+src\scada_interface\unit_tests\sss_module_tester\scada_tvq_data\Makefile
+src\scada_interface\unit_tests\sss_module_tester\source_selection_override\Makefile
+src\scada_interface\unit_tests\sss_module_tester\tags\Makefile
 
 
 
+src\scada_interface\osii_control_adaptor\Makefile
+src\scada_interface\osii_control_adaptor\adaptor\Makefile
+src\scada_interface\osii_control_adaptor\alarms\Makefile
+src\scada_interface\osii_control_adaptor\callbacks\Makefile
+src\scada_interface\osii_control_adaptor\controls\Makefile
+src\scada_interface\osii_control_adaptor\control_adaptor_api\Makefile
+src\scada_interface\osii_control_adaptor\dbms\Makefile
+src\scada_interface\osii_control_adaptor\legacy_server\Makefile
+src\scada_interface\osii_control_adaptor\operations_log\Makefile
+src\scada_interface\osii_control_adaptor\tags\Makefile
+src\scada_interface\osii_control_adaptor\test\Makefile
+src\scada_interface\osii_control_adaptor\util\Makefile
 
 
+src\scada_interface\sync_modules\Makefile
+src\scada_interface\sync_modules\limit\Makefile
+src\scada_interface\sync_modules\measurements_data\Makefile
+src\scada_interface\sync_modules\rate_of_change\Makefile
+src\scada_interface\sync_modules\ratings_limit_overrides\Makefile
+src\scada_interface\sync_modules\scada_data\Makefile
+src\scada_interface\sync_modules\scada_dual_primary_op\Makefile
+src\scada_interface\sync_modules\scada_hierarchy_override\Makefile
+src\scada_interface\sync_modules\scada_tvq_data\Makefile
+src\scada_interface\sync_modules\sedata\Makefile
+src\scada_interface\sync_modules\source_selection_override\Makefile
+src\scada_interface\sync_modules\tag\Makefile
 
+src\scada_interface\test\Makefile
+src\scada_interface\test\command_batch_api_tester\Makefile
+src\scada_interface\test\test_action_log\Makefile
+src\scada_interface\test\test_ca_api\Makefile
+src\scada_interface\test\test_control_adaptor\Makefile
+src\scada_interface\test\test_poa\Makefile
+src\scada_interface\test\test_sisa_api\Makefile
 
 
+src\scada_interface\actions_log\Makefile
+src\scada_interface\actions_log\external_monitor\Makefile
+src\scada_interface\actions_log\external_monitor\unit_test_c\Makefile
+src\scada_interface\actions_log\internal_recorder_api\Makefile
+src\scada_interface\actions_log\internal_recorder_api\unit_tests_c\Makefile
 
+src\scada_interface\scada_custom_poa_provider\Makefile
+src\scada_interface\scada_custom_poa_provider\sample_dll\Makefile
+src\scada_interface\scada_custom_poa_provider\unit_tests\Makefile
+src\scada_interface\scada_custom_poa_provider\unit_tests\unit_test_dll\Makefile
 
+src\scada_interface\osii_switch_adaptor\Makefile
+src\scada_interface\osii_switch_adaptor\adaptor\Makefile
+src\scada_interface\osii_switch_adaptor\adaptor\unit_tests\Makefile
+
+src\scada_interface\snap_modules\Makefile
+src\scada_interface\snap_modules\measurements_snap_module\Makefile
+src\scada_interface\snap_modules\scada_snap_module\Makefile
+
+
+src\scada_interface\client_api\Makefile
+src\scada_interface\client_api\unit_tests\Makefile
+
+src\scada_interface\integration_tests\Makefile
+src\scada_interface\integration_tests\sisa_api\Makefile
+
+src\scada_interface\osii_si_study_adaptor\Makefile
+src\scada_interface\osii_si_study_adaptor\adaptor\Makefile
+
+src\scada_interface\common\Makefile
+
+src\scada_interface\osii_control_proxy\Makefile
+
+src\scada_interface\osii_control_sim\Makefile
+
+src\scada_interface\osii_scada_dpop_sync\Makefile
+
+src\scada_interface\osii_scada_point_scan\Makefile
+
+src\scada_interface\scada_log_buffer\Makefile
+
+src\scada_interface\switch_api\Makefile
+
+
+
+
+
+
+
+
+- 📌results for VIEWPOINT 
+-----------------------------
+VIEWPOINT [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\viewpoint\alarm_adaptor\Makefile
+src\viewpoint\alarm_adaptor\action_api\Makefile
+src\viewpoint\alarm_adaptor\adaptor\Makefile
+src\viewpoint\alarm_adaptor\integration_tester\Makefile
+src\viewpoint\alarm_adaptor\unit_tests_c\Makefile
+
+src\viewpoint\tlq_adaptor\Makefile
+src\viewpoint\tlq_adaptor\osii_tlq_adaptor\Makefile
+src\viewpoint\tlq_adaptor\osii_tlq_adaptor_lib\Makefile
+src\viewpoint\tlq_adaptor\osii_tlq_adaptor_self_contained_integration_test\Makefile
+src\viewpoint\tlq_adaptor\osii_tlq_adaptor_test\Makefile
+src\viewpoint\tlq_adaptor\unit_tests_cpp\Makefile
+
+src\viewpoint\utilities\Makefile
+src\viewpoint\utilities\alarm_client_test\Makefile
+src\viewpoint\utilities\common_unit_tests\Makefile
+src\viewpoint\utilities\log_test_app\Makefile
+
+src\viewpoint\alarm_sync\Makefile
+src\viewpoint\alarm_sync\sync\Makefile
+src\viewpoint\alarm_sync\unit_tests_c\Makefile
+
+src\viewpoint\alarm_creation_service\Makefile
+src\viewpoint\alarm_creation_service\service\Makefile
+
+src\viewpoint\alarm_client\Makefile
+
+src\viewpoint\common\Makefile
+
+
+
+
+- 📌results for OTSFW
+-----------------------------
+OTSFW [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\otsfw\osii_otsfw_eventd\Makefile
+src\otsfw\osii_otsfw_eventd\unit_test\Makefile
+
+src\otsfw\otsfw_adaptor\Makefile
+src\otsfw\otsfw_adaptor\unit_tests_c\Makefile
+
+src\otsfw\osii_otsfw_validate\Makefile
+
+src\otsfw\otsfw_api\Makefile
+
+src\otsfw\otsfw_ras\Makefile
+
+src\otsfw\otsfw_util\Makefile
+
+
+
+
+
+- 📌results for SECURE SYNC
+-----------------------------
+SECURE SYNC [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\secure_sync\adaptor\Makefile
+
+src\secure_sync\client\Makefile
+
+src\secure_sync\lib\Makefile
+
+src\secure_sync\pause\Makefile
+
+src\secure_sync\shadow_copy\Makefile
+
+src\secure_sync\test_data_module\Makefile
+
+
+
+
+- 📌results for WEB COMPONENTS 
+-----------------------------
+WEB COMP [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\scada_web_components\scada_ws_server_lib\Makefile
+src\scada_web_components\scada_ws_server_lib\get_config\Makefile
+src\scada_web_components\scada_ws_server_lib\operations\Makefile
+src\scada_web_components\scada_ws_server_lib\subscriptions\Makefile
+
+src\scada_web_components\storm\Makefile
+src\scada_web_components\storm\client\Makefile
+src\scada_web_components\storm\client\unit_tests\Makefile
+src\scada_web_components\storm\master\Makefile
+src\scada_web_components\storm\master\unit_tests\Makefile
+
+src\scada_web_components\scada_web_component_server\Makefile
+src\scada_web_components\scada_web_component_server\core\Makefile
+
+src\scada_web_components\scada_ws_adaptor\Makefile
+src\scada_web_components\scada_ws_adaptor\unit_tests\Makefile
+
+
+
+- 📌 results for ALARMS:
+-----------------------------
+ALARMS[🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\alarms\alarm_buffer\Makefile
+src\alarms\alarm_buffer\lib\Makefile
+src\alarms\alarm_buffer\testfw\Makefile
+src\alarms\alarm_buffer\unit_tests_c\Makefile
+
+src\alarms\alarm_server\Makefile
+src\alarms\alarm_server\server\Makefile
+src\alarms\alarm_server\sys\Makefile
+src\alarms\alarm_server\testapp\Makefile
+
+src\alarms\alarm_check\Makefile
+src\alarms\alarm_check\unit_tests\Makefile
+
+src\alarms\alarm\unit_tests\Makefile
+
+src\alarms\alarm_demand\Makefile
+
+src\alarms\alarm_print\Makefile
+
+src\alarms\alarm_schedule\Makefile
+
+src\alarms\alarm_select\Makefile
+
+src\alarms\alarm_stats_service\Makefile
+
+src\alarms\filter\Makefile
+
+src\alarms\pager\Makefile
+
+src\alarms\query\Makefile
+
+src\alarms\relink_alarms\Makefile
+
+src\alarms\sync_modules\alarm_action\Makefile
+
+
+
+
+
+
+
+
+
+
+- 📌results for MAKECS (the c-sharp make files...)
+-----------------------------
+MAKECS / CSHARP [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+### these were the only makecs results I could find...not sure if this is it or if im searching wrong...
+scripts\makecsdir.bat
+srcNET\makecs.bat
+srcNET\ClientToolkit\makecs.bat
+srcNET\SCADAInterface\makecs.bat
+srcNET\TagSubsystem\makecs.bat
+srcNET\ViewPoint\makecs.bat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+,. ANOTHER BACKUP RIGHT BEFORE WE STARTING CONSLIDATING / DELETING THE PATHS WE WONT BE ADDING TO QUICKCOMPARE script...
+,.dev?
+========================================================================
+
+
+-----------------------------
+TAGGING
+-----------------------------
+- 📌results for TAGGING
+src\tagging_subsystem\test\
+src\tagging_subsystem\test\calc_lib_test\Makefile
+src\tagging_subsystem\test\mock_nats_lib\Makefile
+src\tagging_subsystem\test\mock_osidb\Makefile
+src\tagging_subsystem\test\network_payload_testers\Makefile
+src\tagging_subsystem\test\network_payload_testers\tagging_test_payload_receiver\Makefile
+src\tagging_subsystem\test\network_payload_testers\tagging_test_payload_sender\Makefile
+src\tagging_subsystem\test\osii_tagging_supported_features\Makefile
+src\tagging_subsystem\test\sync_client_tester\Makefile
+src\tagging_subsystem\test\tagging_google_test_and_mock\Makefile
+src\tagging_subsystem\test\tag_api_tester\Makefile
+src\tagging_subsystem\test\unit_test\Makefile
+src\tagging_subsystem\test\unit_test\tagging_adaptor_unit_test\Makefile
+src\tagging_subsystem\test\unit_test\tagging_common\Makefile
+src\tagging_subsystem\test\unit_test\tag_client_c_wrapper_unit_test\Makefile
+src\tagging_subsystem\test\unit_test\tag_client_library_unit_test\Makefile
+src\tagging_subsystem\test\unit_test\tag_provider_library_unit_test\Makefile
+
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\Makefile
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\realtime\Makefile
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\shared\Makefile
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\study\Makefile
+
+src\tagging_subsystem\validate\Makefile
+src\tagging_subsystem\validate\osii_tagging_validate\Makefile
+src\tagging_subsystem\validate\osii_tag_validate_lib\Makefile
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\tagging_subsystem\tagging_web_component_server\Makefile
+src\tagging_subsystem\tagging_web_component_server\core\Makefile
+
+src\tagging_subsystem\tagging_ws_adaptor\Makefile
+src\tagging_subsystem\tagging_ws_adaptor\unit_tests\Makefile
+
+src\tagging_subsystem\utilities\Makefile
+src\tagging_subsystem\utilities\osii_tagging_db_deserialize_tool\Makefile
+
+src\tagging_subsystem\adaptor\osii_tagging_adaptor_lib\Makefile
+
+src\tagging_subsystem\adaptor\Makefile
+
+src\tagging_subsystem\osi_tagging_api_calc_safe\Makefile
+
+src\tagging_subsystem\tagging_common\Makefile
+
+src\tagging_subsystem\tagging_configuration_manager\Makefile
+
+src\tagging_subsystem\tag_client_library\Makefile
+
+src\tagging_subsystem\tag_provider_library\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------
+SCADA SDK
+-----------------------------
+- 📌results for SCAD SDK 
+src\scada_sdk\utilities\Makefile
+src\scada_sdk\utilities\api_testers\Makefile
+src\scada_sdk\utilities\api_testers\generic_api_tester\Makefile
+src\scada_sdk\utilities\api_testers\generic_batch_api_tester\Makefile
+src\scada_sdk\utilities\api_testers\measurements_api_tester\Makefile
+src\scada_sdk\utilities\api_testers\scadapl_api_tester\Makefile
+src\scada_sdk\utilities\api_testers\scada_api_tester\Makefile
+src\scada_sdk\utilities\asx_mock\Makefile
+src\scada_sdk\utilities\configuration_tools\Makefile
+src\scada_sdk\utilities\configuration_tools\configure_ratings_point\Makefile
+src\scada_sdk\utilities\control_tester\Makefile
+src\scada_sdk\utilities\eitk_api_mock\Makefile
+src\scada_sdk\utilities\gserver_cpp_mock\Makefile
+src\scada_sdk\utilities\osidb_mock\Makefile
+src\scada_sdk\utilities\permission_manipulation\Makefile
+src\scada_sdk\utilities\rc_tester\Makefile
+src\scada_sdk\utilities\scada_check_lic\Makefile
+src\scada_sdk\utilities\tagging_stress_tester\Makefile
+src\scada_sdk\utilities\tag_provider_client_mock\Makefile
+src\scada_sdk\utilities\thin_client_mock_lib\Makefile
+src\scada_sdk\utilities\unit_testers\Makefile
+src\scada_sdk\utilities\unit_testers\scada_api_unit_tests\Makefile
+src\scada_sdk\utilities\unit_testers\scada_api_unit_tests\mocks\Makefile
+
+src\scada_sdk\scada_tag_provider\Makefile
+src\scada_sdk\scada_tag_provider\gserver_components\Makefile
+src\scada_sdk\scada_tag_provider\scada_study_tag_provider_service\Makefile
+src\scada_sdk\scada_tag_provider\scada_tag_provider_service\Makefile
+src\scada_sdk\scada_tag_provider\scada_tag_provider_service_lib\Makefile
+src\scada_sdk\scada_tag_provider\test\Makefile
+src\scada_sdk\scada_tag_provider\test\scada_emap_test_client\Makefile
+src\scada_sdk\scada_tag_provider\test\scada_tag_provider_self_contained_integration_test\Makefile
+src\scada_sdk\scada_tag_provider\test\scada_tag_provider_unit_test\Makefile
+
+src\scada_sdk\scada_tag_proxy\Makefile
+src\scada_sdk\scada_tag_proxy\scada_tag_proxy\Makefile
+src\scada_sdk\scada_tag_proxy\scada_tag_proxy_lib\Makefile
+src\scada_sdk\scada_tag_proxy\scada_tag_proxy_serialization_lib\Makefile
+src\scada_sdk\scada_tag_proxy\scada_tag_proxy_test\Makefile
+src\scada_sdk\scada_tag_proxy\study_scada_tag_proxy\Makefile
+src\scada_sdk\scada_tag_proxy\test\Makefile
+
+src\scada_sdk\scada_common_lib\Makefile
+src\scada_sdk\scada_common_lib\lib\Makefile
+src\scada_sdk\scada_common_lib\license\Makefile
+src\scada_sdk\scada_common_lib\rc\Makefile
+src\scada_sdk\scada_common_lib\states\Makefile
+src\scada_sdk\scada_common_lib\tag_effect\Makefile
+src\scada_sdk\scada_common_lib\uri_parsing\Makefile
+
+src\scada_sdk\scada_tagsubsystem_migration\Makefile
+src\scada_sdk\scada_tagsubsystem_migration\tag_subsystem_migration\Makefile
+src\scada_sdk\scada_tagsubsystem_migration\tag_subsystem_migration_lib\Makefile
+src\scada_sdk\scada_tagsubsystem_migration\test\scada_tagsubsystem_migration_unit_test\Makefile
+
+src\scada_sdk\scada_change_data_adaptor_client_lib\Makefile
+src\scada_sdk\scada_change_data_adaptor_client_lib\client_tester\Makefile
+src\scada_sdk\scada_change_data_adaptor_client_lib\unit_tests\Makefile
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\scada_sdk\measurements_api\Makefile
+src\scada_sdk\measurements_api\unit_tests\Makefile
+
+src\scada_sdk\operational_sync_lib\Makefile
+src\scada_sdk\operational_sync_lib\unit_tests_c\Makefile
+
+src\scada_sdk\osii_scadaapi\Makefile
+src\scada_sdk\osii_scadaapi\unit_tests_c\Makefile
+
+src\scada_sdk\osii_shared_area_api\Makefile
+src\scada_sdk\osii_shared_area_api\unit_tests\Makefile
+
+src\scada_sdk\rtlib\Makefile
+src\scada_sdk\rtlib\unit_tests_c\Makefile
+
+src\scada_sdk\scadapllib\Makefile
+src\scada_sdk\scadapllib\unit_tests_c\Makefile
+
+src\scada_sdk\scada_change_data_adaptor\Makefile
+src\scada_sdk\scada_change_data_adaptor\unit_test\Makefile
+
+src\scada_sdk\scada_config_updater\Makefile
+src\scada_sdk\scada_config_updater\unit_tests\Makefile
+
+src\scada_sdk\scada_maintenance_api\Makefile
+src\scada_sdk\scada_maintenance_api\unit_tests\Makefile
+
+src\scada_sdk\scada_db_migration\Makefile
+src\scada_sdk\scada_db_migration\unit_tests\Makefile
+
+src\scada_sdk\cpp_main\Makefile
+
+src\scada_sdk\hierarchy\Makefile
+
+src\scada_sdk\main\Makefile
+
+src\scada_sdk\osii_measurements_api\Makefile
+
+src\scada_sdk\scadaapi\Makefile
+
+src\scada_sdk\scadaapi_internal\Makefile
+
+src\scada_sdk\scadapllib_internal\Makefile
+
+src\scada_sdk\scada_cpp_common_lib\Makefile
+
+src\scada_sdk\scada_emap_tag_interface_lib\Makefile
+
+src\scada_sdk\scada_objserver\Makefile
+
+src\scada_sdk\scada_server\Makefile
+
+src\scada_sdk\scada_telemetry_simulator\Makefile
+
+src\scada_sdk\shared_area_api\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------
+OPENSCADA [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+- 📌results for OPENSCADA
+src\openscada\unit_tests_c\Makefile
+src\openscada\unit_tests_c\alarm_action_sync_tests\Makefile
+src\openscada\unit_tests_c\openscada_db_migration_tests\Makefile
+src\openscada\unit_tests_c\ratings_comparison_sync_tests\Makefile
+src\openscada\unit_tests_c\source_selection_tests\Makefile
+
+src\openscada\source_selection\Makefile
+src\openscada\source_selection\api\Makefile
+src\openscada\source_selection\process\Makefile
+src\openscada\source_selection\util\Makefile
+src\openscada\source_selection\util\configure_source_selection\Makefile
+
+src\openscada\limits\Makefile
+src\openscada\limits\scada_limit_calculator\Makefile
+src\openscada\limits\scada_limit_calculator_lib\Makefile
+src\openscada\limits\scada_limit_calculator_unit_tests\Makefile
+
+src\openscada\utilities\db_conv\Makefile
+src\openscada\utilities\scada_command\Makefile
+src\openscada\utilities\scada_command\unit_tests\Makefile
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\openscada\ads_scan\Makefile
+src\openscada\ads_scan\unit_tests\Makefile
+
+src\openscada\osii_scada_roles_populater\Makefile
+src\openscada\osii_scada_roles_populater\unit_tests\Makefile
+
+src\openscada\psc\Makefile
+src\openscada\psc\unit_tests\Makefile
+
+src\openscada\scada_abnormal_indicator_manager\Makefile
+src\openscada\scada_abnormal_indicator_manager\unit_tests\Makefile
+
+src\openscada\scada_scan\Makefile
+src\openscada\scada_scan\unit_tests\Makefile
+
+src\openscada\tlq\Makefile
+src\openscada\tlq\unit_tests\Makefile
+
+src\openscada\validate\Makefile
+src\openscada\validate\unit_tests\Makefile
+
+src\openscada\adc_scan\Makefile
+
+src\openscada\logs\Makefile
+
+src\openscada\openscada_db_migration\Makefile
+
+src\openscada\peak_archiver\Makefile
+
+src\openscada\ratings_comparison_sync\Makefile
+
+src\openscada\scadalibs\Makefile
+
+src\openscada\scada_measurements_scan\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 📌results for SCADA INTERFACE
+-----------------------------
+SCADA INTERFACE  [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\scada_interface\unit_tests\Makefile
+src\scada_interface\unit_tests\control_adaptor\Makefile
+src\scada_interface\unit_tests\hierarchy_override_sync\Makefile
+src\scada_interface\unit_tests\libs\ca_mock_lib\Makefile
+src\scada_interface\unit_tests\rate_of_change\Makefile
+src\scada_interface\unit_tests\si_study_adaptor\Makefile
+src\scada_interface\unit_tests\snap_module_tester\Makefile
+src\scada_interface\unit_tests\snap_module_tester\generic_tester\Makefile
+src\scada_interface\unit_tests\snap_module_tester\measurements_data\Makefile
+src\scada_interface\unit_tests\snap_module_tester\scada_data\Makefile
+src\scada_interface\unit_tests\source_selection_override\Makefile
+src\scada_interface\unit_tests\sss_module_tester\Makefile
+src\scada_interface\unit_tests\sss_module_tester\dpop\Makefile
+src\scada_interface\unit_tests\sss_module_tester\generic_tester\Makefile
+src\scada_interface\unit_tests\sss_module_tester\hierarchy_override\Makefile
+src\scada_interface\unit_tests\sss_module_tester\limits\Makefile
+src\scada_interface\unit_tests\sss_module_tester\measurements_data\Makefile
+src\scada_interface\unit_tests\sss_module_tester\ratings_override\Makefile
+src\scada_interface\unit_tests\sss_module_tester\scada_data\Makefile
+src\scada_interface\unit_tests\sss_module_tester\scada_tvq_data\Makefile
+src\scada_interface\unit_tests\sss_module_tester\source_selection_override\Makefile
+src\scada_interface\unit_tests\sss_module_tester\tags\Makefile
+
+
+
+src\scada_interface\osii_control_adaptor\Makefile
+src\scada_interface\osii_control_adaptor\adaptor\Makefile
+src\scada_interface\osii_control_adaptor\alarms\Makefile
+src\scada_interface\osii_control_adaptor\callbacks\Makefile
+src\scada_interface\osii_control_adaptor\controls\Makefile
+src\scada_interface\osii_control_adaptor\control_adaptor_api\Makefile
+src\scada_interface\osii_control_adaptor\dbms\Makefile
+src\scada_interface\osii_control_adaptor\legacy_server\Makefile
+src\scada_interface\osii_control_adaptor\operations_log\Makefile
+src\scada_interface\osii_control_adaptor\tags\Makefile
+src\scada_interface\osii_control_adaptor\test\Makefile
+src\scada_interface\osii_control_adaptor\util\Makefile
+
+
+src\scada_interface\sync_modules\Makefile
+src\scada_interface\sync_modules\limit\Makefile
+src\scada_interface\sync_modules\measurements_data\Makefile
+src\scada_interface\sync_modules\rate_of_change\Makefile
+src\scada_interface\sync_modules\ratings_limit_overrides\Makefile
+src\scada_interface\sync_modules\scada_data\Makefile
+src\scada_interface\sync_modules\scada_dual_primary_op\Makefile
+src\scada_interface\sync_modules\scada_hierarchy_override\Makefile
+src\scada_interface\sync_modules\scada_tvq_data\Makefile
+src\scada_interface\sync_modules\sedata\Makefile
+src\scada_interface\sync_modules\source_selection_override\Makefile
+src\scada_interface\sync_modules\tag\Makefile
+
+src\scada_interface\test\Makefile
+src\scada_interface\test\command_batch_api_tester\Makefile
+src\scada_interface\test\test_action_log\Makefile
+src\scada_interface\test\test_ca_api\Makefile
+src\scada_interface\test\test_control_adaptor\Makefile
+src\scada_interface\test\test_poa\Makefile
+src\scada_interface\test\test_sisa_api\Makefile
+
+
+src\scada_interface\actions_log\Makefile
+src\scada_interface\actions_log\external_monitor\Makefile
+src\scada_interface\actions_log\external_monitor\unit_test_c\Makefile
+src\scada_interface\actions_log\internal_recorder_api\Makefile
+src\scada_interface\actions_log\internal_recorder_api\unit_tests_c\Makefile
+
+src\scada_interface\scada_custom_poa_provider\Makefile
+src\scada_interface\scada_custom_poa_provider\sample_dll\Makefile
+src\scada_interface\scada_custom_poa_provider\unit_tests\Makefile
+src\scada_interface\scada_custom_poa_provider\unit_tests\unit_test_dll\Makefile
+
+src\scada_interface\osii_switch_adaptor\Makefile
+src\scada_interface\osii_switch_adaptor\adaptor\Makefile
+src\scada_interface\osii_switch_adaptor\adaptor\unit_tests\Makefile
+
+src\scada_interface\snap_modules\Makefile
+src\scada_interface\snap_modules\measurements_snap_module\Makefile
+src\scada_interface\snap_modules\scada_snap_module\Makefile
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\scada_interface\client_api\Makefile
+src\scada_interface\client_api\unit_tests\Makefile
+
+src\scada_interface\integration_tests\Makefile
+src\scada_interface\integration_tests\sisa_api\Makefile
+
+src\scada_interface\osii_si_study_adaptor\Makefile
+src\scada_interface\osii_si_study_adaptor\adaptor\Makefile
+
+src\scada_interface\common\Makefile
+
+src\scada_interface\osii_control_proxy\Makefile
+
+src\scada_interface\osii_control_sim\Makefile
+
+src\scada_interface\osii_scada_dpop_sync\Makefile
+
+src\scada_interface\osii_scada_point_scan\Makefile
+
+src\scada_interface\scada_log_buffer\Makefile
+
+src\scada_interface\switch_api\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 📌results for VIEWPOINT 
+-----------------------------
+VIEWPOINT [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\viewpoint\alarm_adaptor\Makefile
+src\viewpoint\alarm_adaptor\action_api\Makefile
+src\viewpoint\alarm_adaptor\adaptor\Makefile
+src\viewpoint\alarm_adaptor\integration_tester\Makefile
+src\viewpoint\alarm_adaptor\unit_tests_c\Makefile
+
+src\viewpoint\tlq_adaptor\Makefile
+src\viewpoint\tlq_adaptor\osii_tlq_adaptor\Makefile
+src\viewpoint\tlq_adaptor\osii_tlq_adaptor_lib\Makefile
+src\viewpoint\tlq_adaptor\osii_tlq_adaptor_self_contained_integration_test\Makefile
+src\viewpoint\tlq_adaptor\osii_tlq_adaptor_test\Makefile
+src\viewpoint\tlq_adaptor\unit_tests_cpp\Makefile
+
+src\viewpoint\utilities\Makefile
+src\viewpoint\utilities\alarm_client_test\Makefile
+src\viewpoint\utilities\common_unit_tests\Makefile
+src\viewpoint\utilities\log_test_app\Makefile
+
+src\viewpoint\alarm_sync\Makefile
+src\viewpoint\alarm_sync\sync\Makefile
+src\viewpoint\alarm_sync\unit_tests_c\Makefile
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\viewpoint\alarm_creation_service\Makefile
+src\viewpoint\alarm_creation_service\service\Makefile
+
+src\viewpoint\alarm_client\Makefile
+
+src\viewpoint\common\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+- 📌results for OTSFW
+-----------------------------
+OTSFW [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\otsfw\osii_otsfw_eventd\Makefile
+src\otsfw\osii_otsfw_eventd\unit_test\Makefile
+
+src\otsfw\otsfw_adaptor\Makefile
+src\otsfw\otsfw_adaptor\unit_tests_c\Makefile
+
+src\otsfw\osii_otsfw_validate\Makefile
+
+src\otsfw\otsfw_api\Makefile
+
+src\otsfw\otsfw_ras\Makefile
+
+src\otsfw\otsfw_util\Makefile
+
+
+
+
+
+
+
+
+
+- 📌results for SECURE SYNC
+-----------------------------
+SECURE SYNC [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\secure_sync\adaptor\Makefile
+
+src\secure_sync\client\Makefile
+
+src\secure_sync\lib\Makefile
+
+src\secure_sync\pause\Makefile
+
+src\secure_sync\shadow_copy\Makefile
+
+src\secure_sync\test_data_module\Makefile
+
+
+
+
+- 📌results for WEB COMPONENTS 
+-----------------------------
+WEB COMP [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\scada_web_components\scada_ws_server_lib\Makefile
+src\scada_web_components\scada_ws_server_lib\get_config\Makefile
+src\scada_web_components\scada_ws_server_lib\operations\Makefile
+src\scada_web_components\scada_ws_server_lib\subscriptions\Makefile
+
+src\scada_web_components\storm\Makefile
+src\scada_web_components\storm\client\Makefile
+src\scada_web_components\storm\client\unit_tests\Makefile
+src\scada_web_components\storm\master\Makefile
+src\scada_web_components\storm\master\unit_tests\Makefile
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\scada_web_components\scada_web_component_server\Makefile
+src\scada_web_components\scada_web_component_server\core\Makefile
+
+src\scada_web_components\scada_ws_adaptor\Makefile
+src\scada_web_components\scada_ws_adaptor\unit_tests\Makefile
+
+
+
+- 📌 results for ALARMS:
+-----------------------------
+ALARMS[🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+src\alarms\alarm_buffer\Makefile
+src\alarms\alarm_buffer\lib\Makefile
+src\alarms\alarm_buffer\testfw\Makefile
+src\alarms\alarm_buffer\unit_tests_c\Makefile
+
+src\alarms\alarm_server\Makefile
+src\alarms\alarm_server\server\Makefile
+src\alarms\alarm_server\sys\Makefile
+src\alarms\alarm_server\testapp\Makefile
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\alarms\alarm_check\Makefile
+src\alarms\alarm_check\unit_tests\Makefile
+
+src\alarms\alarm\unit_tests\Makefile
+
+src\alarms\alarm_demand\Makefile
+
+src\alarms\alarm_print\Makefile
+
+src\alarms\alarm_schedule\Makefile
+
+src\alarms\alarm_select\Makefile
+
+src\alarms\alarm_stats_service\Makefile
+
+src\alarms\filter\Makefile
+
+src\alarms\pager\Makefile
+
+src\alarms\query\Makefile
+
+src\alarms\relink_alarms\Makefile
+
+src\alarms\sync_modules\alarm_action\Makefile
+
+
+
+
+
+
+
+
+
+
+- 📌results for MAKECS (the c-sharp make files...)
+-----------------------------
+MAKECS / CSHARP [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+### these were the only makecs results I could find...not sure if this is it or if im searching wrong...
+scripts\makecsdir.bat
+srcNET\makecs.bat
+srcNET\ClientToolkit\makecs.bat
+srcNET\SCADAInterface\makecs.bat
+srcNET\TagSubsystem\makecs.bat
+srcNET\ViewPoint\makecs.bat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+,. ANOTHER BACKUP OF 'ONLY' THE PATHS WE OFFICIALLY DECIDEID WE ARE GOING TO ADD TO QUICKCOMP for each prod (so only the small groups of size 2 or 1 are the paths weve yet to decide on (aka this list is IGNORING all those ones that we may add later))
+,.dev?
+
+
+========================================================================
+⭐ BELOW IS A LIST OF ALL THE PATHS WE DECIDED SHOULD BE ADDED TO QUICK-COMPARE script (for each prod)
+⭐ 1 CAVEAT: this is ignoring the paths that were in groups of 2 or smaller. We plan on dealing w these AFTER all these 'obvious' ones are added officially
+   >> so IOW, there MAY STILL BE some paths we end up adding, but this list are the vast majority of the important/legit ones
+========================================================================
+
+TRACKING PROGRESS OF ADDING THE 'FOR_SURE' PATHS FOR EACH PROD:
+         [git->local] & [local->git]
+        -[✅] & [✅] TAGGINGS ==============    Ed Fitz or Nathan Moore
+        -SCADA SDK =============    Matt B
+        -OPENSCADA ============     Greg or Richard
+        -SCADA INTERFACE =======    Sonya or Erik Chomko
+        -VIEWPOINT =============    Owen or NathanWestlund
+        -OTSFW  ================    Nik 
+        -SECURE SYNC ===========    Greg or Nik
+        -WEB COMPONENTS ========    Richard or Nik
+        -ALARMS ================    Greg? 
+
+-----------------------------
+TAGGING    ✅ DONE ADDING ALL THESE
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\tagging_subsystem\test\
+src\tagging_subsystem\test\unit_test\
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\
+src\tagging_subsystem\validate\
+
+
+-----------------------------
+SCADA SDK
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\scada_sdk\utilities\
+src\scada_sdk\utilities\api_testers\
+src\scada_sdk\utilities\unit_testers\
+src\scada_sdk\scada_tag_provider\test\Makefile
+src\scada_sdk\scada_tag_proxy\
+src\scada_sdk\scada_common_lib\
+src\scada_sdk\scada_tagsubsystem_migration\
+src\scada_sdk\scada_change_data_adaptor_client_lib\
+src\scada_sdk\scada_tag_provider\ (already added)
+
+
+
+-----------------------------
+OPENSCADA 
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\openscada\unit_tests_c\
+src\openscada\source_selection\
+src\openscada\limits\
+src\openscada\limits\scada_limit_calculator\
+src\openscada\utilities\
+
+
+-----------------------------
+SCADA INTERFACE  
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\scada_interface\unit_tests\
+src\scada_interface\unit_tests\control_adaptor\         (may not need this one tbh)
+src\scada_interface\unit_tests\rate_of_change\    (may not need this one tbh)
+src\scada_interface\unit_tests\snap_module_tester\      (may not need this one tbh)
+src\scada_interface\unit_tests\sss_module_tester\       (may not need this one tbh)
+src\scada_interface\sync_modules\
+src\scada_interface\test\
+src\scada_interface\actions_log\
+src\scada_interface\scada_custom_poa_provider\
+src\scada_interface\osii_switch_adaptor\
+src\scada_interface\snap_modules\
+src\scada_interface\osii_control_adaptor\
+
+-----------------------------
+VIEWPOINT 
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\viewpoint\alarm_adaptor\
+src\viewpoint\tlq_adaptor\
+src\viewpoint\utilities\
+src\viewpoint\alarm_sync\
+
+
+-----------------------------
+OTSFW 
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+(none to add atm for otsfw atm...)
+
+
+-----------------------------
+SECURE SYNC 
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+(none to add atm for secure sync...)
+
+-----------------------------
+WEB COMP 
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\scada_web_components\scada_ws_server_lib\
+src\scada_web_components\storm\
+
+-----------------------------
+ALARMS
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\alarms\alarm_buffer\
+src\alarms\alarm_server\
+
+-----------------------------
+MAKECS / CSHARP 
+-----------------------------
+### these were the only makecs results I could find...not sure if this is it or if im searching wrong...
+scripts\makecsdir.bat
+srcNET\makecs.bat
+srcNET\ClientToolkit\makecs.bat
+srcNET\SCADAInterface\makecs.bat
+srcNET\TagSubsystem\makecs.bat
+srcNET\ViewPoint\makecs.bat
 
 
 

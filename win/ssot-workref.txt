@@ -4,6 +4,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 OTHER FILE NAME OPTIOSN FOR THIS workRef doc:
 -
 ---------------------------------------------------------
@@ -52,3 +72,813 @@ MISC...
 -
 -
 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+,.DEF MAPPINGS (use for when need a quick reminder of what something is, such as 'what does LPMD do again?')
+,.dev?
+========================================================================
+(this section would be akin to the ACRONYMNS tab + the processes-defintions stuff too, sorta, except it includes any/all terms/words that I think would be useful to have a quick def on)
+FZF-SCRIPT-FOR-THIS-SECTION: D:\git\niche_side_quests_repo\win\fzf-def-search.cmd
+----------------------------------------------------------------------
+DEF-LPMD ---- (addDefHere)
+DEF-osii_mcp.xml ---- (addDefHere)
+DEF-SWR ---- (addDefHere)
+DEF-SDP ---- (addDefHere)
+DEF-WPS ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+------ FILES -------
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+------ TERMS -------
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+DEF-?? ---- (addDefHere)
+
+
+
+
+
+----------------------------------------------------------------------
+,.enhancements/goodIdeas-for-this-section:
+----------------------------------------------------------------------
+-create script command and potentially designate a HYPER trigger just like we have for SnippetPicker (hyper-S), filePicker(hyper-F) etc
+    -this way, any time we want a quick def of something, we can just immediately trigger the script-command lookup and start typing the term   
+    -EX: what does LPMD do again? --> press HYPER-foo then type LPMD and boom it should bring us right to LPMDs line in this section
+-each entry in this section should have a designated prefix, like 'DEF-' so our HYPER-foo results always have ONLY this one match 💥 (otherwise when we search LPMD, well likely get several diff matcches across this doc and then have to find it manually)
+    - EXAMPLE: the entries would look like below:
+        DEF-LPMD =>     insert defintion here ... blah blah
+        DEF-OTSFW =>    insert defintion here ... blah blah
+        DEF-scadaInterface =>   insert defintion here ... blah blah
+        DEF-osii_mcp.xml =>     insert defintion here ... blah blah
+        DEF-newTerm =>          blah blah
+        DEF-newTerm =>          blah blah
+        DEF-newTerm =>          blah blah
+
+- add logic in our script command to always 💥add this prefix "DEF-" to the input string (this way we can just input LPMD instead of DEF-LPMD)
+
+- IF POSSIBLE: we'll START with the HYPER searching WorkRef...BUT ... we'd WANT this search to span BOTH our Ref docs (workRef and Ref)...(otherwise we'd end up w the extra step of thinking if this term would be in Ref or WorkRef which is what we DEFINITLY do not want) + (i doubt there will be many entries from Ref anyway. The majority of time itll be WorkRef since those are the terms i'd likely need to be reminded of what they do/defintion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+,.DELETEwhenDONE
+,. this is just tmp landing spot to put stuff I'll need for a little while and then no longer will need so can del...
+========================================================================
+
+💥THE ORIG FULL LIST IS IN "D:\git\niche_side_quests_repo\_universal\TRANSFER_ALL_MY_CONTENTS_TO_NEW_REFS_TXT.md" so can always refer back to that if I end up deleting / eidting TOO MUCH of these paths...
+
+# ❗TODO❗  ❗TODO❗   ❗TODO❗ ❗TODO❗  ❗TODO❗   ❗TODO❗❗TODO❗  ❗TODO❗   ❗TODO❗❗TODO❗  ❗TODO❗   ❗TODO❗
+# ❗TODO❗  ❗TODO❗   ❗TODO❗ ❗TODO❗  ❗TODO❗   ❗TODO❗❗TODO❗  ❗TODO❗   ❗TODO❗❗TODO❗  ❗TODO❗   ❗TODO❗
+# ❗TODO❗  ❗TODO❗   ❗TODO❗ ❗TODO❗  ❗TODO❗   ❗TODO❗❗TODO❗  ❗TODO❗   ❗TODO❗❗TODO❗  ❗TODO❗   ❗TODO❗
+# Go through below results of findfiles *MakeFile and decide which ones should include in the above sections, respectively
+# ❗TODO❗  ❗TODO❗   ❗TODO❗ ❗TODO❗  ❗TODO❗   ❗TODO❗❗TODO❗  ❗TODO❗   ❗TODO❗❗TODO❗  ❗TODO❗   ❗TODO❗
+
+
+
+STEPS TO CONSOLIDATE:
+1. ✅ go through each sections paths and sep by the largest shared dir (so you can get a sense for how many paths are under 1 dir)
+1. ✅ do 2nd pass over each prod and sort from largestGroup to smallestGroup (largest at top)(this should help w all the single-instance path groups which are most likely the ones we'd be excluding/deleting/ NOT-ADDING)
+1. ✅do 3rd pass over each prod and insert a SEPARATOR for groups of size 2 or smaller. These will be the ones we ask about: 
+        "Are any of these directories common-ish used/updated? bc im trying to decide whether or not to add them to my quickCompare script path mappings)
+1. ✅start consolidating each group of the products (ignoring the groups size 2 or 1 separated by separator
+1. ✅now each prod should have a list of FOR SURE paths we want to add to quickComp...
+    -> make these their OWN GROUP at top of each prod and label with 🟪 pruple)
+1. ✅do 4th pass over each prod and put all the sep the groups into two: 1) FOR-SURE should be added to quickComp    2) not-sure or should def NOT be added to quickComp
+2. ✅for each group, decide which ones to keep and which ones are redundant(should prob keep AT LEAST 1 from each group for the most part)
+2. ⌛(optional) ask the product lead of the repsective product if im missing any legit paths outside of the ones already on my list for said prod
+3. Now clean up each products section and then you'll have a complete list of the new paths we should add to quick compare script...
+4. Add all the paths to quick-compare script (both the GIT->LOCAL direction AND the LOCAL->GIT direction)
+5. then TBD... push the changes to S3
+6. LAST-STEP: ask the prod-leads about all the paths below the SEPARATOR (aka paths in groups of 2 or smaller) 
+        ASK: ""Are any of these directories common-ish used/updated? bc im trying to decide whether or not to add them to my quickCompare script path mappings"
+            -> add any paths that the prodLead suggested ARE legit enough to be worth adding
+
+        %%%% PROD_LEADS-for-each-PROD: %%%%%
+        -TAGGINGS ==============    Ed Fitz or Nathan Moore
+        -SCADA SDK =============    Matt B
+        -OPENSCADA ============     Greg or Richard
+        -SCADA INTERFACE =======    Sonya or Erik Chomko
+        -VIEWPOINT =============    Owen or NathanWestlund
+        -OTSFW  ================    Nik 
+        -SECURE SYNC ===========    Greg or Nik
+        -WEB COMPONENTS ========    Richard or Nik
+        -ALARMS ================    Greg? 
+
+
+-----------------------------
+TAGGING    
+-----------------------------
+- 📌results for TAGGING
+🟪 ADD THESE PATHS 🟪
+src\tagging_subsystem\test\
+src\tagging_subsystem\test\unit_test\
+src\tagging_subsystem\adaptor\osii_tagging_adaptor\
+src\tagging_subsystem\validate\
+
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\tagging_subsystem\tagging_web_component_server\Makefile
+src\tagging_subsystem\tagging_web_component_server\core\Makefile
+
+src\tagging_subsystem\tagging_ws_adaptor\Makefile
+src\tagging_subsystem\tagging_ws_adaptor\unit_tests\Makefile
+
+src\tagging_subsystem\utilities\Makefile
+src\tagging_subsystem\utilities\osii_tagging_db_deserialize_tool\Makefile
+
+src\tagging_subsystem\adaptor\osii_tagging_adaptor_lib\Makefile
+
+src\tagging_subsystem\adaptor\Makefile
+
+src\tagging_subsystem\osi_tagging_api_calc_safe\Makefile
+
+src\tagging_subsystem\tagging_common\Makefile
+
+src\tagging_subsystem\tagging_configuration_manager\Makefile
+
+src\tagging_subsystem\tag_client_library\Makefile
+
+src\tagging_subsystem\tag_provider_library\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------
+SCADA SDK
+-----------------------------
+- 📌results for SCAD SDK
+🟪 ADD THESE PATHS 🟪
+src\scada_sdk\utilities\
+src\scada_sdk\utilities\api_testers\
+src\scada_sdk\utilities\unit_testers\
+src\scada_sdk\scada_tag_provider\
+src\scada_sdk\scada_tag_provider\test\Makefile
+src\scada_sdk\scada_tag_proxy\
+src\scada_sdk\scada_common_lib\
+src\scada_sdk\scada_tagsubsystem_migration\
+src\scada_sdk\scada_change_data_adaptor_client_lib\
+
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\scada_sdk\measurements_api\Makefile
+src\scada_sdk\measurements_api\unit_tests\Makefile
+
+src\scada_sdk\operational_sync_lib\Makefile
+src\scada_sdk\operational_sync_lib\unit_tests_c\Makefile
+
+src\scada_sdk\osii_scadaapi\Makefile
+src\scada_sdk\osii_scadaapi\unit_tests_c\Makefile
+
+src\scada_sdk\osii_shared_area_api\Makefile
+src\scada_sdk\osii_shared_area_api\unit_tests\Makefile
+
+src\scada_sdk\rtlib\Makefile
+src\scada_sdk\rtlib\unit_tests_c\Makefile
+
+src\scada_sdk\scadapllib\Makefile
+src\scada_sdk\scadapllib\unit_tests_c\Makefile
+
+src\scada_sdk\scada_change_data_adaptor\Makefile
+src\scada_sdk\scada_change_data_adaptor\unit_test\Makefile
+
+src\scada_sdk\scada_config_updater\Makefile
+src\scada_sdk\scada_config_updater\unit_tests\Makefile
+
+src\scada_sdk\scada_maintenance_api\Makefile
+src\scada_sdk\scada_maintenance_api\unit_tests\Makefile
+
+src\scada_sdk\scada_db_migration\Makefile
+src\scada_sdk\scada_db_migration\unit_tests\Makefile
+
+src\scada_sdk\cpp_main\Makefile
+
+src\scada_sdk\hierarchy\Makefile
+
+src\scada_sdk\main\Makefile
+
+src\scada_sdk\osii_measurements_api\Makefile
+
+src\scada_sdk\scadaapi\Makefile
+
+src\scada_sdk\scadaapi_internal\Makefile
+
+src\scada_sdk\scadapllib_internal\Makefile
+
+src\scada_sdk\scada_cpp_common_lib\Makefile
+
+src\scada_sdk\scada_emap_tag_interface_lib\Makefile
+
+src\scada_sdk\scada_objserver\Makefile
+
+src\scada_sdk\scada_server\Makefile
+
+src\scada_sdk\scada_telemetry_simulator\Makefile
+
+src\scada_sdk\shared_area_api\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------
+OPENSCADA [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+- 📌results for OPENSCADA
+🟪 ADD THESE PATHS 🟪
+src\openscada\unit_tests_c\
+src\openscada\source_selection\
+src\openscada\limits\
+src\openscada\limits\scada_limit_calculator\
+src\openscada\utilities\
+
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\openscada\ads_scan\Makefile
+src\openscada\ads_scan\unit_tests\Makefile
+
+src\openscada\osii_scada_roles_populater\Makefile
+src\openscada\osii_scada_roles_populater\unit_tests\Makefile
+
+src\openscada\psc\Makefile
+src\openscada\psc\unit_tests\Makefile
+
+src\openscada\scada_abnormal_indicator_manager\Makefile
+src\openscada\scada_abnormal_indicator_manager\unit_tests\Makefile
+
+src\openscada\scada_scan\Makefile
+src\openscada\scada_scan\unit_tests\Makefile
+
+src\openscada\tlq\Makefile
+src\openscada\tlq\unit_tests\Makefile
+
+src\openscada\validate\Makefile
+src\openscada\validate\unit_tests\Makefile
+
+src\openscada\adc_scan\Makefile
+
+src\openscada\logs\Makefile
+
+src\openscada\openscada_db_migration\Makefile
+
+src\openscada\peak_archiver\Makefile
+
+src\openscada\ratings_comparison_sync\Makefile
+
+src\openscada\scadalibs\Makefile
+
+src\openscada\scada_measurements_scan\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 📌results for SCADA INTERFACE
+-----------------------------
+SCADA INTERFACE  [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\scada_interface\unit_tests\
+src\scada_interface\unit_tests\control_adaptor\         (may not need this one tbh)
+src\scada_interface\unit_tests\rate_of_change\    (may not need this one tbh)
+src\scada_interface\unit_tests\snap_module_tester\      (may not need this one tbh)
+src\scada_interface\unit_tests\sss_module_tester\       (may not need this one tbh)
+src\scada_interface\sync_modules\
+src\scada_interface\test\
+src\scada_interface\actions_log\
+src\scada_interface\scada_custom_poa_provider\
+src\scada_interface\osii_switch_adaptor\
+src\scada_interface\snap_modules\
+src\scada_interface\osii_control_adaptor\
+
+    (NOT ADDING ANY OF THIS GROUP BUT KEEPING THEM JUST IN CASE BC control_adaptor is a common AF dir so we may want to add some of these afterall)
+    src\scada_interface\osii_control_adaptor\adaptor\Makefile❌
+    src\scada_interface\osii_control_adaptor\alarms\Makefile❌
+    src\scada_interface\osii_control_adaptor\callbacks\Makefile❌
+    src\scada_interface\osii_control_adaptor\controls\Makefile❌
+    src\scada_interface\osii_control_adaptor\control_adaptor_api\Makefile❌
+    src\scada_interface\osii_control_adaptor\dbms\Makefile❌
+    src\scada_interface\osii_control_adaptor\legacy_server\Makefile❌
+    src\scada_interface\osii_control_adaptor\operations_log\Makefile❌
+    src\scada_interface\osii_control_adaptor\tags\Makefile❌
+    src\scada_interface\osii_control_adaptor\test\Makefile❌
+    src\scada_interface\osii_control_adaptor\util\Makefile❌
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\scada_interface\client_api\Makefile
+src\scada_interface\client_api\unit_tests\Makefile
+
+src\scada_interface\integration_tests\Makefile
+src\scada_interface\integration_tests\sisa_api\Makefile
+
+src\scada_interface\osii_si_study_adaptor\Makefile
+src\scada_interface\osii_si_study_adaptor\adaptor\Makefile
+
+src\scada_interface\common\Makefile
+
+src\scada_interface\osii_control_proxy\Makefile
+
+src\scada_interface\osii_control_sim\Makefile
+
+src\scada_interface\osii_scada_dpop_sync\Makefile
+
+src\scada_interface\osii_scada_point_scan\Makefile
+
+src\scada_interface\scada_log_buffer\Makefile
+
+src\scada_interface\switch_api\Makefile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 📌results for VIEWPOINT 
+-----------------------------
+VIEWPOINT [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\viewpoint\alarm_adaptor\
+src\viewpoint\tlq_adaptor\
+src\viewpoint\utilities\
+src\viewpoint\alarm_sync\
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\viewpoint\alarm_creation_service\Makefile
+src\viewpoint\alarm_creation_service\service\Makefile
+
+src\viewpoint\alarm_client\Makefile
+
+src\viewpoint\common\Makefile
+
+
+
+
+
+
+
+
+
+
+
+- 📌results for OTSFW
+-----------------------------
+OTSFW [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+(none to add atm for otsfw atm...)
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\otsfw\osii_otsfw_eventd\Makefile
+src\otsfw\osii_otsfw_eventd\unit_test\Makefile
+
+src\otsfw\otsfw_adaptor\Makefile
+src\otsfw\otsfw_adaptor\unit_tests_c\Makefile
+
+src\otsfw\osii_otsfw_validate\Makefile
+
+src\otsfw\otsfw_api\Makefile
+
+src\otsfw\otsfw_ras\Makefile
+
+src\otsfw\otsfw_util\Makefile
+
+
+
+
+
+
+
+
+
+- 📌results for SECURE SYNC
+-----------------------------
+SECURE SYNC [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+(none to add atm for secure sync...)
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\secure_sync\adaptor\Makefile
+
+src\secure_sync\client\Makefile
+
+src\secure_sync\lib\Makefile
+
+src\secure_sync\pause\Makefile
+
+src\secure_sync\shadow_copy\Makefile
+
+src\secure_sync\test_data_module\Makefile
+
+
+
+
+- 📌results for WEB COMPONENTS 
+-----------------------------
+WEB COMP [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\scada_web_components\scada_ws_server_lib\
+src\scada_web_components\storm\
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\scada_web_components\scada_web_component_server\Makefile
+src\scada_web_components\scada_web_component_server\core\Makefile
+
+src\scada_web_components\scada_ws_adaptor\Makefile
+src\scada_web_components\scada_ws_adaptor\unit_tests\Makefile
+
+
+
+- 📌 results for ALARMS:
+-----------------------------
+ALARMS[🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\alarms\alarm_buffer\
+src\alarms\alarm_server\
+
+
+
+<<<<<<<<------ below are groups of 1 to 2 --------->>>>>>>>>>
+
+src\alarms\alarm_check\Makefile
+src\alarms\alarm_check\unit_tests\Makefile
+
+src\alarms\alarm\unit_tests\Makefile
+
+src\alarms\alarm_demand\Makefile
+
+src\alarms\alarm_print\Makefile
+
+src\alarms\alarm_schedule\Makefile
+
+src\alarms\alarm_select\Makefile
+
+src\alarms\alarm_stats_service\Makefile
+
+src\alarms\filter\Makefile
+
+src\alarms\pager\Makefile
+
+src\alarms\query\Makefile
+
+src\alarms\relink_alarms\Makefile
+
+src\alarms\sync_modules\alarm_action\Makefile
+
+
+
+
+
+
+
+
+
+
+- 📌results for MAKECS (the c-sharp make files...)
+-----------------------------
+MAKECS / CSHARP [🤯NOT-DONE-CONSOLIDATING-THESE-PATHS-YET]
+-----------------------------
+### these were the only makecs results I could find...not sure if this is it or if im searching wrong...
+scripts\makecsdir.bat
+srcNET\makecs.bat
+srcNET\ClientToolkit\makecs.bat
+srcNET\SCADAInterface\makecs.bat
+srcNET\TagSubsystem\makecs.bat
+srcNET\ViewPoint\makecs.bat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
