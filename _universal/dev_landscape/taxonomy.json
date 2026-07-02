@@ -77007,6 +77007,1157 @@
           "API",
           "Loose Coupling"
         ]
+      },
+      {
+        "id": "composition",
+        "name": "Composition",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Object Composition",
+          "Software Composition",
+          "Composition Over Inheritance",
+          "Component Composition"
+        ],
+        "notes": "Software design concept where larger systems or behaviors are built by combining smaller objects, components, functions, or modules rather than relying primarily on inheritance or tightly coupled structures.",
+        "tags": [
+          "software-design",
+          "oop",
+          "modularity",
+          "composition",
+          "design-principle",
+          "component-design",
+          "code-organization",
+          "maintainability"
+        ],
+        "whatIsIt": "A software design concept focused on building complex behavior by combining smaller, reusable parts.",
+        "description": "Composition is a software engineering concept where larger objects, modules, components, or systems are built by combining smaller pieces that each handle a focused responsibility. In object-oriented design, composition often means one object contains or delegates to other objects instead of inheriting behavior from a parent class. In frontend and architecture contexts, composition can also describe building interfaces, services, or workflows from smaller components. Composition is closely related to modularity, encapsulation, low coupling, high cohesion, dependency injection, and the principle of composition over inheritance.",
+        "usedWith": [
+          "OOP",
+          "Encapsulation",
+          "Inheritance",
+          "Dependency Injection",
+          "Interfaces",
+          "Design Patterns",
+          "Low Coupling",
+          "High Cohesion",
+          "Component-Based Development",
+          "Refactoring"
+        ],
+        "builtOn": [
+          "Modularity",
+          "Encapsulation",
+          "Delegation",
+          "Object Relationships",
+          "Interfaces and Contracts",
+          "Separation of Concerns"
+        ],
+        "builtUponBy": [
+          "Object-Oriented Design Workflows",
+          "Component-Based Architecture",
+          "Reusable Code Design",
+          "Design Pattern Implementation",
+          "Frontend Component Design",
+          "Service Composition Workflows",
+          "Maintainable Application Architecture"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Inheritance",
+          "Subclassing",
+          "Mixin-Based Reuse",
+          "Monolithic Class Design"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Object-Oriented Programming",
+          "Software Design",
+          "Architecture & Design",
+          "Modular Programming",
+          "Component-Based Development"
+        ],
+        "includes": [],
+        "examples": [
+          "A Car object composed of Engine, Wheel, and Brake objects",
+          "A service class delegating persistence to a repository",
+          "React components composed from smaller child components",
+          "Using dependency injection to compose services",
+          "Composition over inheritance in class design",
+          "Combining small functions into a larger workflow",
+          "Building a UI page from reusable components"
+        ],
+        "useCases": [
+          "Reducing overuse of inheritance",
+          "Building reusable software components",
+          "Improving modularity and maintainability",
+          "Separating responsibilities across smaller parts",
+          "Making systems easier to test",
+          "Creating flexible object relationships",
+          "Supporting dependency injection and inversion of control",
+          "Designing component-based user interfaces"
+        ],
+        "relatedConcepts": [
+          "OOP",
+          "Inheritance",
+          "Encapsulation",
+          "Delegation",
+          "Dependency Injection",
+          "Inversion of Control",
+          "Low Coupling",
+          "High Cohesion",
+          "Separation of Concerns",
+          "Design Pattern",
+          "Component",
+          "Modularity"
+        ]
+      },
+      {
+        "id": "coupling",
+        "name": "Coupling",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Coupling",
+          "Code Coupling",
+          "Module Coupling",
+          "Dependency Coupling"
+        ],
+        "notes": "Software engineering concept describing the degree of dependency between modules, classes, components, services, or systems.",
+        "tags": [
+          "software-design",
+          "architecture",
+          "modularity",
+          "maintainability",
+          "dependencies",
+          "code-quality",
+          "software-engineering",
+          "design-principle"
+        ],
+        "whatIsIt": "A measure of how strongly one software component depends on another.",
+        "description": "Coupling describes how much one module, class, component, service, or system depends on another. High coupling means changes in one area are more likely to force changes elsewhere, making code harder to test, modify, reuse, or understand. Low coupling means components interact through smaller, clearer boundaries such as interfaces, contracts, events, dependency injection, or stable APIs. Coupling is usually evaluated together with cohesion: good software design often aims for low coupling between components and high cohesion within each component.",
+        "usedWith": [
+          "Low Coupling",
+          "High Cohesion",
+          "Modularity",
+          "OOP",
+          "Dependency Injection",
+          "Interfaces",
+          "API Contracts",
+          "Design Patterns",
+          "Microservices",
+          "Refactoring",
+          "Unit Testing"
+        ],
+        "builtOn": [
+          "Dependencies",
+          "Module Boundaries",
+          "Abstraction",
+          "Interfaces and Contracts",
+          "Data Flow",
+          "Control Flow"
+        ],
+        "builtUponBy": [
+          "Software Design Reviews",
+          "Architecture Evaluation Workflows",
+          "Refactoring Workflows",
+          "Maintainability Analysis",
+          "Testability Improvement Workflows",
+          "Modular Application Design",
+          "Microservice Boundary Design"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Design",
+          "Architecture & Design",
+          "Code Quality",
+          "Maintainability",
+          "Modular Programming"
+        ],
+        "includes": [],
+        "examples": [
+          "A class directly instantiating several concrete dependencies",
+          "A service depending on an interface instead of a concrete repository",
+          "A frontend component tightly coupled to global state shape",
+          "A microservice depending on another service's internal database schema",
+          "Reducing coupling by introducing an API contract",
+          "Using dependency injection to lower coupling",
+          "Replacing direct calls with event-based communication"
+        ],
+        "useCases": [
+          "Evaluating software maintainability",
+          "Identifying fragile dependencies",
+          "Improving testability",
+          "Guiding refactoring decisions",
+          "Designing cleaner module boundaries",
+          "Reducing change impact across a codebase",
+          "Improving architecture flexibility",
+          "Designing microservice boundaries"
+        ],
+        "relatedConcepts": [
+          "Low Coupling",
+          "High Cohesion",
+          "Cohesion",
+          "Modularity",
+          "Dependency Injection",
+          "Abstraction",
+          "Encapsulation",
+          "Separation of Concerns",
+          "Interface",
+          "API Contract",
+          "Technical Debt",
+          "Refactoring"
+        ]
+      },
+      {
+        "id": "inheritance",
+        "name": "Inheritance",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Class Inheritance",
+          "Object-Oriented Inheritance",
+          "Subclassing",
+          "Implementation Inheritance"
+        ],
+        "notes": "Object-oriented programming concept where a class derives behavior, structure, or contracts from another class or type, commonly used for reuse, specialization, and polymorphic design.",
+        "tags": [
+          "oop",
+          "software-design",
+          "programming-concept",
+          "class-hierarchy",
+          "code-reuse",
+          "type-systems",
+          "object-oriented-programming"
+        ],
+        "whatIsIt": "An object-oriented programming concept where one class or type derives members, behavior, or contracts from another class or type.",
+        "description": "Inheritance is an object-oriented programming concept where a derived class, subclass, or child type receives behavior, fields, methods, or contracts from a base class, superclass, or parent type. Developers use inheritance to model specialization, share common behavior, define reusable abstractions, support method overriding, and enable polymorphism. Inheritance is common in languages such as Java, C++, C#, Python, and TypeScript, but it should be used carefully because deep inheritance hierarchies can increase coupling and make systems harder to change. Composition, interfaces, traits, mixins, and delegation are often preferred when they produce simpler designs.",
+        "usedWith": [
+          "Object-Oriented Programming",
+          "Classes",
+          "Objects",
+          "Subclasses",
+          "Superclasses",
+          "Abstract Classes",
+          "Interfaces",
+          "Polymorphism",
+          "Method Overriding",
+          "Java",
+          "C++",
+          "C#"
+        ],
+        "builtOn": [
+          "Object-Oriented Programming",
+          "Classes",
+          "Objects",
+          "Type Systems",
+          "Method Dispatch",
+          "Abstraction"
+        ],
+        "builtUponBy": [
+          "Object-Oriented Design Workflows",
+          "Framework Extension Workflows",
+          "Class Hierarchy Design",
+          "Polymorphic API Design",
+          "Code Reuse Workflows",
+          "Domain Model Design",
+          "Template Method Pattern Implementations"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Composition",
+          "Delegation",
+          "Interfaces",
+          "Traits",
+          "Mixins",
+          "Entity Component System"
+        ],
+        "partOf": [
+          "Object-Oriented Programming",
+          "Software Engineering Concepts",
+          "Software Design",
+          "Type System Concepts",
+          "Code Reuse Concepts",
+          "Class-Based Programming"
+        ],
+        "includes": [],
+        "examples": [
+          "Java class extending a superclass",
+          "C++ class inheriting from a base class",
+          "C# class overriding a virtual method",
+          "Python subclass extending a parent class",
+          "Template Method pattern using inheritance",
+          "UI component subclass sharing base behavior",
+          "Domain model with base and specialized entity classes"
+        ],
+        "useCases": [
+          "Reusing shared behavior across related classes",
+          "Modeling specialization in object-oriented systems",
+          "Supporting polymorphic method calls",
+          "Defining framework extension points",
+          "Creating abstract base classes",
+          "Implementing template method designs",
+          "Organizing related types into class hierarchies",
+          "Reducing duplication when types share meaningful behavior"
+        ],
+        "relatedConcepts": [
+          "Object-Oriented Programming",
+          "Polymorphism",
+          "Encapsulation",
+          "Abstraction",
+          "Class",
+          "Object",
+          "Interface",
+          "Composition",
+          "Method Overriding",
+          "Liskov Substitution Principle",
+          "SOLID",
+          "Design Patterns"
+        ]
+      },
+      {
+        "id": "polymorphism",
+        "name": "Polymorphism",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Object-Oriented Polymorphism",
+          "Subtype Polymorphism",
+          "Runtime Polymorphism",
+          "Compile-Time Polymorphism"
+        ],
+        "notes": "Programming concept where different types can be used through a shared interface or abstraction, allowing the same operation to behave differently depending on the concrete type.",
+        "tags": [
+          "oop",
+          "software-design",
+          "programming-concept",
+          "type-systems",
+          "abstraction",
+          "dynamic-dispatch",
+          "object-oriented-programming"
+        ],
+        "whatIsIt": "A programming concept where the same interface, method, or operation can work with different concrete types and produce type-specific behavior.",
+        "description": "Polymorphism is a programming and object-oriented design concept where code interacts with values, objects, or types through a shared interface or abstraction while allowing different concrete implementations to behave differently. In object-oriented programming, polymorphism is commonly achieved through inheritance, interfaces, abstract classes, method overriding, and dynamic dispatch. In broader programming language theory, polymorphism can also include generics, parametric polymorphism, ad hoc polymorphism, and function overloading. Developers use polymorphism to reduce conditional logic, write extensible APIs, isolate callers from implementation details, and support substitutable components.",
+        "usedWith": [
+          "Object-Oriented Programming",
+          "Inheritance",
+          "Interfaces",
+          "Abstract Classes",
+          "Method Overriding",
+          "Dynamic Dispatch",
+          "Generics",
+          "Dependency Injection",
+          "Design Patterns",
+          "Java",
+          "C++",
+          "C#"
+        ],
+        "builtOn": [
+          "Abstraction",
+          "Type Systems",
+          "Interfaces",
+          "Method Dispatch",
+          "Substitutability",
+          "Object-Oriented Programming"
+        ],
+        "builtUponBy": [
+          "Polymorphic API Design",
+          "Object-Oriented Design Workflows",
+          "Plugin Architecture Workflows",
+          "Dependency Injection Workflows",
+          "Strategy Pattern Implementations",
+          "Framework Extension Workflows",
+          "Test Double and Mocking Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Conditional Logic",
+          "Pattern Matching",
+          "Function Overloading",
+          "Type Switches",
+          "Visitor Pattern",
+          "Composition"
+        ],
+        "partOf": [
+          "Object-Oriented Programming",
+          "Software Engineering Concepts",
+          "Software Design",
+          "Type System Concepts",
+          "API Design",
+          "Abstraction Concepts"
+        ],
+        "includes": [],
+        "examples": [
+          "Calling the same interface method on different implementations",
+          "Java interface implemented by multiple classes",
+          "C++ virtual function dispatch",
+          "C# abstract class with overridden methods",
+          "Generic collection working with multiple element types",
+          "Strategy pattern using interchangeable implementations",
+          "Mock implementation substituted during unit tests"
+        ],
+        "useCases": [
+          "Writing code against abstractions instead of concrete classes",
+          "Supporting interchangeable implementations",
+          "Reducing conditional type-checking logic",
+          "Building extensible APIs and frameworks",
+          "Enabling dependency injection",
+          "Implementing design patterns such as Strategy and Factory",
+          "Supporting test doubles and mocks",
+          "Allowing different objects to respond to the same operation"
+        ],
+        "relatedConcepts": [
+          "Object-Oriented Programming",
+          "Inheritance",
+          "Encapsulation",
+          "Abstraction",
+          "Interface",
+          "Method Overriding",
+          "Dynamic Dispatch",
+          "Generics",
+          "Liskov Substitution Principle",
+          "Dependency Injection",
+          "Strategy Pattern",
+          "SOLID"
+        ]
+      },
+      {
+        "id": "encapsulation",
+        "name": "Encapsulation",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "OOP Encapsulation",
+          "Data Encapsulation",
+          "Information Hiding",
+          "State Encapsulation"
+        ],
+        "notes": "Software engineering and OOP concept focused on bundling data with behavior and controlling access to internal state through a defined public interface.",
+        "tags": [
+          "software-engineering",
+          "oop",
+          "design-principle",
+          "information-hiding",
+          "maintainability",
+          "state-management",
+          "code-organization",
+          "modularity"
+        ],
+        "whatIsIt": "A design concept where internal state and implementation details are protected behind a controlled public interface.",
+        "description": "Encapsulation is a core software engineering and object-oriented programming concept where data and behavior are grouped together while internal state and implementation details are hidden or protected from direct external access. Developers use encapsulation to preserve invariants, reduce accidental misuse, limit coupling, make code easier to change, and expose clear public interfaces. Encapsulation commonly appears in classes, modules, services, APIs, access modifiers, getters and setters, private fields, public methods, and well-defined component boundaries.",
+        "usedWith": [
+          "OOP",
+          "Abstraction",
+          "Classes",
+          "Objects",
+          "Access Modifiers",
+          "Interfaces",
+          "Modules",
+          "APIs",
+          "Domain Modeling",
+          "Design Patterns"
+        ],
+        "builtOn": [
+          "Information Hiding",
+          "Access Control",
+          "Object State",
+          "Class Design",
+          "Modularity",
+          "OOP Principles"
+        ],
+        "builtUponBy": [
+          "Object-Oriented Design",
+          "Maintainable Class Design",
+          "Domain Model Design",
+          "API Boundary Design",
+          "State Management Workflows",
+          "Large Codebase Refactoring",
+          "Design Pattern Implementation"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Global Mutable State",
+          "Public Field Access",
+          "Tight Coupling"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Object-Oriented Programming",
+          "Software Design",
+          "Code Organization",
+          "Maintainable Code Practices",
+          "Modular Design"
+        ],
+        "includes": [],
+        "examples": [
+          "Using private fields with public methods in a class",
+          "Protecting object state behind getters and setters",
+          "Validating data before updating internal state",
+          "Hiding implementation details inside a module",
+          "Exposing service methods instead of direct database access",
+          "Using access modifiers like private, protected, and public",
+          "Keeping domain invariants inside an entity class"
+        ],
+        "useCases": [
+          "Protecting internal object state",
+          "Preventing invalid state changes",
+          "Reducing coupling between components",
+          "Making implementations easier to change",
+          "Creating clear public interfaces",
+          "Improving maintainability of classes and modules",
+          "Hiding implementation details from callers",
+          "Preserving domain invariants"
+        ],
+        "relatedConcepts": [
+          "Abstraction",
+          "OOP",
+          "Class",
+          "Object",
+          "Access Modifier",
+          "Interface",
+          "Information Hiding",
+          "State Management",
+          "Low Coupling",
+          "High Cohesion",
+          "Modularity",
+          "Design Pattern"
+        ]
+      },
+      {
+        "id": "implementation",
+        "name": "Implementation",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Implementation",
+          "Code Implementation",
+          "Feature Implementation",
+          "System Implementation"
+        ],
+        "notes": "Software engineering concept describing the process and resulting code that turns requirements, designs, algorithms, or specifications into working software.",
+        "tags": [
+          "software-engineering",
+          "coding",
+          "development-process",
+          "feature-development",
+          "software-design",
+          "code-quality",
+          "implementation-details",
+          "maintainability"
+        ],
+        "whatIsIt": "The process and result of translating a design, requirement, or specification into working software.",
+        "description": "Implementation is the software engineering concept of turning requirements, designs, algorithms, interfaces, or architecture decisions into working code and system behavior. It includes writing code, integrating dependencies, handling data flow, implementing business logic, connecting APIs, adding error handling, validating behavior, and preparing the work for testing, review, and deployment. Implementation is distinct from design: design describes what structure or approach should be used, while implementation is the concrete code and technical detail that makes the design real.",
+        "usedWith": [
+          "Requirements",
+          "Software Design",
+          "Programming Languages",
+          "Frameworks & Libraries",
+          "API Contracts",
+          "Testing",
+          "Code Review",
+          "Version Control",
+          "CI/CD",
+          "Refactoring"
+        ],
+        "builtOn": [
+          "Requirements",
+          "Software Design",
+          "Programming Language Syntax",
+          "Algorithms",
+          "Data Structures",
+          "Architecture Decisions",
+          "Interfaces and Contracts"
+        ],
+        "builtUponBy": [
+          "Feature Development Workflows",
+          "Application Development Workflows",
+          "Bug Fix Workflows",
+          "Refactoring Workflows",
+          "Code Review Workflows",
+          "Testing and Validation Workflows",
+          "Release Preparation Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Development",
+          "Development Practices",
+          "Feature Delivery",
+          "Code Quality",
+          "Software Lifecycle"
+        ],
+        "includes": [],
+        "examples": [
+          "Implementing a new API endpoint from a ticket",
+          "Turning a class diagram into source code",
+          "Writing business logic for a billing rule",
+          "Implementing an interface with a concrete class",
+          "Adding error handling around a network request",
+          "Implementing a sorting algorithm",
+          "Building a feature from requirements and design notes"
+        ],
+        "useCases": [
+          "Turning requirements into working code",
+          "Building new product features",
+          "Fixing bugs in existing systems",
+          "Applying architecture decisions in code",
+          "Creating concrete behavior behind an interface",
+          "Connecting application layers together",
+          "Preparing code for testing and review",
+          "Documenting technical tradeoffs through code structure"
+        ],
+        "relatedConcepts": [
+          "Software Design",
+          "Requirements",
+          "Algorithm",
+          "Code Review",
+          "Testing",
+          "Refactoring",
+          "Abstraction",
+          "Interface",
+          "Implementation Detail",
+          "Technical Debt",
+          "Software Development",
+          "System Design"
+        ]
+      },
+      {
+        "id": "module",
+        "name": "Module",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Module",
+          "Code Module",
+          "Program Module",
+          "Modular Unit"
+        ],
+        "notes": "Software engineering concept describing a self-contained unit of code or functionality with a defined responsibility, boundary, dependencies, and interface.",
+        "tags": [
+          "software-engineering",
+          "modularity",
+          "code-organization",
+          "encapsulation",
+          "architecture",
+          "maintainability",
+          "dependency-management",
+          "software-design"
+        ],
+        "whatIsIt": "A self-contained unit of software that groups related code, behavior, or functionality behind a defined boundary.",
+        "description": "A module is a self-contained unit of software that organizes related code, data, behavior, or functionality behind a clear boundary. Modules help developers split systems into smaller parts that can be understood, tested, reused, and changed more easily. Depending on the language or ecosystem, a module may be represented by a file, package, namespace, library, folder, assembly, crate, importable unit, or application layer. Good modules usually have high cohesion internally and low coupling externally, exposing only the public interface that other parts of the system need.",
+        "usedWith": [
+          "Modularity",
+          "Encapsulation",
+          "Low Coupling",
+          "High Cohesion",
+          "Interfaces",
+          "Packages",
+          "Namespaces",
+          "Imports",
+          "Dependency Management",
+          "Refactoring",
+          "Unit Testing"
+        ],
+        "builtOn": [
+          "Separation of Concerns",
+          "Encapsulation",
+          "Cohesion",
+          "Dependency Boundaries",
+          "Public Interfaces",
+          "Code Organization"
+        ],
+        "builtUponBy": [
+          "Modular Application Design",
+          "Package Design Workflows",
+          "Layered Architecture",
+          "Component-Based Development",
+          "Library Development",
+          "Refactoring Workflows",
+          "Testable Code Design"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Design",
+          "Modular Programming",
+          "Code Organization",
+          "Architecture & Design",
+          "Maintainability"
+        ],
+        "includes": [],
+        "examples": [
+          "A JavaScript ES module exporting functions",
+          "A Python module file imported by other code",
+          "A Java package grouping related classes",
+          "A C# assembly organized around a feature area",
+          "A Node.js module published as an npm package",
+          "A feature module containing controllers, services, and models",
+          "A module boundary used to isolate business logic"
+        ],
+        "useCases": [
+          "Organizing code into manageable units",
+          "Reducing coupling between parts of a system",
+          "Improving cohesion around a focused responsibility",
+          "Creating reusable functionality",
+          "Defining clear public interfaces",
+          "Making code easier to test",
+          "Supporting modular architecture",
+          "Managing dependencies across a codebase"
+        ],
+        "relatedConcepts": [
+          "Modularity",
+          "Encapsulation",
+          "Low Coupling",
+          "High Cohesion",
+          "Package",
+          "Namespace",
+          "Library",
+          "Component",
+          "Interface",
+          "Dependency",
+          "Separation of Concerns",
+          "Architecture"
+        ]
+      },
+      {
+        "id": "dependency-management",
+        "name": "Dependency Management",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Dependency Management",
+          "Package Dependency Management",
+          "Library Dependency Management",
+          "Dependency Resolution",
+          "Third-Party Dependency Management"
+        ],
+        "notes": "Software engineering concept focused on declaring, resolving, versioning, updating, auditing, and controlling external libraries, packages, frameworks, and transitive dependencies used by a project.",
+        "tags": [
+          "dependencies",
+          "package-management",
+          "build-tools",
+          "software-supply-chain",
+          "versioning",
+          "libraries",
+          "software-engineering",
+          "ci-cd"
+        ],
+        "whatIsIt": "A software engineering practice for managing the external packages, libraries, frameworks, versions, and transitive dependencies that a project relies on.",
+        "description": "Dependency Management is the practice of controlling the external software components a project depends on, including libraries, frameworks, packages, plugins, transitive dependencies, version constraints, lockfiles, package registries, updates, and vulnerability handling. Developers use dependency management to make builds reproducible, keep software compatible, reduce manual setup work, track third-party code, avoid version conflicts, and improve software supply-chain security. It is closely connected to package managers such as npm, Yarn, pnpm, pip, Poetry, Maven, Gradle, NuGet, Composer, and Cargo, but it is broader than any one tool.",
+        "usedWith": [
+          "npm",
+          "Yarn",
+          "pnpm",
+          "pip",
+          "Poetry",
+          "NuGet",
+          "Maven",
+          "Gradle",
+          "Composer",
+          "Cargo",
+          "Package Registry",
+          "CI/CD"
+        ],
+        "builtOn": [
+          "Package Managers",
+          "Package Registries",
+          "Semantic Versioning",
+          "Dependency Graphs",
+          "Transitive Dependencies",
+          "Lockfiles",
+          "Version Constraints"
+        ],
+        "builtUponBy": [
+          "Build Workflows",
+          "CI/CD Install Workflows",
+          "Package Publishing Workflows",
+          "Software Supply Chain Workflows",
+          "Dependency Update Workflows",
+          "Vulnerability Remediation Workflows",
+          "Reproducible Build Workflows",
+          "Open Source Compliance Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Vendoring",
+          "Manual Dependency Tracking",
+          "System Package Management",
+          "Monorepo Source Dependencies",
+          "Git Submodules"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Build & Dependency Tooling",
+          "Package Management",
+          "Software Supply Chain",
+          "Build Automation",
+          "Release Engineering",
+          "Open Source Software Development"
+        ],
+        "includes": [],
+        "examples": [
+          "package.json dependencies",
+          "package-lock.json lockfile",
+          "poetry.lock file",
+          "Cargo.toml dependency declaration",
+          "NuGet package reference",
+          "Maven pom.xml dependencies",
+          "Gradle dependency block",
+          "npm install resolving transitive dependencies",
+          "Dependabot opening dependency update pull requests"
+        ],
+        "useCases": [
+          "Installing third-party libraries",
+          "Keeping project builds reproducible",
+          "Resolving compatible package versions",
+          "Managing transitive dependencies",
+          "Updating libraries safely",
+          "Auditing vulnerable dependencies",
+          "Reducing dependency conflicts",
+          "Standardizing build setup across environments",
+          "Supporting CI/CD dependency installation"
+        ],
+        "relatedConcepts": [
+          "Package Manager",
+          "Package Registry",
+          "Semantic Versioning",
+          "Lockfile",
+          "Build Automation",
+          "CI/CD",
+          "Software Supply Chain",
+          "Open Source",
+          "Dependency Graph",
+          "Transitive Dependency",
+          "Version Constraint",
+          "Vulnerability Management"
+        ]
+      },
+      {
+        "id": "interface",
+        "name": "Interface",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Interface",
+          "Programming Interface",
+          "OOP Interface",
+          "Interface Contract",
+          "Type Interface"
+        ],
+        "notes": "Software engineering and object-oriented programming concept that defines a contract or boundary for how code components interact without requiring callers to depend on concrete implementations.",
+        "tags": [
+          "oop",
+          "abstraction",
+          "software-design",
+          "type-systems",
+          "contracts",
+          "polymorphism",
+          "api-design",
+          "software-engineering"
+        ],
+        "whatIsIt": "A contract or boundary that defines what operations, methods, or capabilities a component exposes without necessarily specifying the implementation.",
+        "description": "An Interface is a software design concept that defines how one piece of code can interact with another through a set of methods, operations, properties, messages, or contracts. In object-oriented programming, interfaces commonly define method signatures that classes implement, allowing code to depend on abstractions instead of concrete classes. Interfaces support polymorphism, dependency injection, test doubles, plugin architectures, and loosely coupled design. The term can also describe broader boundaries between systems, modules, APIs, services, or user-facing components, but in programming taxonomy contexts it is most commonly used as an abstraction and type-system concept.",
+        "usedWith": [
+          "Object-Oriented Programming",
+          "Classes",
+          "Implementations",
+          "Polymorphism",
+          "Dependency Injection",
+          "Abstraction",
+          "API Design",
+          "Java",
+          "C#",
+          "TypeScript",
+          "Go",
+          "Unit Testing"
+        ],
+        "builtOn": [
+          "Abstraction",
+          "Type Systems",
+          "Method Signatures",
+          "Contracts",
+          "Polymorphism",
+          "Encapsulation"
+        ],
+        "builtUponBy": [
+          "Interface-Based Design Workflows",
+          "Dependency Injection Workflows",
+          "Polymorphic API Design",
+          "Plugin Architecture Workflows",
+          "Test Double and Mocking Workflows",
+          "Clean Architecture Workflows",
+          "Low-Coupling Design Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Abstract Class",
+          "Concrete Class",
+          "Duck Typing",
+          "Trait",
+          "Mixin",
+          "Protocol"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Object-Oriented Programming",
+          "Software Design",
+          "Type System Concepts",
+          "API Design",
+          "Abstraction Concepts"
+        ],
+        "includes": [],
+        "examples": [
+          "Java interface implemented by multiple classes",
+          "C# interface used for dependency injection",
+          "TypeScript interface describing object shape",
+          "Go interface satisfied implicitly by a type",
+          "Repository interface hiding database implementation",
+          "Service interface mocked in a unit test",
+          "Plugin interface implemented by extensions"
+        ],
+        "useCases": [
+          "Defining contracts between components",
+          "Writing code against abstractions",
+          "Supporting polymorphism",
+          "Reducing coupling between callers and implementations",
+          "Enabling dependency injection",
+          "Creating test doubles and mocks",
+          "Designing plugin and extension points",
+          "Separating public API from implementation details"
+        ],
+        "relatedConcepts": [
+          "Object-Oriented Programming",
+          "Abstraction",
+          "Polymorphism",
+          "Encapsulation",
+          "Dependency Injection",
+          "Class",
+          "Abstract Class",
+          "Implementation",
+          "API",
+          "Contract",
+          "Low Coupling",
+          "Interface Segregation Principle"
+        ]
+      },
+      {
+        "id": "cohesion",
+        "name": "Cohesion",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "High Cohesion",
+          "Module Cohesion",
+          "Class Cohesion",
+          "Functional Cohesion"
+        ],
+        "notes": "Software design concept describing how strongly related the responsibilities inside a module, class, component, or function are.",
+        "tags": [
+          "software-engineering",
+          "design-principle",
+          "code-quality",
+          "maintainability",
+          "modularity",
+          "architecture",
+          "oop",
+          "code-organization"
+        ],
+        "whatIsIt": "A measure of how closely related and focused the responsibilities within a software unit are.",
+        "description": "Cohesion is a software engineering concept that describes how well the responsibilities inside a module, class, component, function, or service belong together. Highly cohesive code has a focused purpose, related behavior, clearer boundaries, and fewer unrelated responsibilities mixed together. Developers use cohesion as a design quality signal when organizing code, refactoring large classes, splitting modules, designing services, improving maintainability, and applying principles such as separation of concerns and single responsibility.",
+        "usedWith": [
+          "Modularity",
+          "Low Coupling",
+          "Separation of Concerns",
+          "Single Responsibility Principle",
+          "OOP",
+          "Classes",
+          "Modules",
+          "Components",
+          "Service Design",
+          "Refactoring"
+        ],
+        "builtOn": [
+          "Software Design",
+          "Code Organization",
+          "Responsibility Assignment",
+          "Separation of Concerns",
+          "Modular Design",
+          "Maintainability"
+        ],
+        "builtUponBy": [
+          "Object-Oriented Design",
+          "Modular Architecture Design",
+          "Component Design Workflows",
+          "Service Boundary Design",
+          "Large Codebase Refactoring",
+          "Maintainable Codebase Design",
+          "Architecture Review Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Low Cohesion",
+          "God Object",
+          "Mixed Responsibility Module"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Design",
+          "Code Quality",
+          "Architecture & Design",
+          "Maintainable Code Practices",
+          "Modular Design"
+        ],
+        "includes": [],
+        "examples": [
+          "A class whose methods all support one clear domain responsibility",
+          "A module that only contains user authentication logic",
+          "A function that performs one focused operation",
+          "Splitting unrelated reporting logic out of an order service",
+          "Moving validation logic into a dedicated validator component",
+          "Refactoring a god class into smaller cohesive classes"
+        ],
+        "useCases": [
+          "Improving maintainability",
+          "Reducing unrelated responsibilities inside modules",
+          "Designing clearer class boundaries",
+          "Refactoring large or confusing code units",
+          "Improving readability and testability",
+          "Supporting modular architecture",
+          "Evaluating design quality during code review"
+        ],
+        "relatedConcepts": [
+          "Modularity",
+          "Low Coupling",
+          "Separation of Concerns",
+          "Single Responsibility Principle",
+          "OOP",
+          "Class",
+          "Module",
+          "Component",
+          "Refactoring",
+          "Encapsulation",
+          "Abstraction",
+          "Software Architecture"
+        ]
+      },
+      {
+        "id": "modularity",
+        "name": "Modularity",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Modular Design",
+          "Software Modularity",
+          "Modular Architecture",
+          "Module-Based Design"
+        ],
+        "notes": "Software engineering concept focused on organizing a system into separate, focused, replaceable, and understandable modules with clear boundaries.",
+        "tags": [
+          "software-engineering",
+          "design-principle",
+          "architecture",
+          "code-organization",
+          "maintainability",
+          "modular-design",
+          "system-design",
+          "scalability"
+        ],
+        "whatIsIt": "A design approach where a software system is divided into focused modules with clear responsibilities and boundaries.",
+        "description": "Modularity is a software engineering concept focused on decomposing a system into smaller, focused, understandable, and independently changeable modules. A modular system separates responsibilities across components, packages, services, libraries, layers, or bounded contexts so teams can reason about and evolve parts of the system without constantly changing everything else. Developers use modularity to improve maintainability, testability, reuse, scalability, architecture clarity, dependency management, and long-term codebase evolution.",
+        "usedWith": [
+          "Cohesion",
+          "Low Coupling",
+          "Separation of Concerns",
+          "Encapsulation",
+          "Abstraction",
+          "Interfaces",
+          "Components",
+          "Packages",
+          "Microservices",
+          "Layered Architecture",
+          "System Design",
+          "Refactoring"
+        ],
+        "builtOn": [
+          "Separation of Concerns",
+          "Information Hiding",
+          "Interface Design",
+          "Responsibility Assignment",
+          "Abstraction",
+          "Encapsulation"
+        ],
+        "builtUponBy": [
+          "Modular Architecture Design",
+          "Large Codebase Organization",
+          "Component-Based Development",
+          "Service-Oriented Design",
+          "Microservice Architecture Workflows",
+          "Package and Library Design",
+          "Refactoring Workflows",
+          "Team Ownership Models"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Monolithic Design Without Clear Modules",
+          "Tightly Coupled Design",
+          "Big Ball of Mud"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Design",
+          "Architecture & Design",
+          "System Design",
+          "Maintainable Code Practices",
+          "Code Organization"
+        ],
+        "includes": [],
+        "examples": [
+          "Splitting a large application into feature modules",
+          "Organizing code into packages with public APIs",
+          "Separating UI, business logic, and data access layers",
+          "Creating a reusable authentication module",
+          "Using interfaces to isolate infrastructure dependencies",
+          "Breaking a monolith into modular services",
+          "Refactoring shared utilities into a dedicated library"
+        ],
+        "useCases": [
+          "Organizing large codebases",
+          "Improving maintainability",
+          "Reducing coupling between system parts",
+          "Supporting independent testing",
+          "Creating reusable components and libraries",
+          "Clarifying system architecture",
+          "Supporting team ownership boundaries",
+          "Making systems easier to extend and refactor"
+        ],
+        "relatedConcepts": [
+          "Cohesion",
+          "Low Coupling",
+          "Separation of Concerns",
+          "Encapsulation",
+          "Abstraction",
+          "Interface",
+          "Component",
+          "Package",
+          "Layered Architecture",
+          "Microservices",
+          "System Design",
+          "Refactoring"
+        ]
       }
     ]
   }
