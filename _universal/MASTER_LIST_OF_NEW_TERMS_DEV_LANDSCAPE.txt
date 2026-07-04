@@ -1033,24 +1033,24 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Polymorphism✅
 * Composition✅
 * Coupling✅
-* Cohesion
+* Cohesion✅
 * Modularity
-* Dependency Management
-* Interface
-* Implementation
-* Module
-* Component
-* Service
-* Middleware
-* Library
-* Framework
-* Runtime
-* Compiler
-* Interpreter
-* Build
-* Artifact
-* Release
-* Versioning
+* Dependency Management✅
+* Interface✅
+* Implementation✅
+* Module✅
+* Component✅
+* Service✅
+* Middleware✅
+* Library✅
+* Framework✅
+* Runtime✅
+* Compiler✅
+* Interpreter✅
+* Build✅
+* Artifact✅
+* Release✅
+* Versioning✅
 * Semantic Versioning
 * Backward Compatibility
 * Code Smell
@@ -1089,6 +1089,40 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Platform Engineering
 * Product Management
 * UX Design
+
+
+⚠️BRANCH OFF 3 NEW CHATS NOW **ALREADY CREATED THESE LAST 3 CHATS 13,14,15...🚨(should be .13, 14, 15  bc prev was .10, 11, 12
+⚠️BRANCH OFF 3 NEW CHATS NOW 
+(17.5) ?? 🟪 MY-OWN-TERMS
+* CLI✅
+* Shell✅
+* ❗TODO❗ try and add more?? 
+* ❗TODO❗ try and add more?? 
+* ❗TODO❗ try and add more?? 
+* ❗TODO❗ try and add more?? 
+* ❗TODO❗ try and add more?? 
+* ❗TODO❗ try and add more?? 
+* ❗TODO❗ try and add more?? 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+
+
 
 (18) 1000 🟪 LAST-STEP-TO-DO...
 >> gather all the terms ⭕⭕⭕ that couldnt be added bc they need their own new subcategory and make a master list of them here

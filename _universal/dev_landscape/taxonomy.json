@@ -8623,6 +8623,127 @@
           "Firebase",
           "Platform Channels"
         ]
+      },
+      {
+        "id": "library",
+        "name": "Library",
+        "continent": "Development",
+        "category": "Frameworks & Libraries",
+        "subcategory": "",
+        "aliases": [
+          "Software Library",
+          "Code Library",
+          "Programming Library",
+          "Reusable Library",
+          "Package Library"
+        ],
+        "notes": "Reusable collection of code, functions, classes, modules, or components that developers include in applications to provide specific capabilities without writing everything from scratch.",
+        "tags": [
+          "software-development",
+          "reusable-code",
+          "framework-library",
+          "dependency",
+          "package-management",
+          "api",
+          "modularity",
+          "code-reuse"
+        ],
+        "whatIsIt": "A reusable collection of code that provides specific functionality to applications through exposed APIs, functions, classes, modules, or components.",
+        "description": "A library is a reusable software artifact that provides functionality developers can call from their own applications. Libraries usually expose APIs, functions, classes, modules, components, or utilities that solve specific problems such as data access, UI rendering, HTTP requests, date handling, testing, logging, validation, cryptography, or numerical computing. Unlike many frameworks, libraries are usually called by the application code, while frameworks often provide the larger application structure and call user code through inversion of control. Libraries are central to modern development because they support code reuse, faster delivery, package ecosystems, dependency management, modularity, and shared implementation of common functionality.",
+        "usedWith": [
+          "Programming Languages",
+          "Frameworks",
+          "Package Managers",
+          "Dependency Management",
+          "APIs",
+          "Modules",
+          "Build Tools",
+          "npm",
+          "pip",
+          "NuGet",
+          "Maven",
+          "Cargo"
+        ],
+        "builtOn": [
+          "Reusable Code",
+          "APIs",
+          "Modules",
+          "Functions",
+          "Classes",
+          "Package Distribution",
+          "Dependency Management"
+        ],
+        "builtUponBy": [
+          "Application Development Workflows",
+          "Framework Development",
+          "Package Ecosystem Workflows",
+          "Code Reuse Workflows",
+          "Open Source Development",
+          "Backend Development Workflows",
+          "Frontend Development Workflows",
+          "Testing and Tooling Workflows"
+        ],
+        "runsOn": [
+          "Application Runtimes",
+          "Language Runtimes",
+          "Web Browsers",
+          "Node.js",
+          ".NET",
+          "JVM",
+          "Python Runtime"
+        ],
+        "alternatives": [
+          "Framework",
+          "Built-In Language Feature",
+          "Custom In-House Implementation",
+          "Standalone Service",
+          "SDK",
+          "CLI Tool"
+        ],
+        "partOf": [
+          "Frameworks & Libraries",
+          "Software Development",
+          "Programming Ecosystems",
+          "Package Management",
+          "Dependency Management",
+          "Code Reuse",
+          "Modular Software Design"
+        ],
+        "includes": [],
+        "examples": [
+          "React as a UI library",
+          "Lodash utility library",
+          "NumPy numerical computing library",
+          "jQuery DOM manipulation library",
+          "Newtonsoft.Json .NET library",
+          "Requests HTTP library for Python",
+          "Installing a library with npm install",
+          "Importing a library into application code"
+        ],
+        "useCases": [
+          "Reusing common functionality",
+          "Avoiding duplicate implementation work",
+          "Adding features to an application",
+          "Sharing code across projects",
+          "Using tested community-maintained functionality",
+          "Composing applications from dependencies",
+          "Improving development speed",
+          "Encapsulating specialized behavior behind an API"
+        ],
+        "relatedConcepts": [
+          "Framework",
+          "Package",
+          "Module",
+          "Dependency Management",
+          "API",
+          "SDK",
+          "Code Reuse",
+          "Modularity",
+          "Abstraction",
+          "Package Manager",
+          "Open Source",
+          "Versioning"
+        ]
       }
     ],
     "Platforms & Runtimes": [
@@ -10831,6 +10952,120 @@
           "Event-Driven Architecture",
           "Cloud Native",
           "Service Invocation"
+        ]
+      },
+      {
+        "id": "interpreter",
+        "name": "Interpreter",
+        "continent": "Development",
+        "category": "Platforms & Runtimes",
+        "subcategory": "",
+        "aliases": [
+          "Language Interpreter",
+          "Code Interpreter",
+          "Runtime Interpreter",
+          "Script Interpreter"
+        ],
+        "notes": "Runtime execution component that reads and executes source code, bytecode, or intermediate code directly rather than producing a standalone compiled binary ahead of time.",
+        "tags": [
+          "interpreter",
+          "runtime",
+          "programming-languages",
+          "scripting",
+          "execution-model",
+          "developer-tooling",
+          "dynamic-languages",
+          "platforms-runtimes"
+        ],
+        "whatIsIt": "A runtime component or program that executes code directly by reading source code, bytecode, or intermediate instructions.",
+        "description": "An interpreter is a runtime execution component that reads and executes code directly, often without producing a separate standalone executable ahead of time. Interpreters are common in scripting and dynamic-language ecosystems such as Python, JavaScript, Ruby, PHP, Lua, and shell scripting. Some interpreters execute source code directly, while others execute bytecode or intermediate representations. Interpreters are closely related to runtimes because they provide the environment where code is executed, manage program state, report runtime errors, and often interact with standard libraries, modules, memory management, and operating system services. An interpreter differs from a compiler because an interpreter executes code at runtime, while a compiler translates code before execution or during a build step.",
+        "usedWith": [
+          "Python",
+          "JavaScript",
+          "Ruby",
+          "PHP",
+          "Lua",
+          "Shell",
+          "REPL",
+          "Runtime",
+          "Virtual Machine",
+          "Bytecode",
+          "Scripting"
+        ],
+        "builtOn": [
+          "Runtime Execution",
+          "Parsing",
+          "Evaluation",
+          "Bytecode Execution",
+          "Memory Management",
+          "Standard Libraries",
+          "Operating System Interfaces"
+        ],
+        "builtUponBy": [
+          "Script Execution Workflows",
+          "Dynamic Language Development",
+          "REPL-Based Development",
+          "Automation Scripting Workflows",
+          "Runtime Application Execution",
+          "Interactive Debugging Workflows",
+          "Command-Line Tool Execution"
+        ],
+        "runsOn": [
+          "Developer Workstations",
+          "Linux",
+          "macOS",
+          "Windows",
+          "Servers",
+          "Containers",
+          "CI/CD Environments"
+        ],
+        "alternatives": [
+          "Compiler",
+          "JIT Compiler",
+          "Virtual Machine",
+          "Ahead-of-Time Compilation",
+          "Transpiler"
+        ],
+        "partOf": [
+          "Platforms & Runtimes",
+          "Programming Language Runtimes",
+          "Scripting Environments",
+          "Runtime Execution",
+          "Software Development",
+          "Command-Line Workflows"
+        ],
+        "includes": [],
+        "examples": [
+          "python running a Python script",
+          "node executing JavaScript code",
+          "ruby running a Ruby program",
+          "php executing a PHP script",
+          "bash interpreting shell commands",
+          "Python REPL evaluating expressions",
+          "Bytecode interpreter executing intermediate instructions"
+        ],
+        "useCases": [
+          "Executing scripts and dynamic-language programs",
+          "Running code interactively in a REPL",
+          "Supporting automation scripts",
+          "Executing command-line tools written in scripting languages",
+          "Providing runtime behavior for interpreted languages",
+          "Testing code without a separate compile step",
+          "Supporting rapid development and experimentation"
+        ],
+        "relatedConcepts": [
+          "Compiler",
+          "Runtime",
+          "Virtual Machine",
+          "Bytecode",
+          "REPL",
+          "Scripting",
+          "Dynamic Typing",
+          "Runtime Error",
+          "Execution Model",
+          "Programming Language",
+          "JIT Compiler",
+          "Toolchain"
         ]
       }
     ],
@@ -17094,6 +17329,121 @@
             "CI/CD",
             "Cloud Computing"
           ]
+        },
+        {
+          "id": "compiler",
+          "name": "Compiler",
+          "continent": "Development",
+          "category": "Development Tools",
+          "subcategory": "Build & Dependency Tools",
+          "aliases": [
+            "Code Compiler",
+            "Language Compiler",
+            "Source Compiler",
+            "Ahead-of-Time Compiler",
+            "AOT Compiler"
+          ],
+          "notes": "Development tool that translates source code from a programming language into lower-level code such as machine code, bytecode, object code, or another target language.",
+          "tags": [
+            "compiler",
+            "build-tool",
+            "programming-languages",
+            "source-code",
+            "code-generation",
+            "native-code",
+            "development-tool",
+            "build-process"
+          ],
+          "whatIsIt": "A tool that translates source code into a lower-level or target form that can be executed, linked, interpreted, or further processed.",
+          "description": "A compiler is a development tool that translates source code written in one programming language into another form, commonly machine code, bytecode, object code, intermediate representation, or another programming language. Compilers are central to many build processes because they analyze source code, check syntax and types, optimize program structure, generate executable output, and report compile-time errors. Compilers are used with languages such as C, C++, C#, Java, Rust, Go, Swift, and TypeScript. A compiler differs from an interpreter because a compiler translates code before execution or as part of a build step, while an interpreter executes source code or intermediate code more directly at runtime.",
+          "usedWith": [
+            "Programming Languages",
+            "C",
+            "C++",
+            "Rust",
+            "Go",
+            "Java",
+            "TypeScript",
+            "Build Systems",
+            "Linker",
+            "Object Files",
+            "CI/CD"
+          ],
+          "builtOn": [
+            "Lexical Analysis",
+            "Parsing",
+            "Syntax Trees",
+            "Semantic Analysis",
+            "Type Checking",
+            "Intermediate Representation",
+            "Code Generation",
+            "Optimization"
+          ],
+          "builtUponBy": [
+            "Build Workflows",
+            "Native Application Development",
+            "Static Type Checking Workflows",
+            "Release Build Pipelines",
+            "Language Toolchain Workflows",
+            "CI/CD Compile Checks",
+            "Executable Generation Workflows"
+          ],
+          "runsOn": [
+            "Developer Workstations",
+            "Linux",
+            "macOS",
+            "Windows",
+            "CI/CD Environments",
+            "Build Servers"
+          ],
+          "alternatives": [
+            "Interpreter",
+            "JIT Compiler",
+            "Transpiler",
+            "Assembler",
+            "Bytecode Compiler"
+          ],
+          "partOf": [
+            "Development Tools",
+            "Build & Dependency Tools",
+            "Programming Language Toolchains",
+            "Build Process",
+            "Software Development",
+            "Code Generation Workflows"
+          ],
+          "includes": [],
+          "examples": [
+            "gcc compiling C source code",
+            "clang compiling C++ source code",
+            "javac compiling Java source into bytecode",
+            "tsc compiling TypeScript into JavaScript",
+            "rustc compiling Rust source code",
+            "go build compiling a Go application",
+            "Compiler error during a CI build"
+          ],
+          "useCases": [
+            "Translating source code into executable output",
+            "Checking syntax and type errors before runtime",
+            "Generating native binaries",
+            "Producing bytecode for virtual machines",
+            "Optimizing program performance during builds",
+            "Enforcing language rules during development",
+            "Supporting automated build and release pipelines"
+          ],
+          "relatedConcepts": [
+            "Interpreter",
+            "Programming Language",
+            "Build System",
+            "Linker",
+            "Object Code",
+            "Bytecode",
+            "Machine Code",
+            "Static Type Checking",
+            "Transpiler",
+            "JIT Compiler",
+            "Runtime",
+            "Toolchain"
+          ]
         }
       ]
     }
@@ -20944,6 +21294,123 @@
           "Server Administration",
           "Enterprise Infrastructure",
           "Virtualization"
+        ]
+      },
+      {
+        "id": "shell",
+        "name": "Shell",
+        "continent": "Infrastructure",
+        "category": "Operating Systems",
+        "subcategory": "",
+        "aliases": [
+          "Command Shell",
+          "Unix Shell",
+          "Command-Line Shell",
+          "Shell Interpreter",
+          "Command Interpreter"
+        ],
+        "notes": "Command interpreter that lets users run programs, compose commands, manage environment state, and automate operating system tasks through scripts.",
+        "tags": [
+          "shell",
+          "command-line",
+          "operating-system",
+          "scripting",
+          "terminal",
+          "automation",
+          "developer-workflow",
+          "command-interpreter"
+        ],
+        "whatIsIt": "A command interpreter that reads commands, runs programs, manages environment state, and supports scripting.",
+        "description": "A shell is a command interpreter that provides an interface between the user and the operating system. Developers use shells to run programs, navigate filesystems, set environment variables, compose commands with pipes and redirection, execute scripts, manage processes, and automate workflows. Shells can be interactive, such as Bash, zsh, fish, PowerShell, or cmd.exe, or used non-interactively to run scripts in build systems, deployment tasks, and CI/CD pipelines. A shell is closely related to a CLI, but they are not the same: the shell is the environment/interpreter, while a CLI is the command-based interface exposed by a program.",
+        "usedWith": [
+          "CLI",
+          "Terminal",
+          "Bash",
+          "zsh",
+          "PowerShell",
+          "Linux",
+          "macOS",
+          "Windows",
+          "Shell Scripts",
+          "Environment Variables",
+          "CI/CD"
+        ],
+        "builtOn": [
+          "Operating System Process Model",
+          "Command Parsing",
+          "Process Execution",
+          "Environment Variables",
+          "Standard Streams",
+          "Filesystem Navigation",
+          "Scripting Syntax"
+        ],
+        "builtUponBy": [
+          "Shell Scripting Workflows",
+          "Developer Command-Line Workflows",
+          "Build Automation Workflows",
+          "Deployment Automation Workflows",
+          "CI/CD Job Execution",
+          "System Administration Workflows",
+          "Local Development Environment Setup"
+        ],
+        "runsOn": [
+          "Linux",
+          "macOS",
+          "Windows",
+          "Unix-like Systems",
+          "Containers",
+          "Remote Servers",
+          "CI/CD Environments"
+        ],
+        "alternatives": [
+          "GUI Shell",
+          "Graphical File Manager",
+          "Terminal User Interface",
+          "IDE Task Runner"
+        ],
+        "partOf": [
+          "Operating Systems",
+          "Command-Line Environments",
+          "Developer Workflows",
+          "System Administration",
+          "Automation",
+          "Scripting"
+        ],
+        "includes": [],
+        "examples": [
+          "bash",
+          "zsh",
+          "fish",
+          "PowerShell",
+          "cmd.exe",
+          "sh script.sh",
+          "export NODE_ENV=production",
+          "cat logs.txt | grep error",
+          "Running shell commands in a CI job"
+        ],
+        "useCases": [
+          "Running command-line tools",
+          "Automating development tasks",
+          "Writing scripts for builds and deployments",
+          "Managing environment variables",
+          "Composing commands with pipes and redirection",
+          "Navigating and manipulating filesystems",
+          "Managing processes and jobs",
+          "Executing CI/CD pipeline steps"
+        ],
+        "relatedConcepts": [
+          "CLI",
+          "Terminal",
+          "Bash",
+          "zsh",
+          "PowerShell",
+          "Shell Script",
+          "Process",
+          "Environment Variable",
+          "Standard Streams",
+          "Pipe",
+          "Operating System",
+          "Automation"
         ]
       }
     ],
@@ -78157,6 +78624,1117 @@
           "Microservices",
           "System Design",
           "Refactoring"
+        ]
+      },
+      {
+        "id": "cli",
+        "name": "CLI",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Command-Line Interface",
+          "Command Line Interface",
+          "Command-Line UI",
+          "Terminal Interface",
+          "Console Interface"
+        ],
+        "notes": "Text-based interface style where users interact with software by typing commands, options, flags, and arguments, commonly through a shell or terminal.",
+        "tags": [
+          "command-line",
+          "developer-workflow",
+          "terminal",
+          "interface",
+          "automation",
+          "scripting",
+          "tooling",
+          "software-engineering"
+        ],
+        "whatIsIt": "A text-based interface for interacting with software by entering commands, arguments, options, and flags.",
+        "description": "A CLI, or command-line interface, is a text-based way to interact with programs, operating systems, developer tools, cloud platforms, package managers, build systems, and automation workflows. Instead of clicking through a graphical interface, users run commands with arguments, flags, subcommands, environment variables, and input/output streams. CLIs are central to developer workflows because they are scriptable, composable, repeatable, remote-friendly, and easy to integrate into shells, terminals, CI/CD pipelines, and automation scripts.",
+        "usedWith": [
+          "Shell",
+          "Terminal",
+          "Bash",
+          "zsh",
+          "PowerShell",
+          "Git",
+          "npm",
+          "Docker",
+          "kubectl",
+          "CI/CD",
+          "Scripting"
+        ],
+        "builtOn": [
+          "Command Parsing",
+          "Standard Input",
+          "Standard Output",
+          "Standard Error",
+          "Process Execution",
+          "Shell Environments",
+          "Text-Based Interaction"
+        ],
+        "builtUponBy": [
+          "Developer Automation Workflows",
+          "Shell Scripting Workflows",
+          "CI/CD Pipeline Workflows",
+          "Cloud Infrastructure Management",
+          "Package Management Workflows",
+          "Version Control Workflows",
+          "Container Management Workflows"
+        ],
+        "runsOn": [
+          "Shells",
+          "Terminals",
+          "Linux",
+          "macOS",
+          "Windows",
+          "CI/CD Environments",
+          "Remote Servers"
+        ],
+        "alternatives": [
+          "GUI",
+          "Web UI",
+          "TUI",
+          "API",
+          "IDE Integration"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Developer Tooling",
+          "Command-Line Workflows",
+          "Automation",
+          "Operating System Interaction",
+          "DevOps Workflows"
+        ],
+        "includes": [],
+        "examples": [
+          "git status",
+          "npm install",
+          "docker run nginx",
+          "kubectl get pods",
+          "python script.py --verbose",
+          "grep error logs.txt",
+          "aws s3 ls",
+          "node taxonomy.js add-term"
+        ],
+        "useCases": [
+          "Running developer tools from the terminal",
+          "Automating repeatable tasks",
+          "Managing source control workflows",
+          "Installing and managing dependencies",
+          "Building and testing software",
+          "Managing cloud and container infrastructure",
+          "Running scripts in CI/CD pipelines",
+          "Interacting with remote servers"
+        ],
+        "relatedConcepts": [
+          "Shell",
+          "Terminal",
+          "Command",
+          "Script",
+          "Process",
+          "Environment Variable",
+          "Exit Code",
+          "Pipe",
+          "Automation",
+          "Developer Tools",
+          "DevOps",
+          "Scripting"
+        ]
+      },
+      {
+        "id": "component",
+        "name": "Component",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Component",
+          "Code Component",
+          "UI Component",
+          "Reusable Component",
+          "Application Component"
+        ],
+        "notes": "Reusable or self-contained software building block that encapsulates related behavior, structure, state, or interface behind a defined boundary.",
+        "tags": [
+          "software-engineering",
+          "software-design",
+          "modularity",
+          "reusability",
+          "architecture",
+          "encapsulation",
+          "frontend",
+          "component-based-development"
+        ],
+        "whatIsIt": "A reusable or self-contained building block of software that groups related behavior, structure, or interface behind a boundary.",
+        "description": "A component is a reusable or self-contained unit of software that represents a focused piece of functionality, UI, behavior, or system structure. Components help organize software into smaller parts with clearer boundaries, responsibilities, dependencies, and interfaces. In frontend development, a component often means a reusable UI element such as a button, form, page section, or widget. In broader software architecture, a component can mean a deployable, testable, or replaceable part of an application or system. Components are closely related to modules, services, interfaces, encapsulation, composition, low coupling, and high cohesion.",
+        "usedWith": [
+          "Module",
+          "Service",
+          "Interface",
+          "Composition",
+          "Encapsulation",
+          "Low Coupling",
+          "High Cohesion",
+          "Design Patterns",
+          "React",
+          "Angular",
+          "Vue.js",
+          "Svelte"
+        ],
+        "builtOn": [
+          "Modularity",
+          "Encapsulation",
+          "Separation of Concerns",
+          "Composition",
+          "Interfaces and Contracts",
+          "Reusable Design"
+        ],
+        "builtUponBy": [
+          "Component-Based Development",
+          "Frontend UI Development",
+          "Application Architecture Design",
+          "Design System Development",
+          "Reusable Code Workflows",
+          "Modular Application Design",
+          "Component Diagram Modeling"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Design",
+          "Architecture & Design",
+          "Component-Based Development",
+          "Frontend Development",
+          "Modular Programming",
+          "Design Systems"
+        ],
+        "includes": [],
+        "examples": [
+          "A reusable Button component in React",
+          "An Angular component with template and TypeScript logic",
+          "A Vue component with props and emitted events",
+          "A Svelte component compiled into JavaScript",
+          "A payment component inside an e-commerce application",
+          "A reusable form component shared across pages",
+          "A system component shown in a UML component diagram"
+        ],
+        "useCases": [
+          "Organizing software into reusable building blocks",
+          "Building component-based user interfaces",
+          "Improving modularity and maintainability",
+          "Encapsulating implementation details behind interfaces",
+          "Reducing duplicated code",
+          "Supporting design systems and shared UI libraries",
+          "Modeling system structure in architecture diagrams",
+          "Composing larger features from smaller parts"
+        ],
+        "relatedConcepts": [
+          "Module",
+          "Service",
+          "Composition",
+          "Encapsulation",
+          "Interface",
+          "Low Coupling",
+          "High Cohesion",
+          "Component Diagram",
+          "Design System",
+          "Frontend",
+          "Modularity",
+          "Reusability"
+        ]
+      },
+      {
+        "id": "service",
+        "name": "Service",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Service",
+          "Application Service",
+          "Backend Service",
+          "Service Layer",
+          "System Service"
+        ],
+        "notes": "Software unit that exposes a focused capability or business function through methods, APIs, messages, or network endpoints for use by other parts of a system.",
+        "tags": [
+          "software-engineering",
+          "backend",
+          "architecture",
+          "service-design",
+          "api",
+          "modularity",
+          "distributed-systems",
+          "business-logic"
+        ],
+        "whatIsIt": "A software unit that provides a focused capability or business function to other code, applications, components, or systems.",
+        "description": "A service is a software unit that provides a focused capability, business function, or technical operation to other parts of a system. In application code, a service often encapsulates business logic behind a class or module, such as an OrderService, UserService, or BillingService. In distributed systems, a service may be independently deployed and accessed over APIs, messages, or network calls. Services help separate responsibilities, organize backend behavior, expose reusable capabilities, and support architectural styles such as service-oriented architecture and microservices. The term is broad, so it should be modeled as a general software engineering concept rather than only as a specific cloud, backend, or microservices term.",
+        "usedWith": [
+          "Backend",
+          "API",
+          "REST API",
+          "Microservices",
+          "Service-Oriented Architecture",
+          "Dependency Injection",
+          "Interface",
+          "Module",
+          "Component",
+          "Message Queue",
+          "Database"
+        ],
+        "builtOn": [
+          "Separation of Concerns",
+          "Business Logic",
+          "Interfaces and Contracts",
+          "Encapsulation",
+          "Modularity",
+          "API Boundaries"
+        ],
+        "builtUponBy": [
+          "Backend Application Development",
+          "Service Layer Architecture",
+          "Microservice Architecture",
+          "Service-Oriented Architecture",
+          "Distributed System Design",
+          "API Development Workflows",
+          "Enterprise Application Development",
+          "Cloud-Native Application Design"
+        ],
+        "runsOn": [
+          "Application Runtimes",
+          "Servers",
+          "Containers",
+          "Cloud Platforms",
+          "Kubernetes",
+          "Serverless Platforms"
+        ],
+        "alternatives": [
+          "Module",
+          "Component",
+          "Function",
+          "Library",
+          "Monolithic Layer"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Backend Development",
+          "Software Architecture",
+          "Distributed Systems",
+          "API Development",
+          "Enterprise Software",
+          "Cloud-Native Development"
+        ],
+        "includes": [],
+        "examples": [
+          "UserService handling user-related business logic",
+          "OrderService coordinating order creation",
+          "Payment service exposed through a REST API",
+          "Email service used by multiple application features",
+          "Inventory microservice deployed independently",
+          "Service class injected into a controller",
+          "Background service processing queue messages"
+        ],
+        "useCases": [
+          "Encapsulating business logic",
+          "Organizing backend application behavior",
+          "Exposing reusable system capabilities",
+          "Separating controllers from domain operations",
+          "Building microservices and distributed systems",
+          "Creating clear API or service boundaries",
+          "Coordinating data access and external integrations",
+          "Supporting dependency injection and testability"
+        ],
+        "relatedConcepts": [
+          "Backend",
+          "API",
+          "Microservices",
+          "Service-Oriented Architecture",
+          "Module",
+          "Component",
+          "Dependency Injection",
+          "Interface",
+          "Business Logic",
+          "Service Layer",
+          "Distributed Systems",
+          "Cloud Native"
+        ]
+      },
+      {
+        "id": "middleware",
+        "name": "Middleware",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Middleware Component",
+          "Request Middleware",
+          "HTTP Middleware",
+          "Middleware Pipeline"
+        ],
+        "notes": "Software component or layer that sits between other parts of a system to process requests, responses, messages, or cross-cutting concerns such as authentication, logging, routing, and error handling.",
+        "tags": [
+          "software-engineering",
+          "backend",
+          "web-development",
+          "api",
+          "request-pipeline",
+          "cross-cutting-concerns",
+          "architecture",
+          "integration"
+        ],
+        "whatIsIt": "A software layer or component that intercepts, processes, or coordinates communication between other components, services, or request handlers.",
+        "description": "Middleware is a software engineering concept used to describe components that sit between other system layers, services, frameworks, or request handlers. In web and API development, middleware commonly processes incoming requests and outgoing responses for concerns such as authentication, authorization, logging, validation, routing, rate limiting, compression, CORS, error handling, and security checks. Middleware can also refer more broadly to integration software that connects applications, services, operating systems, databases, message queues, or distributed systems. It is useful as a general software concept because it appears across backend frameworks, web servers, API gateways, enterprise integration, distributed systems, and platform architecture.",
+        "usedWith": [
+          "Backend",
+          "REST API",
+          "Web Servers",
+          "Express.js",
+          "Koa",
+          "Fastify",
+          "NestJS",
+          "ASP.NET Core",
+          "Spring Boot",
+          "Authentication",
+          "Logging",
+          "API Gateway"
+        ],
+        "builtOn": [
+          "Request-Response Pipeline",
+          "Chain of Responsibility",
+          "Cross-Cutting Concerns",
+          "HTTP",
+          "Routing",
+          "Interceptors",
+          "Integration Layers"
+        ],
+        "builtUponBy": [
+          "Web Application Request Processing",
+          "API Request Validation Workflows",
+          "Authentication and Authorization Workflows",
+          "Backend Observability Workflows",
+          "API Gateway Processing",
+          "Enterprise Integration Workflows",
+          "Microservice Communication Workflows",
+          "Framework Extension Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Interceptor",
+          "Filter",
+          "Plugin",
+          "Decorator",
+          "Proxy Layer",
+          "Service Mesh Sidecar"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Backend Development",
+          "Web Development",
+          "API Development",
+          "Architecture & Design",
+          "Integration",
+          "Distributed Systems"
+        ],
+        "includes": [],
+        "examples": [
+          "Express.js middleware function",
+          "Koa async middleware chain",
+          "ASP.NET Core request pipeline middleware",
+          "Authentication middleware checking a JWT",
+          "Logging middleware recording request duration",
+          "CORS middleware adding response headers",
+          "Rate limiting middleware blocking excessive requests",
+          "Error handling middleware returning consistent API errors"
+        ],
+        "useCases": [
+          "Processing HTTP requests before route handlers",
+          "Adding authentication and authorization checks",
+          "Centralizing logging and observability behavior",
+          "Handling cross-cutting backend concerns",
+          "Validating incoming API requests",
+          "Applying security policies consistently",
+          "Composing request-response pipelines",
+          "Connecting services or systems through an integration layer"
+        ],
+        "relatedConcepts": [
+          "Backend",
+          "REST API",
+          "Request-Response Pipeline",
+          "Chain of Responsibility",
+          "Interceptor",
+          "Filter",
+          "API Gateway",
+          "Proxy",
+          "Cross-Cutting Concerns",
+          "Authentication",
+          "Authorization",
+          "Web Server"
+        ]
+      },
+      {
+        "id": "framework",
+        "name": "Framework",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Framework",
+          "Application Framework",
+          "Development Framework",
+          "Programming Framework"
+        ],
+        "notes": "Reusable software structure that provides conventions, extension points, libraries, tooling, and control flow for building applications within a specific domain or architectural style.",
+        "tags": [
+          "software-engineering",
+          "framework",
+          "architecture",
+          "software-design",
+          "abstraction",
+          "application-development",
+          "developer-tooling"
+        ],
+        "whatIsIt": "A reusable software foundation that provides structure, conventions, APIs, and extension points for building applications or components.",
+        "description": "A Framework is a reusable software foundation that gives developers a structured way to build applications, services, user interfaces, APIs, or systems. Frameworks usually provide conventions, lifecycle management, reusable libraries, extension points, configuration patterns, and predefined control flow. Unlike a simple library, a framework often controls part of the application flow and calls developer-provided code through hooks, callbacks, controllers, components, or dependency injection. Frameworks can exist at many layers, including frontend frameworks, backend frameworks, testing frameworks, web frameworks, mobile frameworks, and full-stack application frameworks.",
+        "usedWith": [
+          "Libraries",
+          "APIs",
+          "Architecture Patterns",
+          "Dependency Injection",
+          "Inversion of Control",
+          "Web Development",
+          "Frontend",
+          "Backend",
+          "Testing",
+          "Runtime"
+        ],
+        "builtOn": [
+          "Abstraction",
+          "Reusable Components",
+          "APIs",
+          "Design Patterns",
+          "Inversion of Control",
+          "Software Architecture"
+        ],
+        "builtUponBy": [
+          "Application Development Workflows",
+          "Frontend Development Workflows",
+          "Backend Development Workflows",
+          "Full-Stack Development Workflows",
+          "Testing Workflows",
+          "Framework-Based Architecture Workflows",
+          "Enterprise Application Development"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Library",
+          "Platform",
+          "SDK",
+          "Custom Architecture",
+          "Boilerplate Code",
+          "Template Project"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Architecture",
+          "Application Development",
+          "Frameworks & Libraries",
+          "Developer Tooling",
+          "Code Reuse Concepts"
+        ],
+        "includes": [],
+        "examples": [
+          "React as a frontend framework/library ecosystem",
+          "Angular as a frontend framework",
+          "Django as a backend web framework",
+          "Spring Boot as a Java application framework",
+          "ASP.NET Core as a web application framework",
+          "JUnit as a testing framework",
+          "NestJS as a TypeScript backend framework"
+        ],
+        "useCases": [
+          "Providing structure for application development",
+          "Reducing repeated boilerplate code",
+          "Standardizing project architecture",
+          "Providing reusable APIs and extension points",
+          "Supporting team consistency across projects",
+          "Accelerating frontend or backend development",
+          "Implementing common design patterns",
+          "Managing application lifecycle and control flow"
+        ],
+        "relatedConcepts": [
+          "Library",
+          "SDK",
+          "API",
+          "Platform",
+          "Runtime",
+          "Inversion of Control",
+          "Dependency Injection",
+          "Architecture Pattern",
+          "Design Pattern",
+          "Boilerplate",
+          "Application Architecture",
+          "Software Development"
+        ]
+      },
+      {
+        "id": "runtime",
+        "name": "Runtime",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Runtime Environment",
+          "Execution Runtime",
+          "Language Runtime",
+          "Application Runtime"
+        ],
+        "notes": "Execution environment that provides the services, libraries, memory management, process model, and platform behavior needed to run software after it has been built or interpreted.",
+        "tags": [
+          "runtime",
+          "execution-environment",
+          "platforms",
+          "software-engineering",
+          "programming-languages",
+          "application-execution",
+          "system-design"
+        ],
+        "whatIsIt": "An execution environment that provides the platform services and behavior needed for software to run.",
+        "description": "A Runtime is the execution environment in which software runs. It may provide services such as memory management, garbage collection, standard libraries, module loading, threading, event loops, bytecode execution, system calls, security boundaries, and platform abstractions. Some runtimes are language-specific, such as the JVM, .NET CLR, Node.js, Python runtime, or JavaScript browser runtime. Others are application or infrastructure runtimes, such as container runtimes, serverless runtimes, or browser runtimes. Runtime is broader than a framework: a framework structures how developers build software, while a runtime provides the environment that executes it.",
+        "usedWith": [
+          "Programming Languages",
+          "Frameworks",
+          "Libraries",
+          "Compilers",
+          "Interpreters",
+          "Virtual Machines",
+          "Operating Systems",
+          "Containers",
+          "Node.js",
+          "JVM",
+          ".NET",
+          "Web Browsers"
+        ],
+        "builtOn": [
+          "Operating Systems",
+          "Process Execution",
+          "Memory Management",
+          "Standard Libraries",
+          "System Calls",
+          "Execution Models"
+        ],
+        "builtUponBy": [
+          "Application Execution Workflows",
+          "Language Execution Workflows",
+          "Backend Service Runtime Workflows",
+          "Frontend Browser Execution Workflows",
+          "Containerized Application Workflows",
+          "Serverless Function Execution Workflows",
+          "Platform Runtime Workflows"
+        ],
+        "runsOn": [
+          "Operating Systems",
+          "Servers",
+          "Developer Workstations",
+          "Containers",
+          "Cloud Platforms",
+          "Web Browsers"
+        ],
+        "alternatives": [
+          "Interpreter",
+          "Virtual Machine",
+          "Execution Engine",
+          "Operating System Process",
+          "Container Runtime"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Platforms & Runtimes",
+          "Application Execution",
+          "Programming Language Ecosystems",
+          "Software Platforms",
+          "System Design"
+        ],
+        "includes": [],
+        "examples": [
+          "Node.js runtime executing JavaScript outside the browser",
+          "JVM running Java bytecode",
+          ".NET CLR executing managed code",
+          "Python runtime executing Python programs",
+          "Browser JavaScript runtime executing frontend code",
+          "Container runtime launching container processes",
+          "Serverless runtime executing cloud functions"
+        ],
+        "useCases": [
+          "Executing application code",
+          "Providing language and platform services",
+          "Managing memory and runtime behavior",
+          "Running backend services",
+          "Running frontend code in browsers",
+          "Supporting portable language execution",
+          "Providing standard APIs for programs",
+          "Hosting applications in containers or cloud environments"
+        ],
+        "relatedConcepts": [
+          "Platform",
+          "Virtual Machine",
+          "Interpreter",
+          "Compiler",
+          "Operating System",
+          "Node.js",
+          "JVM",
+          ".NET CLR",
+          "Container Runtime",
+          "Browser",
+          "Framework",
+          "Execution Environment"
+        ]
+      },
+      {
+        "id": "build",
+        "name": "Build",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Build",
+          "Application Build",
+          "Build Process",
+          "Build Step",
+          "Build Pipeline"
+        ],
+        "notes": "Software engineering concept describing the process of transforming source code and dependencies into runnable, testable, packaged, or deployable outputs.",
+        "tags": [
+          "software-engineering",
+          "build-process",
+          "compilation",
+          "packaging",
+          "ci-cd",
+          "release-management",
+          "automation",
+          "artifact-generation"
+        ],
+        "whatIsIt": "The process of converting source code, dependencies, configuration, and assets into outputs such as binaries, packages, bundles, containers, or other deployable artifacts.",
+        "description": "A build is the process of preparing software from source code into a form that can be run, tested, packaged, distributed, or deployed. Depending on the technology stack, a build may include dependency installation, compilation, transpilation, bundling, linking, minification, code generation, asset processing, test execution, static analysis, container image creation, packaging, and artifact publishing. Builds are central to development workflows, CI/CD pipelines, release management, deployment automation, and reproducible software delivery.",
+        "usedWith": [
+          "Source Code",
+          "Compiler",
+          "Build Tools",
+          "Package Managers",
+          "CI/CD",
+          "Version Control",
+          "Testing",
+          "Static Analysis",
+          "Artifact",
+          "Deployment",
+          "Docker",
+          "Release Management"
+        ],
+        "builtOn": [
+          "Source Code",
+          "Dependency Management",
+          "Compilation",
+          "Packaging",
+          "Build Automation",
+          "Configuration",
+          "Toolchains"
+        ],
+        "builtUponBy": [
+          "CI/CD Pipeline Workflows",
+          "Release Management Workflows",
+          "Deployment Automation",
+          "Artifact Publishing Workflows",
+          "Container Image Build Workflows",
+          "Quality Gate Workflows",
+          "Reproducible Delivery Workflows"
+        ],
+        "runsOn": [
+          "Developer Workstations",
+          "Build Servers",
+          "CI/CD Environments",
+          "Docker Containers",
+          "Linux",
+          "Windows",
+          "macOS"
+        ],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Development",
+          "CI/CD",
+          "Release Management",
+          "Deployment",
+          "Build Automation",
+          "Software Delivery"
+        ],
+        "includes": [],
+        "examples": [
+          "Running npm run build for a frontend app",
+          "Compiling C++ source code into an executable",
+          "Building a .NET project into assemblies",
+          "Creating a Docker image from a Dockerfile",
+          "Running a CI build after a pull request",
+          "Building a Java project with Maven or Gradle",
+          "Generating a production JavaScript bundle",
+          "Publishing build artifacts after a pipeline completes"
+        ],
+        "useCases": [
+          "Producing runnable software from source code",
+          "Preparing software for testing",
+          "Creating deployable artifacts",
+          "Automating release preparation",
+          "Validating code changes in CI",
+          "Packaging applications for distribution",
+          "Generating optimized production assets",
+          "Supporting repeatable software delivery"
+        ],
+        "relatedConcepts": [
+          "Artifact",
+          "CI/CD",
+          "Build Automation",
+          "Compilation",
+          "Package Manager",
+          "Dependency Management",
+          "Deployment",
+          "Release Management",
+          "Pipeline",
+          "Compiler",
+          "Docker Image",
+          "Source Code"
+        ]
+      },
+      {
+        "id": "artifact",
+        "name": "Artifact",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Artifact",
+          "Build Artifact",
+          "Deployment Artifact",
+          "Release Artifact",
+          "Generated Artifact"
+        ],
+        "notes": "Software engineering concept for a file or output produced, stored, tested, deployed, or distributed as part of development, build, CI/CD, or release workflows.",
+        "tags": [
+          "software-engineering",
+          "build-artifact",
+          "ci-cd",
+          "deployment",
+          "release-management",
+          "package",
+          "software-delivery",
+          "artifact-management"
+        ],
+        "whatIsIt": "A produced software output such as a binary, package, container image, bundle, report, archive, or generated file used by later development, testing, release, or deployment steps.",
+        "description": "An artifact is an output created during software development, build, testing, packaging, or release workflows. Common artifacts include compiled binaries, libraries, packages, container images, frontend bundles, installers, archives, test reports, coverage reports, documentation, generated code, logs, and deployment bundles. Artifacts are often stored in artifact repositories or registries so they can be versioned, promoted, tested, scanned, deployed, rolled back, or reused across environments. Artifacts are central to CI/CD pipelines, release management, deployment automation, package distribution, and software supply chain workflows.",
+        "usedWith": [
+          "Build",
+          "CI/CD",
+          "Artifact Repository",
+          "Package Registry",
+          "Docker",
+          "Container Registry",
+          "Deployment",
+          "Release Management",
+          "Testing",
+          "Versioning",
+          "Software Supply Chain"
+        ],
+        "builtOn": [
+          "Build Process",
+          "Packaging",
+          "Versioning",
+          "File Outputs",
+          "Artifact Metadata",
+          "Software Delivery Workflows"
+        ],
+        "builtUponBy": [
+          "Deployment Workflows",
+          "Release Promotion Workflows",
+          "CI/CD Pipeline Workflows",
+          "Artifact Publishing Workflows",
+          "Rollback Workflows",
+          "Software Supply Chain Workflows",
+          "Environment Promotion Workflows"
+        ],
+        "runsOn": [
+          "Artifact Repositories",
+          "Package Registries",
+          "Container Registries",
+          "CI/CD Environments",
+          "Deployment Platforms"
+        ],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Delivery",
+          "CI/CD",
+          "Release Management",
+          "Deployment",
+          "Build Automation",
+          "Software Supply Chain"
+        ],
+        "includes": [],
+        "examples": [
+          "JAR file produced by a Java build",
+          "Docker image pushed to a container registry",
+          "npm package published to a registry",
+          "ZIP archive generated by a release pipeline",
+          "Frontend dist folder produced by a build",
+          "Test report uploaded after CI completes",
+          "Coverage report stored as a pipeline artifact",
+          "Compiled executable from a C++ build"
+        ],
+        "useCases": [
+          "Storing build outputs",
+          "Passing outputs between CI/CD pipeline stages",
+          "Deploying tested software versions",
+          "Publishing packages for reuse",
+          "Promoting releases across environments",
+          "Supporting rollback to previous versions",
+          "Tracking what was built and deployed",
+          "Preserving test and coverage results"
+        ],
+        "relatedConcepts": [
+          "Build",
+          "CI/CD",
+          "Artifact Repository",
+          "Package Registry",
+          "Container Image",
+          "Deployment",
+          "Release Management",
+          "Versioning",
+          "Software Supply Chain",
+          "Binary",
+          "Package",
+          "Rollback"
+        ]
+      },
+      {
+        "id": "release",
+        "name": "Release",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Release",
+          "Application Release",
+          "Product Release",
+          "Release Version",
+          "Production Release"
+        ],
+        "notes": "Packaged or deployed version of software that is made available to users, customers, production environments, or downstream systems.",
+        "tags": [
+          "software-engineering",
+          "release-management",
+          "deployment",
+          "versioning",
+          "ci-cd",
+          "software-delivery",
+          "production"
+        ],
+        "whatIsIt": "A specific version or delivery event where software is packaged, deployed, published, or made available for use.",
+        "description": "A Release is a specific version, build, package, deployment, or delivery event where software is made available to users, customers, production environments, or downstream systems. Releases often combine code changes, version numbers, release notes, deployment artifacts, configuration changes, database migrations, testing results, approvals, and rollback plans. In software delivery, a release is closely related to versioning, deployment, CI/CD, release management, changelogs, build artifacts, and production operations. A release is broader than a deployment because software can be released through app stores, package registries, downloadable installers, feature flags, staged rollouts, or production deployments.",
+        "usedWith": [
+          "Versioning",
+          "Semantic Versioning",
+          "CI/CD",
+          "Deployment",
+          "Release Management",
+          "Changelog",
+          "Build Artifacts",
+          "Git Tags",
+          "Feature Flags",
+          "Rollback",
+          "Production Environment",
+          "Quality Assurance"
+        ],
+        "builtOn": [
+          "Source Code Changes",
+          "Build Artifacts",
+          "Version Numbers",
+          "Testing",
+          "Deployment Workflows",
+          "Release Notes",
+          "Change Management"
+        ],
+        "builtUponBy": [
+          "Software Delivery Workflows",
+          "Production Deployment Workflows",
+          "Release Management Workflows",
+          "CI/CD Release Pipelines",
+          "Customer Delivery Workflows",
+          "Patch Management Workflows",
+          "Rollback and Recovery Workflows",
+          "Product Launch Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Deployment",
+          "Build",
+          "Patch",
+          "Hotfix",
+          "Feature Flag Rollout",
+          "Package Publication"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Delivery",
+          "Release Management",
+          "Deployment Workflows",
+          "CI/CD",
+          "Production Operations",
+          "Software Lifecycle"
+        ],
+        "includes": [],
+        "examples": [
+          "Version 1.4.0 production release",
+          "Patch release fixing a critical bug",
+          "Mobile app release submitted to an app store",
+          "Library release published to a package registry",
+          "Release candidate promoted after QA approval",
+          "GitHub release with changelog and artifacts",
+          "Staged production release behind a feature flag",
+          "Rollback after a failed release"
+        ],
+        "useCases": [
+          "Delivering new software features to users",
+          "Publishing a stable version of an application",
+          "Shipping bug fixes and security patches",
+          "Coordinating deployment and communication",
+          "Tracking what changed between versions",
+          "Providing release notes for users or teams",
+          "Managing production rollout risk",
+          "Supporting rollback and incident recovery"
+        ],
+        "relatedConcepts": [
+          "Versioning",
+          "Deployment",
+          "Release Management",
+          "CI/CD",
+          "Build",
+          "Release Candidate",
+          "Changelog",
+          "Git Tag",
+          "Rollback",
+          "Feature Flags",
+          "Production Environment",
+          "Change Management"
+        ]
+      },
+      {
+        "id": "versioning",
+        "name": "Versioning",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Versioning",
+          "Version Management",
+          "Version Numbering",
+          "Release Versioning",
+          "Artifact Versioning"
+        ],
+        "notes": "Practice of assigning and managing version identifiers for software, APIs, packages, artifacts, schemas, releases, and dependencies.",
+        "tags": [
+          "software-engineering",
+          "versioning",
+          "semantic-versioning",
+          "release-management",
+          "dependency-management",
+          "api-design",
+          "software-delivery"
+        ],
+        "whatIsIt": "A software engineering practice for labeling, tracking, comparing, and managing changes across releases, packages, APIs, artifacts, and dependencies.",
+        "description": "Versioning is the practice of assigning identifiers to software releases, packages, APIs, schemas, artifacts, dependencies, and other software components so teams can track changes, communicate compatibility, manage upgrades, reproduce builds, and coordinate releases. Common versioning approaches include semantic versioning, calendar versioning, build numbers, commit hashes, API versioning, schema versioning, and package versions. Versioning is central to dependency management, release management, CI/CD, package publishing, database migrations, API compatibility, rollback strategies, and long-term software maintenance.",
+        "usedWith": [
+          "Semantic Versioning",
+          "Release",
+          "Release Management",
+          "Dependency Management",
+          "API Versioning",
+          "Package Managers",
+          "Package Registries",
+          "Git Tags",
+          "Changelog",
+          "CI/CD",
+          "Database Migrations",
+          "Backward Compatibility"
+        ],
+        "builtOn": [
+          "Version Identifiers",
+          "Compatibility Rules",
+          "Change Tracking",
+          "Release History",
+          "Dependency Constraints",
+          "Artifact Metadata"
+        ],
+        "builtUponBy": [
+          "Release Management Workflows",
+          "Dependency Resolution Workflows",
+          "Package Publishing Workflows",
+          "API Compatibility Workflows",
+          "CI/CD Release Pipelines",
+          "Rollback and Recovery Workflows",
+          "Reproducible Build Workflows",
+          "Software Maintenance Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Semantic Versioning",
+          "Calendar Versioning",
+          "Build Numbering",
+          "Commit Hash Pinning",
+          "Rolling Release Model",
+          "Unversioned Deployment"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Delivery",
+          "Release Management",
+          "Dependency Management",
+          "Package Management",
+          "API Design",
+          "Software Lifecycle"
+        ],
+        "includes": [],
+        "examples": [
+          "1.2.3 version number",
+          "v2 API version",
+          "npm package version in package.json",
+          "Docker image tag used as a version",
+          "Git tag marking a release",
+          "Database schema migration version",
+          "Pre-release version such as 2.0.0-beta.1",
+          "Calendar version such as 2026.07.04"
+        ],
+        "useCases": [
+          "Tracking changes between software releases",
+          "Communicating compatibility expectations",
+          "Managing package and dependency upgrades",
+          "Supporting reproducible builds",
+          "Coordinating API evolution",
+          "Publishing packages and artifacts",
+          "Supporting rollback to previous versions",
+          "Distinguishing stable, beta, and preview releases"
+        ],
+        "relatedConcepts": [
+          "Semantic Versioning",
+          "Release",
+          "Release Management",
+          "Dependency Management",
+          "API Versioning",
+          "Package Manager",
+          "Package Registry",
+          "Git Tag",
+          "Changelog",
+          "Backward Compatibility",
+          "Breaking Change",
+          "Reproducible Builds"
         ]
       }
     ]
