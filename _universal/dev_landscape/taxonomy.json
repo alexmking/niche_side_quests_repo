@@ -53891,6 +53891,118 @@
             "Requirements Analysis",
             "Web Development"
           ]
+        },
+        {
+          "id": "ux-design",
+          "name": "UX Design",
+          "continent": "Engineering",
+          "category": "Architecture & Design",
+          "subcategory": "Design & Modeling",
+          "aliases": [
+            "User Experience Design",
+            "UX",
+            "Experience Design",
+            "User-Centered Design",
+            "Interaction Design"
+          ],
+          "notes": "Design discipline focused on making software useful, usable, accessible, understandable, and aligned with user needs through research, flows, prototypes, interaction design, and usability validation.",
+          "tags": [
+            "ux",
+            "design",
+            "user-experience",
+            "user-research",
+            "usability",
+            "interaction-design",
+            "wireframes",
+            "prototyping"
+          ],
+          "whatIsIt": "A design discipline focused on shaping how users experience, understand, navigate, and interact with software products.",
+          "description": "UX Design is the practice of designing software experiences around user needs, goals, behaviors, constraints, and feedback. UX designers use research, personas, user journeys, information architecture, user flows, wireframes, prototypes, interaction patterns, usability testing, and accessibility considerations to shape how software works from the user's perspective. UX Design connects product management, frontend development, UI design, accessibility, user research, and iterative product development. It differs from UI design because UX focuses on the overall experience and task flow, while UI design focuses more on the visual and interactive surface.",
+          "usedWith": [
+            "Product Management",
+            "UI Design",
+            "User Research",
+            "Wireframe",
+            "Prototype",
+            "Figma",
+            "Design System",
+            "Accessibility",
+            "Frontend",
+            "Usability Testing",
+            "User Stories",
+            "A/B Testing"
+          ],
+          "builtOn": [
+            "User Research",
+            "Human-Computer Interaction",
+            "Usability",
+            "Information Architecture",
+            "Interaction Design",
+            "Accessibility",
+            "User-Centered Design"
+          ],
+          "builtUponBy": [
+            "Product Discovery Workflows",
+            "Frontend Development Workflows",
+            "Design System Development",
+            "Usability Testing Workflows",
+            "Feature Design Workflows",
+            "Prototype Validation Workflows",
+            "User Journey Mapping",
+            "Product Iteration Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "UI Design",
+            "Graphic Design",
+            "Developer-Driven Interface Design",
+            "Stakeholder-Driven Design",
+            "Ad Hoc Interface Design"
+          ],
+          "partOf": [
+            "Design & Modeling",
+            "Architecture & Design",
+            "Product Development",
+            "Frontend Development",
+            "User-Centered Design",
+            "Software Design",
+            "Design Systems"
+          ],
+          "includes": [],
+          "examples": [
+            "Designing a checkout flow to reduce user confusion",
+            "Creating wireframes for a new dashboard",
+            "Testing a prototype with users before implementation",
+            "Mapping a user's journey through an onboarding process",
+            "Improving form usability based on user feedback",
+            "Designing navigation for a complex web application",
+            "Using accessibility feedback to revise an interaction",
+            "Collaborating with frontend engineers to implement a design"
+          ],
+          "useCases": [
+            "Designing software around user needs",
+            "Improving usability and task completion",
+            "Reducing friction in user workflows",
+            "Validating product ideas before engineering implementation",
+            "Creating wireframes and prototypes for features",
+            "Improving accessibility and clarity",
+            "Aligning product requirements with user behavior",
+            "Guiding frontend implementation with clear interaction models"
+          ],
+          "relatedConcepts": [
+            "Product Management",
+            "UI Design",
+            "User Research",
+            "Wireframe",
+            "Prototype",
+            "Design System",
+            "Accessibility",
+            "Frontend",
+            "Usability Testing",
+            "Information Architecture",
+            "Human-Computer Interaction",
+            "A/B Testing"
+          ]
         }
       ]
     },
@@ -58568,6 +58680,335 @@
             "High Availability",
             "Production Readiness"
           ]
+        },
+        {
+          "id": "configuration-management",
+          "name": "Configuration Management",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Development Practices",
+          "aliases": [
+            "Config Management",
+            "Software Configuration Management",
+            "SCM",
+            "Infrastructure Configuration Management",
+            "Configuration Control"
+          ],
+          "notes": "Development and operations practice for managing, versioning, controlling, and applying software, system, infrastructure, and environment configuration consistently.",
+          "tags": [
+            "development-practice",
+            "configuration",
+            "devops",
+            "infrastructure",
+            "automation",
+            "release-management",
+            "deployment",
+            "operations"
+          ],
+          "whatIsIt": "A practice for controlling, versioning, tracking, and applying configuration consistently across software systems, environments, and infrastructure.",
+          "description": "Configuration Management is the practice of managing software, infrastructure, system, and environment configuration in a controlled and repeatable way. It helps teams define what configuration exists, where it lives, how it changes, who can change it, and how it is applied across development, testing, staging, and production environments. In software development, configuration management can include application settings, environment variables, secrets references, feature flags, deployment manifests, infrastructure-as-code definitions, server configuration, dependency versions, and release configuration. It is closely related to DevOps, CI/CD, infrastructure as code, release management, environment management, and change control.",
+          "usedWith": [
+            "DevOps",
+            "CI/CD",
+            "Infrastructure as Code",
+            "Terraform",
+            "Ansible",
+            "Kubernetes",
+            "Docker",
+            "Environment Variables",
+            "Secrets Management",
+            "Release Management",
+            "Version Control",
+            "Deployment"
+          ],
+          "builtOn": [
+            "Version Control",
+            "Change Control",
+            "Environment Configuration",
+            "Infrastructure Automation",
+            "Deployment Configuration",
+            "Configuration Files",
+            "Repeatable Processes"
+          ],
+          "builtUponBy": [
+            "DevOps Workflows",
+            "CI/CD Deployment Workflows",
+            "Infrastructure Automation Workflows",
+            "Release Management Workflows",
+            "Environment Promotion Workflows",
+            "Production Readiness Workflows",
+            "Change Management Workflows",
+            "Compliance and Audit Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Manual Configuration",
+            "Ad Hoc Server Setup",
+            "Configuration Drift",
+            "Hardcoded Configuration",
+            "Snowflake Servers"
+          ],
+          "partOf": [
+            "Development Practices",
+            "DevOps",
+            "Release Management",
+            "Infrastructure Management",
+            "Deployment Workflows",
+            "Software Delivery",
+            "Operational Excellence"
+          ],
+          "includes": [],
+          "examples": [
+            "Managing application settings per environment",
+            "Versioning Kubernetes manifests in Git",
+            "Using Terraform to manage infrastructure configuration",
+            "Using Ansible to configure servers consistently",
+            "Separating development, staging, and production configuration",
+            "Tracking configuration changes through pull requests",
+            "Detecting configuration drift between environments",
+            "Promoting tested configuration into production"
+          ],
+          "useCases": [
+            "Keeping environments consistent",
+            "Reducing configuration drift",
+            "Making deployments repeatable",
+            "Tracking configuration changes over time",
+            "Separating code from environment-specific settings",
+            "Supporting audit and compliance requirements",
+            "Managing infrastructure and application settings safely",
+            "Improving release reliability"
+          ],
+          "relatedConcepts": [
+            "DevOps",
+            "CI/CD",
+            "Infrastructure as Code",
+            "Environment",
+            "Environment Variable",
+            "Deployment",
+            "Release Management",
+            "Change Management",
+            "Secrets Management",
+            "Configuration Drift",
+            "Version Control",
+            "Operational Excellence"
+          ]
+        },
+        {
+          "id": "platform-engineering",
+          "name": "Platform Engineering",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Development Practices",
+          "aliases": [
+            "Internal Platform Engineering",
+            "Developer Platform Engineering",
+            "Platform Team Practice",
+            "Internal Developer Platform",
+            "IDP Engineering"
+          ],
+          "notes": "Engineering practice focused on building and operating internal platforms, paved roads, tooling, and self-service workflows that improve developer productivity and software delivery.",
+          "tags": [
+            "development-practice",
+            "devops",
+            "developer-productivity",
+            "internal-platform",
+            "automation",
+            "infrastructure",
+            "cloud-native",
+            "software-delivery"
+          ],
+          "whatIsIt": "A software engineering practice focused on creating internal developer platforms and self-service workflows that help teams build, deploy, and operate software more effectively.",
+          "description": "Platform Engineering is a development and operations practice focused on building internal platforms that make software delivery easier, safer, and more consistent for engineering teams. Platform teams create reusable tooling, golden paths, deployment templates, CI/CD workflows, infrastructure abstractions, observability integrations, service catalogs, documentation, and self-service capabilities. The goal is to reduce cognitive load for product teams while still giving them reliable ways to deploy, monitor, configure, and operate applications. Platform Engineering is closely related to DevOps, SRE, cloud-native development, infrastructure as code, developer experience, and internal developer platforms.",
+          "usedWith": [
+            "DevOps",
+            "Cloud Native",
+            "Site Reliability Engineering",
+            "CI/CD",
+            "Infrastructure as Code",
+            "Kubernetes",
+            "Terraform",
+            "Observability",
+            "Service Catalog",
+            "Internal Developer Platform",
+            "Developer Experience",
+            "Automation"
+          ],
+          "builtOn": [
+            "DevOps",
+            "Infrastructure Automation",
+            "Self-Service Workflows",
+            "Cloud-Native Infrastructure",
+            "Developer Experience",
+            "Standardized Delivery Workflows",
+            "Operational Best Practices"
+          ],
+          "builtUponBy": [
+            "Internal Developer Platform Workflows",
+            "Self-Service Deployment Workflows",
+            "Golden Path Development Workflows",
+            "Cloud-Native Delivery Workflows",
+            "Developer Productivity Programs",
+            "Infrastructure Automation Workflows",
+            "Production Readiness Workflows",
+            "Enterprise Software Delivery Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [],
+          "partOf": [
+            "Development Practices",
+            "DevOps",
+            "Software Delivery",
+            "Cloud-Native Development",
+            "Production Engineering",
+            "Developer Experience",
+            "Infrastructure Engineering"
+          ],
+          "includes": [],
+          "examples": [
+            "Internal portal for creating new services",
+            "Self-service deployment workflow for application teams",
+            "Golden path template for a new microservice",
+            "Reusable CI/CD pipeline maintained by a platform team",
+            "Terraform modules for standardized cloud infrastructure",
+            "Service catalog showing ownership and runtime details",
+            "Platform-provided observability dashboards and alerts",
+            "Kubernetes-based internal developer platform"
+          ],
+          "useCases": [
+            "Improving developer productivity",
+            "Reducing cognitive load for product teams",
+            "Standardizing software delivery workflows",
+            "Providing self-service infrastructure and deployment",
+            "Creating paved roads for common engineering tasks",
+            "Improving reliability of deployments and operations",
+            "Scaling DevOps practices across many teams",
+            "Building internal developer platforms"
+          ],
+          "relatedConcepts": [
+            "DevOps",
+            "Cloud Native",
+            "Site Reliability Engineering",
+            "Internal Developer Platform",
+            "Developer Experience",
+            "CI/CD",
+            "Infrastructure as Code",
+            "Kubernetes",
+            "Automation",
+            "Service Catalog",
+            "Golden Path",
+            "Software Delivery"
+          ]
+        },
+        {
+          "id": "requirements-engineering",
+          "name": "Requirements Engineering",
+          "continent": "Engineering",
+          "category": "Methodologies",
+          "subcategory": "Development Practices",
+          "aliases": [
+            "Requirements Analysis",
+            "Requirements Gathering",
+            "Requirements Management",
+            "Software Requirements Engineering",
+            "Requirements Definition"
+          ],
+          "notes": "Software engineering practice focused on discovering, analyzing, documenting, validating, prioritizing, and managing what a system must do and the constraints it must satisfy.",
+          "tags": [
+            "software-engineering",
+            "requirements",
+            "analysis",
+            "project-planning",
+            "stakeholder-management",
+            "sdlc",
+            "product-development",
+            "documentation"
+          ],
+          "whatIsIt": "A software engineering practice for identifying, refining, validating, and managing functional and non-functional requirements for a system.",
+          "description": "Requirements Engineering is the practice of understanding what a software system must accomplish, who it serves, what constraints it must satisfy, and how those needs should be documented and managed over time. It includes eliciting stakeholder needs, analyzing business rules, defining functional requirements, identifying non-functional requirements, resolving ambiguity, prioritizing scope, validating assumptions, tracing requirements to implementation and tests, and managing changes as a project evolves. It is especially important for complex, regulated, enterprise, safety-critical, or multi-stakeholder systems where unclear requirements can lead to rework, defects, missed expectations, and project risk.",
+          "usedWith": [
+            "SDLC",
+            "Agile",
+            "Scrum",
+            "User Stories",
+            "Use Case Diagram",
+            "Acceptance Criteria",
+            "Business Analysis",
+            "System Design",
+            "Testing",
+            "Traceability",
+            "Project Management",
+            "Architecture Decision Record"
+          ],
+          "builtOn": [
+            "Stakeholder Needs",
+            "Business Rules",
+            "Domain Knowledge",
+            "Functional Requirements",
+            "Non-Functional Requirements",
+            "Scope Definition",
+            "Validation and Verification"
+          ],
+          "builtUponBy": [
+            "Software Planning Workflows",
+            "System Design Workflows",
+            "Acceptance Testing Workflows",
+            "Agile Backlog Refinement",
+            "Enterprise Software Delivery",
+            "Regulated Software Development",
+            "Project Scope Management",
+            "Requirements Traceability Workflows"
+          ],
+          "runsOn": [],
+          "alternatives": [
+            "Ad Hoc Requirements Gathering",
+            "Informal Stakeholder Requests",
+            "Prototype-First Discovery",
+            "Pure Agile Backlog Discovery"
+          ],
+          "partOf": [
+            "Methodologies",
+            "Development Practices",
+            "Software Engineering",
+            "SDLC",
+            "Project Planning",
+            "Product Development",
+            "Business Analysis"
+          ],
+          "includes": [],
+          "examples": [
+            "Writing functional requirements for a new customer portal",
+            "Defining non-functional requirements for availability and latency",
+            "Interviewing stakeholders to clarify business rules",
+            "Creating acceptance criteria for a user story",
+            "Tracing requirements to test cases",
+            "Resolving conflicting requirements between departments",
+            "Documenting regulatory requirements for a healthcare application",
+            "Managing scope changes during a software project"
+          ],
+          "useCases": [
+            "Clarifying what a system must do",
+            "Reducing ambiguity before implementation",
+            "Aligning stakeholders and development teams",
+            "Defining functional and non-functional requirements",
+            "Supporting acceptance testing",
+            "Managing scope and change requests",
+            "Improving project planning and estimation",
+            "Reducing rework caused by misunderstood requirements"
+          ],
+          "relatedConcepts": [
+            "SDLC",
+            "Business Analysis",
+            "User Story",
+            "Acceptance Criteria",
+            "Use Case Diagram",
+            "Functional Requirement",
+            "Non-Functional Requirement",
+            "System Design",
+            "Testing",
+            "Traceability",
+            "Project Management",
+            "Agile"
+          ]
         }
       ]
     },
@@ -61665,6 +62106,123 @@
           "XML",
           "Avro",
           "Thrift"
+        ]
+      },
+      {
+        "id": "api-integration",
+        "name": "API Integration",
+        "continent": "Engineering",
+        "category": "API Technologies",
+        "subcategory": "",
+        "aliases": [
+          "API-Based Integration",
+          "Application API Integration",
+          "Third-Party API Integration",
+          "Service API Integration"
+        ],
+        "notes": "Engineering concept focused on connecting applications, services, platforms, or external systems through APIs so they can exchange data, trigger workflows, or share capabilities.",
+        "tags": [
+          "api",
+          "integration",
+          "backend",
+          "web-services",
+          "distributed-systems",
+          "data-exchange",
+          "interoperability",
+          "software-engineering"
+        ],
+        "whatIsIt": "The process of connecting software systems through APIs so they can communicate, exchange data, and coordinate behavior.",
+        "description": "API Integration is the practice of connecting applications, services, systems, or third-party platforms through application programming interfaces. Developers use API integrations to exchange data, automate workflows, connect internal systems, consume external services, synchronize state, expose business capabilities, and coordinate distributed applications. API integrations often involve REST APIs, GraphQL APIs, webhooks, authentication, authorization, rate limits, request and response schemas, error handling, retries, monitoring, versioning, SDKs, and integration testing.",
+        "usedWith": [
+          "REST API",
+          "GraphQL",
+          "Webhooks",
+          "SDK",
+          "OAuth",
+          "JWT",
+          "OpenAPI",
+          "Postman",
+          "Backend",
+          "Microservices",
+          "Middleware",
+          "CI/CD"
+        ],
+        "builtOn": [
+          "API Contracts",
+          "HTTP",
+          "Authentication",
+          "Authorization",
+          "Data Serialization",
+          "Request-Response Communication",
+          "Error Handling"
+        ],
+        "builtUponBy": [
+          "System Integration Workflows",
+          "Third-Party Service Integration",
+          "Backend Automation Workflows",
+          "Microservice Communication Workflows",
+          "Data Synchronization Workflows",
+          "Enterprise Application Integration",
+          "Workflow Automation Platforms"
+        ],
+        "runsOn": [
+          "Backend Services",
+          "Cloud Platforms",
+          "Serverless Functions",
+          "API Gateways",
+          "Integration Platforms",
+          "CI/CD Environments"
+        ],
+        "alternatives": [
+          "File-Based Integration",
+          "Database Integration",
+          "Message Queue Integration",
+          "Event-Driven Integration",
+          "Manual Data Transfer"
+        ],
+        "partOf": [
+          "API Technologies",
+          "Software Integration",
+          "Backend Development",
+          "Distributed Systems",
+          "Enterprise Software",
+          "Web Services",
+          "System Design"
+        ],
+        "includes": [],
+        "examples": [
+          "Connecting a payment processor API to an e-commerce app",
+          "Syncing customer records between a CRM and internal system",
+          "Calling a third-party weather API from a backend service",
+          "Using OAuth to integrate with a user's Google account",
+          "Receiving webhook events from a subscription billing platform",
+          "Using an SDK to call a cloud provider API",
+          "Mapping external API responses into internal domain models",
+          "Testing API integration behavior with Postman"
+        ],
+        "useCases": [
+          "Connecting internal and external systems",
+          "Automating cross-application workflows",
+          "Synchronizing data between services",
+          "Consuming third-party platform capabilities",
+          "Building backend integrations",
+          "Exposing business functionality across systems",
+          "Reducing manual data entry",
+          "Coordinating distributed applications"
+        ],
+        "relatedConcepts": [
+          "API",
+          "REST API",
+          "GraphQL",
+          "Webhook",
+          "SDK",
+          "API Contract",
+          "OAuth",
+          "Rate Limiting",
+          "Integration",
+          "Middleware",
+          "Microservices",
+          "Web Services"
         ]
       }
     ],
@@ -74459,6 +75017,350 @@
           "Prometheus",
           "Grafana"
         ]
+      },
+      {
+        "id": "logging",
+        "name": "Logging",
+        "continent": "Engineering",
+        "category": "Debugging & Profiling",
+        "subcategory": "",
+        "aliases": [
+          "Application Logging",
+          "System Logging",
+          "Structured Logging",
+          "Log Management",
+          "Event Logging"
+        ],
+        "notes": "Practice of recording application, system, security, and operational events to help developers debug issues, audit behavior, monitor production systems, and investigate incidents.",
+        "tags": [
+          "debugging",
+          "observability",
+          "monitoring",
+          "production-engineering",
+          "incident-response",
+          "diagnostics",
+          "operations",
+          "log-management"
+        ],
+        "whatIsIt": "A debugging and observability practice that records events, errors, state changes, and operational details as logs.",
+        "description": "Logging is the practice of recording events and diagnostic information from software systems. Developers use logs to understand application behavior, debug failures, trace request flow, investigate production incidents, audit security-relevant activity, and monitor important system events. Logs may be plain text, structured JSON, centralized in log management systems, enriched with correlation IDs, or connected to observability platforms. Logging is one of the core observability signals alongside metrics and traces, and it is especially useful for answering what happened before, during, and after a failure.",
+        "usedWith": [
+          "Observability",
+          "Metrics",
+          "Tracing",
+          "Monitoring",
+          "OpenTelemetry",
+          "Sentry",
+          "Datadog",
+          "Splunk",
+          "Grafana",
+          "Prometheus",
+          "Incident Response",
+          "CI/CD"
+        ],
+        "builtOn": [
+          "Event Recording",
+          "Diagnostic Messages",
+          "Timestamps",
+          "Log Levels",
+          "Structured Data",
+          "Correlation IDs",
+          "Application Instrumentation"
+        ],
+        "builtUponBy": [
+          "Production Debugging Workflows",
+          "Incident Investigation Workflows",
+          "Observability Workflows",
+          "Security Audit Workflows",
+          "Error Diagnosis Workflows",
+          "Operational Monitoring Workflows",
+          "Distributed System Troubleshooting"
+        ],
+        "runsOn": [
+          "Application Runtimes",
+          "Servers",
+          "Containers",
+          "Cloud Platforms",
+          "Kubernetes",
+          "CI/CD Environments"
+        ],
+        "alternatives": [
+          "Tracing",
+          "Metrics",
+          "Profiling",
+          "Debugging Breakpoints",
+          "Event Monitoring"
+        ],
+        "partOf": [
+          "Debugging & Profiling",
+          "Observability",
+          "Production Engineering",
+          "Incident Response",
+          "Monitoring",
+          "Software Diagnostics"
+        ],
+        "includes": [],
+        "examples": [
+          "Application error log with stack trace",
+          "JSON structured log entry",
+          "Request log containing method, path, status, and latency",
+          "Audit log recording a user permission change",
+          "Kubernetes pod logs viewed with kubectl logs",
+          "Centralized logs searched during an incident",
+          "Correlation ID used to follow a request across services"
+        ],
+        "useCases": [
+          "Debugging application failures",
+          "Investigating production incidents",
+          "Understanding request flow through a system",
+          "Auditing security-relevant events",
+          "Diagnosing errors after deployment",
+          "Monitoring operational behavior",
+          "Troubleshooting distributed systems",
+          "Providing context for alerts and metrics"
+        ],
+        "relatedConcepts": [
+          "Observability",
+          "Metrics",
+          "Tracing",
+          "Monitoring",
+          "Incident Response",
+          "Debugging",
+          "Structured Logging",
+          "Correlation ID",
+          "Log Aggregation",
+          "Stack Trace",
+          "Error Handling",
+          "Production Diagnostics"
+        ]
+      },
+      {
+        "id": "metrics",
+        "name": "Metrics",
+        "continent": "Engineering",
+        "category": "Debugging & Profiling",
+        "subcategory": "",
+        "aliases": [
+          "Application Metrics",
+          "System Metrics",
+          "Operational Metrics",
+          "Telemetry Metrics",
+          "Performance Metrics"
+        ],
+        "notes": "Quantitative measurements collected from software systems to monitor health, performance, reliability, usage, and operational behavior over time.",
+        "tags": [
+          "observability",
+          "monitoring",
+          "performance",
+          "reliability",
+          "production-engineering",
+          "telemetry",
+          "operations",
+          "diagnostics"
+        ],
+        "whatIsIt": "Quantitative measurements that describe system behavior, performance, health, usage, and reliability over time.",
+        "description": "Metrics are numeric measurements collected from applications, services, infrastructure, and user-facing systems. Developers and operators use metrics to monitor system health, detect performance regressions, trigger alerts, understand traffic patterns, track reliability, and evaluate production behavior over time. Common metrics include request rate, error rate, latency, CPU usage, memory usage, queue depth, throughput, saturation, uptime, and business-specific counters. Metrics are one of the core observability signals alongside logs and traces, and they are especially useful for dashboards, alerting, capacity planning, service-level objectives, and trend analysis.",
+        "usedWith": [
+          "Observability",
+          "Logging",
+          "Tracing",
+          "Monitoring",
+          "Prometheus",
+          "Grafana",
+          "OpenTelemetry",
+          "Datadog",
+          "New Relic",
+          "Sentry",
+          "Alerting",
+          "Site Reliability Engineering"
+        ],
+        "builtOn": [
+          "Instrumentation",
+          "Time Series Data",
+          "Counters",
+          "Gauges",
+          "Histograms",
+          "Aggregation",
+          "Sampling"
+        ],
+        "builtUponBy": [
+          "Monitoring Workflows",
+          "Alerting Workflows",
+          "Service-Level Objective Tracking",
+          "Capacity Planning Workflows",
+          "Performance Analysis Workflows",
+          "Production Readiness Reviews",
+          "Incident Response Workflows"
+        ],
+        "runsOn": [
+          "Application Runtimes",
+          "Servers",
+          "Containers",
+          "Kubernetes",
+          "Cloud Platforms",
+          "Monitoring Platforms"
+        ],
+        "alternatives": [
+          "Logging",
+          "Tracing",
+          "Profiling",
+          "Synthetic Monitoring",
+          "Real User Monitoring"
+        ],
+        "partOf": [
+          "Debugging & Profiling",
+          "Observability",
+          "Monitoring",
+          "Production Engineering",
+          "Site Reliability Engineering",
+          "Performance Engineering"
+        ],
+        "includes": [],
+        "examples": [
+          "HTTP request rate metric",
+          "Error rate dashboard",
+          "P95 latency chart",
+          "CPU and memory utilization metrics",
+          "Queue depth alert",
+          "Prometheus counter for completed jobs",
+          "Grafana dashboard showing service health",
+          "SLO burn-rate alert based on error budget usage"
+        ],
+        "useCases": [
+          "Monitoring application health",
+          "Detecting performance regressions",
+          "Triggering alerts for production issues",
+          "Tracking latency, traffic, errors, and saturation",
+          "Planning infrastructure capacity",
+          "Measuring reliability against SLOs",
+          "Understanding workload trends over time",
+          "Supporting incident response and postmortems"
+        ],
+        "relatedConcepts": [
+          "Observability",
+          "Logging",
+          "Tracing",
+          "Monitoring",
+          "Prometheus",
+          "Grafana",
+          "OpenTelemetry",
+          "Alerting",
+          "SLO",
+          "SLI",
+          "Latency",
+          "Throughput"
+        ]
+      },
+      {
+        "id": "distributed-tracing",
+        "name": "Distributed Tracing",
+        "continent": "Engineering",
+        "category": "Debugging & Profiling",
+        "subcategory": "",
+        "aliases": [
+          "Request Tracing",
+          "End-to-End Tracing",
+          "Service Tracing",
+          "Trace-Based Observability"
+        ],
+        "notes": "Observability technique used to follow a request as it travels across services, processes, queues, databases, and infrastructure components in a distributed system.",
+        "tags": [
+          "observability",
+          "debugging",
+          "profiling",
+          "distributed-systems",
+          "microservices",
+          "tracing",
+          "performance",
+          "reliability"
+        ],
+        "whatIsIt": "An observability and debugging technique that records the path, timing, and context of a request as it moves through a distributed system.",
+        "description": "Distributed Tracing is an observability technique used to understand how a request flows through multiple services, processes, databases, queues, and infrastructure components. A trace is usually made of spans, where each span represents a unit of work such as an HTTP request, database query, queue operation, RPC call, or internal function. Developers and SRE teams use distributed tracing to debug latency problems, identify failing dependencies, understand service interactions, find bottlenecks, analyze request paths, and troubleshoot complex microservice systems. It is commonly implemented using instrumentation libraries, trace IDs, span IDs, context propagation, OpenTelemetry, Jaeger, Zipkin, Grafana Tempo, cloud tracing tools, and APM platforms.",
+        "usedWith": [
+          "OpenTelemetry",
+          "Jaeger",
+          "Zipkin",
+          "Grafana Tempo",
+          "APM Tools",
+          "Microservices",
+          "Distributed Systems",
+          "Kubernetes",
+          "HTTP",
+          "gRPC",
+          "Message Queues",
+          "Logging"
+        ],
+        "builtOn": [
+          "Trace IDs",
+          "Span IDs",
+          "Context Propagation",
+          "Instrumentation",
+          "Distributed Systems",
+          "Request Metadata",
+          "Timing Data"
+        ],
+        "builtUponBy": [
+          "Observability Workflows",
+          "Microservice Debugging Workflows",
+          "Production Incident Investigation",
+          "Latency Analysis Workflows",
+          "Service Dependency Mapping",
+          "Performance Optimization Workflows",
+          "SRE Troubleshooting Workflows",
+          "Root Cause Analysis Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Centralized Logging",
+          "Metrics Monitoring",
+          "Application Profiling",
+          "APM Dashboards",
+          "Request Logging"
+        ],
+        "partOf": [
+          "Debugging & Profiling",
+          "Observability",
+          "Distributed Systems",
+          "Microservice Architecture",
+          "Site Reliability Engineering",
+          "Production Operations",
+          "Performance Analysis"
+        ],
+        "includes": [],
+        "examples": [
+          "Trace showing an API request across five microservices",
+          "OpenTelemetry instrumentation emitting traces",
+          "Jaeger trace timeline for a slow request",
+          "Zipkin view of service-to-service calls",
+          "Grafana Tempo trace linked from logs",
+          "Trace ID propagated through HTTP headers",
+          "Span showing a slow database query",
+          "Distributed trace used during incident debugging"
+        ],
+        "useCases": [
+          "Debugging slow requests across microservices",
+          "Finding latency bottlenecks in distributed systems",
+          "Understanding service-to-service dependencies",
+          "Investigating production incidents",
+          "Correlating logs, metrics, and traces",
+          "Identifying failing downstream dependencies",
+          "Analyzing request paths through complex systems",
+          "Improving observability for cloud-native applications"
+        ],
+        "relatedConcepts": [
+          "Observability",
+          "OpenTelemetry",
+          "Logging",
+          "Metrics",
+          "Monitoring",
+          "APM",
+          "Microservices",
+          "Distributed Systems",
+          "Root Cause Analysis",
+          "Latency",
+          "Instrumentation",
+          "Correlation ID"
+        ]
       }
     ],
     "Software Engineering Concepts": [
@@ -79735,6 +80637,3317 @@
           "Backward Compatibility",
           "Breaking Change",
           "Reproducible Builds"
+        ]
+      },
+      {
+        "id": "semantic-versioning",
+        "name": "Semantic Versioning",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "SemVer",
+          "Semantic Versioning Specification",
+          "SemVer Versioning",
+          "MAJOR.MINOR.PATCH Versioning"
+        ],
+        "notes": "Versioning scheme that communicates compatibility through MAJOR.MINOR.PATCH numbers, where major versions signal breaking changes, minor versions signal backward-compatible features, and patch versions signal backward-compatible fixes.",
+        "tags": [
+          "versioning",
+          "semantic-versioning",
+          "release-management",
+          "dependency-management",
+          "package-management",
+          "api-compatibility",
+          "software-delivery"
+        ],
+        "whatIsIt": "A versioning convention that uses structured version numbers to communicate compatibility, feature additions, bug fixes, and breaking changes.",
+        "description": "Semantic Versioning is a software versioning convention that represents versions using MAJOR.MINOR.PATCH numbers, often with optional pre-release identifiers and build metadata. Developers use semantic versioning to communicate compatibility expectations, manage dependency upgrades, publish packages, coordinate releases, and signal when a change may break existing consumers. A major version usually indicates breaking changes, a minor version usually indicates backward-compatible new functionality, and a patch version usually indicates backward-compatible bug fixes. Semantic Versioning is especially common in package ecosystems, libraries, APIs, frameworks, and open-source projects.",
+        "usedWith": [
+          "Versioning",
+          "Release",
+          "Dependency Management",
+          "Backward Compatibility",
+          "Breaking Changes",
+          "Package Managers",
+          "Package Registries",
+          "API Versioning",
+          "Changelog",
+          "Git Tags",
+          "CI/CD",
+          "Open Source"
+        ],
+        "builtOn": [
+          "Version Numbers",
+          "Public API Contracts",
+          "Backward Compatibility",
+          "Breaking Change Semantics",
+          "Release History",
+          "Dependency Constraints"
+        ],
+        "builtUponBy": [
+          "Dependency Resolution Workflows",
+          "Package Publishing Workflows",
+          "Release Management Workflows",
+          "API Compatibility Workflows",
+          "Library Upgrade Workflows",
+          "CI/CD Release Pipelines",
+          "Reproducible Build Workflows",
+          "Open Source Maintenance Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Calendar Versioning",
+          "Build Numbering",
+          "Date-Based Versioning",
+          "Commit Hash Pinning",
+          "Rolling Release Model",
+          "Unversioned Deployment"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Versioning",
+          "Release Management",
+          "Dependency Management",
+          "Package Management",
+          "Software Delivery",
+          "API Design"
+        ],
+        "includes": [],
+        "examples": [
+          "1.2.3",
+          "2.0.0 release indicating breaking changes",
+          "1.4.0 release adding backward-compatible features",
+          "1.4.1 patch release fixing bugs",
+          "2.0.0-beta.1 pre-release version",
+          "npm package version using SemVer",
+          "NuGet package version using SemVer-style numbering",
+          "Library changelog organized by semantic versions"
+        ],
+        "useCases": [
+          "Communicating compatibility expectations",
+          "Signaling breaking changes to consumers",
+          "Managing dependency upgrades",
+          "Publishing packages and libraries",
+          "Coordinating release notes and changelogs",
+          "Defining package version constraints",
+          "Supporting reproducible builds",
+          "Helping teams decide when upgrades are safe"
+        ],
+        "relatedConcepts": [
+          "Versioning",
+          "Release",
+          "Backward Compatibility",
+          "Breaking Change",
+          "Dependency Management",
+          "Package Manager",
+          "Package Registry",
+          "API Versioning",
+          "Changelog",
+          "Git Tag",
+          "Release Management",
+          "Reproducible Builds"
+        ]
+      },
+      {
+        "id": "backward-compatibility",
+        "name": "Backward Compatibility",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Backwards Compatibility",
+          "Backward-Compatible Change",
+          "Compatibility Preservation",
+          "Non-Breaking Compatibility"
+        ],
+        "notes": "Software compatibility concept where newer versions continue to support existing consumers, inputs, APIs, data formats, integrations, or behaviors from earlier versions.",
+        "tags": [
+          "compatibility",
+          "software-engineering",
+          "api-design",
+          "versioning",
+          "release-management",
+          "dependency-management",
+          "software-maintenance"
+        ],
+        "whatIsIt": "A compatibility property where a newer version of software continues to work with existing consumers, integrations, data, or behavior expectations from older versions.",
+        "description": "Backward Compatibility is the ability of a newer software version, API, library, data format, protocol, database schema, or system to continue supporting existing users, clients, integrations, inputs, or behaviors from earlier versions. Developers care about backward compatibility because breaking existing consumers can cause failed upgrades, production incidents, integration failures, dependency conflicts, and user disruption. Backward compatibility is closely connected to semantic versioning, API versioning, deprecation policies, migration planning, release management, contract testing, and long-term software maintenance. It is especially important for public APIs, shared libraries, protocols, enterprise systems, databases, and distributed services.",
+        "usedWith": [
+          "Versioning",
+          "Semantic Versioning",
+          "API Versioning",
+          "Release Management",
+          "Dependency Management",
+          "Deprecation",
+          "Migration Planning",
+          "Contract Testing",
+          "Public APIs",
+          "Libraries",
+          "Database Schemas",
+          "Protocols"
+        ],
+        "builtOn": [
+          "Compatibility Contracts",
+          "Stable Interfaces",
+          "Public API Design",
+          "Versioning Policies",
+          "Deprecation Policies",
+          "Regression Testing"
+        ],
+        "builtUponBy": [
+          "Safe Upgrade Workflows",
+          "API Evolution Workflows",
+          "Library Maintenance Workflows",
+          "Release Management Workflows",
+          "Dependency Upgrade Workflows",
+          "Enterprise Integration Workflows",
+          "Long-Term Support Workflows",
+          "Migration Planning Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Breaking Change",
+          "Forward Compatibility",
+          "Versioned APIs",
+          "Compatibility Layer",
+          "Migration-Only Upgrade",
+          "Rewrite or Replacement"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "API Design",
+          "Versioning",
+          "Release Management",
+          "Software Maintenance",
+          "Dependency Management",
+          "System Integration"
+        ],
+        "includes": [],
+        "examples": [
+          "Adding an optional API field without breaking existing clients",
+          "Keeping an old endpoint available during migration",
+          "Database migration that preserves existing reads",
+          "Library minor version that does not break callers",
+          "Protocol change that older clients can still ignore",
+          "Deprecating a method before removing it in a future major version",
+          "Maintaining old configuration keys while supporting new ones"
+        ],
+        "useCases": [
+          "Allowing users to upgrade safely",
+          "Preventing breaking changes in public APIs",
+          "Supporting existing integrations after a release",
+          "Maintaining library compatibility for downstream projects",
+          "Reducing production risk during deployments",
+          "Planning deprecations and migrations",
+          "Supporting long-lived enterprise systems",
+          "Keeping distributed systems compatible across versions"
+        ],
+        "relatedConcepts": [
+          "Versioning",
+          "Semantic Versioning",
+          "Breaking Change",
+          "API Versioning",
+          "Deprecation",
+          "Release Management",
+          "Contract Testing",
+          "Migration",
+          "Forward Compatibility",
+          "Public API",
+          "Regression Testing",
+          "Software Maintenance"
+        ]
+      },
+      {
+        "id": "code-smell",
+        "name": "Code Smell",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Code Smells",
+          "Design Smell",
+          "Implementation Smell",
+          "Maintainability Smell"
+        ],
+        "notes": "Software engineering concept describing a symptom in code that may indicate deeper design, maintainability, readability, or complexity problems.",
+        "tags": [
+          "software-engineering",
+          "code-quality",
+          "maintainability",
+          "refactoring",
+          "technical-debt",
+          "design-quality",
+          "readability",
+          "static-analysis"
+        ],
+        "whatIsIt": "A sign in source code that suggests a possible design or maintainability problem, even if the code still works correctly.",
+        "description": "A code smell is a noticeable pattern, structure, or implementation choice in source code that may indicate an underlying maintainability, readability, design, or complexity issue. Code smells are not necessarily bugs, but they often signal areas that may be harder to understand, modify, test, or extend over time. Common examples include duplicated code, long methods, large classes, excessive parameters, deep nesting, feature envy, shotgun surgery, tight coupling, poor naming, and unclear responsibilities. Developers use code smells to guide refactoring, code review, static analysis, technical debt tracking, and long-term maintainability improvements.",
+        "usedWith": [
+          "Refactoring",
+          "Maintainability",
+          "Technical Debt",
+          "Code Review",
+          "Static Analysis",
+          "SonarQube",
+          "ESLint",
+          "Clean Code",
+          "Design Patterns",
+          "Software Architecture",
+          "Unit Testing",
+          "OOP"
+        ],
+        "builtOn": [
+          "Code Quality",
+          "Software Design",
+          "Maintainability",
+          "Readability",
+          "Complexity Analysis",
+          "Refactoring Principles"
+        ],
+        "builtUponBy": [
+          "Code Review Workflows",
+          "Refactoring Workflows",
+          "Technical Debt Management",
+          "Static Analysis Workflows",
+          "Maintainability Improvement Workflows",
+          "Architecture Review Workflows",
+          "Software Quality Assessment"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Clean Code",
+          "Well-Factored Code",
+          "Simple Design"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Code Quality",
+          "Maintainability",
+          "Technical Debt",
+          "Refactoring",
+          "Software Design"
+        ],
+        "includes": [],
+        "examples": [
+          "A long method that handles validation, database access, and formatting",
+          "Duplicated business logic copied across several services",
+          "A god class responsible for many unrelated features",
+          "A method with too many parameters",
+          "Deeply nested conditionals that are hard to follow",
+          "A class that constantly accesses another class's internal data",
+          "SonarQube reporting maintainability code smells",
+          "Refactoring duplicated code into a shared helper or service"
+        ],
+        "useCases": [
+          "Identifying code that may need refactoring",
+          "Improving maintainability",
+          "Guiding code review feedback",
+          "Tracking technical debt",
+          "Improving readability and testability",
+          "Finding design problems before they become bugs",
+          "Prioritizing cleanup in large codebases",
+          "Supporting static analysis quality checks"
+        ],
+        "relatedConcepts": [
+          "Maintainability",
+          "Technical Debt",
+          "Refactoring",
+          "Code Quality",
+          "Static Analysis",
+          "SonarQube",
+          "Clean Code",
+          "Design Pattern",
+          "Low Coupling",
+          "High Cohesion",
+          "Complexity",
+          "Code Review"
+        ]
+      },
+      {
+        "id": "maintainability",
+        "name": "Maintainability",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Maintainability",
+          "Code Maintainability",
+          "Maintainable Code",
+          "Maintainable Software"
+        ],
+        "notes": "Software engineering quality attribute describing how easily software can be understood, modified, tested, fixed, extended, and safely evolved over time.",
+        "tags": [
+          "software-engineering",
+          "code-quality",
+          "maintainability",
+          "technical-debt",
+          "refactoring",
+          "software-design",
+          "architecture",
+          "long-term-quality"
+        ],
+        "whatIsIt": "A software quality attribute that measures how easily a system or codebase can be changed, fixed, extended, tested, and understood.",
+        "description": "Maintainability is a software engineering quality attribute focused on how easy it is to understand, modify, debug, test, refactor, extend, and operate software over time. Maintainable systems usually have clear structure, readable code, focused responsibilities, good naming, useful tests, low coupling, high cohesion, clear interfaces, manageable complexity, and well-controlled technical debt. Developers and teams use maintainability as a long-term design and quality goal because software usually spends far more time being changed than initially written. Maintainability is closely related to code quality, architecture, refactoring, testing, documentation, technical debt, and operational reliability.",
+        "usedWith": [
+          "Code Quality",
+          "Technical Debt",
+          "Refactoring",
+          "Code Review",
+          "Testing",
+          "Static Analysis",
+          "SonarQube",
+          "Clean Code",
+          "Software Architecture",
+          "Modularity",
+          "Cohesion",
+          "Low Coupling"
+        ],
+        "builtOn": [
+          "Readable Code",
+          "Modularity",
+          "Low Coupling",
+          "High Cohesion",
+          "Testing",
+          "Clear Interfaces",
+          "Controlled Complexity"
+        ],
+        "builtUponBy": [
+          "Long-Term Software Evolution",
+          "Refactoring Workflows",
+          "Technical Debt Management",
+          "Architecture Review Workflows",
+          "Code Review Workflows",
+          "Release Sustainability Planning",
+          "Large Codebase Ownership"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Unmaintainable Code",
+          "Big Ball of Mud",
+          "High Technical Debt"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Quality",
+          "Code Quality",
+          "Architecture & Design",
+          "Technical Debt Management",
+          "Software Lifecycle"
+        ],
+        "includes": [],
+        "examples": [
+          "A codebase where a bug fix can be made without touching many unrelated files",
+          "A service with clear boundaries and focused responsibilities",
+          "A module that is easy to test because dependencies are isolated",
+          "Readable code with clear names and simple control flow",
+          "Refactoring duplicated logic to improve future changeability",
+          "Reducing tight coupling between application layers",
+          "Using tests to make future changes safer",
+          "Tracking maintainability issues with SonarQube"
+        ],
+        "useCases": [
+          "Making software easier to change safely",
+          "Reducing long-term development cost",
+          "Improving code readability",
+          "Supporting refactoring and extension",
+          "Reducing technical debt",
+          "Improving testability",
+          "Making large systems easier to reason about",
+          "Supporting long-term product evolution"
+        ],
+        "relatedConcepts": [
+          "Code Smell",
+          "Technical Debt",
+          "Refactoring",
+          "Code Quality",
+          "Readability",
+          "Testability",
+          "Modularity",
+          "Low Coupling",
+          "High Cohesion",
+          "Software Architecture",
+          "Static Analysis",
+          "Clean Code"
+        ]
+      },
+      {
+        "id": "scalability",
+        "name": "Scalability",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Scalability",
+          "System Scalability",
+          "Application Scalability",
+          "Scalable Systems",
+          "Scalable Architecture"
+        ],
+        "notes": "Software engineering concept describing a system's ability to handle growth in users, traffic, data, workload, or complexity without unacceptable degradation.",
+        "tags": [
+          "software-engineering",
+          "system-design",
+          "architecture",
+          "performance",
+          "distributed-systems",
+          "cloud-computing",
+          "capacity-planning",
+          "reliability"
+        ],
+        "whatIsIt": "A system quality describing how well software can handle increased load, traffic, data, users, or complexity.",
+        "description": "Scalability is the ability of a software system to handle growth in workload, users, traffic, data volume, request rate, feature complexity, or organizational usage while maintaining acceptable performance and reliability. Scalable systems are designed so capacity can be increased through techniques such as horizontal scaling, vertical scaling, load balancing, caching, database partitioning, asynchronous processing, queueing, replication, and cloud elasticity. Scalability is closely related to system design, performance, reliability, availability, distributed systems, cloud architecture, and capacity planning.",
+        "usedWith": [
+          "System Design",
+          "Software Architecture",
+          "Cloud Computing",
+          "Distributed Systems",
+          "Microservices",
+          "Load Balancer",
+          "Caching",
+          "Databases",
+          "Kubernetes",
+          "Performance Testing",
+          "Observability",
+          "Capacity Planning"
+        ],
+        "builtOn": [
+          "Workload Growth",
+          "Resource Utilization",
+          "Throughput",
+          "Latency",
+          "Performance Bottlenecks",
+          "Capacity Planning",
+          "Architecture Tradeoffs"
+        ],
+        "builtUponBy": [
+          "System Design Workflows",
+          "Cloud Architecture Design",
+          "Distributed System Design",
+          "Performance Engineering Workflows",
+          "Capacity Planning Workflows",
+          "Traffic Growth Planning",
+          "High-Availability Architecture Design",
+          "Production Readiness Reviews"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "System Design",
+          "Software Architecture",
+          "Distributed Systems",
+          "Cloud Computing",
+          "Performance Engineering",
+          "Production Engineering"
+        ],
+        "includes": [],
+        "examples": [
+          "Adding more application instances behind a load balancer",
+          "Scaling a database with read replicas",
+          "Using caching to reduce backend load",
+          "Partitioning data across multiple shards",
+          "Autoscaling Kubernetes pods during traffic spikes",
+          "Using a message queue to smooth bursty workloads",
+          "Designing an API to handle increasing request volume"
+        ],
+        "useCases": [
+          "Handling traffic growth",
+          "Supporting more users without major rewrites",
+          "Planning infrastructure capacity",
+          "Designing cloud-native systems",
+          "Improving performance under load",
+          "Reducing bottlenecks in production systems",
+          "Preparing systems for peak usage",
+          "Evaluating system design tradeoffs"
+        ],
+        "relatedConcepts": [
+          "System Design",
+          "Performance",
+          "Reliability",
+          "Availability",
+          "Load Balancing",
+          "Caching",
+          "Horizontal Scaling",
+          "Vertical Scaling",
+          "Distributed Systems",
+          "Cloud Computing",
+          "Capacity Planning",
+          "Bottleneck"
+        ]
+      },
+      {
+        "id": "reliability",
+        "name": "Reliability",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Reliability",
+          "System Reliability",
+          "Application Reliability",
+          "Reliable Systems",
+          "Reliability Engineering"
+        ],
+        "notes": "Software engineering concept describing a system's ability to operate correctly and consistently over time, especially under expected conditions and failures.",
+        "tags": [
+          "software-engineering",
+          "system-design",
+          "architecture",
+          "production-engineering",
+          "fault-tolerance",
+          "availability",
+          "resilience",
+          "operations"
+        ],
+        "whatIsIt": "A system quality describing how consistently software performs correctly over time and under expected operating conditions.",
+        "description": "Reliability is the ability of a software system to perform its intended function correctly, consistently, and predictably over time. Reliable systems are designed to reduce failures, recover gracefully when failures occur, preserve data integrity, handle errors safely, and maintain acceptable behavior under expected workloads and partial outages. Reliability is closely related to availability, resilience, fault tolerance, observability, testing, incident response, monitoring, redundancy, graceful degradation, and site reliability engineering.",
+        "usedWith": [
+          "System Design",
+          "Software Architecture",
+          "Site Reliability Engineering",
+          "Observability",
+          "Monitoring",
+          "Incident Response",
+          "Testing",
+          "Fault Tolerance",
+          "High Availability",
+          "Distributed Systems",
+          "CI/CD"
+        ],
+        "builtOn": [
+          "Failure Handling",
+          "Error Handling",
+          "Redundancy",
+          "Fault Tolerance",
+          "Observability",
+          "Testing",
+          "Operational Discipline"
+        ],
+        "builtUponBy": [
+          "Production Readiness Reviews",
+          "Site Reliability Engineering Workflows",
+          "Incident Management Workflows",
+          "High-Availability Architecture Design",
+          "Disaster Recovery Planning",
+          "Chaos Engineering Workflows",
+          "Monitoring and Alerting Workflows",
+          "Release Management Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "System Design",
+          "Software Architecture",
+          "Production Engineering",
+          "Site Reliability Engineering",
+          "Operational Excellence",
+          "Software Quality"
+        ],
+        "includes": [],
+        "examples": [
+          "Retrying transient network failures safely",
+          "Failing over to a replica when a primary service fails",
+          "Using monitoring alerts to detect production issues",
+          "Designing a service to degrade gracefully during partial outages",
+          "Running automated tests to catch regressions before release",
+          "Using circuit breakers to prevent cascading failures",
+          "Restoring service from backups after data loss"
+        ],
+        "useCases": [
+          "Reducing production failures",
+          "Designing systems that recover from faults",
+          "Protecting data integrity",
+          "Improving uptime and user trust",
+          "Planning incident response and recovery",
+          "Evaluating production readiness",
+          "Designing resilient distributed systems",
+          "Measuring service quality with SLOs"
+        ],
+        "relatedConcepts": [
+          "Availability",
+          "Resilience",
+          "Fault Tolerance",
+          "Scalability",
+          "Observability",
+          "Monitoring",
+          "Incident Response",
+          "Site Reliability Engineering",
+          "Disaster Recovery",
+          "High Availability",
+          "Chaos Engineering",
+          "Error Handling"
+        ]
+      },
+      {
+        "id": "availability",
+        "name": "Availability",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "System Availability",
+          "Service Availability",
+          "Application Availability",
+          "Uptime",
+          "High Availability"
+        ],
+        "notes": "Software reliability concept describing whether a system, service, or application is operational and accessible when users or dependent systems need it.",
+        "tags": [
+          "reliability",
+          "availability",
+          "uptime",
+          "resilience",
+          "distributed-systems",
+          "operations",
+          "system-design",
+          "software-engineering"
+        ],
+        "whatIsIt": "A software quality and reliability concept that measures whether a system is usable and accessible when needed.",
+        "description": "Availability is a software engineering and system design concept focused on keeping systems, services, applications, APIs, and infrastructure operational and accessible when users or dependent systems need them. It is commonly measured through uptime percentages, SLAs, SLOs, error rates, downtime, incident duration, and recovery behavior. Developers and operators improve availability through redundancy, failover, load balancing, health checks, monitoring, fault tolerance, graceful degradation, capacity planning, disaster recovery, and incident response. Availability is closely related to reliability and fault tolerance, but availability specifically emphasizes whether the system is up and usable at a given time.",
+        "usedWith": [
+          "Reliability",
+          "Fault Tolerance",
+          "High Availability",
+          "SLA",
+          "SLO",
+          "Monitoring",
+          "Load Balancing",
+          "Redundancy",
+          "Failover",
+          "Disaster Recovery",
+          "Incident Response",
+          "Distributed Systems"
+        ],
+        "builtOn": [
+          "Redundancy",
+          "Fault Tolerance",
+          "Monitoring",
+          "Health Checks",
+          "Failover",
+          "Capacity Planning",
+          "Resilience Engineering"
+        ],
+        "builtUponBy": [
+          "High Availability Architecture Workflows",
+          "Production Reliability Workflows",
+          "SRE Operations Workflows",
+          "Incident Management Workflows",
+          "Disaster Recovery Planning",
+          "Cloud Service Design Workflows",
+          "Distributed System Design Workflows",
+          "Service Level Management Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "System Design",
+          "Reliability Engineering",
+          "Site Reliability Engineering",
+          "Production Operations",
+          "Distributed Systems",
+          "Cloud Architecture"
+        ],
+        "includes": [],
+        "examples": [
+          "99.9% monthly service availability",
+          "API uptime monitored by health checks",
+          "Load balancer routing traffic away from unhealthy instances",
+          "Database failover preserving service availability",
+          "Cloud service with multi-zone deployment",
+          "SLO tracking successful requests over time",
+          "Incident reducing availability during an outage",
+          "Graceful degradation keeping core features available"
+        ],
+        "useCases": [
+          "Measuring whether a service is usable by customers",
+          "Designing systems that remain online during failures",
+          "Setting SLAs and SLOs for production services",
+          "Planning redundancy and failover strategies",
+          "Evaluating production reliability",
+          "Prioritizing incident response and recovery",
+          "Designing cloud services across multiple zones or regions",
+          "Balancing cost, complexity, and uptime goals"
+        ],
+        "relatedConcepts": [
+          "Reliability",
+          "Fault Tolerance",
+          "High Availability",
+          "Resilience",
+          "SLA",
+          "SLO",
+          "Error Budget",
+          "Failover",
+          "Redundancy",
+          "Monitoring",
+          "Disaster Recovery",
+          "Incident Response"
+        ]
+      },
+      {
+        "id": "fault-tolerance",
+        "name": "Fault Tolerance",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Fault-Tolerant Design",
+          "Fault-Tolerant Systems",
+          "Failure Tolerance",
+          "Failure-Resilient Design"
+        ],
+        "notes": "Software and system design concept where a system continues operating, possibly in degraded form, even when components fail or errors occur.",
+        "tags": [
+          "reliability",
+          "fault-tolerance",
+          "resilience",
+          "distributed-systems",
+          "system-design",
+          "high-availability",
+          "failure-handling",
+          "software-engineering"
+        ],
+        "whatIsIt": "A system design concept where software continues functioning despite component failures, errors, or partial outages.",
+        "description": "Fault Tolerance is a software engineering and system design concept focused on allowing systems to continue operating when hardware, software, network, dependency, or process failures occur. Fault-tolerant systems use techniques such as redundancy, replication, failover, retries, timeouts, circuit breakers, health checks, isolation, quorum-based decisions, fallback behavior, and graceful degradation. The goal is not to prevent every failure, but to contain failures and preserve acceptable system behavior when failures happen. Fault tolerance is closely related to availability, reliability, resilience, disaster recovery, and distributed system design.",
+        "usedWith": [
+          "Availability",
+          "Reliability",
+          "High Availability",
+          "Redundancy",
+          "Replication",
+          "Failover",
+          "Load Balancing",
+          "Circuit Breaker",
+          "Retries",
+          "Timeouts",
+          "Health Checks",
+          "Distributed Systems"
+        ],
+        "builtOn": [
+          "Redundancy",
+          "Failure Detection",
+          "Failover",
+          "Replication",
+          "Isolation",
+          "Error Handling",
+          "Resilience Engineering"
+        ],
+        "builtUponBy": [
+          "High Availability Architecture Workflows",
+          "Distributed System Design Workflows",
+          "Cloud Reliability Workflows",
+          "SRE Operations Workflows",
+          "Disaster Recovery Planning",
+          "Production Resilience Workflows",
+          "Mission-Critical System Design",
+          "Incident Mitigation Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "System Design",
+          "Reliability Engineering",
+          "Site Reliability Engineering",
+          "Distributed Systems",
+          "Cloud Architecture",
+          "Resilience Engineering"
+        ],
+        "includes": [],
+        "examples": [
+          "Service failing over to a healthy instance",
+          "Database replica promoted after primary failure",
+          "Circuit breaker preventing calls to an unhealthy dependency",
+          "Retry with exponential backoff after transient network errors",
+          "Load balancer removing unhealthy nodes from rotation",
+          "Graceful degradation when a recommendation service is unavailable",
+          "Distributed system using quorum to tolerate node failures",
+          "Multi-zone deployment surviving a zone outage"
+        ],
+        "useCases": [
+          "Keeping systems operational during component failures",
+          "Reducing outage impact from dependency failures",
+          "Designing highly available cloud services",
+          "Handling transient network and service errors",
+          "Containing failures within isolated components",
+          "Supporting graceful degradation during partial outages",
+          "Improving reliability of distributed systems",
+          "Designing mission-critical software systems"
+        ],
+        "relatedConcepts": [
+          "Availability",
+          "Reliability",
+          "Resilience",
+          "High Availability",
+          "Failover",
+          "Redundancy",
+          "Replication",
+          "Circuit Breaker",
+          "Graceful Degradation",
+          "Disaster Recovery",
+          "Distributed Systems",
+          "Incident Response"
+        ]
+      },
+      {
+        "id": "resilience",
+        "name": "Resilience",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Resilience",
+          "System Resilience",
+          "Application Resilience",
+          "Fault Resilience"
+        ],
+        "notes": "Software engineering quality concept describing a system's ability to continue operating, recover gracefully, and limit user impact when failures, outages, overload, or dependency problems occur.",
+        "tags": [
+          "software-engineering",
+          "reliability",
+          "fault-tolerance",
+          "distributed-systems",
+          "availability",
+          "architecture",
+          "incident-response",
+          "system-design"
+        ],
+        "whatIsIt": "A system quality attribute focused on surviving failures, recovering gracefully, and maintaining acceptable behavior under stress or partial outage.",
+        "description": "Resilience is a software engineering and system design concept focused on how well an application, service, or distributed system can handle failures without completely breaking. Resilient systems are designed to tolerate dependency failures, network issues, overload, crashes, degraded components, and unexpected errors while preserving core functionality or recovering quickly. Developers and architects improve resilience through retries, timeouts, circuit breakers, bulkheads, graceful degradation, failover, redundancy, rate limiting, load shedding, health checks, monitoring, alerting, chaos testing, and incident response practices.",
+        "usedWith": [
+          "Reliability",
+          "Availability",
+          "Monitoring",
+          "Observability",
+          "Incident Response",
+          "Microservices",
+          "Distributed Systems",
+          "Load Balancing",
+          "Circuit Breaker Pattern",
+          "Retry Logic",
+          "Health Checks",
+          "Chaos Engineering"
+        ],
+        "builtOn": [
+          "Fault Tolerance",
+          "Failure Handling",
+          "Redundancy",
+          "Graceful Degradation",
+          "Recovery Strategies",
+          "Distributed Systems Design",
+          "Operational Awareness"
+        ],
+        "builtUponBy": [
+          "High-Availability System Design",
+          "Microservice Reliability Workflows",
+          "Incident Response Workflows",
+          "Disaster Recovery Planning",
+          "Production Readiness Reviews",
+          "Chaos Engineering Experiments",
+          "Site Reliability Engineering Practices",
+          "Cloud-Native Architecture Design"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Fragile System Design",
+          "Single Point of Failure Design",
+          "Fail-Fast Without Recovery"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "System Design",
+          "Software Architecture",
+          "Reliability Engineering",
+          "Site Reliability Engineering",
+          "Distributed Systems",
+          "Operational Excellence"
+        ],
+        "includes": [],
+        "examples": [
+          "A service using circuit breakers when a downstream dependency fails",
+          "Retrying transient network failures with exponential backoff",
+          "Serving cached data when a database is temporarily unavailable",
+          "Failing over traffic to a healthy region during an outage",
+          "Using health checks to remove unhealthy instances from rotation",
+          "Applying rate limits to protect a service from overload",
+          "Gracefully disabling non-critical features during partial failure",
+          "Running chaos experiments to validate failure handling"
+        ],
+        "useCases": [
+          "Keeping systems available during partial failures",
+          "Reducing user impact during outages",
+          "Recovering quickly from service failures",
+          "Designing fault-tolerant distributed systems",
+          "Preventing cascading failures",
+          "Improving production readiness",
+          "Supporting disaster recovery planning",
+          "Making microservices safer to operate"
+        ],
+        "relatedConcepts": [
+          "Reliability",
+          "Availability",
+          "Fault Tolerance",
+          "Disaster Recovery",
+          "Incident Response",
+          "Monitoring",
+          "Observability",
+          "Circuit Breaker Pattern",
+          "Failover",
+          "Redundancy",
+          "Chaos Engineering",
+          "Site Reliability Engineering"
+        ]
+      },
+      {
+        "id": "monitoring",
+        "name": "Monitoring",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Monitoring",
+          "System Monitoring",
+          "Application Monitoring",
+          "Production Monitoring",
+          "Infrastructure Monitoring"
+        ],
+        "notes": "Software engineering and operations concept focused on collecting, tracking, visualizing, and alerting on system health, performance, availability, errors, and operational signals.",
+        "tags": [
+          "software-engineering",
+          "observability",
+          "operations",
+          "reliability",
+          "metrics",
+          "alerting",
+          "production-systems",
+          "sre"
+        ],
+        "whatIsIt": "The practice of collecting and evaluating operational signals from applications, services, and infrastructure to understand health, performance, availability, and failures.",
+        "description": "Monitoring is the practice of collecting, tracking, visualizing, and alerting on operational signals from software systems and infrastructure. Teams use monitoring to understand whether applications are healthy, available, performant, and behaving as expected in production. Monitoring commonly includes metrics, logs, traces, uptime checks, dashboards, alerts, service-level indicators, error rates, latency, throughput, saturation, resource usage, and health checks. It supports reliability, incident response, capacity planning, performance tuning, production debugging, and long-term operational visibility.",
+        "usedWith": [
+          "Observability",
+          "Logging",
+          "Metrics",
+          "Tracing",
+          "Alerting",
+          "Dashboards",
+          "Prometheus",
+          "Grafana",
+          "OpenTelemetry",
+          "Sentry",
+          "Datadog",
+          "New Relic"
+        ],
+        "builtOn": [
+          "Metrics Collection",
+          "Log Collection",
+          "Health Checks",
+          "Telemetry",
+          "Alert Rules",
+          "Dashboards",
+          "Operational Signals"
+        ],
+        "builtUponBy": [
+          "Incident Response Workflows",
+          "Site Reliability Engineering Practices",
+          "Production Debugging Workflows",
+          "Capacity Planning Workflows",
+          "Performance Tuning Workflows",
+          "Service-Level Objective Tracking",
+          "Reliability Review Workflows",
+          "On-Call Operations"
+        ],
+        "runsOn": [
+          "Production Environments",
+          "Cloud Platforms",
+          "Kubernetes Clusters",
+          "Linux Servers",
+          "CI/CD Environments",
+          "Monitoring Platforms"
+        ],
+        "alternatives": [
+          "Manual Log Inspection",
+          "Ad Hoc Production Debugging",
+          "Synthetic Testing",
+          "Observability Platforms"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Observability",
+          "Site Reliability Engineering",
+          "Operations",
+          "Production Support",
+          "Reliability Engineering",
+          "Incident Management"
+        ],
+        "includes": [],
+        "examples": [
+          "Grafana dashboard showing service latency and error rate",
+          "Prometheus scraping application metrics",
+          "Alert firing when CPU usage stays high",
+          "Uptime check detecting a public endpoint outage",
+          "Sentry reporting application exceptions",
+          "OpenTelemetry traces showing slow downstream calls",
+          "Datadog monitor tracking database connection saturation",
+          "On-call alert triggered by elevated 5xx responses"
+        ],
+        "useCases": [
+          "Detecting production incidents",
+          "Tracking system health",
+          "Alerting teams about failures",
+          "Understanding performance trends",
+          "Supporting on-call operations",
+          "Debugging production issues",
+          "Measuring availability and reliability",
+          "Planning capacity and scaling decisions"
+        ],
+        "relatedConcepts": [
+          "Observability",
+          "Logging",
+          "Metrics",
+          "Tracing",
+          "Alerting",
+          "Dashboard",
+          "Prometheus",
+          "Grafana",
+          "OpenTelemetry",
+          "Incident Response",
+          "Reliability",
+          "SRE"
+        ]
+      },
+      {
+        "id": "rollback",
+        "name": "Rollback",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Rollback",
+          "Deployment Rollback",
+          "Release Rollback",
+          "Rollback Plan",
+          "Revert Deployment"
+        ],
+        "notes": "Software delivery and operations concept where a system, deployment, release, database, configuration, or feature change is returned to a previous known-good state.",
+        "tags": [
+          "software-engineering",
+          "deployment",
+          "release-management",
+          "incident-response",
+          "recovery",
+          "ci-cd",
+          "reliability",
+          "operations"
+        ],
+        "whatIsIt": "A recovery action that returns software, configuration, data, or infrastructure to a previous known-good version or state.",
+        "description": "Rollback is a software engineering, release management, and operations concept where a deployed change is reversed or returned to a previous known-good state. Teams use rollbacks when a release causes production incidents, failed deployments, severe bugs, performance regressions, data issues, failed migrations, or unexpected user impact. Rollbacks can involve redeploying a previous application version, reverting configuration changes, disabling feature flags, restoring infrastructure state, reversing database migrations, or switching traffic back to an earlier environment. Effective rollback planning is closely tied to CI/CD, release management, deployment strategies, monitoring, incident response, backups, database migrations, and backward compatibility.",
+        "usedWith": [
+          "Release",
+          "Deployment",
+          "Release Management",
+          "CI/CD",
+          "Monitoring",
+          "Incident Response",
+          "Feature Flags",
+          "Blue-Green Deployment",
+          "Canary Deployment",
+          "Database Migrations",
+          "Backups",
+          "Versioning"
+        ],
+        "builtOn": [
+          "Previous Known-Good State",
+          "Versioned Artifacts",
+          "Deployment History",
+          "Monitoring Signals",
+          "Incident Detection",
+          "Backup and Restore Processes",
+          "Release Management"
+        ],
+        "builtUponBy": [
+          "Incident Recovery Workflows",
+          "Deployment Recovery Workflows",
+          "Release Management Workflows",
+          "Production Operations Workflows",
+          "CI/CD Failure Recovery",
+          "Disaster Recovery Planning",
+          "Change Management Workflows",
+          "Reliability Engineering Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Roll Forward",
+          "Hotfix",
+          "Feature Flag Disablement",
+          "Traffic Failback",
+          "Restore from Backup",
+          "Manual Revert"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Release Management",
+          "Deployment Workflows",
+          "Incident Response",
+          "Production Operations",
+          "Reliability Engineering",
+          "Change Management"
+        ],
+        "includes": [],
+        "examples": [
+          "Rolling back from version 2.1.0 to version 2.0.3",
+          "Disabling a faulty feature flag after release",
+          "Reverting a Kubernetes deployment to a previous ReplicaSet",
+          "Rolling back a failed database migration",
+          "Switching traffic back to the blue environment",
+          "Restoring configuration after a bad production change",
+          "CI/CD pipeline redeploying the last successful artifact",
+          "Incident response runbook triggering rollback steps"
+        ],
+        "useCases": [
+          "Recovering from failed deployments",
+          "Reducing production incident impact",
+          "Returning to a known-good software version",
+          "Undoing faulty configuration changes",
+          "Handling bad releases quickly",
+          "Restoring service stability after regressions",
+          "Supporting safer release management",
+          "Mitigating risk in CI/CD delivery workflows"
+        ],
+        "relatedConcepts": [
+          "Release",
+          "Deployment",
+          "Release Management",
+          "Versioning",
+          "CI/CD",
+          "Incident Response",
+          "Rollback Plan",
+          "Roll Forward",
+          "Feature Flags",
+          "Blue-Green Deployment",
+          "Canary Deployment",
+          "Database Migration"
+        ]
+      },
+      {
+        "id": "rollout",
+        "name": "Rollout",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Rollout",
+          "Release Rollout",
+          "Deployment Rollout",
+          "Progressive Rollout"
+        ],
+        "notes": "Software delivery concept describing the controlled release of a change, feature, service, or version to users, environments, regions, or traffic segments over time.",
+        "tags": [
+          "software-engineering",
+          "deployment",
+          "release-management",
+          "ci-cd",
+          "progressive-delivery",
+          "production-systems",
+          "risk-management",
+          "software-delivery"
+        ],
+        "whatIsIt": "A controlled process for releasing software changes to users or environments gradually, safely, and observably.",
+        "description": "A rollout is the process of releasing a software change, feature, service, configuration, or version to users, environments, regions, servers, or traffic segments. Rollouts may happen all at once, but modern delivery workflows often use controlled approaches such as phased rollouts, canary releases, blue-green deployments, ring deployments, staged environment promotion, percentage-based traffic shifts, or feature-flag-based enablement. Teams use rollouts to reduce production risk, monitor behavior, catch issues early, roll back safely, and avoid exposing every user to a bad release at the same time.",
+        "usedWith": [
+          "Deployment",
+          "Release Management",
+          "CI/CD",
+          "Feature Flag",
+          "Monitoring",
+          "Observability",
+          "Rollback",
+          "Canary Release",
+          "Blue-Green Deployment",
+          "A/B Testing",
+          "Kubernetes",
+          "Progressive Delivery"
+        ],
+        "builtOn": [
+          "Deployment Automation",
+          "Release Planning",
+          "Environment Promotion",
+          "Traffic Management",
+          "Monitoring",
+          "Risk Reduction",
+          "Rollback Strategy"
+        ],
+        "builtUponBy": [
+          "Progressive Delivery Workflows",
+          "Production Release Workflows",
+          "Feature Launch Workflows",
+          "Canary Deployment Workflows",
+          "Incident Mitigation Workflows",
+          "Continuous Delivery Workflows",
+          "Cloud-Native Deployment Workflows"
+        ],
+        "runsOn": [
+          "Production Environments",
+          "Staging Environments",
+          "Cloud Platforms",
+          "Kubernetes Clusters",
+          "CI/CD Environments",
+          "Deployment Platforms"
+        ],
+        "alternatives": [
+          "Big Bang Release",
+          "Manual Release",
+          "Blue-Green Deployment",
+          "Canary Release",
+          "Rolling Deployment",
+          "Feature Flag Rollout"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Delivery",
+          "Deployment",
+          "Release Management",
+          "CI/CD",
+          "Progressive Delivery",
+          "Production Operations"
+        ],
+        "includes": [],
+        "examples": [
+          "Rolling out a new version to 5% of users before expanding to 100%",
+          "Deploying a service to staging before production",
+          "Canary rollout for a risky backend change",
+          "Rolling deployment across Kubernetes pods",
+          "Using a feature flag to enable a new UI for beta users",
+          "Pausing a rollout after error rates increase",
+          "Rolling back a release after failed health checks",
+          "Regional rollout starting in one data center before expanding globally"
+        ],
+        "useCases": [
+          "Releasing software changes safely",
+          "Reducing production deployment risk",
+          "Testing changes with a limited user group",
+          "Monitoring real-world behavior before full release",
+          "Supporting gradual feature launches",
+          "Enabling rollback when problems appear",
+          "Coordinating deployment across environments",
+          "Practicing progressive delivery"
+        ],
+        "relatedConcepts": [
+          "Deployment",
+          "Release Management",
+          "Feature Flag",
+          "Rollback",
+          "Canary Release",
+          "Blue-Green Deployment",
+          "Rolling Deployment",
+          "Progressive Delivery",
+          "Monitoring",
+          "Observability",
+          "CI/CD",
+          "A/B Testing"
+        ]
+      },
+      {
+        "id": "feature-flag",
+        "name": "Feature Flag",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Feature Toggle",
+          "Feature Switch",
+          "Feature Gate",
+          "Feature Flagging",
+          "Runtime Feature Toggle"
+        ],
+        "notes": "Software delivery concept used to enable, disable, target, or gradually release behavior without requiring a new deployment.",
+        "tags": [
+          "software-engineering",
+          "release-management",
+          "deployment",
+          "progressive-delivery",
+          "configuration",
+          "experimentation",
+          "risk-management",
+          "runtime-control"
+        ],
+        "whatIsIt": "A runtime control that lets teams turn software behavior on or off for specific users, groups, environments, or traffic segments.",
+        "description": "A feature flag is a software delivery technique that separates deployment from release by allowing teams to enable, disable, target, or gradually expose functionality at runtime. Feature flags are commonly used for progressive rollouts, canary releases, A/B testing, beta programs, kill switches, environment-specific behavior, operational controls, and safer production experimentation. Developers often implement feature flags through configuration, remote flag services, targeting rules, user segments, percentage rollouts, or application-level conditional logic. Feature flags are powerful but require lifecycle management because stale or poorly managed flags can increase complexity and technical debt.",
+        "usedWith": [
+          "Rollout",
+          "Deployment",
+          "Release Management",
+          "CI/CD",
+          "A/B Testing",
+          "Monitoring",
+          "Experimentation",
+          "Configuration Management",
+          "Canary Release",
+          "Progressive Delivery",
+          "Frontend",
+          "Backend"
+        ],
+        "builtOn": [
+          "Conditional Logic",
+          "Runtime Configuration",
+          "User Targeting",
+          "Environment Configuration",
+          "Progressive Delivery",
+          "Release Control",
+          "Risk Management"
+        ],
+        "builtUponBy": [
+          "Progressive Rollout Workflows",
+          "A/B Testing Workflows",
+          "Beta Release Workflows",
+          "Canary Release Workflows",
+          "Kill Switch Workflows",
+          "Experimentation Platforms",
+          "Continuous Delivery Workflows",
+          "Production Risk Mitigation Workflows"
+        ],
+        "runsOn": [
+          "Application Runtime",
+          "Frontend Applications",
+          "Backend Services",
+          "Mobile Applications",
+          "Cloud Platforms",
+          "Feature Management Platforms"
+        ],
+        "alternatives": [
+          "Configuration Flag",
+          "Branch-Based Release",
+          "Environment-Based Release",
+          "Separate Deployment",
+          "Hardcoded Toggle",
+          "Canary Release"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Delivery",
+          "Release Management",
+          "Deployment",
+          "Progressive Delivery",
+          "Experimentation",
+          "Configuration Management"
+        ],
+        "includes": [],
+        "examples": [
+          "Turning on a new checkout flow for 10% of users",
+          "Enabling a beta feature only for internal employees",
+          "Using a kill switch to disable a failing integration",
+          "Running an A/B test with two feature flag variants",
+          "Deploying code hidden behind a disabled feature flag",
+          "Rolling out a frontend redesign by user segment",
+          "Disabling an expensive feature during an outage",
+          "Removing a stale feature flag after full rollout"
+        ],
+        "useCases": [
+          "Separating deployment from release",
+          "Gradually enabling new features",
+          "Reducing release risk",
+          "Running experiments and A/B tests",
+          "Targeting features to specific users or environments",
+          "Disabling risky behavior quickly",
+          "Supporting beta programs",
+          "Controlling production behavior at runtime"
+        ],
+        "relatedConcepts": [
+          "Rollout",
+          "Deployment",
+          "Release Management",
+          "Progressive Delivery",
+          "Canary Release",
+          "A/B Testing",
+          "Configuration Management",
+          "Kill Switch",
+          "Technical Debt",
+          "Monitoring",
+          "CI/CD",
+          "Experimentation"
+        ]
+      },
+      {
+        "id": "environment",
+        "name": "Environment",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Environment",
+          "Runtime Environment",
+          "Deployment Environment",
+          "Application Environment",
+          "Development Environment",
+          "Execution Environment"
+        ],
+        "notes": "Context in which software is developed, configured, tested, deployed, or executed, including variables, dependencies, infrastructure, runtime settings, and external services.",
+        "tags": [
+          "software-engineering",
+          "deployment",
+          "runtime",
+          "configuration",
+          "devops",
+          "testing",
+          "infrastructure",
+          "operations"
+        ],
+        "whatIsIt": "The surrounding context and conditions in which software is developed, tested, deployed, configured, or executed.",
+        "description": "An environment is the context in which software runs or is worked on. It can include operating systems, runtimes, dependencies, environment variables, configuration files, network access, databases, external services, secrets, infrastructure, permissions, and deployment settings. Software teams commonly separate environments such as local development, test, QA, staging, production, sandbox, and disaster recovery to control risk and validate changes before users are affected. Environment is a broad software engineering concept that connects configuration management, deployment, runtime behavior, testing, CI/CD, cloud infrastructure, and operational reliability.",
+        "usedWith": [
+          "Configuration Management",
+          "Environment Variables",
+          "Deployment",
+          "CI/CD",
+          "DevOps",
+          "Testing",
+          "Runtime",
+          "Docker",
+          "Kubernetes",
+          "Cloud Platforms",
+          "Secrets Management"
+        ],
+        "builtOn": [
+          "Configuration",
+          "Runtime Settings",
+          "Infrastructure",
+          "Dependencies",
+          "Environment Variables",
+          "Operating System Context",
+          "External Services"
+        ],
+        "builtUponBy": [
+          "Development Workflows",
+          "Testing Workflows",
+          "CI/CD Deployment Workflows",
+          "Release Management Workflows",
+          "Production Operations Workflows",
+          "Environment Promotion Workflows",
+          "Configuration Management Workflows",
+          "Incident Investigation Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Hardcoded Runtime Context",
+          "Single Shared Environment",
+          "Manual Local Setup"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Deployment",
+          "DevOps",
+          "Runtime Execution",
+          "Testing",
+          "Configuration Management",
+          "Software Delivery"
+        ],
+        "includes": [],
+        "examples": [
+          "Local development environment on a developer workstation",
+          "Test environment used by automated integration tests",
+          "Staging environment mirroring production before release",
+          "Production environment serving real users",
+          "Docker container providing a consistent runtime environment",
+          "CI environment running builds and tests",
+          "Cloud environment hosting deployed services",
+          "Environment-specific database connection settings"
+        ],
+        "useCases": [
+          "Separating development, testing, staging, and production",
+          "Controlling configuration per deployment target",
+          "Testing changes safely before production release",
+          "Reproducing bugs under similar runtime conditions",
+          "Managing dependencies and external service connections",
+          "Supporting CI/CD pipelines",
+          "Reducing deployment risk",
+          "Improving operational reliability"
+        ],
+        "relatedConcepts": [
+          "Configuration Management",
+          "Environment Variable",
+          "Runtime",
+          "Deployment",
+          "CI/CD",
+          "DevOps",
+          "Testing",
+          "Staging",
+          "Production",
+          "Docker",
+          "Kubernetes",
+          "Cloud Computing"
+        ]
+      },
+      {
+        "id": "production",
+        "name": "Production",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Production Environment",
+          "Prod",
+          "Live Environment",
+          "Live System",
+          "Production System"
+        ],
+        "notes": "Live software environment that serves real users, customers, business workflows, or operational traffic and requires strict reliability, security, monitoring, and change-control practices.",
+        "tags": [
+          "software-engineering",
+          "environment",
+          "deployment",
+          "operations",
+          "reliability",
+          "monitoring",
+          "release-management",
+          "production-engineering"
+        ],
+        "whatIsIt": "The live environment where software runs for real users, customers, business processes, or operational workloads.",
+        "description": "Production is the live software environment where deployed systems serve real users, customers, business workflows, or operational traffic. Unlike development, test, QA, or staging environments, production changes can directly affect users and business operations, so production systems usually require stronger controls around deployment, monitoring, alerting, logging, security, backups, rollback, incident response, access permissions, and reliability. Production is closely related to release management, CI/CD, observability, configuration management, environment management, SRE, and operational readiness.",
+        "usedWith": [
+          "Environment",
+          "Deployment",
+          "CI/CD",
+          "Release Management",
+          "Monitoring",
+          "Logging",
+          "Metrics",
+          "Observability",
+          "Incident Response",
+          "Configuration Management",
+          "Staging",
+          "Rollback"
+        ],
+        "builtOn": [
+          "Runtime Environment",
+          "Production Configuration",
+          "Infrastructure",
+          "Deployment Pipelines",
+          "Monitoring and Alerting",
+          "Access Control",
+          "Operational Procedures"
+        ],
+        "builtUponBy": [
+          "Production Operations Workflows",
+          "Release Management Workflows",
+          "Incident Response Workflows",
+          "Site Reliability Engineering Workflows",
+          "Observability Workflows",
+          "Production Readiness Reviews",
+          "Disaster Recovery Planning"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Staging",
+          "QA Environment",
+          "Test Environment",
+          "Development Environment",
+          "Sandbox Environment"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Environment Management",
+          "Deployment",
+          "Release Management",
+          "Production Engineering",
+          "Operations",
+          "Software Delivery"
+        ],
+        "includes": [],
+        "examples": [
+          "Production API serving real customer requests",
+          "Production database containing live business data",
+          "Production deployment triggered after staging validation",
+          "Production monitoring dashboard showing service health",
+          "Rollback after a failed production release",
+          "Incident response for a production outage",
+          "Restricted production access for engineers"
+        ],
+        "useCases": [
+          "Serving real users and business workflows",
+          "Running live application workloads",
+          "Deploying released software versions",
+          "Monitoring system health and reliability",
+          "Responding to incidents and outages",
+          "Measuring production performance and availability",
+          "Protecting live data and operational systems",
+          "Validating release readiness after staging"
+        ],
+        "relatedConcepts": [
+          "Environment",
+          "Staging",
+          "Deployment",
+          "Release Management",
+          "CI/CD",
+          "Reliability",
+          "Observability",
+          "Monitoring",
+          "Incident Response",
+          "Rollback",
+          "SRE",
+          "Production Readiness"
+        ]
+      },
+      {
+        "id": "staging",
+        "name": "Staging",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Staging Environment",
+          "Pre-Production Environment",
+          "Preprod",
+          "Pre-Prod",
+          "Release Candidate Environment"
+        ],
+        "notes": "Pre-production environment used to validate software, configuration, integrations, migrations, and deployment behavior before release to production.",
+        "tags": [
+          "software-engineering",
+          "environment",
+          "deployment",
+          "testing",
+          "release-management",
+          "ci-cd",
+          "quality-assurance",
+          "configuration"
+        ],
+        "whatIsIt": "A pre-production environment used to test and validate changes before they are deployed to production.",
+        "description": "Staging is a pre-production software environment used to validate application changes, configuration, integrations, data migrations, infrastructure changes, and deployment behavior before releasing to production. Staging is often designed to resemble production as closely as practical, while still being safer for final testing, QA review, smoke testing, stakeholder validation, release rehearsals, and rollback planning. It helps teams catch issues that may not appear in local development, test, or QA environments because staging usually uses more production-like infrastructure, configuration, services, permissions, and deployment workflows.",
+        "usedWith": [
+          "Environment",
+          "Production",
+          "Deployment",
+          "CI/CD",
+          "Release Management",
+          "Smoke Testing",
+          "QA",
+          "Configuration Management",
+          "Database Migrations",
+          "Feature Flags",
+          "Rollback"
+        ],
+        "builtOn": [
+          "Runtime Environment",
+          "Production-Like Configuration",
+          "Deployment Pipelines",
+          "Test Data",
+          "Integration Points",
+          "Release Validation",
+          "Configuration Management"
+        ],
+        "builtUponBy": [
+          "Release Validation Workflows",
+          "Pre-Production Testing Workflows",
+          "Smoke Testing Workflows",
+          "Deployment Verification Workflows",
+          "QA Signoff Workflows",
+          "Production Readiness Reviews",
+          "Environment Promotion Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Production",
+          "QA Environment",
+          "Test Environment",
+          "Development Environment",
+          "Sandbox Environment"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Environment Management",
+          "Deployment",
+          "Release Management",
+          "Testing",
+          "Software Delivery",
+          "CI/CD Workflows"
+        ],
+        "includes": [],
+        "examples": [
+          "Staging environment used before production deployment",
+          "Smoke tests running against staging after deployment",
+          "Testing database migrations in staging",
+          "Validating third-party integrations before release",
+          "QA team reviewing a release candidate in staging",
+          "Feature flag behavior tested in a staging environment",
+          "Deployment pipeline promoting a build from staging to production"
+        ],
+        "useCases": [
+          "Validating releases before production",
+          "Testing deployment behavior safely",
+          "Running smoke tests against production-like systems",
+          "Checking configuration before go-live",
+          "Testing database migrations before production",
+          "Catching integration issues before users are affected",
+          "Supporting QA and stakeholder signoff",
+          "Reducing production release risk"
+        ],
+        "relatedConcepts": [
+          "Environment",
+          "Production",
+          "Deployment",
+          "Release Management",
+          "CI/CD",
+          "Smoke Testing",
+          "QA",
+          "Configuration Management",
+          "Feature Flag",
+          "Rollback",
+          "Production Readiness",
+          "Testing"
+        ]
+      },
+      {
+        "id": "legacy-system",
+        "name": "Legacy System",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Legacy Software",
+          "Legacy Application",
+          "Legacy Codebase",
+          "Legacy Platform"
+        ],
+        "notes": "Existing software system that remains important to the business but is often difficult to change, maintain, modernize, integrate, or replace due to age, complexity, outdated technology, or accumulated technical debt.",
+        "tags": [
+          "software-engineering",
+          "legacy-code",
+          "maintainability",
+          "modernization",
+          "technical-debt",
+          "architecture",
+          "migration",
+          "enterprise-software"
+        ],
+        "whatIsIt": "An older or established software system that still provides business value but may be costly or risky to maintain, change, integrate, or replace.",
+        "description": "A legacy system is an existing software application, platform, service, database, or codebase that continues to support important business operations while presenting maintenance, modernization, integration, or reliability challenges. Legacy systems may rely on outdated languages, frameworks, infrastructure, architecture, documentation, deployment processes, or domain assumptions, but they are not automatically bad; many are mission-critical and valuable. Developers often work with legacy systems when fixing bugs, adding features, refactoring, migrating data, modernizing architecture, replacing components, wrapping old functionality with APIs, or gradually moving toward newer systems.",
+        "usedWith": [
+          "Refactoring",
+          "Technical Debt",
+          "Maintainability",
+          "Migration",
+          "Modernization",
+          "Strangler Fig Pattern",
+          "Integration",
+          "API",
+          "Regression Testing",
+          "Documentation",
+          "Enterprise Software",
+          "Brownfield Development"
+        ],
+        "builtOn": [
+          "Existing Codebase",
+          "Business Rules",
+          "Historical Architecture Decisions",
+          "Production Data",
+          "Operational Dependencies",
+          "Accumulated Technical Debt"
+        ],
+        "builtUponBy": [
+          "Legacy Modernization Workflows",
+          "Migration Planning Workflows",
+          "Refactoring Workflows",
+          "Strangler Fig Modernization",
+          "Enterprise Integration Workflows",
+          "Regression Testing Workflows",
+          "Risk-Based Release Planning"
+        ],
+        "runsOn": [
+          "Production Environments",
+          "On-Premises Infrastructure",
+          "Cloud Platforms",
+          "Older Operating Systems",
+          "Legacy Runtimes",
+          "Enterprise Infrastructure"
+        ],
+        "alternatives": [
+          "Greenfield Project",
+          "Modernized System",
+          "Replacement System",
+          "New Platform"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Maintenance",
+          "Enterprise Software",
+          "Software Architecture",
+          "Technical Debt Management",
+          "Modernization Strategy"
+        ],
+        "includes": [],
+        "examples": [
+          "A COBOL mainframe application still processing financial transactions",
+          "An old internal desktop application that still supports daily operations",
+          "A monolithic web application being gradually split into services",
+          "A production database schema that many systems depend on",
+          "An older C++ service with limited documentation and high business importance",
+          "A legacy API wrapped by a newer service layer",
+          "A system being modernized using the Strangler Fig Pattern"
+        ],
+        "useCases": [
+          "Maintaining business-critical existing software",
+          "Planning modernization or migration work",
+          "Refactoring risky or outdated codebases",
+          "Preserving important business rules",
+          "Reducing technical debt over time",
+          "Integrating older systems with newer applications",
+          "Replacing old systems gradually",
+          "Managing risk during software evolution"
+        ],
+        "relatedConcepts": [
+          "Technical Debt",
+          "Maintainability",
+          "Refactoring",
+          "Migration",
+          "Modernization",
+          "Brownfield Development",
+          "Greenfield Project",
+          "Strangler Fig Pattern",
+          "Enterprise Software",
+          "Regression Testing",
+          "Software Architecture",
+          "Integration"
+        ]
+      },
+      {
+        "id": "greenfield-project",
+        "name": "Greenfield Project",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Greenfield Development",
+          "Greenfield Software Project",
+          "New Build Project",
+          "New System Development"
+        ],
+        "notes": "Software project that starts from a clean slate without needing to preserve or directly modify an existing legacy codebase, architecture, or production system.",
+        "tags": [
+          "software-engineering",
+          "project-type",
+          "software-development",
+          "architecture",
+          "system-design",
+          "product-development",
+          "planning",
+          "clean-slate"
+        ],
+        "whatIsIt": "A new software project started from scratch, with fewer constraints from an existing codebase, legacy architecture, or deployed production system.",
+        "description": "A greenfield project is a software development effort that begins from a clean slate rather than modifying an existing system. Teams use greenfield projects to design a new application, platform, service, product, architecture, or codebase without needing to preserve legacy implementation details. Greenfield work gives teams more freedom to choose technologies, architecture, development practices, data models, deployment workflows, and quality standards, but it also carries risks such as overengineering, unclear requirements, underestimated complexity, and lack of real production feedback. Greenfield projects are often contrasted with brownfield development and legacy-system modernization.",
+        "usedWith": [
+          "System Design",
+          "Software Architecture",
+          "Architecture Decision Record",
+          "Technology Selection",
+          "Project Planning",
+          "Requirements Gathering",
+          "CI/CD",
+          "Testing Strategy",
+          "Product Development",
+          "Minimum Viable Product",
+          "Cloud Computing",
+          "Agile"
+        ],
+        "builtOn": [
+          "Requirements Analysis",
+          "Architecture Design",
+          "Technology Selection",
+          "Project Planning",
+          "Domain Modeling",
+          "Software Development Practices"
+        ],
+        "builtUponBy": [
+          "New Product Development Workflows",
+          "Application Architecture Design",
+          "MVP Development Workflows",
+          "Cloud-Native Application Development",
+          "Platform Engineering Initiatives",
+          "Startup Product Development",
+          "Internal Tool Development"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Brownfield Development",
+          "Legacy System Modernization",
+          "Refactoring Existing System",
+          "System Rewrite",
+          "Incremental Migration"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Development",
+          "Project Planning",
+          "System Design",
+          "Software Architecture",
+          "Product Development"
+        ],
+        "includes": [],
+        "examples": [
+          "Starting a brand-new SaaS application from scratch",
+          "Designing a new backend service with no existing codebase",
+          "Creating a new internal tool with a modern tech stack",
+          "Building a new mobile app before any production release exists",
+          "Creating the first version of a platform using cloud-native architecture",
+          "Choosing initial frameworks, databases, and deployment workflows",
+          "Creating a new repository with initial CI/CD and testing setup"
+        ],
+        "useCases": [
+          "Starting a new software product",
+          "Designing a system without legacy constraints",
+          "Choosing a modern architecture and technology stack",
+          "Building an MVP from scratch",
+          "Creating a new service or platform",
+          "Establishing coding standards and project structure early",
+          "Experimenting with a new technical direction",
+          "Avoiding constraints from an existing legacy codebase"
+        ],
+        "relatedConcepts": [
+          "Legacy System",
+          "Brownfield Development",
+          "System Design",
+          "Software Architecture",
+          "Project Planning",
+          "Technology Selection",
+          "Minimum Viable Product",
+          "Architecture Decision Record",
+          "Technical Debt",
+          "Refactoring",
+          "Migration",
+          "Product Development"
+        ]
+      },
+      {
+        "id": "brownfield-project",
+        "name": "Brownfield Project",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Brownfield Development",
+          "Brownfield Software Project",
+          "Existing-System Project",
+          "Existing Codebase Project",
+          "Legacy Project Work"
+        ],
+        "notes": "Software project that modifies, extends, integrates with, migrates, or modernizes an existing system or codebase rather than starting from a clean slate.",
+        "tags": [
+          "software-engineering",
+          "brownfield",
+          "existing-codebase",
+          "maintenance",
+          "modernization",
+          "legacy-systems",
+          "refactoring",
+          "project-work"
+        ],
+        "whatIsIt": "A software project carried out within an existing system, codebase, architecture, data model, or production environment.",
+        "description": "A Brownfield Project is software work performed on an existing codebase, system, product, or production environment. Unlike a greenfield project, where the team starts from a clean slate, brownfield work must account for existing architecture, business rules, dependencies, integrations, data, deployment processes, technical debt, tests, users, and operational constraints. Developers often encounter brownfield projects when adding features to mature products, modernizing legacy systems, refactoring old code, migrating frameworks, replacing infrastructure, integrating new services, or improving maintainability without breaking existing behavior.",
+        "usedWith": [
+          "Codebase",
+          "Legacy System",
+          "Refactoring",
+          "Technical Debt",
+          "Regression Testing",
+          "Migration",
+          "Integration",
+          "Documentation",
+          "CI/CD",
+          "Release Management",
+          "Backward Compatibility",
+          "Change Management"
+        ],
+        "builtOn": [
+          "Existing Codebase",
+          "Existing Architecture",
+          "Existing Business Rules",
+          "Production Constraints",
+          "Legacy Dependencies",
+          "Operational History",
+          "Existing Data Models"
+        ],
+        "builtUponBy": [
+          "Legacy Modernization Workflows",
+          "Feature Enhancement Workflows",
+          "Refactoring Workflows",
+          "Migration Workflows",
+          "Maintenance Development Workflows",
+          "Enterprise System Change Workflows",
+          "Incremental Architecture Improvement Workflows",
+          "Production Stabilization Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Greenfield Project",
+          "Clean-Slate Rewrite",
+          "New Product Development",
+          "Proof of Concept",
+          "Prototype Project",
+          "Replacement System"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Maintenance",
+          "Legacy Modernization",
+          "Application Development",
+          "Enterprise Software Development",
+          "Project Planning",
+          "Software Lifecycle"
+        ],
+        "includes": [],
+        "examples": [
+          "Adding a feature to a mature enterprise application",
+          "Modernizing a legacy monolith incrementally",
+          "Migrating an existing application from one framework to another",
+          "Refactoring a large production codebase safely",
+          "Replacing an old integration without breaking existing users",
+          "Adding automated tests around legacy code before changing it",
+          "Improving deployment pipelines for an existing product",
+          "Updating dependencies in a long-running application"
+        ],
+        "useCases": [
+          "Extending existing software products",
+          "Modernizing legacy systems",
+          "Reducing technical debt incrementally",
+          "Adding features without breaking existing behavior",
+          "Migrating old frameworks, runtimes, or infrastructure",
+          "Improving test coverage in mature codebases",
+          "Integrating new systems with existing applications",
+          "Maintaining production software over time"
+        ],
+        "relatedConcepts": [
+          "Greenfield Project",
+          "Codebase",
+          "Legacy System",
+          "Technical Debt",
+          "Refactoring",
+          "Migration",
+          "Regression Testing",
+          "Backward Compatibility",
+          "Software Maintenance",
+          "Modernization",
+          "Change Management",
+          "Enterprise Software"
+        ]
+      },
+      {
+        "id": "codebase",
+        "name": "Codebase",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Source Code Base",
+          "Project Codebase",
+          "Application Codebase",
+          "Repository Codebase",
+          "Source Tree"
+        ],
+        "notes": "Collection of source code and related project files that make up a software system, application, library, service, or product.",
+        "tags": [
+          "software-engineering",
+          "source-code",
+          "repository",
+          "project-structure",
+          "maintainability",
+          "architecture",
+          "development",
+          "code-organization"
+        ],
+        "whatIsIt": "The body of source code and supporting project files that make up a software system or component.",
+        "description": "A Codebase is the organized collection of source files, configuration files, tests, build scripts, dependency manifests, documentation, assets, schemas, and related artifacts that make up a software application, service, library, framework, or system. Developers work within codebases to add features, fix bugs, refactor design, review changes, run tests, build artifacts, and maintain software over time. A codebase may live in one repository or be split across multiple repositories, and it can range from a small library to a large enterprise system with many teams, modules, products, and deployment targets.",
+        "usedWith": [
+          "Git",
+          "Repository",
+          "Version Control",
+          "Build System",
+          "CI/CD",
+          "Testing",
+          "Code Review",
+          "Refactoring",
+          "Documentation",
+          "Dependency Management",
+          "IDE",
+          "Technical Debt"
+        ],
+        "builtOn": [
+          "Source Code",
+          "Programming Languages",
+          "Project Structure",
+          "Configuration Files",
+          "Dependency Manifests",
+          "Build Scripts",
+          "Version Control History"
+        ],
+        "builtUponBy": [
+          "Feature Development Workflows",
+          "Bug Fixing Workflows",
+          "Code Review Workflows",
+          "Refactoring Workflows",
+          "Testing Workflows",
+          "Build and Release Workflows",
+          "Maintenance Development Workflows",
+          "Architecture Evolution Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Repository",
+          "Monorepo",
+          "Multi-Repo Architecture",
+          "Source Package",
+          "Generated Code",
+          "Binary Artifact"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Development",
+          "Application Development",
+          "Source Control Workflows",
+          "Build and Release Workflows",
+          "Software Maintenance",
+          "Software Architecture"
+        ],
+        "includes": [],
+        "examples": [
+          "Frontend application codebase",
+          "Backend service codebase",
+          "Monorepo containing multiple packages",
+          "Library codebase published to a package registry",
+          "Legacy enterprise application codebase",
+          "Microservice codebase with tests and deployment files",
+          "Repository containing source code, configs, and build scripts",
+          "Large C++ and C# product codebase"
+        ],
+        "useCases": [
+          "Organizing software source code",
+          "Adding features to an application",
+          "Fixing bugs in existing software",
+          "Running tests and builds",
+          "Reviewing and merging code changes",
+          "Refactoring and improving maintainability",
+          "Tracking software history through version control",
+          "Supporting releases and deployments"
+        ],
+        "relatedConcepts": [
+          "Source Code",
+          "Repository",
+          "Version Control",
+          "Git",
+          "Monorepo",
+          "Module",
+          "Build",
+          "Artifact",
+          "Technical Debt",
+          "Refactoring",
+          "Brownfield Project",
+          "Software Architecture"
+        ]
+      },
+      {
+        "id": "repository",
+        "name": "Repository",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Repo",
+          "Code Repository",
+          "Source Repository",
+          "Git Repository",
+          "Version-Control Repository"
+        ],
+        "notes": "Storage location for source code, project files, version history, branches, commits, and collaboration metadata, commonly managed by a version control system such as Git.",
+        "tags": [
+          "version-control",
+          "source-code",
+          "repository",
+          "git",
+          "collaboration",
+          "software-engineering",
+          "codebase",
+          "development-workflow"
+        ],
+        "whatIsIt": "A version-controlled storage location for source code, project files, history, branches, commits, and collaboration workflows.",
+        "description": "A Repository is a storage and collaboration unit for software source code and related project files. In modern development, repositories are most commonly managed with Git and hosted on platforms such as GitHub, GitLab, Bitbucket, or Azure Repos. A repository usually contains source files, tests, configuration files, documentation, build scripts, dependency manifests, branches, commits, tags, pull requests, issues, and release metadata. Developers use repositories to track code history, collaborate on changes, review pull requests, organize projects, manage releases, and support CI/CD workflows. A repository is closely related to a codebase, but repository usually emphasizes version control and collaboration, while codebase emphasizes the actual body of source code and project artifacts.",
+        "usedWith": [
+          "Git",
+          "Version Control",
+          "GitHub",
+          "GitLab",
+          "Bitbucket",
+          "Azure Repos",
+          "Codebase",
+          "Branching",
+          "Pull Request Workflow",
+          "CI/CD",
+          "Release Management",
+          "Code Review"
+        ],
+        "builtOn": [
+          "Source Code",
+          "Version Control",
+          "Commit History",
+          "Branches",
+          "Tags",
+          "Project Structure",
+          "Collaboration Workflows"
+        ],
+        "builtUponBy": [
+          "Code Review Workflows",
+          "Feature Development Workflows",
+          "Branch-Based Development Workflows",
+          "CI/CD Pipeline Workflows",
+          "Release Management Workflows",
+          "Open Source Collaboration Workflows",
+          "Repository Hosting Workflows",
+          "Software Maintenance Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Monorepo",
+          "Multi-Repo Architecture",
+          "Source Package",
+          "Artifact Repository",
+          "File Share",
+          "Vendored Source Tree"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Version Control Workflows",
+          "Source Control",
+          "Software Development",
+          "Code Collaboration",
+          "Build and Release Workflows",
+          "Software Maintenance"
+        ],
+        "includes": [],
+        "examples": [
+          "Git repository hosted on GitHub",
+          "Backend service repository",
+          "Frontend application repository",
+          "Library repository with package publishing workflow",
+          "Repository containing source code, tests, and CI configuration",
+          "Repository branch used for feature development",
+          "Pull request opened against a repository",
+          "Git tag marking a release in a repository"
+        ],
+        "useCases": [
+          "Storing source code and project files",
+          "Tracking software history through commits",
+          "Collaborating on code changes",
+          "Reviewing pull requests",
+          "Managing branches and releases",
+          "Triggering CI/CD pipelines",
+          "Organizing software projects",
+          "Supporting open source collaboration"
+        ],
+        "relatedConcepts": [
+          "Codebase",
+          "Git",
+          "Version Control",
+          "Branch",
+          "Commit",
+          "Pull Request Workflow",
+          "Code Review",
+          "Monorepo",
+          "Multi-Repo Architecture",
+          "CI/CD",
+          "Release",
+          "Artifact"
+        ]
+      },
+      {
+        "id": "monorepo",
+        "name": "Monorepo",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Mono Repository",
+          "Monolithic Repository",
+          "Single Repository Architecture",
+          "Single-Repo Codebase",
+          "Multi-Project Repository"
+        ],
+        "notes": "Repository strategy where multiple projects, packages, services, applications, or libraries are stored and managed together in one shared version-control repository.",
+        "tags": [
+          "repository",
+          "monorepo",
+          "codebase",
+          "version-control",
+          "build-systems",
+          "software-architecture",
+          "developer-workflow",
+          "software-engineering"
+        ],
+        "whatIsIt": "A repository strategy where multiple related projects, packages, applications, services, or libraries live together in a single version-controlled repository.",
+        "description": "A Monorepo is a source-control strategy where multiple projects, packages, services, applications, libraries, or shared modules are stored in one repository rather than being split across many separate repositories. Teams use monorepos to share code more easily, coordinate cross-project changes, standardize tooling, improve visibility, simplify dependency updates, and make large refactors across related projects. Monorepos often require specialized tooling for workspace management, incremental builds, dependency graph analysis, test selection, ownership boundaries, and CI/CD optimization. A monorepo is not simply a large repository; its defining feature is that multiple separately useful projects or packages are intentionally managed together in one repository.",
+        "usedWith": [
+          "Repository",
+          "Codebase",
+          "Git",
+          "Version Control",
+          "CI/CD",
+          "Build Systems",
+          "Dependency Management",
+          "npm Workspaces",
+          "Yarn Workspaces",
+          "pnpm Workspaces",
+          "Nx",
+          "Turborepo"
+        ],
+        "builtOn": [
+          "Version Control",
+          "Repository Structure",
+          "Workspace Management",
+          "Dependency Graphs",
+          "Shared Tooling",
+          "Build Automation",
+          "Code Ownership Boundaries"
+        ],
+        "builtUponBy": [
+          "Multi-Package Development Workflows",
+          "Shared Library Development Workflows",
+          "Cross-Project Refactoring Workflows",
+          "Incremental Build Workflows",
+          "Large-Scale CI/CD Workflows",
+          "Frontend Platform Workflows",
+          "Microservice Development Workflows",
+          "Enterprise Codebase Management Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Multi-Repo Architecture",
+          "Polyrepo",
+          "Separate Repositories",
+          "Package Registry Distribution",
+          "Git Submodules",
+          "Vendored Dependencies"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Repository Strategies",
+          "Source Control Workflows",
+          "Build and Release Workflows",
+          "Large-Scale Software Development",
+          "Codebase Organization",
+          "Developer Productivity"
+        ],
+        "includes": [],
+        "examples": [
+          "Monorepo containing frontend apps and shared UI packages",
+          "Monorepo containing multiple backend services",
+          "Nx workspace managing many TypeScript projects",
+          "Turborepo project with multiple npm packages",
+          "pnpm workspace containing applications and libraries",
+          "Large enterprise repository with shared build tooling",
+          "Cross-project refactor committed atomically in one repository",
+          "CI pipeline running only tests affected by changed packages"
+        ],
+        "useCases": [
+          "Managing multiple related projects in one repository",
+          "Sharing code across applications and services",
+          "Coordinating cross-package changes",
+          "Standardizing tooling across teams",
+          "Running incremental builds and targeted tests",
+          "Simplifying large refactors across related projects",
+          "Centralizing dependency and version management",
+          "Improving visibility across a large codebase"
+        ],
+        "relatedConcepts": [
+          "Repository",
+          "Codebase",
+          "Multi-Repo Architecture",
+          "Polyrepo",
+          "Dependency Management",
+          "Build System",
+          "CI/CD",
+          "Workspace",
+          "Module",
+          "Package",
+          "Shared Library",
+          "Technical Debt"
+        ]
+      },
+      {
+        "id": "data-migration",
+        "name": "Data Migration",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Database Migration",
+          "Data Transfer Migration",
+          "System Data Migration",
+          "Legacy Data Migration"
+        ],
+        "notes": "Software engineering concept focused on moving, transforming, validating, and loading data from one system, database, schema, platform, or environment to another.",
+        "tags": [
+          "software-engineering",
+          "databases",
+          "migration",
+          "data-transfer",
+          "etl",
+          "legacy-modernization",
+          "data-quality",
+          "deployment"
+        ],
+        "whatIsIt": "The process of moving data from one storage system, schema, platform, or application environment to another while preserving correctness and usability.",
+        "description": "Data Migration is the process of transferring data between systems, databases, schemas, storage platforms, applications, or environments. It often includes extracting source data, transforming formats or schemas, cleaning invalid records, mapping fields, loading target systems, validating results, handling downtime or cutover, reconciling differences, and preparing rollback plans. Developers and teams use data migration during legacy modernization, database upgrades, cloud moves, application rewrites, schema changes, platform consolidation, and production environment transitions.",
+        "usedWith": [
+          "Databases",
+          "SQL",
+          "ETL",
+          "Data Modeling",
+          "Legacy System",
+          "Cloud Migration",
+          "Deployment",
+          "Rollback",
+          "CI/CD",
+          "Testing",
+          "Backup and Restore",
+          "Data Validation"
+        ],
+        "builtOn": [
+          "Source Data",
+          "Target Schema",
+          "Data Mapping",
+          "Transformation Rules",
+          "Validation Rules",
+          "Backup Strategy",
+          "Cutover Planning"
+        ],
+        "builtUponBy": [
+          "Legacy Modernization Workflows",
+          "Database Upgrade Workflows",
+          "Cloud Migration Workflows",
+          "Application Rewrite Projects",
+          "Schema Evolution Workflows",
+          "Production Cutover Workflows",
+          "System Consolidation Projects"
+        ],
+        "runsOn": [
+          "Database Systems",
+          "Cloud Platforms",
+          "ETL Platforms",
+          "Migration Tools",
+          "CI/CD Environments",
+          "Production Environments"
+        ],
+        "alternatives": [
+          "Manual Data Entry",
+          "Database Replication",
+          "Backup and Restore",
+          "Dual Write Strategy",
+          "Event-Based Synchronization"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Database Engineering",
+          "Software Maintenance",
+          "Legacy Modernization",
+          "Deployment",
+          "Data Engineering",
+          "System Integration"
+        ],
+        "includes": [],
+        "examples": [
+          "Migrating customer records from a legacy CRM to a new platform",
+          "Moving an on-premises database to a cloud database service",
+          "Transforming old schema fields into a new normalized schema",
+          "Running SQL migration scripts during a release",
+          "Validating row counts after a production data migration",
+          "Backfilling new columns before enabling a feature",
+          "Migrating files from local storage to object storage",
+          "Rolling back after a failed migration cutover"
+        ],
+        "useCases": [
+          "Moving data to a new system",
+          "Supporting legacy system modernization",
+          "Upgrading database schemas or platforms",
+          "Consolidating duplicate systems",
+          "Preparing data for application rewrites",
+          "Migrating workloads to the cloud",
+          "Preserving business data during system replacement",
+          "Validating data correctness after transfer"
+        ],
+        "relatedConcepts": [
+          "Database",
+          "SQL",
+          "ETL",
+          "Schema Migration",
+          "Data Validation",
+          "Backup and Restore",
+          "Rollback",
+          "Legacy System",
+          "Cloud Migration",
+          "Deployment",
+          "Data Modeling",
+          "Migration"
+        ]
+      },
+      {
+        "id": "schema-migration",
+        "name": "Schema Migration",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Database Schema Migration",
+          "Database Migration",
+          "DB Migration",
+          "Schema Evolution",
+          "Migration Script"
+        ],
+        "notes": "Software engineering concept and database change workflow for versioning, applying, and coordinating changes to database schemas over time.",
+        "tags": [
+          "database",
+          "schema",
+          "migration",
+          "deployment",
+          "versioning",
+          "data-management",
+          "release-management",
+          "backend"
+        ],
+        "whatIsIt": "A controlled change to a database schema that updates tables, columns, indexes, constraints, relationships, or other database structures over time.",
+        "description": "Schema migration is the practice of evolving a database schema in a controlled, versioned, and repeatable way. Developers use schema migrations to add tables, modify columns, create indexes, change constraints, rename fields, update relationships, and coordinate database structure changes with application code changes. Schema migrations are commonly stored in version control, applied through deployment pipelines, tracked in migration history tables, and managed with tools such as Flyway, Liquibase, Django migrations, Rails migrations, Prisma Migrate, and Entity Framework Migrations. Good schema migration workflows reduce deployment risk by making database changes reviewable, reversible when possible, environment-aware, and coordinated across development, staging, and production.",
+        "usedWith": [
+          "SQL",
+          "Relational Databases",
+          "PostgreSQL",
+          "MySQL",
+          "Microsoft SQL Server",
+          "Oracle Database",
+          "ORMs",
+          "CI/CD",
+          "Version Control",
+          "Flyway",
+          "Liquibase",
+          "Entity Framework Migrations"
+        ],
+        "builtOn": [
+          "Database Schema",
+          "Data Definition Language",
+          "Versioned Database Changes",
+          "Migration Scripts",
+          "Rollback Planning",
+          "Deployment Workflows",
+          "Schema Evolution"
+        ],
+        "builtUponBy": [
+          "Database Release Workflows",
+          "Backend Deployment Workflows",
+          "CI/CD Database Change Workflows",
+          "Production Release Management",
+          "Environment Promotion Workflows",
+          "Data Model Evolution",
+          "Application Upgrade Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Manual Database Changes",
+          "Direct Production Schema Edits",
+          "Drop-and-Recreate Database Changes",
+          "Ad Hoc SQL Scripts",
+          "Database Backup and Restore Replacement"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Database Development",
+          "Backend Development",
+          "Deployment",
+          "Release Management",
+          "Data Management",
+          "Software Maintenance"
+        ],
+        "includes": [],
+        "examples": [
+          "Adding a new users table with a migration script",
+          "Adding an index before a high-traffic query rollout",
+          "Renaming a column while preserving existing data",
+          "Running Flyway migrations during deployment",
+          "Applying Entity Framework migrations to a staging database",
+          "Using a migration history table to track applied changes",
+          "Rolling back a failed database migration",
+          "Backfilling data after adding a new nullable column"
+        ],
+        "useCases": [
+          "Evolving database schemas safely",
+          "Coordinating database changes with application releases",
+          "Versioning database structure changes",
+          "Applying repeatable database changes across environments",
+          "Reducing production deployment risk",
+          "Supporting rollback or recovery planning",
+          "Automating database updates in CI/CD",
+          "Maintaining consistency between code and data models"
+        ],
+        "relatedConcepts": [
+          "Database Schema",
+          "Database",
+          "SQL",
+          "DDL",
+          "ORM",
+          "Version Control",
+          "Deployment",
+          "Rollback",
+          "Production",
+          "Staging",
+          "Data Migration",
+          "Software Maintenance"
+        ]
+      },
+      {
+        "id": "software-maintenance",
+        "name": "Software Maintenance",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Maintenance",
+          "Application Maintenance",
+          "Code Maintenance",
+          "System Maintenance",
+          "Software Sustainment"
+        ],
+        "notes": "Ongoing work required after software is delivered to fix defects, improve reliability, adapt to change, reduce technical debt, update dependencies, and keep systems useful over time.",
+        "tags": [
+          "software-engineering",
+          "maintenance",
+          "technical-debt",
+          "refactoring",
+          "reliability",
+          "bug-fixing",
+          "lifecycle",
+          "maintainability"
+        ],
+        "whatIsIt": "The ongoing work of keeping software correct, secure, useful, reliable, adaptable, and maintainable after initial delivery.",
+        "description": "Software maintenance is the ongoing work required to keep software valuable and operational after it has been built or released. It includes fixing bugs, updating dependencies, adapting to new requirements, improving performance, addressing security issues, refactoring code, reducing technical debt, improving observability, updating documentation, supporting production systems, and modifying software as business or technical conditions change. Software maintenance is a major part of the software lifecycle because most systems spend far more time being changed and supported than being initially created.",
+        "usedWith": [
+          "Software Development",
+          "Technical Debt",
+          "Refactoring",
+          "Bug Fix",
+          "Code Review",
+          "Testing",
+          "CI/CD",
+          "Dependency Management",
+          "Monitoring",
+          "Incident Response",
+          "Release Management",
+          "Documentation"
+        ],
+        "builtOn": [
+          "Maintainability",
+          "Change Management",
+          "Code Quality",
+          "Testing",
+          "Version Control",
+          "Operational Feedback",
+          "Software Lifecycle"
+        ],
+        "builtUponBy": [
+          "Long-Term Product Development",
+          "Production Support Workflows",
+          "Bug Fix Workflows",
+          "Refactoring Workflows",
+          "Dependency Upgrade Workflows",
+          "Security Patch Workflows",
+          "Legacy System Modernization",
+          "Reliability Improvement Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Development",
+          "Software Lifecycle",
+          "Production Engineering",
+          "Code Quality",
+          "Technical Debt Management",
+          "Operational Excellence"
+        ],
+        "includes": [],
+        "examples": [
+          "Fixing a production bug after release",
+          "Updating dependencies to patch vulnerabilities",
+          "Refactoring legacy code to improve maintainability",
+          "Improving logging after an incident",
+          "Adding tests around fragile behavior before changing it",
+          "Optimizing slow database queries in an existing system",
+          "Updating software to support a new operating system version",
+          "Retiring unused code paths during cleanup"
+        ],
+        "useCases": [
+          "Keeping released software working correctly",
+          "Fixing defects discovered after delivery",
+          "Reducing technical debt",
+          "Improving maintainability over time",
+          "Adapting systems to new requirements",
+          "Updating dependencies and security patches",
+          "Improving reliability and performance",
+          "Supporting long-lived production systems"
+        ],
+        "relatedConcepts": [
+          "Maintainability",
+          "Technical Debt",
+          "Refactoring",
+          "Bug Fix",
+          "Code Quality",
+          "Testing",
+          "Release Management",
+          "Incident Response",
+          "Dependency Management",
+          "Legacy System",
+          "Software Lifecycle",
+          "Production"
+        ]
+      },
+      {
+        "id": "cloud-native",
+        "name": "Cloud Native",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Cloud-Native",
+          "Cloud-Native Architecture",
+          "Cloud-Native Development",
+          "Cloud-Native Applications",
+          "Cloud-Native Systems"
+        ],
+        "notes": "Software engineering approach for designing, building, deploying, and operating applications that take advantage of cloud environments, automation, scalability, resilience, and managed infrastructure.",
+        "tags": [
+          "cloud-computing",
+          "software-architecture",
+          "devops",
+          "containers",
+          "kubernetes",
+          "scalability",
+          "resilience",
+          "distributed-systems"
+        ],
+        "whatIsIt": "An approach to building and operating software that is designed for cloud environments, automation, scalability, resilience, and rapid delivery.",
+        "description": "Cloud Native is a software engineering concept focused on designing, building, deploying, and operating applications that take full advantage of cloud computing environments. Cloud-native systems commonly use containers, orchestration, microservices, APIs, automation, CI/CD, observability, infrastructure as code, managed cloud services, and resilient architecture patterns. The goal is to make applications easier to scale, deploy, recover, monitor, and evolve in dynamic cloud or hybrid environments. Cloud Native is broader than Kubernetes or containers; those are common implementation tools, while Cloud Native describes the overall engineering model and architectural approach.",
+        "usedWith": [
+          "Cloud Computing",
+          "DevOps",
+          "CI/CD",
+          "Docker",
+          "Kubernetes",
+          "Microservices",
+          "Infrastructure as Code",
+          "Observability",
+          "Containers",
+          "Serverless Computing",
+          "Service Mesh",
+          "Platform Engineering"
+        ],
+        "builtOn": [
+          "Cloud Computing",
+          "Automation",
+          "Distributed Systems",
+          "Containerization",
+          "Orchestration",
+          "Scalability",
+          "Resilience"
+        ],
+        "builtUponBy": [
+          "Cloud-Native Application Development",
+          "Cloud Architecture Design",
+          "Microservice Architecture Workflows",
+          "Platform Engineering Workflows",
+          "DevOps Delivery Workflows",
+          "Site Reliability Engineering Workflows",
+          "Modernization and Migration Workflows",
+          "Production Operations Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Cloud Computing",
+          "Software Architecture",
+          "Distributed Systems",
+          "DevOps",
+          "Production Engineering",
+          "Modern Application Development"
+        ],
+        "includes": [],
+        "examples": [
+          "Containerized application deployed to Kubernetes",
+          "Microservices communicating through APIs and message queues",
+          "Cloud-native system using autoscaling and managed databases",
+          "Application deployed through CI/CD into a cloud environment",
+          "Service mesh managing traffic between cloud-native services",
+          "Cloud-native app using observability dashboards and alerts",
+          "Serverless function integrated with managed cloud services"
+        ],
+        "useCases": [
+          "Building scalable cloud applications",
+          "Modernizing legacy applications for cloud environments",
+          "Improving deployment speed and repeatability",
+          "Designing resilient distributed systems",
+          "Using managed cloud services effectively",
+          "Automating infrastructure and application delivery",
+          "Operating containerized workloads in production",
+          "Supporting rapid iteration and continuous delivery"
+        ],
+        "relatedConcepts": [
+          "Cloud Computing",
+          "DevOps",
+          "Platform Engineering",
+          "Microservices",
+          "Kubernetes",
+          "Docker",
+          "Containerization",
+          "Orchestration",
+          "Infrastructure as Code",
+          "Observability",
+          "Scalability",
+          "Resilience"
+        ]
+      },
+      {
+        "id": "clean-code",
+        "name": "Clean Code",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Clean Coding",
+          "Clean Code Principles",
+          "Readable Code",
+          "Maintainable Code"
+        ],
+        "notes": "Software engineering concept focused on writing code that is readable, understandable, maintainable, testable, and easy for other developers to safely change.",
+        "tags": [
+          "software-engineering",
+          "code-quality",
+          "maintainability",
+          "readability",
+          "refactoring",
+          "design-principle",
+          "testing",
+          "technical-debt"
+        ],
+        "whatIsIt": "A set of software development principles and practices aimed at making code easier to read, understand, test, maintain, and safely modify.",
+        "description": "Clean Code is a software engineering concept focused on writing code that communicates intent clearly and remains easy to understand, test, modify, and maintain over time. Clean code usually has meaningful names, focused functions, clear responsibilities, simple control flow, minimal duplication, good error handling, useful tests, low coupling, high cohesion, and limited unnecessary complexity. It is not only about formatting or style; it is about making code easier for humans to work with safely. Developers use Clean Code principles during implementation, refactoring, code review, testing, and long-term maintenance of software systems.",
+        "usedWith": [
+          "Maintainability",
+          "Code Smell",
+          "Refactoring",
+          "Technical Debt",
+          "Code Review",
+          "Unit Testing",
+          "TDD",
+          "SOLID",
+          "Low Coupling",
+          "High Cohesion",
+          "Static Analysis",
+          "SonarQube"
+        ],
+        "builtOn": [
+          "Readability",
+          "Maintainability",
+          "Separation of Concerns",
+          "Low Coupling",
+          "High Cohesion",
+          "Refactoring",
+          "Testing"
+        ],
+        "builtUponBy": [
+          "Code Review Workflows",
+          "Refactoring Workflows",
+          "Maintainable Codebase Design",
+          "Technical Debt Reduction",
+          "Large Codebase Maintenance",
+          "Team Coding Standards",
+          "Software Quality Improvement Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Messy Code",
+          "Spaghetti Code",
+          "Big Ball of Mud",
+          "Overengineered Code"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Code Quality",
+          "Maintainability",
+          "Software Design",
+          "Refactoring",
+          "Technical Debt Management"
+        ],
+        "includes": [],
+        "examples": [
+          "Renaming vague variables to reveal intent",
+          "Splitting a long method into smaller focused functions",
+          "Removing duplicated business logic",
+          "Replacing deeply nested conditionals with clearer structure",
+          "Writing unit tests that document expected behavior",
+          "Refactoring a god class into cohesive components",
+          "Using clear error handling instead of hidden side effects",
+          "Reviewing code for readability and maintainability"
+        ],
+        "useCases": [
+          "Making code easier to understand",
+          "Improving maintainability",
+          "Reducing technical debt",
+          "Making future changes safer",
+          "Improving code review quality",
+          "Supporting refactoring",
+          "Reducing bugs caused by confusing code",
+          "Helping teams work effectively in shared codebases"
+        ],
+        "relatedConcepts": [
+          "Maintainability",
+          "Code Smell",
+          "Refactoring",
+          "Technical Debt",
+          "Readability",
+          "Testability",
+          "SOLID",
+          "Low Coupling",
+          "High Cohesion",
+          "Separation of Concerns",
+          "Code Review",
+          "Static Analysis"
+        ]
+      },
+      {
+        "id": "code-quality",
+        "name": "Code Quality",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Code Quality",
+          "Source Code Quality",
+          "Code Health",
+          "Clean Code Quality"
+        ],
+        "notes": "Software engineering concept focused on how readable, maintainable, reliable, secure, testable, and understandable a codebase is over time.",
+        "tags": [
+          "software-engineering",
+          "maintainability",
+          "readability",
+          "reliability",
+          "static-analysis",
+          "code-review",
+          "technical-debt",
+          "software-quality"
+        ],
+        "whatIsIt": "A software engineering concept describing how well code supports correctness, readability, maintainability, reliability, security, testing, and future change.",
+        "description": "Code Quality is a broad software engineering concept focused on the health and maintainability of source code. High-quality code is usually readable, understandable, testable, reliable, secure, modular, consistent, well-named, low in duplication, low in unnecessary complexity, and easier to change safely. Teams improve code quality through practices such as code review, refactoring, linting, static analysis, automated testing, formatting, documentation, design principles, CI/CD quality gates, and technical debt management. Code quality is not only about style; it affects developer productivity, defect rates, onboarding speed, long-term maintainability, and the ability to evolve a system over time.",
+        "usedWith": [
+          "Code Review",
+          "Linting",
+          "Static Analysis",
+          "Refactoring",
+          "Automated Testing",
+          "Unit Testing",
+          "CI/CD",
+          "SonarQube",
+          "ESLint",
+          "Prettier",
+          "Technical Debt",
+          "Maintainability"
+        ],
+        "builtOn": [
+          "Readability",
+          "Maintainability",
+          "Correctness",
+          "Consistency",
+          "Modularity",
+          "Testing",
+          "Software Design Principles"
+        ],
+        "builtUponBy": [
+          "Code Review Workflows",
+          "Refactoring Workflows",
+          "CI/CD Quality Gate Workflows",
+          "Technical Debt Management Workflows",
+          "Software Maintenance Workflows",
+          "Static Analysis Workflows",
+          "Team Coding Standard Workflows",
+          "Large Codebase Improvement Workflows"
+        ],
+        "runsOn": [],
+        "alternatives": [],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Quality",
+          "Software Maintenance",
+          "Code Review",
+          "Technical Debt Management",
+          "Developer Productivity",
+          "Software Design"
+        ],
+        "includes": [],
+        "examples": [
+          "Readable function with clear names and focused responsibility",
+          "Code review catching maintainability problems",
+          "SonarQube reporting code smells and duplication",
+          "ESLint enforcing JavaScript code quality rules",
+          "Refactoring complex code into smaller modules",
+          "CI pipeline blocking code that fails quality checks",
+          "Unit tests protecting code behavior during changes",
+          "Reducing duplicated logic across a codebase"
+        ],
+        "useCases": [
+          "Improving long-term maintainability",
+          "Reducing bugs and regressions",
+          "Making code easier to understand and review",
+          "Supporting safer refactoring",
+          "Keeping large codebases manageable",
+          "Reducing technical debt",
+          "Enforcing team coding standards",
+          "Improving developer productivity over time"
+        ],
+        "relatedConcepts": [
+          "Maintainability",
+          "Technical Debt",
+          "Code Smell",
+          "Refactoring",
+          "Code Review",
+          "Linting",
+          "Static Analysis",
+          "Testing",
+          "Readability",
+          "Complexity",
+          "Clean Code",
+          "SonarQube"
+        ]
+      },
+      {
+        "id": "linting",
+        "name": "Linting",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Code Linting",
+          "Source Code Linting",
+          "Lint Analysis",
+          "Linter Checks"
+        ],
+        "notes": "Static code analysis practice that checks source code for style issues, suspicious patterns, rule violations, potential bugs, and consistency problems before runtime.",
+        "tags": [
+          "static-analysis",
+          "code-quality",
+          "linting",
+          "developer-tooling",
+          "ci-cd",
+          "style-rules",
+          "automated-checks",
+          "software-engineering"
+        ],
+        "whatIsIt": "A static analysis practice where tools inspect source code for rule violations, suspicious patterns, style issues, and possible bugs.",
+        "description": "Linting is the practice of using automated tools called linters to analyze source code before or without running the program. Linters check code against rules for style, correctness, consistency, maintainability, suspicious patterns, deprecated APIs, unused variables, unreachable code, formatting-related issues, and potential bugs. Developers commonly run linting in editors, command-line workflows, pre-commit hooks, pull requests, and CI/CD pipelines. Linting overlaps with static analysis and code formatting, but linting usually focuses on rule-based code checks, while formatting focuses on automatic layout and whitespace decisions.",
+        "usedWith": [
+          "Code Quality",
+          "Static Analysis",
+          "ESLint",
+          "Pylint",
+          "RuboCop",
+          "Stylelint",
+          "Prettier",
+          "CI/CD",
+          "Code Review",
+          "Pre-Commit Hooks",
+          "IDE",
+          "Pull Request Workflow"
+        ],
+        "builtOn": [
+          "Static Analysis",
+          "Rule-Based Analysis",
+          "Source Code Parsing",
+          "Coding Standards",
+          "Style Rules",
+          "Abstract Syntax Trees",
+          "Automated Checks"
+        ],
+        "builtUponBy": [
+          "Code Quality Workflows",
+          "Editor Feedback Workflows",
+          "Pre-Commit Validation Workflows",
+          "CI/CD Quality Gate Workflows",
+          "Pull Request Review Workflows",
+          "Team Coding Standard Workflows",
+          "Static Analysis Workflows"
+        ],
+        "runsOn": [
+          "Developer Workstations",
+          "IDEs and Editors",
+          "Command-Line Environments",
+          "CI/CD Environments",
+          "Pre-Commit Hook Environments"
+        ],
+        "alternatives": [
+          "Static Analysis",
+          "Compiler Warnings",
+          "Code Formatting",
+          "Code Review",
+          "Type Checking",
+          "SonarQube Quality Analysis"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Code Quality",
+          "Static Analysis",
+          "Developer Tooling",
+          "CI/CD Quality Gates",
+          "Software Maintenance"
+        ],
+        "includes": [],
+        "examples": [
+          "ESLint checking JavaScript code",
+          "Pylint checking Python code",
+          "Stylelint checking CSS rules",
+          "RuboCop checking Ruby style and rules",
+          "Lint error blocking a pull request",
+          "Editor showing lint warnings while typing",
+          "Pre-commit hook running lint checks",
+          "CI pipeline failing because lint rules were violated"
+        ],
+        "useCases": [
+          "Catching code issues before runtime",
+          "Enforcing team coding standards",
+          "Improving code consistency",
+          "Reducing review noise from style problems",
+          "Detecting unused variables or unreachable code",
+          "Blocking problematic code in CI/CD",
+          "Providing fast feedback inside editors",
+          "Supporting maintainable codebases"
+        ],
+        "relatedConcepts": [
+          "Code Quality",
+          "Static Analysis",
+          "ESLint",
+          "Prettier",
+          "Code Formatting",
+          "Compiler Warnings",
+          "Type Checking",
+          "Code Review",
+          "CI/CD",
+          "Pre-Commit Hooks",
+          "Coding Standards",
+          "Code Smell"
+        ]
+      },
+      {
+        "id": "product-management",
+        "name": "Product Management",
+        "continent": "Engineering",
+        "category": "Software Engineering Concepts",
+        "subcategory": "",
+        "aliases": [
+          "Software Product Management",
+          "Product Strategy",
+          "Product Ownership",
+          "Product Planning",
+          "Product Roadmapping"
+        ],
+        "notes": "Software engineering-adjacent discipline focused on understanding users, defining product direction, prioritizing work, managing roadmaps, and aligning engineering effort with business and customer value.",
+        "tags": [
+          "product-management",
+          "product-strategy",
+          "requirements",
+          "roadmap",
+          "prioritization",
+          "stakeholder-management",
+          "software-delivery",
+          "user-value"
+        ],
+        "whatIsIt": "A discipline focused on deciding what software should be built, why it should be built, who it serves, and how work should be prioritized.",
+        "description": "Product Management is the discipline of guiding a software product from user needs and business goals into prioritized work for design, engineering, testing, launch, and iteration. Product managers help define product vision, gather requirements, understand customers, prioritize features, maintain roadmaps, coordinate stakeholders, evaluate tradeoffs, and measure outcomes. In software teams, Product Management connects business strategy, user research, UX design, engineering execution, release planning, and feedback loops. It is not a coding practice itself, but it strongly shapes what software teams build and how engineering work is sequenced.",
+        "usedWith": [
+          "UX Design",
+          "Requirements",
+          "Roadmap",
+          "Agile",
+          "Scrum",
+          "User Stories",
+          "Backlog",
+          "Stakeholders",
+          "Release Management",
+          "Analytics",
+          "A/B Testing",
+          "Technical Leadership"
+        ],
+        "builtOn": [
+          "User Needs",
+          "Business Goals",
+          "Market Research",
+          "Prioritization",
+          "Requirements Gathering",
+          "Stakeholder Alignment",
+          "Product Strategy"
+        ],
+        "builtUponBy": [
+          "Product Roadmap Planning",
+          "Feature Prioritization Workflows",
+          "Agile Planning Workflows",
+          "Release Planning Workflows",
+          "Customer Feedback Workflows",
+          "Product Discovery Workflows",
+          "Engineering Delivery Planning",
+          "Go-To-Market Coordination"
+        ],
+        "runsOn": [],
+        "alternatives": [
+          "Project Management",
+          "Business Analysis",
+          "Product Ownership",
+          "Engineering-Led Planning",
+          "Stakeholder-Driven Planning"
+        ],
+        "partOf": [
+          "Software Engineering Concepts",
+          "Software Development",
+          "Product Development",
+          "Software Delivery",
+          "Agile Workflows",
+          "Requirements Management",
+          "Business and Engineering Alignment"
+        ],
+        "includes": [],
+        "examples": [
+          "Prioritizing features for the next product release",
+          "Writing user stories for an engineering team",
+          "Maintaining a product roadmap",
+          "Using customer feedback to shape a feature",
+          "Defining success metrics for a new workflow",
+          "Coordinating launch scope with engineering and design",
+          "Deciding whether to build, defer, or cut a feature",
+          "Translating business goals into product requirements"
+        ],
+        "useCases": [
+          "Prioritizing engineering work based on user and business value",
+          "Defining product direction and roadmap priorities",
+          "Gathering and refining software requirements",
+          "Aligning stakeholders around product tradeoffs",
+          "Coordinating design, engineering, and release planning",
+          "Measuring whether shipped features achieve intended outcomes",
+          "Managing product discovery and delivery workflows",
+          "Reducing wasted engineering effort on low-value work"
+        ],
+        "relatedConcepts": [
+          "UX Design",
+          "Requirements",
+          "User Story",
+          "Backlog",
+          "Roadmap",
+          "Agile",
+          "Scrum",
+          "Project Management",
+          "Stakeholder Management",
+          "Release Management",
+          "A/B Testing",
+          "Software Project Management"
         ]
       }
     ]

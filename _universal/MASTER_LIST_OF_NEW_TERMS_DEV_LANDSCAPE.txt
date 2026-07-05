@@ -207,7 +207,7 @@ EXPL OF WHAT WERE DOING WITH THIS LIST:
 
 
 ++++++++++++++++++++++++++++++++++
-TRACKING PROGRESS OF MASTER LIST:
+TRACKING PROGRESS OF MASTER LIST: ~690+ - 700+ terms total
 ++++++++++++++++++++++++++++++++++
 
 
@@ -229,9 +229,10 @@ TRACKING PROGRESS OF MASTER LIST:
 [✅]		14 🟪 API TECHNOLOGIES			27
 [✅]		15 🟪 TESTING   					56
 [✅]		16 🟪 DEBUGGING AND PROFILING       47
----------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 292 terms-left, (11/17 cats done) ---------
-[]		17 🟪 SOFTWARE ENGINEERING CONCEPTS	63
-[]		18 🟪 LAST_STEP (see bottom area after section 17)	63
+[✅]		17 🟪 SOFTWARE ENGINEERING CONCEPTS	63
+[🚧]		17.5 🟪 MY-OWN-TERMS (wip)
+---------------------------------------------↑-↑-↑-DONE-ABOVE↑-↑-↑---- 292 terms-left, (17/18 cats done) ---------
+[]		18 🟪 LAST_STEP (see bottom area after section 17)	
 
 
 
@@ -970,63 +971,9 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ⚠️BRANCH OFF 3 NEW CHATS NOW **ALREADY CREATED THESE LAST 3 CHATS 13,14,15...🚨(should be .13, 14, 15  bc prev was .10, 11, 12
 ⚠️BRANCH OFF 3 NEW CHATS NOW 
 (17) 63 🟪 SOFTWARE ENGINEERING CONCEPTS
-
 * Abstraction✅
 * Encapsulation✅
 * Inheritance✅
@@ -1051,44 +998,44 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 * Artifact✅
 * Release✅
 * Versioning✅
-* Semantic Versioning
-* Backward Compatibility
-* Code Smell
-* Maintainability
-* Scalability
-* Reliability
-* Availability
-* Fault Tolerance
-* Resilience
-* Monitoring
-* Logging
-* Metrics
-* Distributed Tracing
-* Rollback
-* Rollout
-* Feature Flag
-* Configuration Management
-* Environment
-* Production
-* Staging
-* Legacy System
-* Greenfield Project
-* Brownfield Project
-* Codebase
-* Repository
-* Monorepo
-* API Integration
-* Data Migration
-* Schema Migration
-* Software Maintenance
-* Requirements Engineering
-* Clean Code
-* Code Quality
-* Linting
-* Cloud Native
-* Platform Engineering
-* Product Management
-* UX Design
+* Semantic Versioning✅
+* Backward Compatibility✅
+* Code Smell✅
+* Maintainability✅
+* Scalability✅
+* Reliability✅
+* Availability✅
+* Fault Tolerance✅
+* Resilience✅
+* Monitoring✅
+* Logging✅
+* Metrics✅
+* Distributed Tracing✅
+* Rollback✅
+* Rollout✅
+* Feature Flag✅
+* Configuration Management✅
+* Environment✅
+* Production✅
+* Staging✅
+* Legacy System✅
+* Greenfield Project✅
+* Brownfield Project✅
+* Codebase✅
+* Repository✅
+* Monorepo✅
+* API Integration✅
+* Data Migration✅
+* Schema Migration✅
+* Software Maintenance✅
+* Requirements Engineering✅
+* Clean Code✅
+* Code Quality✅
+* Linting✅
+* Cloud Native✅
+* Platform Engineering✅
+* Product Management✅
+* UX Design✅
 
 
 ⚠️BRANCH OFF 3 NEW CHATS NOW **ALREADY CREATED THESE LAST 3 CHATS 13,14,15...🚨(should be .13, 14, 15  bc prev was .10, 11, 12
@@ -1121,6 +1068,19 @@ Done — removed the tab spacing while keeping the green checkmarks. ✅
 *
 *
 *
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
