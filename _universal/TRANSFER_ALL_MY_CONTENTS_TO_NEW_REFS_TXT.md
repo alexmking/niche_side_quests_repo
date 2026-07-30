@@ -5904,7 +5904,7 @@ src\tagging_subsystem\validate\
 
 
 -----------------------------
-SCADA SDK
+SCADA SDK ✅ DONE ADDING ALL THESE
 -----------------------------
 🟪 ADD THESE PATHS 🟪
 src\scada_sdk\utilities\
@@ -5920,7 +5920,7 @@ src\scada_sdk\scada_tag_provider\ (already added)
 
 
 -----------------------------
-OPENSCADA 
+OPENSCADA ✅ DONE ADDING ALL THESE
 -----------------------------
 🟪 ADD THESE PATHS 🟪
 src\openscada\unit_tests_c\
@@ -5931,7 +5931,7 @@ src\openscada\utilities\
 
 
 -----------------------------
-SCADA INTERFACE  
+SCADA INTERFACE  ✅ DONE ADDING ALL THESE
 -----------------------------
 🟪 ADD THESE PATHS 🟪
 src\scada_interface\unit_tests\
@@ -5948,7 +5948,33 @@ src\scada_interface\snap_modules\
 src\scada_interface\osii_control_adaptor\
 
 -----------------------------
-VIEWPOINT 
+OTSFW ✅ DONE ADDING ALL THESE
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+(none to add atm for otsfw atm...)
+
+-----------------------------
+SECURE SYNC ✅ DONE ADDING ALL THESE
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+(none to add atm for secure sync...)
+
+-----------------------------
+WEB COMP 🚨 TODO??
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\scada_web_components\scada_ws_server_lib\
+src\scada_web_components\storm\
+
+-----------------------------
+ALARMS✅ DONE ADDING ALL THESE
+-----------------------------
+🟪 ADD THESE PATHS 🟪
+src\alarms\alarm_buffer\
+src\alarms\alarm_server\
+
+-----------------------------
+VIEWPOINT ✅ DONE ADDING ALL THESE
 -----------------------------
 🟪 ADD THESE PATHS 🟪
 src\viewpoint\alarm_adaptor\
@@ -5956,36 +5982,8 @@ src\viewpoint\tlq_adaptor\
 src\viewpoint\utilities\
 src\viewpoint\alarm_sync\
 
-
 -----------------------------
-OTSFW 
------------------------------
-🟪 ADD THESE PATHS 🟪
-(none to add atm for otsfw atm...)
-
-
------------------------------
-SECURE SYNC 
------------------------------
-🟪 ADD THESE PATHS 🟪
-(none to add atm for secure sync...)
-
------------------------------
-WEB COMP 
------------------------------
-🟪 ADD THESE PATHS 🟪
-src\scada_web_components\scada_ws_server_lib\
-src\scada_web_components\storm\
-
------------------------------
-ALARMS
------------------------------
-🟪 ADD THESE PATHS 🟪
-src\alarms\alarm_buffer\
-src\alarms\alarm_server\
-
------------------------------
-MAKECS / CSHARP 
+MAKECS / CSHARP ✅ DONE ADDING ALL THESE
 -----------------------------
 ### these were the only makecs results I could find...not sure if this is it or if im searching wrong...
 scripts\makecsdir.bat
