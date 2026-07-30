@@ -163,82 +163,20 @@ MISC...
 (this section would be akin to the ACRONYMNS tab + the processes-defintions stuff too, sorta, except it includes any/all terms/words that I think would be useful to have a quick def on)
 FZF-SCRIPT-FOR-THIS-SECTION: D:\git\niche_side_quests_repo\win\fzf-def-search.cmd
 ----------------------------------------------------------------------
-DEF-LPMD ---- (addDefHere)
 DEF-osii_mcp.xml ---- (addDefHere)
 DEF-SWR ---- (addDefHere)
 DEF-SDP ---- (addDefHere)
 DEF-WPS ---- (addDefHere)
 DEF-ADMS ---- (addDefHere)
 DEF-TLQ ---- (addDefHere)
-DEF- ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
------- FILES -------
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
------- TERMS -------
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-DEF-?? ---- (addDefHere)
-
-
-
-
+DEF-otsfw_eval.c ---- evaluates the xyz
+DEF-LPMD ---- (addDefHere)
+DEF-dbset ---- set the footbar??
+DEF-dbstruct ---- foobar
+DEF-otsfw_adaptor ---- attach for foobar
+DEF-DGM ---- DGM is our flagship product
+DEF-testTerm ---- test term def here1
+DEF-termFromRayc ---- test definition here lets hope
 
 ----------------------------------------------------------------------
 ,.enhancements/goodIdeas-for-this-section:
@@ -259,6 +197,13 @@ DEF-?? ---- (addDefHere)
 - add logic in our script command to always 💥add this prefix "DEF-" to the input string (this way we can just input LPMD instead of DEF-LPMD)
 
 - IF POSSIBLE: we'll START with the HYPER searching WorkRef...BUT ... we'd WANT this search to span BOTH our Ref docs (workRef and Ref)...(otherwise we'd end up w the extra step of thinking if this term would be in Ref or WorkRef which is what we DEFINITLY do not want) + (i doubt there will be many entries from Ref anyway. The majority of time itll be WorkRef since those are the terms i'd likely need to be reminded of what they do/defintion)
+
+- sub-sections/headers to consider adding later as a way to have at least SOME super basic organization to all the giant list of terms:
+    ------ CATCHALL(sort-later) -------
+    ------ SCRIPTS-&-PROCESSES -------
+    ------ TERMS -------
+    ------ FILES -------
+
 
 
 

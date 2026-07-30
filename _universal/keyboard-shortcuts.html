@@ -1091,6 +1091,8 @@
         
         'r': { action: 'lookup refs', color: 'yellow' },   // hyper-r (trying out lookup-refs script command for this as it's a lightning fast way to lookup anything in our big ref doc on the fly)
         't': { action: 'template picker', color: 'yellow' },   // hyper-t  (TRYING OUT HAVING ALL THE ref-element templates be in this template-picker [❗CAVEAT] only issue is this one is not THAT diff from just doing a HYPER-S snippet search and fzfing for the TEMPLATE i want)
+        'w': { action: 'lookup Work Ref', color: 'yellow' },   // hyper-w [this one was tmp but tbh the 'W' for WorkRef is pretty ideal...AND "W" key is coincidentally very close to the R key which is the analog of this command (WorkRef vs Ref), which is a nice plus]
+        'q': { action: 'lookup DEFs', color: 'yellow' },   // hyper-q [MAY BE JUST A TMP ONE, as im not sure if this is being too granular w the hyper keys, since we already have the 2 REF docs now (workRef and regularRef), but being giving this DEFINITION-lookup its own HYPER makes it the fastest possible and 'fast' is the thing we want for this specific type of lookup]
         
 
         // the picker scripts hotkeys: (A,S,D,F,P) (A==all, S==snippet, D==dir, F==file, P==path, ❗TODO❗ what should CONFIG-PICKER's be?)

@@ -4,13 +4,25 @@
 # @raycast.schemaVersion 1
 # @raycast.title Lookup Defs
 # @raycast.mode fullOutput
-# @raycast.argument1 { "type": "text", "placeholder": "Lookup Ref..." }
+# @raycast.argument1 { "type": "text", "placeholder": "Term/Acronym..." }
 # @raycast.description Lookup on only the *DEF-section of Ref/WorkRef.txt files 
 # @raycast.packageName Developer Utils
 # @raycast.icon 👀
 
 
 # MISC ICONS I MAY WANT TO USE WITH THIS DOWN THE ROAD: 📌🎯🔎📍⭐👀✨🧙‍♂️🪄"
+
+
+############ MY BRIEF EXPL OF THIS SCRIPT ############
+#### This script allows you to look up definitions in the **DEF-section** of Ref/WorkRef.txt files.
+#### it is specifically designed to work with the DEF-section, ensuring that only relevant definitions are retrieved.
+####### this way, if you search LPMD, you wont get the 30 other hits throughout the ref doc (thanks to the DEF- prefix)
+
+############ TOP USE CASE EXAMPLE(S) ############
+#### CASE1: (standard) raycast -> type 'Def' to sel this ScriptCommand -> input "LPMD" -> shows the definition from the DEF-section of the reference file
+#### CASE2: (fastest)  hyperkey -> input "LPMD" -> shows definition from the DEF-section of the reference file
+####
+####
 
 
 # Documentation:
