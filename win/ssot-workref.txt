@@ -163,20 +163,23 @@ MISC...
 (this section would be akin to the ACRONYMNS tab + the processes-defintions stuff too, sorta, except it includes any/all terms/words that I think would be useful to have a quick def on)
 FZF-SCRIPT-FOR-THIS-SECTION: D:\git\niche_side_quests_repo\win\fzf-def-search.cmd
 ----------------------------------------------------------------------
-DEF-osii_mcp.xml ---- (addDefHere)
-DEF-SWR ---- (addDefHere)
-DEF-SDP ---- (addDefHere)
-DEF-WPS ---- (addDefHere)
-DEF-ADMS ---- (addDefHere)
-DEF-TLQ ---- (addDefHere)
-DEF-otsfw_eval.c ---- evaluates the xyz
-DEF-LPMD ---- (addDefHere)
-DEF-dbset ---- set the footbar??
-DEF-dbstruct ---- foobar
-DEF-otsfw_adaptor ---- attach for foobar
-DEF-DGM ---- DGM is our flagship product
-DEF-testTerm ---- test term def here1
-DEF-termFromRayc ---- test definition here lets hope
+DEF-osii_mcp.xml ---- ❗TODO❗
+DEF-SWR ---- ❗TODO❗
+DEF-SDP ---- ❗TODO❗
+DEF-WPS ---- ❗TODO❗
+DEF-ADMS ---- ❗TODO❗
+DEF-TLQ ---- ❗TODO❗
+DEF-otsfw_eval.c ---- ❗TODO❗
+DEF-LPMD ---- ❗TODO❗
+DEF-dbset ---- ❗TODO❗
+DEF-dbstruct ---- ❗TODO❗
+DEF-otsfw_adaptor ---- ❗TODO❗
+DEF-DGM ---- ❗TODO❗
+DEF-EMS ---- Energy Management System (often related to DGM)
+DEF-monarch ---- monarch is an acronym for "multi-platform open network architecture". Usually monarch is referring to all our DGM software. It is Operations-Technology (OT) software, which is typically used as broader term for SCADA + EMS software.
+DEF-calc ---- (iow what is a 'calc')
+DEF-dac-server ---- FIXME!!
+DEF-viewpoint ---- FIXME
 
 ----------------------------------------------------------------------
 ,.enhancements/goodIdeas-for-this-section:

@@ -3,7 +3,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Add Term to DEF Section of WorkRef
-# @raycast.mode fullOutput
+# @raycast.mode compact
 # @raycast.argument1 { "type": "text", "placeholder": "term" }
 # @raycast.argument2 { "type": "text", "placeholder": "definition" }
 # @raycast.description Add a term to the DEF section of workref-ssot.md 
@@ -37,60 +37,6 @@
 ####### 🚧🚧🚧🚧🚧🚧🚧 
 ####### 🚧🚧🚧🚧🚧🚧🚧 
 ####### 🚧🚧🚧🚧🚧🚧🚧 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
