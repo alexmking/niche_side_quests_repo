@@ -152,9 +152,129 @@ automatically-unhide-macos-hidden-apps = true # TODO IS COULD BE WHAT WAS CAUSIN
 # command (aka the FROZEN-FLOATING-WINDOW BUG) is causing issues with the following apps:
 # --------------------------------------------------------------------------------------
 # TODO: HOW CAN I open-as-floating if the exact command 'layout floating' is the FROZEN-FLOATIN-WINDOW BUG?
+# [[on-window-detected]]
+# if.app-id = 'com.atlassian.trello'
+# run = ["layout floating","move-node-to-workspace ||--6--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.finder'
+# run = "layout floating" 
+
+# # DOUBLE CHECK THE BELOW APP-ID IS CORRECT FOR PREVIEW APP...
+# [[on-window-detected]]
+# if.app-id = 'com.apple.Preview'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.VSCode'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.googlecode.iterm2'
+# run = "layout floating" 
+
+# [[on-window-detected]]
+# if.app-id = 'com.google.Chrome'
+# run = "layout floating" 
+
+# [[on-window-detected]]
+# if.app-id = 'com.hegenberg.BetterTouchTool'
+# run = ["layout floating","move-node-to-workspace ||--8--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.ActivityMonitor'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.microsoft.Excel'
+# run = ["layout floating","move-node-to-workspace ||--8--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.TextEdit'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.reminders'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.Photos'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.Notes'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.DiskUtility'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.iCal'
+# run = "layout floating"
+
+
+
+# [[on-window-detected]]
+# if.app-id = 'org.mozilla.firefox'
+# run = "layout floating"
+
+# [[on-window-detected]]
+# if.app-id = 'com.microsoft.VSCode'
+# run = "layout floating"
+# [[on-window-detected]]
+# if.app-id = 'com.apple.Stickies'
+# run = ["layout floating","move-node-to-workspace ||--6--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'com.culturedcode.ThingsMac'
+# run = ["layout floating","move-node-to-workspace ||--8--||"]
+
+# # FIXME: ================================================================================================
+# # I THINK THIS ONE IS CAUSING ALL THE APPS TO OPEN ON workspace '9'???? since after this app opens-at-login, we start on workspace 9??? So then when we start to launch all the other apps (Which dont have a preset workspace number, they all just open on the workspace were currently at, which is 9)...
+# # FIXME: ================================================================================================
+# [[on-window-detected]]
+# if.app-id = 'imagetasks.iStatistica-Pro'
+# run = ["layout floating","move-node-to-workspace ||--9--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'com.spotify.client'
+# run = ["layout floating","move-node-to-workspace ||--9--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.mail'
+# run = ["layout floating","move-node-to-workspace ||--9--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.Music'
+# run = ["layout floating","move-node-to-workspace ||--9--||"]
+
+# [[on-window-detected]]
+# if.app-id = 'com.spotify.client'
+# run = ["layout floating","move-node-to-workspace ||--9--||"]
+
+
+# [[on-window-detected]]
+# if.app-id = 'ADD_HERE'
+# run = ["layout floating","move-node-to-workspace 6"]
+
+# [[on-window-detected]]
+# if.app-id = 'ADD_HERE'
+# run = "layout floating"
+
+
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# BEFORE REMOVING ALL THE 'move-node-to-workspace' defaults on the above section, I commented it all out just in case i want to go back to it later...
+# SO IOW, all the BELOW seciton is just the copied version of the above section, but with the 'move-node-to-workspace' commands commented out (so that all the apps will just open on whatever workspace is currently active at the time of opening)
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 [[on-window-detected]]
 if.app-id = 'com.atlassian.trello'
-run = ["layout floating","move-node-to-workspace ||--6--||"]
+run = ["layout floating"]
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
@@ -179,7 +299,7 @@ run = "layout floating"
 
 [[on-window-detected]]
 if.app-id = 'com.hegenberg.BetterTouchTool'
-run = ["layout floating","move-node-to-workspace ||--8--||"]
+run = ["layout floating"]
 
 [[on-window-detected]]
 if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
@@ -191,7 +311,7 @@ run = "layout floating"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Excel'
-run = ["layout floating","move-node-to-workspace ||--8--||"]
+run = ["layout floating"]
 
 [[on-window-detected]]
 if.app-id = 'com.apple.TextEdit'
@@ -228,39 +348,52 @@ if.app-id = 'com.microsoft.VSCode'
 run = "layout floating"
 [[on-window-detected]]
 if.app-id = 'com.apple.Stickies'
-run = ["layout floating","move-node-to-workspace ||--6--||"]
+run = ["layout floating"]
 
 [[on-window-detected]]
 if.app-id = 'com.culturedcode.ThingsMac'
-run = ["layout floating","move-node-to-workspace ||--8--||"]
+run = ["layout floating"]
 
 # FIXME: ================================================================================================
-# I THINK THIS ONE IS CAUSING ALL THE APPS TO OPEN ON workspace '9'???? since after this app opens-at-login, we start on workspace 9??? So then when we start to launch all the other apps (Which dont have a preset workspace number, they all just open on the workspace were currently at, which is 9)...
+# I THINK THIS ONE IS CAUSING ALL THE APPS TO OPEN ON workspace '9'???? since after this app opens-at-login...
 # FIXME: ================================================================================================
 [[on-window-detected]]
 if.app-id = 'imagetasks.iStatistica-Pro'
-run = ["layout floating","move-node-to-workspace ||--9--||"]
+run = ["layout floating"]
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-run = ["layout floating","move-node-to-workspace ||--9--||"]
+run = ["layout floating"]
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = ["layout floating","move-node-to-workspace ||--9--||"]
+run = ["layout floating"]
 
-# [[on-window-detected]]
-# if.app-id = 'com.spotify.client'
-# run = ["layout floating","move-node-to-workspace ||--9--||"]
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = ["layout floating"]
 
 
-# [[on-window-detected]]
-# if.app-id = 'ADD_HERE'
-# run = ["layout floating","move-node-to-workspace 6"]
 
-# [[on-window-detected]]
-# if.app-id = 'ADD_HERE'
-# run = "layout floating"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # TODO: ================================================================================================
