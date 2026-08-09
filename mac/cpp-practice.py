@@ -11,7 +11,7 @@
 # @raycast.packageName Developer Utils
 
 # Documentation:
-# @raycast.description run morningprep leet script via raycast
+# @raycast.description run cpp practice leet script via raycast
 # @raycast.author alexmking921
 # @raycast.authorURL https://raycast.com/alexmking921
 
