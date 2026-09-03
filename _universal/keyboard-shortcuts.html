@@ -971,8 +971,23 @@
 
         'q': { action: 'FIXME on WIN quit app', color: 'red' },// alt-shift-q
         'w': { action: 'FIXME on WIN close window', color: 'red' },// alt-shift-w
-        'e': { action: 'FIXME on WIN aero/glaze', color: 'red' },// alt-shift-e
-        'r': { action: 'FIXME on WIN reload config', color: 'red' }, // alt-shift-r
+        'e': { action: '⭐left display (move-to)', color: 'yellow' },// alt-shift-e
+        'r': { action: '⭐right disp (move-to)', color: 'yellow' }, // alt-shift-r
+
+        // ***************************************************************************************************
+        // THESE 4 BELOW KEYS ARE USED FOR TEMP WORKAROUND FOR RAYCASTS broken move-to-left/right-display 
+        // ***************************************************************************************************
+        // YES, we could move these to more obscure keys like '[' ']' etc but for now keeping them easily accessible for testing purposes.
+        // Hopefully RAYCAST just fixes their native 'move-to-next/prev-display' command so that these temporary keys won't be needed anymore.
+        // basically these 'simulate' the command by moving the window to the next desktops, then back to the original display's other side,
+        // which is only needed bc raycasts command moves the window to wrong display so the follow up command corrects it to get give illusion 
+        // that it is actually doing the move-to-next/prev-display command correctly.
+        // EXAMPLE: we do ALT-SHIFT-R, which triggers an AHK/BTT shortcut that THEN runs the two sep commands below to 'simulate' the move-to-next/prev-display action.
+        'u': { action: 'tmp in use...', color: 'dark-grey' }, // alt-shift-u
+        'i': { action: 'tmp in use...', color: 'dark-grey' }, // alt-shift-i
+        'o': { action: 'tmp in use...', color: 'dark-grey' }, // alt-shift-o
+        'p': { action: 'tmp in use...)', color: 'dark-grey' }, // alt-shift-p
+
 
 
 
