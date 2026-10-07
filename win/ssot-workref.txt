@@ -180,6 +180,7 @@ DEF-monarch ---- monarch is an acronym for "multi-platform open network architec
 DEF-calc ---- (iow what is a 'calc')
 DEF-dac-server ---- FIXME!!
 DEF-viewpoint ---- FIXME
+DEF-Archival-Groups ---- TBD??
 
 ----------------------------------------------------------------------
 ,.enhancements/goodIdeas-for-this-section:
