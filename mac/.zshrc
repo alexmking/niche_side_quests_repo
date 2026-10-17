@@ -53,6 +53,8 @@ export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
 
 export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/:$PATH"
 
+export PATH="$HOME/amk/projects/cpp_hub/:$PATH"
+
 
 # /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
 # "$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
@@ -534,8 +536,16 @@ alias cdrootdir="cd /"
 alias cdhomedir="cd ~"
 alias cdroot="cd /"
 alias cdhome="cd ~"
-alias cdamk="cd ~/Users/alexking/amk"
-alias amk="cd ~/Users/alexking/amk"
+alias cdamk="cd ~/amk"
+alias amk="cd ~/amk"
+
+alias cdprojects="cd ~/amk/projects"
+alias cdcpphub="cd ~/amk/projects/cpp_hub"
+alias cdtools="cd ~/amk/tools"
+alias cddropzone="cd ~/amk/tools/dropzone"
+
+alias testcd= "cd ~/amk/projects/cpp_hub"
+
 
 # /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
 # /scr-update_dev_landscape1.py
@@ -1514,6 +1524,17 @@ alias listpath='echo; tr ":" "\n" <<< "$PATH"; echo;'
 alias echopath='echo; tr ":" "\n" <<< "$PATH"; echo;'
 alias seepath='echo; tr ":" "\n" <<< "$PATH"; echo;'
 alias printpath='echo; tr ":" "\n" <<< "$PATH"; echo;'
+alias printhome='echo $HOME'
+alias echohome='echo $HOME'
+
+# echo the HOME variable
+alias echotest='echo $HOME'
+
+
+
+
+
+
 
 
 
