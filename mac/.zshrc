@@ -53,8 +53,7 @@ export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
 
 export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_landscape/:$PATH"
 
-export PATH="$HOME/amk/projects/cpp_hub/:$PATH"
-
+export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub:$PATH"
 
 # /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
 # "$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
@@ -540,12 +539,12 @@ alias cdamk="cd ~/amk"
 alias amk="cd ~/amk"
 
 alias cdprojects="cd ~/amk/projects"
-alias cdcpphub="cd ~/amk/projects/cpp_hub"
+alias cdcpphub="cd $NICHE_REPO_DIR/_universal/cpp_hub"
 alias cdtools="cd ~/amk/tools"
 alias cddropzone="cd ~/amk/tools/dropzone"
 
-alias testcd= "cd ~/amk/projects/cpp_hub"
 
+# ~amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub
 
 # /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
 # /scr-update_dev_landscape1.py
