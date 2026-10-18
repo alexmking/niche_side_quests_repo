@@ -73,7 +73,41 @@ Think about what the * is "operating" on:
 
 
 
+3. The diff between passing ptr as arg, vs passing address&:
+    method1 of 2: string&
+    void print_ref(const std::string& text)
+    {
+        std::cout << text << '\n';
+    }
+    method2 of 2: string*
+    void print_ptr(const std::string* text)
+    {
+        if (text != nullptr)
+        {
+            std::cout << *text << '\n'; // Dereference pointer with *
+        }
+    }
 
+    # showing the diff in how you call them:
+    int main()
+    {
+        std::string message = "Hello";
+
+        // Reference style:
+        print_ref(message);
+
+        // Pointer style:
+        print_ptr(&message);
+
+        Pointer style can also represent "no object"
+        print_ptr(nullptr);
+
+        return 0;
+    }
+        ⭐ KIM these two methods are accomplishing the same thing: passing the actual string to the function without making a copy. The first uses a const reference, the second uses a pointer.
+        ⭐ It's just two diff ways of achieving the same goal: avoiding a copy of the string while still allowing the function to access its contents.
+        ⭐ the string& doesn't make as much sense to me as the pointer version, but even though I don't understand the string& method as well, the 
+            ⭐ the bigger picture is knowing we're passing by reference when we see the & method in a function definition, just like I do when I see the pointer style.
 
 
 
