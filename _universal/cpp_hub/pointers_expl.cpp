@@ -3,10 +3,94 @@
 #include <string>
 #include <vector>
 
+/* 
+EXERCISES FROM Stroustrup's 4th Edition:
+https://www.stroustrup.com/4thExercises.pdf
+    Each chapter has a checklist of solid gen questions + exercises
+    ⭐USE THESE!!! They are surprisingly thorough and helpful
+*/ 
+
+/*
+### how to remember asterisk placement: ###
+* goes with the type when declaring a pointer: int* ptr;
+* goes with the pointer variable when dereferencing: *ptr = 5;
+Think about what the * is "operating" on:
+- When declaring, * is part of the type: int* ptr; means ptr is a pointer to int.
+- When dereferencing, * operates on the pointer variable: *ptr = 5; changes the value pointed to by ptr.
+*/
+
+
+/*   
+%%%%%%%%%%%%%%%%%%%%%% NOTEWORTHY WRINKLES %%%%%%%%%%%%%%%%%%%%%%
+1. AMBIGUITY in pointer declaration with a single elem vs an array of elems/
+    > Consider the 3 below declarations:
+        int* ptr1;               // pointer to a single int 
+        int* ptr2;               //  ptr to first element of an array)
+        int (*ptr3)[10];         // pointer to an array of 10 ints
+            - the int* could be EITHER a ptr to a single int,
+            OR a ptr to the first element of an array of ints.
+            **They look exactly the same when declared**
+
+            int* means “pointer to an int.”
+            ⭐It does NOT MEAN “pointer to exactly one int.”
+
+        - When you see int* ptr;, you cannot tell just from the declaration whether ptr will point to a single int or the first element of an array.
+        - You need to rely on context, comments, or naming conventions to understand the intended usage of the pointer.
+        - HOWEVER, there IS a real 'ptr to an array' type:
+        int (*ptr3)[10]; // pointer to an array of 10 ints
+
+        Differences in iteration syntax:
+        *ptr1       // for a pointer to a single int or first element of an array
+        ptr2[4]     // dereferencing a pointer to the 4th element of an array
+        *ptr3[4]     // for a pointer to an array of 10 ints (requires dereferencing first: (*ptr3)[i])
+
+
+            EXAMPLE with a pointer to an array of ints when declared like 'int* ptr'
+            int values[3] = {10, 20, 30};
+            int* ptr = values;
+            std::cout << "First value via pointer: " << ptr[0] << '\n';
+            std::cout << "Second value via pointer: " << ptr[1] << '\n';
+            std::cout << "Third value via pointer: " << ptr[2] << '\n';
+
+            EXAMPLE with a pointer to an array of ints when declared like 'int (*ptr)[3]'
+            int values2[3] = {100, 200, 300};
+            int (*ptr2)[3] = &values2;
+            std::cout << "First value via pointer to array: " << (*ptr2)[0] << '\n';
+            std::cout << "Second value via pointer to array: " << (*ptr2)[1] << '\n';
+            std::cout << "Third value via pointer to array: " << (*ptr2)[2] << '\n';
+
+2. ARROW vs DOT OPERATOR with STRUCTS:
+    The arrow operator (->) is used to access members of a struct through a pointer.
+    The dot operator (.) is used to access members of a struct directly.
+
+    Example:
+        Player player{"Alice", 100};
+        Player* player_ptr = &player;
+        std::cout << "Access via dot: " << player.score << '\n';
+        std::cout << "Access via arrow: " << player_ptr->score << '\n';
+
+        ⭐ MEMORY TRICK: if we have a PTR to a struct, then we need to use the 'pointing' arrow operator (->) to access its members.
+
+
+
+
+
+
+
+*/
+
 struct Player
 {
     std::string name;
     int score;
+};
+
+struct testStruct
+{
+    int* ptr1;
+    int* ptr2;
+    // declare a pointer to an array of ints
+    int (*array_ptr)[];
 };
 
 // This function receives an address, so it can change the caller's int.
@@ -15,6 +99,33 @@ void add_five(int* value)
     if (value != nullptr) // Check before dereferencing: null has no object to access.
     {
         *value += 5; // * dereferences value, giving access to the int stored at that address.
+    }
+}
+
+// function that accepts a ptr to an array of integers, along with its size, and a ptr to a vector of integers, then prints their contents
+// SO YOU CAN SEE THE DIFF B/W POINTERS TO ARRAYS AND POINTERS TO VECTORS
+void print_array_and_vector(int* array_ptr, std::size_t array_size, std::vector<int>* vector_ptr)
+{
+    // array section
+    if (array_ptr != nullptr)
+    {
+        std::cout << "Array contents: ";
+        for (std::size_t i = 0; i < array_size; ++i)
+        {
+            std::cout << array_ptr[i] << ' ';
+        }
+        std::cout << '\n';
+    }
+
+    // vector section
+    if (vector_ptr != nullptr)
+    {
+        std::cout << "Vector contents: ";
+        for (const int& value : *vector_ptr)
+        {
+            std::cout << value << ' ';
+        }
+        std::cout << '\n';
     }
 }
 
@@ -39,11 +150,68 @@ void function_with_many_diff_ptr_type_args(int* int_ptr, double* double_ptr, cha
     }
 }
 
+// this function accepts a pointer to a Player object and prints its details.
+void print_player(const Player* player_ptr)
+{
+    if (player_ptr == nullptr)
+    {
+        std::cout << "no player provided\n";
+        return;
+    }
+
+    std::cout << player_ptr->name << " has score "
+              << player_ptr->score << '\n';
+}
+
+// this function accepts a pointer to an array of integers and its size, then returns the sum of the values
+int sum_values(const int* values, std::size_t count)
+{
+    // When count is nonzero, values must point to at least count readable ints.
+    int sum = 0;
+    for (std::size_t i = 0; i < count; ++i)
+    {
+        sum += values[i]; // A pointer plus a length can describe a read-only array.
+    }   
+    return sum;
+}
+
+// this function accepts a pointer to an array of integers, its size, and a target value, then returns a pointer to the first matching element or nullptr if not found.
+int* find_value(int* values, std::size_t count, int target)
+{
+    if (values == nullptr)
+    {
+        return nullptr;
+    }
+
+    for (std::size_t i = 0; i < count; ++i)
+    {
+        if (values[i] == target)
+        {
+            return &values[i]; // Return the address when the caller needs to use the matching element.
+        }
+    }
+    return nullptr; // nullptr represents "not found".
+}
+
+
+
+
+
+
+
+
+//====================================================================
+// MAIN FUNCTION
+//====================================================================
 int main()
 {
     // A pointer stores an address. Its type says what kind of object it points to.
     int score = 10;
     int* score_pointer = &score; // &score gets score's address; int* points to an int.
+
+    // ⭐REMEMBER: that no matter what kind of ptr you have (int* or char* or vector* or map*),
+    // the pointer itself stores an ADDRESS, which is the same size regardless of the type it points to,
+    
 
     std::cout << "score: " << score << '\n'; // Prints the variable directly.
     std::cout << "score's address: "
@@ -81,7 +249,19 @@ int main()
         std::cout << "numbers[" << i << "] = "
                   << *(first_number + i) << '\n'; // Pointer arithmetic advances by int elements; * accesses the selected element.
     }
-    std::cout << '\n';
+    std::cout << "sum of numbers: "
+              << sum_values(numbers.data(), numbers.size()) << '\n';
+
+    int* matching_number = find_value(numbers.data(), numbers.size(), 8);
+    if (matching_number != nullptr)
+    {
+        *matching_number = 9; // The returned pointer lets the caller update the matched element.
+        std::cout << "updated matching number: " << *matching_number << "\n\n";
+    }
+    else
+    {
+        std::cout << "number not found\n\n";
+    }
 
     // Pointers can also point to other built-in types; the pointer type must match.
     double temperature = 21.5;
@@ -100,6 +280,9 @@ int main()
               << player_pointer->score << '\n';
     player_pointer->score = 26; // -> accesses and changes a member of the pointed-to struct.
     std::cout << "updated score: " << (*player_pointer).score << "\n\n"; // (*p).member is equivalent to p->member.
+    print_player(player_pointer); // const Player* allows reading the player without modifying it.
+    print_player(nullptr); // A nullable pointer can represent an optional argument.
+    std::cout << '\n';
 
     // A pointer can point to a vector object. Dereferencing it accesses that
     // vector; -> is shorthand for (*pointer).member.
