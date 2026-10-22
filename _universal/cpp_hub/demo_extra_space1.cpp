@@ -46,3 +46,34 @@ int main()
 
     return 0;
 }
+
+
+
+
+// ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+//----------------------------------------------------------
+// SET THESE 5 NEW HOTKEYS UP ON WINDOWS SIDE: (delete this section after obvi):
+//----------------------------------------------------------
+    // Github Copilot: toggle Inline Suggestions (enable/disable) (CTRL-ALT-C)
+
+    // Github Copilot: Open Completions Panel (beta?): CTRL-ALT-P
+
+    // “Trigger”inline suggestion: CTRL-ALT-X
+
+    // Snooze inline suggestions: CTRL-ALT-S
+
+    // CANCEL the ‘snooze’ (the shift-version of whatever the snooze hotkey is obvi): CTRL-ALT-SHIFT-S
+// ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
+
+
+// --- Strings -----------------------------------------------------------------
+// Task 4:  Write `int count_vowels(const std::string& text)` that returns how
+//          many vowels (a, e, i, o, u, upper or lower case) the text contains.
+
+// Task 5:  Write `std::string reverse_text(const std::string& text)` that returns
+//          a reversed copy. Then write `bool is_palindrome(const std::string& text)`
+//          that returns true if the text reads the same forwards and backwards.
