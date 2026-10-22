@@ -73,7 +73,7 @@ Think about what the * is "operating" on:
 
 
 
-3. The diff between passing ptr as arg, vs passing address&:
+3a. The diff between passing ptr as arg, vs passing address&:
     method1 of 2: string&
     void print_ref(const std::string& text)
     {
@@ -109,7 +109,7 @@ Think about what the * is "operating" on:
         ⭐ the string& doesn't make as much sense to me as the pointer version, but even though I don't understand the string& method as well, the 
             ⭐ the bigger picture is knowing we're passing by reference when we see the & method in a function definition, just like I do when I see the pointer style.
 
-
+3b. the & means 2 different things depending on context: (this is part of the confusion on why the 'std::string& text' arg def does NOT take the 'address-of' a string, like you may think at first glance (since we know &message == address of message variable))
 
 */
 
