@@ -119,6 +119,55 @@ std::string reverse_text(const std::string& text)
 }
 
 
+// Task 4:  Write `int count_vowels(const std::string& text)` that returns how
+//          many vowels (a, e, i, o, u, upper or lower case) the text contains.
+// int count_vowels(const std::string& text)
+// {
+//     // iter over the text var input, char by char, comparing each char to the series of possible vowels
+//     // (a,e,i,o,u, UPPER & lowercase)
+
+//     int count = 0;
+//     for(int i = 0; i < text.length(); i++)
+//     {
+//         if(text[i] == 'a' || text[i] == 'e' || text[i] == 'i' || text[i] == 'o' || text[i] == 'u' ||
+//            text[i] == 'A' || text[i] == 'E' || text[i] == 'I' || text[i] == 'O' || text[i] == 'U')
+//         {
+//             count++;
+//         }
+
+//     }
+//     return count;
+// }
+
+
+
+
+int count_vowels(const std::string& text)
+{
+    int count = 0;
+    for(std::size_t i = 0; i < text.length(); i++)
+    {
+        if(text[i] == 'a' || 
+        text[i] == 'e' ||
+        text[i] == 'i' ||
+        text[i] == 'o' ||
+        text[i] == 'u'
+        )
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+
+
+
+
+
+
+
+
 // TODO!!! LAST LEFT OFF HERE.. 
 // bool isPalindrome(const std::string& text)
 // {
@@ -140,12 +189,13 @@ int main()
     // std::cout << clamp_score(90) << "\n";
     // std::cout << clamp_score(-15) << "\n";
     // // task 3 ⭐
-    // std::cout << next_id() << "\n";
-    // std::cout << next_id() << "\n";
-    // std::cout << next_id() << "\n";
-    // std::cout << next_id() << "\n";
+    std::cout << next_id() << "\n";
+    std::cout << next_id() << "\n";
+    std::cout << next_id() << "\n";
+    std::cout << next_id() << "\n";
     // task 4
     reverse_text("hello");
+    std::cout << count_vowels("helloi") << "\n";
 
 
     // task 5

@@ -18,11 +18,11 @@ Try each task yourself before looking at the solutions at the bottom.
 ==========================================================================
 
 --- Functions, types, and constants -----------------------------------------
-Task 1:  Write `int square(int value)` that returns value * value, and
+✅DONE✅Task 1:  Write `int square(int value)` that returns value * value, and
          `double average(int a, int b)` that returns the average of two ints.
          (Watch out for integer division: average(3, 4) should be 3.5.)
 
-Task 2:  Define a constant `max_score` equal to 100 using constexpr. Then write
+✅DONE✅Task 2:  Define a constant `max_score` equal to 100 using constexpr. Then write
          `int clamp_score(int score)` that returns 0 if score is negative,
          max_score if score is above max_score, and score otherwise.
 
