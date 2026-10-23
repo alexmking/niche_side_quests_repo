@@ -543,6 +543,13 @@ alias cdcpphub="cd $NICHE_REPO_DIR/_universal/cpp_hub"
 alias cdtools="cd ~/amk/tools"
 alias cddropzone="cd ~/amk/tools/dropzone"
 
+alias cpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
+alias opencpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
+alias codecpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
+
+
+
+
 
 # ~amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub
 

@@ -2,6 +2,44 @@
 
 
 
+/*   
+%%%%%%%%%%%%%%%%%%%%%% NOTEWORTHY WRINKLES %%%%%%%%%%%%%%%%%%%%%%
+1. Single vs double quotes for chars vs strings
+EX:
+    if(text[i] == 'e') {}
+        text[i] is a char, but "e" (and the other double-quoted chars) is a string literal, which behaves like a const char*. C++ can’t compare those types, so it reports incompatible operands.
+
+        Use single quotes for character literals: 'e', 'i', 'o', and 'u'. For example:
+
+    
+2. 
+
+
+3.
+
+
+4.
+
+
+5.
+
+
+6.
+
+
+7.
+
+8.
+
+
+
+
+
+
+
+
+
+*/
 
 
 // ----------------------------------------------------------------------------------------

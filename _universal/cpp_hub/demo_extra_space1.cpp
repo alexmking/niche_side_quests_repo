@@ -37,12 +37,154 @@ int next_id()
 
 
 
+
+
+
+
+
+
+
+
+// --- Strings -----------------------------------------------------------------
+// Task 4:  Write `int count_vowels(const std::string& text)` that returns how
+//          many vowels (a, e, i, o, u, upper or lower case) the text contains.
+
+// Task 5:  Write `std::string reverse_text(const std::string& text)` that returns
+//          a reversed copy. Then write `bool is_palindrome(const std::string& text)`
+//          that returns true if the text reads the same forwards and backwards.
+
+
+
+bool is_palindrome(const std::string& text)
+{
+    // setup two ptrs at opp ends of string, then keep comparing them
+    // left = 0 
+    // right = len(text)-1
+
+    // while left <= right:
+    // if text[left] != text[right]:
+        // return false
+    // return true
+
+    int left = 0;
+    int right = text.length()-1;
+
+    while(left <= right)
+    {
+        if (text[left] != text[right])
+        {
+            return false;
+        }
+        left++;
+        right--;
+    }
+    return true;
+
+
+
+}
+
+
+
+
+
+std::string reverse_text(const std::string& text)
+{
+    std::string ans = text;
+    // // // iter over text string, in reverse
+    // std::cout << "text length: " << text.length() << "\n";
+    // for(std::size_t i = text.length()-1; i >= 0; i-- )
+    // {
+    //     // ans[text.length() - i] = text[i];
+    //     std::cout << i << "\n";
+    // }
+    // return ans;
+
+
+    // std::string ans = text;
+    // for(int i = text.length()-1; i >=0; i--)
+    // {
+    //     // std::cout << i << "\n";
+    //     std::cout << text.length()-1 - i << "\n";
+
+    //     ans[text.length()-1 - i] = text[i];
+    // }
+    // return ans;
+
+
+
+
+    std::string str = "hello";
+    for (char ch : text) 
+    {
+        std::cout << ch << "\n";
+    }
+
+    return ans;
+}
+
+
+
+
+
+
+
+
+
+
+int count_vowels(const std::string& text)
+{
+    int count = 0;
+    for(std::size_t i = 0; i < text.length(); i++)
+    {
+        if(text[i] == 'a' || text[i] == 'e' || text[i]== 'i' || text[i] == 'o' || text[i] == 'u')
+        {
+            count++;
+        }
+
+    }
+
+    return count;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int main()
 {
-    std::cout << next_id() << "\n";
-    std::cout << next_id() << "\n";
-    std::cout << next_id() << "\n";
-    std::cout << next_id() << "\n";
+    // std::cout << next_id() << "\n";
+    // std::cout << next_id() << "\n";
+    // std::cout << next_id() << "\n";
+    // std::cout << next_id() << "\n";
+
+    // // std::string myString = "king";
+    // // std::cout << myString.length() << "\n";
+
+
+    // std::cout << reverse_text("alex") << "\n";
+
+    std::cout << is_palindrome("racecar") << "\n";
+    std::cout << is_palindrome("alex") << "\n";
+
+
 
     return 0;
 }
@@ -63,17 +205,13 @@ int main()
     // Snooze inline suggestions: CTRL-ALT-S
 
     // CANCEL the ‘snooze’ (the shift-version of whatever the snooze hotkey is obvi): CTRL-ALT-SHIFT-S
+
+    // AND THESE last two for CTRL-ALT-T and CTRL-ALT-E:
+    // 't': { action: 'Focus Terminal (vscodes terminal)', color: 'yellow' },          // ctrl-alt-t
+    // 'e': { action: 'run cpp (code runner)', color: 'yellow' },          // ctrl-alt-e (think 'e' for execute)
 // ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
 
 
 
 
-
-// --- Strings -----------------------------------------------------------------
-// Task 4:  Write `int count_vowels(const std::string& text)` that returns how
-//          many vowels (a, e, i, o, u, upper or lower case) the text contains.
-
-// Task 5:  Write `std::string reverse_text(const std::string& text)` that returns
-//          a reversed copy. Then write `bool is_palindrome(const std::string& text)`
-//          that returns true if the text reads the same forwards and backwards.
