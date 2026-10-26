@@ -41,20 +41,20 @@ Try each task yourself before looking at the solutions at the bottom.
          that returns true if the text reads the same forwards and backwards.
 
 --- Vectors -----------------------------------------------------------------
-Task 6:  Write `int largest_element(const std::vector<int>& values)` that
+[✅DONE]Task 6:  Write `int largest_element(const std::vector<int>& values)` that
          returns the largest value in the vector, or 0 if the vector is empty.
 
-Task 7:  Write `std::vector<int> filter_even(const std::vector<int>& values)`
+[✅DONE]Task 7:  Write `std::vector<int> filter_even(const std::vector<int>& values)`
          that returns a new vector containing only the even values, in their
          original order. (filter_even({1, 2, 3, 4}) should be {2, 4}.)
 
-Task 8:  Write `std::vector<int> running_totals(const std::vector<int>& values)`
+[✅DONE]Task 8:  Write `std::vector<int> running_totals(const std::vector<int>& values)`
          that returns a vector where each element is the sum of all the input
          elements up to and including that position.
          (running_totals({1, 2, 3, 4}) should be {1, 3, 6, 10}.)
          Bonus: use reserve() so the result never reallocates.
 
-Task 9:  Write `void remove_value(std::vector<int>& values, int target)` that
+[✅DONE]Task 9:  Write `void remove_value(std::vector<int>& values, int target)` that
          removes every element equal to target, keeping the order of the rest.
          (Hint: calling erase inside a range-for loop is a bug. Look up the
          erase-remove idiom.)
