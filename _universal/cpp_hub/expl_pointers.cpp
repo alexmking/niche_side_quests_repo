@@ -111,7 +111,63 @@ Think about what the * is "operating" on:
 
 3b. the & means 2 different things depending on context: (this is part of the confusion on why the 'std::string& text' arg def does NOT take the 'address-of' a string, like you may think at first glance (since we know &message == address of message variable))
 
+
+4. Cool realization about passing ptrs as args: (apiphany with min_and_max() function task I had)
+> after doing the min_and_max() function, I saw the value of passing the min and max ptrs as args to the function like they did:
+> below shows how the minVal/maxVal variable will change after calling min_and_max() since that function is editing the elem at that ADDRESS
+> so this means we can change the val after it's defined even if it's before the actual call
+(this is kind of a hard apiphany to explain concisely but it's definitely a COOL/POWERFUL use of functions that I did NOT get with python/java like functions, since we dont really pass ptrs)
+    int minVal;
+    int maxVal;
+    std::vector<int> vec4 = {1,2,3,4,2,3};
+    int* vecPtr = &vec4[0];
+    min_and_max(vecPtr, 6, &minVal, &maxVal);
+
+
+5. The ++ operator with pointers:
+> typically these two lines are doing the same thing:
+    myInt = myInt + 1;
+    myInt++;
+HOWEVER, when you do ++ with ptrs, it's not simply adding 1, rather,
+rather, it moves the memory address forward by the size of the data type it points to
+> ⭐So this is why we can iter through a char* or and int* or vector<int>* with the same ++ operation at each loop:
+
+
+6. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 struct Player
 {
@@ -359,6 +415,56 @@ int* find_value_ptrs(int* values, std::size_t count, int target)
 
 
 
+std::size_t string_length2(const char* text)
+{
+    int count = 0;
+    while(*text != '\0')
+    {
+        count++;
+        text++;
+    }
+    return static_cast<std::size_t>(count);
+}
+
+
+
+
+
+
+
+// Task 13: Write `void reverse_in_place(int* values, std::size_t count)` that
+//          reverses the array in place. Do it with two pointers (one starting at
+//          the first element, one at the last) that move toward each other.
+//          Do nothing if values is null.
+
+void reverse_in_place_ptrs2(int* values, std::size_t count)
+{
+    if(values == nullptr || count == 0)
+    {return;}
+
+    int* left = &values[0];
+    int* right = &values[count-1];
+
+    while(left < right)
+    {
+        int tmp = *left;
+        *left = *right;
+        *right = tmp;
+        // update ptrs...
+        left++;
+        right--;
+    }
+    return;
+}
+
+
+
+
+
+
+
+
+
 
 
 void reverse_in_place_ptrs(int* values, std::size_t count)
@@ -446,8 +552,38 @@ bool min_and_max(const int* values, std::size_t count, int* out_min, int* out_ma
 }
 
 
+// Task 16: Write `int* create_filled_array(std::size_t count, int value)` that
+//          allocates an array of count ints on the heap with new[], sets every
+//          element to value, and returns it (or nullptr if count is 0). Then, in
+//          main, use the array and release it with delete[]. Who owns the memory
+//          after the function returns?
 
 
+// min_and_max but w vector input
+void min_and_max_vect(const std::vector<int>& values, int* min_out, int* max_out)
+{
+    // check vec isn't null
+    // iter over values
+    if(values.empty())
+    {
+        return;
+    }
+    int largest = values[0];
+    int smallest = values[0];
+
+    for(std::size_t i = 0; i <= values.size()-1; i++)
+    {
+        if(values[i] < smallest)
+        {smallest = values[i];}
+        if(values[i] > largest)
+        {largest= values[i];}
+    }
+
+    *min_out = smallest;
+    *max_out=largest;
+    return;
+
+}
 
 
 
@@ -524,6 +660,10 @@ int main()
     // std::size_t len = string_length(myString);
     // std::cout << "Length of \"" << myString << "\": " << len << "\n";
 
+    // // call string_length
+    // const char* myString = "alex";
+    // std::size_t len = string_length2(myString);
+    // std::cout << "Length of \"" << myString << "\": " << len << "\n";
 
 
 
@@ -544,18 +684,98 @@ int main()
 
 
 
+
+    // int minVal = 10000;
+    // int maxVal = -10000;
+
+    // int* minPtr = &minVal;
+    // int* maxPtr = &maxVal;
+    // std::vector<int> vec4 = {1,2,3,4,2,3};
+    // int* vecPtr = &vec4[0];
+    // min_and_max(vecPtr, 6, minPtr, maxPtr);
+
+    // std::cout << *minPtr << "\n";
+    // std::cout << *maxPtr << "\n";
+
+
+    // int minVal;
+    // int maxVal;
+    // std::vector<int> vec4 = {1,2,3,4,2,3};
+    // int* vecPtr = &vec4[0];
+    // min_and_max_vect(vec4, &minVal, &maxVal);
+
+    // std::cout << minVal << "\n";
+    // std::cout << maxVal << "\n";
+
+
+
+
+
+
+
+
+
+
+    // int minVal;
+    // int maxVal;
+
+    // std::vector<int> values = {1,200,50,0,205};
+    // min_and_max_vect(values, &minVal, &maxVal);
+    // std::cout << minVal << "\n";
+    // std::cout << maxVal << "\n";
+
+
+
+    // // int* vals = {1,2,3,4};
+    // std::vector<int> nums = {1,2,3,4};
+    // reverse_in_place_ptrs2(&nums[0], 4);
+
+    // std::vector<int> nums = {1,2,3,4}; // create the nums list
+    // int* ptr = &nums[0]; // create the ptr to first elem in nums 
+    // reverse_in_place_ptrs2(ptr, 4); // pass the ptr as the first arg
+
+
+
+
+
+
+
+
+
+
+
+
+
+    int arr[] = {10, 20, 30, 40}; // C-STYLE ARRAYS (kinda the C-equiv of std::vectors)
+    std::vector<int> vec{10, 20, 30, 40}; // cpp std::vector
+    int* arrPtr = &arr[0];
+    int* vecPtr = &vec[0];
+
+    reverse_in_place_ptrs2(&arr[0], 4); // pass the ptr as the first arg
+    reverse_in_place_ptrs2(&vec[0], 4); // pass the ptr as the first arg
+
+    for(int i = 0; i < 4; i++)
+    {
+        std::cout << arr[i] << "-";
+    }
+    std::cout << "\n";
     
-    int minVal = 10000;
-    int maxVal = -10000;
+    for(auto elem : vec)
+    {std::cout << elem << "-";}
+    std::cout << "\n";
 
-    int* minPtr = &minVal;
-    int* maxPtr = &maxVal;
-    std::vector<int> vec4 = {1,2,3,4,2,3};
-    int* vecPtr = &vec4[0];
-    min_and_max(vecPtr, 6, minPtr, maxPtr);
+    
 
-    std::cout << *minPtr << "\n";
-    std::cout << *maxPtr << "\n";
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -92,7 +92,7 @@ Task 16: Write `int* create_filled_array(std::size_t count, int value)` that
          allocates an array of count ints on the heap with new[], sets every
          element to value, and returns it (or nullptr if count is 0). Then, in
          main, use the array and release it with delete[]. Who owns the memory
-         after the function returns?
+         after the function returns?    
 
 --- References --------------------------------------------------------------
 Task 17: Write `void swap_with_references(int& a, int& b)` that swaps two ints.

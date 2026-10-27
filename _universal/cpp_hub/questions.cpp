@@ -8,4 +8,9 @@
 
 
 
+// 2. what is the diff between the first arg of these two functions:
+    // void myFunc1(int* values, int size)
+    // void myFunc2(std::vector<int>& values)
+
+    // ANSWER: they're both ptrs to arrays/vectors but myFunc1(int* values) accepts c-style arrays, not just std::vectors
 
