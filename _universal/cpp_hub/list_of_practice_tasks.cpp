@@ -60,29 +60,29 @@ Try each task yourself before looking at the solutions at the bottom.
          erase-remove idiom.)
 
 --- Pointers ----------------------------------------------------------------
-Task 10: Write `int sum_values(const int* values, std::size_t count)` that
+[✅DONE]Task 10: Write `int sum_values(const int* values, std::size_t count)` that
          takes a pointer to the first element of an int array and the number
          of elements, and returns the sum of all the elements.
 
-Task 11: Write `void swap_with_pointers(int* a, int* b)` that swaps the two
+[✅DONE]Task 11: Write `void swap_with_pointers(int* a, int* b)` that swaps the two
          ints the pointers point to. Do nothing if either pointer is null.
 
-Task 12: Write `int* find_value(int* values, std::size_t count, int target)`
+[✅DONE]Task 12: Write `int* find_value(int* values, std::size_t count, int target)`
          that returns a pointer to the first element equal to target, or
          nullptr if the target is not present or values is null. Use the
          returned pointer in main to change the found element.
 
-Task 13: Write `void reverse_in_place(int* values, std::size_t count)` that
+[✅DONE]Task 13: Write `void reverse_in_place(int* values, std::size_t count)` that
          reverses the array in place. Do it with two pointers (one starting at
          the first element, one at the last) that move toward each other.
          Do nothing if values is null.
 
-Task 14: Write `std::size_t string_length(const char* text)` that returns the
+[✅DONE]Task 14: Write `std::size_t string_length(const char* text)` that returns the
          number of characters in a C-style string (not counting the '\0'
          terminator) by walking a pointer until it reaches the terminator.
          Return 0 if text is null. Do not use strlen.
 
-Task 15: Write
+[✅DONE]Task 15: Write
          `bool min_and_max(const int* values, std::size_t count, int* out_min, int* out_max)`
          that stores the smallest and largest elements through the two output
          pointers and returns true. If values is null, count is 0, or either

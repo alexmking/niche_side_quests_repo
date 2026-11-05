@@ -24,12 +24,12 @@
     
 // }
 
-int next_id()
-{
-    static int id = 0;
-    id++;
-    return id;
-}
+// int next_id()
+// {
+//     static int id = 0;
+//     id++;
+//     return id;
+// }
 
 
 
@@ -89,43 +89,40 @@ bool is_palindrome(const std::string& text)
 
 
 
-std::string reverse_text(const std::string& text)
-{
-    std::string ans = text;
-    // // // iter over text string, in reverse
-    // std::cout << "text length: " << text.length() << "\n";
-    // for(std::size_t i = text.length()-1; i >= 0; i-- )
-    // {
-    //     // ans[text.length() - i] = text[i];
-    //     std::cout << i << "\n";
-    // }
-    // return ans;
+// std::string reverse_text(const std::string& text)
+// {
+//     std::string ans = text;
+//     // // // iter over text string, in reverse
+//     // std::cout << "text length: " << text.length() << "\n";
+//     // for(std::size_t i = text.length()-1; i >= 0; i-- )
+//     // {
+//     //     // ans[text.length() - i] = text[i];
+//     //     std::cout << i << "\n";
+//     // }
+//     // return ans;
 
 
-    // std::string ans = text;
-    // for(int i = text.length()-1; i >=0; i--)
-    // {
-    //     // std::cout << i << "\n";
-    //     std::cout << text.length()-1 - i << "\n";
+//     // std::string ans = text;
+//     // for(int i = text.length()-1; i >=0; i--)
+//     // {
+//     //     // std::cout << i << "\n";
+//     //     std::cout << text.length()-1 - i << "\n";
 
-    //     ans[text.length()-1 - i] = text[i];
-    // }
-    // return ans;
-
-
-
-
-    std::string str = "hello";
-    for (char ch : text) 
-    {
-        std::cout << ch << "\n";
-    }
-
-    return ans;
-}
+//     //     ans[text.length()-1 - i] = text[i];
+//     // }
+//     // return ans;
 
 
 
+
+//     std::string str = "hello";
+//     for (char ch : text) 
+//     {
+//         std::cout << ch << "\n";
+//     }
+
+//     return ans;
+// }
 
 
 
@@ -133,20 +130,23 @@ std::string reverse_text(const std::string& text)
 
 
 
-int count_vowels(const std::string& text)
-{
-    int count = 0;
-    for(std::size_t i = 0; i < text.length(); i++)
-    {
-        if(text[i] == 'a' || text[i] == 'e' || text[i]== 'i' || text[i] == 'o' || text[i] == 'u')
-        {
-            count++;
-        }
 
-    }
 
-    return count;
-}
+
+// int count_vowels(const std::string& text)
+// {
+//     int count = 0;
+//     for(std::size_t i = 0; i < text.length(); i++)
+//     {
+//         if(text[i] == 'a' || text[i] == 'e' || text[i]== 'i' || text[i] == 'o' || text[i] == 'u')
+//         {
+//             count++;
+//         }
+
+//     }
+
+//     return count;
+// }
 
 
 
@@ -219,6 +219,8 @@ void remove_value(std::vector<int>& values, int target)
     }
 
 }
+
+
 
 
 
@@ -320,6 +322,87 @@ int largest_element(const std::vector<int>& values)
 
 
 
+// --- Functions, types, and constants -----------------------------------------
+// [✅DONE]Task 1:  Write `int square(int value)` that returns value * value, and
+//          `double average(int a, int b)` that returns the average of two ints.
+//          (Watch out for integer division: average(3, 4) should be 3.5.)
+
+int square(int value)
+{
+    return value * value;
+}
+
+double average(int a, int b)
+{
+    return (a+b) / 2.0;
+}
+
+
+// [✅DONE]Task 2:  Define a constant `max_score` equal to 100 using constexpr. Then write
+//          `int clamp_score(int score)` that returns 0 if score is negative,
+//          max_score if score is above max_score, and score otherwise.
+
+const int max_score = 100;
+int clamp_score(int score)
+{
+    if(score > 100){return max_score;}
+    if(score < 0){return 0;}
+    return score;
+}
+
+// --- Scope -------------------------------------------------------------------
+// [✅DONE]Task 3:  Write `int next_id()` that returns 1 the first time it is called, 2
+//          the second time, 3 the third time, and so on. The count must persist
+//          between calls without using a global variable.
+int next_id()
+{
+    static int id = 0;
+    return id++;
+}
+
+
+// --- Strings-----------------------------------------------------------------
+// [✅DONE]Task 4:  Write `int count_vowels(const std::string& text)` that returns how
+//          many vowels (a, e, i, o, u, upper or lower case) the text contains.
+int count_vowels(std::string& text)
+{
+    int tot = 0;
+    for(size_t i = 0; i <= text.size()-1; i++)
+    {
+        if(text[i] == 'a' || text[i] == 'e' || text[i] == 'i' || text[i] == 'o' || text[i] == 'u')
+        {
+            tot++;
+        }
+    }
+    return tot;
+}
+
+// [✅DONE]Task 5:  Write `std::string reverse_text(const std::string& text)` that returns
+//          a reversed copy. Then write `bool is_palindrome(const std::string& text)`
+//          that returns true if the text reads the same forwards and backwards.
+std::string reverse_text(const std::string& text)
+{
+    int left = 0;
+    int right = text.size()-1;
+
+    std::string ans = text;
+
+    while(left < right)
+    {
+        auto tmp = text[left];
+        ans[left] = text[right];
+        ans[right] = tmp;
+
+        // update ptrs
+        left++;
+        right--;
+    }
+    return ans;
+
+}
+
+
+
 
 
 
@@ -349,35 +432,57 @@ int main()
     // std::cout << is_palindrome("racecar") << "\n";
     // std::cout << is_palindrome("alex") << "\n";
 
-    std::vector<int> myVect{10,30,21,30,41,30,50};
-    std::cout << largest_element(myVect) << "\n";
-    // filter_even(myVect);
+    // std::vector<int> myVect{10,30,21,30,41,30,50};
+    // std::cout << largest_element(myVect) << "\n";
+    // // filter_even(myVect);
 
-    for(int v : filter_even(myVect))
-    {
-        std::cout << v << " ";
-    }
-    std::cout << "\n";
-
-
-
-    // (running_totals({1, 2, 3, 4}) should be {1, 3, 6, 10}.)
-    std::vector<int> alexVect{1,2,3,4};
-    // running_totals(alexVect);
-
-    for(int v : running_totals(alexVect))
-    {
-        std::cout << v << " ";
-    }
-    std::cout << "\n";
+    // for(int v : filter_even(myVect))
+    // {
+    //     std::cout << v << " ";
+    // }
+    // std::cout << "\n";
 
 
-    remove_value(myVect, 30);
-    for(int v: myVect)
-    {
-        std::cout << v << " ";
-    }
-    std::cout << "\n";
+
+    // // (running_totals({1, 2, 3, 4}) should be {1, 3, 6, 10}.)
+    // std::vector<int> alexVect{1,2,3,4};
+    // // running_totals(alexVect);
+
+    // for(int v : running_totals(alexVect))
+    // {
+    //     std::cout << v << " ";
+    // }
+    // std::cout << "\n";
+
+
+    // remove_value(myVect, 30);
+    // for(int v: myVect)
+    // {
+    //     std::cout << v << " ";
+    // }
+    // std::cout << "\n";
+
+
+
+
+
+
+
+    // call the following functions using sample data and print the results: square,average, clamp_score, next_id, count_vowels, reverse_text
+    std::cout << "square(5): " << square(5) << "\n";
+    std::cout << "average(3, 4): " << average(3, 4) << "\n";
+    std::cout << "clamp_score(120): " << clamp_score(120) << "\n";
+    std::cout << "next_id(): " << next_id() << "\n";
+    std::cout << "next_id(): " << next_id() << "\n";
+    std::cout << "next_id(): " << next_id() << "\n";
+    std::cout << "next_id(): " << next_id() << "\n";
+    std::string text = "hello world";
+    std::cout << "count_vowels(\"hello world\"): " << count_vowels(text) << "\n";
+    // std::cout << "count_vowels(\"hello world\"): " << count_vowels(&"hello world") << "\n";
+    std::cout << "reverse_text(\"hello\"): " << reverse_text("hello") << "\n";
+
+
+
 
 
 
