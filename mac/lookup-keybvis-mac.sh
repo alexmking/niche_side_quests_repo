@@ -12,14 +12,8 @@
 # /usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt
 # FILE="/usr/local/bin/alexScripts/raycast_scripts/ssot-refs.txt"
 FILE="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/keyboard-shortcuts.html"
+FILE2="/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/vscode-shortcuts.html"
 
-
-#####################################
-### ENHANCEMENTS TO IMPLEMENT SOON
-#####################################
-## 1. have it be able to search across more than 1 file
-##### - maybe rule where itll only search the next file if the original search yields no results
-######## - as it may slow the search process if there are many files to check EVERY time, since it would have to iterate through all of them regardless of whether the first file had matches. And tbh, most of the time it will find results for the first file anyway. (at least for this narrowed-down keyb-shortcut files instead of the main 2 giant ref.txt files)
 
 
 QUERY="$1"
@@ -29,14 +23,26 @@ if [ -z "$QUERY" ]; then
   exit 0
 fi
 
-PRIMARY=$(rg -i "^$QUERY\b" "$FILE")
+search_file() {
+  local file="$1"
+  local filename="${file##*/}"
+  local primary
+  local matches
 
-if [ -n "$PRIMARY" ]; then
-  echo "$PRIMARY"
-  exit 0
-fi
+  primary=$(rg -i "^$QUERY\b" "$file")
+  if [ -n "$primary" ]; then
+    printf 'Results from %s:\n%s\n\n' "$filename" "$primary"
+    return
+  fi
 
-rg -i "$QUERY" "$FILE" | head -n 20
+  matches=$(rg -i "$QUERY" "$file" | head -n 20)
+  if [ -n "$matches" ]; then
+    printf 'Results from %s:\n%s\n\n' "$filename" "$matches"
+  fi
+}
+
+search_file "$FILE"
+search_file "$FILE2"
 
 # 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 
 # ASK GPT THIS QUESTION FOR THIS SCRIPT, just like I did for LOOKUP-REF script:
