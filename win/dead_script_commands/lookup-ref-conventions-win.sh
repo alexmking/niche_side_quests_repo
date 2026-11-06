@@ -26,7 +26,19 @@
 # FILE="D:\git\niche_side_quests_repo\win\ALL_PATHS.txt"
 # FILE="D:\git\niche_side_quests_repo\win\workRef-ssot.txt"
 # FILE="D:\git\niche_side_quests_repo\win\ssot-workref.txt"
-FILE="D:\git\niche_side_quests_repo\_universal\ref-official-conventions-&-guidelines.txt"
+# FILE="D:\git\niche_side_quests_repo\_universal\ref-official-conventions-&-guidelines.txt"
+
+
+##### UPDATE!!! We'll be deleting this script commmand soon now that we moved everything in ref-official-conventions-&-guidelines.txt to ssot-refs.txt
+##### UPDATE!!! We'll be deleting this script commmand soon now that we moved everything in ref-official-conventions-&-guidelines.txt to ssot-refs.txt
+##### UPDATE!!! We'll be deleting this script commmand soon now that we moved everything in ref-official-conventions-&-guidelines.txt to ssot-refs.txt
+##### UPDATE!!! We'll be deleting this script commmand soon now that we moved everything in ref-official-conventions-&-guidelines.txt to ssot-refs.txt
+FILE="D:\git\niche_side_quests_repo\_universal\dead_script_commands\ref-official-conventions-&-guidelines.txt"
+##### UPDATE!!! We'll be deleting this script commmand soon now that we moved everything in ref-official-conventions-&-guidelines.txt to ssot-refs.txt
+##### UPDATE!!! We'll be deleting this script commmand soon now that we moved everything in ref-official-conventions-&-guidelines.txt to ssot-refs.txt
+##### UPDATE!!! We'll be deleting this script commmand soon now that we moved everything in ref-official-conventions-&-guidelines.txt to ssot-refs.txt
+##### UPDATE!!! We'll be deleting this script commmand soon now that we moved everything in ref-official-conventions-&-guidelines.txt to ssot-refs.txt
+
 
 
 
