@@ -426,7 +426,7 @@ now that we have quite alot of diff subtle varations of search / lookups, fzf, t
 ,.dev?
 ========================================================================
 > GREP over .txt file   (these are 'lookups' script commands from rayc pov)(singular input -> output)
-> FZF over .txt file    (ONLY possible in terminal atm...not Raycast)
+> FZF over .txt file    (ONLY possible in terminal atm...not Raycast :(    )
 >   > we can have an FZF-equiv for all the GREP/LOOKUPS (usually just via aliases and piping | fzf)
 >
 >
@@ -460,6 +460,39 @@ now that we have quite alot of diff subtle varations of search / lookups, fzf, t
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.CONVENTIONS FOR .TXT FILES NOTE SYSTEM (STYLE GUIDE) / GUIDELINES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+BELOW IS THE COPY/PASTED CONTENT FROM THE ref-official-conventions-&-guidelines.txt file
+- I still need to clean up alot of it so it fits into my own note-taking style and conventions
+- (although obvi caveat being this 'section' is a section that's meant to explain how the format of sections should go...so it's prob not going to fit EXACTLY into my own note-taking style)
+      (remove these star-headers once you cleaned up the section a bit)
+      (remove these star-headers once you cleaned up the section a bit)
+      (remove these star-headers once you cleaned up the section a bit)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+GLOBAL HEADER     ||  h1 (only a few in the entire file, and separated by GIANT tons of whitespace) (looking at the miniMap in vscode, these global headers will represent all the blocks that are separated by tons a empty space))
+  SECTION HEADER  ||  h2 (this is the default, standard header)
+    SUB-HEADER    ||  h3 (optional, just like subcats in devland)
+      TOPIC CARD  ||
+        [LABELS]  ||
+
+
+
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+
+
+
+great GPT tips for .txt files here:📌
+https://chatgpt.com/c/6a2b8713-3c58-83ea-acb1-f4ceeac862f6 📌
 
 
 
@@ -468,6 +501,298 @@ now that we have quite alot of diff subtle varations of search / lookups, fzf, t
 
 
 
+
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+
+
+> NOTE: the below prefix and path stuff has been pretty well thought out so be careful changing stuff that you think doesnt make much sense at the surface 
+    bc there's very likely a good reason it's that way
+        EX: using the ,. prefix is easy to remember bc the keys are right next to each other
+        ALSO: using the same prefix for the full path defintions allows us to more casually/quickly search for a directory without needing to include any directories leading up to it, which is def a big perk, bigger perk than it sounds on its face.
+            > also, allows us to jump to each sub-section of a section by simply searching for 
+
+
+> The 2nd line of the h2 and h3 headers is for the full 'path' concept, similar to file directories except the dash / is replaced wit hthe prefix ,;
+    > by having these full path lines, 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.DEVELOPMENT (GLOBAL HEADER)this one is tbd, doesnt matter much)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+======================================================================
+,.LANGUAGES                    (the current section i always on first line and ALL_CAPS, while the full path is always )    
+,.development,.languages       (the full 'path' is always line two and in all-lowercase)
+======================================================================
+
+
+----------------------------------------------------------------------
+,.MYTOPIC                               
+;;development,.languages,.mytopic       (TBD on this slight variation of the prefix from ,. to ;; )(the variation would allow us to search only h3 descriptions but not sure that is worth it and it may be better just to simplify both title and description of headers to have the same ,; prefix)
+----------------------------------------------------------------------
+
+[SUMMARY]
+SprocketScript is a fictional scripting language used as an example.
+
+[DEFINITION]
+A lightweight automation language for small scripts and local workflow automation.
+
+[WHEN TO USE]
+- Quick local automation
+- Small text-processing tasks
+- Simple workflow glue between tools
+
+[EXAMPLES]
+print("hello")
+,.
+[GOTCHAS]
+- Fictional example only.
+
+
+
+
+
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+
+
+
+
+
+
+------------------------------------------------------------
+raycast snippets 
+------------------------------------------------------------
+r-global        |   ;h1       ;rh1        ;refh1
+r-section       |   ;h2       ;rh2        ;refh2
+r-subsection    |   ;h3       ;rh3        ;refh3
+r-topic         |   ;rtopic   ;reftopic   ;ref-topic
+
+r-sum           |
+r-def           |
+r-use           |
+r-ex            |
+r-gotcha        |
+r-cmd           |
+r-prob          |
+
+r-sep           |
+r-sep2 (minisep)|
+r-break         |
+r-box           |
+r-warn          |
+r-table         |
+
+- - - - - - - - - 
+variations to add for each of the snippets:
+- - - - - - - - - 
+;r-table 
+;rtable
+;ref-table
+;reftable
+
+
+
+
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+================== TMP DIVIDER for the CONVENTIONS copy/pasted content until I clean up the sections  ===================
+
+
+
+
+
+
+
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+CRITIQUE OF CURRENT STRUCTURE:
+🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+-after looking at below NFL example, bc were not TABBING the content within each header, it may be harder to visually distinguish between different levels of headers and their associated content. This could impact readability and make it more challenging to quickly identify the hierarchy of information.
+    - CVEAT to this being that many sections will prob not have very nested content or more than a couple h2, h3 headers, 
+        - BUT it's def something to keep an eye on for future sections with more nested content
+        >>> if we do conclude it's a prob we need to fix, then we could start with having the h3 header only be a single line instead of the line above AND below the header like all h1,2,3 headers are doing rn
+
+
+
+
+nfl teams (h1)
+    team1 (h2)
+        players (h3)
+        coaches (h3)
+    team2 (h2)
+        players (h3)
+        coaches (h3)
+
+
+
+
+BELOW IS ROUGH IDEA OF WHAT A MORE CONCRETE EXAMPLE OF HOW IT WOULD WORK wit the headers and searching via the paths...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.NFL TEAMS 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+======================================================================
+,.vikings                  (the current section i always on first line and ALL_CAPS, while the full path is always )    
+,.nfl-teams,.vikings          (the full 'path' is always line two and in all-lowercase)
+======================================================================
+
+----------------------------------------------------------------------
+,.players                          
+;;nfl-teams,.vikings,.players       (TBD on this slight variation of the prefix from ,. to ;; )(the variation would allow us to search only h3 descriptions but not sure that is worth it and it may be better just to simplify both title and description of headers to have the same ,; prefix)
+----------------------------------------------------------------------
+[SUMMARY]
+the vikings players:
+- player 1
+- player 2
+- player 3
+[GOTCHAS]
+- dont have a qb that can play better than high school level...
+
+----------------------------------------------------------------------
+,.coaches                            
+;;nfl-teams,.vikings,.coaches       (TBD on this slight variation of the prefix from ,. to ;; )(the variation would allow us to search only h3 descriptions but not sure that is worth it and it may be better just to simplify both title and description of headers to have the same ,; prefix)
+----------------------------------------------------------------------
+[SUMMARY]
+the vikings coaches:
+- head coach 1
+- off coord coach 2
+- def coord coach 3
+[GOTCHAS]
+- KOC sucks as a coach
+
+======================================================================
+,.bears                 (the current section i always on first line and ALL_CAPS, while the full path is always )    
+,.nfl-teams,.bears          (the full 'path' is always line two and in all-lowercase)
+======================================================================
+
+----------------------------------------------------------------------
+,.players                          
+;;nfl-teams,.bears,.players       (TBD on this slight variation of the prefix from ,. to ;; )(the variation would allow us to search only h3 descriptions but not sure that is worth it and it may be better just to simplify both title and description of headers to have the same ,; prefix)
+----------------------------------------------------------------------
+[SUMMARY]
+the bears players:
+- player 1
+- player 2
+- player 3
+[GOTCHAS]
+- do have a good qb that can play better than high school level...
+
+----------------------------------------------------------------------
+,.coaches                            
+;;nfl-teams,.bears,.coaches       (TBD on this slight variation of the prefix from ,. to ;; )(the variation would allow us to search only h3 descriptions but not sure that is worth it and it may be better just to simplify both title and description of headers to have the same ,; prefix)
+----------------------------------------------------------------------
+[SUMMARY]
+the bears coaches:
+- head coach 1
+- off coord coach 2
+- def coord coach 3
+[GOTCHAS]
+- ben johnson good as a coach
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+THIS IS THE END OF THE CONVENTIONS SECTION (remove these star-headers once you cleaned up the section a bit)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.KEYBOARD SHORTCUT PHILOSOPHY / RULES OF THUMBS 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+-(note this section outlines the guiding principles for using keyboard shortcuts efficiently, and NOT specific key mappings, which are in the html files of keybviz + vskeybviz)
+- most of this content will be coming from the old _universal/current_keyboard_bindings.txt file
+❗,.TODO: go through the old _universal/current_keyboard_bindings.txt file and extract the guiding principles for keyboard shortcuts 
+    -Again, remember to ignore the actual mappings when transferring content from the old file. this section is ONLY about the principles and rules of thumb for using keyboard shortcuts efficiently)
+FULL PATH:
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TODO-go_through_these_and_consolidate_to_ssotref/current_keyboard_bindings.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,. TRANSFER ANY GOOD STUFF FROM: _universal/TRANSFER_ALL_MY_CONTENTS_TO_NEW_REFS_TXT.md file    [ DELETE THIS h1 header AFTER you officially transferred all the good content from that file, and ONLY after, not BEFORE!]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+❗,.TODO: go through the _universal/TRANSFER_ALL_MY_CONTENTS_TO_NEW_REFS_TXT.md file and extract any useful content to transfer to this reference file
+- OBVI this h1 header should be removed once the content is transferred and properly organized, as the content from that md file belongs in many diff sections throughout this reference file
+- this h1 header was just meant to ensure i do not FORGET about all that great content left behind in the _universal/TRANSFER_ALL_MY_CONTENTS_TO_NEW_REFS_TXT.md file and to remind me to transfer it to the appropriate sections in this reference file
+FULL PATH:
+/Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/TRANSFER_ALL_MY_CONTENTS_TO_NEW_REFS_TXT.md
 
 
 

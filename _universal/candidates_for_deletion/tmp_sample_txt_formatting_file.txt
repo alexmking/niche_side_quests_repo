@@ -1,3 +1,33 @@
+[ABOUT THIS FILE: this is merely an example/template for plaintext note formatting and organization]
+- I pulled the good things/ideas i liked from it and added to my own ref.txt doc 
+- eventually I can just delete this file entirely but I want to keep it for a while as I iteratively improve on this new txt style notes system
+
+
+
+[BELOW THIS PT HERE IS WHERE THE ACTUAL FILE CONTENT STARTS (above was just a reminder not to consider this file my 'actual' conventions/guidelines)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ======================================================================
 PERSONAL TECH REFERENCE NOTES
 =============================

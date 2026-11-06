@@ -26,9 +26,9 @@ TABLE OF CONTENTS
 
 
 
-GLOBAL HEADER     ||  (only a few in the entire file, and separated by GIANT tons of whitespace) (looking at the miniMap in vscode, these global headers will represent all the blocks that are separated by tons a empty space))
-  SECTION HEADER  ||  (this is the default, standard header)
-    SUB-HEADER    ||  (optional, just like subcats in devland)
+GLOBAL HEADER     ||  h1 (only a few in the entire file, and separated by GIANT tons of whitespace) (looking at the miniMap in vscode, these global headers will represent all the blocks that are separated by tons a empty space))
+  SECTION HEADER  ||  h2 (this is the default, standard header)
+    SUB-HEADER    ||  h3 (optional, just like subcats in devland)
       TOPIC CARD  ||
         [LABELS]  ||
 
