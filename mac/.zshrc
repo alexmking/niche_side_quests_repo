@@ -541,14 +541,17 @@ alias amk="cd ~/amk"
 alias cdprojects="cd ~/amk/projects"
 alias cdcpphub="cd $NICHE_REPO_DIR/_universal/cpp_hub"
 alias cdtools="cd ~/amk/tools"
-alias cddropzone="cd ~/amk/tools/dropzone"
+alias cddropzone="cd ~/amk/dropzone"
+alias cddrop="cd ~/amk/dropzone"
+
 
 alias cpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 alias opencpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 alias codecpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 
 
-
+# /Users/alexking/amk/tools/alexScripts
+alias cdal
 
 
 # ~amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub
@@ -1233,7 +1236,17 @@ alias cdalexking="cd /Users/alexking"
 alias cdroot="cd /"
 alias cdhome="cd /Users/alexking"
 
-alias cdalexscripts="cd $ALEX_SCRIPTS_DIR"
+
+alias cdalexscripts="cd $ALEXSCRIPTS_DIR"
+alias cdscriptcommands="cd $ALEXSCRIPTS_DIR"
+alias cdraycastscriptcommands="cd $ALEXSCRIPTS_DIR"
+alias cdrayscriptcommands="cd $ALEXSCRIPTS_DIR"
+alias cdraycommands="cd $ALEXSCRIPTS_DIR"
+alias cdraycastcommands="cd $ALEXSCRIPTS_DIR"
+
+
+
+# alias cdalexscripts="cd $HOME"
 alias cdconfig="cd $HOME/.config"
 alias cdallconfigs="cd /Users/alexking/ALL_CONFIGS"
 alias cdapps="cd /Applications"
