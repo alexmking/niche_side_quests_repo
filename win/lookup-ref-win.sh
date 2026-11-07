@@ -24,6 +24,8 @@
 # FILE="/Users/alexking/local_docs/GIT_STUFF/niche_side_quests_repo/mac/.zshrc"
 # FILE="D:\git\niche_side_quests_repo\_universal\ssot-refs.md"
 FILE="D:\git\niche_side_quests_repo\_universal\ssot-ref.txt"
+FILE2="D:\git\niche_side_quests_repo\win\ssot-workref.txt"
+
 
 QUERY="$1"
 
@@ -97,41 +99,66 @@ if [ -z "$QUERY" ]; then
   exit 0
 fi
 
-# Search for exact matches at the beginning of lines
-PRIMARY=$(rg -i "^$QUERY\b" "$FILE")
+# Searches the given file and prints results. Returns 1 if nothing matched.
+search_file() {
+  local file="$1"
 
-if [ -n "$PRIMARY" ]; then
-  print_header "EXACT MATCH FOUND (exact meaning it's at the start of a line)"
-  echo ""
-  # Highlight the term first, then add checkmarks
-  HIGHLIGHTED=$(highlight_term "$PRIMARY" "$QUERY")
-  add_checkmarks "$HIGHLIGHTED"
-  echo ""
-  
-  # Also show related/similar entries
-  RELATED=$(rg -i "$QUERY" "$FILE" | grep -v "^$QUERY\b" | head -n 5)
-  if [ -n "$RELATED" ]; then
-    print_header "MATCHES FOUND not at the start of a line"
+  # Search for exact matches at the beginning of lines
+  local primary
+  primary=$(rg -i "^$QUERY\b" "$file")
+
+  if [ -n "$primary" ]; then
+    print_header "EXACT MATCH FOUND in $file (exact meaning it's at the start of a line)"
     echo ""
-    add_yellow_circles "$(highlight_term "$RELATED" "$QUERY")"
+    # Highlight the term first, then add checkmarks
+    add_checkmarks "$(highlight_term "$primary" "$QUERY")"
     echo ""
+
+    # Also show related/similar entries
+    local related
+    related=$(rg -i "$QUERY" "$file" | grep -v "^$QUERY\b" | head -n 5)
+    if [ -n "$related" ]; then
+      print_header "MATCHES FOUND not at the start of a line"
+      echo ""
+      add_yellow_circles "$(highlight_term "$related" "$QUERY")"
+      echo ""
+    fi
+    return 0
   fi
+
+  # If no exact match, search for partial matches
+  local results
+  results=$(rg -i "$QUERY" "$file" | head -n 20)
+
+  if [ -n "$results" ]; then
+    print_header "🔍 SEARCH RESULTS for '$QUERY' in $file"
+    echo ""
+    add_yellow_circles "$(highlight_term "$results" "$QUERY")"
+    echo ""
+    echo "💡 Tip: Try a more specific search term for exact matches"
+    return 0
+  fi
+
+  return 1
+}
+
+if search_file "$FILE"; then
   exit 0
 fi
 
-# If no exact match, search for partial matches
-RESULTS=$(rg -i "$QUERY" "$FILE" | head -n 20)
+# No matches in FILE, so fall back to FILE2
+print_header "⚠️ NO MATCHES in $FILE"
+echo ""
+echo "No entries found for '$QUERY' in $FILE"
+echo "Searching $FILE2 instead..."
+echo ""
 
-if [ -n "$RESULTS" ]; then
-  print_header "🔍 SEARCH RESULTS for '$QUERY'"
+if ! search_file "$FILE2"; then
+  print_header "❌ NO RESULTS FOUND IN EITHER FILE"
   echo ""
-  add_yellow_circles "$(highlight_term "$RESULTS" "$QUERY")"
-  echo ""
-  echo "💡 Tip: Try a more specific search term for exact matches"
-else
-  print_header "❌ NO RESULTS FOUND"
-  echo ""
-  echo "No entries found for: '$QUERY'"
+  echo "No entries found for '$QUERY' in either file:"
+  echo "   • $FILE"
+  echo "   • $FILE2"
   echo ""
   echo "💡 SUGGESTIONS:"
   echo "   • Try different keywords or abbreviations"
