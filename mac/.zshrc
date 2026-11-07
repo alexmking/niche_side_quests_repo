@@ -1325,6 +1325,19 @@ alias fzfp10kconfig="cat ~/.p10k.zsh | fzf"
 alias fzfeditp10k="cat ~/.p10k.zsh | fzf"
 alias fzfeditprompt="cat ~/.p10k.zsh | fzf"
 
+###############################################################
+# REMINDER THESE FZF-ALIASES ARE SUPER GREAT, SO USE THEM!!! (it's basically an upgraded LOOKUP raycast command, with only tiny downside being it must be dealt with in the terminal )
+###############################################################
+alias fzfref="cat /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-ref.txt | fzf"
+alias fzref="cat /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-ref.txt | fzf"
+
+alias fzfworkref="cat /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/win/ssot-workref.txt | fzf"
+alias fzworkref="cat /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/win/ssot-workref.txt | fzf"
+
+
+
+
+
 
 alias editref="code /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
 alias editssotref="code /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
