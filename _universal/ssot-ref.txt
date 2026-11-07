@@ -170,15 +170,6 @@ Use this section for messy capture before moving items into real topic cards.
 
 
 
-
-
-
-
-
-
-
-
-
 ❗ PROMPTS TO REASK, on the HIGH-SETTING new chat:  https://chatgpt.com/c/6a2c5d0c-c3b8-83ea-bb8c-dc922b401161
 https://chatgpt.com/c/6a2c5d0c-c3b8-83ea-bb8c-dc922b401161
 Can you give me more ideas/enhancements to optimize the file for searching and navigating?
