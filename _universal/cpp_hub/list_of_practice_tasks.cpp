@@ -23,6 +23,7 @@ Try each task yourself before looking at the solutions at the bottom.
          `double average(int a, int b)` that returns the average of two ints.
          (Watch out for integer division: average(3, 4) should be 3.5.)
 
+
 [✅DONE]Task 2:  Define a constant `max_score` equal to 100 using constexpr. Then write
          `int clamp_score(int score)` that returns 0 if score is negative,
          max_score if score is above max_score, and score otherwise.
@@ -249,6 +250,7 @@ SOLUTIONS FOR EACH TASK SHALL BE PROVIDED BELOW THIS POINT
 
 namespace task_01
 {
+// Pass-by-value: the function gets its own copy of the int, so the caller's variable is untouched.
 int square(int value)
 {
     return value * value;
@@ -256,25 +258,29 @@ int square(int value)
 
 double average(int a, int b)
 {
-    return (a + b) / 2.0; // 2.0 forces floating-point division.
+    // (a + b) is an int; dividing by the double 2.0 promotes it to double first,
+    // so average(3, 4) is 3.5. Dividing by the int 2 would truncate to 3.
+    return (a + b) / 2.0;
 }
 } // namespace task_01
 
 namespace task_02
 {
+// constexpr: the value is known at compile time and can never change.
 constexpr int max_score = 100;
 
+// Forces score into the range [0, max_score].
 int clamp_score(int score)
 {
     if (score < 0)
     {
-        return 0;
+        return 0; // Too low: snap up to the minimum.
     }
     if (score > max_score)
     {
-        return max_score;
+        return max_score; // Too high: snap down to the maximum.
     }
-    return score;
+    return score; // Already in range: return unchanged.
 }
 } // namespace task_02
 
@@ -282,8 +288,11 @@ namespace task_03
 {
 int next_id()
 {
-    static int id = 0; // Initialized once; keeps its value between calls but is only visible here.
-    return ++id;
+    // A static local lives for the whole program, not just one call. The "= 0" runs only
+    // the first time execution reaches this line; later calls reuse the stored value.
+    // Unlike a global, no code outside this function can see or modify it.
+    static int id = 0;
+    return ++id; // Pre-increment: bump first, then return the new value (1, 2, 3, ...).
 }
 } // namespace task_03
 
@@ -291,10 +300,12 @@ namespace task_04
 {
 int count_vowels(const std::string& text)
 {
+    // Listing both cases avoids having to convert each character to lower case.
     const std::string vowels = "aeiouAEIOU";
     int count = 0;
     for (char c : text)
     {
+        // find() returns npos ("not found") when c is not in the vowel list.
         if (vowels.find(c) != std::string::npos)
         {
             ++count;
@@ -309,7 +320,10 @@ namespace task_05
 std::string reverse_text(const std::string& text)
 {
     std::string reversed;
-    for (std::size_t i = text.size(); i > 0; --i) // size_t is unsigned, so count down to 1 and use i - 1.
+    // Walk the text from the last character to the first, appending each one.
+    // size_t is unsigned, so "i >= 0" would always be true (and 0 - 1 wraps to a huge number).
+    // Instead count down from size() to 1 and read text[i - 1].
+    for (std::size_t i = text.size(); i > 0; --i)
     {
         reversed += text[i - 1];
     }
@@ -318,6 +332,7 @@ std::string reverse_text(const std::string& text)
 
 bool is_palindrome(const std::string& text)
 {
+    // A palindrome is identical to its own reversal. Comparison is case-sensitive.
     return text == reverse_text(text);
 }
 } // namespace task_05
@@ -328,8 +343,9 @@ int largest_element(const std::vector<int>& values)
 {
     if (values.empty())
     {
-        return 0;
+        return 0; // Guard first: values[0] on an empty vector is undefined behavior.
     }
+    // Start from the first element (not 0) so all-negative vectors work correctly.
     int largest = values[0];
     for (int value : values)
     {
@@ -346,10 +362,10 @@ namespace task_07
 {
 std::vector<int> filter_even(const std::vector<int>& values)
 {
-    std::vector<int> evens;
+    std::vector<int> evens; // Built as a new vector; the input is const and never modified.
     for (int value : values)
     {
-        if (value % 2 == 0)
+        if (value % 2 == 0) // Remainder 0 when divided by 2 means even (also true for 0 and negatives).
         {
             evens.push_back(value);
         }
@@ -364,11 +380,11 @@ std::vector<int> running_totals(const std::vector<int>& values)
 {
     std::vector<int> totals;
     totals.reserve(values.size()); // We know the final size up front, so avoid reallocations.
-    int sum = 0;
+    int sum = 0; // Carries the total so far across loop iterations.
     for (int value : values)
     {
         sum += value;
-        totals.push_back(sum);
+        totals.push_back(sum); // Store the total up to and including this element.
     }
     return totals;
 }
@@ -380,18 +396,23 @@ void remove_value(std::vector<int>& values, int target)
 {
     // Erase-remove idiom: remove_if shifts the kept elements forward and
     // returns the new logical end; erase then actually shrinks the vector.
+    // e.g. {4,1,4,2} removing 4: remove -> {1,2,?,?} with the end pointing at the first "?",
+    // then erase deletes from there to the old end, leaving {1,2}.
+    // If target is absent, remove returns end() and erase of an empty range does nothing.
     values.erase(std::remove(values.begin(), values.end(), target), values.end());
 }
 } // namespace task_09
 
 namespace task_10
 {
+// An array decays to a pointer to its first element and loses its size,
+// so the element count must be passed separately. const: we only read the elements.
 int sum_values(const int* values, std::size_t count)
 {
     int sum = 0;
     for (std::size_t i = 0; i < count; ++i)
     {
-        sum += values[i];
+        sum += values[i]; // values[i] is shorthand for *(values + i).
     }
     return sum;
 }
@@ -403,8 +424,9 @@ void swap_with_pointers(int* a, int* b)
 {
     if (a == nullptr || b == nullptr)
     {
-        return;
+        return; // Dereferencing a null pointer is undefined behavior, so bail out early.
     }
+    // *a reads/writes the int the pointer points to. temp holds a's value so it isn't lost.
     int temp = *a;
     *a = *b;
     *b = temp;
@@ -413,6 +435,7 @@ void swap_with_pointers(int* a, int* b)
 
 namespace task_12
 {
+// Non-const int* in and out so the caller can modify the element it gets back.
 int* find_value(int* values, std::size_t count, int target)
 {
     if (values == nullptr)
@@ -423,10 +446,10 @@ int* find_value(int* values, std::size_t count, int target)
     {
         if (values[i] == target)
         {
-            return &values[i];
+            return &values[i]; // Address of the element inside the caller's array (not a copy).
         }
     }
-    return nullptr;
+    return nullptr; // Callers must check for nullptr before dereferencing the result.
 }
 } // namespace task_12
 
@@ -439,14 +462,16 @@ void reverse_in_place(int* values, std::size_t count)
         return;
     }
     int* left = values;
-    int* right = values + count - 1; // Points at the last element.
+    int* right = values + count - 1; // Pointer arithmetic: points at the last element.
+    // Swap the outer pair, then move inward. Stops when the pointers meet (odd count,
+    // middle element stays put) or cross (even count).
     while (left < right)
     {
         int temp = *left;
         *left = *right;
         *right = temp;
-        ++left;
-        --right;
+        ++left;  // Advance to the next element.
+        --right; // Step back to the previous element.
     }
 }
 } // namespace task_13
@@ -459,8 +484,8 @@ std::size_t string_length(const char* text)
     {
         return 0;
     }
-    const char* end = text;
-    while (*end != '\0')
+    const char* end = text; // Walker pointer; `text` stays at the start for the subtraction below.
+    while (*end != '\0')    // C strings end with a '\0' terminator, which is not counted.
     {
         ++end;
     }
@@ -470,12 +495,15 @@ std::size_t string_length(const char* text)
 
 namespace task_15
 {
+// Output parameters: the pointers let this function hand back two values at once.
+// The bool return value reports whether the outputs were written.
 bool min_and_max(const int* values, std::size_t count, int* out_min, int* out_max)
 {
     if (values == nullptr || count == 0 || out_min == nullptr || out_max == nullptr)
     {
-        return false;
+        return false; // Invalid input: outputs are deliberately left untouched.
     }
+    // Seed both with the first element; the loop then only needs to look at the rest.
     int smallest = values[0];
     int largest = values[0];
     for (std::size_t i = 1; i < count; ++i)
@@ -498,12 +526,14 @@ bool min_and_max(const int* values, std::size_t count, int* out_min, int* out_ma
 namespace task_16
 {
 // The caller owns the returned array and must release it with delete[].
+// (Forgetting is a memory leak; using delete instead of delete[] is undefined behavior.)
 int* create_filled_array(std::size_t count, int value)
 {
     if (count == 0)
     {
-        return nullptr;
+        return nullptr; // Nothing to allocate; delete[] on nullptr is safe for the caller.
     }
+    // new[] allocates on the heap, so the array outlives this function (a local array would not).
     int* array = new int[count];
     for (std::size_t i = 0; i < count; ++i)
     {
@@ -517,7 +547,9 @@ namespace task_17
 {
 void swap_with_references(int& a, int& b)
 {
-    int temp = a; // A reference is an alias, so no null check or * is needed.
+    // A reference is an alias for the caller's variable, so no null check or * is needed.
+    // Call site is also simpler: swap_with_references(x, y) instead of swap_with_pointers(&x, &y).
+    int temp = a;
     a = b;
     b = temp;
 }
@@ -525,6 +557,7 @@ void swap_with_references(int& a, int& b)
 
 namespace task_18
 {
+// Non-const &: this function's job is to modify the caller's vector (and avoid copying it).
 void add_to_all(std::vector<int>& values, int amount)
 {
     for (int& value : values) // int& so we modify the elements, not copies.
@@ -550,17 +583,20 @@ int count_above(const std::vector<int>& values, int threshold)
 
 namespace task_19
 {
+// A struct groups related data; its members are public by default.
 struct Rectangle
 {
     double width;
     double height;
 };
 
+// const&: read-only access without copying the struct.
 double area(const Rectangle& rect)
 {
     return rect.width * rect.height;
 }
 
+// Non-const&: modifies the caller's Rectangle directly (passing by value would scale a copy).
 void scale(Rectangle& rect, double factor)
 {
     rect.width *= factor;
@@ -570,6 +606,7 @@ void scale(Rectangle& rect, double factor)
 
 namespace task_20
 {
+// enum class is scoped (use Color::Red, not Red) and does not implicitly convert to int.
 enum class Color
 {
     Red,
@@ -579,6 +616,7 @@ enum class Color
 
 std::string color_name(Color color)
 {
+    // Every case returns, so no break is needed.
     switch (color)
     {
     case Color::Red:
@@ -588,9 +626,12 @@ std::string color_name(Color color)
     case Color::Blue:
         return "Blue";
     }
+    // Only reachable if color holds an invalid value (e.g. from a cast); also silences
+    // the compiler's "control reaches end of non-void function" warning.
     return "Unknown";
 }
 
+// Cycles Red -> Green -> Blue -> Red.
 Color next_color(Color color)
 {
     switch (color)
@@ -600,25 +641,28 @@ Color next_color(Color color)
     case Color::Green:
         return Color::Blue;
     case Color::Blue:
-        return Color::Red;
+        return Color::Red; // Wrap around to the start.
     }
-    return Color::Red;
+    return Color::Red; // Fallback for invalid values, same reason as in color_name.
 }
 } // namespace task_20
 
 namespace task_21
 {
+// Encapsulation: the class enforces its own rules (no negative deposits, no overdrafts)
+// because the balance can only change through these methods.
 class BankAccount
 {
 public:
     void deposit(int amount)
     {
-        if (amount > 0)
+        if (amount > 0) // Silently ignore zero/negative deposits.
         {
             balance_ += amount;
         }
     }
 
+    // Returns true if the withdrawal happened, false if it was refused (balance unchanged).
     bool withdraw(int amount)
     {
         if (amount <= 0 || amount > balance_)
@@ -644,6 +688,7 @@ namespace task_22
 class TrafficLight
 {
 public:
+    // Moves to the next state: Red -> Green -> Yellow -> Red.
     void advance()
     {
         switch (state_)
@@ -660,6 +705,7 @@ public:
         }
     }
 
+    // const: only reads state_, so it can be called on const TrafficLight objects.
     std::string state_name() const
     {
         switch (state_)
@@ -675,6 +721,9 @@ public:
     }
 
 private:
+    // The state type is private too: it's an implementation detail callers never see.
+    // It is declared after the public methods that use it, which is fine because member
+    // function bodies are compiled as if the whole class were already defined.
     enum class State
     {
         Red,
@@ -682,7 +731,7 @@ private:
         Yellow
     };
 
-    State state_ = State::Red;
+    State state_ = State::Red; // Default member initializer: every new light starts at Red.
 };
 } // namespace task_22
 
@@ -694,30 +743,35 @@ struct Player
     int score;
 };
 
+// Returns a pointer into the caller's array rather than a copy (no string copy, and no
+// "not found" sentinel Player needed). The pointer is const to match the const input.
+// It is only valid while the array exists. Ties go to the earliest player.
 const Player* find_top_player(const Player* players, std::size_t count)
 {
     if (players == nullptr || count == 0)
     {
         return nullptr;
     }
-    const Player* top = &players[0];
+    const Player* top = &players[0]; // Best so far; start with the first player.
     for (std::size_t i = 1; i < count; ++i)
     {
-        if (players[i].score > top->score)
+        if (players[i].score > top->score) // -> accesses a member through a pointer: (*top).score.
         {
-            top = &players[i];
+            top = &players[i]; // Re-point at the new leader; nothing is copied.
         }
     }
     return top;
 }
 } // namespace task_23
 
-// Runs every solution and prints PASS/FAIL for each check.
+// Tiny test helper: prints PASS/FAIL plus a label for one boolean condition.
 void check(const char* label, bool passed)
 {
     std::cout << (passed ? "PASS: " : "FAIL: ") << label << '\n';
 }
 
+// Runs every solution above and prints PASS/FAIL for each check.
+// Variables like x, y, numbers and smallest/largest are reused across several tasks.
 int main()
 {
     check("task 1: square", task_01::square(7) == 49);
@@ -727,8 +781,8 @@ int main()
     check("task 2: clamp above", task_02::clamp_score(150) == task_02::max_score);
     check("task 2: clamp inside", task_02::clamp_score(42) == 42);
 
-    task_03::next_id();
-    task_03::next_id();
+    task_03::next_id(); // Returns 1; result ignored, we only need the counter to advance.
+    task_03::next_id(); // Returns 2.
     check("task 3: next_id", task_03::next_id() == 3);
 
     check("task 4: count_vowels", task_04::count_vowels("Hello World") == 3);
@@ -761,6 +815,7 @@ int main()
     check("task 11: swap_with_pointers", x == 2 && y == 1);
     task_11::swap_with_pointers(&x, nullptr); // Must not crash.
 
+    // The returned pointer aims at numbers[2], so writing through it edits the array itself.
     int* found = task_12::find_value(numbers.data(), numbers.size(), 12);
     if (found != nullptr)
     {
@@ -787,13 +842,13 @@ int main()
     int largest = 0;
     const int sample[] = {7, -3, 12, 5};
     check("task 15: min_and_max", task_15::min_and_max(sample, 4, &smallest, &largest) && smallest == -3 && largest == 12);
-    smallest = 111;
+    smallest = 111; // Sentinel values: if they survive the call, the outputs were left untouched.
     largest = 222;
     check("task 15: min_and_max empty", !task_15::min_and_max(sample, 0, &smallest, &largest) && smallest == 111 && largest == 222);
     check("task 15: min_and_max null output", !task_15::min_and_max(sample, 4, nullptr, &largest));
 
     int* filled = task_16::create_filled_array(4, 7);
-    bool all_seven = filled != nullptr;
+    bool all_seven = filled != nullptr; // Verify every element, not just the first.
     for (int i = 0; filled != nullptr && i < 4; ++i)
     {
         all_seven = all_seven && filled[i] == 7;
@@ -802,7 +857,7 @@ int main()
     delete[] filled; // The caller owns the array, so the caller releases it.
     check("task 16: create_filled_array zero", task_16::create_filled_array(0, 7) == nullptr);
 
-    task_17::swap_with_references(x, y);
+    task_17::swap_with_references(x, y); // x and y were 2 and 1 after task 11; swapping restores 1 and 2.
     check("task 17: swap_with_references", x == 1 && y == 2);
 
     std::vector<int> scores{1, 5, 10};
@@ -810,7 +865,7 @@ int main()
     check("task 18: add_to_all", scores == std::vector<int>({3, 7, 12}));
     check("task 18: count_above", task_18::count_above(scores, 5) == 2);
 
-    task_19::Rectangle rect{2.0, 3.0};
+    task_19::Rectangle rect{2.0, 3.0}; // Brace-init fills width, then height. Scaled: 4 x 6 = 24.
     task_19::scale(rect, 2.0);
     check("task 19: area and scale", task_19::area(rect) == 24.0);
 
@@ -818,7 +873,7 @@ int main()
     check("task 20: next_color wraps", task_20::next_color(task_20::Color::Blue) == task_20::Color::Red);
 
     task_21::BankAccount account;
-    account.deposit(100);
+    account.deposit(100); // 100 -> withdraw 30 -> 70; the 500 withdrawal must be refused.
     check("task 21: withdraw ok", account.withdraw(30) && account.balance() == 70);
     check("task 21: withdraw refused", !account.withdraw(500) && account.balance() == 70);
 

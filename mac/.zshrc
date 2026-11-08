@@ -55,6 +55,10 @@ export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/dev_lan
 
 export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub:$PATH"
 
+export PATH="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub:$PATH"
+
+export PATH="$HOME/amk/tools/localcpp:$PATH"
+
 # /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-update_dev_landscape1.py
 # "$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac:$PATH"
 
@@ -544,14 +548,59 @@ alias cdtools="cd ~/amk/tools"
 alias cddropzone="cd ~/amk/dropzone"
 alias cddrop="cd ~/amk/dropzone"
 
+alias cdofflinecpp="cd $HOME/amk/tools/localcpp"
+alias cdlocalcpp="cd $HOME/amk/tools/localcpp"
+# alias cdofflinecpp="cd $HOME/amk/tools/localcpp"
+# alias cdofflinecpp="cd $HOME/amk/tools/localcpp"
+
 
 alias cpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 alias opencpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 alias codecpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 
 
+
+
+# alias startnewcpp="python3 $HOME/amk/tools/localcpp/start_new_offline_cpp_practice_session.py"
+########## DECIDE WHICH ONES OF THESE MAKES THE MOST SENSE 
+alias cppsession="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+alias cppsessionoffline="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+alias cppsessionlocal="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+alias newcppsession="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+alias newcppsessionoffline="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+alias newcppsessionlocal="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+
+alias newcppsession="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+alias startnewcppsession="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+alias opennewcppsession="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+alias createnewcppsession="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py" #### GREAT BC ITS NAMED SAME AS THE DUP FILES SO ITLL STICK IN MEMORY FOR SURE 
+
+#### PROB COULD DEL A FEW OF THESE BELOW SINCE IM PRETTY SURE WELL BE USING THE ONE OF THE ABOVE cppsession aliases
+alias startnewcpp="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias startnewcppsesh="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias newcppsesh="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias freshcppsesh="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias cleancppsesh="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias startfreshcppsesh="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias startcleancppsesh="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias openfreshcppsesh="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias opencleancppsesh="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias startfreshcppseshoffline="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias startcleancppseshlocal="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias openfreshcppseshoffline="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+alias opencleancppseshlocal="$HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/scr-start_new_offline_cpp_practice_session.py"
+
+# alias startnewcppsesh="$HOME/amk/tools/localcpp/start_new_offline_cpp_practice_session.py"
+# alias startnewcppsesh="$HOME/amk/tools/localcpp/start_new_offline_cpp_practice_session.py"
+
+
+alias edittemplatecppsession="code $HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub/template_to_dup_for_each_new_cpp_practice_session.cpp"
+alias editcppsessiontemplate="code $HOME/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub/template_to_dup_for_each_new_cpp_practice_session.cpp"
+
+
+
 # /Users/alexking/amk/tools/alexScripts
-alias cdal
+# alias cdal
 
 
 # ~amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/cpp_hub
