@@ -1,5 +1,22 @@
 // duplicate this template for each new practice session so you can start right away with a clean slate and avoid hassle with leftover code from previous sessions
 
+
+// ----------------------------------------
+// WINDOWS BUILD COMMANDS/variations (until i get the coderunner setup/working properly like I sorta did on mac side(at least the CTRL-ALT-E command))
+// ----------------------------------------
+// cl /EHsc cppsession4.cpp
+// cl /EHsc /std:c++20 /W4 /O2 cppsession4.cpp /Fe:maincppsession.exe
+
+// #### THE RELEASE BUILD COMMAND variation: #########
+// cl /std:c++20 /W4 /O2 cppsession4.cpp /Fe:maincppsession.exe
+
+// #### THE DEBUG LEANING BUILD COMMAND variation: ##########
+// cl /std:c++20 /W4 /Od /Zi cppsession4.cpp /Fe:debug_build.exe
+// --
+
+
+
+
 // HOW TO USE:
 // when we want to practice doing cpp problems, we run a script/command that does roughly the following for us:
 // 1. duplicates this file and hopefully append on whatever number makes sense based on how many other dups I have already in offlinecpp/ dir
