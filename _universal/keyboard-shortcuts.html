@@ -1,3 +1,10 @@
+<!-- 
+Keyboard Shortcuts Visualizer:
+- Visual representation of keyboard shortcuts and their states.
+- This file contains the HTML and CSS for a keyboard shortcuts visualizer.
+- It defines the layout, keyboard keys, and their interactive states.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -178,6 +185,7 @@
     .key.w-modwide   { width: 76px; }
     .key.w-space     { width: 340px; }
     .key.w-arrow     { width: 40px; height: 24px; } /* half-height arrows */
+    .key.w-fnkey     { width: 66px; height: 52px; }
 
     /* Arrow cluster tweak */
     .arrow-group {
@@ -1100,6 +1108,10 @@
         '6': 'screensh menu',       // hyper-6
         '7': 'screensh add-img',        // hyper-7
         '0': 'screensh GIF',        // hyper-0
+
+        'f9': { action: 'middleman hotkey for lookup refs', color: 'yellow' },   // hyper-f9 
+        'f10': { action: 'middleman hotkey for lookup workrefs', color: 'yellow' },   // hyper-f10  (this is the middleman hotkey that triggers the lookup for work references, analogous to how f9 triggers the lookup for regular refs)
+
         
         '0': { action: 'open w vscode', color: 'yellow' },  // hyper-0  (opens the file selected in Finder in vscode) [MEMORY-TRICK: think the zero as another O letter for 'open']
         'o': { action: 'open with...', color: 'yellow' },  // hyper-o   (brings up fzf-able list to quickly find what you want to open the selected file with)
@@ -1239,6 +1251,13 @@
 
 // ── QWERTY keyboard layout definition ────────────────────────────────────────
 // Format: [displayLabel, lookupKey, ?extraCssClass]
+const fnRow = [
+  ['Esc','esc','w-fnkey'],
+  ['F1','f1','w-fnkey'],['F2','f2','w-fnkey'],['F3','f3','w-fnkey'],['F4','f4','w-fnkey'],
+  ['F5','f5','w-fnkey'],['F6','f6','w-fnkey'],['F7','f7','w-fnkey'],['F8','f8','w-fnkey'],
+  ['F9','f9','w-fnkey'],['F10','f10','w-fnkey'],['F11','f11','w-fnkey'],['F12','f12','w-fnkey'],
+];
+
 const rows = [
   [ // number row
     ['`','`'], ['1','1'], ['2','2'], ['3','3'], ['4','4'], ['5','5'],
@@ -1390,6 +1409,18 @@ function renderKeyboard() {
   // ── Main keyboard ──────────────────────────────────────────
   const mainSect = document.createElement('div');
   mainSect.className = 'kb-section';
+
+  // Fn row (above number row, always shown)
+  const fnRowEl = document.createElement('div');
+  fnRowEl.className = 'key-row';
+  fnRow.forEach(([label, id, extraClass]) => fnRowEl.appendChild(makeKey(label, id, extraClass, map)));
+  mainSect.appendChild(fnRowEl);
+
+  // Spacer between fn row and number row
+  const fnSpacer = document.createElement('div');
+  fnSpacer.style.height = '6px';
+  mainSect.appendChild(fnSpacer);
+
   rows.forEach(row => {
     const rowEl = document.createElement('div');
     rowEl.className = 'key-row';
@@ -1400,6 +1431,12 @@ function renderKeyboard() {
   // ── Navigation cluster ─────────────────────────────────────
   const navSect = document.createElement('div');
   navSect.className = 'kb-section';
+
+  // Spacer to align nav cluster with number row (to account for fn row height)
+  const navTopSpacer = document.createElement('div');
+  navTopSpacer.style.height = '58px'; // fn row height (52) + spacer (6)
+  navSect.appendChild(navTopSpacer);
+
   navRows.forEach(row => {
     if (row === 'spacer') {
       const sp = document.createElement('div');
@@ -1416,6 +1453,13 @@ function renderKeyboard() {
   // ── Numpad ─────────────────────────────────────────────────
   const numpadSect = document.createElement('div');
   numpadSect.className = 'kb-section kb-numpad';
+
+  // Spacer to align numpad with number row
+  const numpadTopSpacer = document.createElement('div');
+  numpadTopSpacer.style.height = '58px';
+  numpadTopSpacer.style.gridColumn = 'span 4';
+  numpadSect.appendChild(numpadTopSpacer);
+
   numpadKeys.forEach(([label, id, extraClass]) => numpadSect.appendChild(makeKey(label, id, extraClass, map)));
 
   kb.appendChild(mainSect);
