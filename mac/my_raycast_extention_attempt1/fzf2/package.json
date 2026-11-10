@@ -1,0 +1,129 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "fzf2",
+  "title": "fzf2",
+  "description": "fzf-style fuzzy search over text files",
+  "icon": "extension-icon.png",
+  "author": "alexmking921",
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "license": "MIT",
+  "preferences": [
+    {
+      "name": "fuzzyMatching",
+      "type": "checkbox",
+      "required": false,
+      "default": true,
+      "title": "Matching",
+      "label": "Fuzzy matching (characters in order, not just substrings)",
+      "description": "Off = each search term must appear as an exact substring."
+    },
+    {
+      "name": "highlightMatches",
+      "type": "checkbox",
+      "required": false,
+      "default": true,
+      "title": "Display",
+      "label": "Highlight matched characters (shows a detail pane)",
+      "description": "Bold the matching characters in a detail pane on the right."
+    },
+    {
+      "name": "preferShorterLines",
+      "type": "checkbox",
+      "required": false,
+      "default": true,
+      "title": "Ranking",
+      "label": "Prefer shorter lines when scores tie",
+      "description": "Like fzf's length tiebreak: shorter lines rank first when scores are equal."
+    },
+    {
+      "name": "caseSensitivity",
+      "type": "dropdown",
+      "required": false,
+      "default": "smart-case",
+      "title": "Case Sensitivity",
+      "description": "Smart case ignores case unless your query contains an uppercase letter.",
+      "data": [
+        {
+          "title": "Smart case",
+          "value": "smart-case"
+        },
+        {
+          "title": "Case insensitive",
+          "value": "case-insensitive"
+        },
+        {
+          "title": "Case sensitive",
+          "value": "case-sensitive"
+        }
+      ]
+    },
+    {
+      "name": "maxResults",
+      "type": "textfield",
+      "required": false,
+      "default": "50",
+      "title": "Max Results",
+      "placeholder": "50",
+      "description": "Maximum number of results shown."
+    }
+  ],
+  "commands": [
+    {
+      "name": "fzf-aliases",
+      "title": "fzf aliases",
+      "description": "Fuzzy search your aliases file",
+      "mode": "view"
+    },
+    {
+      "name": "fzf-ref",
+      "title": "fzf ref",
+      "description": "Fuzzy search the universal ref file",
+      "mode": "view"
+    },
+    {
+      "name": "fzf-workref",
+      "title": "fzf workref",
+      "description": "Fuzzy search the work ref file",
+      "mode": "view"
+    },
+    {
+      "name": "fzf-keyboard-shortcuts",
+      "title": "fzf keyboard-shortcuts",
+      "description": "Fuzzy search your keyboard shortcuts file",
+      "mode": "view"
+    },
+    {
+      "name": "fzf-vscode-shortcuts",
+      "title": "fzf vscode shortcuts",
+      "description": "Fuzzy search your VS Code shortcuts file",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.25",
+    "@raycast/utils": "^1.17.0",
+    "fzf": "^0.5.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "22.19.17",
+    "@types/react": "19.0.10",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}

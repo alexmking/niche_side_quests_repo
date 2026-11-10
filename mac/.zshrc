@@ -1388,8 +1388,12 @@ alias fzworkref="cat /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/
 
 
 
-alias editref="code /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
-alias editssotref="code /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-refs.md"
+alias editref="code /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-ref.txt"
+alias editssotref="code /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/_universal/ssot-ref.txt"
+
+alias editworkref="code /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/win/ssot-workref.txt"
+alias editssotworkref="code /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/win/ssot-workref.txt"
+
 
 
 
@@ -1680,6 +1684,14 @@ alias editshortcutvisualizer="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts
 alias editshortcutsviz="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
 alias editkeybvis="code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html"
 
+alias editvskeybhtml="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
+alias editvskeyb="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
+alias editvskeybvisualizer="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
+alias editvskeybviz="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
+alias editvskeybshortcutsvis="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
+alias editvskeybshortcutvisualizer="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
+alias editvskeybshortcutsviz="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
+alias editvskeybvis="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
 # code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html
 
 # alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
