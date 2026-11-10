@@ -1,0 +1,26 @@
+app-specific hotkeys: finder,file explorer,general
+
+
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+
+
+
+
+
+
+Ctrl + w	        Close window
+Win + Shift +  M	unhide all minimzied windows 
+Win + , 	        Show Desktop
+
+
+Win + Shift + `	launch fancy zone editor
+Win + Ctrl + Alt + (number 1-9)	set this desktop to fancy zone layout (1 thru 9)
+Shift + (while dragging a window)	(normal use case) see curr fancy zones
+Shift + (while dragging a window) + 1	switch to custom layout 1
+Shift + (while dragging a window) + 2	switch to custom layout 2
+Shift + (while dragging a window) + 3	switch to custom layout 3
+Shift + (while dragging a window) + 4 ... 9	switch to custom layout … 4 through 9
+
+

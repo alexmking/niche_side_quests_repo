@@ -542,11 +542,19 @@ alias cdhome="cd ~"
 alias cdamk="cd ~/amk"
 alias amk="cd ~/amk"
 
+alias cduniversal="cd $NICHE_REPO_DIR/_universal/"
+alias cdmac="cd $NICHE_REPO_DIR/mac/"
+
+
+
 alias cdprojects="cd ~/amk/projects"
 alias cdcpphub="cd $NICHE_REPO_DIR/_universal/cpp_hub"
 alias cdtools="cd ~/amk/tools"
 alias cddropzone="cd ~/amk/dropzone"
 alias cddrop="cd ~/amk/dropzone"
+
+alias cdfzf2="cd $NICHE_REPO_DIR/mac/my_raycast_extention_attempt1/fzf2"
+alias cdmyraycastextention="cd $NICHE_REPO_DIR/mac/my_raycast_extention_attempt1/fzf2"
 
 alias cdofflinecpp="cd $HOME/amk/tools/localcpp"
 alias cdlocalcpp="cd $HOME/amk/tools/localcpp"
@@ -558,6 +566,9 @@ alias cpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 alias opencpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 alias codecpphub="code $NICHE_REPO_DIR/_universal/cpp_hub"
 
+alias updatefzf2="npm --prefix /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/my_raycast_extention_attempt1/fzf2 run dev"
+alias devfzf2="npm --prefix /Users/alexking/amk/tools/GIT_STUFF/niche_side_quests_repo/mac/my_raycast_extention_attempt1/fzf2 run dev"
+alias updatemyraycastextention="npm --prefix $NICHE_REPO_DIR/mac/my_raycast_extention_attempt1/fzf2 run dev"
 
 
 
@@ -1693,6 +1704,14 @@ alias editvskeybshortcutvisualizer="code $NICHE_REPO_DIR/_universal/vscode-short
 alias editvskeybshortcutsviz="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
 alias editvskeybvis="code $NICHE_REPO_DIR/_universal/vscode-shortcuts.html"
 # code $NICHE_REPO_DIR/_universal/keyboard-shortcuts.html
+
+
+alias editfzf2="code $NICHE_REPO_DIR/mac/my_raycast_extention_attempt1/fzf2"
+alias editfzf2src="code $NICHE_REPO_DIR/mac/my_raycast_extention_attempt1/fzf2/src"
+alias editfzf2files="code $NICHE_REPO_DIR/mac/my_raycast_extention_attempt1/fzf2/src/files.ts"
+alias editfzf2appfiles="code $NICHE_REPO_DIR/mac/my_raycast_extention_attempt1/fzf2/src/app_files.ts"
+alias editmyraycastextention="code $NICHE_REPO_DIR/mac/my_raycast_extention_attempt1/fzf2"
+
 
 # alias cdallconfigs="/Users/alexking/ALL_CONFIGS"
 

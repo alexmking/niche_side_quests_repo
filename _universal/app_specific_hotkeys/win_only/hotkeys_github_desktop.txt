@@ -1,0 +1,1 @@
+app-specific hotkeys: github desktop (mainly win side)

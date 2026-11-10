@@ -103,6 +103,12 @@
       "title": "fzf vscode shortcuts",
       "description": "Fuzzy search your VS Code shortcuts file",
       "mode": "view"
+    },
+    {
+      "name": "fzf-by-app",
+      "title": "fzf by app",
+      "description": "Fuzzy search the file mapped to the frontmost app",
+      "mode": "view"
     }
   ],
   "dependencies": {

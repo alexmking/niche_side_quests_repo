@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # @raycast.schemaVersion 1
-# @raycast.title Lookup-Madden
+# @raycast.title Lookup-Madden [WIP BETA]
 # @raycast.mode fullOutput
 # @raycast.argument1 { "type": "text", "placeholder": "Lookup-Madden..." }
 # @raycast.description lookup madden

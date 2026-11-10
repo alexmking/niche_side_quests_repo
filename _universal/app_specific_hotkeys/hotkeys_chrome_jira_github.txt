@@ -1,0 +1,33 @@
+app-specific hotkeys: chrome, jira, github.com
+
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+
+TODO: There must be more legit keyb shortcuts for chrome here that are def worth adding/ learning, so look into this
+https://quickref.me/google-chrome
+
+========================================================================
+MAIN ONES      =>     https://quickref.me/google-chrome
+========================================================================
+Ctrl + F                  ||  search the page
+Ctrl + G                  ||  toggle through results of your Ctrl + F search
+Alt + LeftArrow           ||  go Back
+
+Ctrl + MouseClick         ||  open link in new tab
+Ctrl + option(hyp) + TAB  ||  go to PREV tab (NEW)
+
+========================================================================
+JIRA     =>       https://support.atlassian.com/jira-software-cloud/docs/markdown-and-keyboard-shortcuts/
+========================================================================
+Ctrl + Shift + M          ||  Code block
+
+Ctrl + \                  ||  cleanr formatting (USEFUL to exiit out of lists stuff)
+
+Ctrl + Shift + 7          ||  Numbeed list
+Ctrl + Shift + 8          ||  Builleted list
+Ctrl + Shift + -          ||  Divider
+
+========================================================================
+GITHUB.COM
+========================================================================

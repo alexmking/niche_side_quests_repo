@@ -1,0 +1,54 @@
+app-specific hotkeys: trello
+
+
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+
+========================================================================
+S + A TIER
+========================================================================
+/    (best filter/search)                ||  search cards by title (f is for 'filter')
+f    (inferior filter/search)            ||  FILTER cards by title (f is for 'filter')
+
+ctrl + C, ctrl + V                       ||  copy/paste card  //  LEGIT one
+ctrl + X, ctrl + V                       ||  move card (instead of copy-paste it)  //  LEGIT one
+ctrl + V ( w clipb)                      ||  create new card using whatever is curr copied to clipboard (can be IMAGES too!!) something copied to your clipboard (like copying text from a website, and then switching to ttrello, can just do Ctrl+V to create a new card with that tet in ONE action (as oposed to creating a new BLANK card, and then copy/pasting that text into this new cards title)(obvi the SAME rules apply as far the hovering over a list at the time you do the ctrl V  //  LEGIT one
+B                                        ||  switch boards fast way (no mouse). IOW: Open header boards menu (aka quicky search/open your boads)  //  LEGIT one
+-                                        ||  add checklist  //  LEGIT one
+;                                        ||  toggle the boards label style (color-only vs color + name)  //  LEGIT one
+N                                        ||  insert new card  //  LEGIT one(also see the below use-case of 'N')
+N (while hovering the middle of a list)  ||  insert new card in said 'MIDDLE' of list  //  LEGIT one(underrated USE-CASE: to create the new card IN BETWEEN other cards in a long list (instead of the new card being ALL THE WY AT THE BOTTOM and having to manually drag it to the inbetween spot)
+Enter (while hovering over card)         ||  open card for editing  //  LEGIT one
+T                                        ||  edit TITLE of card (1/2 broken?)  //  LEGIT one (the shortcut desc says that pressing T while hovering over an unopened card should OPEN the card and put cursor in title box to edit but that's not working atm. This 'T' only works for ALREADDY OPENED cards
+?                                        ||  open shortcuts page (although i will also have my zzshorts ALT+Z which wiill take me right to my trello sheet in zzshorts doc but still worth knowing  //  LEGIT one
+e (while hovering over card)             ||  quick edit mode  //  UPDATE! Actually I think it IS JUST AS ROBUST as the Chrome view?? ___ DBOULE CHECK THIS WHEN HAVE TIME ______(not quite as robust as the 'e' when on Trello CHROME (as opposed to the Trello Desktop App) bc you must be IN the trello apps window (as opposed to being IN a different window and simply hover your cursor over the Trello cards in the Trello-Apps window WITHOUT actually clicking on that window itself (much simpler than i'm explaining it here tbh)
+Calculator Fn key (mx keys)              ||  add new card (global shortcut, so will work while in any other app or window)  //  (the top left Fn key on the NUMPAD, where's theres the 4 Fn keys)
+
+========================================================================
+ONES I NEED TO TRY OUT
+========================================================================
+arrow keys                               ||  arrow keys
+arrkeys while card-open state            ||  navigate cards while alrteady in 'vewinig' state
+ctrl + V (in card-open state)            ||  attach link (this one demonstrates the diff behavior we get for Ctrl+V when we are viewing an open-card vs just hovering over the board/lists, which is what the above THREE shortcuts are pertaining to (the THREE being create card via clipboard paste, move-card via ctrl-x then paste, and lastly copy-paste card via normal ctrl C, ctrl V action)
+
+]'                                       ||  toggle board menu(this one was only OPENING the sidebar for me but would not close it so idk)
+
+c                                        ||  archive card ALREADY KNOW
+d                                        ||  add due date (ALREADY KNOW
+esc                                      ||  close/cancel menu/card (pretty obiv
+Ctrl;+Enter                              ||  save-text? (not sure how this one id diff form the ENTER cmd below)
+Enter, and Shift+Enter                   ||  opencard, and or open card right after creating it (thats the shift+enter)
+
+L                                        ||  open label menu ALREADY KNOW
+L, then 1-9                              ||  quick sel one of the labels via number after using L (subtle optimization i didn't really know about
+
+, ' < >                                  ||  move curr card to top/bottom of the ADJACENT LIST
+q                                        ||  toggle my filter? idk about thisone
+s                                        ||  Watch card (THIS ONE MAY BE MORE USEFUL THAN I THOUGHT )
+
+X                                        ||  cler all filerts
+Z                                        ||  Undo last action on a card (NOT Ctrl-Z, just Z fyi)
+Shift + Z                                ||  Redo actiuon (same as above but REDO)
+R                                        ||  repeat action ot this curr card that you most recenlt did to anothe card(WIULL NEED TO LOOK MORE INTO THISONE
+Shift + Scroll                           ||  scroll sideways (ALREADY KNOW
