@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 # @raycast.schemaVersion 1
 # @raycast.title Edit AHK
@@ -19,3 +19,4 @@ fi
 
 # Open in VS Code
 code "$FILE"
+# powershell.exe -NoProfile -Command "Start-Process code -Verb RunAs -ArgumentList '\"$FILE\"'"
