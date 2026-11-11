@@ -2,6 +2,9 @@
 // Each command can search one or more files (every non-empty line becomes a result).
 // After editing, `npm run dev` hot-reloads; otherwise run `npm run build`.
 
+// Shift+Enter copies `code --goto "file:line"` to the clipboard and also runs it.
+export const VSCODE_COMMAND = "code";
+
 export interface SearchConfig {
   title: string; // shown in the search bar placeholder
   files: string[];

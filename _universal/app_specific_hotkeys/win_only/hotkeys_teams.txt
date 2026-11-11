@@ -1,1 +1,75 @@
 app-specific hotkeys: teams
+
+
+[2nd TO LAST STEP:, Fix any and all super-long hotkey defintions, which throw off the readability etc of the doc]
+
+
+
+========================================================================
+S + A TIER
+========================================================================
+alt-left/right               ||  Go Back/forward
+		
+ctrl-shift-m                 ||  Toggle MUTE
+		
+f10 (smart-action)           ||  insert Inline CODE 
+alt-enter OR shift-enter     ||  New line in text box 
+		
+ctrl-e                       ||  go to search
+ctrl-g                       ||  Goto' within search (THIS ONE MAY BE SUPERIOR TO above search TBH)
+ctrl-f                       ||  search WITHIN the current chat 
+		
+		
+ctrl-(-/=)                  ||  zoom in/out
+ctrl-0                       ||  return to default zoom
+		
+ctrl-1                       ||  go to 'activity' section of sidebar 
+ctrl-2                       ||  go to 'chat' section of sidebar
+ctrl-3                       ||  go to 'Teams' section of sidebar
+ctrl-4                       ||  go to "Calendar' section of sidebar
+
+
+
+
+
+
+
+
+
+
+========================================================================
+B TIER
+========================================================================
+ctrl-alt-shift-b             ||  insert code BLOCK
+ctrl-.                       ||  show keyb shortcuts
+ctrl-/                       ||  show commands
+ctrl-,                       ||  open settings
+		
+ctrl-n                       ||  start a new chat (maybe more useful than it sounds bc it lloks like it also doubles as "find chats that already exist and go there WITHOUT creating a new one"
+		
+ctrl-shift-a                 ||  accept VIDEO call
+ctrl-shift-s                 ||  accept AUDIO call
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+MISC NOTES / EXPLANATIONS
+========================================================================
+COMMON SEQUENCE TO USE: Ctrl + 2 to jump to CHAT section of sidebar, then arrow up/down to which chat you want, then Enter to go to that chats textbox and can now start typing message
+(Ctrl + 2), then (arrow up/down), then (Enter)
+(or maybe just doing SEARCH -> type name -> arrow/updown/ then Enter is faster way to do this)
+
+
+
+
+
+

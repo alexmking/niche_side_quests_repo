@@ -1,48 +1,64 @@
 app-specific hotkeys: excel
 
-[FIRST STEP: go to zzshortcuts tab, insert new column between col 1 and 2, add the '||' to all the 2nd col rows]
-[SECOND STEP: copy paste each section into the .txt file here]
-[THIRD STEP: Prompt to clean up the column spacing, using the || as the delimiter between hotkey and description]
-    "I pasted my hotkeys from an excel document where the 2nd column contains the '||' divider between the hotkey itself and the description. There are only 3 columns, (hotkey, divider, description). Can you re-format it so it looks cleaner? Right now the divider || is not lined up like it was in excel.
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-
 ========================================================================
 S + A TIER
 ========================================================================
-Ctrl + Shift + (+)                     ||  Insert new row
-Ctrl + Shift + (+), (FOR TABLE)        ||  Insert new row in an exisiting TABLE
-Ctrl + pageUp/pageDown                 ||  Iter through sheets
-F2                                     ||  Enter active cell
-Alt + h + 6                            ||  indent cell more (do Alt + H + 5' to 'decrease')
+ctrl-shift-+                           ||  Insert new row
+ctrl-shift-(+), (for table)        ||  Insert new row in an exisiting table
+ctrl-pageup/pagedown                   ||  Iterate through sheets
+f2                                     ||  Enter active cell
+alt-h-6                                ||  indent cell more (do Alt + H + 5' to 'decrease')
 '                                      ||  force cell to be 'text-only' and ignore all macro shit
-Ctrl + 1                               ||  Open 'Format Cells' menu
+ctrl-1                                 ||  Open 'Format Cells' menu
 
-Ctrl + J (my custom VBA)               ||  pulls up menu of ALL the SHEETS, and can scroll to select which one to jump to
+ctrl-j (my custom VBA)               ||  pulls up menu of ALL the SHEETS, and can scroll to select which one to jump to
 
-ALT then N,P,O,D                       ||  choose img to insert from device (faster than clicking through the 5 diff menus)(Alt + N + P + O + D)
+alt then n,p,o,d                       ||  choose img to insert from device (faster than clicking through the 5 diff menus)(Alt + N + P + O + D)
 
 ========================================================================
 WHILE EDITING INSIDE A CELL...
 ========================================================================
-Home                                   ||  Jump cursor to 'beginning' of cell
-End                                    ||  Jump cursor to 'end' of cell
-Alt + Enter                            ||  Insert line break within cell
+home                                   ||  Jump cursor to 'beginning' of cell
+end                                    ||  Jump cursor to 'end' of cell
+alt-enter                              ||  Insert line break within cell
 
 ========================================================================
 MAYBE USEFUL TO TRY...
 ========================================================================
-Ctrl + D                               ||  Fill 'down' from cell 'above' curr cell
-Ctrl + R                               ||  fill 'right' from cell that's 'left' of curr cell
-Alt + H + B + (L or R or T or O or _)  ||  Remove the border (left or right or top or bottom or all)
-Ctrl + Home                            ||  Go to the top-left cell (aka cell A1)
-Alt + W + S                            ||  Activate split screen
-Alt + (down arrow)                     ||  Enter drop down list
-Ctrl + Spacebar                        ||  Select entire' column'
-Shift + Spacebar                       ||  Select entire 'row'
+ctrl-d                                 ||  Fill 'down' from cell 'above' curr cell
+ctrl-r                                 ||  fill 'right' from cell that's 'left' of curr cell
+alt-h-b-(l or r or t or o or _)  ||  Remove the border (left or right or top or bottom or all)
+ctrl-home                              ||  Go to the top-left cell (aka cell A1)
+alt-w-s                                ||  Activate split screen
+alt-down                               ||  Enter drop down list
+ctrl-spacebar                          ||  Select entire' column'
+shift-spacebar                         ||  Select entire 'row'
 
-Ctrl + .                               ||  Delete Row/ column
-Alt + H + O + I                        ||  Autofit column width
-Alt + Shift + (right arrow)            ||  Group Rows/ columns
-Alt + Shift + (left arrow)             ||  Ungroup rows/ columns
+ctrl-.                                 ||  Delete Row/ column
+alt-h-o-i                              ||  Autofit column width
+alt-shift-right                        ||  Group Rows/ columns
+alt-shift-left                         ||  Ungroup rows/ columns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+MISC NOTES / EXPLANATIONS
+========================================================================
+
+
+
+
+
+
+

@@ -1,1 +1,35 @@
 app-specific hotkeys: github desktop (mainly win side)
+
+========================================================================
+S + A TIER
+========================================================================
+
+ctrl-t       ||  show all repos (bring up repo menu)
+ctrl-b       ||  show all branches
+ctrl-shift-t ||  fetch origin 
+ctrl-shift-p ||  pull origin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+MISC NOTES / EXPLANATIONS
+========================================================================
+A LOT MORE TO ADD!!!
+https://docs.github.com/en/desktop/overview/github-desktop-keyboard-shortcuts
+
+
+> consider app-specific AHK for Ctrl-R => Ctrl-T, since "R" == Repo, easier to remembmer
+	(so when im in github-desktop and enter Ctrl-R, AHK will catch it and send Ctrl-R to Github)(this way we avoid any conflicts w current github Ctrl-R hotkey)
+
+

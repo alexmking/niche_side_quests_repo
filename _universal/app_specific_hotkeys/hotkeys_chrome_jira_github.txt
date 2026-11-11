@@ -1,33 +1,53 @@
 app-specific hotkeys: chrome, jira, github.com
 
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
 
-TODO: There must be more legit keyb shortcuts for chrome here that are def worth adding/ learning, so look into this
-https://quickref.me/google-chrome
 
 ========================================================================
 MAIN ONES      =>     https://quickref.me/google-chrome
 ========================================================================
-Ctrl + F                  ||  search the page
-Ctrl + G                  ||  toggle through results of your Ctrl + F search
-Alt + LeftArrow           ||  go Back
+ctrl-f                    ||  search the page
+ctrl-g                    ||  toggle through results of your Ctrl + F search
+alt-leftarrow             ||  go Back
 
-Ctrl + MouseClick         ||  open link in new tab
-Ctrl + option(hyp) + TAB  ||  go to PREV tab (NEW)
+ctrl-mouseclick           ||  open link in new tab
+ctrl-option(hyp)-tab  ||  go to PREV tab (NEW)
 
 ========================================================================
 JIRA     =>       https://support.atlassian.com/jira-software-cloud/docs/markdown-and-keyboard-shortcuts/
 ========================================================================
-Ctrl + Shift + M          ||  Code block
+ctrl-shift-m              ||  Code block
 
-Ctrl + \                  ||  cleanr formatting (USEFUL to exiit out of lists stuff)
+ctrl-\                    ||  cleanr formatting (USEFUL to exiit out of lists stuff)
 
-Ctrl + Shift + 7          ||  Numbeed list
-Ctrl + Shift + 8          ||  Builleted list
-Ctrl + Shift + -          ||  Divider
+ctrl-shift-7              ||  Numbeed list
+ctrl-shift-8              ||  Builleted list
+ctrl-shift-- (dash)              ||  Divider
 
 ========================================================================
 GITHUB.COM
 ========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+MISC NOTES / EXPLANATIONS
+========================================================================
+TODO: There must be more legit keyb shortcuts for chrome here that are def worth adding/ learning, so look into this
+https://quickref.me/google-chrome
+
+
+
+
+
+
+

@@ -1,9 +1,5 @@
 app-specific hotkeys: vscode
 
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-
 [2nd TO LAST STEP:, Fix any and all super-long hotkey defintions, which throw off the readability etc of the doc]
 
 [VERY LAST STEP:, Transfer over the SHORTCUT-PIPELINE ONES ]
@@ -11,20 +7,20 @@ app-specific hotkeys: vscode
 ========================================================================
 S + A TIER (may need to update these now, along w B tier)
 ========================================================================
-    🟢Ctrl-F                                      ||  search the CONTENTS of the CURR-FILE only
-    🟢Ctrl-P                                      ||  search all FILENAMES (file names/dirs), but NO file CONTENTS)
-    🟢Ctrl-shift-F                                ||  search the CONTENTS of all FILES of the PROJECT, (most expensive/slow obvi)
-    🟢Ctrl-;                                      ||  search Solution Explorer (VS only)
+    🟢ctrl-f                                      ||  search the CONTENTS of the CURR-FILE only
+    🟢ctrl-p                                      ||  search all FILENAMES (file names/dirs), but NO file CONTENTS)
+    🟢ctrl-shift-f                                ||  search the CONTENTS of all FILES of the PROJECT, (most expensive/slow obvi)
+    🟢ctrl-;                                      ||  search Solution Explorer (VS only)
 
-    🟢Ctrl-shift-P                                ||  command palette
-    🟢CTRL-ALT-K                                  ||  Open Keyboard Shortcuts window (the NON-JSON one)
-    🟢F1                                          ||  command palette (alias)
+    🟢ctrl-shift-p                                ||  command palette
+    🟢ctrl-alt-k                                  ||  Open Keyboard Shortcuts window (the NON-JSON one)
+    🟢f1                                          ||  command palette (alias)
 
-    🟢Ctrl-F                                      ||  search contents of curr file (1/3 search types)
-    🟢F3                                          ||  next/prev search result after CTRL-F search (F3 is fine here)
+    🟢ctrl-f                                      ||  search contents of curr file (1/3 search types)
+    🟢f3                                          ||  next/prev search result after CTRL-F search (F3 is fine here)
 
-    🟢Ctrl-Shift-F                                ||  search EVERYTHINg (tier3/3 search) (contents, filenames)
-    🟢F4                                          ||  Go to next/prev search result  (add shift for prev, obvi)
+    🟢ctrl-shift-f                                ||  search EVERYTHINg (tier3/3 search) (contents, filenames)
+    🟢f4                                          ||  Go to next/prev search result  (add shift for prev, obvi)
 
     🟢sequence: 1.highlight, 2. ctrl-F, 3. DONE!  ||  search ONLY in highlighted section (UNDERRATED)
 
@@ -33,118 +29,118 @@ S + A TIER (may need to update these now, along w B tier)
 ========================================================================
 B TIER ( with some A and S Tiers tbh)
 ========================================================================
-    F12                                           ||  go to definition
-    ALT-F12                                       ||  Peek definition
-    Shift + F12                                   ||  Find all references
-    ALT + SHIFT + F12                             ||  Go-to-references (mini pop up, kinda like peek?)
-    F4                                            ||  Next/prev result
+    f12                                           ||  go to definition
+    alt-f12                                       ||  Peek definition
+    shift-f12                                     ||  Find all references
+    alt-shift-f12                                 ||  Go-to-references (mini pop up, kinda like peek?)
+    f4                                            ||  Next/prev result
 
-    CTRL-F12                                      ||  go to implementation(s)   (TEST THIS ONE OUT!)
+    ctrl-f12                                      ||  go to implementation(s)   (TEST THIS ONE OUT!)
 
     ctrl-shift-[                                  ||  toggle fold region       (ctrl-shift-[ maybe?)
-    CTRL-ALT-0                                    ||  collapse all regions (fyi vscode seems to use 'FOLD' instead of 'COLLAPSE') (FOLD)
-    CTRL-ALT-9                                    ||  expand all regions (aka UNcollapse) (NOT working as intended??) (UNFOLD)
+    ctrl-alt-0                                    ||  collapse all regions (fyi vscode seems to use 'FOLD' instead of 'COLLAPSE') (FOLD)
+    ctrl-alt-9                                    ||  expand all regions (aka UNcollapse) (NOT working as intended??) (UNFOLD)
     👻 candidate to get own hotkey at some point…  ||  collapse/expand all COMMENTS
     👻 candidate to get own hotkey at some point…  ||  Stop Outlining (Remove all +/- symbols)(ONLY VS17/22)
 
     %%%%%%%%%%%% BOOKMARK HOTKEYS %%%%%%%%%%%%
-    CTRL-ALT-B                                    ||  toggle BOOKMARK on line
-    CTRL-ALT-Down                                 ||  Go the next bookmark
-    CTRL-ALT-Up                                   ||  Go the prev bookmark
-    CTRL-ALT-SHIFT-B                              ||  clear all bookmarks
-    CTRL-ALT-M                                    ||  list from ALL files    [likely first choice]
-    CTRL-ALT-SHIFT-M (I aded this one myself, but seems to be avail hotkey)  ||  list from ONLY CURR file [likely SHIFT variation]
+    ctrl-alt-b                                    ||  toggle BOOKMARK on line
+    ctrl-alt-down                                 ||  Go the next bookmark
+    ctrl-alt-up                                   ||  Go the prev bookmark
+    ctrl-alt-shift-b                              ||  clear all bookmarks
+    ctrl-alt-m                                    ||  list from ALL files    [likely first choice]
+    ctrl-alt-shift-m (I aded this one myself, but seems to be avail hotkey)  ||  list from ONLY CURR file [likely SHIFT variation]
     (TMP) NEED HOTKEY!   (ctrl-b, ctrl-s cannot work, not even as a placeholder bc we need ctrl-B for sidebar toggle (TMP placeholder command until I come up w better fitting one)  ||  open bookmarks window/sidebar to manage bookmarks
     candidate to get own hotkey…                  ||  clear all bookmarks IN CURR FILE only
 
     %%%%%%%%%%%% FILE NAVIGATION + ETC HOTKEYS %%%%%%%%%%%%
-    CTRL-SHIFT-C                                  ||  copy path of active file 🫨✅⬇️🔽
-    ⭐ CTRL-ALT-R                                 ||  reveal active file in Explorer (File-Explorer, not to be confused with the Explorer side panel within IDE)
+    ctrl-shift-c                                      ||  copy path of active file 🫨✅⬇️🔽
+    ⭐ ctrl-alt-r                                     ||  reveal active file in Explorer (File-Explorer, not to be confused with the Explorer side panel within IDE)
 
-    ALT-up/down                                   ||  move entire line up/down
-    CTRL-SHIFT-K                                  ||  delete entire line
-    CTRL-SHIFT-D                                  ||  Duplicate line
-    CTRL-C, CTRL-V (when no text is highlighted)  ||  duplicate line (ONLY WHEN NO-SELECTION-is-HIGHLIGHTED)
+    alt-up/down                                   ||  move entire line up/down
+    ctrl-shift-k                                  ||  delete entire line
+    ctrl-shift-d                                  ||  Duplicate line
+    ctrl-c, ctrl-v (when no text is highlighted)  ||  duplicate line (ONLY WHEN NO-SELECTION-is-HIGHLIGHTED)
 
-    ALT-leftright                                 ||  go backward / forward   (same as Visual Studio's) (VERY USEFUL)
-    CTRL-G                                        ||  go to exact line number
-    F8                                            ||  go to next error/warning
-    Ctrl-SHIFT-E                                  ||  go to END of curr line (highlight)
-    CTRL-SHIFT-A                                  ||  go to START of curr line (highlight)
+    alt-leftright                                 ||  go backward / forward   (same as Visual Studio's) (VERY USEFUL)
+    ctrl-g                                        ||  go to exact line number
+    f8                                            ||  go to next error/warning
+    ctrl-shift-e                                      ||  go to END of curr line (highlight)
+    ctrl-shift-a                                      ||  go to START of curr line (highlight)
 
-    ctrl-E                                        ||  focus active editor
-    ctrl-X                                        ||  focus explorer
-    CTRL-` (backtick)                             ||  toggle terminal  (KIM we already have togglePanel so maybe could also be 'focus' terminal, not that big of a diff)
-    CTRL + B (NEEDS TO CHANGE IF WE DECIDE the BOOKMARKS commands get the CTRL ALT B stuf  ||  toggle LEFT sidebar visibility
-    CTRL + Shift + B (NEEDS TO CHANGE IF WE DECIDE the BOOKMARKS commands get the CTRL ALT B stuf  ||  toggle RIGHT sidebar visibility
-    ctrl-J   (open to other hotkey chars other than J, if avail)  ||  Toggle Panel (bottom panel with 'PROBLEMS, OUTPUT, DEBUG, PORTS, and TERMINAL)
+    ctrl-e                                        ||  focus active editor
+    ctrl-x                                        ||  focus explorer
+    ctrl-` (backtick)                             ||  toggle terminal  (KIM we already have togglePanel so maybe could also be 'focus' terminal, not that big of a diff)
+    ctrl-b (NEEDS TO CHANGE IF WE DECIDE the BOOKMARKS commands get the CTRL ALT B stuf  ||  toggle LEFT sidebar visibility
+    ctrl-shift-b (NEEDS TO CHANGE IF WE DECIDE the BOOKMARKS commands get the CTRL ALT B stuf  ||  toggle RIGHT sidebar visibility
+    ctrl-j  (open to other hotkey chars other than J, if avail)  ||  Toggle Panel (bottom panel with 'PROBLEMS, OUTPUT, DEBUG, PORTS, and TERMINAL)
     (low priority)(DISABLED FOR NOW)              ||  Toggle Editor Widths
-    CTRL-A                                        ||  Select-ALL
+    ctrl-a                                        ||  Select-ALL
 
-    CTRL-left/right                               ||  jump cursor word by word (instead of char by char)
-    CTRL-SHIFT-left/right                         ||  highlight/select word by word
-    CTRL-ALT-left/right                           ||  expand/shrink 'smart' selection   (USEFUL! TRY THIS OUT)
+    ctrl-left/right                               ||  jump cursor word by word (instead of char by char)
+    ctrl-shift-left/right                         ||  highlight/select word by word
+    ctrl-alt-left/right                           ||  expand/shrink 'smart' selection   (USEFUL! TRY THIS OUT)
 
 ========================================================================
 'YET TO BE SORTED' TIER
 ========================================================================
-    CTRL-TAB                                          ||  go to next / prev file
+    ctrl-tab                                          ||  go to next / prev file
 
-    CTRL-SPACE                                        ||  Trigger Autocomplete/Suggestion(s)
+    ctrl-space                                        ||  Trigger Autocomplete/Suggestion(s)
 
-    CTRL-SHIFT-T                                      ||  show Type hierarchy (shows inheritance-relationships. Helps answer question "Who implements this") (and probably best fit to be triggered via commandPalette instead of dedicated shortcut)
-    CTRL-SHIFT-H    (H for Hierarchy)                 ||  View call hierarchy (shows incoming/outgoing calls. Helps answer quesetion "how does execution flow through this system")(AMAZING for hige codeBases so DEFINITELY play around w this one
+    ctrl-shift-t                                      ||  show Type hierarchy (shows inheritance-relationships. Helps answer question "Who implements this") (and probably best fit to be triggered via commandPalette instead of dedicated shortcut)
+    ctrl-shift-h    (H for Hierarchy)                 ||  View call hierarchy (shows incoming/outgoing calls. Helps answer quesetion "how does execution flow through this system")(AMAZING for hige codeBases so DEFINITELY play around w this one
                                                     ||  REMINDER!! These two work great together (CallHierarchy (above) and GoToSymbol in Workspace (below) as quick/effetive way to familiarize yourself with big/new-code-bases
-    CTRL-T                                            ||  Go to Symbol in Workspace
-    CTRL-SHIFT-O   (not zero)                         ||  Go to Symbol in File
+    ctrl-t                                            ||  Go to Symbol in Workspace
+    ctrl-shift-o   (not zero)                         ||  Go to Symbol in File
 
-    CTRL-SHIFT-L                                      ||  select all occurrences
-    CTRL-D                                            ||  select NEXT occurrence   (KIM this is 'adding' the next occurrence to your already-selected occurrences…OR IOW…if I triggered this command 10 times, then at the end I will have 10 occurrences selected together (and then I can proceed to make a SINGLE EDIT that will be applied to ALL 10 of the occurrences (hence where this command demonstrates its usefulness)
-    F2                                                ||  rename-ssymbol
+    ctrl-shift-l                                      ||  select all occurrences
+    ctrl-d                                            ||  select NEXT occurrence   (KIM this is 'adding' the next occurrence to your already-selected occurrences…OR IOW…if I triggered this command 10 times, then at the end I will have 10 occurrences selected together (and then I can proceed to make a SINGLE EDIT that will be applied to ALL 10 of the occurrences (hence where this command demonstrates its usefulness)
+    f2                                                ||  rename-ssymbol
     ??? ❗TODO❗ is this same as rename-symbol?       ||  extract method/refactor
 
-    ALT-SHIFT-F                                       ||  Format Document
-    CTRL-ALT-F                                        ||  format-selection  (also re-indent?)
+    alt-shift-f                                       ||  Format Document
+    ctrl-alt-f                                        ||  format-selection  (also re-indent?)
     (via commmandPalette)                             ||  join lines
     ???                                               ||  column cursor mode
 
-    CTRL-SHIFT-N                                      ||  Navigate to related files
-    CTRL-SHIFT-S                                      ||  Swtich between corresponding Header <-> Source files
+    ctrl-shift-n                                      ||  Navigate to related files
+    ctrl-shift-s                                      ||  Swtich between corresponding Header <-> Source files
 
 ------------------------------------
 
-    CTRL-F5? (needs extension?)                       ||  run code  (I think this one is slightly diff than the below 'run without debugger')
-    CTRL-F5                                           ||  run without debugger
+    ctrl-f5? (needs extension?)                       ||  run code  (I think this one is slightly diff than the below 'run without debugger')
+    ctrl-f5                                           ||  run without debugger
 
-    CTRL-.   CTRL-(period)                            ||  quick-fix / refactor
+    ctrl-.   ctrl-(period)                            ||  quick-fix / refactor
 
-    CTRL-SHIFT-R                                      ||  Replace Across Project
-    CTRL-H                                            ||  replace across current-file
+    ctrl-shift-r                                      ||  Replace Across Project
+    ctrl-h                                            ||  replace across current-file
 
-    CTRL-/                                            ||  toggle line comment
-    CTRL-ALT-/                                        ||  toggle block comment
+    ctrl-/                                            ||  toggle line comment
+    ctrl-alt-/                                        ||  toggle block comment
 
-    CTRL-SHIFT-F  (while already selected/highlighted some code/var)  ||  Instantly searches for the highlighted text, without having to copy/paste it into the search bar like we usually have to do with Ctrl + Shift + F search👌👍🌟🔥
+    ctrl-shift-f  (while already selected/highlighted some code/var)  ||  Instantly searches for the highlighted text, without having to copy/paste it into the search bar like we usually have to do with Ctrl + Shift + F search👌👍🌟🔥
 
-    CTRL-I                                            ||  Co-pilot in-line chat
+    ctrl-i                                            ||  Co-pilot in-line chat
 
-    HomeKey                                           ||  jump cursor to BEGINNING of the curr line 📌💯
-    EndKey                                            ||  jump curso to END of the curr line         📌💯
+    homekey                                           ||  jump cursor to BEGINNING of the curr line 📌💯
+    endkey                                            ||  jump cursor to END of the curr line         📌💯
 
     %%%%%%%%%%%% DEBUG SECTION %%%%%%%%%%%%
-    F5                                                ||  run with debugger (aka, start debugger)
-    F5                                                ||  continue (aka continue until next break pt)
-    Shift + F5                                        ||  stop
-    F9                                                ||  toggle breakpoint
-    F11                                               ||  step IN
-    Shift + F11                                       ||  step OUT
-    F10                                               ||  step OVER (aka execute the NEXT LINE ONLY)
+    f5                                                ||  run with debugger (aka, start debugger)
+    f5                                                ||  continue (aka continue until next break pt)
+    shift-f5                                          ||  stop
+    f9                                                ||  toggle breakpoint
+    f11                                               ||  step IN
+    shift-f11                                         ||  step OUT
+    f10                                               ||  step OVER (aka execute the NEXT LINE ONLY)
 
     %%%%%%%%%%%% COPILOT SECTION %%%%%%%%%%%%
-    Alt + i                                           ||  Editor Inline Chat (I think this is same CoPilot shortcut I have up near top of this S tier section)
-    Alt + shift + I                                   ||  open CoPilot Edits / Sidebar-chat
+    alt-i                                             ||  Editor Inline Chat (I think this is same CoPilot shortcut I have up near top of this S tier section)
+    alt-shift-i                                       ||  open CoPilot Edits / Sidebar-chat
 
-    Alt + ctrl + shift + I                            ||  Quick Chat
+    alt-ctrl-shift-i                                  ||  Quick Chat
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -163,3 +159,28 @@ SHORTCUT PIPELINE2:
 ----------------------------------------------------------------------
 SHORTCUT PIPELINE3:
 ----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+MISC NOTES / EXPLANATIONS
+========================================================================
+
+
+
+
+
+
+
+

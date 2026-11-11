@@ -1,36 +1,64 @@
 app-specific hotkeys: iterm, cmder
 
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
-[NEXT STEP IS TO PROMPT TO CONVERT ALL THESE HOTKEYS INTO MY FORMAT OF CTRL-ALT-X (dash separated, no whitespaces)]
+========================================================================
+S + A TIER
+========================================================================
 
-finder.py myFile*                        |  searches all directories for any files with myFile 
-
-
-Ctrl + R                                 |  fzf over command HISTORY
-Ctrl + E                                 |  fzf over all DIRECTORIES (recursive depth)
-Ctrl + F                                 |  fzf over EVERYTHING (Files and Directories) (recursive depth) [thing F for 'FILES')
-
-Ctrl + `                                 |  global shortcut to bring up cmdr
+finder.py myFile*                           ||  searches all directories for any files with myFile 
 
 
-Ctrl + r                                 |  great history search (fuzzy)
+ctrl-r                                      ||  fzf over command HISTORY
+ctrl-e                                      ||  fzf over all DIRECTORIES (recursive depth)
+ctrl-f                                      ||  fzf over EVERYTHING (Files and Directories) (recursive depth) [thing F for 'FILES')
+
+ctrl-`                                      ||  global shortcut to bring up cmdr
+
+
+ctrl-r                                      ||  great history search (fuzzy)
 
 
 
 
-Shift + Alt + (1 or 2 or ..)             |  Quick 'new tab'
-Ctrl + T                                 |  open new console tab (slower than the above one)
+alt-shift-(1 or 2 or ..)                    ||  Quick 'new tab'
+ctrl-t                                      ||  open new console tab (slower than the above one)
 
-cd -                                     |  go back to whereever you were right BEFORE you cd'd into this curr directory
+cd -                                        ||  go back to whereever you were right BEFORE you cd'd into this curr directory
 
 ========================================================================
 GREP
 ========================================================================
-history | grep myWord                    |  searches the output of the 'histroy' command for the 'myWord' term
-history | grep *.txt                     |  searches the output of the 'histroy' command for all .txt extension
-grep -i myWord myFile.txt                |  search within the given file myFile.txt
-grep -i myWord myFile1.txt, myFile2.txt  |  searches multiple files
-GREP FLAGS (common ones)
-grep -I myWord myFile.txt                |  IGNORE CASE SENSITIVITY: searches myFile.txt for 'myWord' but IGNORES CASE SENTIVITY
-grep -v myWord myFile.txt                |  inverse-match: so it will show nayhting that does NOT include the target word
+history | grep myWord                    ||  searches the output of the 'histroy' command for the 'myWord' term
+history | grep *.txt                     ||  searches the output of the 'histroy' command for all .txt extension
+grep -i myWord myFile.txt                ||  search within the given file myFile.txt
+grep -i myWord myFile1.txt, myFile2.txt  ||  searches multiple files
+%%%% GREP FLAGS (common ones) %%%%
+grep -I myWord myFile.txt                || IGNORE CASE SENSITIVITY: searches myFile.txt for 'myWord' but IGNORES CASE SENTIVITY
+grep -v myWord myFile.txt                ||  inverse-match: so it will show nayhting that does NOT include the target word
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+MISC NOTES / EXPLANATIONS
+========================================================================
+
+
+
+
+
+
+
