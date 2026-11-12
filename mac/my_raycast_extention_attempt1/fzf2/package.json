@@ -105,6 +105,12 @@
       "mode": "view"
     },
     {
+      "name": "fzf-all",
+      "title": "fzf all",
+      "description": "Fuzzy search all configured files at once",
+      "mode": "view"
+    },
+    {
       "name": "fzf-by-app",
       "title": "fzf of current app (zzshortcuts)",
       "description": "Fuzzy search the file mapped to the frontmost app",

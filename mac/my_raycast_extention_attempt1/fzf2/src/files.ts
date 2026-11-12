@@ -9,6 +9,16 @@ export const FILES = {
   vscodeShortcuts: [`${ROOT}/_universal/vscode-shortcuts.html`], // placeholder
 };
 
+// Used by the "fzf all" command. Add/remove entries to change what it searches
+// (use FILES.<key> for an existing file, or a literal path string for a new one).
+export const ALL_FILES: string[] = [
+  ...FILES.aliases,
+  ...FILES.ref,
+  ...FILES.workref,
+  ...FILES.keyboardShortcuts,
+  ...FILES.vscodeShortcuts,
+];
+
 // Used by the "fzf by app" command: the frontmost app's bundle ID picks the files to search.
 // Find a bundle ID with: osascript -e 'id of app "App Name"'
 export const APP_FILES: Record<string, { name: string; files: string[] }> = {
