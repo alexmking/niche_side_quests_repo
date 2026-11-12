@@ -106,7 +106,7 @@
     },
     {
       "name": "fzf-by-app",
-      "title": "fzf by app",
+      "title": "fzf of current app (zzshortcuts)",
       "description": "Fuzzy search the file mapped to the frontmost app",
       "mode": "view"
     }
