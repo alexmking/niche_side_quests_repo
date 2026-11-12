@@ -38,6 +38,22 @@ export const SEARCHES: Record<string, SearchConfig> = {
       "D:\\git\\niche_side_quests_repo\\_universal\\vscode-shortcuts.html",
     ],
   },
+  search6: {
+    title: "fzf AHK",
+    files: ["C:\\Program Files\\AutoHotkey\\UX\\king_app_switcher1.ahk"],
+  },
+  // Used by the "fzf All" command. Add/remove file paths here as you like.
+  all: {
+    title: "fzf all",
+    files: [
+      "D:\\git\\niche_side_quests_repo\\win\\ssot-workref.txt",
+      "D:\\git\\niche_side_quests_repo\\_universal\\ssot-ref.txt",
+      "C:\\Users\\aking\\Downloads\\cmder\\config\\user_aliases.cmd",
+      // "D:\\git\\niche_side_quests_repo\\_universal\\keyboard-shortcuts.html",
+      // "D:\\git\\niche_side_quests_repo\\_universal\\vscode-shortcuts.html",
+      "C:\\Program Files\\AutoHotkey\\UX\\king_app_switcher1.ahk",
+    ],
+  },
 };
 
 // ---- Per-app hotkeys command (app-hotkeys.tsx) ----

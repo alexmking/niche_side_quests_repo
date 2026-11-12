@@ -85,7 +85,7 @@ export default function FileSearch({ id }: { id: keyof typeof SEARCHES }) {
         <List.Item
           key={it.id}
           title={it.text}
-          accessories={[{ text: basename(it.file) }]}
+          accessories={[{ text: `${basename(it.file)}:${it.line}` }]}
           actions={
             <ActionPanel>
               <Action.CopyToClipboard content={it.text} />

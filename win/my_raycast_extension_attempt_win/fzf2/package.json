@@ -57,8 +57,20 @@
     },
     {
       "mode": "view",
+      "name": "search-6",
+      "title": "fzf AHK",
+      "description": "Fuzzy search over the file(s) configured as search6 in src/config.ts."
+    },
+    {
+      "mode": "view",
+      "name": "search-all",
+      "title": "fzf All",
+      "description": "Fuzzy search across all of the configured search files at once."
+    },
+    {
+      "mode": "view",
       "name": "app-hotkeys",
-      "title": "fzf app hotkeys",
+      "title": "fzf app-specific-hotkeys",
       "description": "Fuzzy search the hotkeys file matching the app that was frontmost when triggered."
     }
   ],

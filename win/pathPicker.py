@@ -9,7 +9,7 @@
 # @raycast.packageName Developer Utils
 # @raycast.description trying fzf/dropdown for all configs
 
-#@raycast.argument1 { "type": "dropdown", "placeholder": "sel config", "required": true, "data": [{"title": "aliases", "value": "A"}, {"title": "ahk", "value": "H"}, {"title": "glaze", "value": "G"}, {"title": "flexprompt", "value": "P"}, {"title": "fzf", "value": "F"}, {"title": "keybVis", "value": "K"}, {"title": "ssot-refs", "value": "R"}, {"title": "NEW_ENTRY", "value": "??"} ] }
+#@raycast.argument1 { "type": "dropdown", "placeholder": "sel config", "required": true, "data": [{"title": "aliases", "value": "A"}, {"title": "ahk", "value": "H"}, {"title": "ref.txt", "value": "G"}, {"title": "ssot-workref.txt", "value": "P"}, {"title": "fzf", "value": "F"}, {"title": "keybVis", "value": "K"}, {"title": "vscode-keybVis", "value": "R"}, {"title": "NEW_ENTRY", "value": "??"} ] }
 ####@raycast.argument1 { "type": "dropdown", "placeholder": "sel config", "required": true, "data": [{"title": "aliases", "value": "A"}, {"title": "ahk", "value": "H"}, {"title": "glaze", "value": "G"}, {"title": "flexprompt", "value": "P"}, {"title": "fzf", "value": "F"}, {"title": "keybVis", "value": "K"}, {"title": "ssot-refs", "value": "R"}, {"title": "madden", "value": "M"} ] }
 
 
@@ -60,7 +60,7 @@
 
 
 
-####BACKUP@raycast.argument1 { "type": "dropdown", "placeholder": "sel config", "required": true, "data": [{"title": "aliases", "value": "A"}, {"title": "ahk", "value": "H"}, {"title": "glaze", "value": "G"}, {"title": "flexprompt", "value": "P"}, {"title": "fzf", "value": "F"}, {"title": "keybVis", "value": "K"}, {"title": "ssot-refs", "value": "R"}, {"title": "madden", "value": "M"} ] }
+####BACKUP@raycast.argument1 { "type": "dropdown", "placeholder": "sel config", "required": true, "data": [{"title": "aliases", "value": "A"}, {"title": "ahk", "value": "H"}, {"title": "ssot-ref.txt", "value": "G"}, {"title": "ssot-workref.txt", "value": "W"}, {"title": "flexprompt", "value": "P"}, {"title": "fzf", "value": "F"}, {"title": "keybVis", "value": "K"}, {"title": "ssot-refs", "value": "R"}, {"title": "madden", "value": "M"} ] }
 
 
 
@@ -145,11 +145,11 @@ elif selection == "H":
     # copy the following path to clipboard: "C:\Program Files\AutoHotkey\UX\king_app_switcher1.ahk"
     os.system(r'echo C:\Program Files\AutoHotkey\UX\king_app_switcher1.ahk| clip')
 elif selection == "G":
-    # copy the following path to clipboard: "C:\Users\aking\.glzr\glazewm\config.yaml"
-    os.system(r'echo C:\Users\aking\.glzr\glazewm\config.yaml| clip')
+    # copy the following path to clipboard: "D:\git\niche_side_quests_repo\_universal\ssot-ref.txt"
+    os.system(r'echo D:\git\niche_side_quests_repo\_universal\ssot-ref.txt| clip')
 elif selection == "P":
-    # copy the following path to clipboard: "C:\Users\aking\Downloads\cmder\config\flexprompt_config.lua"
-    os.system(r'echo C:\Users\aking\Downloads\cmder\config\flexprompt_config.lua| clip')
+    # copy the following path to clipboard: "D:\git\niche_side_quests_repo\win\ssot-workref.txt"
+    os.system(r'echo D:\git\niche_side_quests_repo\win\ssot-workref.txt| clip')
 elif selection == "F":
     # copy the following path to clipboard: "C:\Users\aking\Downloads\cmder\vendor\clink\clink_gizmos\fzf.lua"
     os.system(r'echo C:\Users\aking\Downloads\cmder\vendor\clink\clink_gizmos\fzf.lua| clip')
@@ -157,8 +157,8 @@ elif selection == "K":
     # copy the following path to clipboard: "D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html"
     os.system(r'echo D:\git\niche_side_quests_repo\_universal\keyboard-shortcuts.html| clip')
 elif selection == "R":
-    # copy the following path to clipboard: "D:\git\niche_side_quests_repo\_universal\ssot-refs.md"
-    os.system(r'echo D:\git\niche_side_quests_repo\_universal\ssot-refs.md| clip')
+    # copy the following path to clipboard: "D:\git\niche_side_quests_repo\_universal\vscode-shortcuts.html"
+    os.system(r'echo D:\git\niche_side_quests_repo\_universal\vscode-shortcuts.html| clip')
 else:
     print("ERROR!!!")
 

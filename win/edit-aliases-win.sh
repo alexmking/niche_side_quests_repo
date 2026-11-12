@@ -17,5 +17,11 @@ if [ ! -f "$FILE" ]; then
   exit 1
 fi
 
+# Copy the equivalent terminal command to the clipboard (no trailing newline)
+printf '%s' "code \"$FILE\"" | clip.exe
+
 # Open in VS Code
 code "$FILE"
+
+# Silent mode shows the last output line as a Raycast toast
+echo "📋 Copied: code \"$FILE\""

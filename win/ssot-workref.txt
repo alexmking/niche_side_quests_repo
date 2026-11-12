@@ -1,3 +1,304 @@
+===============================================================================
+SSOT WORK REFERENCE
+===============================================================================
+Single Source of Truth for Work Reference
+
+
+
+
+
+📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌
+📌GOAL FOR THESE SECTIONS/TABLE OF CONTENTS:
+1. MUST be as close to the same for both ref and workref docs
+-- make sure this goal is met after we nailed down the sections 
+📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌
+
+
+
+
+
+⭐TABLE OF CONTENTS [OFFICIAL]
+=================
+1. CONVENTIONS, RULES, GUIDELINES (prefixes,suffixes, naming, keywords, reserved-words, labels/tags, identifiers, snippets)
+> ______ section?❓
+> ______ section?❓(may not be needed)
+> DEFS
+> HOW-TOs
+> DROPZONE   (last, always at bottom of doc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Candidates for the 1-2 remaining sections:
+---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ROUGH PRACTICE TABLE OF CONTENTS
+=================
+- CONVENTIONS (
+00. SYS ENV REF STUFF (snippets, shortcut-stuff/philo, raycast commands/prefixes, etc.)
+02. SCADA/ OSI stuff (🤔this could be redundant, given this is already the 'work'ref so giant % of the content will be scada/osi related in some way...
+         (DEFS, acronyms, etc technical reference for SCADA systems and OSI protocols)
+00. DEFS (definitions for terms, acronyms, and other quick reference items)(maybe good to keep sep from SCADA/OSI section
+        -prob going to make this its own section but NOT have sub sections separating the terms, scripts, processes, etc
+        - instead can just have some tag/symbol next to the entry, indicating if it's a script or process or acrnomym etc
+03. HOW-TOs / processes
+05. LEARNING & REUSABLE KNOWLEDGE
+99. DROPZONE    (always LAST section, at bottom)) (to be processed/organized later)
+⭐ Look at the below sub-sections from 365 and see if any are good to consider/ spark idea for the sections we want
+
+
+
+
+
+
+
+
+
+
+
+GOOD section/sub-section topics TO CONSIDER:
+-----------------------------------------------
+- scripts:      2 column (script-name: what it does/any other useful info about it)
+- processes:    2 column (process-name: what it does/ useful info)
+- files:        like scada.rc, strings.resx (auto-generated vs not, etc) basic info on what the file is used for + any useful info about that file 
+- dev-environment   every useful env-related thing (as in, our /osi envs, nexus, src, apc-profiles etc (may be too broad))
+- databases     breaking down our proprietary DB (DOFRI) stuff etc (def sub-section or sub-sub section though)
+- Testing       stuff related to our unit tests/unit-test suites/infrastructure, jenkins, cube, etc (def sub section)
+- Deployment and Releases       stuff expl in more detail about our releases, how we deploy, branches involved etc
+- Concepts                  ?? tricky one. maybe too broad? Or just is same thing that excalidraw is doing rn...
+- Useful Examples           like im doing rn in excalidraw. Deeper dives/expl into stuff w concrete examples
+- Resources and Links       def sub-sub section
+
+
+noteable 'tab-names' from excel doc(that i may want to KIM as its own sectioj/sub-section)
+--------------------------------------------------------------------------------------------
+-triage/cubecop
+-RO release owner 
+-git/github
+-daily/recurring items              (breaks down daily, weekly, sub-weekkly/monthly tasks [like i detailed recently in the sticky note ])
+-sprints, branching, releases, 
+-jira fields                        (TODO still want to create a 2 column mini section that gives solid expl of the main jira fields AND MORE IMP how they are used in our devOps ecosystem(which obvi will help make me more aware of what2do when creating/reading SWRs))
+-file structure REVISITED            (may be good topic for excalidraw, bc visual)
+-questions to ask
+-SWR | STORY (how-to)
+-terminal commands                  (also lots of how-tos)
+-SCADA basics
+-durMeetings                        (def need to update this, and prob move it to a sep .txt doc or something(AND also update the raycast command))
+-env-troubleshooting                (an area where we can copy/paste every env fix as we come across them)
+-monarchDocs notes                  (my notes from reading the MonarchDocs goldmine (STILL TONS OF SECTIONS I NEED TO GET THROUGH!!!))
+
+
+
+
+
+00. INBOX
+01. PROJECTS & ACTIVE WORK
+02. SYSTEMS & TECHNICAL REFERENCE
+03. PROCESSES & HOW-TOs
+04. PEOPLE, TEAMS & COMMUNICATION
+05. LEARNING & REUSABLE KNOWLEDGE
+99. ARCHIVE
+
+
+
+
+Is it unprocessed? Put it in INBOX.
+Is it primarily about a specific effort? Put it in PROJECTS.
+Does it explain how a system works? Put it in SYSTEMS/ EXCALIDARW 
+Does it explain how to perform a task? Put it in HOW TOs
+Is it broadly reusable? Put it in LEARNING.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[🟥TEMPORARY SECTION! Delete it when done!]
+========================================================================
+,.DOCS CONTENT I STILL NEED TO TRANSFER TO REF or other official notes/ref spot
+========================================================================
+> old beybindings .txt file     ----> D:\git\niche_side_quests_repo\_universal\TODO-go_through_these_and_consolidate_to_ssotref\current_keyboard_bindings.txt
+> giant .md file                ----> D:\git\niche_side_quests_repo\_universal\TRANSFER_ALL_MY_CONTENTS_TO_NEW_REFS_TXT.md
+> excel Ref_sheet2025           ----> C:\Users\aking\amk\notes\quick_ref\ref_sheet2025_START_OF_TRANSFERRING_TO_ONENOTE.xlsx
+> ❗,.TODO: likely 1 or 2 more i cant think of rn...
+> ❗,.TODO: likely 1 or 2 more i cant think of rn...
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+,. Ecosystem for my notes/reference 
+(see trello card named: "Notes System Conclusions/EXPL: (Nov 2026 )"
+========================================================================
+> two ref.txt and work-ref.txt docs                             are for a lot of the notes/content
+> excalidraw is for visual-heavy, in-depth breakdowns           work/scada concepts (excalidraw bc good text search and excellent hotkeys to quickly create mini diagrams/maps etc) 
+> OneNote + sep-screenshot dir:                                 imp screenshots are put in ONE NOTE (for the searchability feat) (must be manually moved from teams-screenshots dir [HYPER-2])
+> shortcuts:
+    > the two html's for keyb-visualizers 
+    > the hotkey.txt files with fzf-raycast-extension for app-specific-shortcuts (replacing excel zzshortcuts)
+
+<*> at least 1 hotkey or mech is setup to be able to very-quickly access each of these
+
+Potential tweaks down the road:
+-----------------------------------
+> forget Excalidraw and instead use ONENOTE for all of excalidraws stuff AND the OCR-screenshot searches that onenote is already doing.
+    - OneNote seems capable of doing most of what excalidraw is doing, just maybe not as fast bc excalidraws great hotkey system
+        - so we'd sacrifice a little speed in order to have one less 'location' for notes/content to be (the less the better for the most part as over-splintering amongst diff files is a big part of what broke our previous attempt at overhauing our notes system)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
