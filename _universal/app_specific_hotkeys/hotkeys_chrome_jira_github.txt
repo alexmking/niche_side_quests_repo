@@ -3,7 +3,8 @@ app-specific hotkeys: chrome, jira, github.com
 
 
 ========================================================================
-MAIN ONES      =>     https://quickref.me/google-chrome
+MAIN ONES 
+https://quickref.me/google-chrome
 ========================================================================
 ctrl-f                    ||  search the page
 ctrl-g                    ||  toggle through results of your Ctrl + F search
@@ -13,7 +14,8 @@ ctrl-mouseclick           ||  open link in new tab
 ctrl-option(hyp)-tab  ||  go to PREV tab (NEW)
 
 ========================================================================
-JIRA     =>       https://support.atlassian.com/jira-software-cloud/docs/markdown-and-keyboard-shortcuts/
+JIRA     
+https://support.atlassian.com/jira-software-cloud/docs/markdown-and-keyboard-shortcuts/
 ========================================================================
 ctrl-shift-m              ||  Code block
 
@@ -31,7 +33,17 @@ GITHUB.COM
 
 
 
-
+========================================================================
+Excalidraw     
+https://app.excalidraw.com/s/8jgeWhYnzwX/3qx4NJNsmXf
+========================================================================
+r ||  Rectangle tool
+e ||  Ellipse tool
+l ||  Lasso tool
+v ||  Selection tool
+z ||  Zoom tool
+h ||  Hand tool
+t ||  Text tool
 
 
 
