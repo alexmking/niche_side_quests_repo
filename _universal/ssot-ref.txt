@@ -3,137 +3,30 @@ SSOT REFERENCE
 ===============================================================================
 Single Source of Truth for Work Reference
 
-📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌
-📌GOAL FOR THESE SECTIONS/TABLE OF CONTENTS:
-1. MUST be as close to the same for both ref and workref docs
--- make sure this goal is met after we nailed down the sections 
-📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌📌
-
-
-
 ⭐TABLE OF CONTENTS [OFFICIAL]
-=================
-1. CONVENTIONS, RULES, GUIDELINES (prefixes,suffixes, naming, keywords, reserved-words, labels/tags, identifiers, snippets)
-> ______ section?❓
-> ______ section?❓(may not be needed)
-> DEFS
-> HOW-TOs
-> DROPZONE   (last, always at bottom of doc)
+==================================
+1. CONVENTIONS, RULES, GUIDELINES   
+2. MAIN                             
+3. DEFS
+4. HOW-TOs
+5. DROPZONE                         
+
+
+
+-zz-    (1/5)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.CONVENTIONS, RULES, GUIDELINES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>ABOUT THIS SECTION: (prefixes,suffixes, naming, keywords, reserved-words, labels/tags, identifiers, snippets)
 
 
 
 
 
 
-
-
-
-
-
-TABLE OF CONTENTS
-=================
-00. SYS ENV REF STUFF (snippets, shortcut-stuff/philo, raycast commands/prefixes, etc.)
-02. SYSTEMS & TECHNICAL REFERENCE
-03. HOW-TOs / processes
-04. PEOPLE, TEAMS & COMMUNICATION
-05. LEARNING & REUSABLE KNOWLEDGE
-99. DROPZONE (to be processed/organized later)
-⭐ Look at the below sub-sections from 365 and see if any are good to consider/ spark idea for the sections we want
-
-
-
-Is it unprocessed? Put it in INBOX.
-Is it primarily about a specific effort? Put it in PROJECTS.
-Does it explain how a system works? Put it in SYSTEMS.
-Does it explain how to perform a task? Put it in PROCESSES.
-Is it about ownership, contacts, or organizational context? Put it in PEOPLE.
-Is it broadly reusable? Put it in LEARNING.
-Is it no longer current? Put it in ARCHIVE.
-
-
-00. INBOX
-===============================================================================
-Unsorted notes, questions, links, and items to process later.
-
-01. PROJECTS & ACTIVE WORK
-===============================================================================
-## Current Projects
-## Investigations
-## Decisions
-## Open Questions
-## Completed Work
-
-02. SYSTEMS & TECHNICAL REFERENCE
-===============================================================================
-## Architecture
-## Applications and Services
-## Environments
-## Databases
-## APIs and Integrations
-## Configuration
-## Commands and Queries
-## Troubleshooting
-
-03. PROCESSES & HOW-TOs
-===============================================================================
-## Development
-## Testing
-## Deployment and Releases
-## Support and Incident Response
-## Access and Setup
-## Checklists
-
-04. PEOPLE, TEAMS & COMMUNICATION
-===============================================================================
-## Teams and Ownership
-## Contacts and Subject-Matter Experts
-## Meetings
-## Terminology and Acronyms
-## Agreements and Expectations
-
-05. LEARNING & REUSABLE KNOWLEDGE
-===============================================================================
-## Concepts
-## Patterns and Practices
-## Useful Examples
-## Lessons Learned
-## Tools
-## Resources and Links
-## Ideas for Later
-
-99. ARCHIVE
-===============================================================================
-## Completed Projects
-## Superseded Procedures
-## Historical Decisions
-## Old Meeting Notes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-================================================================================
 === CONVENTIONS ===
-================================================================================
-
   This file is the single source of truth for notes, commands, how-tos, and
   definitions. The rules below keep it consistent and grep-friendly.
 
@@ -192,21 +85,7 @@ Unsorted notes, questions, links, and items to process later.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+::::::::::::::::::::::divider::::::::::::::::::::::
 
 
 
@@ -346,22 +225,7 @@ https://chatgpt.com/c/6a2b8713-3c58-83ea-acb1-f4ceeac862f6 📌
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+::::::::::::::::::::::divider::::::::::::::::::::::
 
 
 
@@ -413,6 +277,49 @@ Hoisting affects var, not let/const
 
 
 
+-zz-    (2/5)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.MAIN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>ABOUT THIS SECTION: TBD, name also may change
+>OTHER POTENTIAL NAMES: reference, general content, info, notes, TBD, SCADA/OSI, concepts, learning, general
+
+
+
+
+
+-zz-    (3/5)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.DEFS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>ABOUT THIS SECTION: 2 column format (definition, description), layout for definitions, acronyms, scripts, processes.exe etc
+
+
+
+
+-zz-    (4/5)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.HOW-TOs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>ABOUT THIS SECTION: obvi for documenting step-by-step procedures, processes, and how-to guides
+
+
+
+
+-zz-    (5/5)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+,.DROPZONE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+>ABOUT THIS SECTION: catch-all spot to drop content w/o thinking, to be processed and organized later
+`
 
 
 
@@ -439,6 +346,188 @@ Hoisting affects var, not let/const
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+THIS IS A TEMPORARY CUTOFF/DIVIDER WHERE EVERYTHING BELOW THIS POINT IS stuff I sloppily/copy-pasted from sample.txt
+> TODO: i need to go through all of it and put it where it belongs within our new 5 global sections (conventions, main, def, how-to, dropzone)
+> DELETE THIS GIANT RED DIVIDER ⭐AFTER⭐ you've gone through all the BELOW content...
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
 
 
 
