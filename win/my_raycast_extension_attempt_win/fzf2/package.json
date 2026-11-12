@@ -70,7 +70,7 @@
     {
       "mode": "view",
       "name": "app-hotkeys",
-      "title": "fzf app-specific-hotkeys",
+      "title": "fzf on current app (zzshortcuts)",
       "description": "Fuzzy search the hotkeys file matching the app that was frontmost when triggered."
     }
   ],
