@@ -26,6 +26,8 @@ Single Source of Truth for Work Reference
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 >ABOUT THIS SECTION: (prefixes,suffixes, naming, keywords, reserved-words, labels/tags, identifiers, snippets)
+>NOTE ABOUT THIS SECTION: I'm assuming most of the content for this section will be put in the other ref (ssot-ref.txt) file and NOT this workref file...
+    (so dont worry if this section is pretty bare on this workref side)
 
 
 > Use the raycast snippets for all the template headers, sub-sections, dividers etc to maintain consistency and standardization across the work reference document

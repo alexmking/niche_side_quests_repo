@@ -1,0 +1,1234 @@
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥
+
+[✅DONE] Transferred all relevant keybinding notes to ssot-ref.txt
+
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+🟥🟥🟥🟥🟥🟥🟥🟥🟥
+
+
+
+====================================================================================================================================================
+====================================================================================================================================================
+current_keyboard_bindings.txt   (use zz- to jump from section to section)
+====================================================================================================================================================
+====================================================================================================================================================
+[FOUR MAIN SECTIONS + few MISC/BESPOKE SECTIONS]
+0. todo's / reminders / ideas / pending-commands
+1. ALT-ONLY group of keybShortcuts      (---windowManagement1---)
+2. ALT-SHIFT group of keybShortcuts     (---windowManagement2---)
+3. ALT-OPT  group of keybShortcuts      (---app-switching---) (currently achieved via miniHyper OPT => OPT-ALT)
+4. HYPERKEY group of keybShortcuts      (---misc/other (TBD)---)
+-------
+5. MIDDLE-MAN / PLAYGROUND Fn-mini-groups of shortcuts
+*********
+*********
+0.1 WORST hotkeys
+0.2 REF LIST OF ALL 15 MODIFIER-GROUPS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 0 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
+todo's / reminders / ideas / pending-commands
+====================================================================================================================================================
+====================================================================================================================================================
+
+------------------------------------------------------------------
+-------[RARE ONE-OFF ERRORS/CONFLICTS of certain MODGROUPS <-> KEY pairings to be aware of when deciding on where shortcuts should be put]======
+------------------------------------------------------------------
+- For ALT-ONLY group... Leave the 'K' key alone (bc that's MACs RAYCASTs CMD-K one that we need avail and BTT isnt able to do the normal app-specific workaround like usual bc raycast is overlay app w diff rules)
+- For ALT-ONLY group...be careful with 'C' bc of some misc conflicts I've run into (not sure if BTT would be able to workaround this but as a rule of thumb I should try to avoid this CHAR in this MODGROUP)
+- For ALT-ONLY group...(so far it's chars C, and K... but I know there's a few more problematic ones for the ALT-ONLY modGroup...)
+- ADD MORE HERE AS YOU REMEMBER THEM!!!
+- ADD MORE HERE AS YOU REMEMBER THEM!!!
+
+------------------------------------------------------------------
+[TODO IDEA: using the FnRow Keys as mini-categories of shortcuts (12 keys)]
+------------------------------------------------------------------
+- bc we need to hit the Fn key to access the FnRow keys, we can add the Fn key to current modifierGroups to create a new mini-category of shortcuts
+- (it's only a 'mini' category bc the Fn modifier key only effects the 12 FnRow keys, which we found out during our miniHYPER side quest. IOW EXAMPLE: 'ALT-Fn-T' will do NOTHING bc it's being read as 'ALT-Fn' since the 'T' is ignored)
+- so we can create 3-5 mini-categories of shortcuts where we'll have 12 free keys to assign shortcuts
+    **************************
+    [THE 4 MODIFIER GROUPS THAT ARE SAFE FOR Fn pairing]
+    **************************
+    ALT + OPT + F       (tiny bit riskier than the other 3 fyi)
+    ALT + CTRL + F       
+    ALT + CTRL + OPT + F
+    ALT + CTRL + OPT + SHIFT + F
+    
+    =====USE-CASES FOR THESE mini-categories:=====
+    (1) temporary 'playground' area where we can freely add new shortcuts we're testing out and not have to worry about any conflicts (then when we want to officially add the new shortcut, we can move it from the playground to the actual modifiergroups (aka the ones without Fn mod))
+    (2) ?? 
+    (3) ??
+
+------------------------------------------------------------------
+-----[(LHO) LEFT-HAND-ONLY-EMPH-REMINDER]======
+------------------------------------------------------------------
+- Being able to trigger a shortcut using only my left-hand (roughly this is all the keys on middle/left-side of keyb, w some exceptions obvi)
+- we want to maximize this left-hand-only (LHO) real-estate when organizing our shortcuts
+- TODO: add the '(LHO)' indicator to ALL the shortcuts is applies to
+
+------------------------------------------------------------------
+-----[GOOD RULES OF THUMB TO BE AWARE OF...]------
+------------------------------------------------------------------
+- more modifier keys == more serious/hard-to-reverse action
+- Never re-use a family (If ALT + OPT launches apps, it always launches apps.)
+
+------------------------------------------------------------------
+-----[TODO: MISSING the 'TAB' and 'DELETE' and 'ENTER' keys from my shortcuts lists belowfor each of the MODIFIER GROUPS]======
+-----[TODO: So i need to ADD these 3 keys for EACH of the modifierGroups]-----
+------------------------------------------------------------------
+- (i forgot TAB and ENTER are technically character keys just like a-z or 1-9 etc)
+- so I need to add ones like the following:
+    -HYPER-TAB, and 
+    -HYPER-DELETE and
+    -HYPER-ENTER and A
+    -ALT-ENTER...
+    -ALT-DELETE
+    -ALT-SHIFT-ENTER, etc etc...
+    -ALT-SHIFT-DELETE etc etc
+    - also dont forget the other modifier groups like CTRL-OPT-ALT-TAB, then CTRL-OPT-ALT-ENTER etc...
+
+------------------------------------
+-----[REMAPPED_KEYS]-----
+------------------------------------
+rightCtrl   ==      miniHYPERKEY (hyperkey without the SHIFT included)
+rightAlt    ==      rightArrow (to accept suggestions in terminal/editor/chrome/etc faster)
+
+------------------------------------------------------------------
+TMP-TOP-PRIOIRTY: commands that need to be assigned a keyb:
+------------------------------------------------------------------
+- raycast global hotkey for 'quick add new event to google calendar'
+- alt-shift-spacebar .... ?
+- HYPER-spacebar
+- HYPER-Enter
+- alt-enter??? 
+- alt-shift-enter??? 
+- HYPER-LeftArr	
+- HYPER-RightArr	
+- HYPER-UpArr	    
+- HYPER-DownArr	
+- HYPER-(+)	
+- HYPER-(-)	
+- HYPER-?   maybe good GPT hotkey?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 1 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
+(ALT) group of commands	
+EXPL: window-management/resizing/positioning
+====================================================================================================================================================
+====================================================================================================================================================
+alt-tab permanent 'prev window' switcher (obvi)
+alt-q	preset-window-size group of commands
+alt-w	preset-window-size group of commands
+alt-e	preset-window-size group of commands
+alt-r	preset-window-size group of commands
+alt-t	set TILE layout
+alt-y	set ACCORDION layout
+alt-U	focus left/down/up/right group of commands
+alt-I	focus left/down/up/right group of commands
+alt-O	focus left/down/up/right group of commands
+alt-p	focus left/down/up/right group of commands
+alt-[	________avail
+alt-]	________avail
+alt-\	________avail
+	
+alt-a	    move window' group of commands
+alt-s	    move window' group of commands
+alt-d	    move window' group of commands
+alt-f	    toggle PIN-WINDOW-ON-TOP(aka 'F' for FLOAT-WINDOW)
+alt-g	    set FLOATING layout/window (not to be confused with pin-window)
+alt-h 	    set TALL-SKINNY window size (for trello window specifically). (TEMP DISABLED Aeros alt-h horiz to try out TRELLO tall-skinny resize-window)
+alt-j	    shrink/grow window' group of commands
+alt-k	    shrink/grow window' group of commands		(TEMP DISABLED ON MAC-Aerosp bc of conflict with Raycasts dumb UNMODIFIABLE Cmd-K action)
+alt-L	    shrink/grow window' group of commands
+alt-;	    shrink/grow window' group of commands
+alt-'	    ________avail
+alt-enter   ________avail
+
+alt-Z	    ULTRA-OPTIMIZED-zzshortcuts command (likely will be moved to Fn to replace the prev zzshortcuts key)
+alt-x       ________avail
+alt-c       ________avail
+alt-v	    set VERTICAL tile-style
+alt-b	    pin-window-to-top
+alt-n       ________avail
+alt-m	    almost-maximize-window
+alt-,       ________avail
+alt-.       ________avail
+alt-/       ________avail
+
+alt-spaceb  raycast/spotlight search [CONST]
+
+alt-LeftArr	    ________avail
+alt-RightArr	________avail
+alt-UpArr	    ________avail
+alt-DownArr	    ________avail
+
+alt-`		________avail
+alt-1	    jump focus to desktop 1
+alt-2	    jump focus to desktop 2
+alt-3       jump focus to desktop 3
+alt-4	    jump focus to desktop 4
+alt-5	    jump focus to desktop 5
+alt-6	    jump focus to desktop 6
+alt-7	    jump focus to desktop 7
+alt-8	    jump focus to desktop 8
+alt-9	    jump focus to desktop 9
+alt-0       jump focus to desktop 10
+alt--	    ________avail
+alt-=	    ________avail
+
+alt-numpad1	    3x3 numpadGrid for 'move-window' 
+alt-numpad2	    3x3 numpadGrid for 'move-window' 
+alt-numpad3	    3x3 numpadGrid for 'move-window' 
+alt-numpad4	    3x3 numpadGrid for 'move-window' 
+alt-numpad5	    3x3 numpadGrid for 'move-window' 
+alt-numpad6	    3x3 numpadGrid for 'move-window' 
+alt-numpad7	    3x3 numpadGrid for 'move-window' 
+alt-numpad8	    3x3 numpadGrid for 'move-window' 
+alt-numpad9	    3x3 numpadGrid for 'move-window' 
+alt-numpad0	    3x3 numpadGrid  [CENTER & almost-full-screen size] 
+
+(alt+fn+fKey) (use the right 'alt' key for these instead of the usual left 'alt')
+alt-Fn1	    ________avail
+alt-Fn2	    ________avail
+alt-Fn3	    ________avail
+alt-Fn4	    ________avail
+alt-Fn5	    ________avail
+alt-Fn6	    ________avail
+alt-Fn7	    ________avail
+alt-Fn8	    ________avail
+alt-Fn9	    ________avail
+alt-Fn10	________avail
+alt-Fn11	________avail
+alt-Fn12	________avail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 2 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
+(ALT-SHIFT) group of commands
+EXPL: shift-variation of the (ALT) modGroup window-management + misc-window-commands that would be pain to accidentally trigger (such as close-all-windows etc)
+====================================================================================================================================================
+====================================================================================================================================================
+alt-shift-tab   permanent prev/next app-switcher
+alt-shift-q		quit/close window
+alt-shift-w		reset/redraw windows
+alt-shift-e		exit Aerosp/Glaze
+alt-shift-r		reload-config
+alt-shift-t		________avail
+alt-shift-y		________avail
+alt-shift-u		________avail
+alt-shift-i		________avail
+alt-shift-o		________avail
+alt-shift-p     ________avail
+alt-shift-[		________avail
+alt-shift-]		________avail
+alt-shift-\		________avail
+
+alt-shift-a		    ________avail
+alt-shift-s		    ________avail
+alt-shift-d		    ________avail
+alt-shift-f		    ________avail
+alt-shift-g		    ________avail
+alt-shift-h		    ________avail
+alt-shift-j		    ________avail
+alt-shift-k		    ________avail
+alt-shift-L		    launch-all-important-apps
+alt-shift-;		    ________avail
+alt-shift-'		    ________avail
+alt-shift-enter     ________avail
+
+alt-shift-Z		Backup zzshortcuts for when (ALT-Z) fails (when we call it from uncommon apps) command 
+alt-shift-x		close-all-windows-but-curr
+alt-shift-c		copy-path (one of my favs)(fileExpl, terminal, vscode, chrome etc) --<may move this one to modGroup that is better fit bc it's not really a mindowmanagement type shortcut whuich ALT-SHIFT group is supposed to be>--
+alt-shift-v		________avail
+alt-shift-b		________avail
+alt-shift-n		________avail
+alt-shift-m		________avail
+alt-shift-,		________avail
+alt-shift-.		________avail
+alt-shift-/		________avail
+
+alt-shift-LeftArr	    ________avail
+alt-shift-RightArr  	________avail
+alt-shift-UpArr	        ________avail
+alt-shift-DownArr	    ________avail
+    
+alt-`		    ________avail
+alt-shift-1	    move window to desktop 1     
+alt-shift-2	    move window to desktop 2
+alt-shift-3     move window to desktop 3
+alt-shift-4	    move window to desktop 4
+alt-shift-5	    move window to desktop 5
+alt-shift-6	    move window to desktop 6
+alt-shift-7	    move window to desktop 7
+alt-shift-8	    move window to desktop 8
+alt-shift-9	    move window to desktop 9
+alt-shift-0     move window to desktop 10
+alt--	        _______avail
+alt-=	        ________avail
+
+
+alt-shift-numpad1	VolumeDown (Misc-numpad group of commands)
+alt-shift-numpad2	VolumeUp (Misc-numpad group of commands)
+alt-shift-numpad3	EmojiPanel (Misc-numpad group of commands)
+alt-shift-numpad4	env_optimizations excel doc (Misc-numpad group of commands)
+alt-shift-numpad5	________ TODO: This specific keybinding is ONLY avail on MAC side (bc WINDOWS sides rules around Numpad+Shift prevent it)
+alt-shift-numpad6	go_to_BTT (for mac side at least, TBD what Windows side will be, maybe AutoHotKey aHK? __?  (Misc-numpad group of commands)
+alt-shift-numpad7	go_to_Copilot / GPT 
+alt-shift-numpad8	________ avail? TODO: 
+alt-shift-numpad9	GithubDesktop (MAYBE? Bc it's almost just as fast as searching it via flow launcher/raycast)
+alt-shift-numpad0	________ avail? TODO: 
+
+(alt+shift+fn+fKey)(use the right 'alt' key for these instead of the usual left 'alt', same goes for the right 'shift' key)
+alt-shift-Fn1	    ________avail
+alt-shift-Fn2	    ________avail
+alt-shift-Fn3	    ________avail
+alt-shift-Fn4	    ________avail
+alt-shift-Fn5	    ________avail
+alt-shift-Fn6	    ________avail
+alt-shift-Fn7	    ________avail
+alt-shift-Fn8	    ________avail
+alt-shift-Fn9	    ________avail
+alt-shift-Fn10	    ________avail
+alt-shift-Fn11	    ________avail
+alt-shift-Fn12	    ________avail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 3 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
+ALT-OPT (APP-SWITCHER) group of commands	
+EXPL: [todo]
+====================================================================================================================================================
+====================================================================================================================================================
+alt-opt-TAB     things3 (2ndary)
+alt-opt-q		________avail
+alt-opt-w		ASPENTECH board fancy chromeTab
+alt-opt-e		Excel ref doc
+alt-opt-r		REFERENCE board fancy chromeTab
+alt-opt-t		terminal /iTerm2 / Cmder
+alt-opt-y		trello desktop app
+alt-opt-u		________avail
+alt-opt-i		Inbox (email)
+alt-opt-o		________avail
+alt-opt-p		________avail
+alt-opt-[		________avail
+alt-opt-]		________avail
+alt-opt-\		________avail 
+	
+alt-opt-a		    things3 (2ndary)
+alt-opt-s           spotify
+alt-opt-d		    DOINGWORK board fancy chromeTab
+alt-opt-f		    Finder/ File-Expl
+alt-opt-g		    Github Desktop
+alt-opt-h		    HOME GoogleDoc fancy chromeTab
+alt-opt-j		    LEET-SESH-SETUP(laptop screen) || Jira 'mywork' fancy chromeTab || 
+alt-opt-k		    LEET-SESH-SETUP(Big screen)
+alt-opt-l		    ________avail
+alt-opt-;		    ________avail
+alt-opt-'		    ________avail
+alt-opt-enter       ________avail
+	
+alt-opt-z		zzshorts excel doc   
+alt-opt-x		________avail   
+alt-opt-c		vscode
+alt-opt-v		VisualStudio / IDE
+alt-opt-b		Chrome / Browser
+alt-opt-n		________avail
+alt-opt-m		Teams
+alt-opt-,		________avail
+alt-opt-.		________avail
+alt-opt-/		________avail
+	
+alt-opt-LeftArr	    ________avail
+alt-opt-RightArr    ________avail
+alt-opt-UpArr	    ________avail
+alt-opt-DownArr	    ________avail
+
+alt-opt-`		things3
+alt-opt-1	    Finder (numrow backup)
+alt-opt-2       terminal (numrow backup)
+alt-opt-3       chrome (numrow backup)
+alt-opt-4	    vscode (numrow backup)
+alt-opt-5	    Teams/Things3
+alt-opt-6	    Trello desktop app (numrow backup)
+alt-opt-7	    Ref excel doc (numrow backup)
+alt-opt-8	    zzshorts (numrow backup)
+alt-opt-9	    ________avail
+alt-opt-0       ________avail
+alt-opt--	    ________avail   
+alt-opt-=	    ________avail  
+
+(this group is mainly used as spot to test out new shortcuts before det if they're worth giving a legit binding to)
+alt-opt-numpad1     ________avail
+alt-opt-numpad2	    ________avail
+alt-opt-numpad3     ________avail
+alt-opt-numpad4	    ________avail
+alt-opt-numpad5	    ________avail
+alt-opt-numpad6	    ________avail
+alt-opt-numpad7	    ________avail
+alt-opt-numpad8	    ________avail
+alt-opt-numpad9	    ________avail
+alt-opt-numpad0     ________avail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 4 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
+(HYPERKEY) group of commands	
+EXPL: todo 
+====================================================================================================================================================
+====================================================================================================================================================
+HYPER-tab   ________avail
+HYPER-q		________avail(this one may not be ALLOWED for some 'q' for quit related conflict?)
+HYPER-w		go to ASPEN/EMER 'work' trello board tab    (opens Microsoft Word on Windows side?)
+HYPER-e		Emoji-search
+HYPER-r		go to REFERENCE trello board tab
+HYPER-t		________avail
+HYPER-y		quick-add-trello-card-from-DesktopApp
+HYPER-u		________avail
+HYPER-i		________avail
+HYPER-o		Raycast Hotkey for OPEN-WITH (clever idea on reddit)(hyper-o likely a pain on windows side bc microsoft apps bullsh hogging hyper keyb real-estate)
+HYPER-p		________avail
+HYPER-[		________avail
+HYPER-]		________avail
+HYPER-\		________avail 
+	
+HYPER-a		    raycast global chromes 'search all' command (useful for jumping to open tabs from anywhere, esp trello boards)
+HYPER-s		    open_screenshots in file expl...
+HYPER-d		    go to DOING WORK trello board tab
+HYPER-f		    switch to firefox
+
+[DELETE THIS EXPL ONCE I NO LONGER NEED REMINDING OBVI]
+(tmp reminder/expl of how we got 2 actions assigned to the 1 keyb HYPER-g here:)
+(the ONLY REASON we CAN have two sep commands for the same HYPER-g here is bc if we're already 
+in chrome when we trigger it, we obviously would have no use for the GLOBAL version, and anytime
+ we're NOT in chrome, we know only the GLOBAL cmd will trigger since the other CHROME-spec one 
+ obvi only triggers when in-chrome when calling it )
+HYPER-g		    [1 of 2] GLOBAL-binding: quick-google-search via raycast 
+HYPER-g		    [2 of 2] CHOME-SPECIFIC binding: switch to chatGPT 'SUMMARY INSERTS' chat
+
+HYPER-h		    switch to HOME google-doc tab 
+HYPER-j		    ________avail
+HYPER-k		    ________avail
+HYPER-l		    ________avail
+HYPER-;		    ________avail
+HYPER-'		    ________avail
+HYPER-enter     ________avail
+HYPER-spacebar  quick-add-trello-card(also using HYPER-Y so may elim one)[note we're using BTT/AHK to redir since trello only allows SPACE key for this shortcut]
+	
+HYPER-z		________avail   (NOTE this may be the new hotkey for zzshortcuts-ULTRA-optimized, which is currently ALT-Z)
+HYPER-x		________avail   switch to 'durMeetings' tab in Ref_Sheet excel doc (for office WINDOWS-side only, and x is unlikely to be used for anything on mac side anyway)
+HYPER-c		raycast clipboard manager
+HYPER-v		Raycast Paste clipboard items one after another (paste-sequentially) (so each HYPER-v pastes another clipboard item)
+HYPER-b		________avail
+HYPER-n		________avail
+HYPER-m		switch windows (prob del this one as was just a 'trying out' of some diff raycast commands I thought soundded compelling 
+HYPER-,		________avail
+HYPER-.		________avail
+HYPER-/		________avail
+	
+HYPER-LeftArr	________avail
+HYPER-RightArr	________avail
+HYPER-UpArr	    ________avail
+HYPER-DownArr	________avail
+
+HYPER-`		________avail
+HYPER-1	    take screenshot1
+HYPER-2	    take screenshot2
+HYPER-3     take screenshot3 (maybe vid/gif variation instead of img)
+HYPER-4	    ________avail
+HYPER-5	    ________avail
+HYPER-6	    ________avail
+HYPER-7	    ________avail
+HYPER-8	    ________avail
+HYPER-9	    ________avail
+HYPER-0     ________avail
+HYPER--	    ________avail   aka HYPER-minus
+HYPER-=	    ________avail   aka HYPER-plus
+
+(this group is mainly used as spot to test out new shortcuts before det if they're worth giving a legit binding to)
+HYPER-numpad1       ________avail
+HYPER-numpad2	    ________avail
+HYPER-numpad3       ________avail
+HYPER-numpad4	    ________avail
+HYPER-numpad5	    ________avail
+HYPER-numpad6	    ________avail
+HYPER-numpad7	    ________avail
+HYPER-numpad8	    ________avail
+HYPER-numpad9	    ________avail
+HYPER-numpad0       ________avail
+
+(HYPER+fn+fKey)
+HYPER-Fn1	________avail
+HYPER-Fn2	________avail
+HYPER-Fn3	________avail
+HYPER-Fn4	________avail
+HYPER-Fn5	________avail
+HYPER-Fn6	________avail
+HYPER-Fn7	________avail
+HYPER-Fn8	switch to excel doc zzshorts
+HYPER-Fn9	________avail
+HYPER-Fn10	________avail
+HYPER-Fn11	________avail
+HYPER-Fn12	________avail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[SECTION 5 of 4] zz-
+====================================================================================================================================================
+====================================================================================================================================================
+MIDDLE-MAN & PLAYGROUND Fn-mini-groups of shortcuts
+====================================================================================================================================================
+====================================================================================================================================================
+MIDDLE-MAN shortcuts expl: these shortcuts are never triggered myself, but rather for the hacky workarounds where 1 app/tool has to pass execution onto another by sending keystrokes that trigger it. 
+    EX: my fancy-chrometab shortcut: hyper-d triggers the BTT shortcut which switches to chrome, then BTT sends keystrokes (the middle-man shortcut) which trigger the chrome-extensions 'jump-to-tab-by-URL' and so on. 
+    TIP: bc I never actually have to trigger these shortcuts myself, they can be super-awkward and impractical-to-press shortcuts since it's simply the keystrokes() which we hardcode beforehand
+    TIP: also you want to avoid using any actual useful/valuable shortcuts for these since they'll be wasted real-estate that you'll never manually trigger anyway. 
+PLAYGROUND shortcuts expl: these are groups of keys that aren't always open/avail for quick-adding a new-shortcut/command that you want to test/try-out before officially giving it an actual binding in one of the MAIN FOUR categories
+    EX: how I was using the ALT-SHIFT-NUMPAD 3x3 group, I'd add a command there first, try it out, and then after a while try moving the shortcut to the official main 4 categories
+
+----mini-groups(4):----
+ALT-OPT-Fn      ||     playground?
+ALT-CTRL-Fn     ||     middle-man?
+ALT-CTRL-OPT-Fn ||     middle-man?
+HYPER-Fn        ||     playground-shortcut for sure (bc so easy to trigger via the rightHYPER-Fn) 
+
+    <CAUTION> 
+    I may change/swap some of these mini-groups w other options like (ALT-OPT-SHIFT-Fn) and/or (ATL-CTRL-SHIFT-Fn)
+    <CAUTION> 
+
+----------------------------
+ALT-OPT-Fn  (mini-group middle-man/playgr)
+----------------------------
+ALT-OPT-Fn-Fn1          ________avail
+ALT-OPT-Fn-Fn2          ________avail
+ALT-OPT-Fn-Fn3          ________avail
+ALT-OPT-Fn-Fn4          ________avail
+ALT-OPT-Fn-Fn5          ________avail
+ALT-OPT-Fn-Fn6          ________avail
+ALT-OPT-Fn-Fn7          ________avail
+ALT-OPT-Fn-Fn8          ________avail
+ALT-OPT-Fn-Fn9          ________avail
+ALT-OPT-Fn-Fn10         ________avail
+ALT-OPT-Fn-Fn11         ________avail
+ALT-OPT-Fn-Fn12         ________avail
+
+----------------------------
+ALT-CTRL-Fn  (mini-group middle-man/playgr)
+----------------------------
+ALT-CTRL-Fn-Fn1          ________avail
+ALT-CTRL-Fn-Fn2          ________avail
+ALT-CTRL-Fn-Fn3          ________avail
+ALT-CTRL-Fn-Fn4          ________avail
+ALT-CTRL-Fn-Fn5          ________avail
+ALT-CTRL-Fn-Fn6          ________avail
+ALT-CTRL-Fn-Fn7          ________avail
+ALT-CTRL-Fn-Fn8          ________avail
+ALT-CTRL-Fn-Fn9          ________avail
+ALT-CTRL-Fn-Fn10         ________avail
+ALT-CTRL-Fn-Fn11         ________avail
+ALT-CTRL-Fn-Fn12         ________avail
+
+----------------------------
+ALT-OPT-CTRL-Fn  (mini-group middle-man/playgr)
+----------------------------
+ALT-OPT-CTRL-Fn-Fn1          ________avail
+ALT-OPT-CTRL-Fn-Fn2          ________avail
+ALT-OPT-CTRL-Fn-Fn3          ________avail
+ALT-OPT-CTRL-Fn-Fn4          ________avail
+ALT-OPT-CTRL-Fn-Fn5          ________avail
+ALT-OPT-CTRL-Fn-Fn6          ________avail
+ALT-OPT-CTRL-Fn-Fn7          ________avail
+ALT-OPT-CTRL-Fn-Fn8          ________avail
+ALT-OPT-CTRL-Fn-Fn9          ________avail
+ALT-OPT-CTRL-Fn-Fn10         ________avail
+ALT-OPT-CTRL-Fn-Fn11         ________avail
+ALT-OPT-CTRL-Fn-Fn12         ________avail
+
+
+----------------------------
+rightHYPER-Fn (mini-group middle-man/playgr)
+----------------------------
+ALT-OPT-CTRL-SHIFT-Fn-Fn1          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn2          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn3          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn4          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn5          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn6          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn7          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn8          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn9          ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn10         ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn11         ________avail
+ALT-OPT-CTRL-SHIFT-Fn-Fn12         ________avail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+-----EVERYTHING BELOW THIS IS MISC / INACTIVE STUFF THAT I'll LIKELY DEL AT SOME POINT...
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+
+
+[SECTION 5 of 4] zz-
+=====================================
+WORST-HOTKEYS!	
+=====================================
+> these are a list of some specific hotkeys that are awkward to use because hand : key : mod placement.
+> I'm keeping track of them bc they're ideal for middle-man shortcuts that 
+> basically for when I need a shortcut to exist but I won't be triggering it directly, instead it's triggered in the middle of a script or btt workflow.
+> this way we can still have the shortcut and not take up any of the good hotkeys.
+> (like how I have HYPER-Fn-F12 as my 'switch to chrome' shortcut. Not the LogiOption 'swtich to chrome' which I DO use directly) that I use for all my switch to trello board A,B,C stuff
+alt-fn-opt-F1   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F2   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F3   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F4   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F5   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F6   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F7   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F8   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F9   ________avail[DEPRECATED-ATM]
+alt-fn-opt-F10  ________avail[DEPRECATED-ATM]
+alt-fn-opt-F11  ________avail[DEPRECATED-ATM]
+alt-fn-opt-F12  ________avail[DEPRECATED-ATM]
+[====SUPER-LAST-RESORT-BINDINGS====]:[DEPRECATED-ATM]
+alt-fn-opt-shift-F1   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F2   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F3   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F4   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F5   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F6   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F7   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F8   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F9   ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F10  ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F11  ________avail[DEPRECATED-ATM]
+alt-fn-opt-shift-F12  ________avail[DEPRECATED-ATM]
+
+
+
+[SECTION ? of 4] zz-
+=====================================
+(WINDOW MANAGEMENT group)   (ctrl-opt-alt) == (the 3 keys left of spacebar)
+>>  EXPERIMENTING WITH DSESIGNATING ctrl-opt-alt for all my window-management shortcuts...(prev was just including them in with the ALT-only group)
+<<  PRIMARILY BC I WAS SOLD ON THE 'CYCLING' FEATURE built into some of RAYCAST window man commands >>
+=====================================
+ctrl-opt-alt-(1-4)      4 corners 1/4 (top left, top right, bottom left, bottom right)
+ctrl-opt-alt-(1-4)      4 corners 1/4 (top left, top right, bottom left, bottom right)
+ctrl-opt-alt-(1-4)      4 corners 1/4 (top left, top right, bottom left, bottom right)
+ctrl-opt-alt-(1-4)      4 corners 1/4 (top left, top right, bottom left, bottom right)
+
+ctrl-opt-alt-M      maximize almost
+ctrl-opt-alt-C      center window
+
+ctrl-opt-alt-M      increase window size
+ctrl-opt-alt-C      decrease window size
+
+ctrl-opt-alt-leftArr        left half (has cycle funct)
+ctrl-opt-alt-RightArr       right half (has cycle funct)
+
+... MANY MORE IM PLAYING AROUND W ATM AND WILL ADD SOON 
+
+
+
+zz-
+=============tmp-CLARIFICATION-OF-TERMS=============
+key-binding:    defines a mapping (of binding) of a hotkey to an action/command. So "(ALT + T)  ==  Open Terminal" is a key-binding, which maps ALT+T to OpenTerminal command
+shortcut:       interchangeable with key-binding, it's just a more user-friendly term than key-binding 
+hotkey:         a combination of keys/mods that triggers a command. So for our shortcut "(ALT + T)  ==  Open Terminal", the hotkey would be (ALT +T)
+
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+ALL 15 MODIFIER-KEY GROUPS (for ref): (from least to most keys) [with brief description of definitions/and best-practices]
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+=== groups with ONE mod-key === (4 tot)
+alt                     > global shortcuts
+ctrl                    > app-specific shortcuts
+opt                     > TODO!
+shift                   > variation of non-shift action
+
+=== groups with TWO mod-keys === (6 tot)
+alt-ctrl                > TODO!
+alt-opt                 > TODO!
+alt-shift               > TODO!
+ctrl-opt                > TODO!
+ctrl-shift              > TODO!
+opt-shift               > TODO!
+
+=== groups with THREE mod-keys === (4 tot)
+alt-ctrl-opt            > window-management-commands (TBD...)
+alt-ctrl-shift          > TODO!
+alt-opt-shift           > TODO!
+ctrl-opt-shift          > TODO!
+
+=== groups with FOUR mod-keys === (1 tot, aka HYPERKEY)
+alt-ctrl-opt-shift      > basic hyperkey, no expl needed here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+SEE BOTOM OF "tempSCRATCH" on HOME GOOGLE DOC SHEET for full list / detials...
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+THE TOP 'WINDOW-MANAGEMENT' commands + 'CLEANSHOTX-SCREENSHOT' commands that I'm trying-to/considering giving dedicated hotkeys to....
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+
+TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE and to the "tempSCRATCH" DOC at HOME GOOGLE SHEETS
+TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE and to the "tempSCRATCH" DOC at HOME GOOGLE SHEETS
+TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE and to the "tempSCRATCH" DOC at HOME GOOGLE SHEETS
+TODO: find where i outliuned all th legit SCREENSHOT commands and move them HERE and to the "tempSCRATCH" DOC at HOME GOOGLE SHEETS
+
+
+
+
+========================================================
+PHILO: when trying to det which apps get which letter/key...
+it's MORE IMP that your main apps get good/sensible letters, than to try to maximize the total number keys being used
+(or IOW...initially I was trying to pick 'meh' letters for some apps bc then it allowed for the more tricky-to-fit apps to also have a letter shortcut)
+(You literally do not use enough apps to to be able to take up all the letters anyway (or even 60% of the letters), so why waste your time trying to optimize the real-estate avail when 
+you know for sure they'll be 40% wide open space/letters avail no matter how perfectly you layout the apps->letters mappings)
+========================================================
+
+
+
+
+APP-SWITCHING KEY VOCABULARY
+(One key = one conceptual noun)
+
+========================================================
+LETTERS (A–Z)
+🔷 if MY-idea
+⭐ if recc is solid already or 
+✅ if good-as-is, leave alone (set in stone)
+❓ if should spend some time brainstorming/cant think of anything
+========================================================
+A → Agenda / Calendar | Admin / Accounts        ❓
+B → Browser | Books / Backlog                   ✅
+C → Code / IDE | Chat (only if no sep chat key) ✅
+D → Do / Done / Tasks | Dashboard / Database    🔷🔷🔷DOINGWORK board
+E → Editor (text/code) | Email                  ❓
+F → Files / Finder | File Manager               ✅
+G → Git | GitHub / GitLab                       🔷🔷🔷Google/ GPT
+H → Help / Docs | Home / Hub                    ⭐
+I → IDE | Inbox                                 ✅
+J → Jira | Journal                              ⭐   
+K → Kanban / Boards |Knowl(Wiki/Conflu)         ❓
+L → Logs | Library                              ❓
+M → Messages / Meetings | Music / Metrics       ✅ or 🔷🔷🔷MAIL
+N → Notes | Notion                              ✅
+O → Open / Launcher | Overview                  ❓
+P → Projects | Pull Requests / Planner          ⭐('Planner' could be useful, sorta akin/alternmative for trello or Things3)
+Q → Query | Queue                               ⭐('Queue' could be useful)
+R → Reference / Read | Reports                  ❓
+S → Slack / Social | Services                   ❓
+T → Terminal | Tasks (only if no task app)      ✅
+U → Utilities | Updates                         🔷🔷🔷SETTINGS?
+V → Video | Voice                               🔷🔷🔷[VSCODE or VISUALSTUDIO]
+W → Work (workspace / hub) | Web (generic)      ⭐[many things w 'work' or 'web' tbh...]
+X → Inspect / X-ray | Kill / Force Quit         ❓(DANGEROUS KEY apparently? May leave empty?)
+Y → YouTube | Video (specific)                  ⭐[YOUTUBE could be good...OR..⭐⭐Y-for-TRELLO(Since Y is trellos WindowREsize shortcut..)]
+Z → Zoom | Sleep / Lock                         🔷🔷🔷[zzshorts doc]
+3 → Things3 🔷🔷🔷 ⭐                            🔷🔷🔷Things3
+3 → T
+3 → T
+
+NUMBER ROW (OPTIONAL – HIGH LEVEL)
+
+1 → Primary / Main app
+2 → Secondary app
+3 → Tertiary app
+4–6 → Workspaces / Contexts
+7–9 → Environments / Profiles
+0 → Overview / All apps
+
+SYMBOL KEYS (USE SPARINGLY)
+
+`~` → Terminal / Shell
+/  → Search
+.  → Toggle / Focus current
+,  → Settings
+=  → Zoom / Scale
+
+AVOID FOR APP SWITCHING:
+;  '  \  [ ]   (low ergonomics / low mnemonic value)
+
+HIGH-VALUE PROTECTED KEYS (RECOMMENDED TO RESERVE)
+
+B → Browser
+T → Terminal
+C → Code
+F → Files
+N → Notes
+G → Git
+M → Messages
+D → Tasks
+K → Boards / Kanban
+
+DESIGN RULES (SUMMARY)
+
+• One key = one noun (never overload)
+• Keys identify WHAT, modifiers identify INTENT
+• Prefer generic concepts over specific brands
+• Launch-if-not-running is still “app targeting”
+• Protect high-value keys early to avoid future collisions
+
+
+
+
+========================================================
+= IMP DISTINCTION W 4-FANCY-CHROMETAB ones (doingWork, Aspentech, reference, HOMEgoogleDoc)
+========================================================
+> Unlike the apps, these are tied to the name of the BOARD / GoogleDoc itself, which we can change to whatever,whenever we want...
+> SO...I recommend saving these 4 for LAST, bc then we can survey the remaining letters/keys avail and then...
+> THEN...change the name(s) accordingly to fit with one of the avail letters/keys 
+> WORST CASE SCENARIO None of the 4 can be renamed well enough so then we just decide if should kick out the the apps taking up their letters etc etc
+===FOR EXAMPLE== if 'A' is avail in the end, then we could consider changing DOINGWORK board to 'AGENDA', then give it the A key 
+
+!!!!! KIM the DIRECTION of this mapping were trying to do here !!!!
+> were trying to find good letters/ keys for each app in our list...
+> so we dont start with the LETTER/KEY and try to think of possible apps for it, we INSTEAD ...
+> INSTEAD we start w the APPS and then try to find a good letter/key in the list of remaining ones
+
+
+========================================================
+TRACKING THE REM LETTERS/KEYS AVAIL AS WE GO...
+========================================================
+A → Agenda / Calendar | Admin / Accounts        ❓
+B → Browser | Books / Backlog                   ✅
+C → Code / IDE | Chat (only if no sep chat key) ✅
+D → Do / Done / Tasks | Dashboard / Database    🔷🔷🔷DOINGWORK board (chromeTab fancy)
+E → Editor (text/code) | Email                  ❓
+F → Files / Finder | File Manager               ✅
+G → Git | GitHub / GitLab                       🔷🔷🔷Google/ GPT
+H → Help / Docs | Home / Hub                    ⭐🔷🔷🔷HOME-googleDoc (chromeTab fancy)
+I → IDE | Inbox                                 ✅
+J → Jira | Journal                              ⭐   
+K → Kanban / Boards |Knowl(Wiki/Conflu)         ❓
+L → Logs | Library                              ❓
+M → Messages / Meetings | Music / Metrics       ✅ or 🔷🔷🔷MAIL
+N → Notes | Notion                              ✅
+O → Open / Launcher | Overview                  ❓
+P → Projects | Pull Requests / Planner          ⭐('Planner' could be useful, sorta akin/alternmative for trello or Things3)
+Q → Query | Queue                               ⭐('Queue' could be useful)
+R → Reference / Read | Reports                  ❓🔷🔷🔷REFERENCE board (chromeTab fancy)
+S → Slack / Social | Services                   ❓
+T → Terminal | Tasks (only if no task app)      ✅
+U → Utilities | Updates                         🔷🔷🔷SETTINGS?
+V → Video | Voice                               🔷🔷🔷[VSCODE or VISUALSTUDIO]
+W → Work (workspace / hub) | Web (generic)      ⭐['work' or 'web' both good options...]🔷🔷🔷ASPENTECHboard 'W==work'(chromeTab fancy)
+X → Inspect / X-ray | Kill / Force Quit         ❓(DANGEROUS? May leave empty?)
+Y → YouTube | Video (specific)                  ⭐[YOUTUBE/Y-for-TRELLO( Y is trelloWindowREsize shortcut..)]
+Z → Zoom | Sleep / Lock                         🔷🔷🔷[zzshorts doc]
+3 → Things3 🔷🔷🔷 ⭐                            🔷🔷🔷Things3
+~       → ?
+TAB     → ?
+ENTER   → ?
+SPACEB → ?
+
+--NUMROW--(could mirror FnRow apps until otherwise)
+1 → ?
+2 → ?
+3 → ?
+4 → ?
+5 → ?
+6 → ?
+7 → ?
+8 → ?
+9 → ?
+0 → ?
+
+--SYMBOLS/MISC/ ARROWKEYS? -- (lowest pri keys here fyi)
+- → ?
++ → ?
+[ → ?
+] → ?
+\ → ?
+; → ?
+" → ?
+< → ?
+> → ?
+/ → ?
+
+LeftArr     → ?
+rightArr    → ?
+upArrow     → ?
+downArrow   → ?
+
+
+
+
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+====SUPER USEFUL WHEN YOU'RE THINKING ABOUT MOVE/EDITING SOME MAPPINGS AND CAN QUICKLY SEE WHAT ARE THE OTHER LETTERS/KEYS options for whatever app(s) you're moving around
+========================================================
+THE LETTERS/KEYS OPTIONS FOR EACH APP... (leaving out the 'set-in-stone' ones, like TERMINAL-> T)
+========================================================
+(remember the 4 'fancy' chromeTab/TrelloBoard ones CAN simply be renmaed to fit with a specific letter (since its going off the name of the BOARDS, as opposed to the name of app itself))
+vscode          C, V (Code or Vscode)
+VisualStudio    V, I (VisualSt or IDE)
+TrelloApp           ~,Y,Tab,D,A,A,P (~~ or Y or TAB or Done or Atlassian or Agenda or Planner)
+DOINGWORK board     D, or rename (DoingWork)
+ASPEN/EMERSON board     A,E,W,Q,or rename (for Aspen, Emerson, Work, Queue, or wildcareRename)
+REFERENCE board     R or rename (for REFERENCE or wildcard rename)     
+HOME google doc     H or rename (for HOME or wildcare rename)
+
+Things3             num3,~,D,~,Tab,A,R  (for number3/THings3::THree, Done/Do, TAB (bc of the "T" in TAB), Agenda or Routine)
+Excel Ref_Sheet     E, R    (for Excel, or Reference)
+
+Spotify     S, A    (Sportify, or Audio)
+
+Email/Mail  E,M,O,I     (for Email,Mail,Outlook or Inbox)
+
+(other misc ones I didn't set up as of now)
+Notes       N ?? TBD...
+Firefox     ??
+BetterTouchTools ??
+
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+<ADD SOME MORE IF YOU CAN THINK OF ANY...>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
