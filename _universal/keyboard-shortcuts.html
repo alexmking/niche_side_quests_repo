@@ -830,7 +830,7 @@ Keyboard Shortcuts Visualizer:
       // -zz-
       'alt-option': {
         'a': 'things3 || teams',    // alt-opt-a
-        'w': 'aspenB | jira',       // alt-opt-w
+        'w': { action: 'white noise', color: 'light-blue' },      // alt-opt-w
         'e': 'excel ref doc',       // alt-opt-e
         'r': 'ref board || excel',  // alt-opt-r
         't': 'iTerm2 | cmder',      // alt-opt-t
@@ -1084,6 +1084,9 @@ Keyboard Shortcuts Visualizer:
         'e': 'emoji picker',   // hyper-e
         'c': 'clipb manager', // hyper-c
         'v': 'clipb paste', // hyper-v
+
+        'b': { action: 'white noise', color: 'light-blue' },      // hyper-b  (b for brown-noise) [TMP: we have TWO diff hotkeys for the same white-noise command (alt-opt-w and hyper-b), so eventually we should consolidate or decide which one to keep as the primary hotkey]
+
 
         'k': { action: 'keyboard visualizer', color: 'light-blue' },      // hyper-k   
         'j': { action: 'keyboard visualizer', color: 'light-blue' },      // hyper-j   
