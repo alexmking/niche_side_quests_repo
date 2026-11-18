@@ -607,7 +607,11 @@ DEF-Archival-Groups ---- TBD??
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 >ABOUT THIS SECTION: catch-all spot to drop content w/o thinking, to be processed and organized later
 
-
+other stuff/topics the ref doc could have:
+      - useful Links/paths (esp to quick-copy on the fly)
+      - some ssot-like info from trello cards across my 3 main boards 
+      - some ssot-like info from EXCEL DOCS (both mac and win)
+      - code syntax (leet-python, and maybe C++, JS)
 
 
 
