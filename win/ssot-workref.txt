@@ -15,6 +15,47 @@ Single Source of Truth for Work Reference
 
 
 
+----------------------------------------------------------------------
+,.recent additions I want to temporarily emphasize so I don't forget to use them
+,.dev?,.
+----------------------------------------------------------------------
+hyper-w
+hyper-r
+hyper-z
+newccpsession
+cpphub
+;path snippets
+edit-app-specific-hotkeys.txt
+pathPicker
+; div snippet
+; sep snippet
+; 121openscada snippets for trunks
+hyper-spacebar
+hyper-\ -- univ code format for jira/teams etc
+hyper-b -- play/pause white noise (also alt-opt-w)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -45,16 +86,6 @@ GOAL FOR global sections between ssot-ref.txt and ssot-workref.txt:
 
 
 ::::::::::::::::::::::divider::::::::::::::::::::::
-
-
-
-
-
-
-
-
-
-
 
 
 
