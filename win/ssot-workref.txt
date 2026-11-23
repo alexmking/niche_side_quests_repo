@@ -433,6 +433,23 @@ MISC...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 >ABOUT THIS SECTION: 2 column format (definition, description), layout for definitions, acronyms, scripts, processes.exe etc
 
+========================================================================
+,.QUESTIONS-TO-ASK / durMeetings
+,.durMeetings
+========================================================================
+Q:
+A:
+    -
+Q:
+A:
+    -
+Q:
+A:
+    -
+Q:
+A:
+    -
+
 
 
 
