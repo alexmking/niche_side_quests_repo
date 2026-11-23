@@ -33,6 +33,8 @@ pathPicker
 hyper-spacebar
 hyper-\ -- univ code format for jira/teams etc
 hyper-b -- play/pause white noise (also alt-opt-w)
+cleanup-cppsessions (rayc)
+open-latest-cppsession (rayc)
 
 
 
