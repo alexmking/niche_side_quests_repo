@@ -437,6 +437,7 @@ MISC...
 ,.QUESTIONS-TO-ASK / durMeetings
 ,.durMeetings
 ========================================================================
+[KIM: TMP: listen to each persons turn and write down any/everything that you're unfamilair with]
 Q:
 A:
     -
