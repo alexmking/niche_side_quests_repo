@@ -524,6 +524,14 @@ std::vector<int> running_totals(const std::vector<int>& values)
 
 namespace task_09
 {
+// The takeaway: removing elements from a std::vector while you iterate over it is dangerous, and the standard fix is the erase-remove idiom.
+// The bug it warns about. Calling erase inside a range-for loop invalidates the iterators the loop is using. That is undefined behavior, and even when it appears to work it skips elements. In {4, 4, 1}, erasing the first 4 shifts the second 4 into its slot, and the loop then steps past it.
+// The idiom. values.erase(std::remove(values.begin(), values.end(), target), values.end());
+// std::remove doesn't shrink anything. It shifts the elements you're keeping to the front, in order, and returns the new logical end.
+// vector::erase(first, last) then deletes the leftover junk from that point to the old end, which is what actually shrinks the vector.
+// Together they remove every match in one O(n) pass. Calling erase per element is O(n²), because each call shifts the tail.
+// The manual alternative. Your first attempt in cppsession8.cpp is also valid. It uses an explicit iterator loop with it = values.erase(it), advancing only when you don't erase. erase returns the next valid iterator, so you must use that return value.
+// The edge case the tests check. If target isn't in the vector, remove returns end(), so erase receives an empty range and does nothing. That is why the "missing" test leaves the vector unchanged.
 void remove_value(std::vector<int>& values, int target)
 {
     // Erase-remove idiom: remove_if shifts the kept elements forward and
@@ -559,9 +567,9 @@ void swap_with_pointers(int* a, int* b)
         return; // Dereferencing a null pointer is undefined behavior, so bail out early.
     }
     // *a reads/writes the int the pointer points to. temp holds a's value so it isn't lost.
-    int temp = *a;
-    *a = *b;
-    *b = temp;
+    int temp = *a;  // saving the value a is pointing to
+    *a = *b;        // defining the val A's pointing to, to be the val that B is pointing to...
+    *b = temp;      // Overwrite b's value with the original value of a, completing the swap.
 }
 } // namespace task_11
 
