@@ -1,5 +1,9 @@
 // duplicate this template for each new practice session so you can start right away with a clean slate and avoid hassle with leftover code from previous sessions
 
+// DONT FORGET: Make sure you aren't highlighting any block of code when you run w Code-Runner bc 
+//  code-runner will only build highlighted sections if you have it highlited at time you 'run'.
+// (***this dumb behavior causes a lot of wasted time debugging build errors that weren't 'real'***)
+
 
 // ----------------------------------------
 // WINDOWS BUILD COMMANDS/variations (until i get the coderunner setup/working properly like I sorta did on mac side(at least the CTRL-ALT-E command))
@@ -129,6 +133,8 @@
 // Task 11:  
 // Write `void swap_with_pointers(int* a, int* b)` that swaps the two
 // ints the pointers point to. Do nothing if either pointer is null.
+// EX CLARIFICATION: so if A points to 6, and B points to 25, then after calling swap_with_pointers(&A, &B), 
+// A will point to 25 and B will point to 6.
 
 
 // Task 12:  
@@ -986,80 +992,80 @@ void check(const char* label, bool passed)
 // Variables like x, y, numbers and smallest/largest are reused across several tasks.
 int main()
 {
-    // check("task 1: square", task_01::square(7) == 49);
-    // check("task 1: average", task_01::average(3, 4) == 3.5);
+    // check("task 1: square", square(7) == 49);
+    // check("task 1: average", average(3, 4) == 3.5);
 
-    // check("task 2: clamp below", task_02::clamp_score(-5) == 0);
-    // check("task 2: clamp above", task_02::clamp_score(150) == task_02::max_score);
-    // check("task 2: clamp inside", task_02::clamp_score(42) == 42);
+    // check("task 2: clamp below", clamp_score(-5) == 0);
+    // check("task 2: clamp above", clamp_score(150) == max_score);
+    // check("task 2: clamp inside", clamp_score(42) == 42);
 
-    // task_03::next_id(); // Returns 1; result ignored, we only need the counter to advance.
-    // task_03::next_id(); // Returns 2.
-    // check("task 3: next_id", task_03::next_id() == 3);
+    // next_id(); // Returns 1; result ignored, we only need the counter to advance.
+    // next_id(); // Returns 2.
+    // check("task 3: next_id", next_id() == 3);
 
-    // check("task 4: count_vowels", task_04::count_vowels("Hello World") == 3);
+    // check("task 4: count_vowels", count_vowels("Hello World") == 3);
 
-    // check("task 5: reverse_text", task_05::reverse_text("abc") == "cba");
-    // check("task 5: is_palindrome", task_05::is_palindrome("racecar") && !task_05::is_palindrome("hello"));
+    // check("task 5: reverse_text", reverse_text("abc") == "cba");
+    // check("task 5: is_palindrome", is_palindrome("racecar") && !is_palindrome("hello"));
 
-    // check("task 6: largest_element", task_06::largest_element({3, 9, 2, 7, 5}) == 9);
-    // check("task 6: largest_element negatives", task_06::largest_element({-8, -3, -5}) == -3);
-    // check("task 6: largest_element empty", task_06::largest_element({}) == 0);
+    // check("task 6: largest_element", largest_element({3, 9, 2, 7, 5}) == 9);
+    // check("task 6: largest_element negatives", largest_element({-8, -3, -5}) == -3);
+    // check("task 6: largest_element empty", largest_element({}) == 0);
 
-    // check("task 7: filter_even", task_07::filter_even({1, 2, 3, 4, 6, 7}) == std::vector<int>({2, 4, 6}));
-    // check("task 7: filter_even none", task_07::filter_even({1, 3, 5}).empty());
+    // check("task 7: filter_even", filter_even({1, 2, 3, 4, 6, 7}) == std::vector<int>({2, 4, 6}));
+    // check("task 7: filter_even none", filter_even({1, 3, 5}).empty());
 
-    // check("task 8: running_totals", task_08::running_totals({1, 2, 3, 4}) == std::vector<int>({1, 3, 6, 10}));
-    // check("task 8: running_totals empty", task_08::running_totals({}).empty());
+    // check("task 8: running_totals", running_totals({1, 2, 3, 4}) == std::vector<int>({1, 3, 6, 10}));
+    // check("task 8: running_totals empty", running_totals({}).empty());
 
     // std::vector<int> to_trim{4, 1, 4, 4, 2, 4};
-    // task_09::remove_value(to_trim, 4);
+    // remove_value(to_trim, 4);
     // check("task 9: remove_value", to_trim == std::vector<int>({1, 2}));
-    // task_09::remove_value(to_trim, 99); // Must leave the vector unchanged.
+    // remove_value(to_trim, 99); // Must leave the vector unchanged.
     // check("task 9: remove_value missing", to_trim == std::vector<int>({1, 2}));
 
     // std::array<int, 4> numbers{4, 8, 12, 16};
-    // check("task 10: sum_values", task_10::sum_values(numbers.data(), numbers.size()) == 40);
+    // check("task 10: sum_values", sum_values(numbers.data(), numbers.size()) == 40);
 
     // int x = 1;
     // int y = 2;
-    // task_11::swap_with_pointers(&x, &y);
+    // swap_with_pointers(&x, &y);
     // check("task 11: swap_with_pointers", x == 2 && y == 1);
-    // task_11::swap_with_pointers(&x, nullptr); // Must not crash.
+    // swap_with_pointers(&x, nullptr); // Must not crash.
 
     // // The returned pointer aims at numbers[2], so writing through it edits the array itself.
-    // int* found = task_12::find_value(numbers.data(), numbers.size(), 12);
+    // int* found = find_value(numbers.data(), numbers.size(), 12);
     // if (found != nullptr)
     // {
     //     *found = 99;
     // }
     // check("task 12: find_value", found != nullptr && numbers[2] == 99);
-    // check("task 12: find_value missing", task_12::find_value(numbers.data(), numbers.size(), 1234) == nullptr);
+    // check("task 12: find_value missing", find_value(numbers.data(), numbers.size(), 1234) == nullptr);
 
     // int values_to_reverse[] = {1, 2, 3, 4, 5};
-    // task_13::reverse_in_place(values_to_reverse, 5);
+    // reverse_in_place(values_to_reverse, 5);
     // check("task 13: reverse_in_place odd", values_to_reverse[0] == 5 && values_to_reverse[2] == 3 && values_to_reverse[4] == 1);
     // int even_values[] = {1, 2, 3, 4};
-    // task_13::reverse_in_place(even_values, 4);
+    // reverse_in_place(even_values, 4);
     // check("task 13: reverse_in_place even", even_values[0] == 4 && even_values[1] == 3 && even_values[2] == 2 && even_values[3] == 1);
-    // task_13::reverse_in_place(nullptr, 3); // Must not crash.
-    // task_13::reverse_in_place(values_to_reverse, 0); // Must leave the array unchanged.
+    // reverse_in_place(nullptr, 3); // Must not crash.
+    // reverse_in_place(values_to_reverse, 0); // Must leave the array unchanged.
     // check("task 13: reverse_in_place empty", values_to_reverse[0] == 5);
 
-    // check("task 14: string_length", task_14::string_length("hello") == 5);
-    // check("task 14: string_length empty", task_14::string_length("") == 0);
-    // check("task 14: string_length null", task_14::string_length(nullptr) == 0);
+    // check("task 14: string_length", string_length("hello") == 5);
+    // check("task 14: string_length empty", string_length("") == 0);
+    // check("task 14: string_length null", string_length(nullptr) == 0);
 
     // int smallest = 0;
     // int largest = 0;
     // const int sample[] = {7, -3, 12, 5};
-    // check("task 15: min_and_max", task_15::min_and_max(sample, 4, &smallest, &largest) && smallest == -3 && largest == 12);
+    // check("task 15: min_and_max", min_and_max(sample, 4, &smallest, &largest) && smallest == -3 && largest == 12);
     // smallest = 111; // Sentinel values: if they survive the call, the outputs were left untouched.
     // largest = 222;
-    // check("task 15: min_and_max empty", !task_15::min_and_max(sample, 0, &smallest, &largest) && smallest == 111 && largest == 222);
-    // check("task 15: min_and_max null output", !task_15::min_and_max(sample, 4, nullptr, &largest));
+    // check("task 15: min_and_max empty", !min_and_max(sample, 0, &smallest, &largest) && smallest == 111 && largest == 222);
+    // check("task 15: min_and_max null output", !min_and_max(sample, 4, nullptr, &largest));
 
-    // int* filled = task_16::create_filled_array(4, 7);
+    // int* filled = create_filled_array(4, 7);
     // bool all_seven = filled != nullptr; // Verify every element, not just the first.
     // for (int i = 0; filled != nullptr && i < 4; ++i)
     // {
@@ -1067,29 +1073,29 @@ int main()
     // }
     // check("task 16: create_filled_array", all_seven);
     // delete[] filled; // The caller owns the array, so the caller releases it.
-    // check("task 16: create_filled_array zero", task_16::create_filled_array(0, 7) == nullptr);
+    // check("task 16: create_filled_array zero", create_filled_array(0, 7) == nullptr);
 
-    // task_17::swap_with_references(x, y); // x and y were 2 and 1 after task 11; swapping restores 1 and 2.
+    // swap_with_references(x, y); // x and y were 2 and 1 after task 11; swapping restores 1 and 2.
     // check("task 17: swap_with_references", x == 1 && y == 2);
 
     // std::vector<int> scores{1, 5, 10};
-    // task_18::add_to_all(scores, 2);
+    // add_to_all(scores, 2);
     // check("task 18: add_to_all", scores == std::vector<int>({3, 7, 12}));
-    // check("task 18: count_above", task_18::count_above(scores, 5) == 2);
+    // check("task 18: count_above", count_above(scores, 5) == 2);
 
-    // task_19::Rectangle rect{2.0, 3.0}; // Brace-init fills width, then height. Scaled: 4 x 6 = 24.
-    // task_19::scale(rect, 2.0);
-    // check("task 19: area and scale", task_19::area(rect) == 24.0);
+    // Rectangle rect{2.0, 3.0}; // Brace-init fills width, then height. Scaled: 4 x 6 = 24.
+    // scale(rect, 2.0);
+    // check("task 19: area and scale", area(rect) == 24.0);
 
-    // check("task 20: color_name", task_20::color_name(task_20::Color::Green) == "Green");
-    // check("task 20: next_color wraps", task_20::next_color(task_20::Color::Blue) == task_20::Color::Red);
+    // check("task 20: color_name", color_name(Color::Green) == "Green");
+    // check("task 20: next_color wraps", next_color(Color::Blue) == Color::Red);
 
-    // task_21::BankAccount account;
+    // BankAccount account;
     // account.deposit(100); // 100 -> withdraw 30 -> 70; the 500 withdrawal must be refused.
     // check("task 21: withdraw ok", account.withdraw(30) && account.balance() == 70);
     // check("task 21: withdraw refused", !account.withdraw(500) && account.balance() == 70);
 
-    // task_22::TrafficLight light;
+    // TrafficLight light;
     // check("task 22: starts red", light.state_name() == "Red");
     // light.advance();
     // light.advance();
@@ -1097,11 +1103,10 @@ int main()
     // light.advance();
     // check("task 22: wraps to red", light.state_name() == "Red");
 
-    // task_23::Player players[] = {{"Avery", 25}, {"Blake", 40}, {"Casey", 33}};
-    // const task_23::Player* top = task_23::find_top_player(players, 3);
+    // Player players[] = {{"Avery", 25}, {"Blake", 40}, {"Casey", 33}};
+    // const Player* top = find_top_player(players, 3);
     // check("task 23: find_top_player", top != nullptr && top->name == "Blake");
-    // check("task 23: empty", task_23::find_top_player(players, 0) == nullptr);
-
+    // check("task 23: empty", find_top_player(players, 0) == nullptr);
     std::cout << "All tests completed." << std::endl;
     return 0;
 }
